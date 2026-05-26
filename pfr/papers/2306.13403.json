@@ -1,0 +1,170 @@
+{
+  "paper": "2306.13403",
+  "title": "Sumsets and entropy revisited",
+  "authors": ["Ben Green", "Freddie Manners", "Terence Tao"],
+  "generated": "2026-03-18",
+  "status": "complete",
+
+  "nodes": {
+    "lem:1.1": {
+      "type": "Lemma",
+      "number": "1.1",
+      "section": "1.1",
+      "role": "key_lemma",
+      "summary": "Improved entropic Ruzsa triangle inequality."
+    },
+    "prop:1.2": {
+      "type": "Proposition",
+      "number": "1.2",
+      "section": "1.1",
+      "role": "key_result",
+      "summary": "Entropy distance contracts under homomorphisms."
+    },
+    "prop:1.3": {
+      "type": "Proposition",
+      "number": "1.3",
+      "section": "1.1",
+      "role": "key_result",
+      "summary": "Further properties of entropic doubling."
+    },
+    "prop:1.4": {
+      "type": "Proposition",
+      "number": "1.4",
+      "section": "1.1",
+      "role": "key_result",
+      "summary": "Fibring inequality: $d[\\varphi(X);\\varphi(X)] + E[d[X|\\varphi(X)]] \\le d[X;X]$. THE KEY TOOL FOR PFR."
+    },
+    "thm:1.5": {
+      "type": "Theorem",
+      "number": "1.5",
+      "title": "Pálvölgyi-Zhelezov",
+      "section": "1.2",
+      "role": "application",
+      "summary": "Application to skew dimension of subsets of $\\mathbb{Z}^D$."
+    },
+    "thm:1.6": {
+      "type": "Theorem",
+      "number": "1.6",
+      "section": "1.2",
+      "role": "application",
+      "summary": "Dimension of subsets of $\\mathbb{Z}^D$ with small doubling."
+    },
+    "conjecture:1.7": {
+      "type": "Conjecture",
+      "number": "1.7",
+      "title": "Weak PFR over Z",
+      "section": "1.2",
+      "role": "conjecture",
+      "summary": "Weak Polynomial Freiman-Ruzsa conjecture over the integers $\\mathbb{Z}$."
+    },
+    "thm:1.8": {
+      "type": "Theorem",
+      "number": "1.8",
+      "title": "Manners",
+      "section": "1.2",
+      "role": "key_result",
+      "summary": "Dimension result by the second author."
+    },
+    "conjecture:1.9": {
+      "type": "Conjecture",
+      "number": "1.9",
+      "section": "1.2",
+      "role": "conjecture",
+      "summary": "Related conjecture."
+    },
+    "prop:1.10": {
+      "type": "Proposition",
+      "number": "1.10",
+      "section": "1.2",
+      "role": "key_result",
+      "summary": "PFR over $\\mathbb{F}_2$ implies weak PFR over $\\mathbb{Z}$."
+    },
+    "thm:1.11": {
+      "type": "Theorem",
+      "number": "1.11",
+      "section": "1.2",
+      "role": "key_result",
+      "summary": "Main implication theorem."
+    },
+    "cor:1.12": {
+      "type": "Corollary",
+      "number": "1.12",
+      "section": "1.2",
+      "role": "corollary",
+      "summary": "Corollary of the main results."
+    },
+    "lem:5.1": {
+      "type": "Lemma",
+      "number": "5.1",
+      "section": "5",
+      "role": "key_lemma",
+      "summary": "Very small entropy doubling lemma."
+    },
+    "lem:5.2": {
+      "type": "Lemma",
+      "number": "5.2",
+      "section": "5",
+      "role": "key_lemma",
+      "summary": "Small entropy doubling structure."
+    },
+    "lem:5.3": {
+      "type": "Lemma",
+      "number": "5.3",
+      "section": "5",
+      "role": "key_lemma",
+      "summary": "Subspace characterization for very small doubling."
+    },
+    "prop:8.1": {
+      "type": "Proposition",
+      "number": "8.1",
+      "section": "8",
+      "role": "key_result",
+      "summary": "Entropy formulation of PFR over $\\mathbb{F}_2$."
+    }
+  },
+
+  "edges": [
+    {
+      "from": "prop:1.4",
+      "to": "prop:1.2",
+      "type": "extends",
+      "note": "Fibring strengthens the contraction property."
+    },
+    {
+      "from": "prop:1.3",
+      "to": "lem:1.1",
+      "type": "depends_on",
+      "note": "The entropic doubling properties rest on the improved Ruzsa triangle inequality."
+    },
+    {
+      "from": "thm:1.5",
+      "to": "prop:1.4",
+      "type": "depends_on",
+      "note": "Skew dimension result uses fibring."
+    },
+    {
+      "from": "thm:1.6",
+      "to": "prop:1.4",
+      "type": "depends_on",
+      "note": "Dimension result uses fibring."
+    },
+    {
+      "from": "prop:1.10",
+      "to": "prop:8.1",
+      "type": "depends_on",
+      "note": "PFR over $\\mathbb{F}_2$ $\\to$ weak PFR over $\\mathbb{Z}$ uses entropy formulation."
+    },
+    {
+      "from": "thm:1.11",
+      "to": "prop:1.10",
+      "type": "depends_on",
+      "note": "Main theorem uses the implication."
+    },
+    {
+      "from": "lem:5.3",
+      "to": "lem:5.1",
+      "type": "depends_on",
+      "note": "Subspace characterization builds on small doubling."
+    }
+  ]
+}

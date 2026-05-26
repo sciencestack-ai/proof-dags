@@ -1,0 +1,373 @@
+{
+  "paper": "2201.06120",
+  "title": "Absolute prismatic cohomology",
+  "authors": [
+    "Bhargav Bhatt",
+    "Jacob Lurie"
+  ],
+  "year": 2022,
+  "venue": "preprint",
+  "generated": "2026-05-08",
+  "status": "complete",
+  "nodes": {
+    "thm:1.2.1": {
+      "type": "Theorem",
+      "number": "1.2.1",
+      "section": "1.2",
+      "role": "context",
+      "summary": "Imports BMS1 thm:1.10: for $K$ algebraically closed, $p$-adic, and smooth proper $X/\\mathcal{O}_K$, there is a perfect $A_{\\mathrm{inf}}$-complex of cohomology recovering crystalline / Hodge-Tate / de Rham / étale. Setup statement; the rest of the paper extends to absolute setting."
+    },
+    "thm:3.4.13": {
+      "type": "Theorem",
+      "number": "3.4.13",
+      "section": "3.4",
+      "role": "key_mechanism",
+      "summary": "The morphism $\\eta: \\mathrm{Spf}(\\mathbb{Z}_p) \\to \\mathrm{WCart}^{\\mathrm{HT}}$ extends to an isomorphism of stacks. Identifies the Hodge-Tate locus of the Cartier-Witt stack with $\\mathrm{Spf}(\\mathbb{Z}_p)$ — the geometric basis for Sen's theorem and the entire absolute prismatic story."
+    },
+    "thm:3.5.8": {
+      "type": "Theorem",
+      "number": "3.5.8",
+      "section": "3.5",
+      "role": "key_reduction",
+      "summary": "$\\mathcal{D}(\\mathrm{WCart}^{\\mathrm{HT}}) \\to \\mathcal{D}(\\mathbb{Z}[\\Theta])$, $\\mathscr{E} \\mapsto (\\mathscr{E}_\\eta, \\Theta_\\mathscr{E})$ is fully faithful. Lets quasi-coherent complexes on the Hodge-Tate stack be tracked through fibre + Sen-operator data."
+    },
+    "thm:3.6.7": {
+      "type": "Theorem",
+      "number": "3.6.7",
+      "section": "3.6",
+      "role": "key_reduction",
+      "summary": "Frobenius pushout square: for $\\mathscr{E}$ quasi-coherent on $\\mathrm{WCart}^{\\mathrm{HT}}$, the diagram of base changes along Frobenius determines a pullback square. The structural input that makes prismatic cohomology computable via the Cartier-Witt stack."
+    },
+    "thm:3.8.3": {
+      "type": "Theorem",
+      "number": "3.8.3",
+      "section": "3.8",
+      "role": "key_reduction",
+      "summary": "For odd $p$, $\\mathcal{D}(\\mathrm{WCart}) \\to \\mathcal{D}([\\mathrm{Spf}(\\mathbb{Z}_p)])$-style functor via $q$-de Rham cohomology is fully faithful. Categorical incarnation of the $q$-de Rham comparison."
+    },
+    "thm:3.9.1": {
+      "type": "Theorem",
+      "number": "3.9.1",
+      "section": "3.9",
+      "role": "imported",
+      "summary": "Sen's theorem (imported): for $V$ finite-dimensional over $C$ with continuous semilinear $\\mathrm{Gal}(K)$-action, there exists a unique $V_\\infty \\subseteq V$ + endomorphism $\\Theta$ describing the Galois action via differentiation. The classical analytic-Galois result that lifts to the Cartier-Witt picture."
+    },
+    "thm:4.3.6": {
+      "type": "Theorem",
+      "number": "4.3.6",
+      "section": "4.3",
+      "role": "technical",
+      "summary": "Discreteness criterion: for $p$-adic formal $\\mathfrak{X}/\\overline{A}$ satisfying a local condition $(\\ast)$, prismatic-side data is concentrated in degree zero. The technical input that makes integral computations behave."
+    },
+    "thm:4.6.1": {
+      "type": "Theorem",
+      "number": "4.6.1",
+      "section": "4.6",
+      "role": "main_result",
+      "summary": "Char-$p$ absolute prismatic = crystalline: for $X$ quasisyntomic $\\mathbb{F}_p$-scheme, $R\\Gamma_{\\mathbbl{\\Delta}}(X) \\simeq R\\Gamma_{\\mathrm{crys}}(X / \\mathbb{Z}_p)$. The absolute version of Bhatt–Scholze's relative crystalline comparison; the headline equivalence of the paper."
+    },
+    "thm:5.4.1": {
+      "type": "Theorem",
+      "number": "5.4.1",
+      "section": "5.4",
+      "role": "imported",
+      "summary": "Berthelot (imported): formal scheme $\\mathfrak{X}/\\mathrm{Spf}(\\mathbb{Z}_p)$ smooth has crystalline cohomology recovering de Rham of the special fibre. The classical input the absolute prismatic comparison generalizes."
+    },
+    "thm:5.4.2": {
+      "type": "Theorem",
+      "number": "5.4.2",
+      "section": "5.4",
+      "role": "key_reduction",
+      "summary": "For animated commutative $R$ with $\\overline{R} = \\mathbb{F}_p \\otimes^L R$: $\\mathbbl{\\Delta}_{\\overline{R}} \\simeq \\widehat{\\mathrm{dR}}_R$ canonically. Identifies absolute prismatic cohomology mod $p$ with completed derived de Rham — the local computation underlying thm:4.6.1."
+    },
+    "thm:6.2.1": {
+      "type": "Theorem",
+      "number": "6.2.1",
+      "section": "6.2",
+      "role": "imported",
+      "summary": "BMS2 imported: for $R$ quasiregular semiperfectoid, $\\pi_* \\mathrm{THH}(R)^\\wedge_p$ concentrated in even degrees, with $\\pi_* \\mathrm{TC}^-(R)^\\wedge_p$ recovering $A_{\\mathrm{inf}}(R)$ structure. Topological-Hochschild input."
+    },
+    "thm:6.2.4": {
+      "type": "Theorem",
+      "number": "6.2.4",
+      "section": "6.2",
+      "role": "imported",
+      "summary": "BMS2 motivic filtration (imported): $\\mathrm{Fil}^\\bullet_T \\mathrm{TP}(R)^\\wedge_p$ realized via syntomic-site colimit. Connects topological-Hochschild filtrations to the prismatic side."
+    },
+    "thm:7.1.1": {
+      "type": "Theorem",
+      "number": "7.1.1",
+      "section": "7.1",
+      "role": "technical",
+      "summary": "Exact sequence for quasiregular semiperfect $\\mathbb{F}_p$-algebras: kernel of $R^\\flat \\twoheadrightarrow R$ controls obstruction classes. Used as input for the syntomic Chern-class computation."
+    },
+    "thm:7.3.5": {
+      "type": "Theorem",
+      "number": "7.3.5",
+      "section": "7.3",
+      "role": "key_reduction",
+      "summary": "Crystalline first Chern class: $\\widehat{c}_1^{\\mathrm{crys}}: R\\Gamma_{\\mathrm{\\acute{e}t}}(\\mathrm{Spec}(R), \\mathbf{G}_m)^\\wedge[-1] \\to R\\Gamma_{\\mathrm{crys}}$ fits into a fiber sequence. The cohomological avatar of Chern-class theory in the prismatic setting."
+    },
+    "thm:7.5.6": {
+      "type": "Theorem",
+      "number": "7.5.6",
+      "section": "7.5",
+      "role": "key_reduction",
+      "summary": "Synthetic first Chern class: $\\widehat{c}_1^{\\mathrm{syn}}: R\\Gamma_{\\mathrm{\\acute{e}t}}(\\mathrm{Spec}(R), \\mathbf{G}_m)^\\wedge[-1] \\to R\\Gamma_{\\mathrm{syn}}$. Lifts the crystalline Chern class to the syntomic level — bridge between étale and prismatic via the syntomic comparison."
+    },
+    "thm:7.6.2": {
+      "type": "Theorem",
+      "number": "7.6.2",
+      "section": "7.6",
+      "role": "key_reduction",
+      "summary": "De Rham Chern class: $c_1^{\\mathrm{dR}}: R\\Gamma(\\mathrm{Spec}(R)_{\\mathrm{\\acute{e}t}}, \\mathbf{G}_m)[-1] \\to \\mathrm{Fil}^1_{\\mathrm{Hod}} \\widehat{\\mathrm{dR}}_R$. The de Rham filtered version, completing the Chern-class trifecta with crystalline + syntomic."
+    },
+    "thm:8.1.9": {
+      "type": "Theorem",
+      "number": "8.1.9",
+      "section": "8.1",
+      "role": "main_result",
+      "summary": "Étale-syntomic comparison: for $p$-complete animated $R$, the comparison map $\\alpha_R: R\\Gamma_{\\mathrm{\\acute{e}t}}(\\mathrm{Spec}(R), \\mathbb{Z}_p) \\to R\\Gamma_{\\mathrm{syn}}(R, \\mathbb{Z}_p(\\bullet))$ has explicit fibre. The integration of étale cohomology into the prismatic / syntomic framework."
+    },
+    "thm:8.3.1": {
+      "type": "Theorem",
+      "number": "8.3.1",
+      "section": "8.3",
+      "role": "main_result",
+      "summary": "Combined Chern-class isomorphism: for $p$-complete animated $R$, the direct sum of synthetic Chern classes is canonical — assembling crystalline + syntomic + de Rham Chern classes into one universal object. Headline structural-coherence statement."
+    }
+  },
+  "edges": [
+    {
+      "from": "thm:1.2.1",
+      "to": "thm:6.2.1",
+      "type": "depends_on",
+      "note": "BMS1 setup uses BMS2's QRS-perfectoid structure as input."
+    },
+    {
+      "from": "thm:3.5.8",
+      "to": "thm:3.4.13",
+      "type": "depends_on",
+      "note": "Fibre-and-Sen-operator description requires identification of HT locus with $\\mathrm{Spf}(\\mathbb{Z}_p)$."
+    },
+    {
+      "from": "thm:3.6.7",
+      "to": "thm:3.5.8",
+      "type": "depends_on",
+      "note": "Frobenius pushout uses the HT-stack quasi-coherent description."
+    },
+    {
+      "from": "thm:3.8.3",
+      "to": "thm:3.6.7",
+      "type": "depends_on",
+      "note": "$q$-de Rham fully-faithfulness uses Frobenius pushout square."
+    },
+    {
+      "from": "thm:3.9.1",
+      "to": "thm:3.4.13",
+      "type": "depends_on",
+      "note": "Sen's theorem corresponds geometrically to the HT-stack identification."
+    },
+    {
+      "from": "thm:4.3.6",
+      "to": "thm:3.6.7",
+      "type": "depends_on",
+      "note": "Discreteness criterion uses Frobenius pushout to control degeneration."
+    },
+    {
+      "from": "thm:4.6.1",
+      "to": "thm:5.4.2",
+      "type": "depends_on",
+      "note": "Char-$p$ comparison reduces via animated derived de Rham."
+    },
+    {
+      "from": "thm:4.6.1",
+      "to": "thm:5.4.1",
+      "type": "depends_on",
+      "note": "Recovers Berthelot's classical statement as a special case."
+    },
+    {
+      "from": "thm:5.4.2",
+      "to": "thm:4.3.6",
+      "type": "depends_on",
+      "note": "Discreteness criterion underlies the canonical isomorphism."
+    },
+    {
+      "from": "thm:7.1.1",
+      "to": "thm:6.2.4",
+      "type": "depends_on",
+      "note": "QRS-exact-sequence input runs through BMS2 motivic filtration."
+    },
+    {
+      "from": "thm:7.3.5",
+      "to": "thm:7.1.1",
+      "type": "depends_on",
+      "note": "Crystalline Chern class uses the QRS-perfect kernel sequence."
+    },
+    {
+      "from": "thm:7.3.5",
+      "to": "thm:6.2.1",
+      "type": "depends_on",
+      "note": "QRS-perfectoid base structure underlies the fiber sequence."
+    },
+    {
+      "from": "thm:7.5.6",
+      "to": "thm:7.3.5",
+      "type": "extends",
+      "note": "Synthetic Chern class lifts crystalline Chern class to syntomic level."
+    },
+    {
+      "from": "thm:7.6.2",
+      "to": "thm:7.5.6",
+      "type": "specializes",
+      "note": "De Rham Chern class is the de-Rham specialization of synthetic."
+    },
+    {
+      "from": "thm:8.1.9",
+      "to": "thm:7.5.6",
+      "type": "depends_on",
+      "note": "Étale-syntomic comparison runs through the Chern-class machinery."
+    },
+    {
+      "from": "thm:8.3.1",
+      "to": "thm:8.1.9",
+      "type": "depends_on",
+      "note": "Combined Chern-class isomorphism uses étale-syntomic comparison."
+    },
+    {
+      "from": "thm:8.3.1",
+      "to": "thm:7.6.2",
+      "type": "depends_on",
+      "note": "Combined Chern class assembles crystalline, syntomic, and de Rham forms."
+    },
+    {
+      "from": "thm:1.2.1",
+      "to": "thm:8.3.1",
+      "type": "motivates",
+      "note": "Introduction theorem provides the relative-prismatic base case the absolute version (thm:8.3.1) extends."
+    }
+  ],
+  "critical_path": [
+    "thm:8.3.1",
+    "thm:8.1.9",
+    "thm:7.5.6",
+    "thm:7.3.5",
+    "thm:7.1.1",
+    "thm:6.2.1",
+    "thm:3.6.7",
+    "thm:3.4.13"
+  ],
+  "proof_architecture": {
+    "main_results": {
+      "description": "Sections 1, 4.6, 8. Char-$p$ absolute prismatic = crystalline (thm:4.6.1); étale-syntomic comparison (thm:8.1.9); combined Chern-class isomorphism (thm:8.3.1).",
+      "nodes": [
+        "thm:1.2.1",
+        "thm:4.6.1",
+        "thm:8.1.9",
+        "thm:8.3.1"
+      ]
+    },
+    "Cartier_Witt_stack": {
+      "description": "Section 3. The Cartier-Witt stack $\\mathrm{WCart}$ + its Hodge-Tate locus $\\mathrm{WCart}^{\\mathrm{HT}}$ — the geometric host of absolute prismatic cohomology.",
+      "nodes": [
+        "thm:3.4.13",
+        "thm:3.5.8",
+        "thm:3.6.7",
+        "thm:3.8.3",
+        "thm:3.9.1",
+        "thm:4.3.6"
+      ]
+    },
+    "char_p_comparison": {
+      "description": "Sections 4.6, 5.4. Absolute char-$p$ prismatic recovers crystalline cohomology, and animated derived de Rham mod $p$.",
+      "nodes": [
+        "thm:4.6.1",
+        "thm:5.4.1",
+        "thm:5.4.2"
+      ]
+    },
+    "BMS2_input": {
+      "description": "Section 6. Imported BMS2 results on QRS-perfectoid topological Hochschild homology + motivic filtration.",
+      "nodes": [
+        "thm:6.2.1",
+        "thm:6.2.4"
+      ]
+    },
+    "Chern_class_machinery": {
+      "description": "Section 7. First Chern classes on étale + crystalline + de Rham + syntomic levels, assembled into universal coherent system.",
+      "nodes": [
+        "thm:7.1.1",
+        "thm:7.3.5",
+        "thm:7.5.6",
+        "thm:7.6.2"
+      ]
+    }
+  },
+  "bibliography": {
+    "BMS1": {
+      "title": "Integral p-adic Hodge theory",
+      "authors": [
+        "Bhatt",
+        "Morrow",
+        "Scholze"
+      ],
+      "year": 2016,
+      "arxiv_id": "1602.03148",
+      "in_registry": true,
+      "role": "Foundation; thm:1.10 imported as thm:1.2.1."
+    },
+    "BMS2": {
+      "title": "THH and integral p-adic Hodge theory",
+      "authors": [
+        "Bhatt",
+        "Morrow",
+        "Scholze"
+      ],
+      "year": 2018,
+      "arxiv_id": "1802.03261",
+      "in_registry": true,
+      "role": "Foundation; thm:6.2.1 + thm:6.2.4 imported."
+    },
+    "Prismatic": {
+      "title": "Prisms and prismatic cohomology",
+      "authors": [
+        "Bhatt",
+        "Scholze"
+      ],
+      "year": 2019,
+      "arxiv_id": "1905.08229",
+      "in_registry": true,
+      "role": "Direct predecessor; absolute version of relative prismatic."
+    },
+    "BerthelotCrysCoh": {
+      "title": "Cohomologie cristalline des schémas de caractéristique $p>0$",
+      "authors": [
+        "Berthelot"
+      ],
+      "year": 1974,
+      "arxiv_id": null,
+      "in_registry": false,
+      "role": "Classical input; thm:5.4.1 imported."
+    },
+    "Sen": {
+      "title": "Continuous cohomology and p-adic Galois representations",
+      "authors": [
+        "Sen"
+      ],
+      "year": 1980,
+      "arxiv_id": null,
+      "in_registry": false,
+      "role": "thm:3.9.1 imported."
+    },
+    "BhattLectures": {
+      "title": "Lectures on prismatic cohomology",
+      "authors": [
+        "Bhatt"
+      ],
+      "year": 2018,
+      "arxiv_id": null,
+      "in_registry": false,
+      "role": "Companion lecture notes."
+    }
+  }
+}

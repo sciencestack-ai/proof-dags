@@ -1,0 +1,115 @@
+{
+  "paper": "2406.10872",
+  "title": "On entropy Marton-type inequalities and small symmetric differences with cosets of abelian groups",
+  "authors": ["Thomas Karam"],
+  "generated": "2026-03-19",
+  "status": "complete",
+
+  "nodes": {
+    "thm:1.1": {
+      "type": "Theorem",
+      "number": "1.1",
+      "section": "1",
+      "role": "cited_result",
+      "title": "GGMT2 Theorem 1.1",
+      "summary": "PFR covering theorem: If $A \\subseteq G$ ($m$-torsion abelian) with $|A+A| \\le K|A|$, then $A$ is covered by at most $(2K)^{O(m^3)}$ cosets of a subgroup $H$ with $|H| \\le |A|$."
+    },
+    "def:1.3": {
+      "type": "Definition",
+      "number": "1.3",
+      "section": "1",
+      "role": "key_definition",
+      "summary": "Distributional $\\varepsilon$-approximate group: $A \\subseteq G$ where proportion of $(a,b) \\in A \\times A$ with $a+b \\in U$ is $\\ge 1-\\varepsilon$ for some $|U| = |A|$."
+    },
+    "thm:1.5": {
+      "type": "Theorem",
+      "number": "1.5",
+      "section": "1",
+      "role": "main_result",
+      "summary": "Main theorem: If $A$ is a distributional $\\varepsilon$-approximate group, then $|A \\Delta (H+x)|/|H| \\le 240 \\cdot \\log(\\varepsilon^{-1}|A|) \\cdot \\varepsilon$ for some coset $H+x$. Sharp up to log factor."
+    },
+    "lem:2.1": {
+      "type": "Lemma",
+      "number": "2.1",
+      "section": "2",
+      "role": "auxiliary",
+      "summary": "Entropy lower bound: $H(X+Y) \\ge \\max(H(X), H(Y))$ for independent $X, Y$."
+    },
+    "prop:2.2": {
+      "type": "Proposition",
+      "number": "2.2",
+      "section": "2",
+      "role": "key_lemma",
+      "title": "GGMT2 Theorem 1.3",
+      "summary": "Entropic PFR in $m$-torsion: For $X,Y$ in $m$-torsion $G$, exists subgroup $H$ with $d(X,U_H) \\le Cm^3 \\cdot d(X,Y)$ and $d(Y,U_H) \\le Cm^3 \\cdot d(X,Y)$."
+    },
+    "prop:2.3": {
+      "type": "Proposition",
+      "number": "2.3",
+      "section": "2",
+      "role": "key_lemma",
+      "title": "GMT Proposition 1.3",
+      "summary": "Small Ruzsa distance implies coset structure: If $d(X,Y) \\le \\gamma$, then $d(X,U_H) \\le 12 \\cdot d(X,Y)$ for some subgroup $H$. Key tool from GMT (Sumsets and entropy revisited)."
+    },
+    "cor:2.4": {
+      "type": "Corollary",
+      "number": "2.4",
+      "section": "2",
+      "role": "key_lemma",
+      "summary": "Small entropy doubling implies Ruzsa closeness to subgroup: If $\\Delta H(A) \\le \\gamma$, then $d(U_A, U_H) \\le 12 \\cdot \\Delta H(A)$."
+    },
+    "lem:3.1": {
+      "type": "Lemma",
+      "number": "3.1",
+      "section": "3",
+      "role": "key_lemma",
+      "summary": "Distributional approximate group implies small entropy doubling: If $A$ is $\\varepsilon$-approximate, then $\\Delta H(A) \\le 2\\varepsilon \\cdot \\log(\\varepsilon^{-1}|A|)$."
+    },
+    "lem:3.2": {
+      "type": "Lemma",
+      "number": "3.2",
+      "section": "3",
+      "role": "key_lemma",
+      "summary": "Ruzsa closeness implies symmetric difference bound: If $d(U_A, U_H) \\le \\alpha < 1/10$, then $|A \\Delta (H+x)| \\le 10\\alpha|H|$ for some $x$."
+    }
+  },
+
+  "edges": [
+    {
+      "from": "prop:2.2",
+      "to": "cor:2.4",
+      "type": "implies",
+      "note": "GGMT entropic PFR specializes to $X=Y$ case for entropy doubling."
+    },
+    {
+      "from": "prop:2.3",
+      "to": "cor:2.4",
+      "type": "proves",
+      "note": "GMT small distance result gives the $d(U_A, U_H) \\le 12 \\cdot \\Delta H(A)$ bound."
+    },
+    {
+      "from": "thm:1.5",
+      "to": "lem:3.1",
+      "type": "depends_on",
+      "note": "The main theorem uses Lemma 3.1 to translate the distributional approximate-group hypothesis into an entropy-doubling bound."
+    },
+    {
+      "from": "thm:1.5",
+      "to": "cor:2.4",
+      "type": "depends_on",
+      "note": "The main theorem uses Corollary 2.4 to convert entropy doubling into Ruzsa distance to a subgroup."
+    },
+    {
+      "from": "thm:1.5",
+      "to": "lem:3.2",
+      "type": "depends_on",
+      "note": "The main theorem uses Lemma 3.2 to convert Ruzsa distance into a symmetric difference with a coset."
+    },
+    {
+      "from": "prop:2.3",
+      "to": "lem:2.1",
+      "type": "depends_on",
+      "note": "The GMT small-distance result uses the basic entropy lower bound of Lemma 2.1."
+    }
+  ]
+}

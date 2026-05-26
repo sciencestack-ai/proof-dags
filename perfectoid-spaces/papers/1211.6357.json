@@ -1,0 +1,290 @@
+{
+  "paper": "1211.6357",
+  "title": "Moduli of p-divisible groups",
+  "authors": [
+    "Peter Scholze",
+    "Jared Weinstein"
+  ],
+  "year": 2012,
+  "venue": "Cambridge J. Math. 1",
+  "generated": "2026-05-07",
+  "status": "complete",
+  "nodes": {
+    "thm:2.4.7": {
+      "type": "Theorem",
+      "number": "2.4.7",
+      "section": "2.4",
+      "role": "imported",
+      "summary": "Tilting equivalence at the inverse-limit level (Scholze 7.17 imported): for $X \\sim \\varprojlim X_i$ with $X$ perfectoid and $X_i$ strongly noetherian adic over $\\mathrm{Spa}(K, \\mathcal{O}_K)$, the étale topos of $X$ is the inverse limit of those of $X_i$. The technical input from Scholze §7."
+    },
+    "thm:4.1.4": {
+      "type": "Theorem",
+      "number": "4.1.4",
+      "section": "4.1",
+      "role": "key_reduction",
+      "summary": "Dieudonné module functor: for $R$ f-semiperfect, the Dieudonné functor on $p$-divisible groups up to isogeny is fully faithful. The classification input on the integral side."
+    },
+    "thm:4.3.1": {
+      "type": "Theorem",
+      "number": "4.3.1",
+      "section": "4.3",
+      "role": "technical",
+      "summary": "Quantitative cokernel control: $\\mathrm{coker}(A_{\\mathrm{cris}}(S)^* \\to \\mathbf{M}(G)(A_{\\mathrm{cris}}(R)))$ is killed by $p^2$. Sharp integrality of the universal Dieudonné module map."
+    },
+    "thm:5.1.4": {
+      "type": "Theorem",
+      "number": "5.1.4",
+      "section": "5.1",
+      "role": "key_reduction",
+      "summary": "Quasi-isogeny lift: every $p$-divisible $G/\\mathcal{O}_C$ admits a quasi-isogeny $\\rho: H \\otimes \\mathcal{O}_C/p \\to G \\otimes \\mathcal{O}_C/p$ with $H/\\bar{\\mathbb{F}}_p$. The functor $G_0 \\mapsto \\mathscr{E}(G_0)$ is fully faithful — Dieudonné classification at the integral $\\mathcal{O}_C$ level."
+    },
+    "thm:5.2.1": {
+      "type": "Theorem",
+      "number": "5.2.1",
+      "section": "5.2",
+      "role": "main_result",
+      "summary": "Equivalence between $p$-divisible groups $G/\\mathcal{O}_C$ and pairs $(T, W)$ with $T$ free $\\mathbb{Z}_p$-module of finite rank and $W \\subset T \\otimes C(-1)$ a $C$-subspace. The 'Hodge-Tate' classification of $p$-divisible groups via free modules + Hodge filtrations."
+    },
+    "thm:6.1.2": {
+      "type": "Theorem",
+      "number": "6.1.2",
+      "section": "6.1",
+      "role": "key_reduction",
+      "summary": "Representability of Rapoport–Zink: $\\mathrm{Def}_H$ is representable by a formal scheme $\\mathcal{M}/W(k)$, with reduced irreducible components proper. Construction of the classical Rapoport–Zink moduli space."
+    },
+    "thm:6.2.1": {
+      "type": "Theorem",
+      "number": "6.2.1",
+      "section": "6.2",
+      "role": "key_reduction",
+      "summary": "Period map characterization: for fixed $H/k$ ($\\dim d, \\mathrm{ht} h$), the period map $\\pi: \\mathcal{M}^{\\mathrm{ad}}_\\eta \\to \\mathscr{F}\\ell$ is described point-by-point. Connects RZ space to the affine Grassmannian / period domain."
+    },
+    "thm:6.3.4": {
+      "type": "Theorem",
+      "number": "6.3.4",
+      "section": "6.3",
+      "role": "main_result",
+      "summary": "$\\mathcal{M}_\\infty$ is representable by an adic space over $\\mathrm{Spa}(W(k)[1/p], W(k))$, preperfectoid, with $\\mathcal{M}_\\infty \\sim \\varprojlim_n \\mathcal{M}_n$. The 'infinite-level Rapoport–Zink space' as a perfectoid space — the headline construction."
+    },
+    "thm:6.4.1": {
+      "type": "Theorem",
+      "number": "6.4.1",
+      "section": "6.4",
+      "role": "key_reduction",
+      "summary": "Cartesian diagram describing $\\mathcal{M}_\\infty$ via Hodge-Tate periods and universal cover. Geometric description that lifts the algebraic classification of thm:5.2.1 to a geometric isomorphism."
+    },
+    "thm:6.5.2": {
+      "type": "Theorem",
+      "number": "6.5.2",
+      "section": "6.5",
+      "role": "technical",
+      "summary": "Representability of EL-type RZ: $\\mathcal{M}_{\\mathcal{D}^{\\mathrm{int}}}$ is representable by a formal scheme. EL-type generalization of thm:6.1.2."
+    },
+    "thm:6.5.4": {
+      "type": "Theorem",
+      "number": "6.5.4",
+      "section": "6.5",
+      "role": "key_reduction",
+      "summary": "$\\mathcal{M}_{\\mathcal{D}^{\\mathrm{int}}, \\infty}$ is representable by an adic space over $\\mathrm{Spa}(\\breve{E}, \\mathcal{O}_{\\breve{E}})$, preperfectoid, with $\\mathcal{M}_{\\mathcal{D}^{\\mathrm{int}}, \\infty} \\sim \\varprojlim_n \\mathcal{M}_{\\mathcal{D}^{\\mathrm{int}}, n}$. EL-type infinite-level perfectoid."
+    },
+    "thm:7.2.3": {
+      "type": "Theorem",
+      "number": "7.2.3",
+      "section": "7.2",
+      "role": "main_result",
+      "summary": "Duality: a natural $\\mathbf{G}(\\mathbb{Q}_p) \\times \\check{\\mathbf{G}}(\\mathbb{Q}_p)$-equivariant isomorphism $\\mathcal{M}_{\\mathcal{D}, \\infty} \\cong \\mathcal{M}_{\\check{\\mathcal{D}}, \\infty}$ swapping period maps. Faltings / Fargues / Howe-style duality at infinite level — the Langlands-functoriality outcome."
+    },
+    "thm:7.3.1": {
+      "type": "Theorem",
+      "number": "7.3.1",
+      "section": "7.3",
+      "role": "auxiliary",
+      "summary": "Drinfeld tower coverings: any finite étale $\\mathrm{GL}_n(F)$-equivariant $\\tilde{\\Omega} \\to \\Omega$ is dominated by some $\\mathcal{M}^{\\mathrm{Dr}}_m$. The Drinfeld-side analog of thm:7.2.3, capturing when towers cover all étale extensions."
+    }
+  },
+  "edges": [
+    {
+      "from": "thm:5.1.4",
+      "to": "thm:4.1.4",
+      "type": "depends_on",
+      "note": "Dieudonné lifting uses fully-faithfulness of the Dieudonné functor on f-semiperfect rings."
+    },
+    {
+      "from": "thm:5.1.4",
+      "to": "thm:4.3.1",
+      "type": "depends_on",
+      "note": "Quantitative cokernel control bounds the failure of integrality in the lift."
+    },
+    {
+      "from": "thm:5.2.1",
+      "to": "thm:5.1.4",
+      "type": "depends_on",
+      "note": "Hodge-Tate classification refines the integral Dieudonné classification by tracking the Hodge filtration."
+    },
+    {
+      "from": "thm:6.1.2",
+      "to": "thm:4.1.4",
+      "type": "depends_on",
+      "note": "Representability of $\\mathrm{Def}_H$ uses Dieudonné theory to encode deformation data."
+    },
+    {
+      "from": "thm:6.2.1",
+      "to": "thm:6.1.2",
+      "type": "depends_on",
+      "note": "Period map analysis runs on the formal-scheme model produced in 6.1.2."
+    },
+    {
+      "from": "thm:6.3.4",
+      "to": "thm:6.1.2",
+      "type": "depends_on",
+      "note": "Infinite-level $\\mathcal{M}_\\infty$ is built as the inverse limit of finite-level RZ spaces."
+    },
+    {
+      "from": "thm:6.3.4",
+      "to": "thm:2.4.7",
+      "type": "depends_on",
+      "note": "Inverse-limit perfectoid criterion (Scholze 7.17) is the technical engine showing the limit is preperfectoid."
+    },
+    {
+      "from": "thm:6.4.1",
+      "to": "thm:6.3.4",
+      "type": "depends_on",
+      "note": "Cartesian diagram is the geometric incarnation of the infinite-level RZ space."
+    },
+    {
+      "from": "thm:6.4.1",
+      "to": "thm:5.2.1",
+      "type": "depends_on",
+      "note": "Hodge-Tate classification of $p$-divisible groups identifies the diagram's data on points."
+    },
+    {
+      "from": "thm:6.5.2",
+      "to": "thm:6.1.2",
+      "type": "extends",
+      "note": "EL-type representability extends the basic representability to PEL data."
+    },
+    {
+      "from": "thm:6.5.4",
+      "to": "thm:6.5.2",
+      "type": "depends_on",
+      "note": "Infinite-level EL space built on the finite-level formal scheme."
+    },
+    {
+      "from": "thm:6.5.4",
+      "to": "thm:6.3.4",
+      "type": "extends",
+      "note": "EL version of the basic infinite-level perfectoid statement."
+    },
+    {
+      "from": "thm:7.2.3",
+      "to": "thm:6.5.4",
+      "type": "depends_on",
+      "note": "Duality runs at the infinite-level EL space; needs its representability + perfectoid-ness."
+    },
+    {
+      "from": "thm:7.2.3",
+      "to": "thm:6.4.1",
+      "type": "depends_on",
+      "note": "Hodge-Tate / period diagram is the symmetric structure that swaps under duality."
+    },
+    {
+      "from": "thm:7.3.1",
+      "to": "thm:7.2.3",
+      "type": "specializes",
+      "note": "Drinfeld-side cofinality is a special case of the duality applied to $\\mathrm{GL}_n$ data."
+    }
+  ],
+  "critical_path": [
+    "thm:7.2.3",
+    "thm:6.4.1",
+    "thm:6.3.4",
+    "thm:2.4.7",
+    "thm:5.2.1",
+    "thm:5.1.4"
+  ],
+  "proof_architecture": {
+    "main_results": {
+      "description": "Sections 5.2, 6.3, 7.2. Hodge-Tate classification of $p$-divisible groups; infinite-level RZ space as preperfectoid; duality.",
+      "nodes": [
+        "thm:5.2.1",
+        "thm:6.3.4",
+        "thm:7.2.3"
+      ]
+    },
+    "Dieudonne_classification": {
+      "description": "Sections 4–5. Dieudonné theory on f-semiperfect rings, quantitative cokernel control, $\\mathcal{O}_C$ classification.",
+      "nodes": [
+        "thm:4.1.4",
+        "thm:4.3.1",
+        "thm:5.1.4"
+      ]
+    },
+    "Rapoport_Zink_geometry": {
+      "description": "Section 6. Representability of Rapoport–Zink moduli (basic + EL), period maps, infinite-level limits.",
+      "nodes": [
+        "thm:6.1.2",
+        "thm:6.2.1",
+        "thm:6.3.4",
+        "thm:6.4.1",
+        "thm:6.5.2",
+        "thm:6.5.4"
+      ]
+    },
+    "tilting_input": {
+      "description": "Section 2.4. Imported inverse-limit-tilting result from Scholze.",
+      "nodes": [
+        "thm:2.4.7"
+      ]
+    },
+    "duality_and_drinfeld": {
+      "description": "Section 7. Duality between RZ towers and Drinfeld-side coverings.",
+      "nodes": [
+        "thm:7.2.3",
+        "thm:7.3.1"
+      ]
+    }
+  },
+  "bibliography": {
+    "Sch": {
+      "title": "Perfectoid spaces",
+      "authors": [
+        "Peter Scholze"
+      ],
+      "year": 2012,
+      "arxiv_id": "1111.4914",
+      "in_registry": true,
+      "role": "Foundation; thm:2.4.7 imports Scholze's inverse-limit-perfectoid criterion."
+    },
+    "Faltings:RZ": {
+      "title": "A relation between two moduli spaces studied by Drinfeld",
+      "authors": [
+        "Gerd Faltings"
+      ],
+      "year": 2002,
+      "arxiv_id": null,
+      "in_registry": false,
+      "role": "Faltings's original RZ-tower / Drinfeld duality; precursor to thm:7.2.3."
+    },
+    "Fargues:RZ": {
+      "title": "L'isomorphisme entre les tours de Lubin-Tate et de Drinfeld",
+      "authors": [
+        "Laurent Fargues"
+      ],
+      "year": 2008,
+      "arxiv_id": null,
+      "in_registry": false,
+      "role": "Fargues's geometric duality; sharpened version proved here at thm:7.2.3."
+    },
+    "RapoportZink": {
+      "title": "Period spaces for p-divisible groups",
+      "authors": [
+        "Michael Rapoport",
+        "Thomas Zink"
+      ],
+      "year": 1996,
+      "arxiv_id": null,
+      "in_registry": false,
+      "role": "Original RZ moduli spaces — the formal schemes thm:6.1.2/6.5.2 globalize."
+    }
+  }
+}

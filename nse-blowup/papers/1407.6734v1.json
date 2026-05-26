@@ -1,0 +1,493 @@
+{
+  "paper": "1407.6734v1",
+  "title": "Global regularity for a slightly supercritical hyperdissipative Navier-Stokes system",
+  "authors": [
+    "David Barbato",
+    "Francesco Morandin",
+    "Marco Romito"
+  ],
+  "generated": "2026-03-09",
+  "status": "complete",
+  "nodes": {
+    "thm:1.1": {
+      "type": "Theorem",
+      "number": "1.1",
+      "section": "1",
+      "role": "main_result",
+      "summary": "Global smooth solutions for the dyadic shell model (eq:1.1) under the optimal dissipation condition $\\intds/sG(s) = \\infty$. This is the shell-model version of the main result."
+    },
+    "thm:1.2": {
+      "type": "Theorem",
+      "number": "1.2",
+      "section": "1",
+      "role": "main_result",
+      "summary": "Global smooth solutions for the generalized hyperdissipative NS (eq:1.6) when $\\alpha+\\beta \\ge (d+2)/2$ and $\\intds/sg(s) = \\infty$. Proves Tao's 2009 conjecture on the optimal regularity threshold."
+    },
+    "def:2.2": {
+      "type": "Definition",
+      "number": "2.2",
+      "section": "2.1",
+      "role": "definition",
+      "summary": "Shell approximation: $X_n(t) = (\\Sigma \\psi_n(k)|v_k(t)|^2)^{1/2}$ aggregates Fourier modes into dyadic shells. The key dimensional reduction from PDE to ODE system."
+    },
+    "thm:2.3": {
+      "type": "Theorem",
+      "number": "2.3",
+      "section": "2.1",
+      "role": "key_reduction",
+      "summary": "Bounded shell approximation implies global existence: if sup $\\Sigma 2^{2mn} X_n^2 < \\infty$ on [0,T_*), then $T_* = \\infty$. Reduces the PDE problem to bounding the shell sequence."
+    },
+    "def:2.4": {
+      "type": "Definition",
+      "number": "2.4",
+      "section": "2.2",
+      "role": "definition",
+      "summary": "Shell solution: abstract ODE system $dX_n^2/dt = -\\chi_n X_n^2 + \\Sigma \\varphi_{(l,m,n)} X_l X_m X_n$ with antisymmetric nonlinearity and dissipation/interaction bounds (eq:2.6). The framework for the entire proof."
+    },
+    "rem:2.7": {
+      "type": "Remark",
+      "number": "2.7",
+      "section": "2.2",
+      "role": "key_structural",
+      "summary": "Antisymmetry of $\\varphi$ makes the nonlinear term formally energy-conservative (sum vanishes). This structural property is the mechanism behind lem:3.4's cancellation."
+    },
+    "thm:2.8": {
+      "type": "Theorem",
+      "number": "2.8",
+      "section": "2.3",
+      "role": "key_reduction",
+      "summary": "The shell approximation of any NS solution is a shell solution. Bridges the PDE and the abstract ODE framework, enabling the cascade argument."
+    },
+    "prop:2.10": {
+      "type": "Proposition",
+      "number": "2.10",
+      "section": "2.3",
+      "role": "technical",
+      "summary": "Lower bound $\\chi_n(t) \\ge 2^{\\alphan-\\alpha+1}/g(2^{n+1})$ for the dissipation coefficient. Uses support properties of $\\psi_n$ and monotonicity of g."
+    },
+    "prop:2.11": {
+      "type": "Proposition",
+      "number": "2.11",
+      "section": "2.3",
+      "role": "technical",
+      "summary": "Properties of the interaction coefficient $\\varphi$: vanishes outside the index set I (locality), satisfies antisymmetry $\\varphi_{(l,m,n)} = -\\varphi_{(l,n,m)}$, and obeys $|\\varphi| \\le$ c₃ $2^{(d/2+1-\\beta)min{l,m,n}} (decay$ bound)."
+    },
+    "lem:2.12": {
+      "type": "Lemma",
+      "number": "2.12",
+      "section": "2.3",
+      "role": "technical",
+      "summary": "Symmetry identity for the interaction kernel: swapping $\\psi_m$ and $\\psi_n$ arguments negates the sum. Proved by the change of variable k' = h-k and using divergence-free + reality conditions."
+    },
+    "lem:2.13": {
+      "type": "Lemma",
+      "number": "2.13",
+      "section": "2.3",
+      "role": "technical",
+      "summary": "Trilinear Cauchy-Schwarz bound: $\\Sigma \\psi_a(h)|v_h| \\Sigma \\sqrt(\\psi_b \\psi_c)|v_k||v_{k-h}| \\le 2^{d(a+3)/2} X_a X_b X_c$. Converts pointwise products to shell norms."
+    },
+    "def:3.1": {
+      "type": "Definition",
+      "number": "3.1",
+      "section": "3",
+      "role": "definition",
+      "summary": "Energy inequality: $\\Sigma X_n^2(t) + \\int$₀ᵗ $\\Sigma \\chi_n X_n^2$ ds $\\le \\Sigma X_n^2(0)$. Expresses dissipation of total energy in the shell system."
+    },
+    "def:3.2": {
+      "type": "Definition",
+      "number": "3.2",
+      "section": "3",
+      "role": "definition",
+      "summary": "Tail $F_n(t) = \\Sigma_{k\\gen} X_k^2(t)$ and energy bound $d_n(t) = (F_n + \\int \\Sigma_{h\\gen} \\chi_h X_h^2$ ds)^{1/2}. The $d_n$ sequence is what the cascade argument drives to zero."
+    },
+    "prop:3.3": {
+      "type": "Proposition",
+      "number": "3.3",
+      "section": "3",
+      "role": "key_mechanism",
+      "summary": "THE recursive inequality: $d_n^2 \\le F_n(0) +$ c₄ $\\Sigma_{l<n} (d$̄$_l/\\lambda^{n-l}) \\Sigma_{m\\gen-2} g(2^{m+1})/\\lambda^{m-n} (d_m^2 - d_{m+1}^2)$. Converts energy inequality + antisymmetric cancellation into a recursion solvable by the cascade."
+    },
+    "lem:3.4": {
+      "type": "Lemma",
+      "number": "3.4",
+      "section": "3",
+      "role": "key_structural",
+      "summary": "Antisymmetric sum cancellation: $\\Sigma_{h\\len-1} \\varphi X_l X_m X_h = -\\Sigma_{m<n\\leh} \\varphi X_l X_m X_h$. Transfers energy flux from low shells to high shells, enabling the tail estimate in prop:3.3."
+    },
+    "thm:4.1": {
+      "type": "Theorem",
+      "number": "4.1",
+      "section": "4",
+      "role": "main_technical",
+      "summary": "If a shell solution satisfies the energy inequality and has smooth initial data $(sup_n 2^{mn}|X_n(0)| < \\infty$ for all m), then sup over time of the same quantity remains finite. The main technical result: smoothness is preserved."
+    },
+    "lem:4.2": {
+      "type": "Lemma",
+      "number": "4.2",
+      "section": "4",
+      "role": "auxiliary",
+      "summary": "Five properties of the cascade sequences $R_n, Q_n$: (1) min over an interval $\\le d^2/\\Sigmab$ via pigeonhole, (2) liminf $R_n = 0, (3)$ d̄_n ↓ 0, $(4) Q_n \\to 0, (5) Q_n$ eventually non-increasing. Sets up the cascade induction."
+    },
+    "lem:4.3": {
+      "type": "Lemma",
+      "number": "4.3",
+      "section": "4",
+      "role": "key_technical",
+      "summary": "Initial step of the cascade: for any M > 0, there exist n₀ and $\\theta > 0$ with $Q_{n_k} \\le \\lambda^{-k/2}$ and d̄$_{n_k}^2 \\le \\lambda^{-Mk}$ along a subsequence. Launches the geometric decay."
+    },
+    "lem:4.4": {
+      "type": "Lemma",
+      "number": "4.4",
+      "section": "4",
+      "role": "technical",
+      "summary": "For infinitely many k, $n_{k+1} = n_k + 1 (the$ cascade takes unit steps). Proof by contradiction: if steps are $\\ge 2$ eventually, the series $\\Sigma b_{n_k}$ both converges and diverges."
+    },
+    "lem:4.5": {
+      "type": "Lemma",
+      "number": "4.5",
+      "section": "4",
+      "role": "key_mechanism",
+      "summary": "Full cascade recursion: d̄$_n^2 \\le c_M \\lambda^{-Mn}$ and $Q_n \\le c_M \\lambda^{-n}$ for every M > 0. Bootstraps the subsequence decay from lem:4.3 to every index via induction, using unit-step density from lem:4.4."
+    },
+    "thm:A.1": {
+      "type": "Theorem",
+      "number": "A.1",
+      "section": "A",
+      "role": "foundational",
+      "summary": "Local existence and uniqueness for eq:1.6 in $V_m (m \\ge 2+d/2)$, with blowup criterion: either $T_* = \\infty$ or limsup ‖v(t)‖_m $= \\infty$. Standard but necessary for the global argument."
+    },
+    "prop:A.2": {
+      "type": "Proposition",
+      "number": "A.2",
+      "section": "A",
+      "role": "foundational",
+      "summary": "Quantitative local existence: solution exists on [0, T] with T < c_*/‖v₀‖_m, with a priori bound ‖$v_\\varepsilon$‖_m $\\le$ ‖v₀‖_m/(1 - c_* T ‖v₀‖_m). The bootstrap estimate."
+    },
+    "lem:A.3": {
+      "type": "Lemma",
+      "number": "A.3",
+      "section": "A",
+      "role": "auxiliary",
+      "summary": "Right-continuity of the solution in $V_m (strong$ topology) and of dv/dt in $V_{m-\\alpha}$. Uses the a priori bound from prop:A.2 and weak continuity."
+    },
+    "prop:A.4": {
+      "type": "Proposition",
+      "number": "A.4",
+      "section": "A",
+      "role": "foundational",
+      "summary": "Blowup criterion: if $T_* < \\infty$ then limsup ‖v(t)‖_m $= \\infty$. Proved by contradiction — bounded norm lets you restart from a late time via prop:A.2, extending past T_*."
+    }
+  },
+  "edges": [
+    {
+      "from": "thm:1.1",
+      "to": "thm:4.1",
+      "type": "depends_on",
+      "note": "Thm 1.1 follows from applying Thm 4.1 to the dyadic model (eq:1.1) viewed as a shell solution."
+    },
+    {
+      "from": "thm:1.1",
+      "to": "def:2.4",
+      "type": "depends_on",
+      "note": "The dyadic model equation (eq:1.1) is a shell solution in the sense of Def 2.4."
+    },
+    {
+      "from": "thm:1.2",
+      "to": "thm:2.3",
+      "type": "depends_on",
+      "note": "Reduces NS global existence to showing the shell approximation stays bounded in $H^m$."
+    },
+    {
+      "from": "thm:1.2",
+      "to": "thm:2.8",
+      "type": "depends_on",
+      "note": "Needs that the NS solution's shell approximation is a shell solution to apply the cascade argument."
+    },
+    {
+      "from": "thm:1.2",
+      "to": "thm:4.1",
+      "type": "depends_on",
+      "note": "Thm 4.1 proves the shell solution stays smooth, giving the boundedness required by Thm 2.3."
+    },
+    {
+      "from": "thm:1.2",
+      "to": "thm:A.1",
+      "type": "depends_on",
+      "note": "Local existence (Thm A.1) provides the initial solution on [0,T_*) to be extended globally."
+    },
+    {
+      "from": "thm:2.3",
+      "to": "thm:A.1",
+      "type": "depends_on",
+      "note": "Uses the blowup criterion: if shell approximation is bounded but $T_* < \\infty$, contradiction with limsup $= \\infty$."
+    },
+    {
+      "from": "thm:2.8",
+      "to": "prop:2.10",
+      "type": "depends_on",
+      "note": "Defines the dissipation coefficient $\\chi_n$ via Prop 2.10 and verifies the lower bound (eq:2.6)."
+    },
+    {
+      "from": "thm:2.8",
+      "to": "prop:2.11",
+      "type": "depends_on",
+      "note": "Defines the interaction coefficient $\\varphi$ via Prop 2.11 and verifies antisymmetry, locality, and bound (eq:2.6)."
+    },
+    {
+      "from": "thm:2.8",
+      "to": "def:2.2",
+      "type": "depends_on",
+      "note": "Shell approximation formula (eq:2.2) is used throughout the derivation of the shell solution ODE."
+    },
+    {
+      "from": "thm:2.8",
+      "to": "def:2.4",
+      "type": "depends_on",
+      "note": "Proof verifies that X satisfies all properties in Def 2.4 (ODE structure, antisymmetry, coefficient bounds)."
+    },
+    {
+      "from": "prop:2.10",
+      "to": "def:2.2",
+      "type": "depends_on",
+      "note": "The $\\chi_n$ lower bound uses the support of $\\psi_n$ and the shell approximation formula (eq:2.2)."
+    },
+    {
+      "from": "prop:2.11",
+      "to": "lem:2.12",
+      "type": "depends_on",
+      "note": "Antisymmetry $\\varphi_{(l,m,n)} = -\\varphi_{(l,n,m)}$ follows immediately from Lemma 2.12's kernel identity."
+    },
+    {
+      "from": "prop:2.11",
+      "to": "lem:2.13",
+      "type": "depends_on",
+      "note": "The bound $|\\varphi| \\le$ c₃ $2^{(d/2+1-\\beta)min}$ in both Case 1 and Case 2 uses Lemma 2.13's trilinear estimate."
+    },
+    {
+      "from": "prop:3.3",
+      "to": "def:2.4",
+      "type": "depends_on",
+      "note": "Uses the shell solution ODE (eq:2.5) and coefficient bounds (eq:2.6) from the shell solution definition."
+    },
+    {
+      "from": "prop:3.3",
+      "to": "lem:3.4",
+      "type": "depends_on",
+      "note": "Applies Lemma 3.4 to rewrite the sum over low shells as a sum over cross-boundary terms."
+    },
+    {
+      "from": "prop:3.3",
+      "to": "def:3.1",
+      "type": "depends_on",
+      "note": "The energy inequality (3.1) bounds the integrated dissipation, enabling the tail estimate."
+    },
+    {
+      "from": "prop:3.3",
+      "to": "def:3.2",
+      "type": "depends_on",
+      "note": "The entire inequality is expressed in terms of the tail $F_n$ and energy bound $d_n$ from Def 3.2."
+    },
+    {
+      "from": "lem:3.4",
+      "to": "def:2.4",
+      "type": "depends_on",
+      "note": "Uses absolute convergence from the coefficient bound (eq:2.6) and antisymmetry of $\\varphi$ from Def 2.4."
+    },
+    {
+      "from": "lem:3.4",
+      "to": "rem:2.7",
+      "type": "depends_on",
+      "note": "Exploits the antisymmetric cancellation mechanism described in Remark 2.7 (change of variable m'=n, n'=m)."
+    },
+    {
+      "from": "thm:4.1",
+      "to": "prop:3.3",
+      "type": "depends_on",
+      "note": "The recursive inequality (3.2) is the foundation for defining $R_n, Q_n$ and running the cascade."
+    },
+    {
+      "from": "thm:4.1",
+      "to": "lem:4.5",
+      "type": "depends_on",
+      "note": "Lemma 4.5 gives d̄$_n^2 \\le c_M \\lambda^{-Mn}$ for every M, which is exactly the smoothness conclusion."
+    },
+    {
+      "from": "thm:4.1",
+      "to": "lem:4.2",
+      "type": "depends_on",
+      "note": "Properties of $R_n$ and $Q_n (convergence$, monotonicity) structure the entire cascade argument."
+    },
+    {
+      "from": "lem:4.5",
+      "to": "lem:4.3",
+      "type": "depends_on",
+      "note": "Uses the initial cascade step (subsequence with geometric decay) as the base case for induction."
+    },
+    {
+      "from": "lem:4.5",
+      "to": "lem:4.4",
+      "type": "depends_on",
+      "note": "The density of unit steps $(n_{k+1}=n_k+1$ i.o.) provides the $b_{n_k-1}$ lower bound needed to close the recursion."
+    },
+    {
+      "from": "lem:4.3",
+      "to": "lem:4.2",
+      "type": "depends_on",
+      "note": "Uses $Q_n \\to 0$, d̄_n $\\to 0$, and $Q_n$ eventually non-increasing (parts 3-5 of Lem 4.2) to choose n₀."
+    },
+    {
+      "from": "lem:4.2",
+      "to": "prop:3.3",
+      "type": "depends_on",
+      "note": "The pigeonhole bound (4.2) and convergence properties are derived from the recursive inequality (3.2)."
+    },
+    {
+      "from": "thm:A.1",
+      "to": "prop:A.2",
+      "type": "depends_on",
+      "note": "Local existence and the a priori bound come from Prop A.2."
+    },
+    {
+      "from": "thm:A.1",
+      "to": "lem:A.3",
+      "type": "depends_on",
+      "note": "Right-continuity in $V_m (strong$ topology) from Lemma A.3."
+    },
+    {
+      "from": "thm:A.1",
+      "to": "prop:A.4",
+      "type": "depends_on",
+      "note": "Blowup criterion $(T_* < \\infty$ ⟹ limsup $= \\infty)$ from Prop A.4."
+    },
+    {
+      "from": "lem:A.3",
+      "to": "prop:A.2",
+      "type": "depends_on",
+      "note": "Uses the a priori bound (A.2) to show limsup ‖v(t)‖_m $\\le$ ‖v₀‖_m at t=0, then weak-strong argument."
+    },
+    {
+      "from": "prop:A.4",
+      "to": "prop:A.2",
+      "type": "depends_on",
+      "note": "Contradiction: if bounded and $T_* < \\infty$, Prop A.2 restarts from T₀ = T_* - c_*/(4M) and extends past T_*."
+    }
+  ],
+  "critical_path": [
+    "thm:1.2",
+    "thm:4.1",
+    "lem:4.5",
+    "lem:4.3",
+    "lem:4.2",
+    "prop:3.3",
+    "lem:3.4",
+    "def:2.4"
+  ],
+  "proof_architecture": {
+    "main_results": {
+      "description": "The two main theorems: global regularity for the dyadic shell model (Thm 1.1) and for generalized hyperdissipative NS (Thm 1.2, proving Tao's 2009 conjecture)",
+      "nodes": [
+        "thm:1.1",
+        "thm:1.2"
+      ]
+    },
+    "shell_model_framework": {
+      "description": "Dimensional reduction from PDE to abstract ODE system. Shell approximation aggregates Fourier modes into dyadic shells; Thm 2.3 reduces global existence to bounding the shell sequence; Thm 2.8 verifies NS solutions produce shell solutions",
+      "nodes": [
+        "def:2.2",
+        "thm:2.3",
+        "def:2.4",
+        "thm:2.8"
+      ]
+    },
+    "coefficient_estimates": {
+      "description": "Quantitative properties of the dissipation $(\\chi)$ and interaction $(\\varphi)$ coefficients: lower bounds, antisymmetry, locality, and decay. These feed into the recursive inequality",
+      "nodes": [
+        "rem:2.7",
+        "prop:2.10",
+        "prop:2.11",
+        "lem:2.12",
+        "lem:2.13"
+      ]
+    },
+    "recursive_inequality": {
+      "description": "The core mechanism: energy inequality + antisymmetric cancellation yield a recursive bound on the energy tails $d_n$. Prop 3.3 is the engine of the entire proof",
+      "nodes": [
+        "def:3.1",
+        "def:3.2",
+        "prop:3.3",
+        "lem:3.4"
+      ]
+    },
+    "cascade_argument": {
+      "description": "Solves the recursion via cascading induction. Lem 4.2 establishes sequence properties, Lem 4.3 initializes geometric decay on a subsequence, Lem 4.4 shows density of unit steps, Lem 4.5 bootstraps to every index",
+      "nodes": [
+        "thm:4.1",
+        "lem:4.2",
+        "lem:4.3",
+        "lem:4.4",
+        "lem:4.5"
+      ]
+    },
+    "local_theory": {
+      "description": "Standard local well-posedness in $V_m$ with blowup criterion. Provides the initial solution that the global argument extends",
+      "nodes": [
+        "thm:A.1",
+        "prop:A.2",
+        "lem:A.3",
+        "prop:A.4"
+      ]
+    }
+  },
+  "bibliography": {
+    "BarMorRom2011": {
+      "title": "Smooth solutions for the dyadic model",
+      "arxiv_id": null,
+      "in_registry": false
+    },
+    "BarMorRom2014": {
+      "title": "Global regularity for a logarithmically supercritical hyperdissipative dyadic equation",
+      "arxiv_id": null,
+      "in_registry": false
+    },
+    "ConFoi1988": {
+      "title": "Navier-Stokes equations (textbook)",
+      "arxiv_id": null,
+      "in_registry": false
+    },
+    "Kat1972": {
+      "title": "Nonstationary flows of viscous and ideal fluids in R³",
+      "arxiv_id": null,
+      "in_registry": false
+    },
+    "KatTap2012": {
+      "title": "A note on the slightly supercritical Navier Stokes equations in the plane",
+      "arxiv_id": "1206.3778",
+      "in_registry": false
+    },
+    "BerMaj2002": {
+      "title": "Vorticity and incompressible flow (textbook)",
+      "arxiv_id": null,
+      "in_registry": false
+    },
+    "OlsTit2007": {
+      "title": "Viscosity versus vorticity stretching: global well-posedness for a family of Navier-Stokes-alpha-like models",
+      "arxiv_id": null,
+      "in_registry": false
+    },
+    "Tao2009": {
+      "title": "Global regularity for a logarithmically supercritical hyperdissipative Navier-Stokes equation",
+      "arxiv_id": "0906.3070v4",
+      "in_registry": false
+    },
+    "Tao2014": {
+      "title": "Finite time blowup for an averaged three-dimensional Navier-Stokes equation",
+      "arxiv_id": "1402.0290v3",
+      "in_registry": true
+    },
+    "Yam2012": {
+      "title": "On the global regularity of generalized Leray-alpha type models",
+      "arxiv_id": null,
+      "in_registry": false
+    }
+  }
+}

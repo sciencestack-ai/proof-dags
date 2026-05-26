@@ -1,0 +1,219 @@
+{
+  "paper": "2109.01210",
+  "title": "Compatibility of the Fargues-Scholze and Gan-Takeda Local Langlands",
+  "authors": ["Linus Hamann"],
+  "generated": "2026-05-20",
+  "status": "complete",
+  "nodes": {
+    "thm:8.1": {
+      "type": "Theorem",
+      "number": "8.1",
+      "section": "8",
+      "role": "main_result",
+      "summary": "Main compatibility: the Fargues–Scholze correspondence agrees with the classical Gan–Takeda (for $\\mathrm{GSp}_4$) and Gan–Tantono (for the inner form $\\mathrm{GU}_2(D)$) local Langlands correspondences — fully in the non-supercuspidal case, and for supercuspidal parameters when $L/\\mathbb{Q}_p$ is unramified and $p>2$. The first nontrivial check pinning the abstract FS map to a known LLC."
+    },
+    "thm:8.2": {
+      "type": "Theorem",
+      "number": "8.2",
+      "section": "8",
+      "role": "main_result",
+      "summary": "Middle-degree concentration: for $\\pi, \\rho$ in the $L$-packet of a supercuspidal $\\mathrm{GSp}_4$-parameter ($L/\\mathbb{Q}_p$ unramified, $p>2$), the cohomology complexes $R\\Gamma_c(G,b,\\mu)[\\pi]$ and $R\\Gamma_c(G,b,\\mu)[\\rho]$ are concentrated in middle degree — a geometric realization of the packet."
+    },
+    "thm:1.2": {
+      "type": "Theorem",
+      "number": "1.2",
+      "section": "1",
+      "role": "main_result",
+      "summary": "Recovers (via Harris–Taylor / Boyer) compatibility of FS with the Jacquet–Langlands transfer for supercuspidals of $\\mathrm{GL}_n$ and the division algebra $D^*_{1/n}$, used as a known-case input and benchmark."
+    },
+    "thm:2.1": {
+      "type": "Theorem",
+      "number": "2.1",
+      "section": "2",
+      "role": "context",
+      "summary": "Gan–Takeda local Langlands for $\\mathrm{GSp}_4$: a surjective finite-to-one map $\\mathrm{LLC}_G: \\Pi(\\mathrm{GSp}_4) \\to \\Phi(\\mathrm{GSp}_4)$ with the expected packet properties — the classical correspondence FS is checked against."
+    },
+    "thm:2.2": {
+      "type": "Theorem",
+      "number": "2.2",
+      "section": "2",
+      "role": "context",
+      "summary": "Gan–Tantono local Langlands for the inner form $\\mathrm{GU}_2(D)$: the analogous surjective finite-to-one parametrization on the non-quasi-split side."
+    },
+    "lem:3.1": {
+      "type": "Lemma",
+      "number": "3.1",
+      "section": "3",
+      "role": "foundational",
+      "summary": "Imported from FS (Prop VII.7.1): equivalence $D_{\\mathrm{lis}}(B\\underline{J_b(\\mathbb{Q}_p)}) \\simeq D(J_b(\\mathbb{Q}_p))$ between sheaves on the classifying stack and smooth representations — the dictionary letting cohomology of moduli of shtukas be read as representations."
+    },
+    "thm:3.2": {
+      "type": "Theorem",
+      "number": "3.2",
+      "section": "3",
+      "role": "foundational",
+      "summary": "Imported from FS (Thm I.7.2 / Prop IX.2.1): the Hecke operators $T_W$ on $D_{\\mathrm{lis}}(\\mathrm{Bun}_G)$ and their finiteness properties — the geometric Hecke action used throughout."
+    },
+    "thm:3.4": {
+      "type": "Theorem",
+      "number": "3.4",
+      "section": "3",
+      "role": "foundational",
+      "summary": "Imported from FS (Cor I.7.3): the cohomology $R\\Gamma_c(G,b,\\mu)[\\rho]$ is valued in finite-length smooth admissible $G(\\mathbb{Q}_p)$-reps with $W_E$-action, concentrated in degrees $0 \\leq i \\leq 2d$."
+    },
+    "thm:3.5": {
+      "type": "Theorem",
+      "number": "3.5",
+      "section": "3",
+      "role": "foundational",
+      "summary": "Imported from FS: to each Schur-irreducible $A$ in $D_{\\mathrm{lis}}(\\mathrm{Bun}_G)$ is attached a unique semisimple $L$-parameter $\\phi^{\\mathrm{FS}}_\\pi$ — the Fargues–Scholze parametrization map itself."
+    },
+    "thm:3.6": {
+      "type": "Theorem",
+      "number": "3.6",
+      "section": "3",
+      "role": "foundational",
+      "summary": "Imported from FS (Thm I.9.6): properties of $\\pi \\mapsto \\phi^{\\mathrm{FS}}_\\pi$ — compatibility with local class field theory for tori, with twists, contragredient, parabolic induction, and central characters. The list of constraints the compatibility proof exploits."
+    },
+    "thm:3.7": {
+      "type": "Theorem",
+      "number": "3.7",
+      "section": "3",
+      "role": "foundational",
+      "summary": "Imported from FS (Cor X.I.3): the spectral action of $\\mathrm{Perf}(Z^1(W_{\\mathbb{Q}_p},\\widehat{G})/\\widehat{G})$ on $D_{\\mathrm{lis}}(\\mathrm{Bun}_G)^\\omega$, the categorical incarnation of the moduli of $L$-parameters acting on cohomology."
+    },
+    "prop:3.14": {
+      "type": "Proposition",
+      "number": "3.14",
+      "section": "3",
+      "role": "foundational",
+      "summary": "Imported from FS (§IX.7.1): the excursion algebra acts on $D_{\\mathrm{lis}}(\\mathrm{Bun}_G)$ commuting with Hecke operators and compatibly with restriction to HN-strata $\\mathrm{Bun}_G^b$ — the mechanism transferring the parameter between strata."
+    },
+    "thm:3.13": {
+      "type": "Theorem",
+      "number": "3.13",
+      "section": "3",
+      "role": "auxiliary",
+      "summary": "Kaletha–Weinstein input: for a discrete parameter $\\phi$, structure of the $L$-packets $\\Pi_\\phi(G)$, $\\Pi_\\phi(J)$ and the $S_\\phi$-action used to index packet members."
+    },
+    "thm:3.17": {
+      "type": "Theorem",
+      "number": "3.17",
+      "section": "3",
+      "role": "auxiliary",
+      "summary": "Hansen's basic-uniformization criterion: conditions under which moduli of shtukas $\\mathrm{Sht}(G,b,\\mu)$ realize the local correspondence, used to access $R\\Gamma_c$ geometrically."
+    },
+    "thm:3.18": {
+      "type": "Theorem",
+      "number": "3.18",
+      "section": "3",
+      "role": "auxiliary",
+      "summary": "Hansen's duality: for $\\rho$ with supercuspidal FS parameter, $R\\mathcal{H}om(R\\Gamma_c(G,b,\\mu)[\\rho], \\overline{\\mathbb{Q}}_\\ell) \\simeq R\\Gamma_c(G,b,\\mu)[\\rho^*][2d](d)$ as $W_E$-modules — the Poincaré-duality symmetry forcing middle-degree concentration."
+    },
+    "prop:4.1": {
+      "type": "Proposition",
+      "number": "4.1",
+      "section": "4",
+      "role": "key_technical",
+      "summary": "Basic uniformization map $\\Theta$: relates the cohomology of moduli of shtukas $R\\Gamma_c(G,b,\\mu)$ (with automorphic coefficients) to the cohomology of the Shimura variety $\\mathcal{S}(\\mathbf{G},X)$ — the bridge between the local geometric and global automorphic pictures."
+    },
+    "thm:4.2": {
+      "type": "Theorem",
+      "number": "4.2",
+      "section": "4",
+      "role": "auxiliary",
+      "summary": "Shen's theorem: abelian-type Shimura data with $G$ unramified at $p>2$ satisfy basic uniformization at $p$ — supplies the geometric hypothesis Prop 4.1 needs."
+    },
+    "thm:4.5": {
+      "type": "Theorem",
+      "number": "4.5",
+      "section": "4",
+      "role": "technical",
+      "summary": "Boyer's-trick chart: the Hodge–Tate period morphism $h^{\\leftarrow,b}_G$ presents the relevant local Shimura variety as a quotient, making the uniformization map computable."
+    },
+    "thm:5.2": {
+      "type": "Theorem",
+      "number": "5.2",
+      "section": "5",
+      "role": "key_reduction",
+      "summary": "Existence of strong transfers: via the simple (and $\\sigma$-twisted) trace formula, any suitable local $\\pi$ globalizes to a cuspidal automorphic $\\tau$ on $\\mathrm{GSp}_4/F$ with prescribed local components at the bad places — the engine that turns a local statement into an accessible global one."
+    },
+    "prop:5.4": {
+      "type": "Proposition",
+      "number": "5.4",
+      "section": "5",
+      "role": "technical",
+      "summary": "Globalization conditions: with $|S_{\\mathrm{st}}| \\geq 3$, cohomological regular-weight cuspidal $\\pi$ unramified outside $S$ and Steinberg-type at chosen places exist — the input set making Thm 5.2 applicable."
+    },
+    "thm:6.1": {
+      "type": "Theorem",
+      "number": "6.1",
+      "section": "6",
+      "role": "auxiliary",
+      "summary": "Sorensen-type Galois representations: a globally generic $\\tau$ with $S_{\\mathrm{st}}$ nonempty has an associated $\\mathrm{GSp}_4$-valued Galois representation $\\rho_\\tau$ in the cohomology of the Shimura variety — the global Galois input matched against FS parameters."
+    },
+    "prop:6.2": {
+      "type": "Proposition",
+      "number": "6.2",
+      "section": "6",
+      "role": "technical",
+      "summary": "Local–global Frobenius matching: at almost all good places, traces of $\\rho_{\\mathrm{shim}}$ agree with the Hecke/Satake data, pinning the global Galois representation to the automorphic side."
+    },
+    "prop:7.2": {
+      "type": "Proposition",
+      "number": "7.2",
+      "section": "7",
+      "role": "key_technical",
+      "summary": "Eigenspace localization: for $\\rho$ with supercuspidal Gan–Tantono parameter, globalizing to $\\Pi'$ and localizing the Shimura-variety cohomology at the corresponding Hecke maximal ideal $\\mathfrak{m}$ identifies the local FS contribution inside global cohomology."
+    },
+    "prop:7.4": {
+      "type": "Proposition",
+      "number": "7.4",
+      "section": "7",
+      "role": "key_reduction",
+      "summary": "The Key Proposition: the supercuspidal-Bernstein direct summand of $\\bigoplus_{\\rho'} R\\Gamma_c(G,b,\\mu)[\\rho']$ over a supercuspidal $L$-packet has the predicted structure (charged by the right $L$-parameter, multiplicity-one). The technical heart from which both main theorems follow."
+    }
+  },
+  "edges": [
+    { "from": "thm:8.1", "to": "prop:7.4", "type": "depends_on", "note": "The supercuspidal case of compatibility is read off the Key Proposition's identification of the supercuspidal summand." },
+    { "from": "thm:8.1", "to": "thm:3.6", "type": "depends_on", "note": "Compatibility is forced by matching against the FS correspondence's known properties (LCFT for tori, twists, parabolic induction) from FS Thm I.9.6." },
+    { "from": "thm:8.1", "to": "thm:2.1", "type": "depends_on", "note": "The target of the comparison is the Gan–Takeda LLC for $\\mathrm{GSp}_4$." },
+    { "from": "thm:8.1", "to": "thm:2.2", "type": "depends_on", "note": "...and the Gan–Tantono LLC for the inner form $\\mathrm{GU}_2(D)$." },
+    { "from": "thm:8.1", "to": "thm:3.13", "type": "uses", "note": "The non-supercuspidal case uses the Kaletha–Weinstein packet structure to reduce to known parametrizations." },
+    { "from": "thm:8.2", "to": "prop:7.4", "type": "depends_on", "note": "Middle-degree concentration uses the Key Proposition's structure of the supercuspidal summand." },
+    { "from": "thm:8.2", "to": "thm:3.18", "type": "depends_on", "note": "Concentration in middle degree follows from Hansen's Poincaré-duality symmetry of $R\\Gamma_c[\\rho]$." },
+    { "from": "prop:7.4", "to": "prop:7.2", "type": "depends_on", "note": "The summand structure is established after eigenspace-localizing global cohomology at the Hecke maximal ideal (Prop 7.2)." },
+    { "from": "prop:7.4", "to": "prop:3.14", "type": "uses", "note": "Transfer of the parameter to the basic stratum uses excursion–Hecke compatibility and HN-strata compatibility (FS §IX.7.1)." },
+    { "from": "prop:7.4", "to": "thm:3.7", "type": "uses", "note": "The spectral action (FS Cor X.I.3) supplies the $L$-parameter grading on the cohomology summand." },
+    { "from": "prop:7.2", "to": "thm:5.2", "type": "depends_on", "note": "Localization requires a globalization $\\Pi'$ with controlled ramification, produced by the strong-transfer theorem." },
+    { "from": "prop:7.2", "to": "prop:4.1", "type": "depends_on", "note": "Identifying the local contribution inside global cohomology uses the basic-uniformization map $\\Theta$." },
+    { "from": "prop:7.2", "to": "thm:6.1", "type": "uses", "note": "The Galois representation $\\rho_\\tau$ realizes the expected parameter in the localized cohomology." },
+    { "from": "prop:7.2", "to": "prop:6.2", "type": "uses", "note": "Frobenius-trace matching pins the localized cohomology to the correct Hecke eigensystem." },
+    { "from": "thm:5.2", "to": "prop:5.4", "type": "depends_on", "note": "Strong transfer is applied to the cohomological, Steinberg-type globalizations supplied by Prop 5.4." },
+    { "from": "prop:4.1", "to": "thm:4.2", "type": "depends_on", "note": "The uniformization map exists because abelian-type data with $G$ unramified satisfy basic uniformization (Shen)." },
+    { "from": "prop:4.1", "to": "thm:4.5", "type": "uses", "note": "The Hodge–Tate period chart makes the uniformization map explicit." },
+    { "from": "prop:6.2", "to": "thm:6.1", "type": "depends_on", "note": "The Frobenius-trace identities are statements about the Galois representation $\\rho_\\tau$ of Thm 6.1." },
+    { "from": "thm:3.5", "to": "thm:3.2", "type": "uses", "note": "The FS parametrization is built from the Hecke operators (both imported from FS)." }
+  ],
+  "critical_path": ["thm:4.2", "prop:4.1", "thm:5.2", "prop:7.2", "prop:7.4", "thm:8.1"],
+  "proof_architecture": {
+    "classical_llc": { "description": "The known correspondences FS is benchmarked against.", "nodes": ["thm:2.1", "thm:2.2", "thm:1.2"] },
+    "fs_machinery": { "description": "The Fargues–Scholze apparatus imported wholesale: representation dictionary, Hecke action, the parametrization, its properties, the spectral action, and excursion–Hecke compatibility.", "nodes": ["lem:3.1", "thm:3.2", "thm:3.4", "thm:3.5", "thm:3.6", "thm:3.7", "prop:3.14", "thm:3.13"] },
+    "geometric_realization": { "description": "Basic uniformization and duality relating moduli of shtukas to Shimura-variety cohomology.", "nodes": ["thm:3.17", "thm:3.18", "prop:4.1", "thm:4.2", "thm:4.5"] },
+    "global_input": { "description": "Trace-formula globalization and the resulting Galois representations.", "nodes": ["thm:5.2", "prop:5.4", "thm:6.1", "prop:6.2"] },
+    "key_proposition": { "description": "Eigenspace localization yielding the supercuspidal-summand structure, from which both main theorems follow.", "nodes": ["prop:7.2", "prop:7.4"] },
+    "main_results": { "description": "Compatibility with Gan–Takeda/Gan–Tantono and middle-degree concentration.", "nodes": ["thm:8.1", "thm:8.2"] }
+  },
+  "bibliography": {
+    "FS": { "title": "Geometrization of the local Langlands correspondence", "arxiv_id": "2102.13459", "in_registry": true, "role": "the apparatus imported in §3: the representation dictionary (VII.7.1), Hecke operators (I.7.2), cohomology finiteness (I.7.3), the parametrization and its properties (I.9.6), the spectral action (X.I.3), and excursion–Hecke compatibility (IX.7.1)" },
+    "GT1": { "title": "Gan–Takeda, The local Langlands conjecture for GSp(4)", "arxiv_id": null, "in_registry": false, "role": "the classical LLC for $\\mathrm{GSp}_4$ (Thm 2.1)" },
+    "GT2": { "title": "Gan–Tantono, The local Langlands conjecture for GU(2,2) / inner forms", "arxiv_id": null, "in_registry": false, "role": "the classical LLC for the inner form $\\mathrm{GU}_2(D)$ (Thm 2.2)" },
+    "Han": { "title": "Hansen, basic uniformization and duality for moduli of shtukas", "arxiv_id": null, "in_registry": false, "role": "geometric realization and Poincaré duality (Thm 3.17, Thm 3.18)" },
+    "She": { "title": "Shen, basic uniformization of abelian-type Shimura varieties", "arxiv_id": null, "in_registry": false, "role": "supplies basic uniformization at $p$ (Thm 4.2)" },
+    "KW": { "title": "Kaletha–Weinstein, on L-packets and the cohomology of moduli of shtukas", "arxiv_id": null, "in_registry": false, "role": "packet structure input (Thm 3.13)" },
+    "So": { "title": "Sorensen / source for GSp_4 Galois representations (Theorem A)", "arxiv_id": null, "in_registry": false, "role": "Galois representations in Shimura-variety cohomology (Thm 6.1)" },
+    "KS": { "title": "source for Frobenius-trace / Satake matching (Proposition 8.2)", "arxiv_id": null, "in_registry": false, "role": "local–global Frobenius compatibility (Prop 6.2)" },
+    "HT": { "title": "Harris–Taylor, The geometry and cohomology of some simple Shimura varieties", "arxiv_id": null, "in_registry": false, "role": "supercuspidal $\\mathrm{GL}_n$ / JL benchmark (Thm 1.2)" },
+    "Boy": { "title": "Boyer, on the cohomology of Lubin–Tate / Drinfeld towers", "arxiv_id": null, "in_registry": false, "role": "JL-compatibility benchmark (Thm 1.2)" }
+  }
+}

@@ -1,0 +1,255 @@
+{
+  "paper": "2411.01845",
+  "title": "A note on zero-density approaches for the difference between consecutive primes",
+  "authors": [
+    "Valeriia Starichkova"
+  ],
+  "generated": "2026-05-12",
+  "status": "complete",
+  "nodes": {
+    "thm:2.1": {
+      "type": "Theorem",
+      "number": "2.1",
+      "section": "2",
+      "role": "context",
+      "summary": "Ingham's theorem (1937): a zero-free region $\\sigma>1-A\\tfrac{\\log\\log t}{\\log t}$ for $\\zeta$ gives the prime number theorem in short intervals $(x,x+x\\exp(-c\\sqrt{\\log x})]$. The classical 'zero-free region' route, the weakest of the approaches surveyed."
+    },
+    "thm:2.2": {
+      "type": "Theorem",
+      "number": "2.2",
+      "section": "2",
+      "role": "context",
+      "summary": "Cramér (1920): under RH there is $c>0$ with $\\pi(x+c\\sqrt{x}\\log x)-\\pi(x)>\\sqrt{x}$ for all $x\\ge2$ — primes in intervals of length $\\asymp\\sqrt{x}\\log x$. The conditional benchmark."
+    },
+    "thm:2.3": {
+      "type": "Theorem",
+      "number": "2.3",
+      "section": "2",
+      "role": "main_technical",
+      "summary": "The classical zero-density route (Ingham, generalised): if $N(\\sigma,T)\\ll T^{b(1-\\sigma)}\\log^B T$ uniformly for $\\tfrac12\\le\\sigma\\le1$, then $(x,x+y]$ contains the expected number of primes for $y=x^\\theta g(x)$ with $\\theta>1-\\tfrac1b$. The general theorem turning a zero-density exponent $b$ into a short-interval exponent $\\theta$."
+    },
+    "cor:2.4": {
+      "type": "Corollary",
+      "number": "2.4",
+      "section": "2",
+      "role": "auxiliary",
+      "summary": "With the classical zero-density estimate ($b=\\tfrac{12}{5}$, from Ingham/Huxley), thm:2.3 gives primes in intervals of length $x^{7/12+\\epsilon}$ — Huxley's classical short-interval exponent."
+    },
+    "cor:2.6": {
+      "type": "Corollary",
+      "number": "2.6",
+      "section": "2",
+      "role": "auxiliary",
+      "summary": "Under the density hypothesis ($b=2$), thm:2.3 gives primes in intervals of length $x^{1/2+\\epsilon}$ — the best the unweighted zero-density route can do."
+    },
+    "lem:3.1": {
+      "type": "Lemma",
+      "number": "3.1",
+      "section": "3",
+      "role": "key_mechanism",
+      "summary": "The Heath-Brown–Iwaniec mean-value setup: for Dirichlet polynomials $M(s),N(s)$ of suitable lengths and a non-negative function $A(\\sigma)$ with prescribed monotonicity, a weighted estimate for $\\sum_\\rho$ over zeros in the relevant box. The mechanism that lets a *weighted* zero-density estimate (better than the unweighted one in the relevant range) feed the short-interval argument."
+    },
+    "cor:3.2": {
+      "type": "Corollary",
+      "number": "3.2",
+      "section": "3",
+      "role": "main_technical",
+      "summary": "The Heath-Brown–Iwaniec weighted zero-density estimate (1979): the explicit form of lem:3.1's bound, which underlies their result on primes in intervals of length $x^{0.55+\\epsilon}$ — better than the $x^{7/12}$ from the unweighted route."
+    },
+    "prop:3.3": {
+      "type": "Proposition",
+      "number": "3.3",
+      "section": "3",
+      "role": "technical",
+      "summary": "Sum over zeros of products of Dirichlet polynomials: $\\sum_\\rho|M(\\rho)N(\\rho)|$ bounded under the standard length/coefficient hypotheses. The estimate connecting the mean-value machinery to the explicit-formula sum."
+    },
+    "lem:3.4": {
+      "type": "Lemma",
+      "number": "3.4",
+      "section": "3",
+      "role": "technical",
+      "summary": "A weaker-hypothesis variant of lem:3.1: the same conclusion assuming only $N(\\sigma,T)\\ll T^{A(\\sigma)(1-\\sigma)+o(1)}$ (an $o(1)$-exponent zero-density bound rather than a log-power one). Lets modern zero-density estimates be plugged in."
+    },
+    "cor:3.5": {
+      "type": "Corollary",
+      "number": "3.5",
+      "section": "3",
+      "role": "main_technical",
+      "summary": "The Baker–Harman weighted estimate (Lemma 1(i) of Baker–Harman 1996): the conditions on the Dirichlet-polynomial lengths $M=x^u$, $N=x^v$, $T=x^{1-\\theta-\\epsilon/2}$ under which a weighted zero-density bound holds. Behind their $x^{0.535+\\epsilon}$ short-interval result."
+    },
+    "cor:3.6": {
+      "type": "Corollary",
+      "number": "3.6",
+      "section": "3",
+      "role": "technical",
+      "summary": "A refined parameter range for cor:3.5 (the $\\tfrac19(26\\cdots)$ conditions) — the optimised version of the Baker–Harman conditions used in the strongest classical short-interval bounds."
+    },
+    "prop:4.1": {
+      "type": "Proposition",
+      "number": "4.1",
+      "section": "4",
+      "role": "technical",
+      "summary": "The explicit-formula / Perron identity $\\sum_{x-y<mnr\\le x}a_mb_n\\Lambda(r)=y\\sum_{\\cdots}+\\text{error}$, with the error controlled by the weighted sum-over-zeros estimates above. The bridge from 'few zeros (weighted)' to 'primes in $(x-y,x]$'."
+    }
+  },
+  "edges": [
+    {
+      "from": "thm:2.3",
+      "to": "thm:2.1",
+      "type": "generalizes",
+      "note": "Ingham's theorem is the prototype; thm:2.3 is its quantitative zero-density-exponent form."
+    },
+    {
+      "from": "cor:2.4",
+      "to": "thm:2.3",
+      "type": "depends_on",
+      "note": "Plug $b=\\tfrac{12}{5}$ (classical zero-density) into the general theorem."
+    },
+    {
+      "from": "cor:2.6",
+      "to": "thm:2.3",
+      "type": "depends_on",
+      "note": "Plug $b=2$ (density hypothesis)."
+    },
+    {
+      "from": "thm:2.3",
+      "to": "prop:4.1",
+      "type": "depends_on",
+      "note": "The short-interval count comes from the explicit-formula identity with the error bounded by a zero-count."
+    },
+    {
+      "from": "cor:3.2",
+      "to": "lem:3.1",
+      "type": "depends_on",
+      "note": "The Heath-Brown–Iwaniec weighted estimate is the explicit form of the mean-value lemma."
+    },
+    {
+      "from": "lem:3.1",
+      "to": "prop:3.3",
+      "type": "depends_on",
+      "note": "The weighted zero-sum bound is built from the sum-over-zeros estimate for products of Dirichlet polynomials."
+    },
+    {
+      "from": "lem:3.4",
+      "to": "lem:3.1",
+      "type": "generalizes",
+      "note": "Same conclusion under an $o(1)$-exponent zero-density hypothesis instead of a log-power one — accommodates modern estimates."
+    },
+    {
+      "from": "cor:3.5",
+      "to": "lem:3.4",
+      "type": "depends_on",
+      "note": "Baker–Harman's weighted estimate is an instance of the weaker-hypothesis mean-value lemma."
+    },
+    {
+      "from": "cor:3.6",
+      "to": "cor:3.5",
+      "type": "improves",
+      "note": "Optimised parameter range for the Baker–Harman conditions."
+    },
+    {
+      "from": "prop:4.1",
+      "to": "cor:3.2",
+      "type": "depends_on",
+      "note": "The weighted zero-density estimate is the error bound in the explicit-formula identity — yielding primes in $x^{0.55+\\epsilon}$ intervals."
+    },
+    {
+      "from": "prop:4.1",
+      "to": "cor:3.5",
+      "type": "depends_on",
+      "note": "Likewise for the Baker–Harman route ($x^{0.535+\\epsilon}$)."
+    },
+    {
+      "from": "thm:2.2",
+      "to": "thm:2.1",
+      "type": "addresses_same_question",
+      "note": "Cramér's RH-conditional bound is the strong-hypothesis companion of the zero-free-region route."
+    },
+    {
+      "from": "prop:3.3",
+      "to": "thm:2.3",
+      "type": "shared_mechanism",
+      "note": "Both the unweighted route and the weighted route ultimately count zeros via explicit-formula sums of (products of) Dirichlet polynomials."
+    }
+  ],
+  "critical_path": [
+    "thm:2.3",
+    "cor:3.2",
+    "lem:3.1",
+    "prop:3.3"
+  ],
+  "proof_architecture": {
+    "classical_routes": {
+      "description": "The zero-free-region route (Ingham), the RH-conditional benchmark (Cramér), and the general zero-density-exponent ⟹ short-interval-exponent theorem with its corollaries.",
+      "nodes": [
+        "thm:2.1",
+        "thm:2.2",
+        "thm:2.3",
+        "cor:2.4",
+        "cor:2.6"
+      ]
+    },
+    "weighted_zero_density": {
+      "description": "The Heath-Brown–Iwaniec and Baker–Harman weighted mean-value estimates that beat the unweighted route in the relevant range, in both their classical (log-power) and modern ($o(1)$-exponent) forms.",
+      "nodes": [
+        "lem:3.1",
+        "cor:3.2",
+        "prop:3.3",
+        "lem:3.4",
+        "cor:3.5",
+        "cor:3.6"
+      ]
+    },
+    "explicit_formula": {
+      "description": "The Perron/explicit-formula identity converting 'few zeros (weighted)' into 'primes in $(x-y,x]$'.",
+      "nodes": [
+        "prop:4.1"
+      ]
+    }
+  },
+  "bibliography": {
+    "Ingham:1937": {
+      "title": "On the difference between consecutive primes",
+      "authors": [
+        "Ingham"
+      ],
+      "arxiv_id": null,
+      "in_registry": false
+    },
+    "Cramer:1920": {
+      "title": "Some theorems concerning prime numbers",
+      "authors": [
+        "Cramér"
+      ],
+      "arxiv_id": null,
+      "in_registry": false
+    },
+    "HeathBrownIwaniec:1979": {
+      "title": "On the difference between consecutive primes",
+      "authors": [
+        "Heath-Brown",
+        "Iwaniec"
+      ],
+      "arxiv_id": null,
+      "in_registry": false
+    },
+    "BakerHarman:1996": {
+      "title": "The difference between consecutive primes",
+      "authors": [
+        "Baker",
+        "Harman"
+      ],
+      "arxiv_id": null,
+      "in_registry": false
+    },
+    "GuthMaynard": {
+      "title": "New large value estimates for Dirichlet polynomials",
+      "authors": [
+        "Guth",
+        "Maynard"
+      ],
+      "arxiv_id": "2405.20552",
+      "in_registry": true
+    }
+  }
+}

@@ -1,0 +1,392 @@
+{
+  "paper": "1402.0811",
+  "title": "New equidistribution estimates of Zhang type",
+  "authors": [
+    "D. H. J. Polymath"
+  ],
+  "generated": "2026-05-06",
+  "status": "partial",
+  "partial_reason": "88 math envs in source; this DAG captures the spine (~25 nodes). Skipped enumeration of Section 4-5-6 individual remarks and definitions.",
+  "nodes": {
+    "thm:1.1": {
+      "type": "Theorem",
+      "number": "1.1",
+      "section": "1",
+      "role": "main_result",
+      "summary": "Bombieri-Vinogradov for densely-divisible smooth-modulus sums up to $x^\\theta$ with $\\theta = 1/2 + 7/300$. Polymath8a's headline equidistribution result, sharper than Zhang."
+    },
+    "lem:1.3": {
+      "type": "Lemma",
+      "number": "1.3",
+      "section": "1",
+      "role": "technical",
+      "summary": "Crude divisor-function bounds: $\\tau(d) \\ll_\\varepsilon x^\\varepsilon$; controlled higher moments. Workhorse used pervasively."
+    },
+    "lem:1.4": {
+      "type": "Lemma",
+      "number": "1.4",
+      "section": "1",
+      "role": "technical",
+      "summary": "GCD sum identities: $\\sum_{k \\le K} (k,q) \\le K\\,\\tau(q)$, and dual versions. Combinatorial input for Type I/II sums."
+    },
+    "claim:2.3": {
+      "type": "Conjecture",
+      "number": "2.3",
+      "section": "2",
+      "role": "context",
+      "summary": "Modified $\\mathrm{MPZ}^{(i)}[\\varpi,\\delta]$ estimate restricted to the densely-divisible class $\\mathcal{D}^{(i)}$. The structural target whose unconditional resolution yields thm:1.1."
+    },
+    "thm:2.4": {
+      "type": "Theorem",
+      "number": "2.4",
+      "section": "2",
+      "role": "key_reduction",
+      "summary": "$\\mathrm{MPZ}^{(4)}[\\varpi,\\delta]$ holds when $600\\varpi + 180\\delta < 7$ (uses Deligne); $\\mathrm{MPZ}^{(2)}[\\varpi,\\delta]$ holds when $168\\varpi + 48\\delta < 1$ (no Deligne). The key inequality that powers Polymath8b's unconditional bounded gaps."
+    },
+    "thm:2.8": {
+      "type": "Theorem",
+      "number": "2.8",
+      "section": "2",
+      "role": "key_reduction",
+      "summary": "New Type I, II, III estimates with explicit linear constraints on $(\\varpi, \\delta, \\sigma)$: $54\\varpi+15\\delta+5\\sigma<1$, $56\\varpi+16\\delta+4\\sigma<1$, etc. The atomic equidistribution inputs that combine into thm:2.4."
+    },
+    "thm:2.9": {
+      "type": "Theorem",
+      "number": "2.9",
+      "section": "2",
+      "role": "foundational",
+      "summary": "Generalized Bombieri-Vinogradov for Dirichlet convolutions $\\alpha \\star \\beta$ with Siegel-Walfisz $\\beta$. Standard input."
+    },
+    "thm:5.1": {
+      "type": "Theorem",
+      "number": "5.1",
+      "section": "5",
+      "role": "main_technical",
+      "summary": "Type I estimates: bounds on $\\sum_{q,n} \\alpha(n)\\,\\Delta(\\cdot)$ under the Type I dispersion method. Reduced to incomplete Kloosterman / exponential sum bounds via thm:2.8 part 1."
+    },
+    "thm:5.8": {
+      "type": "Theorem",
+      "number": "5.8",
+      "section": "5",
+      "role": "main_technical",
+      "summary": "Type II estimates: similar reduction via different combinatorial decomposition. Fed by thm:2.8 part 2."
+    },
+    "prop:5.10": {
+      "type": "Proposition",
+      "number": "5.10",
+      "section": "5",
+      "role": "key_mechanism",
+      "summary": "$q$-van der Corput-style $A$-process estimate for incomplete Kloosterman sums on densely-divisible moduli. The numerical $56\\varpi+16\\delta+4\\sigma<1$ line traces back to here."
+    },
+    "prop:5.12": {
+      "type": "Proposition",
+      "number": "5.12",
+      "section": "5",
+      "role": "key_mechanism",
+      "summary": "$B$-process / Cauchy-Schwarz-completion combination on hyper-Kloosterman sums, giving the second Type I/II estimate."
+    },
+    "prop:5.13": {
+      "type": "Proposition",
+      "number": "5.13",
+      "section": "5",
+      "role": "key_mechanism",
+      "summary": "Reduction of Type II sums to algebraic-geometry Kloosterman bounds — the place where Deligne's Weil II is invoked."
+    },
+    "thm:6.8": {
+      "type": "Theorem",
+      "number": "6.8",
+      "section": "6",
+      "role": "main_technical",
+      "summary": "Bounds on hyper-Kloosterman sums over arithmetic progressions of moduli. Algebraic-geometric core; rests on Deligne's Riemann Hypothesis for Frobenius eigenvalues."
+    },
+    "thm:6.15": {
+      "type": "Theorem",
+      "number": "6.15",
+      "section": "6",
+      "role": "main_technical",
+      "summary": "Sheaf-theoretic estimate for Birch sums. Refined Deligne input used to widen the Type III window."
+    },
+    "thm:6.17": {
+      "type": "Theorem",
+      "number": "6.17",
+      "section": "6",
+      "role": "main_technical",
+      "summary": "Estimates for sums over hyper-Kloosterman sheaves twisted by Dirichlet characters."
+    },
+    "thm:6.27": {
+      "type": "Theorem",
+      "number": "6.27",
+      "section": "6",
+      "role": "main_technical",
+      "summary": "Square-root cancellation for trace-function correlations on densely-divisible moduli. Polymath8a's deepest Deligne-dependent input."
+    },
+    "thm:6.29": {
+      "type": "Theorem",
+      "number": "6.29",
+      "section": "6",
+      "role": "main_technical",
+      "summary": "Final Type III estimate combining 6.8/6.15/6.17/6.27 to close out the $600\\varpi+180\\delta<7$ inequality."
+    },
+    "thm:7.1": {
+      "type": "Theorem",
+      "number": "7.1",
+      "section": "7",
+      "role": "main_technical",
+      "summary": "Dense divisibility inheritance lemma: dense divisibility of the moduli is preserved under the combinatorial reductions of Section 5."
+    },
+    "prop:8.1": {
+      "type": "Proposition",
+      "number": "8.1",
+      "section": "8",
+      "role": "key_reduction",
+      "summary": "Sieve corollary: assuming $\\mathrm{MPZ}^{(4)}[\\varpi,\\delta]$ in a region, $\\mathrm{DHL}[k,2]$ holds for explicit $k$. The sieve consumer of thm:2.4."
+    },
+    "prop:8.4": {
+      "type": "Proposition",
+      "number": "8.4",
+      "section": "8",
+      "role": "key_reduction",
+      "summary": "Combination of $\\mathrm{MPZ}^{(4)}$ with Deligne-free $\\mathrm{MPZ}^{(2)}$: gives the unconditional improvement that fed into Polymath8b."
+    }
+  },
+  "edges": [
+    {
+      "from": "thm:1.1",
+      "to": "thm:2.4",
+      "type": "depends_on",
+      "note": "$\\mathrm{MPZ}^{(4)}$ inequality is the level-of-distribution upgrade that gives $\\theta = 1/2 + 7/300$."
+    },
+    {
+      "from": "thm:1.1",
+      "to": "claim:2.3",
+      "type": "addresses_same_question",
+      "note": "thm:1.1 is exactly $\\mathrm{MPZ}^{(4)}[7/300, \\delta]$ for some $\\delta > 0$."
+    },
+    {
+      "from": "thm:2.4",
+      "to": "thm:2.8",
+      "type": "depends_on",
+      "note": "MPZ inequality assembled from the three Type I/II/III estimates of thm:2.8."
+    },
+    {
+      "from": "thm:2.4",
+      "to": "thm:7.1",
+      "type": "depends_on",
+      "note": "Dense-divisibility inheritance ensures the Type estimates apply to the smooth moduli MPZ requires."
+    },
+    {
+      "from": "thm:2.8",
+      "to": "thm:5.1",
+      "type": "depends_on",
+      "note": "Type I estimate part 1."
+    },
+    {
+      "from": "thm:2.8",
+      "to": "thm:5.8",
+      "type": "depends_on",
+      "note": "Type II estimate."
+    },
+    {
+      "from": "thm:2.8",
+      "to": "thm:6.29",
+      "type": "depends_on",
+      "note": "Type III estimate."
+    },
+    {
+      "from": "thm:2.8",
+      "to": "thm:2.9",
+      "type": "depends_on",
+      "note": "Generalized Bombieri-Vinogradov is the baseline being improved on."
+    },
+    {
+      "from": "thm:5.1",
+      "to": "prop:5.10",
+      "type": "depends_on",
+      "note": "$q$-van der Corput style estimate."
+    },
+    {
+      "from": "thm:5.8",
+      "to": "prop:5.12",
+      "type": "depends_on",
+      "note": "Cauchy-Schwarz / $B$-process Kloosterman."
+    },
+    {
+      "from": "thm:5.8",
+      "to": "prop:5.13",
+      "type": "depends_on",
+      "note": "Algebraic-geometric reduction."
+    },
+    {
+      "from": "prop:5.13",
+      "to": "thm:6.8",
+      "type": "depends_on",
+      "note": "Hyper-Kloosterman sum bounds."
+    },
+    {
+      "from": "thm:6.29",
+      "to": "thm:6.8",
+      "type": "depends_on",
+      "note": "Type III closes via hyper-Kloosterman."
+    },
+    {
+      "from": "thm:6.29",
+      "to": "thm:6.15",
+      "type": "depends_on",
+      "note": "Birch sum input."
+    },
+    {
+      "from": "thm:6.29",
+      "to": "thm:6.17",
+      "type": "depends_on",
+      "note": "Twisted hyper-Kloosterman input."
+    },
+    {
+      "from": "thm:6.29",
+      "to": "thm:6.27",
+      "type": "depends_on",
+      "note": "Trace-function correlation cancellation."
+    },
+    {
+      "from": "prop:8.1",
+      "to": "thm:2.4",
+      "type": "depends_on",
+      "note": "Sieve corollary applies the $\\mathrm{MPZ}^{(4)}$ inequality."
+    },
+    {
+      "from": "prop:8.4",
+      "to": "thm:2.4",
+      "type": "depends_on",
+      "note": "Combined sieve consequence."
+    },
+    {
+      "from": "thm:5.1",
+      "to": "lem:1.3",
+      "type": "depends_on",
+      "note": "Divisor moment bounds in error terms."
+    },
+    {
+      "from": "thm:5.8",
+      "to": "lem:1.3",
+      "type": "depends_on",
+      "note": "Same."
+    },
+    {
+      "from": "thm:5.1",
+      "to": "lem:1.4",
+      "type": "depends_on",
+      "note": "GCD sum identities in Type I rearrangements."
+    }
+  ],
+  "critical_path": [
+    "thm:1.1",
+    "thm:2.4",
+    "thm:2.8",
+    "thm:6.29",
+    "thm:6.27"
+  ],
+  "proof_architecture": {
+    "main_result": {
+      "description": "thm:1.1 — densely-divisible Bombieri-Vinogradov beyond $\\theta = 1/2$.",
+      "nodes": [
+        "thm:1.1"
+      ]
+    },
+    "MPZ_target": {
+      "description": "claim:2.3 ($\\mathrm{MPZ}^{(i)}[\\varpi,\\delta]$) plus the inequality theorems thm:2.4 and thm:2.9. The structural reductions.",
+      "nodes": [
+        "claim:2.3",
+        "thm:2.4",
+        "thm:2.9"
+      ]
+    },
+    "type_I_II_III_decomposition": {
+      "description": "thm:2.8: package of three Type estimates with explicit linear-constraint regions in $(\\varpi,\\delta,\\sigma)$. The combinatorial heart of the argument.",
+      "nodes": [
+        "thm:2.8",
+        "thm:5.1",
+        "thm:5.8"
+      ]
+    },
+    "kloosterman_layer": {
+      "description": "Section 5 propositions: $q$-van der Corput, Cauchy-Schwarz, completion methods to reduce Type sums to incomplete Kloosterman / hyper-Kloosterman sums.",
+      "nodes": [
+        "prop:5.10",
+        "prop:5.12",
+        "prop:5.13"
+      ]
+    },
+    "deligne_layer": {
+      "description": "Section 6: algebraic-geometric core. Hyper-Kloosterman bounds, sheaf-theoretic Birch sums, trace-function cancellation. All ride on Deligne's Weil II (Riemann Hypothesis over finite fields).",
+      "nodes": [
+        "thm:6.8",
+        "thm:6.15",
+        "thm:6.17",
+        "thm:6.27",
+        "thm:6.29"
+      ]
+    },
+    "dense_divisibility_layer": {
+      "description": "thm:7.1: structural lemma showing the densely-divisible class is preserved through reductions.",
+      "nodes": [
+        "thm:7.1"
+      ]
+    },
+    "sieve_consequences": {
+      "description": "Section 8: prop:8.1 / prop:8.4 turn the equidistribution upgrades into $\\mathrm{DHL}[k,2]$ consequences. The sieve interface to Polymath8b.",
+      "nodes": [
+        "prop:8.1",
+        "prop:8.4"
+      ]
+    },
+    "technical_workhorses": {
+      "description": "lem:1.3, lem:1.4: divisor and GCD sum bounds used pervasively.",
+      "nodes": [
+        "lem:1.3",
+        "lem:1.4"
+      ]
+    }
+  },
+  "bibliography": {
+    "Zhang:2014": {
+      "title": "Bounded gaps between primes",
+      "authors": [
+        "Yitang Zhang"
+      ],
+      "arxiv_id": null,
+      "in_registry": false,
+      "role": "predecessor — Polymath8a is the open re-derivation and optimization"
+    },
+    "Deligne:WeilII": {
+      "title": "La conjecture de Weil II",
+      "authors": [
+        "Pierre Deligne"
+      ],
+      "year": 1980,
+      "arxiv_id": null,
+      "in_registry": false,
+      "role": "foundational — Riemann Hypothesis over finite fields, used in Section 6"
+    },
+    "BombieriVinogradov:1965": {
+      "title": "Bombieri-Vinogradov theorem",
+      "authors": [
+        "Enrico Bombieri",
+        "A. I. Vinogradov"
+      ],
+      "year": 1965,
+      "arxiv_id": null,
+      "in_registry": false,
+      "role": "foundational — baseline level-of-distribution being improved"
+    },
+    "FriedlanderIwaniec:1985": {
+      "title": "Incomplete Kloosterman sums and a divisor problem",
+      "authors": [
+        "John Friedlander",
+        "Henryk Iwaniec"
+      ],
+      "year": 1985,
+      "arxiv_id": null,
+      "in_registry": false,
+      "role": "foundational — completion-method exponential sum estimates"
+    }
+  }
+}

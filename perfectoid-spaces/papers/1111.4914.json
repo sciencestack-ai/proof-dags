@@ -1,0 +1,895 @@
+{
+  "paper": "1111.4914",
+  "title": "Perfectoid spaces",
+  "authors": [
+    "Peter Scholze"
+  ],
+  "year": 2012,
+  "venue": "Publ. Math. IHES 116",
+  "generated": "2026-05-07",
+  "status": "complete",
+  "nodes": {
+    "def:1.2": {
+      "type": "Definition",
+      "number": "1.2",
+      "section": "1",
+      "role": "definition",
+      "summary": "A perfectoid field is a complete topological field $K$ whose topology is induced by a nondiscrete rank-$1$ valuation, such that the Frobenius $\\Phi$ is surjective on $K^\\circ/p$."
+    },
+    "def:1.6": {
+      "type": "Definition",
+      "number": "1.6",
+      "section": "1",
+      "role": "definition",
+      "summary": "A perfectoid $K$-algebra is a Banach $K$-algebra $R$ such that the powerbounded subring $R^\\circ \\subset R$ is bounded and Frobenius $\\Phi$ is surjective on $R^\\circ/p$."
+    },
+    "thm:1.1": {
+      "type": "Theorem",
+      "number": "1.1",
+      "section": "1",
+      "role": "main_result",
+      "summary": "The absolute Galois groups of $\\mathbb{Q}_p(p^{1/p^\\infty})$ and $\\mathbb{F}_p((t))$ are canonically isomorphic. Concrete corollary of the general tilting equivalence; the headline reformulation of Fontaine–Wintenberger."
+    },
+    "thm:1.3": {
+      "type": "Theorem",
+      "number": "1.3",
+      "section": "1",
+      "role": "main_result",
+      "summary": "The absolute Galois groups of any perfectoid field $K$ and its tilt $K^\\flat$ are canonically isomorphic. General version of thm:1.1."
+    },
+    "thm:1.5": {
+      "type": "Theorem",
+      "number": "1.5",
+      "section": "1",
+      "role": "main_result",
+      "summary": "There is a homeomorphism of topological spaces $|(\\mathbb{A}^1_{K^\\flat})^{\\mathrm{ad}}| \\cong \\varprojlim_{T \\mapsto T^p} |(\\mathbb{A}^1_K)^{\\mathrm{ad}}|$. The intuition pump for the whole tilting story."
+    },
+    "thm:1.7": {
+      "type": "Theorem",
+      "number": "1.7",
+      "section": "1",
+      "role": "main_result",
+      "summary": "Tilting equivalence: there is a natural equivalence of categories between perfectoid $K$-algebras and perfectoid $K^\\flat$-algebras, with $R \\mapsto R^\\flat = \\varprojlim_{x \\mapsto x^p} R$. The central theorem of the paper."
+    },
+    "thm:1.8": {
+      "type": "Theorem",
+      "number": "1.8",
+      "section": "1",
+      "role": "main_result",
+      "summary": "For a perfectoid affinoid $K$-algebra $(R,R^+)$, the adic spectrum $X = \\mathrm{Spa}(R,R^+)$ and its tilt $X^\\flat$ are homeomorphic, and the structure presheaves are sheaves with vanishing higher cohomology in the almost category."
+    },
+    "thm:1.9": {
+      "type": "Theorem",
+      "number": "1.9",
+      "section": "1",
+      "role": "main_result",
+      "summary": "The categories of perfectoid spaces over $K$ and over $K^\\flat$ are equivalent. Globalizes thm:1.7 and thm:1.8."
+    },
+    "thm:1.10": {
+      "type": "Theorem",
+      "number": "1.10",
+      "section": "1",
+      "role": "main_result",
+      "summary": "Almost purity (algebraic form): if $R$ is perfectoid and $S/R$ is finite étale, then $S$ is perfectoid and $S^\\circ$ is almost finite étale over $R^\\circ$. Recovers and extends Faltings's almost purity theorem."
+    },
+    "thm:1.11": {
+      "type": "Theorem",
+      "number": "1.11",
+      "section": "1",
+      "role": "main_result",
+      "summary": "For a perfectoid space $X$ over $K$ with tilt $X^\\flat$, tilting induces an equivalence of étale sites $X_{\\mathrm{\\acute{e}t}} \\cong X^\\flat_{\\mathrm{\\acute{e}t}}$."
+    },
+    "thm:1.12": {
+      "type": "Theorem",
+      "number": "1.12",
+      "section": "1",
+      "role": "main_result",
+      "summary": "The étale topos of $\\mathbb{P}^{n,\\mathrm{ad}}_{K^\\flat}$ is equivalent to the inverse limit $\\varprojlim_\\varphi (\\mathbb{P}^{n,\\mathrm{ad}}_K)^\\sim_{\\mathrm{\\acute{e}t}}$. Bridge to characteristic-$p$ side for weight-monodromy."
+    },
+    "thm:1.14": {
+      "type": "Theorem",
+      "number": "1.14",
+      "section": "1",
+      "role": "main_result",
+      "summary": "Weight-monodromy holds for any geometrically connected proper smooth variety over a local field of characteristic $0$ that is a set-theoretic complete intersection in a projective smooth toric variety. The arithmetic application that motivates the paper."
+    },
+    "thm:3.7": {
+      "type": "Theorem",
+      "number": "3.7",
+      "section": "3",
+      "role": "key_reduction",
+      "summary": "Field-level tilting equivalence: finite extensions of a perfectoid field $K$ correspond to finite extensions of its tilt $K^\\flat$. Combined with Galois equivariance, this proves thm:1.3."
+    },
+    "thm:5.2": {
+      "type": "Theorem",
+      "number": "5.2",
+      "section": "5",
+      "role": "key_reduction",
+      "summary": "Algebra-level tilting equivalence factors as $K\\text{-Perf} \\cong K^{\\circ a}\\text{-Perf} \\cong (K^{\\circ a}/\\varpi)\\text{-Perf} = (K^{\\flat\\circ a}/\\varpi^\\flat)\\text{-Perf} \\cong K^{\\flat\\circ a}\\text{-Perf} \\cong K^\\flat\\text{-Perf}$. The proof of thm:1.7 in stages, using almost mathematics."
+    },
+    "thm:5.10": {
+      "type": "Theorem",
+      "number": "5.10",
+      "section": "5",
+      "role": "key_mechanism",
+      "summary": "The functor $A \\mapsto \\overline{A} = A/\\varpi$ induces an equivalence of categories $K^{\\circ a}\\text{-Perf} \\cong (K^{\\circ a}/\\varpi)\\text{-Perf}$. The deformation-theoretic engine of tilting — almost mathematics + cotangent-complex vanishing make modulo-$\\varpi$ data lift uniquely."
+    },
+    "prop:5.13": {
+      "type": "Proposition",
+      "number": "5.13",
+      "section": "5",
+      "role": "technical",
+      "summary": "Cotangent complex vanishing: $\\mathbb{L}_{R/\\mathbb{F}_p} \\cong 0$ for perfect $\\mathbb{F}_p$-algebras $R$, and a relative Frobenius criterion. The technical lemma making thm:5.10 work."
+    },
+    "prop:5.5": {
+      "type": "Proposition",
+      "number": "5.5",
+      "section": "5",
+      "role": "technical",
+      "summary": "For $R$ perfectoid, $\\Phi$ induces $R^\\circ/\\varpi^{1/p} \\cong R^\\circ/\\varpi$, and $A = R^{\\circ a}$ is a perfectoid $K^{\\circ a}$-algebra. Connects definition (perfectoid) to almost-mathematics objects."
+    },
+    "prop:5.8": {
+      "type": "Proposition",
+      "number": "5.8",
+      "section": "5",
+      "role": "auxiliary",
+      "summary": "Every perfectoid $K$-algebra $R$ is reduced. Used pervasively when handling powerbounded elements."
+    },
+    "prop:5.9": {
+      "type": "Proposition",
+      "number": "5.9",
+      "section": "5",
+      "role": "key_reduction",
+      "summary": "In characteristic $p$, a Banach $K$-algebra with bounded powerbounded subring is perfectoid iff it is perfect. Lets the characteristic-$p$ side of tilting be checked via perfectness."
+    },
+    "prop:5.22": {
+      "type": "Proposition",
+      "number": "5.22",
+      "section": "5",
+      "role": "technical",
+      "summary": "If $\\overline{A}$ is a perfectoid $K^{\\circ a}/\\varpi$-algebra and $\\overline{B}/\\overline{A}$ is finite étale, then $\\overline{B}$ is perfectoid. The mod-$\\varpi$ stability of perfectoid under finite étale."
+    },
+    "prop:5.23": {
+      "type": "Proposition",
+      "number": "5.23",
+      "section": "5",
+      "role": "key_reduction",
+      "summary": "Almost purity in characteristic $p$: for $R$ perfectoid over a perfectoid field of characteristic $p$ and $S/R$ finite étale, $S$ is perfectoid and $S^{\\circ a}$ is finite étale (and uniformly finitely projective) over $R^{\\circ a}$. The char-$p$ base case of thm:1.10."
+    },
+    "thm:5.25": {
+      "type": "Theorem",
+      "number": "5.25",
+      "section": "5",
+      "role": "key_reduction",
+      "summary": "Fully faithful functor $R^\\flat_{\\mathrm{f\\acute{e}t}} \\to R_{\\mathrm{f\\acute{e}t}}$ inverse to tilting; essential image consists of finite étale covers $S$ with $S$ perfectoid and $S^{\\circ a}$ finite étale over $R^{\\circ a}$. Combining with prop:5.23 lifts almost purity to characteristic $0$, proving thm:1.10."
+    },
+    "lem:6.2": {
+      "type": "Lemma",
+      "number": "6.2",
+      "section": "6",
+      "role": "technical",
+      "summary": "Perfectoid affinoid $K$-algebras and perfectoid affinoid $K^\\flat$-algebras are equivalent categories; tilting is given by $R^{\\flat+} = \\varprojlim_{x \\mapsto x^p} R^+$ and induces $R^{\\flat+}/\\varpi^\\flat \\cong R^+/\\varpi$. Affinoid version of thm:1.7."
+    },
+    "thm:6.3": {
+      "type": "Theorem",
+      "number": "6.3",
+      "section": "6",
+      "role": "key_reduction",
+      "summary": "For a perfectoid affinoid $K$-algebra $(R,R^+)$, $X = \\mathrm{Spa}(R,R^+)$ has $X \\cong X^\\flat$ as topological spaces, $\\mathcal{O}_X$ is a sheaf, and the almost structure sheaf has vanishing higher cohomology. Proves thm:1.8."
+    },
+    "prop:6.14": {
+      "type": "Proposition",
+      "number": "6.14",
+      "section": "6",
+      "role": "technical",
+      "summary": "Almost-Tate acyclicity: for perfectoid affinoids and any finite rational cover, the Čech complex of $\\mathcal{O}_X^{\\circ a}$ is exact. The vanishing input to thm:6.3."
+    },
+    "prop:6.17": {
+      "type": "Proposition",
+      "number": "6.17",
+      "section": "6",
+      "role": "key_reduction",
+      "summary": "Every perfectoid space $X$ over $K$ has a tilt $X^\\flat$, unique up to unique isomorphism, giving the equivalence between perfectoid spaces over $K$ and over $K^\\flat$. Proves thm:1.9 by globalizing lem:6.2 and thm:6.3."
+    },
+    "prop:7.4": {
+      "type": "Proposition",
+      "number": "7.4",
+      "section": "7",
+      "role": "technical",
+      "summary": "Henselian rigidity: for $A$ flat over $K^\\circ$ and henselian along $(\\varpi)$, finite étale $A[\\varpi^{-1}]$-algebras correspond to finite étale $\\hat{A}[\\varpi^{-1}]$-algebras. The henselian-completion bridge for almost purity in characteristic $0$."
+    },
+    "prop:7.7": {
+      "type": "Proposition",
+      "number": "7.7",
+      "section": "7",
+      "role": "technical",
+      "summary": "In characteristic $p$, an étale map of perfectoid spaces is locally pulled back from an étale map of noetherian adic spaces. Reduces étale geometry to classical adic spaces in char $p$."
+    },
+    "thm:7.9": {
+      "type": "Theorem",
+      "number": "7.9",
+      "section": "7",
+      "role": "key_reduction",
+      "summary": "For $(R,R^+)$ perfectoid affinoid: strongly finite étale covers of open affinoids $V \\subset X$ are equivalent to finite étale covers of $\\mathcal{O}_X(V)$. The site-level statement underlying thm:1.11."
+    },
+    "thm:7.12": {
+      "type": "Theorem",
+      "number": "7.12",
+      "section": "7",
+      "role": "key_reduction",
+      "summary": "Étale-site tilting: for any perfectoid space $X$ over $K$, tilting gives an isomorphism of sites $X_{\\mathrm{\\acute{e}t}} \\cong X^\\flat_{\\mathrm{\\acute{e}t}}$, functorial in $X$. Proves thm:1.11."
+    },
+    "thm:7.17": {
+      "type": "Theorem",
+      "number": "7.17",
+      "section": "7",
+      "role": "technical",
+      "summary": "$X_{\\mathrm{\\acute{e}t}}^\\sim$ is the projective limit of the fibred topos $(X_{i,\\mathrm{\\acute{e}t}}^\\sim)_i$ for a tower of noetherian adic spaces with perfectoid limit. Lets one transport étale information across the perfectoid limit."
+    },
+    "thm:9.4": {
+      "type": "Theorem",
+      "number": "9.4",
+      "section": "9",
+      "role": "key_mechanism",
+      "summary": "Weight-monodromy holds in the equal-characteristic case: for a curve $C/\\mathbb{F}_q$, $x \\in C(\\mathbb{F}_q)$, and $X$ proper smooth over $C \\setminus \\{x\\}$, weight-monodromy holds for $X_k$. Deligne's char-$p$ result, used as the base case via tilting."
+    },
+    "thm:9.6": {
+      "type": "Theorem",
+      "number": "9.6",
+      "section": "9",
+      "role": "key_reduction",
+      "summary": "Weight-monodromy in characteristic $0$ for set-theoretic complete intersections in projective smooth toric varieties. Proved by tilting the variety inside $\\mathbb{P}^{n,\\mathrm{ad}}_K$, using thm:1.12 and prop:8.X (toric perfectoid covers) to reduce to thm:9.4."
+    }
+  },
+  "edges": [
+    {
+      "from": "thm:1.1",
+      "to": "thm:1.3",
+      "type": "specializes",
+      "note": "Apply general perfectoid Galois equivalence to $K = \\mathbb{Q}_p(p^{1/p^\\infty})$, with tilt $K^\\flat = \\mathbb{F}_p((t))$."
+    },
+    {
+      "from": "thm:1.3",
+      "to": "thm:3.7",
+      "type": "depends_on",
+      "note": "Galois equivalence is the automorphism-group form of the finite-extension equivalence."
+    },
+    {
+      "from": "thm:1.5",
+      "to": "thm:1.8",
+      "type": "specializes",
+      "note": "Concrete instance of $|X| \\cong |X^\\flat|$ for the perfectoid affine line."
+    },
+    {
+      "from": "thm:1.7",
+      "to": "thm:5.2",
+      "type": "depends_on",
+      "note": "Body proof of the tilting equivalence."
+    },
+    {
+      "from": "thm:1.8",
+      "to": "thm:6.3",
+      "type": "depends_on",
+      "note": "Body proof of affinoid-level tilting + sheaf property."
+    },
+    {
+      "from": "thm:1.9",
+      "to": "prop:6.17",
+      "type": "depends_on",
+      "note": "Body proof of perfectoid-space tilting."
+    },
+    {
+      "from": "thm:1.10",
+      "to": "thm:5.25",
+      "type": "depends_on",
+      "note": "Body proof of almost purity, lifted from char $p$ via tilting."
+    },
+    {
+      "from": "thm:1.11",
+      "to": "thm:7.12",
+      "type": "depends_on",
+      "note": "Body proof of étale-site tilting."
+    },
+    {
+      "from": "thm:1.12",
+      "to": "thm:1.11",
+      "type": "depends_on",
+      "note": "Inverse-limit description of $\\mathbb{P}^n$ étale topos uses tilting on the projective adic perfectoid cover."
+    },
+    {
+      "from": "thm:1.12",
+      "to": "thm:7.17",
+      "type": "depends_on",
+      "note": "Topos limit comparison in the tower of $p$-power Frobenius pullbacks."
+    },
+    {
+      "from": "thm:1.14",
+      "to": "thm:9.6",
+      "type": "depends_on",
+      "note": "Body version of the weight-monodromy application."
+    },
+    {
+      "from": "thm:3.7",
+      "to": "def:1.2",
+      "type": "depends_on",
+      "note": "Field tilting is internal to the perfectoid-field category."
+    },
+    {
+      "from": "thm:5.2",
+      "to": "thm:5.10",
+      "type": "depends_on",
+      "note": "Mod-$\\varpi$ equivalence is the central step in the chain of equivalences."
+    },
+    {
+      "from": "thm:5.2",
+      "to": "prop:5.5",
+      "type": "depends_on",
+      "note": "Connects the analytic perfectoid algebra to its almost ring of integers."
+    },
+    {
+      "from": "thm:5.2",
+      "to": "prop:5.9",
+      "type": "depends_on",
+      "note": "Char-$p$ side of the chain reduces to perfect Banach algebras."
+    },
+    {
+      "from": "thm:5.2",
+      "to": "def:1.6",
+      "type": "depends_on",
+      "note": "Equivalence is over the category defined here."
+    },
+    {
+      "from": "thm:5.10",
+      "to": "prop:5.13",
+      "type": "depends_on",
+      "note": "Cotangent-complex vanishing supplies the obstruction-theoretic input that lifts mod-$\\varpi$ data uniquely."
+    },
+    {
+      "from": "thm:5.10",
+      "to": "prop:5.5",
+      "type": "depends_on",
+      "note": "Frobenius surjectivity mod $\\varpi^{1/p}$ is the structural property exploited."
+    },
+    {
+      "from": "thm:5.25",
+      "to": "prop:5.23",
+      "type": "depends_on",
+      "note": "Char-$p$ almost purity is the base case; tilting transports it to char $0$."
+    },
+    {
+      "from": "thm:5.25",
+      "to": "thm:1.7",
+      "type": "depends_on",
+      "note": "Tilting equivalence transports the finite-étale category."
+    },
+    {
+      "from": "thm:5.25",
+      "to": "prop:7.4",
+      "type": "depends_on",
+      "note": "Henselian-completion bridge identifies finite étale covers across completion."
+    },
+    {
+      "from": "prop:5.23",
+      "to": "prop:5.22",
+      "type": "depends_on",
+      "note": "Mod-$\\varpi$ étale extensions are perfectoid; lift to characteristic-$p$ algebras via thm:5.10."
+    },
+    {
+      "from": "prop:5.23",
+      "to": "thm:5.10",
+      "type": "depends_on",
+      "note": "Lifts mod-$\\varpi$ finite-étale data to integral level uniquely."
+    },
+    {
+      "from": "thm:5.10",
+      "to": "def:1.6",
+      "type": "depends_on",
+      "note": "Mod-$\\varpi$ equivalence is internal to perfectoid algebras."
+    },
+    {
+      "from": "lem:6.2",
+      "to": "thm:5.2",
+      "type": "depends_on",
+      "note": "Affinoid version reuses the algebra-level tilting."
+    },
+    {
+      "from": "thm:6.3",
+      "to": "lem:6.2",
+      "type": "depends_on",
+      "note": "Topological identification $|X| \\cong |X^\\flat|$ comes from the affinoid tilt."
+    },
+    {
+      "from": "thm:6.3",
+      "to": "prop:6.14",
+      "type": "depends_on",
+      "note": "Almost-Tate acyclicity is the sheaf and cohomology-vanishing input."
+    },
+    {
+      "from": "prop:6.17",
+      "to": "thm:6.3",
+      "type": "depends_on",
+      "note": "Globalize the affinoid statement to perfectoid spaces."
+    },
+    {
+      "from": "prop:6.17",
+      "to": "lem:6.2",
+      "type": "depends_on",
+      "note": "Glue affinoid tilts compatibly."
+    },
+    {
+      "from": "thm:7.9",
+      "to": "prop:7.7",
+      "type": "depends_on",
+      "note": "Reduce étale geometry over perfectoid affinoids to noetherian adic-space étale geometry in char $p$."
+    },
+    {
+      "from": "thm:7.9",
+      "to": "prop:7.4",
+      "type": "depends_on",
+      "note": "Transfers finite étale algebras across $\\varpi$-adic completion."
+    },
+    {
+      "from": "thm:7.12",
+      "to": "thm:7.9",
+      "type": "depends_on",
+      "note": "Étale-site equivalence is the global form of the finite-étale equivalence on affinoids."
+    },
+    {
+      "from": "thm:7.12",
+      "to": "thm:1.10",
+      "type": "depends_on",
+      "note": "Almost purity guarantees finite-étale covers stay inside the perfectoid world, making the site equivalence well-defined."
+    },
+    {
+      "from": "thm:9.6",
+      "to": "thm:9.4",
+      "type": "depends_on",
+      "note": "Char-$0$ weight-monodromy reduces to the classical char-$p$ result via tilting."
+    },
+    {
+      "from": "thm:9.6",
+      "to": "thm:1.12",
+      "type": "depends_on",
+      "note": "$\\mathbb{P}^n$ étale-topos limit description is the geometric bridge between char $0$ and char $p$."
+    },
+    {
+      "from": "thm:9.6",
+      "to": "thm:1.11",
+      "type": "depends_on",
+      "note": "Étale-site tilting applied to a small neighborhood of $Y$ inside $\\mathbb{P}^{n,\\mathrm{ad}}_K$."
+    },
+    {
+      "from": "thm:5.2",
+      "to": "prop:5.8",
+      "type": "depends_on",
+      "note": "Reducedness of perfectoid algebras simplifies the powerbounded subring analysis."
+    }
+  ],
+  "critical_path": [
+    "thm:1.14",
+    "thm:9.6",
+    "thm:9.4",
+    "thm:1.11",
+    "thm:7.12",
+    "thm:7.9",
+    "thm:1.10",
+    "thm:5.25",
+    "prop:5.23",
+    "thm:5.10",
+    "prop:5.13"
+  ],
+  "proof_architecture": {
+    "foundations": {
+      "description": "Definitions of perfectoid field and perfectoid algebra. Set up the categories tilting equates.",
+      "nodes": [
+        "def:1.2",
+        "def:1.6"
+      ]
+    },
+    "field_level_tilting": {
+      "description": "Section 3. Establish the Fontaine–Wintenberger-style equivalence between finite extensions of $K$ and $K^\\flat$, hence Galois group isomorphism.",
+      "nodes": [
+        "thm:1.1",
+        "thm:1.3",
+        "thm:3.7"
+      ]
+    },
+    "algebra_level_tilting": {
+      "description": "Section 5. The tilting equivalence at the level of perfectoid algebras, factored through the almost category and the mod-$\\varpi$ reduction. The deformation engine $\\thm{5.10}$ powered by cotangent-complex vanishing.",
+      "nodes": [
+        "thm:1.7",
+        "thm:5.2",
+        "thm:5.10",
+        "prop:5.5",
+        "prop:5.8",
+        "prop:5.9",
+        "prop:5.13"
+      ]
+    },
+    "almost_purity": {
+      "description": "Section 5 / 7. Almost purity: finite étale covers of perfectoid algebras stay perfectoid and become finite étale in the almost category. Char-$p$ base case lifted to char $0$ via tilting and henselian-completion bridges.",
+      "nodes": [
+        "thm:1.10",
+        "thm:5.25",
+        "prop:5.22",
+        "prop:5.23",
+        "prop:7.4"
+      ]
+    },
+    "spaces_and_analytic_topology": {
+      "description": "Section 6. Globalize the algebra statements to adic spaces: the topological space, the structure presheaf as a sheaf, the almost-Tate acyclicity, and tilting on perfectoid spaces.",
+      "nodes": [
+        "thm:1.5",
+        "thm:1.8",
+        "thm:1.9",
+        "lem:6.2",
+        "thm:6.3",
+        "prop:6.14",
+        "prop:6.17"
+      ]
+    },
+    "etale_topology": {
+      "description": "Section 7. Strongly étale = finite étale on affinoids; tilting equates étale sites; the $\\mathbb{P}^n$ étale topos as an inverse limit. The geometric machinery the weight-monodromy argument runs on.",
+      "nodes": [
+        "thm:1.11",
+        "thm:1.12",
+        "prop:7.7",
+        "thm:7.9",
+        "thm:7.12",
+        "thm:7.17"
+      ]
+    },
+    "weight_monodromy_application": {
+      "description": "Sections 8–9. Tilting a complete-intersection variety in a projective smooth toric variety to characteristic $p$, where Deligne's curve-base case (thm:9.4) gives the result. The arithmetic payoff that motivates the framework.",
+      "nodes": [
+        "thm:1.14",
+        "thm:9.6",
+        "thm:9.4",
+        "thm:1.12",
+        "thm:1.11"
+      ]
+    }
+  },
+  "bibliography": {
+    "FontaineWintenberger": {
+      "title": "Le 'corps des normes' de certaines extensions algébriques de corps locaux",
+      "authors": [
+        "Jean-Marc Fontaine",
+        "Jean-Pierre Wintenberger"
+      ],
+      "year": 1979,
+      "arxiv_id": null,
+      "in_registry": false,
+      "role": "Classical predecessor of tilting (char $0$ ↔ char $p$ Galois groups)."
+    },
+    "FaltingsAlmostEtale": {
+      "title": "Almost étale extensions",
+      "authors": [
+        "Gerd Faltings"
+      ],
+      "year": 2002,
+      "arxiv_id": null,
+      "in_registry": false,
+      "role": "Almost mathematics; precursor of almost purity."
+    },
+    "FaltingsPadicHodgeTheory": {
+      "title": "p-adic Hodge theory",
+      "authors": [
+        "Gerd Faltings"
+      ],
+      "year": 1988,
+      "arxiv_id": null,
+      "in_registry": false,
+      "role": "Original almost-purity setting."
+    },
+    "GabberRamero": {
+      "title": "Almost ring theory",
+      "authors": [
+        "Ofer Gabber",
+        "Lorenzo Ramero"
+      ],
+      "year": 2003,
+      "arxiv_id": null,
+      "in_registry": false,
+      "role": "Systematic foundations for almost mathematics; deformation theory used in thm:5.10–5.12."
+    },
+    "Huber": {
+      "title": "Étale Cohomology of Rigid Analytic Varieties and Adic Spaces",
+      "authors": [
+        "Roland Huber"
+      ],
+      "year": 1996,
+      "arxiv_id": null,
+      "in_registry": false,
+      "role": "Adic spaces; the geometric category perfectoid spaces sit inside."
+    },
+    "HuberContVal": {
+      "title": "Continuous valuations",
+      "authors": [
+        "Roland Huber"
+      ],
+      "year": 1993,
+      "arxiv_id": null,
+      "in_registry": false,
+      "role": "Foundations of continuous valuations on Tate rings."
+    },
+    "HuberDefAdic": {
+      "title": "A generalization of formal schemes and rigid analytic varieties",
+      "authors": [
+        "Roland Huber"
+      ],
+      "year": 1994,
+      "arxiv_id": null,
+      "in_registry": false,
+      "role": "Defines adic spaces."
+    },
+    "DeligneWeil2": {
+      "title": "La conjecture de Weil II",
+      "authors": [
+        "Pierre Deligne"
+      ],
+      "year": 1980,
+      "arxiv_id": null,
+      "in_registry": false,
+      "role": "Char-$p$ weight-monodromy (used as base case of thm:9.4)."
+    },
+    "DeligneICM": {
+      "title": "Hodge cycles, motives and weight-monodromy (ICM)",
+      "authors": [
+        "Pierre Deligne"
+      ],
+      "year": null,
+      "arxiv_id": null,
+      "in_registry": false,
+      "role": "Statement of the weight-monodromy conjecture."
+    },
+    "IllusieCotangent": {
+      "title": "Complexe cotangent et déformations I",
+      "authors": [
+        "Luc Illusie"
+      ],
+      "year": 1971,
+      "arxiv_id": null,
+      "in_registry": false,
+      "role": "Cotangent complex; obstruction theory used in thm:5.11–5.12."
+    },
+    "IllusieCotangent2": {
+      "title": "Complexe cotangent et déformations II",
+      "authors": [
+        "Luc Illusie"
+      ],
+      "year": 1972,
+      "arxiv_id": null,
+      "in_registry": false,
+      "role": "Cotangent complex deformation theory."
+    },
+    "Quillen": {
+      "title": "On the (co-)homology of commutative rings",
+      "authors": [
+        "Daniel Quillen"
+      ],
+      "year": 1970,
+      "arxiv_id": null,
+      "in_registry": false,
+      "role": "Cotangent complex foundations."
+    },
+    "KedlayaLiu": {
+      "title": "Relative p-adic Hodge theory: Foundations",
+      "authors": [
+        "Kiran S. Kedlaya",
+        "Ruochuan Liu"
+      ],
+      "year": 2012,
+      "arxiv_id": "1209.1641",
+      "in_registry": true,
+      "role": "Parallel development of relative perfectoid-style theory."
+    },
+    "Caraiani": {
+      "title": "Local-global compatibility and the action of monodromy on nearby cycles",
+      "authors": [
+        "Ana Caraiani"
+      ],
+      "year": 2010,
+      "arxiv_id": "1010.2188",
+      "in_registry": false,
+      "role": "Used in the weight-monodromy application."
+    },
+    "TaylorYoshida": {
+      "title": "Compatibility of local and global Langlands correspondences",
+      "authors": [
+        "Richard Taylor",
+        "Teruyoshi Yoshida"
+      ],
+      "year": 2007,
+      "arxiv_id": null,
+      "in_registry": false,
+      "role": "Background for Galois-side applications."
+    },
+    "HarrisTaylor": {
+      "title": "The geometry and cohomology of some simple Shimura varieties",
+      "authors": [
+        "Michael Harris",
+        "Richard Taylor"
+      ],
+      "year": 2001,
+      "arxiv_id": null,
+      "in_registry": false,
+      "role": "Shimura-variety background."
+    },
+    "BerkovichSpectralTheory": {
+      "title": "Spectral theory and analytic geometry over non-Archimedean fields",
+      "authors": [
+        "Vladimir Berkovich"
+      ],
+      "year": 1990,
+      "arxiv_id": null,
+      "in_registry": false,
+      "role": "Non-archimedean analytic geometry foundations."
+    },
+    "BoschGuentzerRemmert": {
+      "title": "Non-Archimedean Analysis",
+      "authors": [
+        "S. Bosch",
+        "U. Güntzer",
+        "R. Remmert"
+      ],
+      "year": 1984,
+      "arxiv_id": null,
+      "in_registry": false,
+      "role": "Tate algebra, affinoid algebra background."
+    },
+    "TateRigidAnalytic": {
+      "title": "Rigid analytic spaces",
+      "authors": [
+        "John Tate"
+      ],
+      "year": 1971,
+      "arxiv_id": null,
+      "in_registry": false,
+      "role": "Original rigid-analytic spaces, predecessor to adic spaces."
+    },
+    "deJongAlterations": {
+      "title": "Smoothness, semi-stability and alterations",
+      "authors": [
+        "Aise Johan de Jong"
+      ],
+      "year": 1996,
+      "arxiv_id": null,
+      "in_registry": false,
+      "role": "Used as an input to weight-monodromy reductions."
+    },
+    "Boyer": {
+      "title": "Monodromie du faisceau pervers des cycles évanescents...",
+      "authors": [
+        "Pascal Boyer"
+      ],
+      "year": null,
+      "arxiv_id": null,
+      "in_registry": false,
+      "role": "Local-monodromy results on Shimura varieties."
+    },
+    "Hellmann": {
+      "title": "Connectedness of Kisin varieties",
+      "authors": [
+        "Eugen Hellmann"
+      ],
+      "year": null,
+      "arxiv_id": null,
+      "in_registry": false,
+      "role": "Kisin-variety background."
+    },
+    "Hochster": {
+      "title": "Topological aspects of valuation theory",
+      "authors": [
+        "Melvin Hochster"
+      ],
+      "year": 1969,
+      "arxiv_id": null,
+      "in_registry": false,
+      "role": "Topology of spectral spaces."
+    },
+    "RapoportZink": {
+      "title": "Period spaces for p-divisible groups",
+      "authors": [
+        "Michael Rapoport",
+        "Thomas Zink"
+      ],
+      "year": 1996,
+      "arxiv_id": null,
+      "in_registry": false,
+      "role": "Rapoport–Zink moduli spaces; later perfectoid-ized in 1306.6427."
+    },
+    "Shin": {
+      "title": "Galois representations arising from some compact Shimura varieties",
+      "authors": [
+        "Sug Woo Shin"
+      ],
+      "year": null,
+      "arxiv_id": null,
+      "in_registry": false,
+      "role": "Shimura-variety Galois reps."
+    },
+    "Ito": {
+      "title": "Weight-monodromy conjecture for $p$-adically uniformized varieties",
+      "authors": [
+        "Tetsushi Ito"
+      ],
+      "year": null,
+      "arxiv_id": null,
+      "in_registry": false,
+      "role": "Earlier partial weight-monodromy result."
+    },
+    "ItoUpperHalfPlane": {
+      "title": "Weight-monodromy via $p$-adic upper half plane",
+      "authors": [
+        "Tetsushi Ito"
+      ],
+      "year": null,
+      "arxiv_id": null,
+      "in_registry": false,
+      "role": "Partial weight-monodromy via $p$-adic upper half-plane uniformization."
+    },
+    "Terasoma": {
+      "title": "Monodromy weight filtration is independent of $\\ell$",
+      "authors": [
+        "Tomohide Terasoma"
+      ],
+      "year": null,
+      "arxiv_id": null,
+      "in_registry": false,
+      "role": "Independence-of-$\\ell$ result, weight-monodromy adjacent."
+    },
+    "Dat": {
+      "title": "Espaces symétriques de Drinfeld and Lefschetz formula",
+      "authors": [
+        "Jean-François Dat"
+      ],
+      "year": null,
+      "arxiv_id": null,
+      "in_registry": false,
+      "role": "Drinfeld symmetric space results."
+    },
+    "Boyer2": {
+      "title": "Boyer monodromy II",
+      "authors": [
+        "Pascal Boyer"
+      ],
+      "year": null,
+      "arxiv_id": null,
+      "in_registry": false,
+      "role": "Local monodromy on Shimura varieties, follow-up."
+    },
+    "BoschLuetkebohmert": {
+      "title": "Formal and rigid geometry",
+      "authors": [
+        "Siegfried Bosch",
+        "Werner Lütkebohmert"
+      ],
+      "year": 1993,
+      "arxiv_id": null,
+      "in_registry": false,
+      "role": "Formal/rigid geometry background."
+    },
+    "HuberFiniteness": {
+      "title": "A finiteness result for direct image sheaves on adic spaces",
+      "authors": [
+        "Roland Huber"
+      ],
+      "year": 1998,
+      "arxiv_id": null,
+      "in_registry": false,
+      "role": "Adic-space cohomology finiteness."
+    },
+    "IllusieAutourDuTML": {
+      "title": "Autour du théorème de monodromie locale",
+      "authors": [
+        "Luc Illusie",
+        "et al."
+      ],
+      "year": 1994,
+      "arxiv_id": null,
+      "in_registry": false,
+      "role": "Local-monodromy theorem background."
+    }
+  }
+}

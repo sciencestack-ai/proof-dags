@@ -1,0 +1,116 @@
+{
+  "paper": "2411.13493",
+  "title": "Polynomial Freiman-Ruzsa, Reed-Muller codes and Shannon capacity",
+  "authors": ["Emmanuel Abbe", "Colin Sandon", "Vladyslav Shashkov", "Maryna Viazovska"],
+  "generated": "2026-03-18",
+  "status": "complete",
+
+  "nodes": {
+    "def:1": {
+      "type": "Definition",
+      "number": "1",
+      "title": "Codes that achieve capacity",
+      "section": "1",
+      "role": "definition",
+      "summary": "Shannon capacity-achieving codes definition."
+    },
+    "thm:9": {
+      "type": "Theorem",
+      "number": "9",
+      "section": "3",
+      "role": "main_result",
+      "summary": "RM codes have vanishing local error below capacity — establishes polarization theory for RM codes."
+    },
+    "thm:14": {
+      "type": "Theorem",
+      "number": "14",
+      "title": "Entropic Freiman-Ruzsa Theorem (GGMT)",
+      "section": "5.3",
+      "role": "dependency",
+      "summary": "Cites GGMT entropic PFR as key ingredient."
+    },
+    "cor:15": {
+      "type": "Corollary",
+      "number": "15",
+      "title": "Conditional Entropic Freiman-Ruzsa Theorem",
+      "section": "5.3",
+      "role": "key_result",
+      "summary": "Conditional version of entropic PFR used in the proof."
+    },
+    "lem:21": {
+      "type": "Lemma",
+      "number": "21",
+      "section": "6.1.2",
+      "role": "key_lemma",
+      "summary": "Small orbit localization lemma — novel contribution with broader applicability."
+    },
+    "cor:24": {
+      "type": "Corollary",
+      "number": "24",
+      "section": "6.1.2",
+      "role": "corollary",
+      "summary": "Corollary for subspace distance from orbit localization."
+    },
+    "thm:26": {
+      "type": "Theorem",
+      "number": "26",
+      "title": "Recurrent layer entropy inequality",
+      "section": "6.1.4",
+      "role": "key_result",
+      "summary": "Key inequality for polarization."
+    },
+    "thm:43": {
+      "type": "Theorem",
+      "number": "43",
+      "section": "7",
+      "role": "extension",
+      "summary": "Strong capacity result."
+    },
+    "conjecture:45": {
+      "type": "Conjecture",
+      "number": "45",
+      "section": "7",
+      "role": "conjecture",
+      "summary": "New additive combinatorics conjecture with broader coding theory applications."
+    }
+  },
+
+  "edges": [
+    {
+      "from": "thm:14",
+      "to": "cor:15",
+      "type": "implies",
+      "note": "The cited GGMT entropic PFR theorem yields the conditional version."
+    },
+    {
+      "from": "lem:21",
+      "to": "cor:15",
+      "type": "depends_on",
+      "note": "The small-orbit-localization lemma uses the conditional entropic PFR corollary."
+    },
+    {
+      "from": "lem:21",
+      "to": "cor:24",
+      "type": "implies",
+      "note": "Orbit localization yields the subspace-distance corollary."
+    },
+    {
+      "from": "thm:26",
+      "to": "cor:24",
+      "type": "depends_on",
+      "note": "The recurrent-layer entropy inequality uses the subspace-distance bounds."
+    },
+    {
+      "from": "thm:26",
+      "to": "thm:9",
+      "type": "proves",
+      "note": "The polarization bound establishes the Reed-Muller capacity result."
+    },
+    {
+      "from": "thm:43",
+      "to": "thm:9",
+      "type": "extends",
+      "note": "The strong-capacity theorem extends the main capacity result."
+    }
+  ]
+}

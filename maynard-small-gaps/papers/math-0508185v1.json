@@ -1,0 +1,218 @@
+{
+  "paper": "math/0508185v1",
+  "title": "Primes in Tuples I",
+  "authors": [
+    "D. A. Goldston",
+    "J. Pintz",
+    "C. Y. Yıldırım"
+  ],
+  "generated": "2026-05-06",
+  "status": "complete",
+  "nodes": {
+    "thm:1": {
+      "type": "Theorem",
+      "number": "1",
+      "section": "1",
+      "role": "main_result",
+      "summary": "Conditional bounded gaps: under primes-level-of-distribution $\\theta > 1/2$, every admissible $k$-tuple with $k \\ge C(\\theta)$ contains at least 2 primes infinitely often. Specifically $\\theta \\ge 0.971 \\Rightarrow k \\ge 6$ works (gives $H_1 \\le 16$ under EH)."
+    },
+    "thm:2": {
+      "type": "Theorem",
+      "number": "2",
+      "section": "1",
+      "role": "main_result",
+      "summary": "$E_1 := \\liminf_n (p_{n+1} - p_n) / \\log p_n = 0$. Unconditional. The qualitative breakthrough that small gaps exist on average — the result that started the entire bounded-gaps program."
+    },
+    "thm:3": {
+      "type": "Theorem",
+      "number": "3",
+      "section": "1",
+      "role": "main_result",
+      "summary": "Quantitative $E_r \\le (\\sqrt{r} - \\sqrt{2\\theta})^2$ conditional on level-of-distribution $\\theta$, $E_r \\le (\\sqrt{r} - 1)^2$ unconditional. The $m$-th gap version of thm:2."
+    },
+    "prop:1": {
+      "type": "Proposition",
+      "number": "1",
+      "section": "2",
+      "role": "key_reduction",
+      "summary": "$S_1$-type asymptotic: $\\sum \\Lambda_R(n;\\mathcal{H}_1,\\ell_1)\\,\\Lambda_R(n;\\mathcal{H}_2,\\ell_2) = \\binom{\\ell_1+\\ell_2}{\\ell_1} \\frac{(\\log R)^{r+\\ell_1+\\ell_2}}{(r+\\ell_1+\\ell_2)!} (\\mathfrak{S}(\\mathcal{H}) + o(1)) N$. The sieve weight squared sum — direct ancestor of Maynard's prop:4.1 $S_1$."
+    },
+    "prop:2": {
+      "type": "Proposition",
+      "number": "2",
+      "section": "2",
+      "role": "key_reduction",
+      "summary": "$S_2$-type asymptotic: weighted prime count $\\sum \\Lambda_R^2(n)\\,\\theta(n+h_0)$ — direct ancestor of Maynard's prop:4.1 $S_2$. The bridge from sieve to primes."
+    },
+    "lem:1": {
+      "type": "Lemma",
+      "number": "1",
+      "section": "5",
+      "role": "technical",
+      "summary": "Contour integral bounds for $\\int_{\\mathcal{L}} (\\log(|s|+3))^B |R^s/s^k\\,ds|$. Analytic input feeding the asymptotic evaluation in prop:1, prop:2."
+    },
+    "lem:2": {
+      "type": "Lemma",
+      "number": "2",
+      "section": "5",
+      "role": "technical",
+      "summary": "Divisor sum bounds: $\\sum_{q \\le x} d_m(q)/q \\le (\\lceil m \\rceil + \\log x)^{\\lceil m \\rceil}$. Used in error term control."
+    },
+    "lem:3": {
+      "type": "Lemma",
+      "number": "3",
+      "section": "8",
+      "role": "technical",
+      "summary": "Perturbed divisor-correlation asymptotic $\\mathcal{T}^*_R(a,b,d,u,v,h)$. Generalizes prop:1/prop:2 to handle shifts $h \\ll R^C$ — the technical heart of the GPY argument."
+    }
+  },
+  "edges": [
+    {
+      "from": "thm:1",
+      "to": "prop:1",
+      "type": "depends_on",
+      "note": "$S_1$-type evaluation needed for the sieve ratio."
+    },
+    {
+      "from": "thm:1",
+      "to": "prop:2",
+      "type": "depends_on",
+      "note": "$S_2$-type evaluation gives the prime count."
+    },
+    {
+      "from": "thm:2",
+      "to": "prop:1",
+      "type": "depends_on",
+      "note": "Same machinery, taking $k \\to \\infty$ to drive the ratio to zero."
+    },
+    {
+      "from": "thm:2",
+      "to": "prop:2",
+      "type": "depends_on",
+      "note": "Prime count blow-up of the sieve ratio."
+    },
+    {
+      "from": "thm:3",
+      "to": "prop:1",
+      "type": "depends_on",
+      "note": "$m$-th gap variant uses the same sieve framework."
+    },
+    {
+      "from": "thm:3",
+      "to": "prop:2",
+      "type": "depends_on",
+      "note": "Quantitative version using $S_2$ with multiple primes captured."
+    },
+    {
+      "from": "prop:1",
+      "to": "lem:1",
+      "type": "depends_on",
+      "note": "Contour-integral evaluation of the divisor sum."
+    },
+    {
+      "from": "prop:1",
+      "to": "lem:2",
+      "type": "depends_on",
+      "note": "Divisor bounds control errors."
+    },
+    {
+      "from": "prop:2",
+      "to": "lem:1",
+      "type": "depends_on",
+      "note": "Same contour evaluation with the prime indicator."
+    },
+    {
+      "from": "prop:2",
+      "to": "lem:2",
+      "type": "depends_on",
+      "note": "Same divisor bounds."
+    },
+    {
+      "from": "prop:2",
+      "to": "lem:3",
+      "type": "depends_on",
+      "note": "Shifted $\\mathcal{T}^*_R$ asymptotic is the technical lemma carrying the prime indicator."
+    },
+    {
+      "from": "prop:1",
+      "to": "lem:3",
+      "type": "depends_on",
+      "note": "Shifted $\\mathcal{T}^*_R$ asymptotic also feeds the unshifted case."
+    }
+  ],
+  "critical_path": [
+    "thm:2",
+    "prop:2",
+    "lem:3",
+    "lem:1"
+  ],
+  "proof_architecture": {
+    "main_results": {
+      "description": "thm:1 (conditional bounded gaps under EH-like $\\theta > 1/2$), thm:2 (unconditional $E_1 = 0$), thm:3 (quantitative $m$-th gap bound).",
+      "nodes": [
+        "thm:1",
+        "thm:2",
+        "thm:3"
+      ]
+    },
+    "selberg_sieve_engine": {
+      "description": "prop:1 / prop:2: 1D Selberg sieve sums $S_1, S_2$ in closed form. Direct ancestor of Maynard's $k$-dimensional prop:4.1.",
+      "nodes": [
+        "prop:1",
+        "prop:2"
+      ]
+    },
+    "analytic_machinery": {
+      "description": "lem:1 (contour integral), lem:2 (divisor-function bounds), lem:3 (perturbed $\\mathcal{T}^*_R$ asymptotic). Standard tools that feed the Selberg sums.",
+      "nodes": [
+        "lem:1",
+        "lem:2",
+        "lem:3"
+      ]
+    }
+  },
+  "bibliography": {
+    "ElliottHalberstam:1970": {
+      "title": "A conjecture in prime number theory",
+      "authors": [
+        "P. D. T. A. Elliott",
+        "H. Halberstam"
+      ],
+      "year": 1970,
+      "arxiv_id": null,
+      "in_registry": false,
+      "role": "foundational — EH conjecture (level of distribution)"
+    },
+    "BombieriVinogradov:1965": {
+      "title": "Bombieri-Vinogradov theorem",
+      "authors": [
+        "Enrico Bombieri",
+        "A. I. Vinogradov"
+      ],
+      "year": 1965,
+      "arxiv_id": null,
+      "in_registry": false,
+      "role": "foundational — unconditional $\\theta < 1/2$"
+    },
+    "Selberg": {
+      "title": "Selberg sieve (Collected Works)",
+      "authors": [
+        "Atle Selberg"
+      ],
+      "arxiv_id": null,
+      "in_registry": false,
+      "role": "foundational — Selberg sieve methodology"
+    },
+    "HardyLittlewood:1923": {
+      "title": "Some problems of 'Partitio numerorum' III: On the expression of a number as a sum of primes",
+      "authors": [
+        "G. H. Hardy",
+        "J. E. Littlewood"
+      ],
+      "year": 1923,
+      "arxiv_id": null,
+      "in_registry": false,
+      "role": "foundational — prime $k$-tuples conjecture and singular series"
+    }
+  }
+}

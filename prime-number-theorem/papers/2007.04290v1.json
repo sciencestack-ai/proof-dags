@@ -1,0 +1,270 @@
+{
+  "paper": "2007.04290v1",
+  "title": "Multiplicative functions in short intervals II",
+  "authors": ["Kaisa Matomäki", "Maksym Radziwiłł"],
+  "generated": "2026-05-25",
+  "status": "complete",
+  "nodes": {
+    "thm:1.7": {
+      "type": "Theorem",
+      "number": "1.7",
+      "section": "1",
+      "role": "main_result",
+      "summary": "Main theorem for complex multiplicative $f:\\mathbb{N}\\to\\mathbb{U}$: for $\\rho < \\rho_1 := 1/3 - 2/(3\\pi)$ and $2\\le h\\le X^{1/2}$, the short-interval average is approximated by $\\frac1h\\int_x^{x+h} u^{it_{f,X}}\\,du$ times the long mean, for almost all $x$ — extending Matomäki–Radziwiłł I to complex-valued functions with an explicit pretentious main term."
+    },
+    "thm:1.9": {
+      "type": "Theorem",
+      "number": "1.9",
+      "section": "1",
+      "role": "main_result",
+      "summary": "Precise version for $(\\alpha,X^\\theta)$-non-vanishing multiplicative $f$: with the natural scale $h=h_0 H(f;X)$, an explicit short-interval approximation with error governed by $\\frac{\\log\\log h_0}{\\log h_0}$ and the mean-value functional $\\widehat M(f;X)$."
+    },
+    "cor:1.10": {
+      "type": "Corollary",
+      "number": "1.10",
+      "section": "1",
+      "role": "corollary",
+      "summary": "Quantitative short-interval bound for non-vanishing $f$ obtained from Theorem 1.9, bounding $|\\frac1h\\sum_{x<n\\le x+h}f(n)|$ by the long-average size plus explicit error terms."
+    },
+    "thm:1.11": {
+      "type": "Theorem",
+      "number": "1.11",
+      "section": "1",
+      "role": "main_result",
+      "summary": "Lower-bound / dense-set version: for non-negative $(\\alpha,X^\\theta)$-non-vanishing $f:\\mathbb{N}\\to[0,1]$, the short-interval sum is bounded below for all but few $x$ — the form behind density and Hooley-type applications."
+    },
+    "thm:1.4": {
+      "type": "Theorem",
+      "number": "1.4",
+      "section": "1",
+      "role": "auxiliary",
+      "summary": "Application to norm-forms: for a number field $K/\\mathbb{Q}$, the non-negative norm-forms equidistribute in short intervals of length $h_0\\delta_K(X)^{-1}$ with the expected constant $C_K$."
+    },
+    "thm:1.5": {
+      "type": "Theorem",
+      "number": "1.5",
+      "section": "1",
+      "role": "auxiliary",
+      "summary": "Almost-all-intervals version for norm-forms: short intervals of length $\\to\\infty$ (on the norm-form scale) contain the expected count of norm-forms of $K$ for almost all $x$."
+    },
+    "cor:1.1": {
+      "type": "Corollary",
+      "number": "1.1",
+      "section": "1",
+      "role": "main_technical",
+      "summary": "Short-interval result for a general multiplicative subset $\\mathcal{N}\\subseteq\\mathbb{N}$ satisfying a density hypothesis (2) with exponent $\\alpha$: the abstract form from which the smooth-number and norm-form applications specialize."
+    },
+    "cor:1.2": {
+      "type": "Corollary",
+      "number": "1.2",
+      "section": "1",
+      "role": "auxiliary",
+      "summary": "Counting intervals where a multiplicative subset $\\mathcal{N}$ is over/under-represented: an exceptional-set bound following from Corollary 1.1."
+    },
+    "cor:1.3": {
+      "type": "Corollary",
+      "number": "1.3",
+      "section": "1",
+      "role": "auxiliary",
+      "summary": "Smooth numbers in short intervals: the number of $(x,x+h]$ with no $x^\\theta$-smooth number is $\\ll_{\\varepsilon,\\theta} X h^{-1/2+\\varepsilon}$; plus consecutive-smooth-number gap bounds."
+    },
+    "def:1.6": {
+      "type": "Definition",
+      "number": "1.6",
+      "section": "1",
+      "role": "definition",
+      "summary": "The pretentious mean-value functional $\\widehat M(f;X) := \\min_{|t|\\le X}\\sum_{p\\le X}\\frac{1-\\Re f(p)p^{-it}}{p}$, measuring how far $f$ is from a twisted constant — the quantity governing the size of $f$'s averages."
+    },
+    "def:1.8": {
+      "type": "Definition",
+      "number": "1.8",
+      "section": "1",
+      "role": "definition",
+      "summary": "$(\\alpha,\\Delta)$-non-vanishing: a multiplicative $f:\\mathbb{N}\\to\\mathbb{U}$ whose values avoid a degenerate pretentious configuration at scale $\\Delta$ — the hypothesis under which the precise Theorems 1.9 and 1.11 hold."
+    },
+    "lem:3.1": {
+      "type": "Lemma",
+      "number": "3.1",
+      "section": "3",
+      "role": "key_mechanism",
+      "summary": "Mean value theorem for Dirichlet polynomials with off-diagonal correction: $\\int_{-T}^T|A(it)|^2\\,dt \\ll T\\sum_{n\\le N}|a_n|^2 + T\\sum_n\\sum_{0<|k|}\\cdots$ — the $L^2$ baseline for sparse polynomials."
+    },
+    "lem:3.4": {
+      "type": "Lemma",
+      "number": "3.4",
+      "section": "3",
+      "role": "technical",
+      "summary": "Mean value for short-support polynomials: for $A(s)=\\sum_{x<n\\le x+y}a_n n^{-s}$ with $x\\ge y\\ge x^\\theta$, controls $\\int|A|^2$ over the sparse Dirichlet polynomial."
+    },
+    "lem:4.1": {
+      "type": "Lemma",
+      "number": "4.1",
+      "section": "4",
+      "role": "key_mechanism",
+      "summary": "Halász–Montgomery inequality for integers: the large-value bound $\\sum_{t\\in\\mathcal{T}}|A(it)|^2$ for one-spaced $\\mathcal{T}\\subseteq[-T,T]$ — the sharp large-value estimate."
+    },
+    "lem:4.2": {
+      "type": "Lemma",
+      "number": "4.2",
+      "section": "4",
+      "role": "technical",
+      "summary": "Refined large-value count for a length-$N$ Dirichlet polynomial in terms of $G=\\sum_{N<n\\le 2N}|a_n|^2 n^{-2}$, a variant of the Halász–Montgomery bound used for sparser configurations."
+    },
+    "lem:4.3": {
+      "type": "Lemma",
+      "number": "4.3",
+      "section": "4",
+      "role": "technical",
+      "summary": "Sieve majorant set $S^+$: for $\\mathcal{P}\\subset\\mathbb{P}\\cap[1,z]$ with $P(z)=\\prod_{p\\in\\mathcal{P}}p$, constructs a set $S^+$ with controlled sieve weights — the combinatorial input feeding the large-value estimates."
+    },
+    "lem:4.4": {
+      "type": "Lemma",
+      "number": "4.4",
+      "section": "4",
+      "role": "key_mechanism",
+      "summary": "Halász–Montgomery inequality for primes: the prime-supported analogue of Lemma 4.1 for $P(s)=\\sum_{N<p\\le 2N}a(p)p^{it}$, the large-value input for the prime factor."
+    },
+    "lem:6.1": {
+      "type": "Lemma",
+      "number": "6.1",
+      "section": "6",
+      "role": "technical",
+      "summary": "Decomposition of Dirichlet polynomials over factorization scales: for multiplicative $g:\\mathbb{N}\\to[0,1]$ and sequences with $a_{mp}=b_m c_p$ ($p\\nmid m$, $P\\le p\\le Q$), splits the polynomial into product pieces."
+    },
+    "lem:7.1": {
+      "type": "Lemma",
+      "number": "7.1",
+      "section": "7",
+      "role": "technical",
+      "summary": "Moment computation: high-power moment bound for the factored polynomial with $\\ell=\\lceil\\log Y_2/\\log Y_1\\rceil$, controlling $\\int|Q^\\ell A|^2$ for multiplicative $g:\\mathbb{N}\\to[0,1]$."
+    },
+    "lem:9.1": {
+      "type": "Lemma",
+      "number": "9.1",
+      "section": "9",
+      "role": "technical",
+      "summary": "Completely multiplicative models $g_{\\mathcal{J}}$ for $\\mathcal{J}\\subseteq\\{1,\\dots,J+2\\}$ used to split $f\\cdot 1_{\\mathcal{S}}$ scale-by-scale inside the factorization set."
+    },
+    "lem:10.3": {
+      "type": "Lemma",
+      "number": "10.3",
+      "section": "10",
+      "role": "technical",
+      "summary": "Lower-bound sieve weights $\\lambda_d=\\mu(d)g^\\star(d)\\cdots$ for multiplicative $g$ with the cutoff $\\chi$, realizing the well-factorable sieve that glues the $\\mathcal{S}$-theorem to all integers."
+    },
+    "lem:10.5": {
+      "type": "Lemma",
+      "number": "10.5",
+      "section": "10",
+      "role": "technical",
+      "summary": "Upper-bound sieve / Euler-product control: for non-negative multiplicative $f$, $\\frac1X\\sum_{X<n\\le 2X}f(n) \\le 10\\prod_p(\\cdots)$ — bounds the mean of $f$ by an explicit Euler product."
+    },
+    "lem:13.1": {
+      "type": "Lemma",
+      "number": "13.1",
+      "section": "13",
+      "role": "technical",
+      "summary": "Number-field constants: for $K/\\mathbb{Q}$ there exist $\\rho(K),\\alpha(K)$ and integers $M(K),R(K)$ describing the density and multiplicative structure of the norm-forms — the input to the norm-form applications."
+    },
+    "prop:8.3": {
+      "type": "Proposition",
+      "number": "8.3",
+      "section": "8",
+      "role": "key_mechanism",
+      "summary": "Parseval bound for sparse Dirichlet polynomials: the $\\int |F(1+it)|^2$ estimate over the factorization structure, built from the Halász–Montgomery mean and large-value theorems of §§3–4 — the analytic engine of the method."
+    },
+    "thm:9.2": {
+      "type": "Theorem",
+      "number": "9.2",
+      "section": "9",
+      "role": "key_reduction",
+      "summary": "Theorem inside the factorization set $\\mathcal{S}$ ($\\eta\\in(0,1/6-\\nu_2/3)$): the $\\mathcal{S}$-restricted short-interval estimate from which the main theorems are deduced."
+    },
+    "prop:10.4": {
+      "type": "Proposition",
+      "number": "10.4",
+      "section": "10",
+      "role": "technical",
+      "summary": "Sieve estimate bounding the exceptional set $\\mathcal{E}(h)$ where the factorization structure fails, for $1\\le P\\le Q\\le X^{3/4}$ — the sieve input gluing the $\\mathcal{S}$-theorem back to all integers."
+    },
+    "prop:12.1": {
+      "type": "Proposition",
+      "number": "12.1",
+      "section": "12",
+      "role": "main_technical",
+      "summary": "Lower-bound proposition for non-vanishing $f$ via a prime-factor decomposition $\\mathcal{P}=\\mathbb{P}\\cap(X^\\varepsilon,\\cdot]$, the engine behind the dense/lower-bound Theorem 1.11."
+    }
+  },
+  "edges": [
+    { "from": "thm:9.2", "to": "prop:8.3", "type": "depends_on", "note": "The $\\mathcal{S}$-restricted theorem is derived from the Parseval bound (Proposition 8.3)." },
+    { "from": "thm:1.7", "to": "thm:9.2", "type": "depends_on", "note": "Section 11 deduces the main complex-multiplicative theorem from the $\\mathcal{S}$-restricted Theorem 9.2." },
+    { "from": "thm:1.9", "to": "thm:9.2", "type": "depends_on", "note": "The precise non-vanishing version is also obtained from the $\\mathcal{S}$-restricted theorem." },
+    { "from": "thm:1.7", "to": "prop:10.4", "type": "uses", "note": "Passing from the $\\mathcal{S}$-restricted theorem to all integers uses the sieve estimate (Proposition 10.4)." },
+    { "from": "cor:1.10", "to": "thm:1.9", "type": "depends_on", "note": "The quantitative short-interval bound follows from Theorem 1.9." },
+    { "from": "thm:1.9", "to": "def:1.8", "type": "uses_hypothesis", "note": "Theorem 1.9 assumes $(\\alpha,X^\\theta)$-non-vanishing (Definition 1.8)." },
+    { "from": "thm:1.9", "to": "def:1.6", "type": "uses", "note": "The error term of Theorem 1.9 is phrased via the mean-value functional $\\widehat M(f;X)$ (Definition 1.6)." },
+    { "from": "thm:1.11", "to": "prop:12.1", "type": "depends_on", "note": "The lower-bound/dense theorem is built on the lower-bound proposition (12.1)." },
+    { "from": "thm:1.11", "to": "def:1.8", "type": "uses_hypothesis", "note": "The dense theorem assumes a non-negative $(\\alpha,X^\\theta)$-non-vanishing $f$ (Definition 1.8)." },
+    { "from": "prop:12.1", "to": "thm:9.2", "type": "depends_on", "note": "The lower-bound proposition uses the $\\mathcal{S}$-restricted theorem." },
+    { "from": "prop:12.1", "to": "lem:10.5", "type": "uses", "note": "The lower-bound argument uses the upper-bound sieve / Euler-product control (Lemma 10.5)." },
+    { "from": "cor:1.1", "to": "thm:1.7", "type": "depends_on", "note": "The general multiplicative-subset result specializes the main theorem 1.7." },
+    { "from": "cor:1.2", "to": "cor:1.1", "type": "depends_on", "note": "The over/under-representation interval count follows from Corollary 1.1." },
+    { "from": "cor:1.3", "to": "cor:1.2", "type": "depends_on", "note": "The smooth-numbers-in-short-intervals bound follows from Corollary 1.2." },
+    { "from": "thm:1.4", "to": "cor:1.1", "type": "depends_on", "note": "Equidistribution of norm-forms in short intervals specializes the multiplicative-subset Corollary 1.1." },
+    { "from": "thm:1.4", "to": "lem:13.1", "type": "depends_on", "note": "The norm-form application uses the number-field constants (Lemma 13.1)." },
+    { "from": "thm:1.5", "to": "thm:1.4", "type": "depends_on", "note": "The almost-all-intervals norm-form result follows from Theorem 1.4." },
+    { "from": "prop:8.3", "to": "lem:4.1", "type": "depends_on", "note": "The Parseval bound rests on the Halász–Montgomery inequality for integers (Lemma 4.1)." },
+    { "from": "prop:8.3", "to": "lem:4.4", "type": "depends_on", "note": "The prime-factor part uses the Halász–Montgomery inequality for primes (Lemma 4.4)." },
+    { "from": "prop:8.3", "to": "lem:7.1", "type": "depends_on", "note": "The high-moment contribution is controlled by the moment computation (Lemma 7.1)." },
+    { "from": "prop:8.3", "to": "def:1.6", "type": "uses", "note": "The size of $|F(1+it)|$ is measured by the mean-value functional (Definition 1.6)." },
+    { "from": "lem:4.1", "to": "lem:3.1", "type": "depends_on", "note": "The Halász–Montgomery inequality builds on the mean value theorem (Lemma 3.1)." },
+    { "from": "lem:4.2", "to": "lem:3.1", "type": "depends_on", "note": "The refined large-value count also derives from the mean value theorem (Lemma 3.1)." },
+    { "from": "lem:4.4", "to": "lem:4.1", "type": "depends_on", "note": "The prime Halász–Montgomery inequality specializes the integer version (Lemma 4.1)." },
+    { "from": "lem:4.4", "to": "lem:4.3", "type": "uses", "note": "The prime large-value bound uses the sieve majorant set $S^+$ (Lemma 4.3)." },
+    { "from": "lem:7.1", "to": "lem:6.1", "type": "depends_on", "note": "The moment computation uses the Dirichlet-polynomial decomposition (Lemma 6.1)." },
+    { "from": "lem:3.4", "to": "lem:3.1", "type": "uses", "note": "The short-support mean value specializes the general mean value theorem (Lemma 3.1)." },
+    { "from": "thm:9.2", "to": "lem:9.1", "type": "depends_on", "note": "The $\\mathcal{S}$-restricted theorem uses the completely multiplicative models $g_{\\mathcal{J}}$ (Lemma 9.1)." },
+    { "from": "prop:10.4", "to": "lem:10.3", "type": "depends_on", "note": "The sieve estimate uses the lower-bound sieve weights (Lemma 10.3)." },
+    { "from": "prop:10.4", "to": "lem:10.5", "type": "uses", "note": "The sieve estimate uses the Euler-product upper bound (Lemma 10.5)." }
+  ],
+  "critical_path": ["thm:1.7", "thm:9.2", "prop:8.3", "lem:4.1", "lem:3.1"],
+  "proof_architecture": {
+    "main_theorems": {
+      "description": "Short-interval theorems for complex-valued and non-vanishing multiplicative functions, with the sharp $\\rho_1=1/3-2/(3\\pi)$ range, and their quantitative and lower-bound forms.",
+      "nodes": ["thm:1.7", "thm:1.9", "cor:1.10", "thm:1.11"]
+    },
+    "definitions": {
+      "description": "The pretentious mean-value functional and the non-vanishing hypothesis.",
+      "nodes": ["def:1.6", "def:1.8"]
+    },
+    "general_and_smooth": {
+      "description": "The abstract multiplicative-subset result and its smooth-number consequences.",
+      "nodes": ["cor:1.1", "cor:1.2", "cor:1.3"]
+    },
+    "norm_forms": {
+      "description": "Applications to norm-forms of number fields in short intervals, and the number-field constants they rest on.",
+      "nodes": ["thm:1.4", "thm:1.5", "lem:13.1"]
+    },
+    "mean_and_halasz": {
+      "description": "The mean value theorems and Halász–Montgomery large-value inequalities for integer- and prime-supported Dirichlet polynomials, with the sieve majorant set.",
+      "nodes": ["lem:3.1", "lem:3.4", "lem:4.1", "lem:4.2", "lem:4.3", "lem:4.4"]
+    },
+    "decomposition_moment": {
+      "description": "The Dirichlet-polynomial decomposition, the moment computation, and the completely multiplicative models.",
+      "nodes": ["lem:6.1", "lem:7.1", "lem:9.1"]
+    },
+    "parseval_and_S": {
+      "description": "The Parseval bound on sparse Dirichlet polynomials and the resulting theorem inside the factorization set $\\mathcal{S}$.",
+      "nodes": ["prop:8.3", "thm:9.2"]
+    },
+    "sieve_lowerbound": {
+      "description": "The sieve estimates gluing $\\mathcal{S}$ back to all integers, and the lower-bound proposition behind the dense theorem.",
+      "nodes": ["prop:10.4", "prop:12.1", "lem:10.3", "lem:10.5"]
+    }
+  },
+  "bibliography": {
+    "MR1": { "title": "Multiplicative functions in short intervals (Matomäki–Radziwiłł I)", "arxiv_id": "1501.04585", "in_registry": true },
+    "Halasz": { "title": "G. Halász — mean values of multiplicative functions", "arxiv_id": null, "in_registry": false },
+    "MontgomeryLargeValues": { "title": "Montgomery — mean and large value theorems for Dirichlet polynomials", "arxiv_id": null, "in_registry": false }
+  }
+}

@@ -1,0 +1,89 @@
+{
+  "paper": "1603.06518v3",
+  "title": "The sphere packing problem in dimension 24",
+  "authors": ["Henry Cohn", "Abhinav Kumar", "Stephen D. Miller", "Danylo Radchenko", "Maryna Viazovska"],
+  "generated": "2026-05-26",
+  "status": "complete",
+  "nodes": {
+    "thm:1.1": {
+      "type": "Theorem",
+      "number": "1.1",
+      "section": "1",
+      "role": "main_result",
+      "summary": "The Leech lattice achieves the optimal sphere packing density in $\\mathbb{R}^{24}$, and it is the only periodic packing in $\\mathbb{R}^{24}$ with that density, up to scaling and isometries — the dimension-24 analogue of Viazovska's $E_8$ theorem."
+    },
+    "thm:1.2": {
+      "type": "Theorem",
+      "number": "1.2",
+      "section": "1",
+      "role": "foundational",
+      "summary": "Restatement of the Cohn–Elkies LP bound: for Schwartz $f:\\mathbb{R}^n\\to\\mathbb{R}$ with $f(0)=\\widehat{f}(0)=1$, $f(x)\\le 0$ for $|x|\\ge r$, and $\\widehat{f}(y)\\ge 0$ for all $y$, the sphere packing density in $\\mathbb{R}^n$ is at most $(r/2)^n$ times the volume of the unit ball. Imported from Cohn–Elkies (math/0110009)."
+    },
+    "lem:2.1": {
+      "type": "Lemma",
+      "number": "2.1",
+      "section": "2",
+      "role": "key_mechanism",
+      "summary": "The dim-24 $+1$-eigenfunction $a$ is a radial Schwartz function on $\\mathbb{R}^{24}$ with $\\widehat{a}=a$, analytically continuing from a contour-integral definition involving quasi-modular forms — the dim-24 analogue of the $+1$-eigenfunction in Viazovska's $E_8$ construction."
+    },
+    "lem:3.1": {
+      "type": "Lemma",
+      "number": "3.1",
+      "section": "3",
+      "role": "key_mechanism",
+      "summary": "The dim-24 $-1$-eigenfunction $b$ is a radial Schwartz function on $\\mathbb{R}^{24}$ with $\\widehat{b}=-b$, defined as a quasi-modular contour integral — the dim-24 analogue of Viazovska's $-1$-eigenfunction."
+    },
+    "lem:\\upshapeA.1": {
+      "type": "Lemma",
+      "number": "A.1",
+      "section": "A",
+      "role": "technical",
+      "summary": "Quasi-modular-form inequality used in the sign check: for $t>0$, $\\varphi(it) < 0$ — one of the explicit estimates establishing the magic function's sign conditions."
+    },
+    "lem:\\upshapeA.2": {
+      "type": "Lemma",
+      "number": "A.2",
+      "section": "A",
+      "role": "technical",
+      "summary": "Quasi-modular-form inequality: for $t>0$, $\\varphi(it) - \\frac{432}{\\pi^2}\\psi_S(it) > 0$ — a second sign estimate used in verifying the magic-function conditions."
+    },
+    "lem:\\upshapeA.3": {
+      "type": "Lemma",
+      "number": "A.3",
+      "section": "A",
+      "role": "technical",
+      "summary": "Growth inequality: for $t\\ge 1$, $B(t) > \\frac{1}{39}t e^{2\\pi t} - \\frac{10}{117\\pi}e^{2\\pi t}$ — the asymptotic estimate completing the magic-function sign argument."
+    }
+  },
+  "edges": [
+    { "from": "thm:1.1", "to": "thm:1.2", "type": "uses", "note": "The proof applies the Cohn–Elkies LP bound (Theorem 1.2) at radius $r=2$ (the minimum vector length of the Leech lattice)." },
+    { "from": "thm:1.1", "to": "lem:2.1", "type": "depends_on", "note": "The Leech magic function is a linear combination of the $+1$-eigenfunction $a$ (Lemma 2.1) and the $-1$-eigenfunction $b$ (Lemma 3.1)." },
+    { "from": "thm:1.1", "to": "lem:3.1", "type": "depends_on", "note": "The Leech magic function uses the $-1$-eigenfunction $b$ (Lemma 3.1)." },
+    { "from": "thm:1.1", "to": "lem:\\upshapeA.1", "type": "depends_on", "note": "The sign condition $f\\le 0$ for $|x|\\ge 2$ is verified using the inequality $\\varphi(it)<0$ (Lemma A.1)." },
+    { "from": "thm:1.1", "to": "lem:\\upshapeA.2", "type": "depends_on", "note": "The sign condition uses the inequality $\\varphi(it) - \\frac{432}{\\pi^2}\\psi_S(it) > 0$ (Lemma A.2)." },
+    { "from": "thm:1.1", "to": "lem:\\upshapeA.3", "type": "depends_on", "note": "The asymptotic sign argument uses the lower bound on $B(t)$ for large $t$ (Lemma A.3)." }
+  ],
+  "critical_path": ["thm:1.1", "lem:2.1"],
+  "proof_architecture": {
+    "main_result": {
+      "description": "The headline: the Leech lattice is the densest packing in $\\mathbb{R}^{24}$.",
+      "nodes": ["thm:1.1"]
+    },
+    "LP_bound_import": {
+      "description": "The Cohn–Elkies linear-programming bound, restated.",
+      "nodes": ["thm:1.2"]
+    },
+    "eigenfunctions": {
+      "description": "The dim-24 $+1$ and $-1$ Fourier eigenfunctions $a$ and $b$ from quasi-modular contour integrals — the Leech analogue of Viazovska's $E_8$ eigenfunctions.",
+      "nodes": ["lem:2.1", "lem:3.1"]
+    },
+    "quasimodular_inequalities": {
+      "description": "Explicit estimates on quasi-modular forms verifying the magic function's sign conditions.",
+      "nodes": ["lem:\\upshapeA.1", "lem:\\upshapeA.2", "lem:\\upshapeA.3"]
+    }
+  },
+  "bibliography": {
+    "CE": { "title": "New upper bounds on sphere packings I (Cohn–Elkies)", "arxiv_id": "math/0110009", "in_registry": true },
+    "Viazovska-E8": { "title": "The sphere packing problem in dimension 8 (Viazovska)", "arxiv_id": "1603.04246", "in_registry": true }
+  }
+}

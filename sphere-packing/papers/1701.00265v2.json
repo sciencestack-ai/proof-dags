@@ -1,0 +1,168 @@
+{
+  "paper": "1701.00265v2",
+  "title": "Fourier interpolation on the real line",
+  "authors": ["Danylo Radchenko", "Maryna Viazovska"],
+  "generated": "2026-05-26",
+  "status": "complete",
+  "nodes": {
+    "thm:1": {
+      "type": "Theorem",
+      "number": "1",
+      "section": "1",
+      "role": "main_result",
+      "summary": "Even Fourier interpolation on $\\mathbb{R}$: there exists a basis of even Schwartz functions $\\{a_n\\}_{n\\ge 0}$ such that every even Schwartz $f:\\mathbb{R}\\to\\mathbb{R}$ is reconstructed from $f(\\sqrt n)$ and $\\widehat{f}(\\sqrt n)$, $n\\ge 0$ — the analytic skeleton behind Viazovska's magic functions, abstracted to a free-standing interpolation theorem."
+    },
+    "cor:1": {
+      "type": "Corollary",
+      "number": "1",
+      "section": "1",
+      "role": "corollary",
+      "summary": "Vanishing principle: an even Schwartz $f$ with $f(\\sqrt n)=\\widehat{f}(\\sqrt n)=0$ for all $n\\in\\mathbb{Z}_{\\ge 0}$ vanishes identically — the rigidity statement that pins down the magic function up to scalars."
+    },
+    "thm:2": {
+      "type": "Theorem",
+      "number": "2",
+      "section": "1",
+      "role": "main_result",
+      "summary": "The interpolation map $\\Psi$ is an isomorphism between even Schwartz functions and $\\ker L\\subset\\mathfrak{s}\\oplus\\mathfrak{s}$ for an explicit linear functional $L$ — characterizes which value/transform-value sequences come from a Schwartz function."
+    },
+    "thm:3": {
+      "type": "Theorem",
+      "number": "3",
+      "section": "3",
+      "role": "key_mechanism",
+      "summary": "Modular generating functions for the even interpolation basis: $\\sum_{n\\ge 0} g_n^{\\pm}(z)e^{i\\pi n\\tau} = \\theta(\\tau)(1-2\\lambda(\\tau))\\cdots$ — explicit weight-$3/2$ weakly-holomorphic modular forms on $\\Gamma_\\theta$ yielding the basis $\\{a_n\\}$."
+    },
+    "thm:4": {
+      "type": "Theorem",
+      "number": "4",
+      "section": "5",
+      "role": "key_mechanism",
+      "summary": "Growth bound on the even basis: $|b_n^\\varepsilon(x)| = O(n^2)$ uniformly in $x$ — the polynomial-growth estimate that lets the interpolation series converge for Schwartz inputs."
+    },
+    "thm:5": {
+      "type": "Theorem",
+      "number": "5",
+      "section": "7",
+      "role": "key_mechanism",
+      "summary": "Modular generating functions for the odd interpolation basis: $\\sum_{n\\ge 0} h_n^{\\pm}(z)e^{i\\pi n\\tau} = \\theta^3(\\tau)(1-2\\lambda(\\tau))\\cdots$ — the odd analogue of Theorem 3."
+    },
+    "thm:6": {
+      "type": "Theorem",
+      "number": "6",
+      "section": "7",
+      "role": "key_mechanism",
+      "summary": "Growth bound on the odd basis: $|d_n^\\varepsilon(x)| = O(n^{5/2})$ uniformly in $x$ — odd analogue of Theorem 4 with the slightly weaker exponent."
+    },
+    "thm:7": {
+      "type": "Theorem",
+      "number": "7",
+      "section": "7",
+      "role": "main_result",
+      "summary": "Odd Fourier interpolation on $\\mathbb{R}$: the odd analogue of Theorem 1 — an interpolation basis for odd Schwartz functions from values at $\\sqrt n$, $n\\ge 1$."
+    },
+    "prop:1": {
+      "type": "Proposition",
+      "number": "1",
+      "section": "4",
+      "role": "technical",
+      "summary": "$b_m^\\varepsilon$ is a Schwartz eigenfunction of the Fourier transform: $\\widehat{b_m^\\varepsilon}(x) = \\varepsilon\\, b_m^\\varepsilon(x)$ and satisfies the prescribed interpolation values — the building block of the even basis."
+    },
+    "prop:2": {
+      "type": "Proposition",
+      "number": "2",
+      "section": "4",
+      "role": "technical",
+      "summary": "$F_\\varepsilon(\\tau,x)$ admits an analytic continuation to the upper half-plane $\\mathfrak{H}$ satisfying the prescribed functional equation — converts the interpolation problem into a modular-form question."
+    },
+    "prop:3": {
+      "type": "Proposition",
+      "number": "3",
+      "section": "7",
+      "role": "technical",
+      "summary": "$d_m^\\varepsilon$ is an odd Schwartz function and a Fourier eigenfunction with eigenvalue $-i\\varepsilon$ — the odd analogue of $b_m^\\varepsilon$."
+    },
+    "prop:4": {
+      "type": "Proposition",
+      "number": "4",
+      "section": "7",
+      "role": "technical",
+      "summary": "Structural property of the odd interpolation basis (analogue of prop:1 / prop:2 for the odd case) used in deducing Theorem 7."
+    },
+    "lem:1": {
+      "type": "Lemma",
+      "number": "1",
+      "section": "5",
+      "role": "technical",
+      "summary": "Fourier-expansion growth bound: a $2$-periodic analytic $f(\\tau)=\\sum_{n\\ge 0}a_n e^{i\\pi n\\tau}$ with $|f(\\tau)|\\le C\\,\\mathrm{Im}(\\tau)^{-\\alpha}$ has $|a_n|\\le C' n^\\alpha$ — the modular-form analogue of Bessel's inequality used in the growth bound."
+    },
+    "lem:2": {
+      "type": "Lemma",
+      "number": "2",
+      "section": "5",
+      "role": "technical",
+      "summary": "Theta-group iteration: for $\\tau\\in\\mathfrak{H}$ with $|\\tau|\\ge 1$ and a sequence of nonzero integers, defines an iterated sequence $\\tau_j\\in\\mathfrak{H}$ moving toward the cusp — the elementary geometric input to the growth estimate."
+    },
+    "lem:3": {
+      "type": "Lemma",
+      "number": "3",
+      "section": "5",
+      "role": "technical",
+      "summary": "Cocycle decay lemma: for a cocycle $\\{\\psi_A\\}_{A\\in\\Gamma_\\theta}$ relative to the slash action $|_{k/2}^{-\\varepsilon}$ with $\\psi_{T^2}=0$ and an explicit bound on $\\psi_S$, controls the growth of $\\psi$ across the theta group."
+    },
+    "lem:4": {
+      "type": "Lemma",
+      "number": "4",
+      "section": "5",
+      "role": "technical",
+      "summary": "Derivative-and-moment bound: $|x^k \\frac{d^n}{dx^n}F_\\varepsilon(\\tau,x)| \\le C_{n,k}(1+\\mathrm{Im}(\\tau)^{-(n+k+1)/2})$ — the Schwartz-class control needed to interchange limits in the interpolation formula."
+    }
+  },
+  "edges": [
+    { "from": "thm:1", "to": "prop:1", "type": "depends_on", "note": "The interpolation basis $a_n$ is assembled from the Schwartz eigenfunctions $b_m^\\varepsilon$ of Proposition 1." },
+    { "from": "thm:1", "to": "thm:3", "type": "depends_on", "note": "The basis $\\{a_n\\}$ is defined via the modular generating functions of Theorem 3." },
+    { "from": "thm:1", "to": "thm:4", "type": "depends_on", "note": "Convergence of the interpolation series requires the polynomial growth bound (Theorem 4)." },
+    { "from": "cor:1", "to": "thm:1", "type": "depends_on", "note": "Vanishing is the kernel statement of the interpolation isomorphism (Theorem 1)." },
+    { "from": "thm:2", "to": "thm:1", "type": "depends_on", "note": "The isomorphism statement specifies the image of the interpolation map of Theorem 1." },
+    { "from": "thm:3", "to": "prop:2", "type": "depends_on", "note": "The generating-function identity rests on the analytic continuation of $F_\\varepsilon$ (Proposition 2)." },
+    { "from": "prop:1", "to": "prop:2", "type": "depends_on", "note": "The eigenfunction property is read off the analytic continuation and functional equation of $F_\\varepsilon$." },
+    { "from": "thm:4", "to": "lem:1", "type": "depends_on", "note": "The growth bound uses the Fourier-expansion / Bessel-type lemma." },
+    { "from": "thm:4", "to": "lem:2", "type": "depends_on", "note": "Theta-group iteration is the geometric input to the growth estimate." },
+    { "from": "thm:4", "to": "lem:3", "type": "depends_on", "note": "The cocycle decay lemma controls growth across $\\Gamma_\\theta$." },
+    { "from": "thm:4", "to": "lem:4", "type": "depends_on", "note": "Derivative-and-moment control on $F_\\varepsilon$ closes the growth argument." },
+    { "from": "thm:7", "to": "prop:3", "type": "depends_on", "note": "The odd interpolation theorem rests on the odd eigenfunctions $d_m^\\varepsilon$ (Proposition 3)." },
+    { "from": "thm:7", "to": "thm:5", "type": "depends_on", "note": "The odd basis is assembled from the odd generating functions of Theorem 5." },
+    { "from": "thm:7", "to": "thm:6", "type": "depends_on", "note": "Convergence requires the odd growth bound (Theorem 6)." },
+    { "from": "thm:7", "to": "prop:4", "type": "depends_on", "note": "The structural odd-basis property of Proposition 4 enters the deduction." },
+    { "from": "thm:5", "to": "prop:3", "type": "depends_on", "note": "The odd generating functions encode the odd eigenfunctions of Proposition 3." },
+    { "from": "thm:6", "to": "lem:1", "type": "depends_on", "note": "Odd growth uses the same Fourier-expansion bound." },
+    { "from": "thm:6", "to": "lem:4", "type": "depends_on", "note": "Odd growth uses the derivative-and-moment control." }
+  ],
+  "critical_path": ["thm:1", "thm:3", "prop:2"],
+  "proof_architecture": {
+    "main_theorems": {
+      "description": "The interpolation theorems for even and odd Schwartz functions, the vanishing corollary, and the isomorphism with $\\ker L$.",
+      "nodes": ["thm:1", "cor:1", "thm:2", "thm:7"]
+    },
+    "generating_functions": {
+      "description": "Explicit weakly-holomorphic modular forms on $\\Gamma_\\theta$ whose Fourier coefficients give the even and odd interpolation bases.",
+      "nodes": ["thm:3", "thm:5"]
+    },
+    "eigenfunctions": {
+      "description": "Schwartz Fourier-eigenfunctions $b_m^\\varepsilon$ and $d_m^\\varepsilon$ that the bases are built from, and their analytic-continuation backbone.",
+      "nodes": ["prop:1", "prop:2", "prop:3", "prop:4"]
+    },
+    "growth_bounds": {
+      "description": "Polynomial growth bounds $O(n^2)$ on the even basis and $O(n^{5/2})$ on the odd basis — what makes the interpolation series converge.",
+      "nodes": ["thm:4", "thm:6"]
+    },
+    "modular_lemmas": {
+      "description": "Auxiliary modular-form / theta-group lemmas (Fourier-expansion bound, theta-group iteration, cocycle decay, derivative-and-moment control) used in the growth estimates.",
+      "nodes": ["lem:1", "lem:2", "lem:3", "lem:4"]
+    }
+  },
+  "bibliography": {
+    "Viazovska-E8": { "title": "The sphere packing problem in dimension 8 (Viazovska)", "arxiv_id": "1603.04246", "in_registry": true },
+    "Leech": { "title": "The sphere packing problem in dimension 24 (CKMRV)", "arxiv_id": "1603.06518", "in_registry": true }
+  }
+}

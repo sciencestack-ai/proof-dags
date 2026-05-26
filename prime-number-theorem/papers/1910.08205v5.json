@@ -1,0 +1,237 @@
+{
+  "paper": "1910.08205v5",
+  "title": "Zero-free regions for the Riemann zeta function",
+  "authors": ["Kevin Ford"],
+  "generated": "2026-05-25",
+  "status": "complete",
+  "nodes": {
+    "thm:1": {
+      "type": "Theorem",
+      "number": "1",
+      "section": "1",
+      "role": "main_result",
+      "summary": "Asymptotic Vinogradov–Korobov zero-free region: assuming the mean-value bound (1.2) with constant $B$, for large $|t|$ one has $\\zeta(\\beta+it)\\ne 0$ whenever $1-\\beta \\le \\frac{0.05507\\, B^{-2/3}}{(\\log|t|)^{2/3}(\\log\\log|t|)^{1/3}}$."
+    },
+    "thm:2": {
+      "type": "Theorem",
+      "number": "2",
+      "section": "1",
+      "role": "key_reduction",
+      "summary": "Quantitative engine behind Theorem 5: under (1.2) with $0<B<10$, $A\\ge 1$ and $T_0 \\ge e^{30000}$, no zero $\\beta+it$ satisfies $1-\\beta \\ge \\frac{M_1 B^{-2/3}}{(\\log t)^{2/3}(\\log\\log t)^{1/3}}$ with the explicit $M_1$ given. Proved in Section 8."
+    },
+    "thm:3": {
+      "type": "Theorem",
+      "number": "3",
+      "section": "1",
+      "role": "main_technical",
+      "summary": "Medium-range engine behind Theorem 4: for $t \\ge 5.45\\times 10^8$, $\\zeta(\\beta+it)\\ne 0$ for $1-\\beta \\le \\frac{0.04962 - c_6(t)}{J(t)+0.155\\log\\log t + 0.675}$ with $J(t)=\\min(\\tfrac14\\log t+1.8521,\\ \\tfrac16\\log t+\\log\\log t+\\log 3)$. Proved in Section 9."
+    },
+    "thm:4": {
+      "type": "Theorem",
+      "number": "4",
+      "section": "1",
+      "role": "main_result",
+      "summary": "Explicit classical-type zero-free region: $\\zeta(\\beta+it)\\ne 0$ for $|t|\\ge 3$ and $1-\\beta \\le \\frac{1}{8.464\\,\\log|t|}$."
+    },
+    "thm:5": {
+      "type": "Theorem",
+      "number": "5",
+      "section": "1",
+      "role": "main_result",
+      "summary": "The headline explicit Vinogradov–Korobov zero-free region: $\\zeta(\\beta+it)\\ne 0$ in $1-\\beta \\le \\frac{1}{57.54\\,(\\log|t|)^{2/3}(\\log\\log|t|)^{1/3}}$ for $|t|\\ge 3$ — the strongest fully-explicit VK region of the paper."
+    },
+    "lem:2.1": {
+      "type": "Lemma",
+      "number": "2.1",
+      "section": "2",
+      "role": "key_mechanism",
+      "summary": "Hadamard-factorization representation: for $f$ a quotient of entire functions of order $<k$ with $f(0)\\ne 0$, both $f'(z)/f(z)$ and $\\log|f(z)|$ are expressed as sums over zeros/poles $\\rho$ with $|\\rho|\\le 2|z|$ plus an $O_f(|z|^{k-1})$ (resp. $O_f(|z|^k)$) error."
+    },
+    "lem:2.2": {
+      "type": "Lemma",
+      "number": "2.2",
+      "section": "2",
+      "role": "key_mechanism",
+      "summary": "The 'zero detector' identity: $-\\Re\\frac{f'(z_0)}{f(z_0)}$ equals a localized cotangent sum $\\frac{\\pi}{2\\eta}\\sum_{|\\Re(z_0-\\rho)|\\le\\eta} m_\\rho \\Re\\cot(\\frac{\\pi(\\rho-z_0)}{2\\eta})$ plus a $\\cosh^{-2}$-weighted integral of $\\log|f|$ on two vertical lines, for almost all $\\eta>0$."
+    },
+    "lem:3.1": {
+      "type": "Lemma",
+      "number": "3.1",
+      "section": "3",
+      "role": "technical",
+      "summary": "Basic $\\zeta$ bounds: for $\\sigma>1$, $\\frac{1}{\\zeta(\\sigma)} \\le |\\zeta(\\sigma+it)| \\le \\zeta(\\sigma)$ and $|-\\frac{\\zeta'}{\\zeta}(\\sigma+it)| < \\frac{1}{\\sigma-1}$; and for $1<\\sigma\\le 1.8$, $\\zeta(\\sigma) \\le 0.64 + \\frac{1}{\\sigma-1}$."
+    },
+    "lem:3.2": {
+      "type": "Lemma",
+      "number": "3.2",
+      "section": "3",
+      "role": "technical",
+      "summary": "Bound on the logarithmic derivative on the line $\\Re s = -\\tfrac12$: $\\left|\\frac{\\zeta'(-\\frac12+iu)}{\\zeta(-\\frac12+iu)}\\right| \\le 4.62 + \\tfrac12\\log(1+u^2/9)$."
+    },
+    "lem:3.3": {
+      "type": "Lemma",
+      "number": "3.3",
+      "section": "3",
+      "role": "technical",
+      "summary": "Sum over nontrivial zeros: $\\sum_\\rho \\frac{1}{|\\rho|^2} \\le 0.0463$."
+    },
+    "lem:3.4": {
+      "type": "Lemma",
+      "number": "3.4",
+      "section": "3",
+      "role": "main_technical",
+      "summary": "Converts a $\\zeta$ growth bound $|\\zeta(\\sigma+iy)| \\le X t^Y (\\log t)^Z$ (with $Y+Z\\ge 0.1$) on a fixed line into an explicit integral bound used to detect zeros; the bridge from exponential-sum input to the zero count."
+    },
+    "lem:4.1": {
+      "type": "Lemma",
+      "number": "4.1",
+      "section": "4",
+      "role": "key_mechanism",
+      "summary": "Master zero-detection inequality: under (1.2), for $s=\\sigma+it$ with suitable $\\eta,\\sigma,t$, $-\\Re\\frac{\\zeta'(s)}{\\zeta(s)}$ is bounded above by a localized sum over zeros $\\rho$ in a strip plus controlled error — the analytic core that turns proximity of a zero into a contradiction."
+    },
+    "lem:4.2": {
+      "type": "Lemma",
+      "number": "4.2",
+      "section": "4",
+      "role": "technical",
+      "summary": "Zero-counting bound: under (1.2), for $0<R\\le 1/4$, $t\\ge 100$, $N(t,R) \\le 1.3478 R^{3/2} B\\log t + 3.752 + \\frac{\\log A - \\log R + \\frac23\\log\\log t}{1.879}$."
+    },
+    "lem:4.3": {
+      "type": "Lemma",
+      "number": "4.3",
+      "section": "4",
+      "role": "technical",
+      "summary": "Bound on the sum $\\sum_{|1+it-\\rho|\\ge v} \\frac{1}{|1+it-\\rho|^2}$ over zeros near $1+it$, in terms of $\\log t$, $\\log A$, $\\log\\log t$ and the zero count $N(t,v)$."
+    },
+    "lem:4.4": {
+      "type": "Lemma",
+      "number": "4.4",
+      "section": "4",
+      "role": "auxiliary",
+      "summary": "Elementary cotangent inequality: for $\\Re z \\ge 0$ and $|z|\\le \\pi/2$, $\\Re\\cot z - \\frac{1}{z} + \\frac{4z}{\\pi^2} \\ge 0$."
+    },
+    "lem:4.5": {
+      "type": "Lemma",
+      "number": "4.5",
+      "section": "4",
+      "role": "technical",
+      "summary": "Laplace-transform lemma: for non-negative $f$ with absolutely convergent transform $F(z)=\\int_0^\\infty f(y)e^{-zy}dy$ and $F_0(z)=F(z)-f(0)/z$ satisfying $|F_0(z)| \\le D/|z|^2$, controls the relevant contour contributions."
+    },
+    "lem:4.6": {
+      "type": "Lemma",
+      "number": "4.6",
+      "section": "4",
+      "role": "main_technical",
+      "summary": "The $\\Re K(s)$ bound: for $s=1+it$, $t\\ge 1000$, $0<\\eta\\le\\tfrac12$ and a compactly-supported $f$, bounds $\\Re K(s)$ by a localized sum over zeros within $\\eta$ of $1+it$; the assembled inequality fed into the proof of Theorem 2."
+    },
+    "lem:5.1": {
+      "type": "Lemma",
+      "number": "5.1",
+      "section": "5",
+      "role": "technical",
+      "summary": "Trigonometric / positivity inequality: for coefficients $b_0,\\dots,b_4$ from (5.2), $\\int_{-\\infty}^\\infty \\frac{1}{\\cosh^2 u}\\sum_{j=1}^4 b_j \\log|\\zeta(1+\\eta+ijt_1+iut_2)|\\,du \\ge -2b_0\\log\\zeta(1+\\eta)$ — the positivity input replacing the classical $3+4\\cos\\theta+\\cos2\\theta$."
+    },
+    "lem:7.1": {
+      "type": "Lemma",
+      "number": "7.1",
+      "section": "7",
+      "role": "technical",
+      "summary": "Inequality for the real part of a zero: combines the zero-detection and positivity inputs into a lower bound on $1-\\beta$ for any putative zero $\\beta+it$, the step the explicit constants are optimized over."
+    },
+    "lem:9.1": {
+      "type": "Lemma",
+      "number": "9.1",
+      "section": "9",
+      "role": "technical",
+      "summary": "Medium-range technical lemma supporting the proof of Theorem 3 for $t \\ge 5.45\\times 10^8$."
+    },
+    "lem:9.2": {
+      "type": "Lemma",
+      "number": "9.2",
+      "section": "9",
+      "role": "technical",
+      "summary": "Second medium-range technical lemma feeding the proof of Theorem 3."
+    }
+  },
+  "edges": [
+    { "from": "thm:5", "to": "thm:2", "type": "depends_on", "note": "The explicit VK region (Theorem 5) is the $T_0\\to 3$ form of the quantitative Theorem 2, proved in Section 8." },
+    { "from": "thm:4", "to": "thm:3", "type": "depends_on", "note": "The explicit classical-type region (Theorem 4) follows from the medium-range Theorem 3, proved in Section 9." },
+    { "from": "thm:1", "to": "lem:4.1", "type": "depends_on", "note": "The asymptotic conditional VK region rests on the master zero-detection inequality (4.1)." },
+    { "from": "thm:2", "to": "lem:4.6", "type": "depends_on", "note": "The proof of Theorem 2 (Section 8) assembles the $\\Re K(s)$ bound of Lemma 4.6." },
+    { "from": "thm:2", "to": "lem:4.1", "type": "depends_on", "note": "Theorem 2 uses the master zero-detection inequality (4.1)." },
+    { "from": "thm:2", "to": "lem:5.1", "type": "depends_on", "note": "Theorem 2 uses the trigonometric/positivity inequality of Section 5 (Lemma 5.1)." },
+    { "from": "thm:2", "to": "lem:7.1", "type": "depends_on", "note": "Theorem 2 uses the inequality for the real part of a zero (Section 7)." },
+    { "from": "thm:3", "to": "lem:9.1", "type": "depends_on", "note": "Section 9's proof of Theorem 3 uses Lemma 9.1." },
+    { "from": "thm:3", "to": "lem:9.2", "type": "depends_on", "note": "Section 9's proof of Theorem 3 uses Lemma 9.2." },
+    { "from": "thm:3", "to": "lem:3.4", "type": "uses", "note": "The medium-range argument uses the growth-to-integral bound of Lemma 3.4." },
+    { "from": "lem:4.1", "to": "lem:2.2", "type": "depends_on", "note": "The zero-detection inequality is built on the cotangent-integral 'zero detector' identity of Lemma 2.2." },
+    { "from": "lem:2.2", "to": "lem:2.1", "type": "uses_mechanism", "note": "Both represent $f'/f$ and $\\log|f|$ via the Hadamard factorization; 2.2 localizes the 2.1 representation into the detector identity." },
+    { "from": "lem:4.6", "to": "lem:4.5", "type": "depends_on", "note": "The $\\Re K(s)$ bound uses the Laplace-transform lemma 4.5." },
+    { "from": "lem:4.6", "to": "lem:4.4", "type": "uses", "note": "The $\\Re K(s)$ bound uses the elementary cotangent inequality (4.4)." },
+    { "from": "lem:4.6", "to": "lem:4.1", "type": "uses_mechanism", "note": "The $K(s)$ construction reuses the localized zero-sum mechanism of the detection inequality (4.1)." },
+    { "from": "lem:4.3", "to": "lem:4.2", "type": "depends_on", "note": "The sum-over-zeros bound uses the zero count $N(t,R)$ from Lemma 4.2." },
+    { "from": "lem:4.3", "to": "lem:3.3", "type": "uses", "note": "Uses the global zero-sum bound $\\sum_\\rho 1/|\\rho|^2 \\le 0.0463$ (Lemma 3.3)." },
+    { "from": "lem:4.2", "to": "lem:3.4", "type": "depends_on", "note": "The zero count is derived from the growth-to-integral bound of Lemma 3.4." },
+    { "from": "lem:4.1", "to": "lem:3.1", "type": "uses", "note": "The detection inequality uses the basic $\\zeta$ and $\\zeta'/\\zeta$ bounds of Lemma 3.1." },
+    { "from": "lem:3.4", "to": "lem:3.2", "type": "uses", "note": "The integral bound uses the logarithmic-derivative bound on $\\Re s=-\\tfrac12$ (Lemma 3.2)." }
+  ],
+  "critical_path": ["thm:5", "thm:2", "lem:4.1", "lem:2.2", "lem:2.1"],
+  "proof_architecture": {
+    "main_results": {
+      "description": "The zero-free regions: the asymptotic conditional VK region (Thm 1) and the two fully-explicit regions — VK-type (Thm 5) and classical-type (Thm 4).",
+      "nodes": ["thm:1", "thm:4", "thm:5"]
+    },
+    "quantitative_engines": {
+      "description": "Quantitative theorems with explicit ranges and constants that the explicit regions are read off from.",
+      "nodes": ["thm:2", "thm:3"]
+    },
+    "zero_detector": {
+      "description": "Hadamard-factorization representation of $f'/f$ and $\\log|f|$, localized into the cotangent-integral 'zero detector' identity.",
+      "nodes": ["lem:2.1", "lem:2.2"]
+    },
+    "zeta_bounds": {
+      "description": "Explicit bounds on $\\zeta$, $\\zeta'/\\zeta$, the global zero-sum, and the growth-to-integral bridge from exponential-sum input.",
+      "nodes": ["lem:3.1", "lem:3.2", "lem:3.3", "lem:3.4"]
+    },
+    "zero_detection": {
+      "description": "The master detection inequality and its supporting zero-counting, sum-over-zeros, cotangent, Laplace-transform and $\\Re K(s)$ bounds.",
+      "nodes": ["lem:4.1", "lem:4.2", "lem:4.3", "lem:4.4", "lem:4.5", "lem:4.6"]
+    },
+    "positivity_and_realpart": {
+      "description": "The trigonometric positivity inequality replacing the classical $3+4\\cos\\theta+\\cos2\\theta$, and the resulting inequality for the real part of a zero where constants are optimized.",
+      "nodes": ["lem:5.1", "lem:7.1"]
+    },
+    "medium_range": {
+      "description": "Technical lemmas specific to the medium-range Theorem 3 ($t \\ge 5.45\\times 10^8$).",
+      "nodes": ["lem:9.1", "lem:9.2"]
+    }
+  },
+  "bibliography": {
+    "VP": { "title": "de la Vallée Poussin — classical zero-free region", "arxiv_id": null, "in_registry": false },
+    "V": { "title": "I. M. Vinogradov — exponential sums / zero-free region", "arxiv_id": null, "in_registry": false },
+    "Ko": { "title": "N. M. Korobov — exponential sums / zero-free region", "arxiv_id": null, "in_registry": false },
+    "HB1": { "title": "D. R. Heath-Brown", "arxiv_id": null, "in_registry": false },
+    "HB2": { "title": "D. R. Heath-Brown", "arxiv_id": null, "in_registry": false },
+    "RS1": { "title": "Rosser–Schoenfeld — approximate formulas for functions of primes", "arxiv_id": null, "in_registry": false },
+    "RS2": { "title": "Rosser–Schoenfeld", "arxiv_id": null, "in_registry": false },
+    "T": { "title": "E. C. Titchmarsh — The Theory of the Riemann Zeta-Function", "arxiv_id": null, "in_registry": false },
+    "SZ": { "title": "Saks–Zygmund — Analytic Functions (Weierstrass/Hadamard factorization)", "arxiv_id": null, "in_registry": false },
+    "Ch2": { "title": null, "arxiv_id": null, "in_registry": false },
+    "CG": { "title": null, "arxiv_id": null, "in_registry": false },
+    "Chu": { "title": null, "arxiv_id": null, "in_registry": false },
+    "D": { "title": null, "arxiv_id": null, "in_registry": false },
+    "F": { "title": null, "arxiv_id": null, "in_registry": false },
+    "HPY": { "title": null, "arxiv_id": null, "in_registry": false },
+    "H": { "title": null, "arxiv_id": null, "in_registry": false },
+    "Ku": { "title": null, "arxiv_id": null, "in_registry": false },
+    "Le": { "title": null, "arxiv_id": null, "in_registry": false },
+    "L": { "title": null, "arxiv_id": null, "in_registry": false },
+    "LRW": { "title": null, "arxiv_id": null, "in_registry": false },
+    "Pa": { "title": null, "arxiv_id": null, "in_registry": false },
+    "P": { "title": null, "arxiv_id": null, "in_registry": false },
+    "RR": { "title": null, "arxiv_id": null, "in_registry": false },
+    "Ri": { "title": null, "arxiv_id": null, "in_registry": false },
+    "Ro": { "title": null, "arxiv_id": null, "in_registry": false },
+    "S": { "title": null, "arxiv_id": null, "in_registry": false }
+  }
+}

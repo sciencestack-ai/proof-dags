@@ -1,0 +1,211 @@
+{
+  "paper": "0811.2251",
+  "title": "The endpoint case of the Bennett-Carbery-Tao multilinear Kakeya conjecture",
+  "authors": [
+    "Larry Guth"
+  ],
+  "generated": "2026-05-12",
+  "status": "complete",
+  "nodes": {
+    "thm:1": {
+      "type": "Theorem",
+      "number": "1",
+      "section": "1",
+      "role": "main_result",
+      "summary": "Endpoint multilinear Kakeya (geometric form): if $T_{j,a}\\subset\\mathbb{R}^n$ ($1\\le j\\le n$) are unit cylinders with the core of $T_{j,a}$ making angle $\\le(100n)^{-1}$ with the $x_j$-axis, then the set $I$ of points lying in at least one cylinder from each of the $n$ directions has measure $|I|\\lesssim\\prod_j A(j)^{1/(n-1)}$ — with no $\\epsilon$ loss, closing the endpoint left open by Bennett–Carbery–Tao."
+    },
+    "thm:2": {
+      "type": "Theorem",
+      "number": "2",
+      "section": "1",
+      "role": "main_result",
+      "summary": "Endpoint multilinear Kakeya (estimate form): for $n$ families of unit cylinders with cores $v_{j,a}$ that are $\\theta$-transverse ($|\\det(v_{1,a_1},\\dots,v_{n,a_n})|\\ge\\theta$), $\\|\\prod_{j=1}^n(\\sum_a\\chi_{T_{j,a}})\\|_{L^{n/(n-1)}(\\mathbb{R}^n)}\\lesssim\\theta^{-1/(n-1)}\\prod_j A(j)^{1/(n-1)}$. The sharp $L^{n/(n-1)}$ inequality."
+    },
+    "sec:1": {
+      "type": "Section",
+      "number": "1",
+      "section": "1",
+      "role": "foundational",
+      "summary": "The polynomial ham sandwich theorem (Stone–Tukey 1941, popularized by Gromov): any $\\binom{n+d}{d}-1$ measurable sets in $\\mathbb{R}^n$ can be simultaneously bisected by an algebraic hypersurface of degree $\\le d$. The single external tool the proof rests on — used to produce a low-degree variety passing through the configuration of cylinder intersections."
+    },
+    "lem:2.1": {
+      "type": "Lemma",
+      "number": "2.1",
+      "section": "2",
+      "role": "technical",
+      "summary": "Cylinder estimate: if $T$ is a radius-$r$ cylinder with core direction $v$ and $Z$ is a degree-$d$ algebraic hypersurface, the directed volume satisfies $V_{Z\\cap T}(v)\\le\\omega_{n-1}r^{n-1}d$. Bounds how much a low-degree variety can 'see' along a tube's axis."
+    },
+    "lem:2.2": {
+      "type": "Lemma",
+      "number": "2.2",
+      "section": "2",
+      "role": "technical",
+      "summary": "Near-axis volume bound: if $v_1,\\dots,v_n$ are unit vectors with $|e_j-v_j|<(100n)^{-1}$, then for any hypersurface $S$, $\\mathrm{Vol}(S)\\le2\\sum_{j=1}^n V_S(v_j)$. Lets ordinary volume be controlled by the $n$ axis-directed volumes."
+    },
+    "lem:5.1": {
+      "type": "Lemma",
+      "number": "5.1",
+      "section": "5",
+      "role": "technical",
+      "summary": "Properties of the mollified directed volume $\\bar V_{Z\\cap U}(v)$ and mollified visibility $\\overline{\\mathrm{Vis}}[Z\\cap U]$: homogeneity ($\\bar V(\\lambda v)=|\\lambda|\\bar V(v)$), convexity in $v$, and additivity over disjoint unions of $U$. The functional-analytic regularity needed before pigeonholing."
+    },
+    "lem:5.2": {
+      "type": "Lemma",
+      "number": "5.2",
+      "section": "5",
+      "role": "key_mechanism",
+      "summary": "Visibility lemma: for a suitable region $E'$ there is some coordinate $j$ with $\\bar V_{Z\\cap E'}(e_j)\\gtrsim\\mathrm{Vol}(E')/E_j'$ — a single direction in which the variety is highly visible. The dichotomy that drives the induction."
+    },
+    "lem:6.1": {
+      "type": "Lemma",
+      "number": "6.1",
+      "section": "6",
+      "role": "key_mechanism",
+      "summary": "Per-cube multilinear bound: for each cube $Q_k$ in the decomposition, $\\overline{\\mathrm{Vis}}[Z\\cap Q_k]<C(n)\\theta^{-1}\\prod_{j=1}^n\\bar V_{Z\\cap Q_k}(v_{j,k})$. The local multilinear Kakeya inequality for the variety; summing over cubes gives thm:1/thm:2."
+    },
+    "lem:7.1": {
+      "type": "Lemma",
+      "number": "7.1",
+      "section": "7",
+      "role": "technical",
+      "summary": "Box estimate for unions of tubes: for any algebraic hypersurface $Z'$ of degree $\\lesssim L$, the average of $V_{Z'\\cap B(x,1)}(v)$ over $x\\in T$ is $\\lesssim1$. The degree-vs-thickness trade controlling the contribution of high-degree pieces."
+    }
+  },
+  "edges": [
+    {
+      "from": "thm:2",
+      "to": "thm:1",
+      "type": "depends_on",
+      "note": "The $L^{n/(n-1)}$ estimate is the dual/level-set repackaging of the point-set measure bound."
+    },
+    {
+      "from": "thm:1",
+      "to": "sec:1",
+      "type": "depends_on",
+      "note": "A degree-controlled algebraic hypersurface $Z$ adapted to the cylinder configuration is produced by the polynomial ham sandwich theorem."
+    },
+    {
+      "from": "thm:1",
+      "to": "lem:6.1",
+      "type": "depends_on",
+      "note": "Summing the per-cube multilinear visibility bound over a decomposition yields the global bound on $|I|$."
+    },
+    {
+      "from": "thm:1",
+      "to": "lem:2.2",
+      "type": "depends_on",
+      "note": "Ordinary volume of $Z$ inside each cube is converted to the $n$ axis-directed volumes."
+    },
+    {
+      "from": "thm:1",
+      "to": "lem:7.1",
+      "type": "depends_on",
+      "note": "The box estimate handles the contribution of the (high-degree) algebraic hypersurface across tubes."
+    },
+    {
+      "from": "lem:6.1",
+      "to": "lem:5.2",
+      "type": "depends_on",
+      "note": "The per-cube bound is built from the visibility-dichotomy lemma applied within each cube."
+    },
+    {
+      "from": "lem:6.1",
+      "to": "lem:2.1",
+      "type": "depends_on",
+      "note": "Each directed volume $\\bar V_{Z\\cap Q_k}(v_{j,k})$ is controlled by the cylinder estimate (degree $\\times$ radius)."
+    },
+    {
+      "from": "lem:5.2",
+      "to": "lem:5.1",
+      "type": "depends_on",
+      "note": "The visibility dichotomy uses homogeneity, convexity and additivity of the mollified directed volume."
+    },
+    {
+      "from": "lem:5.2",
+      "to": "lem:2.2",
+      "type": "depends_on",
+      "note": "Volume is split into axis-directed pieces to find the highly-visible direction."
+    },
+    {
+      "from": "lem:7.1",
+      "to": "lem:2.1",
+      "type": "depends_on",
+      "note": "The box estimate is an averaged form of the cylinder estimate."
+    }
+  ],
+  "critical_path": [
+    "thm:2",
+    "thm:1",
+    "lem:6.1",
+    "lem:5.2",
+    "lem:5.1"
+  ],
+  "proof_architecture": {
+    "main_results": {
+      "description": "The endpoint multilinear Kakeya inequality, in point-set and $L^{n/(n-1)}$ forms.",
+      "nodes": [
+        "thm:1",
+        "thm:2"
+      ]
+    },
+    "polynomial_method": {
+      "description": "The polynomial ham sandwich theorem — the algebraic tool that produces a low-degree variety adapted to the cylinder configuration.",
+      "nodes": [
+        "sec:1"
+      ]
+    },
+    "directed_volume_and_visibility": {
+      "description": "Directed volume of a variety along a direction, the cylinder/degree estimate, the near-axis volume bound, the regularity of mollified directed volume, and the visibility dichotomy.",
+      "nodes": [
+        "lem:2.1",
+        "lem:2.2",
+        "lem:5.1",
+        "lem:5.2",
+        "lem:6.1"
+      ]
+    },
+    "degree_reduction": {
+      "description": "The box estimate trading polynomial degree against tube thickness.",
+      "nodes": [
+        "lem:7.1"
+      ]
+    }
+  },
+  "bibliography": {
+    "BCT": {
+      "title": "On the multilinear restriction and Kakeya conjectures",
+      "authors": [
+        "Bennett",
+        "Carbery",
+        "Tao"
+      ],
+      "arxiv_id": "math/0509262",
+      "in_registry": true
+    },
+    "Dvir:FiniteField": {
+      "title": "On the size of Kakeya sets in finite fields",
+      "authors": [
+        "Dvir"
+      ],
+      "arxiv_id": "0803.2336",
+      "in_registry": false
+    },
+    "Gromov:SingularitiesExpanders": {
+      "title": "Singularities, expanders and topology of maps",
+      "authors": [
+        "Gromov"
+      ],
+      "arxiv_id": null,
+      "in_registry": false
+    },
+    "StoneTukey": {
+      "title": "Generalized 'sandwich' theorems",
+      "authors": [
+        "Stone",
+        "Tukey"
+      ],
+      "arxiv_id": null,
+      "in_registry": false
+    }
+  }
+}

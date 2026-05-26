@@ -1,0 +1,638 @@
+{
+  "paper": "2009.06596",
+  "title": "Sharp nonuniqueness for the Navier-Stokes equations",
+  "authors": [
+    "Alexey Cheskidov",
+    "Xiaoyutao Luo"
+  ],
+  "generated": "2026-03-11",
+  "status": "complete",
+  "nodes": {
+    "def:1.1": {
+      "type": "Definition",
+      "number": "1.1",
+      "section": "1",
+      "role": "definition",
+      "summary": "Weak solution of NSE on $T^d$: a function u $\\in L^2_{t,x}$ satisfying the distributional formulation against divergence-free test functions in $C^\\infty$ that vanish for t $\\ge$ T. Allows general $L^2$ initial data attained distributionally."
+    },
+    "def:1.2": {
+      "type": "Definition",
+      "number": "1.2",
+      "section": "1",
+      "role": "definition",
+      "summary": "$X^{p,q}$ Serrin class: space of weak solutions in $L^p(0,T$; $L^q(T^d))$ with the Ladyzhenskaya-Prodi-Serrin scaling index 2/p + d/q $\\le 1$. Subcritical when <1, critical when =1."
+    },
+    "thm:1.3": {
+      "type": "Theorem",
+      "number": "1.3",
+      "section": "1.2",
+      "role": "context",
+      "summary": "Ladyzhenskaya-Prodi-Serrin criteria: if u $\\in X^{p,q}$ with 2/p + d/q $\\le 1$, then u is the unique Leray-Hopf solution and is regular on (0,T]. Establishes the regularity side of the LPS threshold."
+    },
+    "conjecture:1.4": {
+      "type": "Conjecture",
+      "number": "1.4",
+      "section": "1.2",
+      "role": "context",
+      "summary": "Sharp LPS Conjecture: for 2/p + d/q > 1 (strictly above the critical threshold), weak solutions in $X^{p,q}$ are non-unique and may be non-Leray-Hopf. The paper proves the p < 2, q $= \\infty$ case."
+    },
+    "thm:1.5": {
+      "type": "Theorem",
+      "number": "1.5",
+      "section": "1.3",
+      "role": "main_result",
+      "summary": "Strong nonuniqueness in 2D: for any divergence-free $u_0 \\in L^2(T^2)$, there exists a weak solution u different from the Leray-Hopf solution with $u(t) \\to u_0$ strongly in $L^2$ as t $\\to 0+$."
+    },
+    "thm:1.6": {
+      "type": "Theorem",
+      "number": "1.6",
+      "section": "1.3",
+      "role": "main_result",
+      "summary": "Sharp LPS nonuniqueness for d $\\ge 2$: (1) any weak solution in $L^p_t L^\\infty$ with p < 2 having an interval of regularity is non-unique; (2) non-Leray-Hopf solutions exist in $L^p_t L^\\infty$ for all p < 2."
+    },
+    "rem:1.7": {
+      "type": "Remark",
+      "number": "1.7",
+      "section": "1.3",
+      "role": "context",
+      "summary": "Explains that nonuniqueness does not stem from rough initial data but from persistent space-time oscillations. Notes that in d = 2,3,4 the Cauchy problem has infinitely many weak solutions for any $L^2$ initial data."
+    },
+    "thm:1.8": {
+      "type": "Theorem",
+      "number": "1.8",
+      "section": "1.3",
+      "role": "main_result",
+      "summary": "Main Theorem: for any p < 2, q $< \\infty, \\varepsilon > 0$, and smooth divergence-free v $\\in C^\\infty([0,T]\\timesT^d)$, there exists a weak solution u $\\in L^p_t L^\\infty \\cap L^1_t W^{1,q}$ that is $(1) \\varepsilon-close$ to v in these norms, (2) smooth on a set I of intervals, (3) singular only on a set S $\\subset [0,T]$ with Hausdorff dimension $\\le \\varepsilon$."
+    },
+    "rem:1.9": {
+      "type": "Remark",
+      "number": "1.9",
+      "section": "1.3",
+      "role": "context",
+      "summary": "Notes u lies on the borderline of Beale-Kato-Majda $(L^1_t W^{1,\\infty})$. The singular set S is nonempty; energy equality fails due to norm blow-up as singular times accumulate from intervals."
+    },
+    "thm:1.10": {
+      "type": "Theorem",
+      "number": "1.10",
+      "section": "1.4",
+      "role": "main_result",
+      "summary": "Euler analog: Theorem 1.8 holds verbatim for the Euler equations $(\\nu=0)$, with the same space-time construction."
+    },
+    "thm:1.11": {
+      "type": "Theorem",
+      "number": "1.11",
+      "section": "1.4",
+      "role": "main_result",
+      "summary": "Anomalous dissipation: for Euler or NSE on $T^d (d \\ge 2)$, there exist infinitely many non-energy-conserving weak solutions in $L^{3/2-\\varepsilon}_t C^{1/3} \\cap L^1_t C^{1-\\varepsilon}$ with the same initial data. Lies at Onsager's $C^{1/3}$ threshold."
+    },
+    "def:2.1": {
+      "type": "Definition",
+      "number": "2.1",
+      "section": "2.1",
+      "role": "definition",
+      "summary": "NSE-Reynolds system: $\\partial_t$ u $- \\Deltau +$ div(u⊗$u) + \\nablap =$ div R, where R is a symmetric trace-free stress tensor. A solution is well-prepared if R = 0 outside time intervals I at a prescribed timescale $\\tau$."
+    },
+    "prop:2.2": {
+      "type": "Proposition",
+      "number": "2.2",
+      "section": "2.5",
+      "role": "key_reduction",
+      "summary": "Main Iteration: given any well-prepared (u,R) and $\\delta > 0$, produces $(u_1, R_1)$ with ‖$R_1$‖$_{L^1_t L^r} \\le \\delta$. The perturbation w $= u_1-u$ satisfies: support in I, ‖w‖$_{L^2}$ ≲ ‖R‖$^{1/2}_{L^1}$, ‖w‖$_{L^p_t L^\\infty \\cap L^1_t W^{1,q}} \\le \\delta$."
+    },
+    "prop:3.1": {
+      "type": "Proposition",
+      "number": "3.1",
+      "section": "3",
+      "role": "key_mechanism",
+      "summary": "Temporal concentration step: given well-prepared (u,R) at scale $\\tau$̃, constructs (ū, R̄) where R̄ vanishes outside a strict subset I $\\subset$ Ĩ at smaller scale $\\tau < \\tau$̃/2, with ‖R̄‖$_{L^1_t L^r} \\le$ C‖R‖$_{L^1_t L^r}$. Concentrates stress to isolated time intervals via gluing."
+    },
+    "prop:3.2": {
+      "type": "Proposition",
+      "number": "3.2",
+      "section": "3.2",
+      "role": "main_technical",
+      "summary": "Sharp gluing: on each subinterval $[t_i, t_{i+1}]$, the unique short-time smooth NSE solution $v_i$ satisfies ‖$v_i$‖$_{L^\\infty H^d} \\le \\delta$ and ‖R $v_i$‖$_{L^\\infty L^r} \\le C_r \\int_{t_i}^{t_{i+1}}$ ‖R(t)‖$_{L^r}$ dt $+ C_u \\delta \\tau^\\varepsilon$. Enables gluing smooth local solutions to temporal support of stress."
+    },
+    "prop:3.3": {
+      "type": "Proposition",
+      "number": "3.3",
+      "section": "3.3",
+      "role": "technical",
+      "summary": "Stress error from gluing: the glued solution (ū, R̄) satisfies ‖R̄‖$_{L^1_t L^r} \\le C_r$ ‖R‖$_{L^1_t L^r}$. Completes proof of prop:3.1 by controlling stress growth in the gluing procedure."
+    },
+    "prop:4.1": {
+      "type": "Proposition",
+      "number": "4.1",
+      "section": "4",
+      "role": "key_mechanism",
+      "summary": "Convex integration step: given (ū, R̄) from prop:3.1 at set I and scale $\\tau$, produces $(u_1, R_1)$ at the same I, $\\tau$ with ‖$R_1$‖$_{L^1 L^r} \\le \\delta$ and velocity perturbation w supported in I with ‖w‖$_{L^2}$ ≲ ‖R̄‖^{1/2} and ‖w‖$_{L^p_t L^\\infty \\cap L^1_t W^{1,q}} \\le \\delta$. Uses Mikado flows for spatial oscillation."
+    },
+    "lem:4.2": {
+      "type": "Lemma",
+      "number": "4.2",
+      "section": "4.1",
+      "role": "technical",
+      "summary": "Geometric decomposition: for any compact N $\\subset S^{d\\timesd}_+$, there exist finite $\\Lambda \\subset Z^d$ and smooth $\\Gamma_k$: N $\\to$ R such that R $= \\Sigma_{k\\in\\Lambda} \\Gamma_k(R)^2 e_k$⊗$e_k$ for all R $\\in$ N. Enables writing stress as sum of rank-1 matrices aligned with Mikado flow directions."
+    },
+    "thm:4.3": {
+      "type": "Theorem",
+      "number": "4.3",
+      "section": "4.1",
+      "role": "key_technical",
+      "summary": "Stationary Mikado flows $W_k$: $T^d \\to R^d$ are smooth divergence-free functions solving pressureless Euler $(div(W_k$⊗$W_k) = 0)$ with $\\int_{T^d} W_k$⊗$W_k = e_k$⊗$e_k$ and $L^p$ estimates ‖$\\nabla^m W_k$‖$_{L^p}$ ≲ $\\mu^{m+(d-1)/2-(d-1)/p}$. The building block for convex integration."
+    },
+    "lem:4.4": {
+      "type": "Lemma",
+      "number": "4.4",
+      "section": "4.2",
+      "role": "technical",
+      "summary": "Amplitude coefficients $a_k$ are defined so that $\\Sigma_{k\\in\\Lambda} a_k^2 \\int W_k$⊗$W_k = \\theta^2g_\\kappa^2(\\nut)\\rho$ Id $- g_\\kappa^2(\\nut)R$̄, matching the stress term. They vanish for dist(t, $I^c) \\le \\tau$, ensuring correct temporal support."
+    },
+    "lem:4.5": {
+      "type": "Lemma",
+      "number": "4.5",
+      "section": "4.4",
+      "role": "technical",
+      "summary": "Oscillation error structure: $R_osc = R_{osc,x} + R_{osc,t} + R_far$. The temporal part $w^{(t)}$ satisfies $\\partial_t w^{(t)} + div(w^{(p)}$⊗$w^{(p)} +$ R̄$) + \\nablaP =$ div $R_osc$, where P involves an inverse-Laplacian term from the temporal stress derivative."
+    },
+    "lem:4.6": {
+      "type": "Lemma",
+      "number": "4.6",
+      "section": "4.5",
+      "role": "technical",
+      "summary": "Reynolds closure: the new stress $R_1 = R_lin + R_cor + R_osc$ and new pressure $p_1 =$ p̄ + P make $(u_1, R_1)$ a well-prepared solution of the NSE-Reynolds system with velocity perturbation support in I."
+    },
+    "lem:5.1": {
+      "type": "Lemma",
+      "number": "5.1",
+      "section": "5.1",
+      "role": "technical",
+      "summary": "Parameter constraints: three inequalities relating $\\nu, \\kappa, \\sigma, \\mu, \\lambda$ that must hold for large $\\lambda^\\gamma \\in$ N. These encode the p < 2 condition and ensure all error terms in Sections 5.2-5.3 vanish as $\\lambda \\to \\infty$."
+    },
+    "lem:5.2": {
+      "type": "Lemma",
+      "number": "5.2",
+      "section": "5.1",
+      "role": "technical",
+      "summary": "Coefficient estimates: ‖$\\partial_t^n \\nabla^m a_k$‖$_{L^p_t L^\\infty} \\le C_{u,m,n} (\\nu\\kappa)^n \\kappa^{1/2-1/p}$. Controls derivatives of the amplitude coefficients needed for all subsequent error estimates."
+    },
+    "prop:5.3": {
+      "type": "Proposition",
+      "number": "5.3",
+      "section": "5.2",
+      "role": "main_technical",
+      "summary": "Principal part estimates: ‖$w^{(p)}$‖$_{L^2}$ ≲ ‖R̄‖$^{1/2}_{L^1} (from$ Mikado flow normalization + geometric lemma) and ‖$w^{(p)}$‖$_{L^p_t L^\\infty} +$ ‖$w^{(p)}$‖$_{L^1_t W^{1,q}} \\le C_u \\lambda^{-\\gamma} \\to 0$."
+    },
+    "prop:5.4": {
+      "type": "Proposition",
+      "number": "5.4",
+      "section": "5.2",
+      "role": "technical",
+      "summary": "Corrector $w^{(c)}$ estimates: ‖$w^{(c)}$‖$_{L^2_t L^\\infty} \\le C_u \\lambda^{-\\gamma}$ and ‖$w^{(c)}$‖$_{L^1_t W^{1,q}} \\le C_u \\lambda^{-\\gamma}$. Uses antidivergence operator R and bilinear antidivergence B from Appendix B."
+    },
+    "prop:5.5": {
+      "type": "Proposition",
+      "number": "5.5",
+      "section": "5.2",
+      "role": "technical",
+      "summary": "Temporal corrector $w^{(t)}$ estimates: ‖$w^{(t)}$‖$_{L^\\infty_t W^{1,\\infty}} \\le C_u \\nu^{-1}$, and for large $\\lambda$, ‖$w^{(t)}$‖$_{L^2} \\le$ ‖R̄‖^{1/2} and ‖$w^{(t)}$‖$_{L^p_t L^\\infty \\cap L^1_t W^{1,q}} \\le \\delta/4$."
+    },
+    "lem:5.6": {
+      "type": "Lemma",
+      "number": "5.6",
+      "section": "5.3.1",
+      "role": "technical",
+      "summary": "Linear error bound: ‖$R_lin$‖$_{L^1_t L^r} \\le \\delta/4$ for large $\\lambda$. $R_lin$ contains the viscous/transport terms from expanding the NSE in the perturbation w."
+    },
+    "lem:5.7": {
+      "type": "Lemma",
+      "number": "5.7",
+      "section": "5.3.2",
+      "role": "technical",
+      "summary": "Correction error bound: ‖$R_cor$‖$_{L^1_t L^r} \\le \\delta/4$ for large $\\lambda$. $R_cor$ comes from the cross-term $w^{(p)}$ ⊗ $w^{(c)}$ and the corrector itself."
+    },
+    "lem:5.8": {
+      "type": "Lemma",
+      "number": "5.8",
+      "section": "5.3.3",
+      "role": "technical",
+      "summary": "Oscillation error bound: ‖$R_osc$‖$_{L^1_t L^r} \\le \\delta/4$ for large $\\lambda$. Uses improved Hölder inequality (lem:B.1) to handle oscillation in both x and t, and antidivergence (thm:B.3) for the off-diagonal terms."
+    },
+    "thm:A.1": {
+      "type": "Theorem",
+      "number": "A.1",
+      "section": "A",
+      "role": "auxiliary",
+      "summary": "$X^{p,q}$ at critical LPS threshold with d $\\le$ q $\\le \\infty$ implies Leray-Hopf: proves the regularity side of conjecture:1.4 at the borderline 2/p + d/q = 1. Needed to show nonunique solutions genuinely violate Leray-Hopf structure."
+    },
+    "thm:A.2": {
+      "type": "Theorem",
+      "number": "A.2",
+      "section": "A",
+      "role": "auxiliary",
+      "summary": "Existence of weak solutions to the linearized NSE equation around u $\\in X^{p,q}$ at critical threshold. Constructs Leray-Hopf solutions to the linearized system, used in the test function argument for thm:A.1."
+    },
+    "thm:A.3": {
+      "type": "Theorem",
+      "number": "A.3",
+      "section": "A",
+      "role": "auxiliary",
+      "summary": "For u $\\in X^{p,q}$ at critical threshold with q > 2, any F $\\in C^\\infty_c([0,T]\\timesT^d)$ yields a weak solution $\\Phi \\in L^\\infty_t L^2 \\cap L^2_t H^1$ to the adjoint linearized system that serves as a test function."
+    },
+    "prop:A.4": {
+      "type": "Proposition",
+      "number": "A.4",
+      "section": "A",
+      "role": "technical",
+      "summary": "Sobolev trilinear estimate: for smooth u,v on $T^d, \\int|u\\cdot\\nablav\\cdot\\Deltav|$ dx ≲ ‖u‖$_{L^q}$ ‖$\\nablav$‖$_{L^2}^{(q-d)/q}$ ‖$\\Deltav$‖$_{L^2}^{(q+d)/q}$. Used in the energy inequality argument for thm:A.2."
+    },
+    "lem:B.1": {
+      "type": "Lemma",
+      "number": "B.1",
+      "section": "B.1",
+      "role": "technical",
+      "summary": "Improved Hölder inequality on $T^d$: |‖$a\\cdotf(\\sigma\\cdot)$‖_p - ‖a‖_p ‖f‖_p| ≲ $\\sigma^{-1/p}$ ‖a‖$_{C^1}$ ‖f‖_p. Quantifies how fast the oscillation of $f(\\sigmax)$ decouples from the amplitude a(x) as $\\sigma \\to \\infty$."
+    },
+    "def:B.2": {
+      "type": "Definition",
+      "number": "B.2",
+      "section": "B.2",
+      "role": "definition",
+      "summary": "Tensor-valued antidivergence operator R: assigns to any mean-zero vector field f a symmetric traceless matrix field Rf with div(Rf) = f. The operator satisfies ‖Rf‖$_{L^p}$ ≲ ‖f‖$_{L^p}$."
+    },
+    "thm:B.3": {
+      "type": "Theorem",
+      "number": "B.3",
+      "section": "B.2",
+      "role": "foundational",
+      "summary": "Antidivergence R is $L^p$ bounded: ‖Rf‖$_{L^p}$ ≲ ‖f‖$_{L^p}$ for any $1 \\le$ p $\\le \\infty$. High-frequency version: ‖$Rf(\\sigma\\cdot)$‖$_{L^p}$ ≲ $\\sigma^{-1}$‖f‖$_{L^p}$, a crucial gain of $\\sigma^{-1}$ from oscillation."
+    },
+    "thm:B.4": {
+      "type": "Theorem",
+      "number": "B.4",
+      "section": "B.3",
+      "role": "foundational",
+      "summary": "Bilinear antidivergence B: div(B(v,A)) = vA $- \\int_{T^d}$ vA with ‖B(v,A)‖$_{L^p}$ ≲ ‖v‖$_{C^1}$ ‖RA‖$_{L^p}$. Used to construct the divergence-free corrector $w^{(c)}$ from the quadratic interaction term."
+    }
+  },
+  "edges": [
+    {
+      "from": "thm:1.5",
+      "to": "thm:1.8",
+      "type": "depends_on",
+      "note": "2D strong nonuniqueness is the special case d=2 of the main theorem, applied with $u_0$ as initial data"
+    },
+    {
+      "from": "thm:1.6",
+      "to": "thm:1.8",
+      "type": "depends_on",
+      "note": "Sharp LPS nonuniqueness follows by applying thm:1.8 to a given smooth solution v; non-Leray-Hopf solutions in $L^p_t L^\\infty$ are produced directly"
+    },
+    {
+      "from": "thm:1.6",
+      "to": "thm:A.1",
+      "type": "depends_on",
+      "note": "thm:A.1 establishes that Leray-Hopf solutions cannot live in $L^p_t L^\\infty$ for p < 2 at the critical threshold, confirming the nonunique solutions are genuinely non-Leray-Hopf"
+    },
+    {
+      "from": "thm:1.8",
+      "to": "prop:2.2",
+      "type": "depends_on",
+      "note": "Main theorem is proved by iterating prop:2.2 starting from a smooth solution, shrinking $\\delta$ and $\\varepsilon$ at each step, sending R $\\to 0$"
+    },
+    {
+      "from": "thm:1.8",
+      "to": "def:2.1",
+      "type": "depends_on",
+      "note": "The proof formulates everything in the NSE-Reynolds system and the well-preparedness notion of def:2.1"
+    },
+    {
+      "from": "thm:1.10",
+      "to": "thm:1.8",
+      "type": "depends_on",
+      "note": "Euler case $(\\nu=0)$ uses the identical prop:2.2 iteration with $\\nu=0$ in the NSE-Reynolds system; the parameter choices simplify"
+    },
+    {
+      "from": "thm:1.11",
+      "to": "thm:1.8",
+      "type": "depends_on",
+      "note": "Anomalous dissipation follows from thm:1.8 applied to give solutions in $L^{3/2-\\varepsilon}_t C^{1/3}$ by choosing p and q appropriately near the Onsager threshold"
+    },
+    {
+      "from": "prop:2.2",
+      "to": "prop:3.1",
+      "type": "depends_on",
+      "note": "Step 1 of prop:2.2: prop:3.1 concentrates the stress to isolated time intervals I, producing a well-prepared pair (ū, R̄)"
+    },
+    {
+      "from": "prop:2.2",
+      "to": "prop:4.1",
+      "type": "depends_on",
+      "note": "Step 2 of prop:2.2: prop:4.1 applies convex integration to (ū, R̄) to produce $(u_1, R_1)$ with small stress and controlled velocity perturbation"
+    },
+    {
+      "from": "prop:3.1",
+      "to": "prop:3.2",
+      "type": "depends_on",
+      "note": "Sharp gluing (prop:3.2) provides the local smooth solutions $v_i$ that are glued together to concentrate the stress; estimates on $v_i$ feed into prop:3.3"
+    },
+    {
+      "from": "prop:3.1",
+      "to": "prop:3.3",
+      "type": "depends_on",
+      "note": "prop:3.3 provides the stress error bound ‖R̄‖ $\\le$ C‖R‖ for the glued solution, completing the proof of prop:3.1"
+    },
+    {
+      "from": "prop:4.1",
+      "to": "prop:3.1",
+      "type": "depends_on",
+      "note": "prop:4.1 takes as input the (ū, R̄) produced by prop:3.1 with stress concentrated to I"
+    },
+    {
+      "from": "prop:4.1",
+      "to": "thm:4.3",
+      "type": "depends_on",
+      "note": "Mikado flows $W_k$ are the fundamental building block for the perturbation $w^{(p)}$; their stress identity and $L^p$ estimates drive all subsequent estimates"
+    },
+    {
+      "from": "prop:4.1",
+      "to": "lem:4.2",
+      "type": "depends_on",
+      "note": "Geometric lemma decomposes R̄ into rank-1 terms aligned with Mikado directions, enabling amplitude coefficients $a_k$ to cancel the stress"
+    },
+    {
+      "from": "prop:4.1",
+      "to": "lem:4.4",
+      "type": "depends_on",
+      "note": "Coefficient $a_k$ construction ensures $div(w^{(p)}$⊗$w^{(p)})$ cancels the main stress term R̄ via Mikado averaging identity"
+    },
+    {
+      "from": "prop:4.1",
+      "to": "lem:4.5",
+      "type": "depends_on",
+      "note": "Oscillation error structure lemma organizes $R_osc$ into spatial, temporal, and far-field parts needed for the estimates in Section 5"
+    },
+    {
+      "from": "prop:4.1",
+      "to": "lem:4.6",
+      "type": "depends_on",
+      "note": "Reynolds closure confirms $(u_1, R_1)$ with $R_1 = R_lin + R_cor + R_osc$ satisfies the NSE-Reynolds system and well-preparedness conditions"
+    },
+    {
+      "from": "prop:4.1",
+      "to": "prop:5.3",
+      "type": "depends_on",
+      "note": "Estimates on $w^{(p)}$ are needed to confirm the $L^2$ bound ‖w‖$_{L^2}$ ≲ ‖R̄‖^{1/2} and the $L^p_t L^\\infty$ smallness"
+    },
+    {
+      "from": "prop:4.1",
+      "to": "prop:5.4",
+      "type": "depends_on",
+      "note": "Corrector $w^{(c)}$ estimates needed to close the $L^p_t L^\\infty \\cap L^1_t W^{1,q}$ bound on total perturbation w"
+    },
+    {
+      "from": "prop:4.1",
+      "to": "prop:5.5",
+      "type": "depends_on",
+      "note": "Temporal corrector $w^{(t)}$ estimates needed to control the total perturbation and verify the support condition"
+    },
+    {
+      "from": "prop:4.1",
+      "to": "lem:5.6",
+      "type": "depends_on",
+      "note": "Linear error $R_lin$ must be $\\le \\delta/4$ in $L^1_t L^r$ to achieve ‖$R_1$‖ $\\le \\delta$ in prop:4.1"
+    },
+    {
+      "from": "prop:4.1",
+      "to": "lem:5.7",
+      "type": "depends_on",
+      "note": "Correction error $R_cor$ must be $\\le \\delta/4$ to close the Reynolds stress bound"
+    },
+    {
+      "from": "prop:4.1",
+      "to": "lem:5.8",
+      "type": "depends_on",
+      "note": "Oscillation error $R_osc$ must be $\\le \\delta/4$; this is the most delicate estimate, requiring improved Hölder and antidivergence"
+    },
+    {
+      "from": "lem:4.4",
+      "to": "lem:4.2",
+      "type": "depends_on",
+      "note": "Coefficient $a_k$ defined via $\\Gamma_k$ from the geometric lemma lem:4.2; the identity R $= \\Sigma \\Gamma_k^2 e_k$⊗$e_k$ makes the stress cancellation work"
+    },
+    {
+      "from": "prop:5.3",
+      "to": "lem:5.1",
+      "type": "depends_on",
+      "note": "Parameter constraints in lem:5.1 ensure the $L^p$ exponents work out: condition (5.4) is precisely ‖$w^{(p)}$‖$_{L^p_t L^\\infty} \\le \\delta/4$"
+    },
+    {
+      "from": "prop:5.3",
+      "to": "lem:5.2",
+      "type": "depends_on",
+      "note": "Coefficient estimates from lem:5.2 feed into the bound on $w^{(p)} = \\Sigma a_k \\theta g_\\kappa W_k(\\mu\\cdot)$"
+    },
+    {
+      "from": "prop:5.3",
+      "to": "thm:4.3",
+      "type": "depends_on",
+      "note": "Mikado flow $L^p$ estimates (part 2 of thm:4.3) directly give ‖$w^{(p)}$‖$_{L^p_t L^\\infty}$ via lem:5.1 constraints"
+    },
+    {
+      "from": "prop:5.4",
+      "to": "thm:B.4",
+      "type": "depends_on",
+      "note": "Bilinear antidivergence B used to construct $w^{(c)}$ from the term $a_k g_\\kappaB(\\cdot, W_k$⊗$W_k)$, with $L^p$ estimate from thm:B.4"
+    },
+    {
+      "from": "prop:5.4",
+      "to": "thm:B.3",
+      "type": "depends_on",
+      "note": "Antidivergence R used in the $W^{1,q}$ estimate for $w^{(c)}$ via ‖$Rf(\\sigma\\cdot)$‖ ≲ $\\sigma^{-1}$‖f‖"
+    },
+    {
+      "from": "prop:5.5",
+      "to": "prop:3.2",
+      "type": "depends_on",
+      "note": "The temporal corrector $w^{(t)}$ cancels $\\partial_t a_k$ terms; its $L^\\infty$ estimate uses the local smooth solution structure from sharp gluing (prop:3.2)"
+    },
+    {
+      "from": "lem:5.6",
+      "to": "thm:B.3",
+      "type": "depends_on",
+      "note": "Linear error $R_lin$ contains antidivergence applied to the linear transport and viscous terms; $L^p$ bound uses thm:B.3"
+    },
+    {
+      "from": "lem:5.8",
+      "to": "lem:B.1",
+      "type": "depends_on",
+      "note": "Improved Hölder inequality (lem:B.1) applied to the spatial oscillation error $R_{osc,x}$: ‖$a_k W_k(\\mu\\cdot)$⊗$W_k(\\mu\\cdot)$‖ $\\approx$ ‖$a_k$‖$\\cdot$‖$W_k$⊗$W_k$‖ up to $\\sigma^{-1/r}$ corrections"
+    },
+    {
+      "from": "lem:5.8",
+      "to": "thm:B.3",
+      "type": "depends_on",
+      "note": "Antidivergence R applied to the oscillation error gives the $\\sigma^{-1}$ gain needed to make $R_{osc}$ small"
+    },
+    {
+      "from": "thm:A.1",
+      "to": "thm:A.2",
+      "type": "depends_on",
+      "note": "Proof of A.1 uses linearized solutions from thm:A.2 as test functions in the duality argument"
+    },
+    {
+      "from": "thm:A.1",
+      "to": "thm:A.3",
+      "type": "depends_on",
+      "note": "thm:A.3 constructs the backward adjoint solution $\\Phi$ that allows the energy argument in thm:A.1"
+    },
+    {
+      "from": "thm:A.1",
+      "to": "prop:A.4",
+      "type": "depends_on",
+      "note": "Sobolev trilinear estimate prop:A.4 is used in the energy estimate for the linearized equation (thm:A.2)"
+    },
+    {
+      "from": "thm:A.2",
+      "to": "def:1.1",
+      "type": "depends_on",
+      "note": "Linearized NSE solutions are shown to satisfy the energy inequality in the sense of Definition 1.1 for the full NSE"
+    },
+    {
+      "from": "thm:1.3",
+      "to": "thm:A.1",
+      "type": "depends_on",
+      "note": "The uniqueness/regularity part of thm:1.3 (LPS criteria) is established via thm:A.1 identifying critical $X^{p,q}$ solutions as Leray-Hopf, then applying standard regularity theory"
+    }
+  ],
+  "critical_path": [
+    "thm:1.8",
+    "prop:2.2",
+    "prop:4.1",
+    "prop:5.3",
+    "lem:5.1"
+  ],
+  "proof_architecture": {
+    "layer_1_formulation": {
+      "description": "Definitions, background criteria, and statement of main results",
+      "nodes": [
+        "def:1.1",
+        "def:1.2",
+        "thm:1.3",
+        "conjecture:1.4",
+        "def:2.1",
+        "rem:1.7",
+        "rem:1.9"
+      ]
+    },
+    "layer_2_main_results": {
+      "description": "Main nonuniqueness theorems — LPS sharpness, Euler analog, anomalous dissipation",
+      "nodes": [
+        "thm:1.5",
+        "thm:1.6",
+        "thm:1.8",
+        "thm:1.10",
+        "thm:1.11"
+      ]
+    },
+    "layer_3_iteration_structure": {
+      "description": "The main iteration proposition reducing the theorem to two sub-steps",
+      "nodes": [
+        "prop:2.2",
+        "prop:3.1",
+        "prop:4.1"
+      ]
+    },
+    "layer_4_temporal_concentration": {
+      "description": "Gluing smooth local solutions to concentrate the Reynolds stress to isolated time intervals",
+      "nodes": [
+        "prop:3.1",
+        "prop:3.2",
+        "prop:3.3"
+      ]
+    },
+    "layer_5_convex_integration": {
+      "description": "Space-time convex integration using Mikado flows to kill the Reynolds stress",
+      "nodes": [
+        "thm:4.3",
+        "lem:4.2",
+        "lem:4.4",
+        "lem:4.5",
+        "lem:4.6"
+      ]
+    },
+    "layer_6_perturbation_estimates": {
+      "description": "Quantitative estimates on all three components of the velocity perturbation and all three parts of the new Reynolds stress",
+      "nodes": [
+        "lem:5.1",
+        "lem:5.2",
+        "prop:5.3",
+        "prop:5.4",
+        "prop:5.5",
+        "lem:5.6",
+        "lem:5.7",
+        "lem:5.8"
+      ]
+    },
+    "layer_7_lps_boundary": {
+      "description": "Appendix A: proving that critical LPS solutions are Leray-Hopf, justifying the sharpness claim",
+      "nodes": [
+        "thm:A.1",
+        "thm:A.2",
+        "thm:A.3",
+        "prop:A.4"
+      ]
+    },
+    "layer_8_technical_tools": {
+      "description": "Appendix B: antidivergence operators and improved Hölder inequality used throughout",
+      "nodes": [
+        "lem:B.1",
+        "def:B.2",
+        "thm:B.3",
+        "thm:B.4"
+      ]
+    }
+  },
+  "bibliography": {
+    "1709.10033": {
+      "title": "Nonuniqueness of weak solutions to the Navier-Stokes equation",
+      "arxiv_id": "1709.10033",
+      "in_registry": true
+    },
+    "1608.08301": {
+      "title": "A proof of Onsager's conjecture",
+      "arxiv_id": "1608.08301",
+      "in_registry": true
+    },
+    "2101.09278": {
+      "title": "Non-conservative H^{1/2-} weak solutions of the incompressible 3D Euler equations",
+      "arxiv_id": "2101.09278",
+      "in_registry": true
+    },
+    "1809.00600": {
+      "title": "Wild solutions of the Navier-Stokes equations whose singular sets in time have Hausdorff dimension strictly less than 1",
+      "arxiv_id": "1809.00600",
+      "in_registry": false
+    },
+    "2112.03116": {
+      "title": "Non-uniqueness of Leray solutions of the forced Navier-Stokes equations",
+      "arxiv_id": "2112.03116",
+      "in_registry": false
+    },
+    "2004.09538": {
+      "title": "Nonuniqueness of weak solutions for the transport equation at critical space regularity",
+      "arxiv_id": "2004.09538",
+      "in_registry": false
+    },
+    "1701.08678": {
+      "title": "Onsager's conjecture for admissible weak solutions",
+      "arxiv_id": "1701.08678",
+      "in_registry": false
+    },
+    "MR3898708": {
+      "title": "Nonuniqueness of weak solutions to the Navier-Stokes equation (BV, Ann.Math 2019)",
+      "arxiv_id": "1709.10033",
+      "in_registry": true
+    }
+  }
+}

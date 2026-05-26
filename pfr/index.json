@@ -1,0 +1,122 @@
+{
+  "description": "Proof DAG registry index for the Polynomial Freiman-Ruzsa program. Tracks extraction status for each paper. Scope: the GGMT proof of PFR, its one genuine precursor, and papers that improve, extend, or import it.",
+  "papers": {
+    "2311.05762": {
+      "status": "complete",
+      "title": "On a conjecture of Marton",
+      "authors": ["W. T. Gowers", "Ben Green", "Freddie Manners", "Terence Tao"],
+      "year": 2023,
+      "role": "root",
+      "nodes": 21,
+      "edges": 17,
+      "generated": "2026-03-18",
+      "updated": "2026-05-18"
+    },
+    "2306.13403": {
+      "status": "complete",
+      "title": "Sumsets and entropy revisited",
+      "authors": ["Ben Green", "Freddie Manners", "Terence Tao"],
+      "year": 2023,
+      "role": "precursor",
+      "nodes": 16,
+      "edges": 7,
+      "generated": "2026-03-18",
+      "updated": "2026-05-18"
+    },
+    "2404.09639": {
+      "status": "complete",
+      "title": "Improved Exponent for Marton's Conjecture in F_2^n",
+      "authors": ["Jyun-Jie Liao"],
+      "year": 2024,
+      "role": "improvement",
+      "nodes": 3,
+      "edges": 2,
+      "generated": "2026-03-18",
+      "updated": "2026-05-18"
+    },
+    "2501.11580": {
+      "status": "complete",
+      "title": "A polynomial Freiman-Ruzsa inverse theorem for function fields",
+      "authors": ["Thomas F. Bloom"],
+      "year": 2025,
+      "role": "extension",
+      "nodes": 8,
+      "edges": 4,
+      "generated": "2026-03-18",
+      "updated": "2026-05-18"
+    },
+    "2512.11217": {
+      "status": "complete",
+      "title": "Improved Bounds for the Freiman-Ruzsa Theorem",
+      "authors": ["Rushil Raghavan"],
+      "year": 2025,
+      "role": "extension",
+      "nodes": 24,
+      "edges": 11,
+      "generated": "2026-03-19",
+      "updated": "2026-05-18"
+    },
+    "2406.10872": {
+      "status": "complete",
+      "title": "On entropy Marton-type inequalities and small symmetric differences with cosets of abelian groups",
+      "authors": ["Thomas Karam"],
+      "year": 2024,
+      "role": "extension",
+      "nodes": 9,
+      "edges": 6,
+      "generated": "2026-03-19",
+      "updated": "2026-05-18"
+    },
+    "2312.11017": {
+      "status": "complete",
+      "title": "Information Inequalities via Ideas from Additive Combinatorics",
+      "authors": ["Chin Wa Lau", "Chandra Nair"],
+      "year": 2023,
+      "role": "extension",
+      "nodes": 10,
+      "edges": 7,
+      "generated": "2026-03-18",
+      "updated": "2026-05-18"
+    },
+    "2411.13493": {
+      "status": "complete",
+      "title": "Polynomial Freiman-Ruzsa, Reed-Muller codes and Shannon capacity",
+      "authors": ["Emmanuel Abbe", "Colin Sandon", "Vladyslav Shashkov", "Maryna Viazovska"],
+      "year": 2024,
+      "role": "application",
+      "nodes": 9,
+      "edges": 6,
+      "generated": "2026-03-18",
+      "updated": "2026-05-18"
+    },
+    "2405.10297": {
+      "status": "complete",
+      "title": "Low-Degree Polynomials Are Good Extractors",
+      "authors": ["Omar Alrabiah", "Jesse Goodman", "Jonathan Mosheiff", "João Ribeiro"],
+      "year": 2024,
+      "role": "application",
+      "nodes": 31,
+      "edges": 13,
+      "generated": "2026-03-19",
+      "updated": "2026-05-18"
+    },
+    "2603.06483": {
+      "status": "complete",
+      "title": "Uniform sum-product phenomenon for algebraic groups and Bremner's conjecture",
+      "authors": ["Joseph Harrison", "Akshat Mudgal", "Harry Schmidt"],
+      "year": 2026,
+      "role": "application",
+      "nodes": 15,
+      "edges": 11,
+      "generated": "2026-03-19",
+      "updated": "2026-05-18"
+    }
+  },
+  "totals": {
+    "papers": 10,
+    "nodes": 146,
+    "intra_paper_edges": 84,
+    "cross_paper_edges": 28,
+    "foundational_anchors": 2
+  }
+}

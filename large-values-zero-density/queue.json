@@ -1,0 +1,10 @@
+[
+  { "arxiv_id": "2503.07410", "priority": 1, "reason": "Guth, 'Large value estimates in number theory, harmonic analysis, and computer science' — the survey/map hub.", "status": "complete" },
+  { "arxiv_id": "2501.16779", "priority": 2, "reason": "Tao–Trudgian–Yang, 'New exponent pairs, zero density estimates...' — the synthesis pipeline (exponent pairs → μ(σ) → LV → A(σ) → additive energy).", "status": "complete" },
+  { "arxiv_id": "2405.20552", "priority": 3, "reason": "Guth–Maynard large value estimates (copied from bourgain-demeter-decoupling). The headline modern result.", "status": "complete" },
+  { "arxiv_id": "1408.5794", "priority": 4, "reason": "Bourgain decoupling/ζ (copied from bourgain-demeter-decoupling). The decoupling exit / shared cross-DAG anchor.", "status": "complete" },
+  { "arxiv_id": "2403.13157", "priority": 5, "reason": "Matomäki–Teräväinen, 'Zero density results implying large value estimates' — the converse direction.", "status": "complete" },
+  { "arxiv_id": "2411.01845", "priority": 6, "reason": "Starichkova, 'Zero-density approaches for the difference between consecutive primes' — the prime-gaps exit.", "status": "complete" },
+  { "arxiv_id": "2405.12545", "priority": 20, "reason": "Bellotti, 'An explicit log-free zero density estimate for the Riemann ζ function' — relevant but parser produced unusable \\oldthetheorem node IDs; re-attempt after parser fix.", "status": "out_of_scope" },
+  { "arxiv_id": "TBD", "priority": 30, "reason": "Candidates to add later: a Maynard solo / Guth–Maynard II primes-in-short-intervals paper if one appears; Bellotti once parseable; possibly the DHPT sum-of-squares-barrier paper and the Müller–Wein planted-vector paper referenced in 2503.07410 (need correct arxiv IDs).", "status": "blocked" }
+]

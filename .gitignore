@@ -1,0 +1,30 @@
+# Editor / OS
+.vscode/
+.cursorignore
+.DS_Store
+
+# Python
+__pycache__/
+*.pyc
+
+# Env / secrets
+.env
+.env.*
+
+# Internal pipeline tooling (specific to our Supabase backend; not part of the published dataset)
+upload.py
+
+# Internal agent / extraction worker instructions
+**/AGENT_PROMPT.md
+
+# Internal scratch: papers swept in for review and rejected from a DAG
+**/_parked/
+
+# Build artifacts for the Supabase artifacts-table upload format
+**/prod_graph.json
+
+# Defensive: avoid accidentally committing draft / old files
+**/*_OLD*
+**/*_DRAFT*
+**/TODO.md
+

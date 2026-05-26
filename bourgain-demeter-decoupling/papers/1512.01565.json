@@ -1,0 +1,608 @@
+{
+  "paper": "1512.01565",
+  "title": "Proof of the main conjecture in Vinogradov's mean value theorem for degrees higher than three",
+  "authors": [
+    "Jean Bourgain",
+    "Ciprian Demeter",
+    "Larry Guth"
+  ],
+  "generated": "2026-05-12",
+  "status": "complete",
+  "nodes": {
+    "thm:1.1": {
+      "type": "Theorem",
+      "number": "1.1",
+      "section": "1",
+      "role": "main_result",
+      "summary": "The main conjecture in Vinogradov's mean value theorem: for $s\\ge1$ and $n,N\\ge2$, $J_{s,n}(N)\\lesssim_\\epsilon N^{s+\\epsilon}+N^{2s-\\frac{n(n+1)}{2}+\\epsilon}$, where $J_{s,n}(N)$ counts solutions of the Vinogradov system. The conjectured sharp bound, open for $n\\ge4$ before this paper."
+    },
+    "thm:1.2": {
+      "type": "Theorem",
+      "number": "1.2",
+      "section": "1",
+      "role": "main_result",
+      "summary": "Sharp $l^2$ decoupling for the moment curve $\\Gamma_n=\\{(t,t^2,\\dots,t^n):t\\in[0,1]\\}$ at the critical exponent $p=n(n+1)$: for $B$ of radius $\\delta^{-n}$, $\\|E_{[0,1]}g\\|_{L^{n(n+1)}(w_B)}\\lesssim_\\epsilon\\delta^{-\\epsilon}(\\sum_{|J|=\\delta}\\|E_Jg\\|_{L^{n(n+1)}(w_B)}^2)^{1/2}$. The harmonic-analysis statement that powers everything; the $n=2$ case is Bourgain–Demeter's parabola decoupling."
+    },
+    "thm:4.1": {
+      "type": "Theorem",
+      "number": "4.1",
+      "section": "4",
+      "role": "key_reduction",
+      "summary": "From decoupling to exponential sums: with $t_i\\in(\\frac{i-1}{N},\\frac iN]$ and $R\\gtrsim N^n$, $(\\tfrac1{|B_R|}\\int|\\sum_i a_ie(x_1t_i+\\dots+x_nt_i^n)|^pw_{B_R})^{1/p}\\lesssim_\\epsilon(N^\\epsilon+N^{\\frac12(1-\\frac{n(n+1)}{p})+\\epsilon})\\|a_i\\|_{l^2}$. Translates the moment-curve decoupling into a bound on the Vinogradov exponential sum."
+    },
+    "cor:4.2": {
+      "type": "Corollary",
+      "number": "4.2",
+      "section": "4",
+      "role": "key_reduction",
+      "summary": "Vinogradov bound for a discretized set: $J_{s,n}(S_X)\\lesssim_\\epsilon N^{s+\\epsilon}+N^{2s-\\frac{n(n+1)}{2}+\\epsilon}$ uniformly in $S_X$. The mean-value estimate at the level of $\\delta$-separated points; an $\\epsilon$-removal step (Section 5) then yields thm:1.1."
+    },
+    "thm:6.1": {
+      "type": "Theorem",
+      "number": "6.1",
+      "section": "6",
+      "role": "foundational",
+      "summary": "Brascamp–Lieb / Bennett–Carbery–Tao finiteness criterion: $\\sup_{g_j}\\frac{\\|(\\prod_j|g_j\\circ\\pi_j|)^{1/m}\\|_{L^{2n/k}}}{(\\prod_j\\|g_j\\|_{L^2})^{1/m}}<\\infty$ iff $\\dim(V)\\le\\frac{n}{km}\\sum_j\\dim(\\pi_j(V))$ for every subspace $V$. The external multilinear-geometry input."
+    },
+    "prop:6.2": {
+      "type": "Proposition",
+      "number": "6.2",
+      "section": "6",
+      "role": "technical",
+      "summary": "Multilinear Kakeya for plates: for $m$ families of $R^{1/2}\\times\\cdots\\times R$ plates spanning subspaces $V_j$, under the non-degeneracy condition the appropriate $L^{2n/k}$ intersection integral is controlled. Geometric form of thm:6.1 usable for tube/plate packings."
+    },
+    "lem:6.3": {
+      "type": "Lemma",
+      "number": "6.3",
+      "section": "6",
+      "role": "technical",
+      "summary": "For $M_n=n!$ pairwise distinct points $t_j\\in[0,1]$, the tangent-space configurations $(V_k(t_j))_{j=1}^{M_n}$ satisfy the Brascamp–Lieb non-degeneracy condition. Verifies the hypothesis of thm:6.1 along the moment curve."
+    },
+    "prop:6.4": {
+      "type": "Proposition",
+      "number": "6.4",
+      "section": "6",
+      "role": "technical",
+      "summary": "Uniform Brascamp–Lieb constant: for $K\\ge M_n$, $\\sup_{(t_1,\\dots,t_{M_n})\\in S_K}C(V_k(t_1),\\dots,V_k(t_{M_n}))<\\infty$ where $S_K$ is the set of $1/K$-separated tuples. Quantitative stability needed before iterating."
+    },
+    "thm:6.5": {
+      "type": "Theorem",
+      "number": "6.5",
+      "section": "6",
+      "role": "main_technical",
+      "summary": "Multilinear Kakeya for moment-curve-tangent plates: for $M_n$ families of plates with orientations $(V_k(t_P),V_k(t_P)^\\perp)$, $t_P\\in I_j$, the multilinear plate-intersection inequality holds. The curved-geometry multilinear estimate that the ball-inflation step rests on."
+    },
+    "thm:6.6": {
+      "type": "Theorem",
+      "number": "6.6",
+      "section": "6",
+      "role": "key_mechanism",
+      "summary": "Ball-inflation (multilinear decoupling) inequality: for $1\\le k\\le n-1$, $p\\ge2n$, $B$ of radius $\\rho^{-(k+1)}$ covered by balls of radius $\\rho^{-k}$, the averaged product of $l^2$-square-functions over the small balls is bounded by the same over the big ball, up to $\\rho^{-\\epsilon}$. The engine that gains at each scale — the heart of the iteration."
+    },
+    "lem:7.1": {
+      "type": "Lemma",
+      "number": "7.1",
+      "section": "7",
+      "role": "technical",
+      "summary": "Abstract weight-transfer lemma: if $Q_1,Q_2$ on weights satisfy sublinearity/superlinearity and $Q_1(1_B)\\lesssim Q_2(\\eta_B)$ on balls of radius $R$, then $Q_1(w_B)\\lesssim Q_2(w_B)$. Lets sharp-cutoff estimates be upgraded to weighted ones throughout."
+    },
+    "cor:7.2": {
+      "type": "Corollary",
+      "number": "7.2",
+      "section": "7",
+      "role": "technical",
+      "summary": "Reverse Hölder for extension operators: for $q\\ge p\\ge1$ and $B$ of radius $\\gtrsim1$, $\\|E_{[0,1]}g\\|_{L^q(w_B)}\\lesssim\\|E_{[0,1]}g\\|_{L^p(w_B)}$. Local constancy of $E_{[0,1]}g$ at scale $1$."
+    },
+    "lem:7.3": {
+      "type": "Lemma",
+      "number": "7.3",
+      "section": "7",
+      "role": "key_mechanism",
+      "summary": "Interval rescaling: for $I\\subset[0,1]$ of length $\\delta^\\rho$ and $B$ of radius $\\delta^{-n}$, $\\|E_Ig\\|_{L^p(w_B)}\\lesssim V_p(\\delta^{1-\\rho})(\\sum_{|J|=\\delta,\\,J\\subset I}\\|E_Jg\\|_{L^p(w_B)}^2)^{1/2}$. The affine-invariance / parabolic-rescaling step for the moment curve."
+    },
+    "thm:7.4": {
+      "type": "Theorem",
+      "number": "7.4",
+      "section": "7",
+      "role": "key_reduction",
+      "summary": "Linear-versus-multilinear reduction: for each $K$ there is $\\epsilon_p(K)\\to0$ with $V_p(\\delta)\\le C_{K,p}\\delta^{-\\epsilon_p(K)}\\sup_{\\delta\\lesssim\\delta'<1}V_p(\\delta',K)$. Reduces the linear decoupling constant to the multilinear (transverse) one — the same hinge as in the parabola proof."
+    },
+    "lem:8.1": {
+      "type": "Lemma",
+      "number": "8.1",
+      "section": "8",
+      "role": "technical",
+      "summary": "Flattening: for arbitrary collections of disjoint intervals of length an integer multiple of $R^{-1}$, the product of $l^2$-square-functions is bounded by the same refined to $R^{-1}$-intervals. Lets the iteration always work at the finest scale."
+    },
+    "lem:8.2": {
+      "type": "Lemma",
+      "number": "8.2",
+      "section": "8",
+      "role": "key_mechanism",
+      "summary": "Lower-dimensional (degree $k-1$) decoupling inside an interval: for $I=[t_0,t_0+\\sigma]$, $3\\le k\\le n$, $\\sigma^{-k+1}\\lesssim R$, $\\|E_I^{(n)}g\\|_{L^p_\\sharp(w_B)}\\lesssim V_{p,k-1}(\\sigma)(\\sum_{|J|=R^{-1/(k-1)},\\,J\\subset I}\\|E_J^{(n)}g\\|_{L^p_\\sharp(w_B)}^2)^{1/2}$. The induction-on-dimension input — uses thm:1.2 for smaller $n$."
+    },
+    "thm:8.3": {
+      "type": "Theorem",
+      "number": "8.3",
+      "section": "8.1",
+      "role": "main_technical",
+      "summary": "$n=3$ scheme: assuming thm:1.2 for all smaller $n$, for each $W>0$ there are weights $b_I,\\gamma_I$ with $\\sum\\gamma_I<1$, $\\sum b_I\\gamma_I>W$ such that the localized decoupling quantity $A_p(u,B^3,u)$ obeys a self-improving inequality on balls of radius $\\delta^{-3}$. Sets up the iteration in the first nontrivial degree."
+    },
+    "prop:8.4": {
+      "type": "Proposition",
+      "number": "8.4",
+      "section": "8.1",
+      "role": "main_technical",
+      "summary": "$n=3$, single ball-inflation step: bounds the $\\delta$-scale square-function product averaged over $B^1$-balls covering a $B^2$-ball by a Hölder mix of a coarser product and a lower-degree decoupling factor, with exponent $\\alpha_1(p)$ fixed by an interpolation identity."
+    },
+    "prop:8.5": {
+      "type": "Proposition",
+      "number": "8.5",
+      "section": "8.1",
+      "role": "main_technical",
+      "summary": "$n=3$, two-level ball-inflation: iterates prop:8.4 across the $B^1\\subset B^2\\subset B^3$ hierarchy to relate the finest-scale product over $B^3$ to coarser ones."
+    },
+    "prop:8.6": {
+      "type": "Proposition",
+      "number": "8.6",
+      "section": "8.1",
+      "role": "main_technical",
+      "summary": "$n=3$, $r$-fold iterate: for $u$ with $(3/2)^ru\\le1$, $A_p(u,B^3,u)$ is bounded by a product of $D_p$ (decoupling) and $A_p$ (localized) factors with geometrically decaying exponents. The recursion unrolled $r$ times."
+    },
+    "prop:8.7": {
+      "type": "Proposition",
+      "number": "8.7",
+      "section": "8.1",
+      "role": "main_technical",
+      "summary": "$n=3$, repackaged $r$-fold iterate: $A_p(u,B^3,u)\\lesssim\\delta^{-\\epsilon}V_p(\\delta)^{1-\\sum\\gamma_j}D_p(1,B^3)^{1-\\sum\\gamma_j}\\prod_jA_p(b_ju,B^3,b_ju)^{\\gamma_j}$. Normalizes prop:8.6 into the form fed to the outer ($M$-fold) iteration."
+    },
+    "thm:8.8": {
+      "type": "Theorem",
+      "number": "8.8",
+      "section": "8.1",
+      "role": "main_technical",
+      "summary": "$n=3$, $M$-fold iterate: $A_p(u,B^3,u)\\lesssim\\delta^{-\\epsilon}V_p(\\delta)^{1-(\\sum\\gamma_j)^M}D_p(1,B^3)^{1-(\\sum\\gamma_j)^M}\\prod A_p(\\dots)^{\\prod\\gamma_{j_l}}$ for $p\\ge9$. Since $\\sum\\gamma_j<1$, $M\\to\\infty$ kills the $A_p$ remainder and forces $V_p(\\delta)\\lesssim\\delta^{-\\epsilon}$ in degree $3$."
+    },
+    "prop:8.9": {
+      "type": "Proposition",
+      "number": "8.9",
+      "section": "8.2",
+      "role": "main_technical",
+      "summary": "$n=4$, base ball-inflation on $B^2\\subset\\mathbb{R}^4$: $A_p(1,B^2,1)\\lesssim\\delta^{-\\epsilon}D_{p/4}(1,B^2)\\lesssim\\delta^{-\\epsilon}A_p(2,B^2,2)^{1-\\alpha_1}D_{2p/4}(1,B^2)^{\\alpha_1}$. First step of the degree-4 scheme."
+    },
+    "prop:8.10": {
+      "type": "Proposition",
+      "number": "8.10",
+      "section": "8.2",
+      "role": "main_technical",
+      "summary": "$n=4$, $B^3\\subset\\mathbb{R}^4$ ball-inflation: expresses $A_p(1,B^3,1)$ via $A_p(2,\\cdot),A_p(3,\\cdot)$ and $D_{2p/4},D_{3p/4}$ factors with exponents $\\alpha_1,\\alpha_2,\\beta_2$."
+    },
+    "prop:8.11": {
+      "type": "Proposition",
+      "number": "8.11",
+      "section": "8.2",
+      "role": "main_technical",
+      "summary": "$n=4$, top-level $B^4\\subset\\mathbb{R}^4$ ball-inflation: $A_p(1,B^4,1)$ in terms of $A_p(2,\\cdot),A_p(3,\\cdot),A_p(4,\\cdot)$ and several $D_{jp/4}$ factors with the full $\\alpha_j,\\beta_j$ numerology."
+    },
+    "prop:8.12": {
+      "type": "Proposition",
+      "number": "8.12",
+      "section": "8.2",
+      "role": "main_technical",
+      "summary": "$n=4$ self-improving inequality plus the crucial exponent identity, valid for $p$ near $20=n(n+1)$: $A_p(u,B^4,u)\\lesssim\\delta^{-\\epsilon}V_{p,4}(\\delta)^{1-\\sum\\gamma_j}D_p(1,B^4)^{1-\\sum\\gamma_j}\\prod_jA_p(b_ju,B^4,b_ju)^{\\gamma_j}$. The degree-4 analogue of thm:8.3+prop:8.7."
+    },
+    "thm:8.13": {
+      "type": "Theorem",
+      "number": "8.13",
+      "section": "8.2",
+      "role": "main_technical",
+      "summary": "$n=4$, $M$-fold iterate: $A_p(u,B^4,u)\\lesssim\\delta^{-\\epsilon}V_{p,4}(\\delta)^{1-(\\sum\\gamma_j)^M}D_p(1,B^4)^{1-(\\sum\\gamma_j)^M}\\prod A_p(\\dots)^{\\prod\\gamma_{j_l}}$ near $p=20$. Closes degree $4$ the same way thm:8.8 closes degree $3$."
+    },
+    "thm:8.14": {
+      "type": "Theorem",
+      "number": "8.14",
+      "section": "8.3",
+      "role": "key_reduction",
+      "summary": "Arbitrary-degree $M$-fold iterate: assuming the exponent system (71), for $p$ near $n(n+1)$, $A_p(u,B^n,u)\\lesssim\\delta^{-\\epsilon}V_{p,n}(\\delta)^{1-(\\sum\\gamma_j)^M}D_p(1,B^n)^{1-(\\sum\\gamma_j)^M}\\prod A_p(\\dots)^{\\prod\\gamma_{j_l}}$, with the crucial exponent identity. The general-$n$ self-improvement that yields thm:1.2 by induction on $n$."
+    },
+    "thm:9.1": {
+      "type": "Theorem",
+      "number": "9.1",
+      "section": "9",
+      "role": "key_reduction",
+      "summary": "For $n\\ge3$ and $p$ near $n(n+1)$, assuming thm:1.2 for all smaller $n$: $A_p(u,B^n,u,g)\\lesssim_{\\epsilon,K,W}\\delta^{-(1-uW)(\\eta_p+\\epsilon)}D_p(1,B^n,g)$ for every $g,\\delta,B^n$. Letting $W\\to\\infty$ this gives $V_{p,n}(\\delta)\\lesssim\\delta^{-\\epsilon}$, i.e. thm:1.2 in degree $n$."
+    },
+    "lem:9.2": {
+      "type": "Lemma",
+      "number": "9.2",
+      "section": "9",
+      "role": "technical",
+      "summary": "The key inequality (77) of thm:9.1 follows once $V_{p,n}(\\delta)\\lesssim_{\\epsilon,p}\\delta^{-\\epsilon}$ holds for $p$ just below $p_n=n(n+1)$. Pins down what 'closing the induction' means."
+    },
+    "thm:10.1": {
+      "type": "Theorem",
+      "number": "10.1",
+      "section": "10",
+      "role": "technical",
+      "summary": "Appendix numerology: for $\\Delta<n+1$ near $n+1$, the solution $\\omega_1(\\Delta)$ of the recursive system ($\\omega_j=(1-\\alpha_j)\\eta_j+\\alpha_j\\omega_{j+1}$, $\\eta_j=(1-\\beta_j)\\tfrac{j+1}{j}\\eta_{j-1}+\\beta_j\\tfrac{j+1}{j}\\omega_j$, $\\omega_n=0$, $\\eta_1=2$) satisfies $\\omega_1(\\Delta)>1$. The exponent bookkeeping that makes the iteration gain rather than lose."
+    }
+  },
+  "edges": [
+    {
+      "from": "thm:1.1",
+      "to": "cor:4.2",
+      "type": "depends_on",
+      "note": "The Vinogradov bound for separated sets, after an $\\epsilon$-removal argument (Section 5), gives the full mean-value theorem."
+    },
+    {
+      "from": "cor:4.2",
+      "to": "thm:4.1",
+      "type": "depends_on",
+      "note": "Counting solutions of the Vinogradov system is the $p=n(n+1)$, integer-frequency case of the exponential-sum estimate."
+    },
+    {
+      "from": "thm:4.1",
+      "to": "thm:1.2",
+      "type": "depends_on",
+      "note": "The exponential-sum bound is read off from moment-curve decoupling by discretizing and applying the square-function inequality."
+    },
+    {
+      "from": "thm:1.2",
+      "to": "thm:9.1",
+      "type": "depends_on",
+      "note": "For $n\\ge3$, decoupling is obtained by sending $W\\to\\infty$ in the self-improving inequality of thm:9.1; the base case $n=2$ is Bourgain–Demeter's parabola decoupling."
+    },
+    {
+      "from": "thm:9.1",
+      "to": "lem:9.2",
+      "type": "depends_on",
+      "note": "Identifies the inductive hypothesis $V_{p,m}\\lesssim\\delta^{-\\epsilon}$ ($m<n$) as what is needed."
+    },
+    {
+      "from": "thm:9.1",
+      "to": "thm:8.14",
+      "type": "depends_on",
+      "note": "thm:9.1 is the $M\\to\\infty$ limit of the arbitrary-degree $M$-fold iterate."
+    },
+    {
+      "from": "thm:9.1",
+      "to": "lem:8.2",
+      "type": "depends_on",
+      "note": "The lower-degree decoupling steps inside the iteration consume thm:1.2 for smaller $n$."
+    },
+    {
+      "from": "thm:8.14",
+      "to": "thm:7.4",
+      "type": "depends_on",
+      "note": "Each iteration cycle passes through the linear-vs-multilinear reduction."
+    },
+    {
+      "from": "thm:8.14",
+      "to": "thm:6.6",
+      "type": "depends_on",
+      "note": "The gain at each scale is the ball-inflation (multilinear decoupling) inequality."
+    },
+    {
+      "from": "thm:8.14",
+      "to": "thm:10.1",
+      "type": "depends_on",
+      "note": "Closure of the iteration requires the exponent system to have solution $\\omega_1(\\Delta)>1$."
+    },
+    {
+      "from": "thm:8.14",
+      "to": "lem:8.1",
+      "type": "depends_on",
+      "note": "Intervals are flattened to the finest scale before each step."
+    },
+    {
+      "from": "thm:8.14",
+      "to": "lem:7.3",
+      "type": "depends_on",
+      "note": "Sub-intervals are rescaled back to $[0,1]$ between steps."
+    },
+    {
+      "from": "thm:8.13",
+      "to": "thm:8.14",
+      "type": "specializes",
+      "note": "Degree-4 instance of the general-$n$ iterate."
+    },
+    {
+      "from": "thm:8.8",
+      "to": "thm:8.14",
+      "type": "specializes",
+      "note": "Degree-3 instance of the general-$n$ iterate."
+    },
+    {
+      "from": "thm:8.13",
+      "to": "prop:8.12",
+      "type": "depends_on",
+      "note": "The $M$-fold iterate in degree 4 is built by composing the single-cycle self-improvement prop:8.12."
+    },
+    {
+      "from": "prop:8.12",
+      "to": "prop:8.11",
+      "type": "depends_on",
+      "note": "Single degree-4 cycle assembled from the top-level ball-inflation on $B^4$."
+    },
+    {
+      "from": "prop:8.11",
+      "to": "prop:8.10",
+      "type": "depends_on",
+      "note": "...and the $B^3\\subset\\mathbb{R}^4$ ball-inflation."
+    },
+    {
+      "from": "prop:8.10",
+      "to": "prop:8.9",
+      "type": "depends_on",
+      "note": "...and the base $B^2\\subset\\mathbb{R}^4$ ball-inflation."
+    },
+    {
+      "from": "prop:8.9",
+      "to": "thm:6.6",
+      "type": "depends_on",
+      "note": "Each ball-inflation step is an application of the multilinear decoupling inequality."
+    },
+    {
+      "from": "prop:8.10",
+      "to": "thm:6.6",
+      "type": "depends_on",
+      "note": "Same."
+    },
+    {
+      "from": "prop:8.11",
+      "to": "thm:6.6",
+      "type": "depends_on",
+      "note": "Same."
+    },
+    {
+      "from": "prop:8.12",
+      "to": "lem:8.2",
+      "type": "depends_on",
+      "note": "Lower-degree decoupling factors come from the dimension-induction lemma."
+    },
+    {
+      "from": "thm:8.8",
+      "to": "prop:8.7",
+      "type": "depends_on",
+      "note": "The $M$-fold iterate composes the normalized single-cycle inequality."
+    },
+    {
+      "from": "prop:8.7",
+      "to": "prop:8.6",
+      "type": "depends_on",
+      "note": "Repackaging of the $r$-fold unrolled recursion."
+    },
+    {
+      "from": "prop:8.6",
+      "to": "prop:8.5",
+      "type": "depends_on",
+      "note": "Unroll the two-level ball-inflation $r$ times."
+    },
+    {
+      "from": "prop:8.5",
+      "to": "prop:8.4",
+      "type": "depends_on",
+      "note": "Iterate the single ball-inflation step across $B^1\\subset B^2\\subset B^3$."
+    },
+    {
+      "from": "prop:8.4",
+      "to": "thm:6.6",
+      "type": "depends_on",
+      "note": "The single step is the multilinear decoupling inequality at $k=1,2$."
+    },
+    {
+      "from": "thm:8.3",
+      "to": "prop:8.7",
+      "type": "depends_on",
+      "note": "The degree-3 scheme is set up from the normalized iterate; weights $b_I,\\gamma_I$ are extracted there."
+    },
+    {
+      "from": "thm:8.3",
+      "to": "lem:8.2",
+      "type": "depends_on",
+      "note": "Uses thm:1.2 for $n=2$ as the lower-degree input."
+    },
+    {
+      "from": "prop:8.4",
+      "to": "lem:8.2",
+      "type": "depends_on",
+      "note": "Lower-degree ($k=2$) decoupling factor."
+    },
+    {
+      "from": "thm:7.4",
+      "to": "lem:7.3",
+      "type": "depends_on",
+      "note": "The reduction relies on rescaling sub-intervals to unit scale."
+    },
+    {
+      "from": "thm:7.4",
+      "to": "lem:7.1",
+      "type": "depends_on",
+      "note": "Weight-transfer lemma upgrades sharp-cutoff bounds to weighted ones."
+    },
+    {
+      "from": "thm:6.6",
+      "to": "thm:6.5",
+      "type": "depends_on",
+      "note": "Ball-inflation is deduced from multilinear Kakeya for moment-curve-tangent plates."
+    },
+    {
+      "from": "thm:6.5",
+      "to": "prop:6.2",
+      "type": "depends_on",
+      "note": "The curved-plate multilinear estimate follows from the plate multilinear Kakeya inequality."
+    },
+    {
+      "from": "thm:6.5",
+      "to": "prop:6.4",
+      "type": "depends_on",
+      "note": "Uses the uniform Brascamp–Lieb constant over separated tuples."
+    },
+    {
+      "from": "prop:6.2",
+      "to": "thm:6.1",
+      "type": "depends_on",
+      "note": "Plate multilinear Kakeya is the geometric form of the Brascamp–Lieb finiteness theorem."
+    },
+    {
+      "from": "prop:6.4",
+      "to": "lem:6.3",
+      "type": "depends_on",
+      "note": "Uniform constant builds on the non-degeneracy of $n!$ distinct tangent spaces."
+    },
+    {
+      "from": "lem:6.3",
+      "to": "thm:6.1",
+      "type": "depends_on",
+      "note": "Verifies, for the moment curve, the subspace condition required by thm:6.1."
+    },
+    {
+      "from": "thm:6.6",
+      "to": "cor:7.2",
+      "type": "depends_on",
+      "note": "Reverse Hölder normalizes the local $L^p$ norms in the ball-inflation argument."
+    },
+    {
+      "from": "lem:8.1",
+      "to": "cor:7.2",
+      "type": "depends_on",
+      "note": "Local constancy used when flattening to $R^{-1}$ scale."
+    }
+  ],
+  "critical_path": [
+    "thm:1.1",
+    "cor:4.2",
+    "thm:4.1",
+    "thm:1.2",
+    "thm:9.1",
+    "thm:8.14",
+    "thm:6.6",
+    "thm:6.5",
+    "prop:6.2",
+    "thm:6.1"
+  ],
+  "proof_architecture": {
+    "main_results": {
+      "description": "Vinogradov's mean value theorem in the conjectured sharp range, and the equivalent moment-curve decoupling theorem.",
+      "nodes": [
+        "thm:1.1",
+        "thm:1.2"
+      ]
+    },
+    "decoupling_to_vinogradov": {
+      "description": "Translate the harmonic-analysis decoupling estimate into the number-theoretic mean-value bound, then remove the $\\epsilon$ to reach the clean statement.",
+      "nodes": [
+        "thm:4.1",
+        "cor:4.2"
+      ]
+    },
+    "multilinear_geometry": {
+      "description": "Brascamp–Lieb / Bennett–Carbery–Tao multilinear estimates specialized to moment-curve tangent spaces, and the ball-inflation inequality they yield.",
+      "nodes": [
+        "thm:6.1",
+        "prop:6.2",
+        "lem:6.3",
+        "prop:6.4",
+        "thm:6.5",
+        "thm:6.6"
+      ]
+    },
+    "tools_and_rescaling": {
+      "description": "Weight transfer, reverse Hölder / local constancy, interval rescaling, flattening, and the linear-vs-multilinear reduction.",
+      "nodes": [
+        "lem:7.1",
+        "cor:7.2",
+        "lem:7.3",
+        "thm:7.4",
+        "lem:8.1",
+        "lem:8.2",
+        "thm:10.1"
+      ]
+    },
+    "iteration_degree_3": {
+      "description": "The induction-on-scales scheme worked out explicitly for the moment curve in $\\mathbb{R}^3$.",
+      "nodes": [
+        "thm:8.3",
+        "prop:8.4",
+        "prop:8.5",
+        "prop:8.6",
+        "prop:8.7",
+        "thm:8.8"
+      ]
+    },
+    "iteration_degree_4": {
+      "description": "The same scheme in $\\mathbb{R}^4$, where the multi-level ball-inflation bookkeeping first appears in full.",
+      "nodes": [
+        "prop:8.9",
+        "prop:8.10",
+        "prop:8.11",
+        "prop:8.12",
+        "thm:8.13"
+      ]
+    },
+    "iteration_general_n": {
+      "description": "The arbitrary-degree iteration and the induction on $n$ that closes the proof of decoupling.",
+      "nodes": [
+        "thm:8.14",
+        "thm:9.1",
+        "lem:9.2"
+      ]
+    }
+  },
+  "bibliography": {
+    "BD-parabola": {
+      "title": "The proof of the l^2 Decoupling Conjecture",
+      "authors": [
+        "Bourgain",
+        "Demeter"
+      ],
+      "arxiv_id": "1403.5335",
+      "in_registry": true
+    },
+    "BCT": {
+      "title": "On the multilinear restriction and Kakeya conjectures",
+      "authors": [
+        "Bennett",
+        "Carbery",
+        "Tao"
+      ],
+      "arxiv_id": "math/0509262",
+      "in_registry": false
+    },
+    "BBFL": {
+      "title": "Finite bounds for Hölder-Brascamp-Lieb multilinear inequalities",
+      "authors": [
+        "Bennett",
+        "Carbery",
+        "Christ",
+        "Tao"
+      ],
+      "arxiv_id": "math/0505065",
+      "in_registry": false
+    },
+    "Guth-Kakeya": {
+      "title": "A short proof of the multilinear Kakeya inequality",
+      "authors": [
+        "Guth"
+      ],
+      "arxiv_id": "1409.4683",
+      "in_registry": false
+    },
+    "Wooley-EKC": {
+      "title": "The cubic case of the main conjecture in Vinogradov's mean value theorem",
+      "authors": [
+        "Wooley"
+      ],
+      "arxiv_id": "1401.3150",
+      "in_registry": false
+    },
+    "Vinogradov": {
+      "title": "The method of trigonometrical sums in the theory of numbers",
+      "authors": [
+        "I. M. Vinogradov"
+      ],
+      "arxiv_id": null,
+      "in_registry": false
+    }
+  }
+}

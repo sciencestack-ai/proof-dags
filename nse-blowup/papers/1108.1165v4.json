@@ -1,0 +1,678 @@
+{
+  "paper": "1108.1165v4",
+  "title": "Localisation and compactness properties of the Navier-Stokes global regularity problem",
+  "authors": [
+    "Terence Tao"
+  ],
+  "generated": "2026-03-09",
+  "status": "complete",
+  "nodes": {
+    "def:1.1": {
+      "type": "Definition",
+      "number": "1.1",
+      "section": "1",
+      "role": "definition",
+      "summary": "Smooth solution categories for the NSE: defines smooth data $(u_0$, f, T), finite energy (E $< \\infty), H^1$ norm, Schwartz class, and periodic data with period L. The hierarchy Schwartz $\\subset H^1 \\subset$ finite energy, with periodic incompatible with all three unless trivial. Fixes notation for all subsequent conjectures."
+    },
+    "conjecture:1.9": {
+      "type": "Conjecture",
+      "number": "1.9",
+      "section": "1",
+      "role": "context",
+      "summary": "Global well-posedness in periodic $H^1$: for any periodic $H^1$ data, there exists a smooth periodic $H^1$ solution on all of [0,T]. The paper's primary sufficient hypothesis — the strongest assumption from which all major implication chains flow."
+    },
+    "conjecture:1.10": {
+      "type": "Conjecture",
+      "number": "1.10",
+      "section": "1",
+      "role": "context",
+      "summary": "A priori periodic $H^1$ bound: any periodic $H^1$ mild solution on [0,T] satisfies ‖u‖$_{X^1} \\leF(H^1(u_0,f,T)$, T) for some finite function F. Equivalent to conjecture:1.9 by thm:1.20."
+    },
+    "conjecture:1.13": {
+      "type": "Conjecture",
+      "number": "1.13",
+      "section": "1",
+      "role": "context",
+      "summary": "Global almost regularity for homogeneous $H^1$ data on $R^3$: any smooth homogeneous $H^1$ initial data produces a global almost smooth $H^1$ solution. Implied by conjecture:1.19; equivalent to conjecture:1.14, 1.15, 1.16, 1.17 by thm:1.20."
+    },
+    "conjecture:1.15": {
+      "type": "Conjecture",
+      "number": "1.15",
+      "section": "1",
+      "role": "context",
+      "summary": "Global well-posedness in homogeneous $H^1$: for any homogeneous $H^1$ data, there exists a global mild $H^1$ solution. Equivalent to conjecture:1.13 and conjecture:1.16 by thm:1.20 via concentration compactness."
+    },
+    "conjecture:1.19": {
+      "type": "Conjecture",
+      "number": "1.19",
+      "section": "1",
+      "role": "context",
+      "summary": "Global well-posedness from spatially smooth $H^1$ data: any $H^1$ initial data that is also spatially smooth (all spatial derivatives bounded) produces a global smooth solution. Implied by conjecture:1.9 via thm:12.2; implies conjecture:1.13 and conjecture:1.5."
+    },
+    "conjecture:1.5": {
+      "type": "Conjecture",
+      "number": "1.5",
+      "section": "1",
+      "role": "context",
+      "summary": "Global regularity for Schwartz data (Clay Millennium Prize positive formulation): every Schwartz initial datum with Schwartz forcing produces a global smooth solution. Implied by conjecture:1.19, hence ultimately by conjecture:1.9."
+    },
+    "thm:1.20": {
+      "type": "Theorem",
+      "number": "1.20",
+      "section": "1",
+      "role": "main_result",
+      "summary": "MAIN: Establishes the implication diagram between NSE conjecture variants. Key chains: (1) conj:1.9 ↔ conj:1.10; (2) conj:$1.9 \\to$ conj:$1.8 \\to$ conj:1.4; (3) conj:$1.9 \\to$ conj:$1.19 \\to$ conj:1.13 and conj:1.5; (4) conj:1.13 ↔ conj:1.14 ↔ conj:1.15 ↔ conj:1.16 ↔ conj:1.17. Upshot: periodic $H^1$ well-posedness implies both Clay Prize formulations."
+    },
+    "thm:1.12": {
+      "type": "Theorem",
+      "number": "1.12",
+      "section": "1",
+      "role": "main_result",
+      "summary": "Non-existence: there exists smooth $H^1$ initial data $u_0$ for which no smooth finite energy solution exists for any T > 0. Shows the mild $H^1$ framework is necessary — smooth $H^1$ data alone does not guarantee smooth solutions."
+    },
+    "prop:1.7": {
+      "type": "Proposition",
+      "number": "1.7",
+      "section": "1",
+      "role": "auxiliary",
+      "summary": "Equivalence of forced and unforced periodic regularity: conjecture:1.6 (global regularity for periodic data with forcing) is equivalent to conjecture:1.4 (homogeneous periodic). The forcing term can be absorbed by homogenisation (lem:6.1)."
+    },
+    "lem:2.1": {
+      "type": "Lemma",
+      "number": "2.1",
+      "section": "2",
+      "role": "foundational",
+      "summary": "Linear and bilinear estimates for the heat semigroup in $X^s$ spaces. Standard energy estimate (eq:21): ‖u‖$_{X^s}$ ≲ ‖$u(t_0)$‖$_{H^s} +$ ‖F‖$_{L^1_t H^s_x}$; $L^2$ variant (eq:22); bilinear product estimate ‖$\\nabla(uv)$‖$_{L^4_t L^2_x}$ ≲ ‖u‖$_{X^1}$‖v‖$_{X^1} (eq$:24). Fundamental tool used in nearly every subsequent argument."
+    },
+    "lem:2.2": {
+      "type": "Lemma",
+      "number": "2.2",
+      "section": "2",
+      "role": "technical",
+      "summary": "Heat kernel decay: for f Fourier-supported on annulus ${|\\xi|$ ~ N}, ‖$e^{t\\Delta}f$‖$_{L^q}$ ≲ $t^{3/2q−3/2p}$ exp(−$ctN^2)$ ‖f‖$_{L^p}$. Exponential frequency-scale decay used in high-frequency energy and enstrophy arguments."
+    },
+    "lem:4.1": {
+      "type": "Lemma",
+      "number": "4.1",
+      "section": "4",
+      "role": "technical",
+      "summary": "Reduction to normalised pressure: every finite energy almost smooth solution can be written with pressure p = −$\\Delta^{-1}\\partial_i\\partial_j(u_iu_j) + \\Delta^{-1}\\nabla\\cdotf +$ C(t) (plus an $x\\cdota(t)$ term in the periodic case). Canonical pressure form required for the enstrophy equation derivation in sec:10."
+    },
+    "cor:4.3": {
+      "type": "Corollary",
+      "number": "4.3",
+      "section": "4",
+      "role": "technical",
+      "summary": "Almost smooth $H^1$ solutions are essentially mild: any almost smooth $H^1$ solution with normalised pressure is automatically a mild $H^1$ solution. Reduces almost-smooth to mild $H^1$ for uniqueness and enstrophy localisation arguments."
+    },
+    "thm:5.1": {
+      "type": "Theorem",
+      "number": "5.1",
+      "section": "5",
+      "role": "foundational",
+      "summary": "Local well-posedness in periodic $H^1$: (i) strong solution (u $\\in C^0_t H^1_x)$; (ii) local existence for small (‖$u_0$‖$_{H^1}^4$ T $\\le$ c); (iii) uniqueness; (iv) smooth data yields smooth solution; (v) Lipschitz stability in $X^1$. Foundation for all conditional proofs involving periodic data."
+    },
+    "cor:5.2": {
+      "type": "Corollary",
+      "number": "5.2",
+      "section": "5",
+      "role": "auxiliary",
+      "summary": "Maximal Cauchy development for periodic $H^1$: either global smooth solution exists, or there is a blowup time T_* where ‖u(t)‖$_{H^1} \\to \\infty$. Characterises the blowup scenario needed for the proof by contradiction in the implication proofs."
+    },
+    "prop:5.3": {
+      "type": "Proposition",
+      "number": "5.3",
+      "section": "5",
+      "role": "key_technical",
+      "summary": "Compactness of periodic $H^1$ solutions: weakly convergent data sequences produce weakly convergent solutions in $X^1$, with strong convergence on $[\\tau,T]$. Essential for the homogenisation limit (sec:6) and for passing to limits in implication proofs."
+    },
+    "thm:5.4": {
+      "type": "Theorem",
+      "number": "5.4",
+      "section": "5",
+      "role": "foundational",
+      "summary": "Local well-posedness in $H^1 (non-periodic, R^3)$: same five properties as thm:5.1 — strong solution, local existence, uniqueness, regularity (Schwartz data yields smooth solution), Lipschitz stability. The non-periodic LWP base used throughout sec:11–15."
+    },
+    "prop:5.6": {
+      "type": "Proposition",
+      "number": "5.6",
+      "section": "5",
+      "role": "key_structural",
+      "summary": "Almost regularity: homogeneous $H^1$ mild solutions satisfying the small-data condition (‖$u_0$‖$_{H^1}^4$ T $\\le$ c) are smooth on $(\\tau,T] \\times R^3$; if $u_0$ is smooth, the solution is almost smooth. Used in prop:15.1 to construct non-smooth-from-smooth data for thm:1.12."
+    },
+    "lem:6.1": {
+      "type": "Lemma",
+      "number": "6.1",
+      "section": "6",
+      "role": "technical",
+      "summary": "Irrational shift homogenisation: if $\\alpha \\in R^3/Z^3$ is irrational $(k\\cdot\\alpha \\ne 0$ mod 1 for all k $\\ne 0)$, then the spatially shifted forcing $f_{\\lambda\\alpha}(x)$ :$= f(x+\\lambda\\alpha)$ converges weakly to 0 in $L^\\infty_t H^1_x$ as $\\lambda \\to \\infty$. Allows conversion of periodic inhomogeneous problems to homogeneous ones for prop:1.7."
+    },
+    "lem:8.1": {
+      "type": "Lemma",
+      "number": "8.1",
+      "section": "8",
+      "role": "key_structural",
+      "summary": "Global energy inequality: for finite energy almost smooth solutions, ‖u‖$_{L^\\infty_t L^2_x} +$ ‖$\\nablau$‖$_{L^2_t L^2_x}$ ≲ $E(u_0,f,T)^{1/2}$. Automatically implies u $\\in X^1$; also justifies the $L^2_t H^2_x$ condition in def:1.1 being redundant for $H^1$ solutions (cor:11.1 consequence)."
+    },
+    "thm:8.2": {
+      "type": "Theorem",
+      "number": "8.2",
+      "section": "8",
+      "role": "key_mechanism",
+      "summary": "Local energy estimate (new, main tool 1): for finite energy almost smooth solutions with divergence-free f, energy and dissipation in a shrunken ball $B(x_0,R$−r) are bounded by localised initial data, localised forcing, plus error terms $E^{1/2}T^{1/2}/r + E^{3/2}T^{1/2}/r^2$. Valid for large data and long times, unlike classical results. Prerequisite for enstrophy localisation."
+    },
+    "prop:9.1": {
+      "type": "Proposition",
+      "number": "9.1",
+      "section": "9",
+      "role": "key_technical",
+      "summary": "Bounded total speed: ‖u‖$_{L^1_t L^\\infty_x}$ ≲ $E^{1/2}T^{1/4} +$ E, where E $= E(u_0,f,T)$. Finite $L^1_t L^\\infty_x$ control ensures fluid particles travel bounded distance, enabling material coordinates for tracking vorticity in the enstrophy localisation proof."
+    },
+    "thm:10.1": {
+      "type": "Theorem",
+      "number": "10.1",
+      "section": "10",
+      "role": "main_technical",
+      "summary": "Enstrophy localisation (new, main tool 2): if initial vorticity is small on $B(x_0,R) ($‖$\\omega_0$‖$_{L^2(B)} \\le \\delta$ with $\\delta^4$ T $\\ll 1$ and r > C(E $+ E^{1/2}T^{1/4} + \\delta^{-2}))$, then ‖$\\omega$‖$_{L^\\infty_t L^2_x} +$ ‖$\\nabla\\omega$‖$_{L^2_t L^2_x}$ ≲ $\\delta$ on $B(x_0,R$−$r) \\times [0,T]$. Propagates vorticity smallness from t=0 across all times. The core technical engine of the paper."
+    },
+    "prop:10.7": {
+      "type": "Proposition",
+      "number": "10.7",
+      "section": "10",
+      "role": "auxiliary",
+      "summary": "Higher regularity from enstrophy localisation: under the same conditions as thm:10.1, all higher Sobolev norms ‖$\\nabla^k$ u‖$_{L^\\infty_t L^2_x(K)}$ are bounded on compact K $\\subsetB(x_0,R$−r). Bootstraps the $L^2$ enstrophy bound to full local smoothness."
+    },
+    "cor:11.1": {
+      "type": "Corollary",
+      "number": "11.1",
+      "section": "11",
+      "role": "key_reduction",
+      "summary": "Bounded enstrophy: any finite energy almost smooth solution with $H^1$ initial data satisfies u $\\in X^1([0,T]\\timesR^3)$, making it a global $H^1$ solution. Proof: $H^1$ data means ‖$\\omega_0$‖ $< \\infty$, so $\\omega_0$ is small outside a large ball; apply thm:10.1 on the complement to bound enstrophy globally."
+    },
+    "cor:11.4": {
+      "type": "Corollary",
+      "number": "11.4",
+      "section": "11",
+      "role": "auxiliary",
+      "summary": "Unconditional uniqueness: for smooth $H^1$ data, there is at most one almost smooth finite energy solution with normalised pressure. Proof: cor:11.1 upgrades almost smooth to mild $H^1$, then thm:5.4 uniqueness applies."
+    },
+    "prop:11.6": {
+      "type": "Proposition",
+      "number": "11.6",
+      "section": "11",
+      "role": "key_structural",
+      "summary": "Uniform smoothness outside a ball: an incomplete almost smooth $H^1$ solution with blowup time T_* is smooth on $[0,T_*) \\times$ K for all compact K $\\subset R^3 \\$ B(0,R). The singularity is spatially confined. Proof: outside a large ball, $H^1$ data makes initial vorticity small $\\to$ enstrophy localisation $\\to$ higher regularity."
+    },
+    "prop:11.9": {
+      "type": "Proposition",
+      "number": "11.9",
+      "section": "11",
+      "role": "key_reduction",
+      "summary": "Existence of partially smooth Leray-Hopf weak solutions: for smooth $H^1$ data, there exists a Leray-Hopf solution that is spatially smooth outside some ball B(0,R). Combines cor:11.1 (global $H^1$ existence) with prop:11.6 (smoothness outside ball)."
+    },
+    "lem:12.1": {
+      "type": "Lemma",
+      "number": "12.1",
+      "section": "12",
+      "role": "technical",
+      "summary": "Localisation of divergence-free vector fields: a smooth divergence-free field on an annulus satisfying zero normal flux (eq:104) can be truncated to vanish outside $R_3$ while remaining divergence-free and smooth, with $H^k$ norm loss of one derivative (eq:105). Converts spatially smooth $R^3$ data to compactly supported data comparable to periodic data."
+    },
+    "thm:12.2": {
+      "type": "Theorem",
+      "number": "12.2",
+      "section": "12",
+      "role": "key_reduction",
+      "summary": "Conditional: conjecture:1.9 implies conjecture:1.19. Under the assumption of global periodic $H^1$ well-posedness, any spatially smooth $H^1$ initial data on $R^3$ produces a global smooth solution. Proof uses lem:12.1 to localise $u_0$, then matches to a periodic problem via enstrophy localisation."
+    },
+    "thm:13.1": {
+      "type": "Theorem",
+      "number": "13.1",
+      "section": "13",
+      "role": "key_reduction",
+      "summary": "Conditional: conjecture:1.13 implies conjecture:1.14. Almost smooth global solutions from homogeneous $H^1$ data imply almost smooth global solutions from finite energy data. Uses enstrophy localisation to compare finite energy solutions with $H^1$ solutions on large balls."
+    },
+    "prop:14.1": {
+      "type": "Proposition",
+      "number": "14.1",
+      "section": "14",
+      "role": "key_reduction",
+      "summary": "Concentration compactness: conjecture:1.15 implies conjecture:1.16. Given a sequence with bounded $H^1$ norm, profile decomposition (prop:14.2) reduces global well-posedness to well-posedness for individual spatially separated profiles, each handled by thm:5.4."
+    },
+    "prop:14.2": {
+      "type": "Proposition",
+      "number": "14.2",
+      "section": "14",
+      "role": "key_technical",
+      "summary": "Profile decomposition (Bahouri-Gérard type for $H^{100})$: bounded $H^{100}$ sequences decompose as $u_0^{(n)} = \\Sigma \\tau_{x_j^{(n)}} w_{j,0} + r^{(n)}_0$ with spatially separated profiles $(|x_j$ − $x_{j'}| \\to \\infty$, eq:121) and remainder with small $L^\\infty$ norm (eq:120). Preserves divergence-free property."
+    },
+    "prop:15.1": {
+      "type": "Proposition",
+      "number": "15.1",
+      "section": "15",
+      "role": "key_mechanism",
+      "summary": "Quantitative failure of regularity: for any smooth compactly supported $u_0, \\psi$, R, M, $\\varepsilon$, there exists perturbation $u_1$ with ‖$u_1$‖$_{H^1}$ ≲ $\\varepsilon$ vanishing on B(0,R) such that the mild $H^1 (hence$ smooth by prop:5.6) solution from $u_0+u_1$ has $|\\int\\nabla\\partial_t^2 p(0,x)\\psi(x)dx| >$ M. Proves thm:1.12 by showing smooth $H^1$ data cannot guarantee smooth solutions."
+    }
+  },
+  "edges": [
+    {
+      "from": "thm:1.20",
+      "to": "thm:12.2",
+      "type": "depends_on",
+      "note": "conj:$1.9 \\to$ conj:1.19 proved in thm:12.2"
+    },
+    {
+      "from": "thm:1.20",
+      "to": "thm:13.1",
+      "type": "depends_on",
+      "note": "conj:1.13 ↔ conj:1.14 equivalence established in thm:13.1"
+    },
+    {
+      "from": "thm:1.20",
+      "to": "prop:14.1",
+      "type": "depends_on",
+      "note": "conj:1.13 ↔ conj:1.15 ↔ conj:1.16 ↔ conj:1.17 chain via concentration compactness in prop:14.1"
+    },
+    {
+      "from": "thm:1.20",
+      "to": "prop:1.7",
+      "type": "depends_on",
+      "note": "conj:1.6 ↔ conj:1.4 equivalence via homogenisation in prop:1.7"
+    },
+    {
+      "from": "thm:1.20",
+      "to": "prop:11.9",
+      "type": "depends_on",
+      "note": "conj:$1.19 \\to$ conj:1.13 uses partially smooth Leray-Hopf solutions to connect spatially smooth and homogeneous $H^1$ data"
+    },
+    {
+      "from": "thm:1.20",
+      "to": "cor:11.4",
+      "type": "depends_on",
+      "note": "conj:1.9 ↔ conj:1.10 uses unconditional uniqueness and the a priori bound structure"
+    },
+    {
+      "from": "thm:1.12",
+      "to": "prop:15.1",
+      "type": "depends_on",
+      "note": "Non-existence of smooth solutions for some $H^1$ data follows from quantitative failure (prop:15.1)"
+    },
+    {
+      "from": "prop:15.1",
+      "to": "prop:5.6",
+      "type": "depends_on",
+      "note": "Explicitly: mild $H^1$ solution with small data is smooth by prop:5.6; the constructed solution is smooth but has explosive pressure gradient at t=0"
+    },
+    {
+      "from": "prop:1.7",
+      "to": "lem:6.1",
+      "type": "depends_on",
+      "note": "Irrational shift lemma provides the averaging sequence that shows forcing term averages to zero, enabling reduction to homogeneous data"
+    },
+    {
+      "from": "prop:1.7",
+      "to": "prop:5.3",
+      "type": "depends_on",
+      "note": "Compactness of periodic $H^1$ solutions needed to pass to the limit in the homogenisation sequence"
+    },
+    {
+      "from": "thm:12.2",
+      "to": "lem:12.1",
+      "type": "depends_on",
+      "note": "Localises spatially smooth $R^3$ data to compact support, making it comparable to periodic data on the torus"
+    },
+    {
+      "from": "thm:12.2",
+      "to": "thm:10.1",
+      "type": "depends_on",
+      "note": "Enstrophy localisation ensures the periodic solution approximates the $R^3$ solution in the region of compact support"
+    },
+    {
+      "from": "thm:12.2",
+      "to": "prop:11.9",
+      "type": "depends_on",
+      "note": "Partially smooth Leray-Hopf solution on $R^3$ is the comparison object: its smoothness outside a ball combined with the periodic solution gives global regularity"
+    },
+    {
+      "from": "thm:12.2",
+      "to": "thm:5.1",
+      "type": "depends_on",
+      "note": "Periodic $H^1$ local well-posedness needed to construct the periodic comparison solutions used in the argument"
+    },
+    {
+      "from": "thm:13.1",
+      "to": "thm:10.1",
+      "type": "depends_on",
+      "note": "Enstrophy localisation allows comparison between finite energy and homogeneous $H^1$ solutions on a large ball (vorticity small on complement)"
+    },
+    {
+      "from": "thm:13.1",
+      "to": "lem:12.1",
+      "type": "depends_on",
+      "note": "Localises the finite energy initial data to match the homogeneous $H^1$ assumption on a bounded region"
+    },
+    {
+      "from": "prop:14.1",
+      "to": "prop:14.2",
+      "type": "depends_on",
+      "note": "Profile decomposition reduces the compactness argument to individual spatially separated profiles"
+    },
+    {
+      "from": "prop:14.1",
+      "to": "thm:5.4",
+      "type": "depends_on",
+      "note": "Local WP in $H^1$ applied to each individual translated profile $w_{j,0}$ independently"
+    },
+    {
+      "from": "prop:14.2",
+      "to": "lem:2.1",
+      "type": "depends_on",
+      "note": "Heat semigroup estimates (energy-type) control the remainder $r^{(n)}_0$ and verify the $L^\\infty_x$ smallness condition (eq:120)"
+    },
+    {
+      "from": "thm:10.1",
+      "to": "thm:8.2",
+      "type": "depends_on",
+      "note": "Local energy estimate controls the energy flux through the ball boundary in the enstrophy Gronwall ODE, bounding the forcing term in the vorticity equation"
+    },
+    {
+      "from": "thm:10.1",
+      "to": "prop:9.1",
+      "type": "depends_on",
+      "note": "Bounded total speed justifies material coordinate change: vorticity tracked along fluid trajectories, which stay within bounded displacement ≲ $E^{1/2}T^{1/4} +$ E (eq:79 condition)"
+    },
+    {
+      "from": "thm:10.1",
+      "to": "lem:8.1",
+      "type": "depends_on",
+      "note": "Global energy bound $E(u_0,f,T)$ appears explicitly in the conditions (eq:78, eq:79) defining the safe enstrophy-localisation regime"
+    },
+    {
+      "from": "prop:10.7",
+      "to": "thm:10.1",
+      "type": "depends_on",
+      "note": "Same smallness conditions as thm:10.1; bootstraps the $L^2$ enstrophy bound to $H^k$ bounds by Sobolev induction on the vorticity equation"
+    },
+    {
+      "from": "prop:10.7",
+      "to": "lem:2.1",
+      "type": "depends_on",
+      "note": "Linear and bilinear estimates used in the higher-order vorticity bootstrap"
+    },
+    {
+      "from": "cor:11.1",
+      "to": "thm:10.1",
+      "type": "depends_on",
+      "note": "$H^1$ data means ‖$\\omega_0$‖$_{L^2} < \\infty$, so $\\omega_0$ is small outside a large ball; applies enstrophy localisation on complement to bound total enstrophy"
+    },
+    {
+      "from": "cor:11.1",
+      "to": "cor:4.3",
+      "type": "depends_on",
+      "note": "Almost smooth solution must be almost smooth + mild (cor:4.3) to satisfy the hypotheses of thm:10.1 (which requires the mild formulation)"
+    },
+    {
+      "from": "cor:11.4",
+      "to": "cor:11.1",
+      "type": "depends_on",
+      "note": "Bounded enstrophy (cor:11.1) places the almost smooth solution in $H^1$, enabling thm:5.4 uniqueness"
+    },
+    {
+      "from": "cor:11.4",
+      "to": "thm:5.4",
+      "type": "depends_on",
+      "note": "Uniqueness for mild $H^1$ solutions invoked once cor:11.1 upgrades almost smooth to mild $H^1$"
+    },
+    {
+      "from": "prop:11.6",
+      "to": "thm:10.1",
+      "type": "depends_on",
+      "note": "$H^1$ data decays at spatial $\\infty \\to$ initial vorticity is small on complement of a large ball $\\to$ enstrophy localisation propagates smallness to all t $\\in [0,T_*)$"
+    },
+    {
+      "from": "prop:11.6",
+      "to": "prop:10.7",
+      "type": "depends_on",
+      "note": "Higher regularity proposition upgrades $L^2$ enstrophy bound outside B(0,R) to smooth control on compact subsets of the complement"
+    },
+    {
+      "from": "prop:11.9",
+      "to": "prop:11.6",
+      "type": "depends_on",
+      "note": "Smoothness outside a ball from prop:11.6 provides the spatial smoothness component of the Leray-Hopf solution"
+    },
+    {
+      "from": "prop:11.9",
+      "to": "cor:11.1",
+      "type": "depends_on",
+      "note": "Bounded enstrophy (cor:11.1) provides the global $H^1$ weak solution whose restriction outside B(0,R) is made smooth by prop:11.6"
+    },
+    {
+      "from": "thm:8.2",
+      "to": "lem:8.1",
+      "type": "depends_on",
+      "note": "Global energy inequality controls the total energy E appearing in the error terms $(E^{1/2}T^{1/2}/r + E^{3/2}T^{1/2}/r^2)$ in the local estimate"
+    },
+    {
+      "from": "thm:8.2",
+      "to": "lem:2.1",
+      "type": "depends_on",
+      "note": "Duhamel formula and linear estimates used in the localised energy Gronwall argument"
+    },
+    {
+      "from": "prop:9.1",
+      "to": "lem:8.1",
+      "type": "depends_on",
+      "note": "$L^\\infty_t L^2_x$ energy bound from lem:8.1 feeds into the interpolation giving $L^1_t L^\\infty_x$ control via Bernstein/Sobolev"
+    },
+    {
+      "from": "prop:9.1",
+      "to": "lem:2.2",
+      "type": "depends_on",
+      "note": "Exponential heat kernel decay controls high-frequency Littlewood-Paley blocks in the $L^\\infty_x$ bound"
+    },
+    {
+      "from": "lem:8.1",
+      "to": "def:1.1",
+      "type": "depends_on",
+      "note": "Finite energy condition $E(u_0,f,T) < \\infty (eq$:6 in def:1.1) is exactly what this lemma bounds"
+    },
+    {
+      "from": "thm:5.1",
+      "to": "lem:2.1",
+      "type": "depends_on",
+      "note": "Bilinear estimate (eq:24) is the key nonlinear estimate in the contraction mapping for periodic $H^1$ LWP; eq:21 gives the linear part"
+    },
+    {
+      "from": "thm:5.4",
+      "to": "lem:2.1",
+      "type": "depends_on",
+      "note": "Same bilinear contraction argument as thm:5.1, applied in $R^3$ instead of the torus"
+    },
+    {
+      "from": "cor:5.2",
+      "to": "thm:5.1",
+      "type": "depends_on",
+      "note": "Maximal Cauchy development derived from the blowup alternative in thm:5.1 local existence"
+    },
+    {
+      "from": "prop:5.3",
+      "to": "thm:5.1",
+      "type": "depends_on",
+      "note": "Local well-posedness used for each approximating sequence to produce solutions from weakly convergent data"
+    },
+    {
+      "from": "prop:5.3",
+      "to": "lem:2.1",
+      "type": "depends_on",
+      "note": "Bilinear estimates needed to pass to the limit in the nonlinear term during weak compactness argument"
+    },
+    {
+      "from": "prop:5.6",
+      "to": "thm:5.4",
+      "type": "depends_on",
+      "note": "Local $H^1$ WP gives short-time smooth existence; iterates on shrinking intervals to reach almost smooth on $(\\tau,T]$"
+    },
+    {
+      "from": "lem:4.1",
+      "to": "lem:2.1",
+      "type": "depends_on",
+      "note": "Calderon-Zygmund / Riesz transform estimates (covered by lem:2.1 framework) needed for the pressure formula in eq:40"
+    },
+    {
+      "from": "cor:4.3",
+      "to": "lem:4.1",
+      "type": "depends_on",
+      "note": "Directly applies lem:4.1 to produce normalised pressure and hence the mild formulation from an almost smooth solution"
+    },
+    {
+      "from": "lem:6.1",
+      "to": "lem:2.1",
+      "type": "depends_on",
+      "note": "Heat semigroup and $H^1$ estimates verify that shifted functions converge weakly in the appropriate function spaces"
+    }
+  ],
+  "critical_path": [
+    "thm:1.20",
+    "thm:12.2",
+    "prop:11.9",
+    "prop:11.6",
+    "thm:10.1",
+    "prop:9.1",
+    "thm:8.2",
+    "lem:8.1"
+  ],
+  "proof_architecture": {
+    "layer_1_problem_structure": {
+      "description": "NSE regularity landscape: solution categories, open conjectures, and the paper's two main results (implication diagram + non-existence theorem)",
+      "nodes": [
+        "def:1.1",
+        "conjecture:1.9",
+        "conjecture:1.10",
+        "conjecture:1.13",
+        "conjecture:1.15",
+        "conjecture:1.19",
+        "conjecture:1.5",
+        "thm:1.20",
+        "thm:1.12"
+      ]
+    },
+    "layer_2_analytic_tools": {
+      "description": "Foundational analysis: heat semigroup estimates, pressure normalisation, and mild formulation equivalence",
+      "nodes": [
+        "lem:2.1",
+        "lem:2.2",
+        "lem:4.1",
+        "cor:4.3"
+      ]
+    },
+    "layer_3_local_wellposedness": {
+      "description": "Local well-posedness in $H^1 (periodic$ and non-periodic) with compactness and almost-regularity consequences",
+      "nodes": [
+        "thm:5.1",
+        "cor:5.2",
+        "prop:5.3",
+        "thm:5.4",
+        "prop:5.6"
+      ]
+    },
+    "layer_4_homogenisation": {
+      "description": "Homogenisation: converting forced periodic problems to unforced via irrational shifts",
+      "nodes": [
+        "lem:6.1",
+        "prop:1.7"
+      ]
+    },
+    "layer_5_energy_localisation": {
+      "description": "New localised energy estimates valid for large data / long times — the paper's first major new tool",
+      "nodes": [
+        "lem:8.1",
+        "thm:8.2",
+        "prop:9.1"
+      ]
+    },
+    "layer_6_enstrophy_localisation": {
+      "description": "Enstrophy localisation theorem — propagation of vorticity smallness from initial data across all times in a ball — the paper's central new tool",
+      "nodes": [
+        "thm:10.1",
+        "prop:10.7"
+      ]
+    },
+    "layer_7_global_consequences": {
+      "description": "Global consequences of enstrophy localisation: bounded enstrophy, unconditional uniqueness, singularity confinement, partially smooth weak solutions",
+      "nodes": [
+        "cor:11.1",
+        "cor:11.4",
+        "prop:11.6",
+        "prop:11.9"
+      ]
+    },
+    "layer_8_implication_proofs": {
+      "description": "Conditional implication proofs (conj:$1.9 \\to$ conj:1.19; conj:1.13 ↔ conj:1.14; concentration compactness equivalences) and quantitative non-existence construction",
+      "nodes": [
+        "lem:12.1",
+        "thm:12.2",
+        "thm:13.1",
+        "prop:14.1",
+        "prop:14.2",
+        "prop:15.1"
+      ]
+    }
+  },
+  "bibliography": {
+    "feff": {
+      "title": "Existence and smoothness of the Navier-Stokes equation (Clay Millennium Prize problem statement)",
+      "arxiv_id": null,
+      "in_registry": false
+    },
+    "tao-quantitative": {
+      "title": "A quantitative formulation of the global regularity problem for the periodic Navier-Stokes equation",
+      "arxiv_id": null,
+      "in_registry": false
+    },
+    "leray": {
+      "title": "Sur le mouvement d'un liquide visqueux emplissant l'espace (Leray 1934 — original NSE weak solutions)",
+      "arxiv_id": null,
+      "in_registry": false
+    },
+    "ckn": {
+      "title": "Partial regularity of suitable weak solutions of the Navier-Stokes equations (Caffarelli-Kohn-Nirenberg)",
+      "arxiv_id": null,
+      "in_registry": false
+    },
+    "ess": {
+      "title": "$L^{3,\\infty}$-solutions of Navier-Stokes equations and backward uniqueness (Escauriaza-Seregin-Sverak)",
+      "arxiv_id": null,
+      "in_registry": false
+    },
+    "rusin": {
+      "title": "Minimal initial data for potential Navier-Stokes singularities (Rusin-Sverák)",
+      "arxiv_id": null,
+      "in_registry": false
+    },
+    "gallagher": {
+      "title": "Profile decomposition for solutions of the Navier-Stokes equations (Gallagher 2001)",
+      "arxiv_id": null,
+      "in_registry": false
+    },
+    "bahouri": {
+      "title": "High frequency approximation of solutions to critical nonlinear wave equations (Bahouri-Gérard 1999)",
+      "arxiv_id": null,
+      "in_registry": false
+    },
+    "koch": {
+      "title": "Well-posedness for the Navier-Stokes equations (Koch-Tataru 2001)",
+      "arxiv_id": null,
+      "in_registry": false
+    },
+    "bkm": {
+      "title": "Remarks on the breakdown of smooth solutions for the 3-D Euler equations (Beale-Kato-Majda)",
+      "arxiv_id": null,
+      "in_registry": false
+    },
+    "serrin": {
+      "title": "On the interior regularity of weak solutions of the Navier-Stokes equations (Serrin 1962)",
+      "arxiv_id": null,
+      "in_registry": false
+    }
+  }
+}

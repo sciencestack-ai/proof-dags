@@ -1,0 +1,4 @@
+{
+  "description": "Papers to extract for the sphere-packing DAG (arXiv IDs verified against the arXiv API by title/author, 2026-05-26). Process order is dependency-sensible: the LP foundation first, then Viazovska's $E_8$ construction, then the Leech extension and the structural/interpolation companions, then the universal-optimality sequel and its precursor, and finally the Lean formalization paper. Cron processes max 3 per run.",
+  "queue": []
+}

@@ -1,0 +1,621 @@
+{
+  "paper": "1403.5335",
+  "title": "The proof of the $l^2$ Decoupling Conjecture",
+  "authors": [
+    "Jean Bourgain",
+    "Ciprian Demeter"
+  ],
+  "generated": "2026-05-12",
+  "status": "complete",
+  "nodes": {
+    "thm:1.1": {
+      "type": "Theorem",
+      "number": "1.1",
+      "section": "1",
+      "role": "main_result",
+      "summary": "The $l^2$ decoupling theorem for a compact $C^2$ hypersurface $S\\subset\\mathbb{R}^n$ with positive definite second fundamental form: if $\\widehat f$ is supported in the $\\delta$-neighborhood $\\mathcal{N}_\\delta$ of $S$, then $\\|f\\|_p \\lesssim_\\epsilon \\delta^{-\\frac{n-1}{4}+\\frac{n+1}{2p}-\\epsilon}(\\sum_{\\theta\\in\\mathcal{P}_\\delta}\\|f_\\theta\\|_p^2)^{1/2}$ for $p\\ge\\frac{2(n+1)}{n-1}$. The sharp $l^2$ estimate; resolves the decoupling conjecture for paraboloid/sphere."
+    },
+    "thm:1.2": {
+      "type": "Theorem",
+      "number": "1.2",
+      "section": "1",
+      "role": "main_result",
+      "summary": "Companion $l^2$ decoupling for the truncated cone $C^{n-1}$: $\\|f\\|_p \\lesssim_\\epsilon \\delta^{-\\frac{n-2}{4}+\\frac{n}{2p}-\\epsilon}(\\sum_\\theta\\|f_\\theta\\|_p^2)^{1/2}$ for $p\\ge\\frac{2n}{n-2}$, and $\\delta^{-\\epsilon}$ loss only for $2\\le p\\le\\frac{2n}{n-2}$. Proved in Section 8 by reducing the cone to the paraboloid one dimension down."
+    },
+    "thm:2.1": {
+      "type": "Theorem",
+      "number": "2.1",
+      "section": "2",
+      "role": "context",
+      "summary": "The Tomas–Stein restriction estimate: for a compact $C^2$ hypersurface with nonzero Gaussian curvature, $\\|\\widehat{fd\\sigma}\\|_{L^p(\\mathbb{R}^n)}\\lesssim\\|f\\|_{L^2(S)}$ for $p\\ge\\frac{2(n+1)}{n-1}$. Classical input recalled for context; decoupling reproves and refines its discrete analogues."
+    },
+    "thm:2.2": {
+      "type": "Theorem",
+      "number": "2.2",
+      "section": "2",
+      "role": "auxiliary",
+      "summary": "Exponential-sum form of discrete restriction: for a $\\delta^{1/2}$-separated set $\\Lambda\\subset S$ and $R\\gtrsim\\delta^{-1}$, $(\\tfrac{1}{|B_R|}\\int_{B_R}|\\sum_{\\xi\\in\\Lambda}a_\\xi e(\\xi\\cdot x)|^p)^{1/p}\\lesssim_\\epsilon \\delta^{\\frac{n+1}{2p}-\\frac{n-1}{4}-\\epsilon}\\|a_\\xi\\|_2$. Immediate consequence of $l^2$ decoupling."
+    },
+    "thm:2.3": {
+      "type": "Theorem",
+      "number": "2.3",
+      "section": "2.1",
+      "role": "auxiliary",
+      "summary": "Discrete restriction for lattice points on the paraboloid $P^{n-1}(N)$: sharp $L^p(\\mathbb{T}^n)$ bounds for the exponential sum $\\sum_{\\xi\\in P^{n-1}(N)}a_\\xi e(\\xi\\cdot x)$, including the conjectured exponent for $p\\ge\\frac{2(n+2)}{n-1}$ when $n\\ge4$. Follows from $l^2$ decoupling plus a lattice-point count."
+    },
+    "thm:2.4": {
+      "type": "Theorem",
+      "number": "2.4",
+      "section": "2.2",
+      "role": "auxiliary",
+      "summary": "Optimal Strichartz estimates for the periodic Schrödinger evolution on rational and irrational tori: $\\|e^{it\\Delta}\\phi\\|_{L^p(\\mathbb{T}^{n-1}\\times I)}\\lesssim_\\epsilon N^{\\frac{n-1}{2}-\\frac{n+1}{p}+\\epsilon}|I|^{1/p}\\|\\phi\\|_2$ for $p\\ge\\frac{2(n+1)}{n-1}$, with constant independent of the torus parameters. Resolves conjectures of Bourgain on irrational tori."
+    },
+    "thm:2.7": {
+      "type": "Theorem",
+      "number": "2.7",
+      "section": "2.3",
+      "role": "auxiliary",
+      "summary": "Discrete restriction for lattice points on the sphere (eq. 11) holds for $p\\ge\\frac{2(n-1)}{n-3}$ when $n\\ge4$ — progress toward Conjecture 2.6 — obtained by applying $l^2$ decoupling for the sphere."
+    },
+    "thm:2.8": {
+      "type": "Theorem",
+      "number": "2.8",
+      "section": "2.4",
+      "role": "auxiliary",
+      "summary": "$L^4$ discrete restriction for an arbitrary finite point set $\\Lambda\\subset P^2$: $(\\tfrac1{|B_R|}\\int_{B_R}|\\sum_{\\xi\\in\\Lambda}a_\\xi e(\\xi\\cdot x)|^4)^{1/4}\\lesssim_\\epsilon|\\Lambda|^\\epsilon\\|a_\\xi\\|_2$ for $R$ large. Equivalent to a near-optimal additive-energy bound; ties decoupling to incidence geometry."
+    },
+    "thm:2.9": {
+      "type": "Theorem",
+      "number": "2.9",
+      "section": "2.4",
+      "role": "context",
+      "summary": "Szemerédi–Trotter: $O(|\\mathcal{L}|+|\\mathcal{P}|+(|\\mathcal{L}||\\mathcal{P}|)^{2/3})$ incidences between lines and points in the plane. Cited as the incidence-geometry benchmark that decoupling-derived energy bounds recover or refine."
+    },
+    "thm:2.11": {
+      "type": "Theorem",
+      "number": "2.11",
+      "section": "2.4",
+      "role": "context",
+      "summary": "Pach–Sharir bound $O(N^2\\log N)$ on repetitions of a fixed angle among $N$ planar points. Context: decoupling supplies an alternative route to such counting estimates."
+    },
+    "conjecture:2.6": {
+      "type": "Conjecture",
+      "number": "2.6",
+      "section": "2.3",
+      "role": "context",
+      "summary": "Conjectured sharp discrete restriction for lattice points $\\mathcal{F}_{n,N^2}$ on the sphere of radius $N$: $\\|\\sum a_\\xi e(\\xi\\cdot x)\\|_{L^p(\\mathbb{T}^n)}\\lesssim_\\epsilon N^{\\frac{n-2}{2}-\\frac{n}{p}+\\epsilon}\\|a_\\xi\\|_2$ for $p\\ge\\frac{2n}{n-2}$. Target that thm:2.7 partially attains."
+    },
+    "conjecture:2.10": {
+      "type": "Conjecture",
+      "number": "2.10",
+      "section": "2.4",
+      "role": "context",
+      "summary": "The Erdős unit-distance conjecture: $N$ points in the plane span $\\lesssim_\\epsilon N^{1+\\epsilon}$ unit distances. Mentioned to delimit what decoupling-based energy estimates can and cannot reach."
+    },
+    "prop:2.15": {
+      "type": "Proposition",
+      "number": "2.15",
+      "section": "2.4",
+      "role": "auxiliary",
+      "summary": "Cubic additive energy bound: for $S=P^1$ or $S^1$ and any $\\Lambda\\subset S$, $\\mathbb{E}_3(\\Lambda)\\lesssim_\\epsilon|\\Lambda|^{7/2+\\epsilon}$. Sharp; derived from the $L^6$ ($n=2$) case of decoupling."
+    },
+    "thm:2.16": {
+      "type": "Theorem",
+      "number": "2.16",
+      "section": "2.4",
+      "role": "auxiliary",
+      "summary": "Decoupling for arbitrary point sets distributed over the caps of $\\mathcal{P}_\\delta$ on a curved hypersurface, at the critical exponent $p=\\frac{2(n+1)}{n-1}$. The bridge result powering the additive-energy and incidence applications (thm:2.8, prop:2.15, thm:2.17)."
+    },
+    "thm:2.17": {
+      "type": "Theorem",
+      "number": "2.17",
+      "section": "2.5",
+      "role": "auxiliary",
+      "summary": "Cubic additive energy of an annular lattice set $A_R'$: $\\mathbb{E}_3(A_R')\\lesssim_\\epsilon|A_R'|^{3+\\epsilon}$. Used to count solutions of the Diophantine inequalities in thm:2.18–2.19."
+    },
+    "thm:2.18": {
+      "type": "Theorem",
+      "number": "2.18",
+      "section": "2.6",
+      "role": "auxiliary",
+      "summary": "For fixed $k\\ge2$ the system $|n_1^k+n_2^k+n_3^k-n_4^k-n_5^k-n_6^k|\\le CN^{k-2}$, $n_1+n_2+n_3=n_4+n_5+n_6$ has $O(N^{3+\\epsilon})$ solutions with $n_i\\sim N$. A Vinogradov-mean-value-flavored count obtained from decoupling for the curve."
+    },
+    "thm:2.19": {
+      "type": "Theorem",
+      "number": "2.19",
+      "section": "2.6",
+      "role": "auxiliary",
+      "summary": "Mixed-degree $L^6$ exponential-sum bound $\\int_{|x|\\le1}\\int_0^\\lambda|\\sum_{n\\sim N}e(xn^2+yn^k)|^6\\,dx\\,dy\\lesssim_\\epsilon\\lambda N^{3+\\epsilon}+N^{4-k+\\epsilon}$ for $k\\ge4$, giving $O(N^{3+\\epsilon})$ solutions of a coupled square/$k$-th-power Diophantine inequality. Consequence of $l^2$ decoupling for the moment-curve-type surface."
+    },
+    "def:3.1": {
+      "type": "Definition",
+      "number": "3.1",
+      "section": "3",
+      "role": "definition",
+      "summary": "An $N$-tube: an $N^{1/2}\\times\\cdots\\times N^{1/2}\\times N$ rectangular box dual to a cap $\\theta\\in\\mathcal{P}_\\delta$; a family of $N$-tubes is separated if $\\lesssim C$ tubes share any orientation. The geometric atom of the wave-packet calculus."
+    },
+    "def:3.2": {
+      "type": "Definition",
+      "number": "3.2",
+      "section": "3",
+      "role": "definition",
+      "summary": "An $N$-function $f=\\sum_{T\\in\\mathcal{T}(f)}f_T$ built from separated $N$-tubes with $|f_T|\\le\\phi_T$, $\\|f_T\\|_p\\sim|T|^{1/p}$, and $\\widehat{f_T}\\subset\\theta(T)$; it is balanced if the tube counts per direction are comparable. Reduces general $\\mathcal{N}_\\delta$-functions to a combinatorially clean model."
+    },
+    "lem:3.3": {
+      "type": "Lemma",
+      "number": "3.3",
+      "section": "3",
+      "role": "technical",
+      "summary": "Norm formula for $N$-functions: $\\|f\\|_{p,1/N}\\sim N^{\\frac{n+1}{2p}}(\\sum_\\theta|\\mathcal{T}(f,\\theta)|^{2/p})^{1/2}$, and for balanced $f$, $\\sim N^{\\frac{n+1}{2p}}M(f)^{\\frac12-\\frac1p}|\\mathcal{T}(f)|^{1/p}$ with $M(f)$ the number of active directions. Converts $L^p$ norms into tube counts."
+    },
+    "lem:3.4": {
+      "type": "Lemma",
+      "number": "3.4",
+      "section": "3",
+      "role": "technical",
+      "summary": "(i) Every $N$-function decomposes into $O(\\log|\\mathcal{T}(f)|)$ balanced $N$-functions; (ii) for balanced $f$, $\\|f\\|_{p,1/N}\\sim\\|f\\|_{2,1/N}^{2/p}\\|f\\|_{\\infty,1/N}^{1-2/p}$ (interpolation reversibility). Lets the argument assume balanced functions at logarithmic cost."
+    },
+    "lem:3.5": {
+      "type": "Lemma",
+      "number": "3.5",
+      "section": "3",
+      "role": "key_mechanism",
+      "summary": "Wave-packet decomposition: any $f$ Fourier-supported in $\\mathcal{N}_\\delta$ splits as $f=\\sum_{\\lambda}\\lambda f_\\lambda$ over dyadic heights with each $f_\\lambda$ a $(N=\\delta^{-1})$-function satisfying $\\lambda^pN^{\\frac{n+1}{2}}|\\mathcal{T}(f_\\lambda)|\\le\\|\\lambda f_\\lambda\\|_{p,\\delta}^p\\lesssim\\|f\\|_{p,\\delta}^p$. The reduction from arbitrary functions to $N$-functions that the whole proof runs on."
+    },
+    "prop:4.1": {
+      "type": "Proposition",
+      "number": "4.1",
+      "section": "4",
+      "role": "key_mechanism",
+      "summary": "Parabolic rescaling: if the decoupling constant $K_p(\\delta/\\sigma)$ holds at scale $\\delta/\\sigma$, then for any $\\sigma$-cap $\\tau$, $\\|f_\\tau\\|_p\\lesssim K_p(\\delta/\\sigma)(\\sum_{\\theta\\subset\\tau}\\|f_\\theta\\|_p^2)^{1/2}$. The affine-invariance step enabling the multiscale/self-improvement iteration."
+    },
+    "def:5.1": {
+      "type": "Definition",
+      "number": "5.1",
+      "section": "5",
+      "role": "definition",
+      "summary": "Caps $\\tau_1,\\dots,\\tau_n$ on $P^{n-1}$ are $\\nu$-transverse if the parallelepiped spanned by unit normals $v_i$ at the $\\tau_i$ has volume $>\\nu$. The transversality hypothesis under which the multilinear estimate holds."
+    },
+    "thm:5.3": {
+      "type": "Theorem",
+      "number": "5.3",
+      "section": "5",
+      "role": "key_reduction",
+      "summary": "Linear-versus-multilinear reduction: assuming lower-dimensional decoupling ($K_{p,d}(\\delta')\\lesssim_\\epsilon\\delta'^{-\\epsilon}$ for $2\\le d\\le n-1$), the linear decoupling constant satisfies $K_{p,n}(\\delta)\\le C_\\nu\\delta^{-\\epsilon(\\nu)}C_{p,n}(\\delta,\\nu)$ with $\\epsilon(\\nu)\\to0$ as $\\nu\\to0$. Reduces the theorem to the multilinear (transverse) estimate — the hinge of the proof."
+    },
+    "prop:5.5": {
+      "type": "Proposition",
+      "number": "5.5",
+      "section": "5",
+      "role": "technical",
+      "summary": "Bourgain–Guth-type two-scale inequality for $\\widehat{gd\\sigma}$ on $P^2$: bounds the global norm by $K^\\epsilon$ times $l^2$-sums over $1/K$- and $1/K^{1/2}$-caps plus a $K^{10}C_{p,3}$ multilinear remainder over $R^{-1/2}$-caps. The broad/narrow dichotomy made quantitative."
+    },
+    "prop:5.6": {
+      "type": "Proposition",
+      "number": "5.6",
+      "section": "5",
+      "role": "technical",
+      "summary": "Cap-localized version of prop:5.5: the same broad/narrow split applied inside a single $\\delta$-cap $\\tau$, valid for $R>\\delta^{-2}$. The rescaled building block iterated in the induction-on-scales."
+    },
+    "thm:6.1": {
+      "type": "Theorem",
+      "number": "6.1",
+      "section": "6",
+      "role": "foundational",
+      "summary": "Multilinear restriction/Kakeya estimate: for $\\nu$-transverse caps $\\tau_1,\\dots,\\tau_n$ on $P^{n-1}$ with $\\widehat{f_i}$ supported in the $\\delta$-neighborhood of $\\tau_i$, $\\|(\\prod_i|f_i|)^{1/n}\\|_{L^{2n/(n-1)}(B_N)}\\lesssim_{\\epsilon,\\nu}N^{-1/2+\\epsilon}(\\prod_i\\|f_i\\|_{L^2})^{1/n}$. The external geometric input (Bennett–Carbery–Tao / Guth multilinear Kakeya) the multilinear decoupling is built on."
+    },
+    "prop:6.2": {
+      "type": "Proposition",
+      "number": "6.2",
+      "section": "6",
+      "role": "main_technical",
+      "summary": "Multilinear decoupling for $\\nu$-transverse caps: $\\|(\\prod_i|f_i|)^{1/n}\\|_{L^p(B_N)}\\lesssim_{\\epsilon,\\nu}N^{\\frac{n-1}{4}-\\frac{n^2+n}{2p(n-1)}+\\epsilon}(\\prod_i\\|f_i\\|_{p(n-1)/n,\\delta})^{1/n}$ for $p\\ge\\frac{2n}{n-1}$ (and an $l^2$-square-function variant). Multilinear restriction upgraded to a decoupling statement."
+    },
+    "prop:6.3": {
+      "type": "Proposition",
+      "number": "6.3",
+      "section": "6",
+      "role": "main_technical",
+      "summary": "Self-improvement / induction-on-scales engine: inequality (38) holds with exponent $\\beta=1$ and $A_1(N)=N^{\\frac{n-1}{4}-\\frac{n^2+n}{2p(n-1)}}$, and if it holds for $\\beta\\in(0,1]$ it holds for $\\beta\\xi$ with an explicitly improved $A_{\\beta\\xi}(N)=A_\\beta(N^{1/2})N^{\\beta\\eta+\\frac\\gamma2(1-\\beta\\xi)}$. Iterating drives the exponent to the sharp value — the technical heart of the paper."
+    },
+    "prop:8.1": {
+      "type": "Proposition",
+      "number": "8.1",
+      "section": "8",
+      "role": "technical",
+      "summary": "Anisotropic ($L^6$, $n=2$) sector decoupling: for a sector $S$ of length $N^{-\\nu}$ and aperture $N^{-\\mu}$ with $2\\mu+\\nu\\le1$, $2\\mu\\ge\\nu$, $\\|E_Sg\\|_{L^6(w_{B_N})}\\lesssim_\\epsilon N^{\\nu\\epsilon}(\\sum_{S'\\subset S}\\|E_{S'}g\\|_{L^6}^2)^{1/2}$ over a finer tiling. Cone-to-paraboloid reduction step."
+    },
+    "prop:8.2": {
+      "type": "Proposition",
+      "number": "8.2",
+      "section": "8",
+      "role": "technical",
+      "summary": "Endpoint case of prop:8.1 with aperture $N^{-\\nu/2}$, decoupling a sector into aperture-$N^{-1/2}$ pieces with only $N^\\epsilon$ loss. Combined with prop:8.1 it yields the cone decoupling thm:1.2."
+    }
+  },
+  "edges": [
+    {
+      "from": "thm:1.1",
+      "to": "thm:5.3",
+      "type": "depends_on",
+      "note": "The linear decoupling estimate is reduced, via the linear-vs-multilinear bootstrap, to the transverse multilinear estimate."
+    },
+    {
+      "from": "thm:5.3",
+      "to": "prop:5.5",
+      "type": "depends_on",
+      "note": "The reduction runs through the quantitative broad/narrow ($n=3$) inequality."
+    },
+    {
+      "from": "thm:5.3",
+      "to": "prop:5.6",
+      "type": "depends_on",
+      "note": "Iterates the cap-localized broad/narrow inequality across scales."
+    },
+    {
+      "from": "thm:5.3",
+      "to": "prop:4.1",
+      "type": "depends_on",
+      "note": "Parabolic rescaling supplies the scale-invariance the iteration needs."
+    },
+    {
+      "from": "thm:5.3",
+      "to": "prop:6.2",
+      "type": "depends_on",
+      "note": "The 'narrow' (transverse) term is controlled by multilinear decoupling."
+    },
+    {
+      "from": "prop:5.6",
+      "to": "prop:4.1",
+      "type": "depends_on",
+      "note": "Rescaling a $\\delta$-cap to unit scale."
+    },
+    {
+      "from": "prop:6.2",
+      "to": "thm:6.1",
+      "type": "depends_on",
+      "note": "Multilinear decoupling is bootstrapped from the multilinear restriction/Kakeya inequality."
+    },
+    {
+      "from": "prop:6.2",
+      "to": "prop:6.3",
+      "type": "depends_on",
+      "note": "The sharp exponent in prop:6.2 comes from running the prop:6.3 self-improvement iteration."
+    },
+    {
+      "from": "prop:6.3",
+      "to": "thm:6.1",
+      "type": "depends_on",
+      "note": "Base case of the induction uses the multilinear Kakeya bound."
+    },
+    {
+      "from": "prop:6.3",
+      "to": "lem:3.5",
+      "type": "depends_on",
+      "note": "Induction on scales is run on $N$-functions produced by the wave-packet decomposition."
+    },
+    {
+      "from": "prop:6.3",
+      "to": "prop:4.1",
+      "type": "depends_on",
+      "note": "Each induction step rescales sub-caps to the original scale."
+    },
+    {
+      "from": "lem:3.5",
+      "to": "def:3.2",
+      "type": "depends_on",
+      "note": "Output of the decomposition is a sum of $N$-functions."
+    },
+    {
+      "from": "lem:3.5",
+      "to": "lem:3.4",
+      "type": "depends_on",
+      "note": "Balanced-function reduction is applied to the pieces."
+    },
+    {
+      "from": "lem:3.5",
+      "to": "lem:3.3",
+      "type": "depends_on",
+      "note": "Norm of each piece is read off via the tube-count formula."
+    },
+    {
+      "from": "lem:3.3",
+      "to": "def:3.2",
+      "type": "proves",
+      "note": "Computes the $L^p$ norm of an $N$-function in terms of its tube data."
+    },
+    {
+      "from": "lem:3.4",
+      "to": "def:3.2",
+      "type": "proves",
+      "note": "Decomposes an arbitrary $N$-function into balanced ones and gives reverse interpolation."
+    },
+    {
+      "from": "def:3.2",
+      "to": "def:3.1",
+      "type": "depends_on",
+      "note": "An $N$-function is assembled from separated $N$-tubes."
+    },
+    {
+      "from": "prop:6.2",
+      "to": "def:5.1",
+      "type": "depends_on",
+      "note": "States the estimate under the $\\nu$-transversality hypothesis."
+    },
+    {
+      "from": "thm:6.1",
+      "to": "def:5.1",
+      "type": "depends_on",
+      "note": "Multilinear Kakeya holds for $\\nu$-transverse caps."
+    },
+    {
+      "from": "thm:5.3",
+      "to": "def:5.1",
+      "type": "depends_on",
+      "note": "Transversality is the regime in which the multilinear term is gainful."
+    },
+    {
+      "from": "thm:2.2",
+      "to": "thm:1.1",
+      "type": "depends_on",
+      "note": "Exponential-sum discrete restriction follows directly from $l^2$ decoupling."
+    },
+    {
+      "from": "thm:2.3",
+      "to": "thm:1.1",
+      "type": "depends_on",
+      "note": "Lattice-point discrete restriction on the paraboloid via decoupling plus a counting bound."
+    },
+    {
+      "from": "thm:2.4",
+      "to": "thm:1.1",
+      "type": "depends_on",
+      "note": "Strichartz estimates on (ir)rational tori are decoupling for the paraboloid in disguise."
+    },
+    {
+      "from": "thm:2.7",
+      "to": "thm:1.1",
+      "type": "depends_on",
+      "note": "Sphere decoupling gives the partial discrete-restriction bound toward Conjecture 2.6."
+    },
+    {
+      "from": "thm:2.7",
+      "to": "conjecture:2.6",
+      "type": "motivates",
+      "note": "Establishes the conjectured estimate in a restricted exponent range."
+    },
+    {
+      "from": "thm:2.16",
+      "to": "thm:1.1",
+      "type": "depends_on",
+      "note": "Decoupling over points distributed in caps is extracted from the main decoupling theorem."
+    },
+    {
+      "from": "thm:2.8",
+      "to": "thm:2.16",
+      "type": "depends_on",
+      "note": "$L^4$ point-set restriction on $P^2$ is the $n=3$, $p=4$ instance of cap decoupling."
+    },
+    {
+      "from": "prop:2.15",
+      "to": "thm:2.16",
+      "type": "depends_on",
+      "note": "Cubic additive energy for $P^1$/$S^1$ from the $L^6$, $n=2$ case."
+    },
+    {
+      "from": "thm:2.17",
+      "to": "thm:2.16",
+      "type": "depends_on",
+      "note": "Annular-set cubic energy via cap decoupling."
+    },
+    {
+      "from": "thm:2.8",
+      "to": "thm:2.9",
+      "type": "depends_on",
+      "note": "Compared/combined with Szemerédi–Trotter incidence counting."
+    },
+    {
+      "from": "thm:2.18",
+      "to": "thm:2.17",
+      "type": "depends_on",
+      "note": "Solution count for the degree-$k$ Diophantine inequality from the annular additive-energy bound."
+    },
+    {
+      "from": "thm:2.19",
+      "to": "thm:1.1",
+      "type": "depends_on",
+      "note": "Mixed-degree exponential-sum bound from decoupling for the moment-curve-type surface."
+    },
+    {
+      "from": "thm:1.2",
+      "to": "prop:8.1",
+      "type": "depends_on",
+      "note": "Cone decoupling is assembled from the anisotropic sector-decoupling step."
+    },
+    {
+      "from": "thm:1.2",
+      "to": "prop:8.2",
+      "type": "depends_on",
+      "note": "And its endpoint aperture case."
+    },
+    {
+      "from": "prop:8.1",
+      "to": "thm:1.1",
+      "type": "depends_on",
+      "note": "Sector decoupling for the cone reduces to paraboloid decoupling one dimension lower."
+    },
+    {
+      "from": "prop:8.2",
+      "to": "thm:1.1",
+      "type": "depends_on",
+      "note": "Same reduction at the endpoint scale."
+    },
+    {
+      "from": "thm:2.1",
+      "to": "thm:1.1",
+      "type": "motivates",
+      "note": "Tomas–Stein restriction is the continuous prototype that decoupling sharpens at the discrete level."
+    }
+  ],
+  "critical_path": [
+    "thm:1.1",
+    "thm:5.3",
+    "prop:6.2",
+    "prop:6.3",
+    "thm:6.1"
+  ],
+  "proof_architecture": {
+    "main_theorems": {
+      "description": "The $l^2$ decoupling estimates for curved hypersurfaces and the cone.",
+      "nodes": [
+        "thm:1.1",
+        "thm:1.2"
+      ]
+    },
+    "wave_packet_calculus": {
+      "description": "Discretize $\\mathcal{N}_\\delta$-functions into $N$-tubes and $N$-functions; reduce to balanced functions; record norms as tube counts.",
+      "nodes": [
+        "def:3.1",
+        "def:3.2",
+        "lem:3.3",
+        "lem:3.4",
+        "lem:3.5"
+      ]
+    },
+    "rescaling_and_broad_narrow": {
+      "description": "Parabolic rescaling plus the Bourgain–Guth broad/narrow dichotomy that splits a linear estimate into a transverse multilinear piece and lower-dimensional pieces.",
+      "nodes": [
+        "prop:4.1",
+        "def:5.1",
+        "thm:5.3",
+        "prop:5.5",
+        "prop:5.6"
+      ]
+    },
+    "multilinear_core": {
+      "description": "Multilinear Kakeya/restriction input upgraded to multilinear decoupling, then driven to the sharp exponent by induction on scales.",
+      "nodes": [
+        "thm:6.1",
+        "prop:6.2",
+        "prop:6.3"
+      ]
+    },
+    "cone_extension": {
+      "description": "Reduce decoupling for the cone to the paraboloid via anisotropic sector decoupling.",
+      "nodes": [
+        "prop:8.1",
+        "prop:8.2"
+      ]
+    },
+    "applications": {
+      "description": "Discrete restriction, Strichartz estimates, lattice points on the sphere, additive energy / incidence geometry, and Diophantine-inequality counts — all corollaries of decoupling.",
+      "nodes": [
+        "thm:2.1",
+        "thm:2.2",
+        "thm:2.3",
+        "thm:2.4",
+        "thm:2.7",
+        "conjecture:2.6",
+        "thm:2.8",
+        "thm:2.9",
+        "thm:2.11",
+        "conjecture:2.10",
+        "prop:2.15",
+        "thm:2.16",
+        "thm:2.17",
+        "thm:2.18",
+        "thm:2.19"
+      ]
+    }
+  },
+  "bibliography": {
+    "BCT": {
+      "title": "On the multilinear restriction and Kakeya conjectures",
+      "authors": [
+        "Bennett",
+        "Carbery",
+        "Tao"
+      ],
+      "arxiv_id": "math/0509262",
+      "in_registry": false
+    },
+    "BG": {
+      "title": "Bounds on oscillatory integral operators based on multilinear estimates",
+      "authors": [
+        "Bourgain",
+        "Guth"
+      ],
+      "arxiv_id": "1012.3760",
+      "in_registry": false
+    },
+    "Guth": {
+      "title": "A short proof of the multilinear Kakeya inequality",
+      "authors": [
+        "Guth"
+      ],
+      "arxiv_id": "1409.4683",
+      "in_registry": false
+    },
+    "Wol": {
+      "title": "Local smoothing type estimates on $L^p$ for large $p$",
+      "authors": [
+        "Wolff"
+      ],
+      "arxiv_id": null,
+      "in_registry": false
+    },
+    "ST": {
+      "title": "Extremal problems in discrete geometry (Szemerédi–Trotter)",
+      "authors": [
+        "Szemerédi",
+        "Trotter"
+      ],
+      "arxiv_id": null,
+      "in_registry": false
+    },
+    "PS": {
+      "title": "Repeated angles in the plane and related problems",
+      "authors": [
+        "Pach",
+        "Sharir"
+      ],
+      "arxiv_id": null,
+      "in_registry": false
+    },
+    "SteTom": {
+      "title": "Tomas–Stein restriction estimate",
+      "authors": [
+        "Stein",
+        "Tomas"
+      ],
+      "arxiv_id": null,
+      "in_registry": false
+    },
+    "Bo3": {
+      "title": "Moment inequalities for trigonometric polynomials with spectrum in curved hypersurfaces",
+      "authors": [
+        "Bourgain"
+      ],
+      "arxiv_id": null,
+      "in_registry": false
+    },
+    "GOW": {
+      "title": "Strichartz estimates for the Schrödinger equation on irrational tori",
+      "authors": [
+        "Guo",
+        "Oh",
+        "Wang"
+      ],
+      "arxiv_id": "1306.4973",
+      "in_registry": false
+    },
+    "Dem23": {
+      "title": "Incidence theory and discrete restriction estimates",
+      "authors": [
+        "Demeter"
+      ],
+      "arxiv_id": "1401.1873",
+      "in_registry": false
+    }
+  }
+}

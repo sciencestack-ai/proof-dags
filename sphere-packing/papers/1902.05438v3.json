@@ -1,0 +1,255 @@
+{
+  "paper": "1902.05438v3",
+  "title": "Universal optimality of the $E_8$ and Leech lattices and interpolation formulas",
+  "authors": ["Henry Cohn", "Abhinav Kumar", "Stephen D. Miller", "Danylo Radchenko", "Maryna Viazovska"],
+  "generated": "2026-05-26",
+  "status": "complete",
+  "nodes": {
+    "thm:1.4": {
+      "type": "Theorem",
+      "number": "1.4",
+      "section": "1",
+      "role": "main_result",
+      "summary": "$E_8$ in $\\mathbb{R}^8$ and the Leech lattice in $\\mathbb{R}^{24}$ are *universally optimal*: among all periodic configurations they minimize every completely monotonic pairwise potential energy. Generalizes the sphere-packing optimality (Viazovska, CKMRV) to all such energies."
+    },
+    "cor:1.5": {
+      "type": "Corollary",
+      "number": "1.5",
+      "section": "1",
+      "role": "corollary",
+      "summary": "Among unit-determinant lattices $\\Lambda$ in $d=8$ or $24$, the minimum value of $\\sum_{v\\in\\Lambda\\setminus 0}e^{-\\pi|v|^2 t}$ is attained at $E_8$ (resp. Leech) for every $t>0$ — the lattice-theta-series specialization of universal optimality."
+    },
+    "prop:1.6": {
+      "type": "Proposition",
+      "number": "1.6",
+      "section": "1",
+      "role": "technical",
+      "summary": "Schwartz upper-envelope lemma: for any $p:(0,\\infty)\\to[0,\\infty)$ and Schwartz $f:\\mathbb{R}^d\\to\\mathbb{R}$ with $f(x)\\le p(|x|)$, the corresponding sum over a periodic configuration is controlled by the envelope — the smoothing tool used to bridge potentials to LP duality."
+    },
+    "thm:1.7": {
+      "type": "Theorem",
+      "number": "1.7",
+      "section": "1",
+      "role": "main_result",
+      "summary": "Interpolation formula at $\\sqrt{2n}$: for $(d,n_0)=(8,1)$ or $(24,2)$, every radial Schwartz $f$ on $\\mathbb{R}^d$ is uniquely determined by the values $f(\\sqrt{2n})$, $f'(\\sqrt{2n})$, $\\widehat{f}(\\sqrt{2n})$, $\\widehat{f}'(\\sqrt{2n})$ for $n\\ge n_0$ — the higher-dimensional analogue of Radchenko–Viazovska, with derivative data."
+    },
+    "cor:1.8": {
+      "type": "Corollary",
+      "number": "1.8",
+      "section": "1",
+      "role": "corollary",
+      "summary": "Uniqueness of the magic functions: in $\\mathbb{R}^8$ and $\\mathbb{R}^{24}$ the optimal auxiliary functions for the sphere-packing LP bound and for Gaussian-potential energy minimization are unique — the rigidity statement following from the interpolation formula."
+    },
+    "thm:1.9": {
+      "type": "Theorem",
+      "number": "1.9",
+      "section": "1",
+      "role": "main_result",
+      "summary": "Isomorphism form of interpolation: the value-and-derivative map sending $f\\in\\mathcal{S}_{\\textup{rad}}(\\mathbb{R}^d)$ to its samples at $\\sqrt{2n}$ is an isomorphism onto an explicitly described space — the analogue of Radchenko–Viazovska's $\\ker L$ characterization."
+    },
+    "thm:3.1": {
+      "type": "Theorem",
+      "number": "3.1",
+      "section": "3",
+      "role": "key_mechanism",
+      "summary": "Functional-equation $\\leftrightarrow$ interpolation framework: existence of smooth $F,\\widetilde F:\\mathbb{H}\\times\\mathbb{R}^d\\to\\mathbb{C}$ holomorphic in $\\tau$ and satisfying explicit modular functional equations is equivalent to an interpolation formula — the bridge from modular forms to sampling."
+    },
+    "cor:3.5": {
+      "type": "Corollary",
+      "number": "3.5",
+      "section": "3",
+      "role": "technical",
+      "summary": "Group-algebra obstruction: $w = \\sum_\\gamma c_\\gamma \\gamma \\notin (T-I)R$ if some $c_{(xy)^n\\gamma}\\ne 0$ for exactly one $n$ — distinguishes which group-algebra elements are coboundaries."
+    },
+    "prop:3.8": {
+      "type": "Proposition",
+      "number": "3.8",
+      "section": "3",
+      "role": "technical",
+      "summary": "The sums defining the ideals $\\mathcal{I}, \\mathcal{I}_\\pm$ of $R = \\mathbb{C}[\\mathrm{PSL}_2(\\mathbb{Z})]$ are direct sums (free $R$-modules of rank 2) — the structural identification of the relevant ideals."
+    },
+    "prop:3.9": {
+      "type": "Proposition",
+      "number": "3.9",
+      "section": "3",
+      "role": "technical",
+      "summary": "Dimensions and bases of the quotient algebras: $\\dim_\\mathbb{C} R/\\mathcal{I} = 6$ with explicit basis $M_1=I, M_2=T, M_3=TS,\\dots$ — the six-dimensional representation of $\\mathrm{SL}_2(\\mathbb{Z})$ that controls the interpolation."
+    },
+    "prop:3.11": {
+      "type": "Proposition",
+      "number": "3.11",
+      "section": "3",
+      "role": "technical",
+      "summary": "Linear functionals $\\phi_\\pm: R/\\mathcal{I}_\\pm \\to \\mathbb{C}$ defined on the explicit basis — the duality between the algebra structure and the interpolation kernels."
+    },
+    "prop:4.2": {
+      "type": "Proposition",
+      "number": "4.2",
+      "section": "4",
+      "role": "technical",
+      "summary": "Analytic-continuation lemma: continuous $h_1,h_2:\\mathbb{H}\\to\\mathbb{C}$ satisfying matching slash-action conditions admit holomorphic extensions and obey the resulting functional equations — the analytic substrate for kernel existence."
+    },
+    "thm:4.3": {
+      "type": "Theorem",
+      "number": "4.3",
+      "section": "4",
+      "role": "key_reduction",
+      "summary": "Existence and uniqueness of the interpolation kernels $\\mathcal{K}, \\mathcal{K}_\\pm$ for $d=8,24$: meromorphic functions encoding the interpolation basis, determined by their modular transformation properties and singularity locus."
+    },
+    "prop:4.4": {
+      "type": "Proposition",
+      "number": "4.4",
+      "section": "4",
+      "role": "technical",
+      "summary": "Annihilator space $\\mathrm{Ann}_k(\\mathcal{I}_+,\\mathcal{P})$ description: the solutions $f\\in\\mathcal{P}$ to $f|_k(T-I)^2 = 0$ and the analogous $\\mathcal{I}_+$ relations form an explicit modular-form space at weight $k$ — the $+1$ side of the kernel."
+    },
+    "prop:4.5": {
+      "type": "Proposition",
+      "number": "4.5",
+      "section": "4",
+      "role": "technical",
+      "summary": "Annihilator space $\\mathrm{Ann}_k(\\mathcal{I}_-,\\mathcal{P})$: the $-1$ side of the kernel, also explicitly described in terms of modular forms."
+    },
+    "prop:4.7": {
+      "type": "Proposition",
+      "number": "4.7",
+      "section": "4",
+      "role": "technical",
+      "summary": "Annihilator space $\\mathrm{Ann}_k(\\widetilde{\\mathcal{I}}_+,\\mathcal{P})$: solutions to $f|_k(T-2I+T^{-1}-2S) = 0$ — the second-derivative-data analogue, governing the $f'(\\sqrt{2n})$ samples."
+    },
+    "prop:4.8": {
+      "type": "Proposition",
+      "number": "4.8",
+      "section": "4",
+      "role": "technical",
+      "summary": "Annihilator space $\\mathrm{Ann}_k(\\widetilde{\\mathcal{I}}_-,\\mathcal{P})$: the $-1$ analogue of Proposition 4.7."
+    },
+    "prop:4.10": {
+      "type": "Proposition",
+      "number": "4.10",
+      "section": "4",
+      "role": "technical",
+      "summary": "Kernel transformation property: $\\mathcal{K}_\\pm(\\tau,z)|_{2-d/2}^z r = 0$ for the relevant slash actions — confirms the kernels live in the predicted annihilator spaces."
+    },
+    "prop:5.1": {
+      "type": "Proposition",
+      "number": "5.1",
+      "section": "5",
+      "role": "technical",
+      "summary": "Analytic continuation of $\\tau\\mapsto F_2(\\tau,r)$ from the fundamental domain $\\mathcal{D}$ to an open neighborhood $\\mathcal{D}_+\\supset\\overline{\\mathcal{D}}$ — extends the interpolation generating function past the cusp."
+    },
+    "cor:5.2": {
+      "type": "Corollary",
+      "number": "5.2",
+      "section": "5",
+      "role": "technical",
+      "summary": "$\\tau\\mapsto F_2(\\tau,r)$ extends holomorphically to all of $\\mathbb{H}$ and satisfies the explicit slash-action identities $F_2|^\\tau_{d/2}(T-I)^2 = -e^{\\pi i r^2\\tau}|^\\tau_{d/2}(T-I)^2$, etc."
+    },
+    "prop:5.4": {
+      "type": "Proposition",
+      "number": "5.4",
+      "section": "5",
+      "role": "technical",
+      "summary": "Integral formulas for the interpolation basis elements — explicit contour-integral expressions used to evaluate and bound the basis functions in applications."
+    },
+    "prop:6.1": {
+      "type": "Proposition",
+      "number": "6.1",
+      "section": "6",
+      "role": "key_mechanism",
+      "summary": "Kernel positivity reduction: the universal-optimality inequality reduces to showing the interpolation kernels $\\mathcal{K}_\\pm$ satisfy a positivity condition on a fundamental domain — the analytic statement that drives the proof of Theorem 1.4."
+    },
+    "prop:6.3": {
+      "type": "Proposition",
+      "number": "6.3",
+      "section": "6",
+      "role": "technical",
+      "summary": "Refinement of the positivity statement near the diagonals, edges, and corners of the relevant region — the case decomposition computer-assisted positivity is verified by."
+    },
+    "conjecture:7.2": {
+      "type": "Conjecture",
+      "number": "7.2",
+      "section": "7",
+      "role": "context",
+      "summary": "Open question: extension of universal optimality to other lattices or sphere configurations (e.g. higher-dimensional analogues, the $A_2$ hexagonal lattice in dim 2)."
+    },
+    "conjecture:7.5": {
+      "type": "Conjecture",
+      "number": "7.5",
+      "section": "7",
+      "role": "context",
+      "summary": "Open question: structural conjecture on the interpolation kernels in higher dimensions or for other special configurations."
+    }
+  },
+  "edges": [
+    { "from": "thm:1.4", "to": "thm:1.7", "type": "depends_on", "note": "Universal optimality is read off the interpolation formula applied to test functions arising from completely monotonic potentials." },
+    { "from": "thm:1.4", "to": "prop:6.1", "type": "depends_on", "note": "The optimality inequality reduces to positivity of the interpolation kernels (Proposition 6.1)." },
+    { "from": "thm:1.4", "to": "prop:6.3", "type": "depends_on", "note": "The case-by-case positivity refinement (diagonals/edges/corners) completes the proof of Theorem 1.4." },
+    { "from": "thm:1.4", "to": "prop:1.6", "type": "uses", "note": "The Schwartz upper-envelope lemma bridges potentials to LP duality." },
+    { "from": "cor:1.5", "to": "thm:1.4", "type": "specializes", "note": "The lattice-theta-series statement is the Gaussian-potential case of universal optimality." },
+    { "from": "thm:1.7", "to": "thm:4.3", "type": "depends_on", "note": "The interpolation formula is realized via the kernels $\\mathcal{K},\\mathcal{K}_\\pm$ of Theorem 4.3." },
+    { "from": "thm:1.7", "to": "cor:5.2", "type": "depends_on", "note": "Interpolation needs the holomorphic continuation of the generating function $F_2$." },
+    { "from": "thm:1.7", "to": "prop:5.4", "type": "uses", "note": "Integral formulas for the interpolation basis are read off Proposition 5.4." },
+    { "from": "cor:1.8", "to": "thm:1.7", "type": "depends_on", "note": "Uniqueness of the optimal auxiliary functions is the kernel statement of the interpolation isomorphism." },
+    { "from": "thm:1.9", "to": "thm:1.7", "type": "depends_on", "note": "The isomorphism statement specifies the image of the interpolation map of Theorem 1.7." },
+    { "from": "thm:4.3", "to": "prop:4.4", "type": "depends_on", "note": "The $+1$-kernel lives in the annihilator space of Proposition 4.4." },
+    { "from": "thm:4.3", "to": "prop:4.5", "type": "depends_on", "note": "The $-1$-kernel lives in the annihilator space of Proposition 4.5." },
+    { "from": "thm:4.3", "to": "prop:4.7", "type": "depends_on", "note": "Derivative-data kernels live in the second-order annihilator space (Proposition 4.7)." },
+    { "from": "thm:4.3", "to": "prop:4.8", "type": "depends_on", "note": "The second-order $-1$ annihilator space (Proposition 4.8) supplies the corresponding kernel." },
+    { "from": "thm:4.3", "to": "prop:4.2", "type": "depends_on", "note": "Existence of the kernels uses the analytic continuation lemma (Proposition 4.2)." },
+    { "from": "thm:4.3", "to": "prop:4.10", "type": "depends_on", "note": "The kernels are characterized by the slash-action identity of Proposition 4.10." },
+    { "from": "thm:4.3", "to": "thm:3.1", "type": "uses_mechanism", "note": "Kernel existence uses the functional-equation $\\leftrightarrow$ interpolation framework of Theorem 3.1." },
+    { "from": "thm:3.1", "to": "prop:3.8", "type": "depends_on", "note": "The framework rests on the ideal-structure result for $R=\\mathbb{C}[\\mathrm{PSL}_2(\\mathbb{Z})]$ (Proposition 3.8)." },
+    { "from": "thm:3.1", "to": "prop:3.9", "type": "depends_on", "note": "Uses the dimensions and explicit bases of $R/\\mathcal{I}, R/\\mathcal{I}_\\pm$ (Proposition 3.9)." },
+    { "from": "thm:3.1", "to": "prop:3.11", "type": "depends_on", "note": "Uses the linear functionals $\\phi_\\pm$ (Proposition 3.11) realizing the duality." },
+    { "from": "prop:3.9", "to": "prop:3.8", "type": "depends_on", "note": "The dimension and basis statements assume the direct-sum structure of the ideals." },
+    { "from": "prop:3.11", "to": "prop:3.9", "type": "depends_on", "note": "The linear functionals are defined on the explicit basis of Proposition 3.9." },
+    { "from": "thm:3.1", "to": "cor:3.5", "type": "uses", "note": "The framework uses the coboundary obstruction (Corollary 3.5)." },
+    { "from": "prop:4.4", "to": "prop:3.9", "type": "depends_on", "note": "The annihilator-space dimension matches the quotient-algebra description of Proposition 3.9." },
+    { "from": "prop:4.5", "to": "prop:3.9", "type": "depends_on", "note": "Same algebraic input as Proposition 4.4." },
+    { "from": "cor:5.2", "to": "prop:5.1", "type": "depends_on", "note": "Full-$\\mathbb{H}$ holomorphic continuation follows from the local extension to $\\mathcal{D}_+$." },
+    { "from": "prop:6.3", "to": "prop:6.1", "type": "depends_on", "note": "The boundary-case positivity refines the global positivity statement." }
+  ],
+  "critical_path": ["thm:1.4", "thm:1.7", "thm:4.3", "prop:4.4"],
+  "proof_architecture": {
+    "main_results": {
+      "description": "Universal optimality of $E_8$ and Leech, the lattice-theta-series corollary, the higher-dimensional interpolation formula, the uniqueness of magic functions, and the isomorphism statement.",
+      "nodes": ["thm:1.4", "cor:1.5", "prop:1.6", "thm:1.7", "cor:1.8", "thm:1.9"]
+    },
+    "functional_eq_framework": {
+      "description": "The framework reducing interpolation to a functional-equation problem on $\\mathbb{H}\\times\\mathbb{R}^d$.",
+      "nodes": ["thm:3.1", "cor:3.5"]
+    },
+    "group_algebra": {
+      "description": "The ideals of $R=\\mathbb{C}[\\mathrm{PSL}_2(\\mathbb{Z})]$ and the six-dimensional quotient that controls the interpolation.",
+      "nodes": ["prop:3.8", "prop:3.9", "prop:3.11"]
+    },
+    "kernels": {
+      "description": "Existence and uniqueness of the interpolation kernels $\\mathcal{K},\\mathcal{K}_\\pm$ for $d=8,24$, and the analytic-continuation lemma they rest on.",
+      "nodes": ["prop:4.2", "thm:4.3"]
+    },
+    "annihilator_spaces": {
+      "description": "The explicit modular-form annihilator spaces $\\mathrm{Ann}_k(\\mathcal{I}_\\pm,\\mathcal{P})$ and $\\mathrm{Ann}_k(\\widetilde{\\mathcal{I}}_\\pm,\\mathcal{P})$ where the kernels live, plus the slash-action characterization.",
+      "nodes": ["prop:4.4", "prop:4.5", "prop:4.7", "prop:4.8", "prop:4.10"]
+    },
+    "continuation_and_integrals": {
+      "description": "Analytic continuation of the generating function $F_2$ from the fundamental domain to all of $\\mathbb{H}$, the resulting slash identities, and integral formulas for the basis.",
+      "nodes": ["prop:5.1", "cor:5.2", "prop:5.4"]
+    },
+    "positivity": {
+      "description": "The reduction of universal optimality to kernel positivity and the boundary-case refinement.",
+      "nodes": ["prop:6.1", "prop:6.3"]
+    },
+    "open_questions": {
+      "description": "Open conjectures on extensions of universal optimality and kernel structure in other dimensions.",
+      "nodes": ["conjecture:7.2", "conjecture:7.5"]
+    }
+  },
+  "bibliography": {
+    "Viazovska-E8": { "title": "The sphere packing problem in dimension 8 (Viazovska)", "arxiv_id": "1603.04246", "in_registry": true },
+    "Leech": { "title": "The sphere packing problem in dimension 24 (CKMRV)", "arxiv_id": "1603.06518", "in_registry": true },
+    "CM": { "title": "Some properties of optimal functions for sphere packing in dimensions 8 and 24 (Cohn–Miller)", "arxiv_id": "1603.04759", "in_registry": true },
+    "RV": { "title": "Fourier interpolation on the real line (Radchenko–Viazovska)", "arxiv_id": "1701.00265", "in_registry": true },
+    "CK": { "title": "Universally optimal distribution of points on spheres (Cohn–Kumar)", "arxiv_id": "math/0607446", "in_registry": true }
+  }
+}

@@ -1,0 +1,173 @@
+{
+  "description": "Cross-paper edges of the PFR proof dependency graph. Each edge connects theorem-level node IDs across papers (or to a declared foundational anchor). Direction reads subject-verb-object: '{from} {type} {to}'.",
+  "edges": [
+    {
+      "from": "2311.05762:prop:4.1",
+      "to": "2306.13403:prop:1.4",
+      "type": "imports_result",
+      "note": "The PFR fibring lemma (Prop 4.1) is the fibring inequality Prop 1.4 of Green-Manners-Tao, the tool that enables the entropy induction."
+    },
+    {
+      "from": "2311.05762:thm:1.8",
+      "to": "2306.13403:lem:5.1",
+      "type": "imports_result",
+      "note": "The entropic PFR proof uses the very-small-entropy-doubling characterization (Lemma 5.1) from Green-Manners-Tao."
+    },
+    {
+      "from": "2311.05762:lem:7.2",
+      "to": "tao-entropy-2010:*",
+      "type": "imports_result",
+      "note": "The endgame Lemma 7.2 uses the entropic Balog-Szemeredi-Gowers lemma from Tao's 2010 entropy sumset theory."
+    },
+    {
+      "from": "2306.13403:prop:1.10",
+      "to": "2311.05762:conjecture:1.1",
+      "type": "imports_result",
+      "note": "Green-Manners-Tao's Prop 1.10 is conditional on PFR over F_2; once GGMT proved Conjecture 1.1 the implication became unconditional."
+    },
+    {
+      "from": "2311.05762:thm:1.2",
+      "to": "2306.13403:conjecture:1.7",
+      "type": "proves",
+      "note": "The GGMT main theorem, via Green-Manners-Tao Prop 1.10, settles weak PFR over the integers (Conjecture 1.7 of that paper)."
+    },
+    {
+      "from": "2404.09639:thm:main-covering",
+      "to": "2311.05762:thm:1.2",
+      "type": "improves",
+      "note": "Liao improves the covering exponent of the main PFR theorem from C=12 to C=9."
+    },
+    {
+      "from": "2404.09639:thm:main-entropic",
+      "to": "2311.05762:thm:1.8",
+      "type": "improves",
+      "note": "Liao improves the entropic PFR constant from 11 to 8."
+    },
+    {
+      "from": "2404.09639:lem:decrease",
+      "to": "2311.05762:prop:2.1",
+      "type": "improves",
+      "note": "Liao's sharpened tau-functional decrease lemma tightens the GGMT core induction step."
+    },
+    {
+      "from": "2501.11580:thm:1",
+      "to": "2311.05762:thm:1.8",
+      "type": "extends",
+      "note": "Bloom extends the entropic PFR framework from F_2^n to function fields F_q[t]."
+    },
+    {
+      "from": "2501.11580:thm:2",
+      "to": "2306.13403:prop:1.4",
+      "type": "imports_result",
+      "note": "Bloom's vector-space dimension characterization uses the Green-Manners-Tao fibring inequality."
+    },
+    {
+      "from": "2411.13493:thm:14",
+      "to": "2311.05762:thm:1.8",
+      "type": "imports_result",
+      "note": "Abbe-Sandon-Shashkov-Viazovska restate GGMT entropic PFR as their Theorem 14."
+    },
+    {
+      "from": "2411.13493:cor:15",
+      "to": "2311.05762:thm:1.8",
+      "type": "extends",
+      "note": "The conditional entropic PFR corollary extends GGMT entropic PFR to a conditioned setting."
+    },
+    {
+      "from": "2411.13493:thm:9",
+      "to": "2311.05762:thm:1.8",
+      "type": "imports_result",
+      "note": "The Reed-Muller capacity theorem relies on entropic PFR through the orbit-localization chain."
+    },
+    {
+      "from": "2312.11017:thm:1",
+      "to": "2311.05762:lem:A.1",
+      "type": "generalizes",
+      "note": "Lau-Nair generalize the Ruzsa equivalence underlying the entropy-combinatorics basics of GGMT Appendix A."
+    },
+    {
+      "from": "2312.11017:cor:6",
+      "to": "ruzsa-1996:ruzsa-triangle",
+      "type": "re_derives",
+      "note": "Lau-Nair give the entropic version of Ruzsa's classical sum-difference inequality."
+    },
+    {
+      "from": "2512.11217:thm:1.1",
+      "to": "2311.05762:conjecture:1.1",
+      "type": "addresses_same_question",
+      "note": "Raghavan's bound approaches the PFR conjecture for general abelian groups (any epsilon>0) without reaching epsilon=0."
+    },
+    {
+      "from": "2512.11217:def:2.10",
+      "to": "2311.05762:prop:2.1",
+      "type": "extends",
+      "note": "Raghavan adapts the GGMT tau-functional framework, used in Prop 2.1, to general abelian groups."
+    },
+    {
+      "from": "2512.11217:lem:A.9",
+      "to": "2306.13403:prop:1.4",
+      "type": "imports_result",
+      "note": "Raghavan's fibring lemma is the Green-Manners-Tao fibring inequality applied to general groups."
+    },
+    {
+      "from": "2512.11217:thm:2.9",
+      "to": "2311.05762:prop:2.1",
+      "type": "imports_result",
+      "note": "Raghavan cites GGMT Propositions 2.1 and 2.2 (the tau-decrement) as a foundation."
+    },
+    {
+      "from": "2405.10297:thm:9",
+      "to": "2311.05762:thm:1.8",
+      "type": "imports_result",
+      "note": "The two-source disperser-to-extractor upgrade combines Ben-Aroya-Regev with GGMT entropic PFR."
+    },
+    {
+      "from": "2405.10297:thm:8",
+      "to": "2311.05762:thm:1.8",
+      "type": "imports_result",
+      "note": "The low-error two-source extractor uses entropic PFR via the Theorem 9 disperser-to-extractor conversion."
+    },
+    {
+      "from": "2406.10872:thm:1.1",
+      "to": "2311.05762:thm:1.2",
+      "type": "generalizes",
+      "note": "The m-torsion covering theorem cited by Karam generalizes the GGMT F_2 covering theorem."
+    },
+    {
+      "from": "2406.10872:prop:2.2",
+      "to": "2311.05762:thm:1.8",
+      "type": "imports_result",
+      "note": "Karam uses the m-torsion form of GGMT entropic PFR."
+    },
+    {
+      "from": "2406.10872:prop:2.3",
+      "to": "2306.13403:prop:1.3",
+      "type": "imports_result",
+      "note": "Karam uses Green-Manners-Tao Prop 1.3: small Ruzsa distance implies closeness to a subgroup."
+    },
+    {
+      "from": "2406.10872:thm:1.5",
+      "to": "2311.05762:thm:1.8",
+      "type": "imports_result",
+      "note": "Karam's distributional characterization of small symmetric differences with cosets uses entropic PFR."
+    },
+    {
+      "from": "2603.06483:lem:6.3",
+      "to": "2311.05762:thm:1.3",
+      "type": "imports_result",
+      "note": "The Z^D rank lemma is a direct application of GGMT weak PFR over the integers."
+    },
+    {
+      "from": "2603.06483:lem:6.2",
+      "to": "2306.13403:conjecture:1.7",
+      "type": "imports_result",
+      "note": "The doubling-to-rank lemma uses weak PFR over Z, now a theorem via the GGMT proof chain."
+    },
+    {
+      "from": "2603.06483:thm:1.1",
+      "to": "2311.05762:thm:1.3",
+      "type": "imports_result",
+      "note": "Harrison-Mudgal-Schmidt's resolution of Bremner's conjecture rests, through the rank lemmas, on weak PFR over the integers."
+    }
+  ]
+}

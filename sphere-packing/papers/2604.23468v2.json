@@ -1,0 +1,37 @@
+{
+  "paper": "2604.23468v2",
+  "title": "A Milestone in Formalization: The Sphere Packing Problem in Dimension 8",
+  "authors": ["Sidharth Hariharan", "Christopher Birkbeck", "Seewoo Lee"],
+  "generated": "2026-05-26",
+  "status": "complete",
+  "nodes": {
+    "thm:1": {
+      "type": "Theorem",
+      "number": "1",
+      "section": "2",
+      "role": "main_result",
+      "summary": "Viazovska's theorem, formalized in Lean: no sphere packing in $\\mathbb{R}^8$ has density greater than the $E_8$ packing, with $\\Delta_8 = \\Delta(\\mathcal{P}(\\Lambda_8)) = \\pi^4/384$. The headline result formally verified in this paper."
+    },
+    "thm:2": {
+      "type": "Theorem",
+      "number": "2",
+      "section": "2",
+      "role": "foundational",
+      "summary": "Cohn–Elkies linear-programming bound (2003), restated as formalized in Lean: a Schwartz $f:\\mathbb{R}^d\\to\\mathbb{R}$ with $f$ not identically zero, $f(x)\\le 0$ for $\\|x\\|\\ge 1$, and $\\widehat{f}(x)\\ge 0$ everywhere yields $\\Delta_d \\le f(0)/\\widehat{f}(0)$ — the framework Viazovska's proof plugs into."
+    }
+  },
+  "edges": [
+    { "from": "thm:1", "to": "thm:2", "type": "depends_on", "note": "Viazovska's $E_8$ theorem is derived from the Cohn–Elkies LP bound (Theorem 2) applied to the magic function." }
+  ],
+  "critical_path": ["thm:1", "thm:2"],
+  "proof_architecture": {
+    "formalized_theorems": {
+      "description": "The two theorems whose Lean formalization this paper reports: Viazovska's $E_8$ density bound and the underlying Cohn–Elkies LP bound. The paper's mathematical content is intentionally a restatement; its novelty is the *formalization* of Viazovska's proof in Lean 4, the construction of the magic function in Lean, the modular-forms infrastructure built, and the metaprogramming / autoformalization tooling around it.",
+      "nodes": ["thm:1", "thm:2"]
+    }
+  },
+  "bibliography": {
+    "Viazovska2016": { "title": "The sphere packing problem in dimension 8 (Viazovska)", "arxiv_id": "1603.04246", "in_registry": true },
+    "CohnElkies": { "title": "New upper bounds on sphere packings I (Cohn–Elkies)", "arxiv_id": "math/0110009", "in_registry": true }
+  }
+}

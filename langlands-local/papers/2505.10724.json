@@ -1,0 +1,86 @@
+{
+  "paper": "2505.10724",
+  "title": "Categorical local Langlands and torsion classes of some Shimura varieties",
+  "authors": ["Kieu Hieu Nguyen"],
+  "generated": "2026-05-20",
+  "status": "complete",
+  "nodes": {
+    "thm:1.1": {
+      "type": "Theorem",
+      "number": "1.1",
+      "section": "1",
+      "role": "main_result",
+      "summary": "Categorical decomposition: the compact part $\\mathrm{D}_{\\mathrm{lis}}^{[C_\\phi]}(\\mathrm{Bun}_G,\\Lambda)^\\omega$ of the Fargues–Scholze category along an $L$-parameter $\\phi$ decomposes as $\\bigoplus_{\\chi \\in \\mathrm{Irr}(S_\\phi)} \\mathrm{D}(\\mathrm{Rep}_\\Lambda(\\mathfrak{s}_{\\phi,\\chi}))$ — a categorical local Langlands equivalence indexed by the centralizer $S_\\phi$."
+    },
+    "thm:1.2": {
+      "type": "Theorem",
+      "number": "1.2",
+      "section": "1",
+      "role": "main_result",
+      "summary": "The sheaf $\\mathcal{G}_\\phi$ is a non-trivial Hecke eigensheaf with eigenvalue the $L$-parameter $\\phi$ — verifying a case of the Fargues eigensheaf conjecture inside the Fargues–Scholze framework."
+    },
+    "thm:1.3": {
+      "type": "Theorem",
+      "number": "1.3",
+      "section": "1",
+      "role": "main_result",
+      "summary": "For $\\mathrm{GL}_n$ and minuscule $\\mu$, an explicit identity (up to shifts/twists) for the cohomology $R\\Gamma_c(\\mathrm{GL}_n,b,\\mu)[\\pi]$ as an induced $\\mathrm{GL}_n(\\mathbb{Q}_p) \\times W_{\\mathbb{Q}_p}$-representation — torsion classes in the cohomology of the corresponding Shimura/Rapoport–Zink spaces."
+    },
+    "thm:2.1": {
+      "type": "Theorem",
+      "number": "2.1",
+      "section": "2",
+      "role": "foundational",
+      "summary": "Imported from FS (Thm III.0.2): structure of $\\mathrm{Bun}_G$ — it is a small $v$-stack, its points biject with $B(G) \\cong \\pi_1(G)_\\Gamma$ (Kottwitz), and the Harder–Narasimhan strata give the geometry the categorical correspondence is built on."
+    },
+    "thm:4.3": {
+      "type": "Theorem",
+      "number": "4.3",
+      "section": "4",
+      "role": "auxiliary",
+      "summary": "Zelevinsky-type classification (after Mínguez–Sécherre): the map $\\mathrm{Z}: \\mathrm{Mult}^{\\mathrm{sc}}_m \\to \\mathrm{Irr}(\\mathrm{G}_m)$ from multisegments of supercuspidals to irreducibles is a bijection — the representation-theoretic indexing on the automorphic side."
+    },
+    "thm:4.5": {
+      "type": "Theorem",
+      "number": "4.5",
+      "section": "4",
+      "role": "foundational",
+      "summary": "Block decomposition (Sécherre–Stevens): $\\mathrm{Rep}_\\Lambda(G_b)$ decomposes into blocks $\\mathrm{Rep}_\\Lambda(\\mathfrak{s})$ over inertial supercuspidal classes — the spectral decomposition matched against the $L$-parameter side."
+    },
+    "thm:4.6": {
+      "type": "Theorem",
+      "number": "4.6",
+      "section": "4",
+      "role": "foundational",
+      "summary": "Imported from FS (Thm I.9.6): properties of the Fargues–Scholze correspondence $\\pi \\mapsto \\phi^{\\mathrm{FS}}_\\pi$ — compatibility with reduction mod $\\ell$, twists, and central characters — the constraints that pin the categorical decomposition to the correct parameters."
+    },
+    "thm:5.2": {
+      "type": "Theorem",
+      "number": "5.2",
+      "section": "5",
+      "role": "key_reduction",
+      "summary": "Supercuspidal case: for each block, the spectral action realizes the categorical equivalence $\\mathrm{D}(\\mathrm{Rep}_\\Lambda(\\mathfrak{s}_{\\phi,\\chi})) \\simeq$ modules over $\\mathcal{O}([C_\\phi])$, the engine of the main decomposition (Thm 1.1)."
+    }
+  },
+  "edges": [
+    { "from": "thm:1.1", "to": "thm:4.5", "type": "depends_on", "note": "The categorical decomposition is indexed by the block decomposition of $\\mathrm{Rep}_\\Lambda(G_b)$ (Thm 4.5)." },
+    { "from": "thm:1.1", "to": "thm:4.6", "type": "depends_on", "note": "Matching blocks to $L$-parameters uses the properties of the Fargues–Scholze correspondence (Thm 4.6)." },
+    { "from": "thm:1.1", "to": "thm:2.1", "type": "depends_on", "note": "The decomposition lives on $\\mathrm{Bun}_G$, whose structure (Thm 2.1) is the geometric stage." },
+    { "from": "thm:1.1", "to": "thm:5.2", "type": "depends_on", "note": "The block-level categorical equivalence (Thm 5.2, supercuspidal case) assembles into the full decomposition." },
+    { "from": "thm:1.2", "to": "thm:1.1", "type": "depends_on", "note": "The Hecke eigensheaf is extracted from the categorical decomposition." },
+    { "from": "thm:1.3", "to": "thm:1.2", "type": "depends_on", "note": "The Shimura/RZ cohomology identity is read off the Hecke-eigensheaf structure." },
+    { "from": "thm:1.3", "to": "thm:4.6", "type": "uses", "note": "The cohomology is matched to the correct $L$-parameter via the FS correspondence." },
+    { "from": "thm:4.3", "to": "thm:4.5", "type": "uses", "note": "The Zelevinsky classification indexes the blocks." }
+  ],
+  "critical_path": ["thm:2.1", "thm:4.5", "thm:5.2", "thm:1.1", "thm:1.2", "thm:1.3"],
+  "proof_architecture": {
+    "fs_geometry": { "description": "The Fargues–Scholze geometric inputs: Bun_G structure and the correspondence properties.", "nodes": ["thm:2.1", "thm:4.6"] },
+    "representation_side": { "description": "Block decomposition and Zelevinsky classification of the automorphic side.", "nodes": ["thm:4.3", "thm:4.5", "thm:5.2"] },
+    "main_results": { "description": "The categorical decomposition, the Hecke eigensheaf, and the Shimura/RZ cohomology computation.", "nodes": ["thm:1.1", "thm:1.2", "thm:1.3"] }
+  },
+  "bibliography": {
+    "FS": { "title": "Geometrization of the local Langlands correspondence", "arxiv_id": "2102.13459", "in_registry": true, "role": "Bun_G structure (Thm III.0.2 $\\to$ node 2.1) and the FS correspondence properties (Thm I.9.6 $\\to$ node 4.6); the categorical decomposition is of the FS category D_lis(Bun_G)" },
+    "MS14": { "title": "Mínguez–Sécherre, Représentations lisses modulo l de GL_m(D)", "arxiv_id": null, "in_registry": false, "role": "Zelevinsky-type classification (Thm 4.3)" },
+    "SS16": { "title": "Sécherre–Stevens, Block decomposition of smooth representations", "arxiv_id": null, "in_registry": false, "role": "block decomposition into inertial supercuspidal classes (Thm 4.5)" }
+  }
+}

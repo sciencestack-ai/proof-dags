@@ -1,0 +1,29 @@
+{
+  "title": "Fourier Decoupling — Bourgain–Demeter ℓ² Decoupling Proof DAG",
+  "tags": ["harmonic-analysis", "decoupling", "restriction-theory", "bourgain-demeter", "vinogradov-mean-value", "riemann-zeta", "exponential-sums", "multilinear-kakeya", "brascamp-lieb", "incidence-geometry", "analytic-number-theory", "primes-in-short-intervals", "zero-density"],
+  "description": "Vertical dependency tower in harmonic analysis: multilinear Kakeya (Guth) → Bourgain–Demeter ℓ² decoupling → {Vinogradov main conjecture (Bourgain–Demeter–Guth), subconvexity for ζ(1/2+it) (Bourgain)} → large-value estimates / zero density / primes in short intervals (Guth–Maynard). Each layer consumes the previous as a black box plus genuinely new ideas — the structural property a typed proof DAG exposes that a citation graph flattens. Built root-down from 1403.5335.",
+  "papers": {
+    "1409.4683": { "title": "A short proof of the multilinear Kakeya inequality", "authors": ["Larry Guth"], "year": 2014, "role": "upstream-root — the multilinear Kakeya/Loomis–Whitney input both decoupling proofs rest on" },
+    "1403.5335": { "title": "The proof of the l^2 Decoupling Conjecture", "authors": ["Jean Bourgain", "Ciprian Demeter"], "year": 2014, "role": "root — sharp ℓ² decoupling for curved hypersurfaces and the cone" },
+    "1408.5794": { "title": "Decoupling, exponential sums and the Riemann zeta function", "authors": ["Jean Bourgain"], "year": 2014, "role": "application — decoupling ⟹ exponential-sum bound ⟹ |ζ(1/2+it)| ≪ t^{13/84+ε}; the bridge into analytic number theory" },
+    "1512.01565": { "title": "Proof of the main conjecture in Vinogradov's mean value theorem for degrees higher than three", "authors": ["Jean Bourgain", "Ciprian Demeter", "Larry Guth"], "year": 2015, "role": "flagship-application — Vinogradov's mean value theorem in the conjectured sharp range, via moment-curve decoupling proved by induction on degree on the parabola base case" },
+    "2405.20552": { "title": "New large value estimates for Dirichlet polynomials", "authors": ["Larry Guth", "James Maynard"], "year": 2024, "role": "downstream-sibling — new zero-density estimate and primes in short intervals of length x^{17/30+ε}; methodologically orthogonal (singular-value/trace method) but in the same problem space as the decoupling-derived exponential-sum line" }
+  },
+  "related_dags": {
+    "large-values-zero-density": "Shares the nodes 1408.5794 (Bourgain's decoupling $\\zeta$-bound) and 2405.20552 (Guth–Maynard). This DAG carries the upstream story (multilinear Kakeya $\\to$ $\\ell^2$ decoupling $\\to$ Bourgain's $\\zeta$-curve decoupling $\\to$ exponential-sum bound); the large-values DAG carries the downstream story (large values $\\to$ zero density $\\to$ primes). Together they trace decoupling techniques to prime distribution.",
+    "kakeya-restriction": "Shares the node math/0509262 (Bennett–Carbery–Tao, multilinear restriction and Kakeya). Here its multilinear restriction (thm:1.16) is imported by the $\\ell^2$ decoupling theorem (1403.5335:thm:6.1) and its multilinear Kakeya (thm:1.15) is improved by Guth (0811.2251:thm:2); in the kakeya-restriction DAG the same multilinear restriction is the input to Guth's restriction estimate (2402.03470:thm:3.1). Multilinear Kakeya is a load-bearing hub on which both the decoupling and the restriction programs depend."
+  },
+  "out_of_scope": {
+    "1012.3760": { "title": "Bounds on oscillatory integral operators based on multilinear estimates", "authors": ["Jean Bourgain", "Larry Guth"], "year": 2010, "reason": "Applies Bennett–Carbery–Tao multilinear restriction to the Stein restriction conjecture / Hörmander oscillatory integrals / Bochner–Riesz — a sibling of the decoupling line, not an ancestor of it. Natural root of a separate 'restriction-conjecture' DAG. Also currently un-parseable (latex2json AST-extraction gap for this pre-2014 source)." }
+  },
+  "foundational": {
+    "BennettCarberyTao:2006": { "title": "On the multilinear restriction and Kakeya conjectures", "authors": ["Jonathan Bennett", "Anthony Carbery", "Terence Tao"], "year": 2006, "arxiv_id": "math/0509262", "role": "foundational — multilinear restriction/Kakeya, the geometric input behind both decoupling proofs" },
+    "Guth:2010Endpoint": { "title": "The endpoint case of the Bennett-Carbery-Tao theorem", "authors": ["Larry Guth"], "year": 2010, "arxiv_id": "0811.2251", "role": "foundational — endpoint multilinear Kakeya, later re-proved short in 1409.4683" },
+    "BCCT:BrascampLieb": { "title": "Finite bounds for Hölder-Brascamp-Lieb multilinear inequalities", "authors": ["Bennett", "Carbery", "Christ", "Tao"], "year": 2008, "arxiv_id": "math/0505065", "role": "foundational — Brascamp–Lieb finiteness criterion used by BDG" },
+    "Wolff:2000": { "title": "Local smoothing type estimates on L^p for large p", "authors": ["Thomas Wolff"], "year": 2000, "role": "foundational — first lᵖ decoupling (for the cone)" },
+    "TomasStein:Restriction": { "title": "Tomas–Stein restriction estimate", "authors": ["P. Tomas", "E. M. Stein"], "year": 1975, "role": "foundational — the continuous restriction prototype decoupling sharpens" },
+    "Huxley:ExpSums": { "title": "Exponential sums and the Riemann zeta function V", "authors": ["M. N. Huxley"], "year": 2005, "role": "foundational — the exponential-sum / zero-density baseline improved by 1408.5794 and 2405.20552" },
+    "HeathBrown:LargeValues": { "title": "A large values estimate for Dirichlet polynomials", "authors": ["D. R. Heath-Brown"], "year": 2017, "role": "foundational — classical large-values bound that 2405.20552 builds on and surpasses" },
+    "LoomisWhitney:1949": { "title": "An inequality related to the isoperimetric inequality", "authors": ["L. H. Loomis", "H. Whitney"], "year": 1949, "role": "foundational — base case of the multilinear Kakeya induction" }
+  }
+}

@@ -1,0 +1,422 @@
+{
+  "paper": "1311.4600v3",
+  "title": "Small gaps between primes",
+  "authors": [
+    "James Maynard"
+  ],
+  "generated": "2026-05-06",
+  "status": "complete",
+  "nodes": {
+    "sec:1:12": {
+      "type": "Conjecture",
+      "number": "(Hardy-Littlewood)",
+      "section": "1",
+      "role": "context",
+      "summary": "Prime $k$-tuples conjecture: every admissible $\\mathcal{H} = \\{h_1,\\ldots,h_k\\}$ produces infinitely many $n$ with all $n+h_i$ prime. The motivating conjecture; the paper proves an unconditional weaker form via a stronger sieve."
+    },
+    "thm:1.1": {
+      "type": "Theorem",
+      "number": "1.1",
+      "section": "1",
+      "role": "main_result",
+      "summary": "For every $m$, $\\liminf_n (p_{n+m} - p_n) \\ll m^3 e^{4m}$. Bounded $m$-th prime gaps for all $m$ — qualitatively new beyond GPY/Zhang."
+    },
+    "thm:1.2": {
+      "type": "Theorem",
+      "number": "1.2",
+      "section": "1",
+      "role": "main_result",
+      "summary": "Positive proportion of $m$-element subsets of any large finite set of integers are admissible $m$-tuples that capture infinitely many simultaneous primes."
+    },
+    "thm:1.3": {
+      "type": "Theorem",
+      "number": "1.3",
+      "section": "1",
+      "role": "main_result",
+      "summary": "Unconditionally, $\\liminf_n (p_{n+1} - p_n) \\le 600$. The headline bounded-gaps result, sharper than Zhang ($\\le 7\\times 10^7$) and Polymath8a ($\\le 4680$)."
+    },
+    "thm:1.4": {
+      "type": "Theorem",
+      "number": "1.4",
+      "section": "1",
+      "role": "main_result",
+      "summary": "Under generalized Elliott-Halberstam (level of distribution $\\theta$ for every $\\theta < 1$): $\\liminf_n (p_{n+1} - p_n) \\le 12$ and $\\liminf_n (p_{n+2} - p_n) \\le 600$."
+    },
+    "prop:4.1": {
+      "type": "Proposition",
+      "number": "4.1",
+      "section": "4",
+      "role": "key_reduction",
+      "summary": "Sieve sum asymptotics. For sieve weights $\\lambda$ defined from a smooth $F$ supported on the simplex $\\mathcal{R}_k$, $S_1$ and $S_2$ are computed in terms of integrals $I_k(F)$ and $J_k^{(m)}(F)$. The technical heart of the new $k$-dimensional Selberg sieve."
+    },
+    "prop:4.2": {
+      "type": "Proposition",
+      "number": "4.2",
+      "section": "4",
+      "role": "key_reduction",
+      "summary": "Sieve-to-primes bridge. If primes have level of distribution $\\theta$, then for $r_k = \\lceil \\theta M_k/2 \\rceil$ where $M_k = \\sup_F \\big(\\sum_m J_k^{(m)}/I_k\\big)$, there are infinitely many $n$ with $r_k$ of the $n+h_i$ prime. Reduces gap bounds to a variational problem."
+    },
+    "prop:4.3": {
+      "type": "Proposition",
+      "number": "4.3",
+      "section": "4",
+      "role": "key_reduction",
+      "summary": "Explicit bounds on $M_k$: $M_5 > 2$ (gives thm:1.4 conditional), $M_{105} > 4$ (gives thm:1.3 unconditional), and $M_k > \\log k - 2\\log\\log k - 2$ for large $k$ (gives thm:1.1 and thm:1.2)."
+    },
+    "lem:5.1": {
+      "type": "Lemma",
+      "number": "5.1",
+      "section": "5",
+      "role": "technical",
+      "summary": "Change of variables: rewrites $S_1$ in diagonalized form using $y_{r_1,\\ldots,r_k} = \\big(\\prod_i \\mu(r_i)\\varphi(r_i)\\big) \\sum_d \\lambda_d/\\prod_i d_i$, with controlled error term."
+    },
+    "lem:5.2": {
+      "type": "Lemma",
+      "number": "5.2",
+      "section": "5",
+      "role": "technical",
+      "summary": "Diagonalizes $S_2^{(m)}$ (the $m$-th term of $S_2$) in terms of analogous $y^{(m)}$ variables, using the multiplicative function $g(p) = p-2$ from prime $k$-tuple singular series."
+    },
+    "lem:5.3": {
+      "type": "Lemma",
+      "number": "5.3",
+      "section": "5",
+      "role": "technical",
+      "summary": "Linking lemma: relates $y^{(m)}$ to $y$ when $r_m = 1$, giving $y^{(m)} = \\sum_{a_m} y_{\\ldots,a_m,\\ldots}/\\varphi(a_m)$ plus error. The bridge that lets one optimize over a single function $F$."
+    },
+    "lem:6.1": {
+      "type": "Lemma",
+      "number": "6.1",
+      "section": "6",
+      "role": "technical",
+      "summary": "Selberg-type weighted sum identity: $\\sum_{d<z} \\mu(d)^2 g(d) G(\\log d/\\log z) = \\mathfrak{S} \\log z \\int_0^1 G + O(\\mathfrak{S} L G_{\\max})$. The fundamental analytic estimate underlying the smooth choice of weights."
+    },
+    "lem:6.2": {
+      "type": "Lemma",
+      "number": "6.2",
+      "section": "6",
+      "role": "technical",
+      "summary": "Smooth-$F$ evaluation of $S_1 = (\\varphi(W)^k N (\\log R)^k / W^{k+1}) I_k(F) + \\text{error}$. Together with lem:6.3 this proves prop:4.1."
+    },
+    "lem:6.3": {
+      "type": "Lemma",
+      "number": "6.3",
+      "section": "6",
+      "role": "technical",
+      "summary": "Smooth-$F$ evaluation of $S_2^{(m)}$ in terms of $J_k^{(m)}(F)$. Companion to lem:6.2; together they establish prop:4.1."
+    },
+    "lem:8.1": {
+      "type": "Lemma",
+      "number": "8.1",
+      "section": "8",
+      "role": "technical",
+      "summary": "Closed-form simplex moment integrals: $\\int_{\\mathcal{R}_k} (1-P_1)^a P_j^b\\,dt = (a!/(k+jb+a)!)\\,G_{b,j}(k)$, where $G_{b,j}$ is an explicit polynomial in $k$. Foundation for explicit small-$k$ computations."
+    },
+    "lem:8.2": {
+      "type": "Lemma",
+      "number": "8.2",
+      "section": "8",
+      "role": "technical",
+      "summary": "When $F$ is built from a polynomial $P$ in symmetric power sums $P_1, P_2$, both $I_k(F)$ and $J_k^{(m)}(F)$ reduce to explicit finite linear combinations of values of $G$ from lem:8.1. Turns the variational problem into linear algebra."
+    },
+    "lem:8.3": {
+      "type": "Lemma",
+      "number": "8.3",
+      "section": "8",
+      "role": "technical",
+      "summary": "Generalized Rayleigh quotient: $\\mathbf{a}^T A_2 \\mathbf{a} / \\mathbf{a}^T A_1 \\mathbf{a}$ is maximized at the top eigenvector of $A_1^{-1}A_2$, with value the top eigenvalue. Reduces $M_k$ lower bounds for $k=5, 105$ to a finite eigenvalue computation."
+    }
+  },
+  "edges": [
+    {
+      "from": "thm:1.1",
+      "to": "prop:4.2",
+      "type": "depends_on",
+      "note": "Bounded $m$-th gaps follow from prop:4.2 applied with $r_k \\ge m+1$; combined with the lower bound on $M_k$ (prop:4.3 part 3) gives the $m^3 e^{4m}$ estimate."
+    },
+    {
+      "from": "thm:1.1",
+      "to": "prop:4.3",
+      "type": "depends_on",
+      "note": "Uses $M_k > \\log k - 2\\log\\log k - 2$ (part 3) to bound the required $k$ for $r_k = m+1$ primes."
+    },
+    {
+      "from": "thm:1.2",
+      "to": "prop:4.2",
+      "type": "depends_on",
+      "note": "Reduces a positive fraction of $m$-tuples problem to existence of admissible $\\mathcal{H}$ giving $r_k \\ge m$ primes via prop:4.2."
+    },
+    {
+      "from": "thm:1.2",
+      "to": "prop:4.3",
+      "type": "depends_on",
+      "note": "Uses asymptotic $M_k > \\log k$ bound (part 3)."
+    },
+    {
+      "from": "thm:1.3",
+      "to": "prop:4.2",
+      "type": "depends_on",
+      "note": "Apply with $k = 105$ and $\\theta = 1/2$ (Bombieri-Vinogradov): $r_{105} \\ge 2$; min admissible 105-tuple has diameter 600."
+    },
+    {
+      "from": "thm:1.3",
+      "to": "prop:4.3",
+      "type": "depends_on",
+      "note": "Uses $M_{105} > 4$ (part 2)."
+    },
+    {
+      "from": "thm:1.4",
+      "to": "prop:4.2",
+      "type": "depends_on",
+      "note": "Under GEH $\\theta \\to 1$, $k = 5$: $r_5 \\ge 2 \\Rightarrow \\liminf_n (p_{n+1}-p_n) \\le 12$ (diameter of admissible 5-tuple)."
+    },
+    {
+      "from": "thm:1.4",
+      "to": "prop:4.3",
+      "type": "depends_on",
+      "note": "Uses $M_5 > 2$ (part 1)."
+    },
+    {
+      "from": "prop:4.2",
+      "to": "prop:4.1",
+      "type": "depends_on",
+      "note": "Combines $S_2 - \\rho S_1 > 0$ using the asymptotics of prop:4.1 to extract primes."
+    },
+    {
+      "from": "prop:4.2",
+      "to": "sec:1:12",
+      "type": "addresses_same_question",
+      "note": "prop:4.2 is the unconditional partial result toward the prime $k$-tuples conjecture: $r_k$ of $k$ primes infinitely often."
+    },
+    {
+      "from": "prop:4.1",
+      "to": "lem:6.2",
+      "type": "depends_on",
+      "note": "$S_1$ evaluation comes from lem:6.2."
+    },
+    {
+      "from": "prop:4.1",
+      "to": "lem:6.3",
+      "type": "depends_on",
+      "note": "$S_2^{(m)}$ evaluation comes from lem:6.3."
+    },
+    {
+      "from": "lem:6.2",
+      "to": "lem:5.1",
+      "type": "depends_on",
+      "note": "Diagonalized form of $S_1$ in $y$-variables."
+    },
+    {
+      "from": "lem:6.2",
+      "to": "lem:6.1",
+      "type": "depends_on",
+      "note": "Selberg-type weighted sum identity bounds the $y$-side sums when $y$ comes from smooth $F$."
+    },
+    {
+      "from": "lem:6.3",
+      "to": "lem:5.2",
+      "type": "depends_on",
+      "note": "Diagonalized form of $S_2^{(m)}$."
+    },
+    {
+      "from": "lem:6.3",
+      "to": "lem:5.3",
+      "type": "depends_on",
+      "note": "Bridges $y^{(m)}$ back to $y$ derived from $F$."
+    },
+    {
+      "from": "lem:6.3",
+      "to": "lem:6.1",
+      "type": "depends_on",
+      "note": "Selberg-type identity again drives the asymptotic."
+    },
+    {
+      "from": "prop:4.3",
+      "to": "lem:8.2",
+      "type": "depends_on",
+      "note": "Parts 1 ($M_5 > 2$) and 2 ($M_{105} > 4$) are proved by exhibiting explicit polynomial $F$ and evaluating $I_k, J_k^{(m)}$ via lem:8.2."
+    },
+    {
+      "from": "prop:4.3",
+      "to": "lem:8.3",
+      "type": "depends_on",
+      "note": "Top of the ratio $\\big(\\sum_m J_k^{(m)}\\big)/I_k(F)$ is a generalized eigenvalue; computed via lem:8.3 over polynomial ansatz."
+    },
+    {
+      "from": "prop:4.3",
+      "to": "lem:8.1",
+      "type": "depends_on",
+      "note": "Explicit simplex moment integrals feed lem:8.2's reduction."
+    },
+    {
+      "from": "lem:8.2",
+      "to": "lem:8.1",
+      "type": "depends_on",
+      "note": "Each $(1-P_1)^b P_2^c$ moment evaluated via lem:8.1."
+    },
+    {
+      "from": "thm:1.1",
+      "to": "thm:1.3",
+      "type": "generalizes",
+      "note": "thm:1.3 is the $m=1$ case with explicit constant 600; thm:1.1 is the qualitative version for all $m$."
+    }
+  ],
+  "critical_path": [
+    "thm:1.3",
+    "prop:4.2",
+    "prop:4.1",
+    "lem:6.2",
+    "lem:5.1",
+    "lem:6.1"
+  ],
+  "proof_architecture": {
+    "main_results": {
+      "description": "The four headline statements: bounded gaps (thm:1.3), conditional improvement (thm:1.4), bounded $m$-th gaps (thm:1.1), and density of admissible $m$-tuples (thm:1.2).",
+      "nodes": [
+        "thm:1.1",
+        "thm:1.2",
+        "thm:1.3",
+        "thm:1.4",
+        "sec:1:12"
+      ]
+    },
+    "k_dimensional_sieve_framework": {
+      "description": "The new multidimensional Selberg sieve: weights are squared sums over $k$-tuples of divisors with a smooth shape function $F$ on the simplex $\\mathcal{R}_k$. prop:4.1 estimates $S_1, S_2$; prop:4.2 turns the ratio into $r_k$ primes; prop:4.3 supplies the explicit/asymptotic $M_k$.",
+      "nodes": [
+        "prop:4.1",
+        "prop:4.2",
+        "prop:4.3"
+      ]
+    },
+    "diagonalization_layer": {
+      "description": "Selberg-style change of variables from $\\lambda$ to $y$ (and $y^{(m)}$) that makes the sieve sums tractable.",
+      "nodes": [
+        "lem:5.1",
+        "lem:5.2",
+        "lem:5.3"
+      ]
+    },
+    "smooth_weight_layer": {
+      "description": "Analytic estimates that evaluate $S_1, S_2$ to leading order when $F$ is smooth, proving prop:4.1.",
+      "nodes": [
+        "lem:6.1",
+        "lem:6.2",
+        "lem:6.3"
+      ]
+    },
+    "explicit_optimization_layer": {
+      "description": "Closed-form moment computations and a generalized eigenvalue argument that supply the explicit $M_5 > 2$ and $M_{105} > 4$ used for thm:1.3 and thm:1.4.",
+      "nodes": [
+        "lem:8.1",
+        "lem:8.2",
+        "lem:8.3"
+      ]
+    }
+  },
+  "bibliography": {
+    "GPY": {
+      "title": "Primes in tuples. I",
+      "authors": [
+        "D. A. Goldston",
+        "J. Pintz",
+        "C. Y. Yıldırım"
+      ],
+      "year": 2009,
+      "doi": "10.4007/annals.2009.170.819",
+      "arxiv_id": "math/0508185",
+      "in_registry": false,
+      "role": "foundational — direct ancestor; one-dimensional Selberg sieve approach Maynard generalizes"
+    },
+    "GoldstonYildirim": {
+      "title": "Higher correlations of divisor sums related to primes. III. Small gaps between primes",
+      "authors": [
+        "D. A. Goldston",
+        "C. Y. Yıldırım"
+      ],
+      "year": 2007,
+      "doi": "10.1112/plms/pdm021",
+      "arxiv_id": null,
+      "in_registry": false,
+      "role": "predecessor — earlier GPY-style work"
+    },
+    "GPY:ManyPrimes": {
+      "title": "Primes in tuples. III. On the difference $p_{n+\\nu} - p_n$",
+      "authors": [
+        "D. A. Goldston",
+        "J. Pintz",
+        "C. Y. Yıldırım"
+      ],
+      "year": 2006,
+      "doi": "10.7169/facm/1229442618",
+      "arxiv_id": null,
+      "in_registry": false,
+      "role": "predecessor — $m$-th gap version of GPY"
+    },
+    "GGPY": {
+      "title": "Small gaps between products of two primes",
+      "authors": [
+        "D. A. Goldston",
+        "S. W. Graham",
+        "J. Pintz",
+        "C. Y. Yıldırım"
+      ],
+      "year": 2009,
+      "doi": "10.1112/plms/pdn046",
+      "arxiv_id": null,
+      "in_registry": false,
+      "role": "predecessor — almost-prime variant"
+    },
+    "Zhang": {
+      "title": "Bounded gaps between primes",
+      "authors": [
+        "Yitang Zhang"
+      ],
+      "year": 2014,
+      "arxiv_id": null,
+      "in_registry": false,
+      "role": "parallel breakthrough — first bounded-gap proof ($\\le 7\\times 10^7$); independent route via expanded Bombieri-Vinogradov beyond $1/2$"
+    },
+    "Polymath": {
+      "title": "A new bound for gaps between primes (Polymath8a)",
+      "authors": [
+        "D. H. J. Polymath"
+      ],
+      "arxiv_id": "1402.0811",
+      "in_registry": false,
+      "role": "parallel — Polymath8a optimization of Zhang's method down to 4680"
+    },
+    "ElliottHalberstam": {
+      "title": "A conjecture in prime number theory",
+      "authors": [
+        "P. D. T. A. Elliott",
+        "H. Halberstam"
+      ],
+      "year": 1970,
+      "arxiv_id": null,
+      "in_registry": false,
+      "role": "foundational — EH conjecture; thm:1.4 uses generalized form"
+    },
+    "FriedlanderGranville": {
+      "title": "Limitations to the equi-distribution of primes. I",
+      "authors": [
+        "J. Friedlander",
+        "A. Granville"
+      ],
+      "year": 1989,
+      "doi": "10.2307/1971450",
+      "arxiv_id": null,
+      "in_registry": false,
+      "role": "context — EH limitations"
+    },
+    "Selberg:CollectedWorks": {
+      "title": "Collected papers, Vol. II",
+      "authors": [
+        "A. Selberg"
+      ],
+      "year": 1991,
+      "arxiv_id": null,
+      "in_registry": false,
+      "role": "foundational — Selberg sieve"
+    }
+  }
+}

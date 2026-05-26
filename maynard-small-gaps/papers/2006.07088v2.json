@@ -1,0 +1,217 @@
+{
+  "paper": "2006.07088v2",
+  "title": "Primes in arithmetic progressions to large moduli II: Well-factorable estimates",
+  "authors": [
+    "James Maynard"
+  ],
+  "generated": "2026-05-07",
+  "status": "complete",
+  "nodes": {
+    "def:1": {
+      "type": "Definition",
+      "number": "1",
+      "section": "1",
+      "role": "definition",
+      "summary": "Well-factorable sequence $\\lambda_q$ of level $Q$: any factorization $Q = Q_1 Q_2$ yields $\\gamma^{(1)}, \\gamma^{(2)}$ with $|\\gamma^{(i)}| \\le 1$, $\\gamma^{(i)}$ supported on $[1, Q_i]$, $\\lambda_q = \\sum_{q = q_1 q_2} \\gamma^{(1)}_{q_1}\\,\\gamma^{(2)}_{q_2}$. The classical BFI hypothesis."
+    },
+    "thm:A": {
+      "type": "Theorem",
+      "number": "A",
+      "section": "1",
+      "role": "context",
+      "summary": "Bombieri-Friedlander-Iwaniec: well-factorable $\\lambda_q$ at level $x^{4/7-\\varepsilon}$ gives equidistribution. The level being improved."
+    },
+    "def:2": {
+      "type": "Definition",
+      "number": "2",
+      "section": "1",
+      "role": "definition",
+      "summary": "TRIPLY well-factorable sequence: any factorization $Q = Q_1 Q_2 Q_3$ admits the analogous three-fold decomposition. The new structural hypothesis introduced in this paper."
+    },
+    "thm:1.1": {
+      "type": "Theorem",
+      "number": "1.1",
+      "section": "1",
+      "role": "main_result",
+      "summary": "Triply well-factorable $\\lambda_q$ at level $Q \\le x^{3/5-\\varepsilon}$ gives equidistribution of primes. Improves BFI's $4/7 = 0.5714\\ldots$ to $3/5 = 0.6$ — the new BFI-beating level."
+    },
+    "thm:1.2": {
+      "type": "Theorem",
+      "number": "1.2",
+      "section": "1",
+      "role": "main_result",
+      "summary": "Linear-sieve upper-bound weights $\\lambda^+$ at level $x^{7/12-\\varepsilon}$ give equidistribution. Direct application of thm:1.1 to the standard sieve weights, since the linear sieve has triply-well-factorable structure."
+    },
+    "def:3": {
+      "type": "Definition",
+      "number": "3",
+      "section": "4",
+      "role": "definition",
+      "summary": "Siegel-Walfisz condition for a sequence $\\alpha_n$. (Same as PIAP I def:1, restated for self-containment.)"
+    },
+    "prop:5.1": {
+      "type": "Proposition",
+      "number": "5.1",
+      "section": "5",
+      "role": "main_technical",
+      "summary": "Well-factorable Type II estimate: triply-well-factorable $\\lambda$ at level $x^{3/5-10\\varepsilon}$ for the bilinear product $\\alpha \\star \\beta$ with $N \\in [x^\\varepsilon, x^{2/5}]$. The Type II step in the new range."
+    },
+    "prop:5.2": {
+      "type": "Proposition",
+      "number": "5.2",
+      "section": "5",
+      "role": "main_technical",
+      "summary": "Divisor-function-in-AP estimate: bound for $d_2$ sums in arithmetic progressions, used as input for the Type III decomposition."
+    },
+    "prop:8.2": {
+      "type": "Proposition",
+      "number": "8.2",
+      "section": "8",
+      "role": "main_technical",
+      "summary": "Type III estimate (triple convolution $\\alpha_1 \\star \\alpha_2 \\star \\alpha_3$) handling the regime where all three factors are essentially $x^{1/3}$. Beyond BFI's range."
+    },
+    "prop:9.1": {
+      "type": "Proposition",
+      "number": "9.1",
+      "section": "9",
+      "role": "main_technical",
+      "summary": "Final assembly: combines prop:5.1, prop:5.2, prop:8.2 to prove thm:1.1. The Type II / Type III balance is what extends past $4/7$ to $3/5$."
+    }
+  },
+  "edges": [
+    {
+      "from": "thm:1.1",
+      "to": "prop:9.1",
+      "type": "depends_on",
+      "note": "Final assembly."
+    },
+    {
+      "from": "prop:9.1",
+      "to": "prop:5.1",
+      "type": "depends_on",
+      "note": "Type II estimate."
+    },
+    {
+      "from": "prop:9.1",
+      "to": "prop:5.2",
+      "type": "depends_on",
+      "note": "Divisor-AP estimate."
+    },
+    {
+      "from": "prop:9.1",
+      "to": "prop:8.2",
+      "type": "depends_on",
+      "note": "Type III estimate."
+    },
+    {
+      "from": "thm:1.1",
+      "to": "def:2",
+      "type": "depends_on",
+      "note": "Triply well-factorable hypothesis."
+    },
+    {
+      "from": "thm:1.1",
+      "to": "def:3",
+      "type": "depends_on",
+      "note": "Siegel-Walfisz on building blocks."
+    },
+    {
+      "from": "thm:1.2",
+      "to": "thm:1.1",
+      "type": "depends_on",
+      "note": "Linear sieve weights are triply well-factorable."
+    },
+    {
+      "from": "thm:1.1",
+      "to": "thm:A",
+      "type": "improves",
+      "note": "Lifts BFI's well-factorable level from $4/7$ to $3/5$ (under the strengthened triply-well-factorable hypothesis)."
+    },
+    {
+      "from": "def:2",
+      "to": "def:1",
+      "type": "extends",
+      "note": "Triply well-factorable strengthens well-factorable by requiring three-fold decomposition."
+    }
+  ],
+  "critical_path": [
+    "thm:1.1",
+    "prop:9.1",
+    "prop:5.1",
+    "prop:8.2"
+  ],
+  "proof_architecture": {
+    "main_results": {
+      "description": "thm:1.1 ($3/5$ level for triply well-factorable) + thm:1.2 (linear-sieve consequence at $7/12$). The two-line abstract.",
+      "nodes": [
+        "thm:1.1",
+        "thm:1.2"
+      ]
+    },
+    "structural_definitions": {
+      "description": "def:1 (well-factorable, classical), def:2 (triply well-factorable, new), def:3 (Siegel-Walfisz). The progression of structural hypotheses.",
+      "nodes": [
+        "def:1",
+        "def:2",
+        "def:3"
+      ]
+    },
+    "context": {
+      "description": "thm:A — BFI 1986 baseline at level $4/7$.",
+      "nodes": [
+        "thm:A"
+      ]
+    },
+    "type_estimates_engine": {
+      "description": "prop:5.1 (Type II), prop:5.2 (divisor-AP), prop:8.2 (Type III), prop:9.1 (assembly). The combinatorial machinery.",
+      "nodes": [
+        "prop:5.1",
+        "prop:5.2",
+        "prop:8.2",
+        "prop:9.1"
+      ]
+    }
+  },
+  "bibliography": {
+    "Maynard:PIAP_I": {
+      "title": "Primes in arithmetic progressions to large moduli I",
+      "authors": [
+        "James Maynard"
+      ],
+      "arxiv_id": "2006.06572",
+      "in_registry": true,
+      "role": "sibling — companion paper handling fixed residue classes"
+    },
+    "BombieriFriedlanderIwaniec:1986": {
+      "title": "Primes in arithmetic progressions to large moduli (series)",
+      "authors": [
+        "Enrico Bombieri",
+        "John Friedlander",
+        "Henryk Iwaniec"
+      ],
+      "year": 1986,
+      "arxiv_id": null,
+      "in_registry": false,
+      "role": "predecessor — well-factorable framework being extended"
+    },
+    "Polymath8a": {
+      "title": "New equidistribution estimates of Zhang type",
+      "authors": [
+        "D. H. J. Polymath"
+      ],
+      "arxiv_id": "1402.0811",
+      "in_registry": true,
+      "role": "predecessor — smooth-modulus precursor"
+    },
+    "Iwaniec:1980": {
+      "title": "A new form of the error term in the linear sieve",
+      "authors": [
+        "Henryk Iwaniec"
+      ],
+      "year": 1980,
+      "arxiv_id": null,
+      "in_registry": false,
+      "role": "foundational — linear-sieve weights structure"
+    }
+  }
+}

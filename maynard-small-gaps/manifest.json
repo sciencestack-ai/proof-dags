@@ -1,0 +1,35 @@
+{
+  "title": "Bounded Gaps Between Primes — Maynard-Tao Sieve Proof DAG",
+  "tags": ["analytic-number-theory", "primes", "bounded-gaps", "selberg-sieve", "maynard-tao", "polymath", "gpy", "polignac", "number-fields", "limit-points"],
+  "papers": {
+    "math/0508185v1": { "title": "Primes in Tuples I", "authors": ["D. A. Goldston", "J. Pintz", "C. Y. Yıldırım"], "year": 2005, "role": "ancestor" },
+    "0710.2728v1": { "title": "Primes in Tuples II", "authors": ["D. A. Goldston", "J. Pintz", "C. Y. Yıldırım"], "year": 2007, "role": "ancestor — quantitative refinement of GPY I" },
+    "1305.6289v1": { "title": "Polignac Numbers, Conjectures of Erdős on Gaps between Primes, ...", "authors": ["János Pintz"], "year": 2013, "role": "application — Polignac's conjecture via Zhang's bounded gaps" },
+    "1311.4600v3": { "title": "Small gaps between primes", "authors": ["James Maynard"], "year": 2013, "role": "root" },
+    "1402.0811": { "title": "New equidistribution estimates of Zhang type", "authors": ["D. H. J. Polymath"], "year": 2014, "role": "sibling-input" },
+    "1403.5808v1": { "title": "Bounded gaps between primes in number fields and function fields", "authors": ["Castillo", "Hall", "Lemke Oliver", "Pollack", "Thompson"], "year": 2014, "role": "extension — number/function field generalization" },
+    "1404.5094v2": { "title": "On limit points of the sequence of normalized prime gaps", "authors": ["Banks", "Freiberg", "Maynard"], "year": 2014, "role": "application — limit-point density of d_n/log p_n" },
+    "1405.2593v2": { "title": "Dense clusters of primes in subsets", "authors": ["James Maynard"], "year": 2014, "role": "framework-generalization" },
+    "1407.4897v4": { "title": "Variants of the Selberg sieve, and bounded intervals containing many primes", "authors": ["D. H. J. Polymath"], "year": 2014, "role": "successor — Polymath8b" },
+    "1408.4505v2": { "title": "Large gaps between consecutive prime numbers", "authors": ["Ford", "Green", "Konyagin", "Tao"], "year": 2014, "role": "parallel-large-gaps" },
+    "1408.5110v2": { "title": "Large gaps between primes", "authors": ["James Maynard"], "year": 2014, "role": "lateral — same technique, opposite problem" },
+    "1511.04468": { "title": "Chains of large gaps between primes", "authors": ["Ford", "Maynard", "Tao"], "year": 2015, "role": "synthesis — fuses 1408.4505 and 1408.5110 into chains" },
+    "1604.01041v2": { "title": "Primes with restricted digits", "authors": ["James Maynard"], "year": 2016, "role": "method_pivot — Maynard's sieve techniques applied to a digit-restricted problem" },
+    "2006.06572v2": { "title": "Primes in arithmetic progressions to large moduli I", "authors": ["James Maynard"], "year": 2020, "role": "post-Polymath8a — extends BV beyond 1/2 without smooth-modulus restriction" },
+    "2006.07088v2": { "title": "Primes in arithmetic progressions to large moduli II", "authors": ["James Maynard"], "year": 2020, "role": "post-BFI — pushes well-factorable level from 4/7 to 3/5 via triply well-factorable hypothesis" }
+  },
+  "foundational": {
+    "Zhang:2014": { "title": "Bounded gaps between primes", "authors": ["Yitang Zhang"], "year": 2014, "role": "parallel-breakthrough", "key_contributions": ["first bounded gap (≤ 70M)", "expanded BV beyond 1/2 via smooth moduli (MPZ)"] },
+    "ElliottHalberstam:1970": { "title": "A conjecture in prime number theory", "authors": ["P. D. T. A. Elliott", "H. Halberstam"], "year": 1970, "role": "foundational" },
+    "Selberg:1991": { "title": "Selberg sieve (Collected Papers Vol II)", "authors": ["Atle Selberg"], "year": 1991, "role": "foundational" },
+    "BombieriVinogradov:1965": { "title": "Bombieri-Vinogradov theorem", "authors": ["Enrico Bombieri", "A. I. Vinogradov"], "year": 1965, "role": "foundational" },
+    "Motohashi:1976": { "title": "Generalized Bombieri-Vinogradov theorem", "authors": ["Yoichi Motohashi"], "year": 1976, "role": "foundational" },
+    "Deligne:WeilII": { "title": "La conjecture de Weil II", "authors": ["Pierre Deligne"], "year": 1980, "role": "foundational", "key_contributions": ["Riemann Hypothesis over finite fields, used by Polymath8a Section 6"] },
+    "GreenTao:APs": { "title": "The primes contain arbitrarily long arithmetic progressions", "authors": ["Ben Green", "Terence Tao"], "year": 2008, "arxiv_id": "math/0404188", "role": "foundational" },
+    "GreenTao:linear": { "title": "Linear equations in primes", "authors": ["Ben Green", "Terence Tao"], "arxiv_id": "math/0606088", "year": 2010, "role": "foundational — Theorem A used by FGKT" },
+    "HardyLittlewood:1923": { "title": "Some problems of 'Partitio numerorum' III", "authors": ["G. H. Hardy", "J. E. Littlewood"], "year": 1923, "role": "foundational" },
+    "Westzynthius:1931": { "title": "Über die Verteilung der Zahlen, die zu den n ersten Primzahlen teilerfremd sind", "authors": ["Erik Westzynthius"], "year": 1931, "role": "foundational" },
+    "Rankin:1938": { "title": "On the difference of consecutive primes", "authors": ["Robert Rankin"], "year": 1938, "role": "foundational" },
+    "Polignac:1849": { "title": "Recherches nouvelles sur les nombres premiers", "authors": ["Alphonse de Polignac"], "year": 1849, "role": "foundational" }
+  }
+}

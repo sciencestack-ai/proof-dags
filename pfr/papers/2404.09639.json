@@ -1,0 +1,43 @@
+{
+  "paper": "2404.09639",
+  "title": "Improved Exponent for Marton's Conjecture in F_2^n",
+  "authors": ["Jyun-Jie Liao"],
+  "generated": "2026-03-18",
+  "status": "complete",
+
+  "nodes": {
+    "thm:main-entropic": {
+      "type": "Theorem",
+      "section": "3",
+      "role": "main_result",
+      "summary": "Entropic PFR with improved constant: $d[X_1^0;U_H] + d[X_2^0;U_H] \\le 8 \\cdot d[X_1^0;X_2^0]$."
+    },
+    "thm:main-covering": {
+      "type": "Theorem",
+      "section": "4",
+      "role": "main_result",
+      "summary": "Marton's conjecture with $C=9$ (improved from GGMT's $C=12$)."
+    },
+    "lem:decrease": {
+      "type": "Lemma",
+      "section": "3",
+      "role": "key_lemma",
+      "summary": "Improved $\\tau$-functional decrease lemma."
+    }
+  },
+
+  "edges": [
+    {
+      "from": "thm:main-entropic",
+      "to": "thm:main-covering",
+      "type": "proves",
+      "note": "Entropic version implies combinatorial version."
+    },
+    {
+      "from": "thm:main-entropic",
+      "to": "lem:decrease",
+      "type": "depends_on",
+      "note": "The improved entropic constant rests on the sharpened tau-functional decrease lemma."
+    }
+  ]
+}

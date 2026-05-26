@@ -1,0 +1,324 @@
+{
+  "paper": "1401.3150",
+  "title": "The cubic case of the main conjecture in Vinogradov's mean value theorem",
+  "authors": [
+    "Trevor D. Wooley"
+  ],
+  "generated": "2026-05-12",
+  "status": "complete",
+  "nodes": {
+    "thm:1.1": {
+      "type": "Theorem",
+      "number": "1.1",
+      "section": "1",
+      "role": "main_result",
+      "summary": "The cubic case of Vinogradov's main conjecture: for each $\\varepsilon>0$, $J_{s,3}(X)\\ll X^\\varepsilon(X^s+X^{2s-6})$. The conjectured sharp bound for the degree-$3$ Vinogradov system, proved here by efficient congruencing — predating, and re-proved by different means in, the Bourgain–Demeter–Guth decoupling treatment of degrees $\\ge4$."
+    },
+    "thm:1.2": {
+      "type": "Theorem",
+      "number": "1.2",
+      "section": "1",
+      "role": "main_result",
+      "summary": "Consequence for higher degree: for $k\\ge3$ and $s\\ge k(k-1)$, $J_{s,k}(X)\\ll X^{2s-\\frac12k(k+1)+\\varepsilon}$. The main conjecture (in its 'large $s$' range) for all $k$, deduced by combining the cubic result with the efficient-congruencing toolkit."
+    },
+    "lem:2.1": {
+      "type": "Lemma",
+      "number": "2.1",
+      "section": "2",
+      "role": "technical",
+      "summary": "Mean-value bound on the conditioned generating functions: for $u+v=6$ and $c,d\\le\\theta^{-1}$, $\\oint|{\\mathfrak f}_c(\\boldsymbol\\alpha;\\xi)^{2u}{\\mathfrak f}_d(\\boldsymbol\\alpha;\\zeta)^{2v}|\\,d\\boldsymbol\\alpha\\ll(J(X/M^c))^{u/6}(J(X/M^d))^{v/6}$. Hölder + translation-dilation invariance reduces moments of the pieces to $J$ at coarser scales."
+    },
+    "lem:3.1": {
+      "type": "Lemma",
+      "number": "3.1",
+      "section": "3",
+      "role": "key_mechanism",
+      "summary": "Congruence-solution count via the Jacobian: for polynomials $f_1,\\dots,f_d$ with Jacobian $J(\\mathbf f;\\mathbf x)$, the number $\\mathcal{N}(\\mathbf f;\\varpi^l)$ of solutions of $f_j\\equiv0\\pmod{\\varpi^l}$ is controlled by Hensel-type lifting from the non-degenerate locus. The arithmetic engine of 'congruencing'."
+    },
+    "lem:3.2": {
+      "type": "Lemma",
+      "number": "3.2",
+      "section": "3",
+      "role": "technical",
+      "summary": "Bounds on the basic congruence counts of the iteration: $B_{a,b}^{1,3}(p)\\le6$ and $B_{a,b}^{2,h/b}(p)\\le6p^{h-2b+a}$ for $2b-a\\le h\\le2b-a+\\Delta(b-a)$. The combinatorial input from lem:3.1 in the precise form the recursion needs."
+    },
+    "lem:4.1": {
+      "type": "Lemma",
+      "number": "4.1",
+      "section": "4",
+      "role": "key_mechanism",
+      "summary": "Efficient differencing step: for $1\\le a<b$, $H\\ge15$, $b+H\\le(2\\theta)^{-1}$, there is $0\\le h<H$ with $I_{a,b}^2(X)\\ll(M^h)^{8/3}K_{a,b+h}^2(X)+M^{-H}(X/M^b)^4(X/M^a)^{\\lambda-4}$. The 'efficient congruencing' move that trades an $I$-quantity for a $K$-quantity one congruence level deeper, with negligible error."
+    },
+    "lem:4.2": {
+      "type": "Lemma",
+      "number": "4.2",
+      "section": "4",
+      "role": "technical",
+      "summary": "Choice of auxiliary prime and shift: there is a prime $p\\in(M,2M]$ and $0\\le h\\le4B$ with $J(X)\\ll M^{8B+8h/3}K_{0,B+h}^2(X)$. Launches the iteration from the full mean value $J$ into the conditioned quantities."
+    },
+    "lem:5.1": {
+      "type": "Lemma",
+      "number": "5.1",
+      "section": "5",
+      "role": "main_technical",
+      "summary": "The basic recursive inequalities: for $0\\le a<b\\le\\theta^{-1}$ with $b\\ge(1+\\tfrac23\\Delta)a$, $K_{a,b}^1(X)\\ll M^{3b-a}(I_{b,3b}^2)^{1/4}(J(X/M^b))^{3/4}$ and $K_{a,b}^2(X)\\ll M^{b'-2b+a}(M^{b'-a})^{4/3}(I_{b,b'}^2)^{1/3}(K_{a,b}^1)^{2/3}$. One cycle of the congruencing iteration."
+    },
+    "lem:5.2": {
+      "type": "Lemma",
+      "number": "5.2",
+      "section": "5",
+      "role": "technical",
+      "summary": "Normalized form of the recursion: writing $[\\![Q]\\!]$ for the scale-normalized quantity, $[\\![K_{a,b}^2(X)]\\!]\\ll((X/M^b)^{\\Lambda+\\delta})^{1/2}[\\![I_{b,3b}^2]\\!]^{1/6}[\\![I_{b,b'}^2]\\!]^{1/3}\\cdots$. Recasts lem:5.1 in the form on which the descent operates."
+    },
+    "lem:5.3": {
+      "type": "Lemma",
+      "number": "5.3",
+      "section": "5",
+      "role": "main_technical",
+      "summary": "$R$-fold iterate: for $0<a<b\\le(16\\cdot3^{2R}R\\theta)^{-1}$ with $a\\le b/(1+\\tfrac23\\Delta)$, there is a shift vector $\\mathbf h(\\mathbf m)\\in\\{0,1\\}^R$ (with $0\\le h_n\\le15\\cdot3^Rb$) for which the normalized $K_{a,b}^2$ is bounded by a product of deeper-level normalized quantities. Composes $R$ congruencing cycles."
+    },
+    "lem:6.1": {
+      "type": "Lemma",
+      "number": "6.1",
+      "section": "6",
+      "role": "technical",
+      "summary": "Elementary Hölder-type inequality: if $\\Omega=\\sum_i\\beta_i\\gamma_i$ then $|z_0^{\\beta_0}\\cdots z_l^{\\beta_l}|\\le\\sum_{i=0}^l|z_i|^{\\Omega/\\gamma_i}$. The convexity device that linearizes the products of mean values in the iterate."
+    },
+    "lem:6.2": {
+      "type": "Lemma",
+      "number": "6.2",
+      "section": "6",
+      "role": "main_technical",
+      "summary": "The key iterative inequality: combining the $R$-fold iterate with the Hölder linearization gives, under the bookkeeping hypotheses ($0\\le c\\le(2\\delta)^{-1}\\theta$, $\\gamma\\ge-4b$, $\\psi\\ge0$), a self-referential bound on $[\\![K_{a,b}^2(X)]\\!]$ in terms of the same quantity at deeper levels with strictly improved exponents."
+    },
+    "lem:7.1": {
+      "type": "Lemma",
+      "number": "7.1",
+      "section": "7",
+      "role": "key_reduction",
+      "summary": "Closing the descent: provided $\\Lambda\\ge0$, $[\\![K_{a,b}^2(X)]\\!]\\ll X^{\\Lambda+\\delta}$ for all $0\\le a<b\\le(2\\theta)^{-1}$. Iterating lem:6.2 to infinity (the 'efficient congruencing' descent) forces this bound — the heart of the method."
+    },
+    "thm:7.2": {
+      "type": "Theorem",
+      "number": "7.2",
+      "section": "7",
+      "role": "key_reduction",
+      "summary": "For any $\\Delta<\\tfrac1{12}$ and $\\varepsilon>0$, $J(X)=J_{6,3}(X)\\ll X^{6+\\Delta+\\varepsilon}$. Feeding lem:4.2 the descent output lem:7.1 gives the critical mean value up to an arbitrarily small exponent gap."
+    },
+    "cor:7.3": {
+      "type": "Corollary",
+      "number": "7.3",
+      "section": "7",
+      "role": "main_technical",
+      "summary": "$J(X)=J_{6,3}(X)\\ll X^{6+\\varepsilon}$ — let $\\Delta\\to0$ in thm:7.2. The critical-case main conjecture for the cubic Vinogradov system."
+    },
+    "thm:8.1": {
+      "type": "Theorem",
+      "number": "8.1",
+      "section": "8",
+      "role": "auxiliary",
+      "summary": "Asymptotic formula: for $s\\ge7$, $J_s(X)\\sim\\mathfrak{S}_s\\mathfrak{J}_sX^{2s-6}$ with the expected singular series/integral constants. Hardy–Littlewood asymptotics for the cubic Vinogradov system, now valid in the optimal range, via cor:7.3."
+    },
+    "thm:8.2": {
+      "type": "Theorem",
+      "number": "8.2",
+      "section": "8",
+      "role": "auxiliary",
+      "summary": "Application to cubic systems: for $s\\ge13$ and nonzero integer coefficients with non-singular local solubility everywhere, the counting function $N(B)$ for the simultaneous cubic equations satisfies $N(B)\\sim\\sigma_\\infty\\prod_p\\sigma_p\\,B^{s-6}$, i.e. the Hasse principle and asymptotic hold. A Birch-type consequence."
+    }
+  },
+  "edges": [
+    {
+      "from": "thm:1.1",
+      "to": "cor:7.3",
+      "type": "depends_on",
+      "note": "The general-$s$ cubic bound follows from the critical case $J_{6,3}(X)\\ll X^{6+\\varepsilon}$ by standard interpolation/Hölder over the number of variables."
+    },
+    {
+      "from": "thm:1.2",
+      "to": "thm:1.1",
+      "type": "depends_on",
+      "note": "The higher-degree large-$s$ bounds are obtained by feeding the cubic result into the efficient-congruencing machinery for general $k$."
+    },
+    {
+      "from": "cor:7.3",
+      "to": "thm:7.2",
+      "type": "depends_on",
+      "note": "Take $\\Delta\\to0$ in the $X^{6+\\Delta+\\varepsilon}$ bound."
+    },
+    {
+      "from": "thm:7.2",
+      "to": "lem:7.1",
+      "type": "depends_on",
+      "note": "Combine the launching inequality (lem:4.2) with the descent conclusion $[\\![K^2]\\!]\\ll X^{\\Lambda+\\delta}$."
+    },
+    {
+      "from": "thm:7.2",
+      "to": "lem:4.2",
+      "type": "depends_on",
+      "note": "lem:4.2 reduces $J(X)$ to a conditioned quantity $K_{0,B+h}^2(X)$ at the start of the iteration."
+    },
+    {
+      "from": "lem:7.1",
+      "to": "lem:6.2",
+      "type": "depends_on",
+      "note": "The bound is forced by iterating the key self-referential inequality to infinity (the 'efficient congruencing' descent)."
+    },
+    {
+      "from": "lem:6.2",
+      "to": "lem:5.3",
+      "type": "depends_on",
+      "note": "The self-referential bound is the $R$-fold composed recursion, unrolled."
+    },
+    {
+      "from": "lem:6.2",
+      "to": "lem:6.1",
+      "type": "depends_on",
+      "note": "The Hölder-type inequality linearizes the products of mean values appearing in the iterate."
+    },
+    {
+      "from": "lem:5.3",
+      "to": "lem:5.2",
+      "type": "depends_on",
+      "note": "Composes the normalized one-cycle recursion $R$ times with a $\\{0,1\\}^R$ shift vector."
+    },
+    {
+      "from": "lem:5.2",
+      "to": "lem:5.1",
+      "type": "depends_on",
+      "note": "Normalizes the basic recursive inequalities to the scale-invariant form."
+    },
+    {
+      "from": "lem:5.1",
+      "to": "lem:4.1",
+      "type": "depends_on",
+      "note": "Each cycle uses the efficient differencing step to descend one congruence level."
+    },
+    {
+      "from": "lem:5.1",
+      "to": "lem:2.1",
+      "type": "depends_on",
+      "note": "The mean-value bound on the conditioned pieces feeds the $I$/$J$ factors in the recursion."
+    },
+    {
+      "from": "lem:4.1",
+      "to": "lem:3.2",
+      "type": "depends_on",
+      "note": "The differencing step is controlled by the basic congruence-solution counts."
+    },
+    {
+      "from": "lem:4.2",
+      "to": "lem:4.1",
+      "type": "depends_on",
+      "note": "Launching the iteration uses one application of the differencing step at $a=0$."
+    },
+    {
+      "from": "lem:3.2",
+      "to": "lem:3.1",
+      "type": "depends_on",
+      "note": "The congruence-count bounds come from the Jacobian/Hensel solution-counting lemma."
+    },
+    {
+      "from": "thm:8.1",
+      "to": "cor:7.3",
+      "type": "depends_on",
+      "note": "The asymptotic formula follows from the sharp mean-value bound via the circle method."
+    },
+    {
+      "from": "thm:8.2",
+      "to": "thm:8.1",
+      "type": "depends_on",
+      "note": "The Birch-type counting asymptotic for cubic systems is deduced from the Vinogradov asymptotic."
+    }
+  ],
+  "critical_path": [
+    "thm:1.1",
+    "cor:7.3",
+    "thm:7.2",
+    "lem:7.1",
+    "lem:6.2",
+    "lem:5.3",
+    "lem:5.1",
+    "lem:4.1",
+    "lem:3.2",
+    "lem:3.1"
+  ],
+  "proof_architecture": {
+    "main_results": {
+      "description": "The cubic case of Vinogradov's main conjecture and its higher-degree corollary.",
+      "nodes": [
+        "thm:1.1",
+        "thm:1.2"
+      ]
+    },
+    "congruencing_arithmetic": {
+      "description": "The arithmetic inputs: Jacobian/Hensel congruence-solution counting and the resulting basic bounds.",
+      "nodes": [
+        "lem:3.1",
+        "lem:3.2"
+      ]
+    },
+    "efficient_differencing_and_recursion": {
+      "description": "The efficient differencing step, the launch of the iteration, and the one-cycle and $R$-fold recursive inequalities (normalized and raw), plus the mean-value bound on conditioned pieces.",
+      "nodes": [
+        "lem:2.1",
+        "lem:4.1",
+        "lem:4.2",
+        "lem:5.1",
+        "lem:5.2",
+        "lem:5.3"
+      ]
+    },
+    "the_descent": {
+      "description": "The Hölder linearization, the key self-referential inequality, the descent to $[\\![K^2]\\!]\\ll X^{\\Lambda+\\delta}$, and the resulting bound on the critical mean value.",
+      "nodes": [
+        "lem:6.1",
+        "lem:6.2",
+        "lem:7.1",
+        "thm:7.2",
+        "cor:7.3"
+      ]
+    },
+    "applications": {
+      "description": "Hardy–Littlewood asymptotics for the cubic Vinogradov system and a Birch-type asymptotic for systems of cubic equations.",
+      "nodes": [
+        "thm:8.1",
+        "thm:8.2"
+      ]
+    }
+  },
+  "bibliography": {
+    "Wooley:Quasidiagonal": {
+      "title": "Vinogradov's mean value theorem via efficient congruencing",
+      "authors": [
+        "Wooley"
+      ],
+      "arxiv_id": "1101.0574",
+      "in_registry": false
+    },
+    "Wooley:EfficientCongruencingII": {
+      "title": "Vinogradov's mean value theorem via efficient congruencing, II",
+      "authors": [
+        "Wooley"
+      ],
+      "arxiv_id": "1112.4178",
+      "in_registry": false
+    },
+    "Vaughan:HardyLittlewood": {
+      "title": "The Hardy-Littlewood Method",
+      "authors": [
+        "Vaughan"
+      ],
+      "arxiv_id": null,
+      "in_registry": false
+    },
+    "Birch:1962": {
+      "title": "Forms in many variables",
+      "authors": [
+        "Birch"
+      ],
+      "arxiv_id": null,
+      "in_registry": false
+    }
+  }
+}

@@ -1,0 +1,69 @@
+{
+  "description": "Proof DAG registry index for the local-Langlands-after-Fargues–Scholze program.",
+  "papers": {
+    "2102.13459": {
+      "status": "shared",
+      "title": "Geometrization of the local Langlands correspondence",
+      "authors": ["Laurent Fargues", "Peter Scholze"],
+      "year": 2021,
+      "nodes": 18,
+      "edges": 20,
+      "note": "SHARED node — the per-paper DAG lives in the perfectoid-spaces registry (perfectoid-spaces/papers/2102.13459.json). Here it is the root/hub; downstream papers attach to thm:I.10.1 (FS correspondence), thm:I.8.1 (moduli of L-parameters), thm:I.6.3 (dual group via geometric Satake)."
+    },
+    "2503.00621": {
+      "status": "complete",
+      "title": "Endoscopic decomposition of elliptic Fargues-Scholze L-packets",
+      "authors": ["David Kazhdan", "Yakov Varshavsky"],
+      "year": 2025,
+      "nodes": 17,
+      "edges": 16,
+      "generated": "2026-05-20",
+      "updated": "2026-05-20",
+      "note": "First extracted member. 3 cross-DAG edges into the shared FS node (depends_on thm:I.10.1, depends_on thm:I.8.1, imports_result thm:I.7.2)."
+    },
+    "2109.01210": {
+      "status": "complete",
+      "title": "Compatibility of the Fargues-Scholze and Gan-Takeda Local Langlands",
+      "authors": ["Linus Hamann"],
+      "year": 2021,
+      "nodes": 24,
+      "edges": 19,
+      "generated": "2026-05-20",
+      "updated": "2026-05-20",
+      "note": "Verification member. 4 cross-DAG edges importing FS results (thm:I.10.1 parametrization, thm:I.9.6 properties, thm:I.7.2 Hecke, thm:I.8.1 spectral action)."
+    },
+    "2504.13869": {
+      "status": "complete",
+      "title": "On the categorical local Langlands conjectures for depth-zero regular supercuspidal representations",
+      "authors": ["Chenji Fu"],
+      "year": 2025,
+      "nodes": 14,
+      "edges": 13,
+      "generated": "2026-05-20",
+      "updated": "2026-05-20",
+      "note": "Categorical-probe member. 2 cross-DAG edges (imports_result thm:I.8.1 spectral action; depends_on thm:I.10.1 — verifies the categorical form of the FS correspondence for depth-zero TRSELP)."
+    },
+    "2505.10724": {
+      "status": "complete",
+      "title": "Categorical local Langlands and torsion classes of some Shimura varieties",
+      "authors": ["Kieu Hieu Nguyen"],
+      "year": 2025,
+      "nodes": 8,
+      "edges": 8,
+      "generated": "2026-05-20",
+      "updated": "2026-05-20",
+      "note": "Categorify/apply member. 3 cross-DAG edges (imports_result thm:III.0.2 Bun_G structure, imports_result thm:I.9.6 correspondence properties, depends_on thm:I.10.1 Hecke eigensheaf). Applies the categorical FS decomposition to Shimura/RZ cohomology."
+    },
+    "2501.07944": {
+      "status": "complete",
+      "title": "Geometrization of the local Langlands correspondence, motivically",
+      "authors": ["Peter Scholze"],
+      "year": 2025,
+      "nodes": 7,
+      "edges": 7,
+      "generated": "2026-05-20",
+      "updated": "2026-05-20",
+      "note": "Extend member (by Scholze). 2 cross-DAG edges (extends thm:I.10.1, extends thm:I.7.2): a motivic refinement of FS proving the independence-of-$\\ell$ conjecture (FS Conjecture I.9.5)."
+    }
+  }
+}

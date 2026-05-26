@@ -1,0 +1,164 @@
+{
+  "description": "Proof DAG registry index for the Perfectoid Spaces / Scholze program. 8 papers spanning 2011–2021.",
+  "papers": {
+    "1111.4914": {
+      "status": "complete",
+      "title": "Perfectoid spaces",
+      "authors": [
+        "Peter Scholze"
+      ],
+      "year": 2012,
+      "nodes": 33,
+      "edges": 37,
+      "critical_path_length": 11,
+      "generated": "2026-05-07",
+      "updated": "2026-05-19"
+    },
+    "1211.6357": {
+      "status": "complete",
+      "title": "Moduli of p-divisible groups",
+      "authors": [
+        "Peter Scholze",
+        "Jared Weinstein"
+      ],
+      "year": 2012,
+      "nodes": 13,
+      "edges": 15,
+      "critical_path_length": 6,
+      "generated": "2026-05-07",
+      "updated": "2026-05-19"
+    },
+    "1301.0792": {
+      "status": "complete",
+      "title": "Relative p-adic Hodge theory: Foundations",
+      "authors": [
+        "Kiran S. Kedlaya",
+        "Ruochuan Liu"
+      ],
+      "year": 2013,
+      "nodes": 30,
+      "edges": 40,
+      "critical_path_length": 6,
+      "generated": "2026-05-07",
+      "updated": "2026-05-19"
+    },
+    "1602.03148": {
+      "status": "complete",
+      "title": "Integral p-adic Hodge theory (BMS1)",
+      "authors": [
+        "Bhargav Bhatt",
+        "Matthew Morrow",
+        "Peter Scholze"
+      ],
+      "year": 2016,
+      "nodes": 19,
+      "edges": 21,
+      "critical_path_length": 6,
+      "generated": "2026-05-07",
+      "updated": "2026-05-19"
+    },
+    "1709.07343": {
+      "status": "complete",
+      "title": "Étale cohomology of diamonds",
+      "authors": [
+        "Peter Scholze"
+      ],
+      "year": 2017,
+      "nodes": 19,
+      "edges": 20,
+      "critical_path_length": 5,
+      "generated": "2026-05-07",
+      "updated": "2026-05-19"
+    },
+    "1802.03261": {
+      "status": "complete",
+      "title": "Topological Hochschild homology and integral p-adic Hodge theory (BMS2)",
+      "authors": [
+        "Bhargav Bhatt",
+        "Matthew Morrow",
+        "Peter Scholze"
+      ],
+      "year": 2018,
+      "nodes": 17,
+      "edges": 19,
+      "critical_path_length": 5,
+      "generated": "2026-05-07",
+      "updated": "2026-05-19"
+    },
+    "1905.08229": {
+      "status": "complete",
+      "title": "Prisms and prismatic cohomology",
+      "authors": [
+        "Bhargav Bhatt",
+        "Peter Scholze"
+      ],
+      "year": 2019,
+      "nodes": 26,
+      "edges": 35,
+      "critical_path_length": 5,
+      "generated": "2026-05-07",
+      "updated": "2026-05-19"
+    },
+    "2102.13459": {
+      "status": "complete",
+      "title": "Geometrization of the local Langlands correspondence",
+      "authors": [
+        "Laurent Fargues",
+        "Peter Scholze"
+      ],
+      "year": 2021,
+      "nodes": 18,
+      "edges": 20,
+      "critical_path_length": 6,
+      "generated": "2026-05-07",
+      "updated": "2026-05-19"
+    },
+    "2201.06120": {
+      "status": "complete",
+      "title": "Absolute prismatic cohomology",
+      "authors": [
+        "Bhargav Bhatt",
+        "Jacob Lurie"
+      ],
+      "year": 2022,
+      "nodes": 18,
+      "edges": 18,
+      "critical_path_length": 8,
+      "generated": "2026-05-08",
+      "updated": "2026-05-19"
+    },
+    "2005.04746": {
+      "status": "complete",
+      "title": "Prismatization",
+      "authors": [
+        "Vladimir Drinfeld"
+      ],
+      "year": 2020,
+      "nodes": 17,
+      "edges": 18,
+      "critical_path_length": 6,
+      "generated": "2026-05-08",
+      "updated": "2026-05-19"
+    },
+    "1907.10525": {
+      "status": "complete",
+      "title": "Prismatic Dieudonné theory",
+      "authors": [
+        "Johannes Anschütz",
+        "Arthur-César Le Bras"
+      ],
+      "year": 2019,
+      "nodes": 17,
+      "edges": 17,
+      "critical_path_length": 7,
+      "generated": "2026-05-08",
+      "updated": "2026-05-19"
+    }
+  },
+  "totals": {
+    "papers": 11,
+    "nodes": 227,
+    "intra_paper_edges": 260,
+    "cross_paper_edges": 102
+  }
+}

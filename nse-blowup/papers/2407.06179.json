@@ -1,0 +1,442 @@
+{
+  "paper": "2407.06179",
+  "title": "Non-uniqueness in the Leray-Hopf class for a dyadic Navier-Stokes model",
+  "authors": [
+    "Stan Palasek"
+  ],
+  "generated": "2026-03-10",
+  "status": "complete",
+  "nodes": {
+    "def:1.1": {
+      "type": "Definition",
+      "number": "1.1",
+      "section": "1",
+      "role": "definition",
+      "summary": "Leray-Hopf solution of the Obukhov dyadic model: u(t) in $L_t^\\infty L^2$ cap $L_t^2 H^1$ satisfying the energy inequality (1.4) for all t."
+    },
+    "thm:1.2": {
+      "type": "Theorem",
+      "number": "1.2",
+      "section": "1",
+      "role": "main_result",
+      "summary": "For $\\alpha$ in (2,4) and sufficiently large $\\lambda$, there exists initial data $u^0$ in $cap_{s<\\alpha-2} H^s$ giving rise to two distinct Leray-Hopf solutions of the Obukhov dyadic model."
+    },
+    "rem:1.3": {
+      "type": "Remark",
+      "number": "1.3",
+      "section": "1",
+      "role": "context",
+      "summary": "The lower bound $\\alpha > 2$ is sharp (subcritical regime has uniqueness). The upper bound $\\alpha < 4$ is technical and can be removed by refined analysis."
+    },
+    "rem:1.4": {
+      "type": "Remark",
+      "number": "1.4",
+      "section": "1",
+      "role": "context",
+      "summary": "Both solutions u, v are non-negative and decay exponentially in frequency for t > 0, corresponding to spatially smooth Navier-Stokes solutions."
+    },
+    "rem:1.5": {
+      "type": "Remark",
+      "number": "1.5",
+      "section": "1",
+      "role": "context",
+      "summary": "Large $\\lambda$ is physically meaningful in the Obukhov model context."
+    },
+    "rem:1.6": {
+      "type": "Remark",
+      "number": "1.6",
+      "section": "1",
+      "role": "context",
+      "summary": "For large $\\lambda$, the data is nearly discretely self-similar under $\\lambda^n$ rescalings. Non-uniqueness arises from the two possible ways the symmetry can break for positive times (invariance under $\\lambda^{2n}$ only)."
+    },
+    "rem:1.7": {
+      "type": "Remark",
+      "number": "1.7",
+      "section": "1",
+      "role": "context",
+      "summary": "The initial data lies in every supercritical $H^s$ and in the critical space $X^{\\alpha-2}$, corresponding to velocity in $B_{p,\\infty}^{-1+d/p}$ at maximum intermittency."
+    },
+    "rem:1.8": {
+      "type": "Remark",
+      "number": "1.8",
+      "section": "1",
+      "role": "context",
+      "summary": "The non-uniqueness scenario is unstable: does not persist for an open set of data. A destabilizing drift term dominates the dissipation on the relevant time scale."
+    },
+    "prop:2.1": {
+      "type": "Proposition",
+      "number": "2.1",
+      "section": "2",
+      "role": "key_reduction",
+      "summary": "Constructs solutions on $[t_0$, $\\infty)$ via Banach fixed point in a weighted norm space Y. For $\\sigma$ in {1,2} and admissible delays $\\tau_k$, produces a solution with exponentially decaying bounds (2.2) on paired modes $(u_{k-1}, u_k)$."
+    },
+    "lem:3.1": {
+      "type": "Lemma",
+      "number": "3.1",
+      "section": "3",
+      "role": "auxiliary",
+      "summary": "Translates the solution from Prop 2.1 into (r,z) coordinates: shows (r,z) in $B_{\\sigma,[t_0,\\infty)}(10)$ and gives improved bound on $z_k(t_0)$ with $O(exp(-3N_k^2(t_0-\\tau_k)))$ error."
+    },
+    "def:3.2": {
+      "type": "Definition",
+      "number": "3.2",
+      "section": "3",
+      "role": "definition",
+      "summary": "Weak bootstrap hypothesis H(t): solution exists on [t, $\\infty)$, agrees with Prop 2.1 on $[t_0$, $\\infty)$, and (r,z) in $B_{\\sigma,[t,t_0]}(10)$."
+    },
+    "def:3.3": {
+      "type": "Definition",
+      "number": "3.3",
+      "section": "3",
+      "role": "definition",
+      "summary": "Strong bootstrap hypothesis H'(t): strengthens H(t) by requiring (r,z) in $B_{\\sigma,[t,t_0]}(1/100)$."
+    },
+    "prop:3.4": {
+      "type": "Proposition",
+      "number": "3.4",
+      "section": "3",
+      "role": "key_mechanism",
+      "summary": "Self-improving bounds: if u satisfies $H(t_1)$ then it also satisfies $H'(t_1)$. Proved by Duhamel estimates showing the weak bounds bootstrap to 1/100-scale control via exponential decay and large $\\lambda$."
+    },
+    "prop:3.5": {
+      "type": "Proposition",
+      "number": "3.5",
+      "section": "3",
+      "role": "key_mechanism",
+      "summary": "Propagation backwards: if $H'(t_1)$ holds for $t_1 > 0$, there exists $t_2 < t_1$ with $H(t_2)$. Uses contraction mapping on the backward-in-time Duhamel formulation. Also proves backward uniqueness."
+    },
+    "prop:3.6": {
+      "type": "Proposition",
+      "number": "3.6",
+      "section": "3",
+      "role": "auxiliary",
+      "summary": "The set {t in $[0,t_0]$ : H'(t) holds} is closed. Proved by uniform bounds on r-dot, z-dot and their derivatives near the limit point, giving $C^1$ extensions."
+    },
+    "prop:3.7": {
+      "type": "Proposition",
+      "number": "3.7",
+      "section": "3",
+      "role": "key_reduction",
+      "summary": "For any $\\mu$ in M, constructs two non-negative solutions u, v of the Obukhov model on [0, $\\infty)$ with prescribed (r,z) bounds (3.11), instantaneous smoothing (3.12), and matching zeroth mode $u_0(0) = v_0(0)$."
+    },
+    "lem:A.1": {
+      "type": "Lemma",
+      "number": "A.1",
+      "section": "A",
+      "role": "technical",
+      "summary": "Gronwall-type inequalities: (i) forward integral inequality with decay $\\delta$ implies g lesssim $\\delta$; (ii) backward integral inequality with $g(t_0)^{t/t_0}$ seed implies polynomial-in-time growth bound."
+    },
+    "lem:A.2": {
+      "type": "Lemma",
+      "number": "A.2",
+      "section": "A",
+      "role": "technical",
+      "summary": "Technical continuity facts: (i) f: A $\\to X^s$ is continuous and bounded A $\\to X^0$; $(ii) \\mu \\to (r(t),z(t))$ is continuous M $\\to (X^s)^2$ for each t > 0; $(iii) (r(t),z(t)) \\to (r^0,z^0)$ uniformly in $\\mu$ as t $\\to 0+$."
+    }
+  },
+  "edges": [
+    {
+      "from": "thm:1.2",
+      "to": "prop:3.7",
+      "type": "depends_on",
+      "note": "Proof of Theorem 1.2 uses Prop 3.7 to construct the mapping $\\mu \\to (u,v)$."
+    },
+    {
+      "from": "thm:1.2",
+      "to": "prop:2.1",
+      "type": "depends_on",
+      "note": "Uses asymptotics from Prop 2.1 to show u and v are distinct for large t."
+    },
+    {
+      "from": "thm:1.2",
+      "to": "lem:A.2",
+      "type": "depends_on",
+      "note": "Lemma A.2(i)-(iii) used to show T: M $\\to$ M is continuous, enabling Schauder fixed point."
+    },
+    {
+      "from": "thm:1.2",
+      "to": "def:1.1",
+      "type": "depends_on",
+      "note": "Energy inequality (1.4) from def:1.1 verified via truncated energy balance and Fatou's lemma."
+    },
+    {
+      "from": "prop:3.7",
+      "to": "prop:2.1",
+      "type": "depends_on",
+      "note": "Applies Prop 2.1 twice $(\\sigma=1$ and $\\sigma=2)$ to construct u and v on $[t_0$, $\\infty)$."
+    },
+    {
+      "from": "prop:3.7",
+      "to": "prop:3.4",
+      "type": "depends_on",
+      "note": "Props 3.4 + 3.5 together make {t : H'(t)} open; used in the bootstrap argument to propagate to t=0."
+    },
+    {
+      "from": "prop:3.7",
+      "to": "prop:3.5",
+      "type": "depends_on",
+      "note": "Props 3.4 + 3.5 together make {t : H'(t)} open via Tao's Prop 1.21 bootstrap recipe."
+    },
+    {
+      "from": "prop:3.7",
+      "to": "prop:3.6",
+      "type": "depends_on",
+      "note": "Closedness of {t : H'(t)} needed to complete the connectedness bootstrap argument."
+    },
+    {
+      "from": "prop:3.7",
+      "to": "lem:3.1",
+      "type": "depends_on",
+      "note": "Lemma 3.1 provides initial condition $H'(t_0)$ to seed the bootstrap."
+    },
+    {
+      "from": "prop:3.4",
+      "to": "prop:2.1",
+      "type": "depends_on",
+      "note": "Bounds from Prop 2.1 enter Duhamel estimates for $r_k$ and $z_k$ on $[t_1, t_0]$."
+    },
+    {
+      "from": "prop:3.4",
+      "to": "def:3.2",
+      "type": "depends_on",
+      "note": "Assumes hypothesis $H(t_1)$ as input."
+    },
+    {
+      "from": "prop:3.4",
+      "to": "def:3.3",
+      "type": "proves",
+      "note": "Conclusion is $H'(t_1)$: the weak bounds self-improve to strong bounds."
+    },
+    {
+      "from": "prop:3.4",
+      "to": "lem:3.1",
+      "type": "depends_on",
+      "note": "Uses $z_k(t_0)$ estimate from Lemma 3.1 in the $J_1$ linear term bound."
+    },
+    {
+      "from": "prop:3.5",
+      "to": "def:3.3",
+      "type": "depends_on",
+      "note": "Assumes strong hypothesis $H'(t_1)$ as input."
+    },
+    {
+      "from": "prop:3.5",
+      "to": "def:3.2",
+      "type": "proves",
+      "note": "Produces $H(t_2)$ for some $t_2 < t_1$ via contraction mapping."
+    },
+    {
+      "from": "prop:3.5",
+      "to": "prop:3.4",
+      "type": "depends_on",
+      "note": "Needs $H'(t_1)$ bounds (from self-improvement) as data for the backward contraction."
+    },
+    {
+      "from": "prop:3.6",
+      "to": "prop:3.5",
+      "type": "depends_on",
+      "note": "Uses backward uniqueness from Prop 3.5 to show solutions from decreasing $t_i$ agree on overlaps."
+    },
+    {
+      "from": "lem:3.1",
+      "to": "prop:2.1",
+      "type": "depends_on",
+      "note": "Translates $(u_{k-1}, u_k)$ bounds from Prop 2.1 into $(r_k, z_k)$ coordinates via Taylor expansion."
+    },
+    {
+      "from": "lem:A.2",
+      "to": "prop:3.7",
+      "type": "depends_on",
+      "note": "Parts (ii)-(iii) use the solution mapping from Prop 3.7 to establish continuity of $\\mu \\to (r^0, z^0)$."
+    },
+    {
+      "from": "rem:1.3",
+      "to": "thm:1.2",
+      "type": "depends_on",
+      "note": "Discusses sharpness of the $\\alpha$ range in Theorem 1.2."
+    },
+    {
+      "from": "rem:1.6",
+      "to": "thm:1.2",
+      "type": "depends_on",
+      "note": "Interprets the symmetry-breaking mechanism behind non-uniqueness in Theorem 1.2."
+    }
+  ],
+  "critical_path": [
+    "thm:1.2",
+    "prop:3.7",
+    "prop:3.4",
+    "prop:3.5",
+    "prop:2.1",
+    "lem:3.1"
+  ],
+  "proof_architecture": {
+    "layer_1_setup": {
+      "description": "Definitions and the main non-uniqueness theorem statement",
+      "nodes": [
+        "def:1.1",
+        "thm:1.2",
+        "rem:1.3",
+        "rem:1.4",
+        "rem:1.5",
+        "rem:1.6",
+        "rem:1.7",
+        "rem:1.8"
+      ]
+    },
+    "layer_2_stable_manifold": {
+      "description": "Construction of solutions on $[t_0$, $\\infty)$ via contraction mapping on paired-mode Duhamel system",
+      "nodes": [
+        "prop:2.1"
+      ]
+    },
+    "layer_3_bootstrap_machinery": {
+      "description": "Bootstrap hypotheses and the three propositions (self-improvement, backward propagation, closedness) that extend solutions to t=0",
+      "nodes": [
+        "lem:3.1",
+        "def:3.2",
+        "def:3.3",
+        "prop:3.4",
+        "prop:3.5",
+        "prop:3.6"
+      ]
+    },
+    "layer_4_solution_construction": {
+      "description": "Full solution construction for arbitrary $\\mu$ in M, producing two solutions with matching zeroth mode",
+      "nodes": [
+        "prop:3.7"
+      ]
+    },
+    "layer_5_fixed_point": {
+      "description": "Schauder fixed point on the parameter space M to find $\\mu$ such that $u^0 = v^0$, completing the non-uniqueness proof",
+      "nodes": [
+        "thm:1.2",
+        "lem:A.2"
+      ]
+    },
+    "layer_6_technical_appendix": {
+      "description": "Gronwall-type estimates and continuity lemmas supporting the fixed point argument",
+      "nodes": [
+        "lem:A.1",
+        "lem:A.2"
+      ]
+    }
+  },
+  "bibliography": {
+    "taoaveraged": {
+      "title": "Finite time blowup for an averaged three-dimensional Navier-Stokes equation",
+      "arxiv_id": "1402.0290v3",
+      "in_registry": true
+    },
+    "cheskidovblowup": {
+      "title": "Blow-up in finite time for the dyadic model of the Navier-Stokes equations",
+      "arxiv_id": "math/0601074v2",
+      "in_registry": true
+    },
+    "katzpavlovicfinitetimeblowup": {
+      "title": "Finite time blow-up for a dyadic model of the Euler equations",
+      "arxiv_id": null,
+      "in_registry": false
+    },
+    "abc": {
+      "title": "Non-uniqueness of Leray solutions of the forced Navier-Stokes equations",
+      "arxiv_id": null,
+      "in_registry": false
+    },
+    "buckmastervicol": {
+      "title": "Nonuniqueness of weak solutions to the Navier-Stokes equation",
+      "arxiv_id": null,
+      "in_registry": false
+    },
+    "cheskluosharpnonunique": {
+      "title": "Sharp nonuniqueness for the Navier-Stokes equations",
+      "arxiv_id": null,
+      "in_registry": false
+    },
+    "filonovkhodunov": {
+      "title": "Nonuniqueness of Leray-Hopf solutions for a dyadic model",
+      "arxiv_id": null,
+      "in_registry": false
+    },
+    "dyadicreview": {
+      "title": "Dyadic models for fluid equations: a survey",
+      "arxiv_id": null,
+      "in_registry": false
+    },
+    "jiasverak": {
+      "title": "Are the incompressible 3d Navier-Stokes equations locally ill-posed in the natural energy space?",
+      "arxiv_id": null,
+      "in_registry": false
+    },
+    "jiasverakinventiones": {
+      "title": "Local-in-space estimates near initial time for weak solutions of the Navier-Stokes equations and forward self-similar solutions",
+      "arxiv_id": null,
+      "in_registry": false
+    },
+    "guillodsverak": {
+      "title": "Numerical investigations of non-uniqueness for the Navier-Stokes initial value problem in borderline spaces",
+      "arxiv_id": null,
+      "in_registry": false
+    },
+    "vishik1": {
+      "title": "Instability and non-uniqueness in the Cauchy problem for the Euler equations of an ideal incompressible fluid. Part I",
+      "arxiv_id": "1805.09426",
+      "in_registry": false
+    },
+    "vishik2": {
+      "title": "Instability and non-uniqueness in the Cauchy problem for the Euler equations of an ideal incompressible fluid. Part II",
+      "arxiv_id": "1805.09440",
+      "in_registry": false
+    },
+    "delellisszekelyhididifferentialinclusion": {
+      "title": "The Euler equations as a differential inclusion",
+      "arxiv_id": null,
+      "in_registry": false
+    },
+    "delellisszekelyhidicontinuousdissipative": {
+      "title": "Dissipative continuous Euler flows",
+      "arxiv_id": null,
+      "in_registry": false
+    },
+    "taobook": {
+      "title": "Nonlinear dispersive equations",
+      "arxiv_id": null,
+      "in_registry": false
+    },
+    "obukhov": {
+      "title": "Some general properties of equations describing the dynamics of the atmosphere",
+      "arxiv_id": null,
+      "in_registry": false
+    },
+    "leray": {
+      "title": "Sur le mouvement d'un liquide visqueux emplissant l'espace",
+      "arxiv_id": null,
+      "in_registry": false
+    },
+    "derosalerayhopf": {
+      "title": "Infinitely many Leray-Hopf solutions for the fractional Navier-Stokes equations",
+      "arxiv_id": null,
+      "in_registry": false
+    },
+    "bulut2023convex": {
+      "title": "Convex integration above the Onsager exponent for the forced Euler equations",
+      "arxiv_id": "2301.00804",
+      "in_registry": false
+    },
+    "bulut2023non": {
+      "title": "Non-uniqueness up to the Onsager threshold for the forced SQG equation",
+      "arxiv_id": "2310.12947",
+      "in_registry": false
+    },
+    "barbatodyadic2011": {
+      "title": "Smooth solutions for the dyadic model",
+      "arxiv_id": "1407.6734v1",
+      "in_registry": true
+    },
+    "hofmanova2023non": {
+      "title": "Non-uniqueness of Leray-Hopf solutions for stochastic forced Navier-Stokes equations",
+      "arxiv_id": "2309.03668",
+      "in_registry": false
+    }
+  }
+}

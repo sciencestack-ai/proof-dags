@@ -1,0 +1,299 @@
+{
+  "paper": "2403.13157",
+  "title": "A note on zero density results implying large value estimates for Dirichlet polynomials",
+  "authors": [
+    "Kaisa Matomäki",
+    "Joni Teräväinen"
+  ],
+  "generated": "2026-05-12",
+  "status": "complete",
+  "nodes": {
+    "thm:1.2": {
+      "type": "Theorem",
+      "number": "1.2",
+      "section": "1",
+      "role": "main_result",
+      "summary": "Zero density results imply large value estimates: a bound $N(1-\\nu,T)\\ll T^{A(\\nu)\\nu+o(1)}$ on the zeros of $\\zeta$ yields a corresponding bound on $|\\{t\\in[-T,T]:|D(t)|\\ge N^\\sigma\\}|$ for Dirichlet polynomials $D$ — the converse of the classical large-values ⟹ zero-density direction (Heath-Brown), so the two are essentially equivalent."
+    },
+    "prop:1.1": {
+      "type": "Proposition",
+      "number": "1.1",
+      "section": "1",
+      "role": "technical",
+      "summary": "Partition the zeros $\\mathcal{T}=\\{\\rho=\\beta+i\\gamma:\\zeta(\\rho)=0,\\beta\\ge1-\\nu,|\\gamma|\\le T\\}$ into $O(1)$ well-separated sub-classes. The combinatorial setup that lets a zero-density bound be turned into a large-value bound class by class."
+    },
+    "conjecture:1.4": {
+      "type": "Conjecture",
+      "number": "1.4",
+      "section": "1",
+      "role": "context",
+      "summary": "A stronger density hypothesis: for $\\nu\\in[0,\\tfrac12-\\epsilon)$, $N(1-\\nu,T)\\ll_\\epsilon T^{(2-\\delta)\\nu+\\epsilon}$ for some $\\delta=\\delta(\\epsilon)>0$ — i.e. the density hypothesis with a power saving. The hypothesis under which the strongest prime-in-short-intervals consequence below holds."
+    },
+    "thm:1.5": {
+      "type": "Theorem",
+      "number": "1.5",
+      "section": "1",
+      "role": "main_result",
+      "summary": "Conditional on conjecture:1.4: for $h=(\\log X)^{2+\\epsilon}$, the interval $(x,x+h]$ contains the expected number of primes for all but $o(X)$ of $x\\le X$. Almost-all primes in nearly-shortest-possible intervals — the headline number-theoretic payoff."
+    },
+    "lem:2.1": {
+      "type": "Lemma",
+      "number": "2.1",
+      "section": "2",
+      "role": "key_mechanism",
+      "summary": "Large values of zeta-sums: a bound on $|\\{t\\in[-T,T]:|\\sum_{M<m\\le M'}m^{-1-it}|\\ge M^{-\\nu}\\}|$ in terms of zero-density data. Converts the size of a large-value set of a Dirichlet polynomial into the size of a large-value set of a $\\zeta$-sum."
+    },
+    "lem:2.2": {
+      "type": "Lemma",
+      "number": "2.2",
+      "section": "2",
+      "role": "technical",
+      "summary": "Dichotomy for the quantity $R_{\\sigma,\\eta}(T)$ (the measure of the set where a $\\zeta$-sum is large): either it is $\\le4T^{(1-\\sigma)/2}$ or it is controlled by a zero-count. The case split driving the inductive argument."
+    },
+    "lem:2.3": {
+      "type": "Lemma",
+      "number": "2.3",
+      "section": "2",
+      "role": "key_mechanism",
+      "summary": "A large value of $\\zeta(s)$ implies a nearby zero: if $|\\zeta(\\sigma+it)|\\ge T^{1/(\\log\\log T)^{10}}$ then $\\zeta$ has a zero with real part $\\ge\\sigma'$ close to $\\sigma$ and imaginary part near $t$. The bridge from large $\\zeta$-values to the zero-counting function."
+    },
+    "lem:2.4": {
+      "type": "Lemma",
+      "number": "2.4",
+      "section": "2",
+      "role": "technical",
+      "summary": "Measure bound for the set where $|\\zeta(\\sigma+it)|$ is large, in terms of a zero-count parameter — the quantitative form of the large-value/zero correspondence."
+    },
+    "lem:2.5": {
+      "type": "Lemma",
+      "number": "2.5",
+      "section": "2",
+      "role": "technical",
+      "summary": "Existence of a good real-part parameter $\\beta$ for the iteration: given the data, one can choose the line $\\mathrm{Re}=\\beta$ on which to compare $\\zeta$-sums. A bookkeeping lemma for the descent."
+    },
+    "lem:2.6": {
+      "type": "Lemma",
+      "number": "2.6",
+      "section": "2",
+      "role": "technical",
+      "summary": "Closing bound: $R_{\\sigma,\\eta}(T)\\ll_{\\epsilon,\\eta}T^{2\\nu+\\cdots}$ — the final measure estimate for the large-$\\zeta$-value set, obtained by iterating the dichotomy lem:2.2."
+    },
+    "lem:3.1": {
+      "type": "Lemma",
+      "number": "3.1",
+      "section": "3",
+      "role": "technical",
+      "summary": "Approximate functional equation for $\\zeta$: $\\zeta(\\sigma+it)=\\sum_{n\\le x}n^{-\\sigma-it}+\\chi(\\sigma+it)\\sum_{n\\le y}n^{-1+\\sigma+it}+\\text{small}$ for $2\\pi xy=|t|$. The standard device approximating $\\zeta$ by short Dirichlet sums."
+    },
+    "lem:3.2": {
+      "type": "Lemma",
+      "number": "3.2",
+      "section": "3",
+      "role": "technical",
+      "summary": "The convexity bound $|\\zeta(\\sigma+it)|\\ll|t|^{(1-\\sigma)/2}\\log|t|$ for $\\tfrac12\\le\\sigma\\le1$. The trivial pointwise size of $\\zeta$ in the critical strip, used to control the 'large but not too large' regime."
+    },
+    "lem:3.3": {
+      "type": "Lemma",
+      "number": "3.3",
+      "section": "3",
+      "role": "technical",
+      "summary": "There are $\\ll\\log(|U|+2)$ zeros of $\\zeta$ (with multiplicity) in $\\{\\mathrm{Re}(\\rho)\\ge0,\\,\\mathrm{Im}(\\rho)\\in[U,U+1]\\}$. The basic local zero-count, used to convert 'a nearby zero exists' into a counting statement."
+    },
+    "lem:4.1": {
+      "type": "Lemma",
+      "number": "4.1",
+      "section": "4",
+      "role": "technical",
+      "summary": "Comparing zeta-sums on different lines: $|\\sum_{M_1<m\\le M_2}m^{-\\sigma-it}|\\le4M_2^\\beta\\max(\\dots)$ for $\\beta\\ge0$ — partial summation transferring a Dirichlet-sum bound from one vertical line to another. The technical glue between lem:2.1 and the $\\zeta$-side estimates."
+    },
+    "lem:6.1": {
+      "type": "Lemma",
+      "number": "6.1",
+      "section": "6",
+      "role": "key_mechanism",
+      "summary": "A large value of $\\zeta'/\\zeta(s)$ implies a nearby zero — the logarithmic-derivative analogue of lem:2.3, used in the reverse implication (large zeta values back to large Dirichlet-polynomial values, §7)."
+    },
+    "prop:9.1": {
+      "type": "Proposition",
+      "number": "9.1",
+      "section": "9",
+      "role": "main_technical",
+      "summary": "Conditional on conjecture:1.4: products $F(s)=\\prod_{j=1}^kM_j(s)$ of Dirichlet polynomials have large-value sets of the size needed for the short-intervals argument. The estimate that, combined with a sieve/Perron argument, yields thm:1.5."
+    }
+  },
+  "edges": [
+    {
+      "from": "thm:1.2",
+      "to": "lem:2.1",
+      "type": "depends_on",
+      "note": "A large value of $D$ is shown to force many large values of an associated zeta-sum."
+    },
+    {
+      "from": "thm:1.2",
+      "to": "lem:2.3",
+      "type": "depends_on",
+      "note": "Each large value of $\\zeta$ produces a nearby zero, which the assumed zero-density bound then counts."
+    },
+    {
+      "from": "thm:1.2",
+      "to": "lem:2.6",
+      "type": "depends_on",
+      "note": "The iterated dichotomy gives the final measure bound on the large-$\\zeta$-value set."
+    },
+    {
+      "from": "thm:1.2",
+      "to": "prop:1.1",
+      "type": "depends_on",
+      "note": "Works one well-separated class of zeros at a time."
+    },
+    {
+      "from": "lem:2.6",
+      "to": "lem:2.2",
+      "type": "depends_on",
+      "note": "Obtained by iterating the dichotomy."
+    },
+    {
+      "from": "lem:2.2",
+      "to": "lem:2.4",
+      "type": "depends_on",
+      "note": "The 'controlled by a zero-count' branch uses the measure-vs-zero-count estimate."
+    },
+    {
+      "from": "lem:2.2",
+      "to": "lem:2.5",
+      "type": "depends_on",
+      "note": "Picks the line on which to run the comparison."
+    },
+    {
+      "from": "lem:2.4",
+      "to": "lem:2.3",
+      "type": "depends_on",
+      "note": "Counts zeros produced by large $\\zeta$-values."
+    },
+    {
+      "from": "lem:2.4",
+      "to": "lem:3.3",
+      "type": "depends_on",
+      "note": "Uses the local zero-count to turn 'a nearby zero' into a quantitative bound."
+    },
+    {
+      "from": "lem:2.3",
+      "to": "lem:3.1",
+      "type": "depends_on",
+      "note": "Approximate functional equation expresses $\\zeta$ near the relevant line by a short sum."
+    },
+    {
+      "from": "lem:2.3",
+      "to": "lem:3.2",
+      "type": "depends_on",
+      "note": "Convexity bound controls the off-region contribution."
+    },
+    {
+      "from": "lem:2.1",
+      "to": "lem:4.1",
+      "type": "depends_on",
+      "note": "Transfers the Dirichlet-polynomial bound to the zeta-sum line via partial summation."
+    },
+    {
+      "from": "thm:1.5",
+      "to": "prop:9.1",
+      "type": "depends_on",
+      "note": "The almost-all short-intervals result follows from the large-value bound for products of Dirichlet polynomials plus a standard Perron/sieve argument."
+    },
+    {
+      "from": "thm:1.5",
+      "to": "conjecture:1.4",
+      "type": "depends_on",
+      "note": "Conditional on the stronger density hypothesis."
+    },
+    {
+      "from": "prop:9.1",
+      "to": "conjecture:1.4",
+      "type": "depends_on",
+      "note": "Uses the assumed power-saving zero-density bound."
+    },
+    {
+      "from": "prop:9.1",
+      "to": "thm:1.2",
+      "type": "depends_on",
+      "note": "Applies the zero-density ⟹ large-values implication to each factor $M_j$."
+    },
+    {
+      "from": "thm:1.2",
+      "to": "lem:6.1",
+      "type": "depends_on",
+      "note": "The reverse direction (large $\\zeta$-values to large $D$-values) uses the $\\zeta'/\\zeta$ analogue."
+    }
+  ],
+  "critical_path": [
+    "thm:1.2",
+    "lem:2.3",
+    "lem:3.1",
+    "lem:3.2"
+  ],
+  "proof_architecture": {
+    "main_results": {
+      "description": "Zero density ⟹ large value estimates, and (conditional on a power-saving density hypothesis) almost-all primes in $(\\log X)^{2+\\epsilon}$ intervals.",
+      "nodes": [
+        "thm:1.2",
+        "prop:1.1",
+        "conjecture:1.4",
+        "thm:1.5"
+      ]
+    },
+    "large_values_to_zeros": {
+      "description": "The chain large $D$-values ⟶ large zeta-sum values ⟶ large $\\zeta(s)$ ⟶ nearby zeros, with the iterated dichotomy that bounds the large-zeta-value set.",
+      "nodes": [
+        "lem:2.1",
+        "lem:2.2",
+        "lem:2.3",
+        "lem:2.4",
+        "lem:2.5",
+        "lem:2.6",
+        "lem:6.1"
+      ]
+    },
+    "zeta_tools": {
+      "description": "Approximate functional equation, the convexity bound, local zero-counting, and partial-summation transfer between lines.",
+      "nodes": [
+        "lem:3.1",
+        "lem:3.2",
+        "lem:3.3",
+        "lem:4.1"
+      ]
+    },
+    "short_intervals_application": {
+      "description": "Large values of products of Dirichlet polynomials, fed into a Perron/sieve argument.",
+      "nodes": [
+        "prop:9.1"
+      ]
+    }
+  },
+  "bibliography": {
+    "HeathBrown:1979": {
+      "title": "Zero-density estimates for the Riemann zeta-function and Dirichlet L-functions",
+      "authors": [
+        "Heath-Brown"
+      ],
+      "arxiv_id": null,
+      "in_registry": false
+    },
+    "GuthMaynard": {
+      "title": "New large value estimates for Dirichlet polynomials",
+      "authors": [
+        "Guth",
+        "Maynard"
+      ],
+      "arxiv_id": "2405.20552",
+      "in_registry": true
+    },
+    "Montgomery:LargeValues": {
+      "title": "Topics in Multiplicative Number Theory",
+      "authors": [
+        "Montgomery"
+      ],
+      "arxiv_id": null,
+      "in_registry": false
+    }
+  }
+}

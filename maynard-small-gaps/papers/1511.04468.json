@@ -1,0 +1,325 @@
+{
+  "paper": "1511.04468",
+  "title": "Chains of large gaps between primes",
+  "authors": [
+    "Kevin Ford",
+    "James Maynard",
+    "Terence Tao"
+  ],
+  "generated": "2026-05-06",
+  "status": "complete",
+  "nodes": {
+    "thm:1": {
+      "type": "Theorem",
+      "number": "1",
+      "section": "1",
+      "role": "main_result",
+      "summary": "$G_k(X) \\gg (\\log X \\log_2 X \\log_4 X) / (k^2 \\log_3 X)$ — chains of $k$ consecutive large gaps. Settles a 1948 Erdős-Rankin question, generalizing both 1408.4505 and 1408.5110 from one gap to chains."
+    },
+    "lem:1.1": {
+      "type": "Lemma",
+      "number": "1.1",
+      "section": "1",
+      "role": "technical",
+      "summary": "Chebyshev-type second-moment bound on $F(\\mathbf{X},\\mathbf{Y})$ for conditionally independent random variables. Generic probabilistic input for the random-covering construction."
+    },
+    "lem:2.1": {
+      "type": "Lemma",
+      "number": "2.1",
+      "section": "2",
+      "role": "foundational",
+      "summary": "Landau-Page theorem: at most one Siegel-Landau zero of $L(s,\\chi)$ for primitive $\\chi$ of modulus $\\le Q$ in the standard zero-free region; if it exists, the exceptional modulus is square-free with $q_Q \\gg \\log^2 Q / \\log_2^2 Q$."
+    },
+    "cor:1": {
+      "type": "Corollary",
+      "number": "1",
+      "section": "2",
+      "role": "key_mechanism",
+      "summary": "Existence of $B_Q$ ($= 1$ or a prime $\\gg \\log_2 Q$) such that primes coprime to $B_Q$ satisfy uniform zero-free-region equidistribution. The 'Siegel modulus' the entire sieve has to dodge."
+    },
+    "lem:2.2": {
+      "type": "Lemma",
+      "number": "2.2",
+      "section": "2",
+      "role": "foundational",
+      "summary": "Gallagher's PNT in arithmetic progressions: under the zero-free hypothesis, primes $\\equiv a\\,(q)$ are at least $x/(\\varphi(q)\\log x)$ for $x \\ge q^D$. The unconditional input on prime distribution."
+    },
+    "thm:2": {
+      "type": "Theorem",
+      "number": "2",
+      "section": "3",
+      "role": "key_reduction",
+      "summary": "Sieving an interval (deterministic core): for $y = c x \\log x \\log_3 x / \\log_2 x$ and any prime $B_0 \\in [\\log x, x]$ (or $B_0 = 1$), one can choose residues $a_p \\pmod{p}$ for primes $p \\le x$, $p \\ne B_0$, that produce a sparse sieved set. The Maynard 1408.5110 construction in the chains setting."
+    },
+    "lem:3.1": {
+      "type": "Lemma",
+      "number": "3.1",
+      "section": "3",
+      "role": "key_mechanism",
+      "summary": "Existence of $B_0$ ($= 1$ or a prime in $[\\log x, x]$) such that, with $P = P(x)/B_0$, the Linnik-style equidistribution $\\#\\{z \\le Z : Pz + a \\text{ prime}\\} \\gg (\\log x / \\log Z) Z$ holds for all coprime $a$ and $Z \\ge P^D$. The Bombieri-Vinogradov-on-residues input feeding thm:2."
+    },
+    "thm:3": {
+      "type": "Theorem",
+      "number": "3",
+      "section": "4",
+      "role": "key_reduction",
+      "summary": "Sieving primes (random covering): randomly choose vectors $\\vec{\\mathbf{a}}, \\vec{\\mathbf{n}}$ so that with probability bounded below, the random union of residue classes covers all but a small fraction of the primes in $(x, y]$. The FGKT 1408.4505 random-covering theorem, generalized to chains."
+    },
+    "thm:4": {
+      "type": "Theorem",
+      "number": "4",
+      "section": "5",
+      "role": "key_mechanism",
+      "summary": "Bipartite covering theorem: given $\\mathcal{P}', \\mathcal{Q}'$ sets of primes and random subsets $\\mathbf{e}_p \\subset \\mathcal{Q}'$ of bounded size $r$ with sparsity bound $\\mathbb{P}(q \\in \\mathbf{e}_p) \\le x^{-1/2-1/10}$ and second-moment hypotheses, one can find a subset of $\\mathbf{e}_p$ covering $\\mathcal{Q}'$ minus $o(|\\mathcal{Q}'|)$. The abstract probabilistic theorem distinguishing FMT from its predecessors."
+    },
+    "thm:5": {
+      "type": "Theorem",
+      "number": "5",
+      "section": "6",
+      "role": "main_technical",
+      "summary": "Existence of admissible chain constructions: combines thm:2 and thm:3 to produce $k$ consecutive gaps of size $\\gg G(X)$. The structural step that turns 'one large gap' into 'a chain of $k$'."
+    },
+    "thm:6": {
+      "type": "Theorem",
+      "number": "6",
+      "section": "6",
+      "role": "main_technical",
+      "summary": "Quantitative version of the chain construction with explicit dependence on $k$. Proves the $k^2$ denominator in thm:1 is sharp up to constants."
+    },
+    "lem:6.1": {
+      "type": "Lemma",
+      "number": "6.1",
+      "section": "6",
+      "role": "technical",
+      "summary": "Singular-series factorization for the chain construction: for primes-in-AP correlations across the $k$ chained intervals."
+    },
+    "cor:2": {
+      "type": "Corollary",
+      "number": "2",
+      "section": "6",
+      "role": "auxiliary",
+      "summary": "Specialization of thm:5 to $k = O(1)$ recovers the FGKT/Maynard single-gap bound."
+    },
+    "lem:6.2": {
+      "type": "Lemma",
+      "number": "6.2",
+      "section": "6",
+      "role": "technical",
+      "summary": "Concentration of the chained covering count around its singular-series mean."
+    },
+    "lem:6.3": {
+      "type": "Lemma",
+      "number": "6.3",
+      "section": "6",
+      "role": "technical",
+      "summary": "Independence-style estimate for chained $\\Lambda$-products across distinct intervals."
+    },
+    "lem:6.4": {
+      "type": "Lemma",
+      "number": "6.4",
+      "section": "6",
+      "role": "technical",
+      "summary": "Hybrid second-moment lemma combining lem:6.2 and lem:6.3 — the variance bound powering thm:6."
+    }
+  },
+  "edges": [
+    {
+      "from": "thm:1",
+      "to": "thm:5",
+      "type": "depends_on",
+      "note": "Chain construction directly yields the main bound."
+    },
+    {
+      "from": "thm:5",
+      "to": "thm:2",
+      "type": "depends_on",
+      "note": "Deterministic interval sieve."
+    },
+    {
+      "from": "thm:5",
+      "to": "thm:3",
+      "type": "depends_on",
+      "note": "Random prime sieve."
+    },
+    {
+      "from": "thm:5",
+      "to": "thm:6",
+      "type": "depends_on",
+      "note": "Quantitative chain dependence."
+    },
+    {
+      "from": "thm:6",
+      "to": "lem:6.1",
+      "type": "depends_on",
+      "note": "Singular-series factorization."
+    },
+    {
+      "from": "thm:6",
+      "to": "lem:6.2",
+      "type": "depends_on",
+      "note": "Concentration of covering count."
+    },
+    {
+      "from": "thm:6",
+      "to": "lem:6.3",
+      "type": "depends_on",
+      "note": "Independence across intervals."
+    },
+    {
+      "from": "thm:6",
+      "to": "lem:6.4",
+      "type": "depends_on",
+      "note": "Combined variance bound."
+    },
+    {
+      "from": "thm:2",
+      "to": "lem:3.1",
+      "type": "depends_on",
+      "note": "Existence of $B_0$ with Linnik-style equidistribution."
+    },
+    {
+      "from": "thm:3",
+      "to": "thm:4",
+      "type": "depends_on",
+      "note": "Bipartite covering theorem is the probabilistic engine."
+    },
+    {
+      "from": "thm:3",
+      "to": "lem:1.1",
+      "type": "depends_on",
+      "note": "Chebyshev-style second-moment bound."
+    },
+    {
+      "from": "thm:4",
+      "to": "lem:1.1",
+      "type": "depends_on",
+      "note": "Same Chebyshev input."
+    },
+    {
+      "from": "lem:3.1",
+      "to": "cor:1",
+      "type": "depends_on",
+      "note": "Siegel modulus extraction."
+    },
+    {
+      "from": "lem:3.1",
+      "to": "lem:2.2",
+      "type": "depends_on",
+      "note": "Gallagher PNT under zero-free region."
+    },
+    {
+      "from": "cor:1",
+      "to": "lem:2.1",
+      "type": "depends_on",
+      "note": "Landau-Page zero-free region."
+    },
+    {
+      "from": "cor:2",
+      "to": "thm:5",
+      "type": "depends_on",
+      "note": "$k = O(1)$ specialization."
+    }
+  ],
+  "critical_path": [
+    "thm:1",
+    "thm:5",
+    "thm:3",
+    "thm:4",
+    "lem:1.1"
+  ],
+  "proof_architecture": {
+    "main_result": {
+      "description": "thm:1 — chains of $k$ consecutive large gaps, generalizing the single-gap bound from 1408.5110 and 1408.4505.",
+      "nodes": [
+        "thm:1"
+      ]
+    },
+    "chain_construction": {
+      "description": "thm:5, thm:6, cor:2 and the lem:6.* lemmas execute the chain construction by combining the deterministic and random sieves over $k$ consecutive intervals with controlled variance.",
+      "nodes": [
+        "thm:5",
+        "thm:6",
+        "cor:2",
+        "lem:6.1",
+        "lem:6.2",
+        "lem:6.3",
+        "lem:6.4"
+      ]
+    },
+    "deterministic_sieve_branch": {
+      "description": "thm:2 (interval sieve) + lem:3.1 ($B_0$ selection) — the Maynard 1408.5110 deterministic side, extended to chains.",
+      "nodes": [
+        "thm:2",
+        "lem:3.1"
+      ]
+    },
+    "random_covering_branch": {
+      "description": "thm:3 (prime sieve) + thm:4 (abstract bipartite covering) + lem:1.1 (second-moment Chebyshev) — the FGKT 1408.4505 probabilistic side, extended to chains.",
+      "nodes": [
+        "thm:3",
+        "thm:4",
+        "lem:1.1"
+      ]
+    },
+    "L_function_zero_free_layer": {
+      "description": "lem:2.1 (Landau-Page), cor:1 (Siegel modulus extraction), lem:2.2 (Gallagher PNT). Standard analytic input controlling exceptional zeros.",
+      "nodes": [
+        "lem:2.1",
+        "cor:1",
+        "lem:2.2"
+      ]
+    }
+  },
+  "bibliography": {
+    "FGKT:largegaps": {
+      "title": "Large gaps between consecutive prime numbers",
+      "authors": [
+        "Kevin Ford",
+        "Ben Green",
+        "Sergei Konyagin",
+        "Terence Tao"
+      ],
+      "arxiv_id": "1408.4505",
+      "in_registry": true,
+      "role": "predecessor — random-covering machinery"
+    },
+    "Maynard:largegaps": {
+      "title": "Large gaps between primes",
+      "authors": [
+        "James Maynard"
+      ],
+      "arxiv_id": "1408.5110",
+      "in_registry": true,
+      "role": "predecessor — deterministic multidim-sieve machinery"
+    },
+    "Maynard:smallgaps": {
+      "title": "Small gaps between primes",
+      "authors": [
+        "James Maynard"
+      ],
+      "arxiv_id": "1311.4600",
+      "in_registry": true,
+      "role": "method_source — multidim Selberg sieve repurposed"
+    },
+    "Erdos:1948": {
+      "title": "Some problems on the distribution of prime numbers",
+      "authors": [
+        "Paul Erdős"
+      ],
+      "year": 1948,
+      "arxiv_id": null,
+      "in_registry": false,
+      "role": "foundational — chains-of-gaps question originates here"
+    },
+    "Rankin:1938": {
+      "title": "On the difference of consecutive primes",
+      "authors": [
+        "Robert Rankin"
+      ],
+      "year": 1938,
+      "arxiv_id": null,
+      "in_registry": false,
+      "role": "foundational"
+    }
+  }
+}

@@ -1,0 +1,287 @@
+{
+  "paper": "1405.2593v2",
+  "title": "Dense clusters of primes in subsets",
+  "authors": [
+    "James Maynard"
+  ],
+  "generated": "2026-05-06",
+  "status": "complete",
+  "nodes": {
+    "sec:1:19": {
+      "type": "Conjecture",
+      "number": "(Hardy-Littlewood)",
+      "section": "1",
+      "role": "context",
+      "summary": "Prime $k$-tuples conjecture for general admissible families of linear functions $L_i(n) = a_i n + b_i$."
+    },
+    "thm:3.1": {
+      "type": "Theorem",
+      "number": "3.1",
+      "section": "3",
+      "role": "main_result",
+      "summary": "Generalized framework: under hypotheses on $(\\mathcal{A}, \\mathcal{P}, \\mathcal{L}, B, x, \\theta)$ — $\\mathcal{A}$ a set of integers with reasonable density, $\\mathcal{P}$ a set of primes equidistributed in $\\mathcal{A}$ — for $k \\ge C(\\alpha,\\theta)$ admissible linear forms $L_i$, infinitely many $n \\in \\mathcal{A}$ have $\\gg \\log k$ of $L_i(n) \\in \\mathcal{P}$. The reusable engine."
+    },
+    "thm:3.2": {
+      "type": "Theorem",
+      "number": "3.2",
+      "section": "3",
+      "role": "main_result",
+      "summary": "Small gaps in short intervals: for $\\gg x \\exp(-\\sqrt{\\log x})$ integers $x_0 \\in [x,2x]$, $\\pi(x_0+y) - \\pi(x_0) \\gg \\log y$. Quantitative density of intervals containing many primes."
+    },
+    "thm:3.3": {
+      "type": "Theorem",
+      "number": "3.3",
+      "section": "3",
+      "role": "main_result",
+      "summary": "Clusters of primes in arithmetic progressions: for $q \\le (\\log x)^{1-\\varepsilon}$, there are $\\gg \\pi(x)/(2q)^{\\exp(Cm)}$ consecutive primes $p_n,\\ldots,p_{n+m}$ all $\\equiv a \\pmod{q}$ with $p_{n+m}-p_n \\le \\varepsilon \\log x$. Direct application of thm:3.1."
+    },
+    "thm:3.4": {
+      "type": "Theorem",
+      "number": "3.4",
+      "section": "3",
+      "role": "main_result",
+      "summary": "Primes in short intervals: for $x^{7/12+\\varepsilon} \\le y \\le x$ and admissible $\\mathcal{L}$ of size $k = \\exp(O(m))$, $\\#\\{n \\in [x,x+y]: \\ge m \\text{ of } L_i(n) \\text{ prime}\\} \\gg y/(\\log x)^k$. Uses Huxley's prime-number theorem in short intervals as the equidistribution input."
+    },
+    "thm:3.5": {
+      "type": "Theorem",
+      "number": "3.5",
+      "section": "3",
+      "role": "main_result",
+      "summary": "Chebotarev / Galois version: for $K/\\mathbb{Q}$ Galois with conjugacy class $\\mathcal{C} \\subset \\mathrm{Gal}(K/\\mathbb{Q})$, there are infinitely many $m$-clusters of primes $p$ with prescribed Artin symbol. Maynard's sieve applied to primes split in extensions."
+    },
+    "prop:6.1": {
+      "type": "Proposition",
+      "number": "6.1",
+      "section": "6",
+      "role": "key_reduction",
+      "summary": "Sieve weight asymptotic. For weights $w_n$ built from a smooth $F$ on the simplex, the $S_1, S_2$ sums evaluate in terms of $I_k(F), J_k(F)$ generalized to the ambient set $\\mathcal{A}$ with multiplicative-density correction $(B/\\varphi(B))^k\\,\\mathfrak{S}_B(\\mathcal{L})$. The $k$-D Selberg sieve, generalized."
+    },
+    "lem:8.1": {
+      "type": "Lemma",
+      "number": "8.1",
+      "section": "8",
+      "role": "technical",
+      "summary": "Singular series bounds: $\\mathfrak{S}_B(\\mathcal{L}) \\ge \\exp(-Ck)$ and a flexible perturbation lemma controlling $\\Delta_L/\\varphi(\\Delta_L)$ sums. Replaces the $W$-trick from 1311.4600."
+    },
+    "lem:8.2": {
+      "type": "Lemma",
+      "number": "8.2",
+      "section": "8",
+      "role": "technical",
+      "summary": "Sieve-weight perturbation: $y_{\\mathbf{s}} = y_{\\mathbf{r}} + O(T_k Y_{\\mathbf{r}} \\log A / \\log R)$ when $\\mathbf{r}$ and $\\mathbf{s}$ differ by a single coordinate scaling. Replaces lem:5.3 of 1311.4600 in the more general setting."
+    },
+    "prop:9.1": {
+      "type": "Proposition",
+      "number": "9.1",
+      "section": "9",
+      "role": "main_technical",
+      "summary": "$S_1$ evaluation: $\\sum_{n \\in \\mathcal{A}(x)} w_n = (1+o(1)) (B/\\varphi(B))^k\\,\\mathfrak{S}_B(\\mathcal{L})\\,\\#\\mathcal{A}(x)\\,(\\log R)^k\\,I_k(F)$. The non-prime side, generalized to $\\mathcal{A}$."
+    },
+    "prop:9.2": {
+      "type": "Proposition",
+      "number": "9.2",
+      "section": "9",
+      "role": "main_technical",
+      "summary": "$S_2$ evaluation: under a level-of-distribution hypothesis on $(\\mathcal{P}, \\mathcal{L}, \\mathcal{A})$ at level $x^\\theta$, $\\sum \\mathbf{1}_{\\mathcal{P}}(L(n))\\,w_n$ has the expected $J_k(F)$ asymptotic. The prime side, generalized to $\\mathcal{A}$ and $\\mathcal{P}$."
+    },
+    "prop:9.4": {
+      "type": "Proposition",
+      "number": "9.4",
+      "section": "9",
+      "role": "technical",
+      "summary": "Almost-primality control for the auxiliary smooth-number set $\\mathcal{S}(\\xi;D)$. Replaces direct $W$-trick filtering with a sieve-friendly version."
+    },
+    "prop:9.5": {
+      "type": "Proposition",
+      "number": "9.5",
+      "section": "9",
+      "role": "technical",
+      "summary": "Small-prime contribution bound: weighted count of small prime factors $p < x^\\rho$ of $L(n)$ is $O(\\rho^2 k^4 (\\log k)^2\\,\\mathfrak{S}\\,\\#\\mathcal{A}(x)\\,(\\log R)^k\\,I_k(F))$. Removes contamination."
+    }
+  },
+  "edges": [
+    {
+      "from": "thm:3.1",
+      "to": "prop:6.1",
+      "type": "depends_on",
+      "note": "Sieve weight asymptotic provides the existence of the $M_k$-style ratio under generalized hypotheses."
+    },
+    {
+      "from": "thm:3.1",
+      "to": "sec:1:19",
+      "type": "addresses_same_question",
+      "note": "thm:3.1 is the unconditional partial result for the generalized prime $k$-tuples conjecture in subsets $\\mathcal{A}$."
+    },
+    {
+      "from": "thm:3.2",
+      "to": "thm:3.1",
+      "type": "depends_on",
+      "note": "Specialization to $\\mathcal{A} = \\mathbb{Z} \\cap [x_0, x_0+y]$ with $\\mathcal{P} = $ primes."
+    },
+    {
+      "from": "thm:3.3",
+      "to": "thm:3.1",
+      "type": "depends_on",
+      "note": "Specialization to $\\mathcal{A} = $ arithmetic progression, $\\mathcal{P} = $ primes in that progression."
+    },
+    {
+      "from": "thm:3.4",
+      "to": "thm:3.1",
+      "type": "depends_on",
+      "note": "Specialization to short intervals, using Huxley's PNT for the equidistribution hypothesis."
+    },
+    {
+      "from": "thm:3.5",
+      "to": "thm:3.1",
+      "type": "depends_on",
+      "note": "Specialization to $\\mathcal{A} = \\mathbb{Z}$, $\\mathcal{P} = $ primes with prescribed Artin symbol. Chebotarev supplies equidistribution."
+    },
+    {
+      "from": "prop:6.1",
+      "to": "prop:9.1",
+      "type": "depends_on",
+      "note": "$S_1$ asymptotic with the generalized $W$-trick correction."
+    },
+    {
+      "from": "prop:6.1",
+      "to": "prop:9.2",
+      "type": "depends_on",
+      "note": "$S_2$ asymptotic under generalized level-of-distribution hypothesis."
+    },
+    {
+      "from": "prop:6.1",
+      "to": "lem:8.1",
+      "type": "depends_on",
+      "note": "Singular-series bounds."
+    },
+    {
+      "from": "prop:6.1",
+      "to": "lem:8.2",
+      "type": "depends_on",
+      "note": "Sieve-weight perturbation."
+    },
+    {
+      "from": "prop:6.1",
+      "to": "prop:9.4",
+      "type": "depends_on",
+      "note": "Almost-primality."
+    },
+    {
+      "from": "prop:6.1",
+      "to": "prop:9.5",
+      "type": "depends_on",
+      "note": "Small-prime contribution control."
+    },
+    {
+      "from": "prop:9.1",
+      "to": "lem:8.1",
+      "type": "depends_on",
+      "note": "Singular-series asymptotics in the $S_1$ evaluation."
+    },
+    {
+      "from": "prop:9.2",
+      "to": "lem:8.1",
+      "type": "depends_on",
+      "note": "Same singular-series asymptotics on the prime side."
+    },
+    {
+      "from": "prop:9.4",
+      "to": "lem:8.2",
+      "type": "depends_on",
+      "note": "Perturbation lemma controls smooth-number contribution."
+    },
+    {
+      "from": "prop:9.5",
+      "to": "lem:8.2",
+      "type": "depends_on",
+      "note": "Same perturbation in the small-prime estimate."
+    }
+  ],
+  "critical_path": [
+    "thm:3.1",
+    "prop:6.1",
+    "prop:9.2",
+    "lem:8.1"
+  ],
+  "proof_architecture": {
+    "main_results": {
+      "description": "thm:3.1 is the generalized framework. thm:3.2-3.5 are four corollary applications: short intervals, arithmetic progressions, short intervals with primes, and Chebotarev/Galois. The Chebotarev variant (thm:3.5) is genuinely new — opens prime-distribution-in-extensions to the Maynard-Tao machinery.",
+      "nodes": [
+        "sec:1:19",
+        "thm:3.1",
+        "thm:3.2",
+        "thm:3.3",
+        "thm:3.4",
+        "thm:3.5"
+      ]
+    },
+    "generalized_sieve_framework": {
+      "description": "prop:6.1 is the abstract version of 1311.4600:prop:4.1 — sieve weight asymptotic with abstract $\\mathcal{A}, \\mathcal{P}, B$ replacing the integers, primes, and $W$. This is the architectural refactor that makes thm:3.1 possible.",
+      "nodes": [
+        "prop:6.1"
+      ]
+    },
+    "asymptotic_engine": {
+      "description": "Section 9 propositions implement the $S_1, S_2$ evaluations under the abstract hypotheses; lem:8.1, lem:8.2 supply the singular-series and perturbation tools (replacing the $W$-trick).",
+      "nodes": [
+        "prop:9.1",
+        "prop:9.2",
+        "prop:9.4",
+        "prop:9.5",
+        "lem:8.1",
+        "lem:8.2"
+      ]
+    }
+  },
+  "bibliography": {
+    "Maynard:smallgaps": {
+      "title": "Small gaps between primes",
+      "authors": [
+        "James Maynard"
+      ],
+      "arxiv_id": "1311.4600",
+      "in_registry": true,
+      "role": "method_source — this paper is the abstract framework version of 1311.4600"
+    },
+    "Tao:blogClusters": {
+      "title": "Polymath proposal: bounded gaps between primes (Tao blog)",
+      "authors": [
+        "Terence Tao"
+      ],
+      "arxiv_id": null,
+      "in_registry": false,
+      "role": "context — Tao's parallel work on the same multidim sieve"
+    },
+    "Huxley:1972": {
+      "title": "On the difference between consecutive primes",
+      "authors": [
+        "M. N. Huxley"
+      ],
+      "year": 1972,
+      "arxiv_id": null,
+      "in_registry": false,
+      "role": "foundational — PNT in short intervals, used in thm:3.4"
+    },
+    "Chebotarev:1926": {
+      "title": "Chebotarev's density theorem",
+      "authors": [
+        "Nikolai Chebotarev"
+      ],
+      "year": 1926,
+      "arxiv_id": null,
+      "in_registry": false,
+      "role": "foundational — equidistribution of Frobenius classes; used in thm:3.5"
+    },
+    "BombieriVinogradov:1965": {
+      "title": "Bombieri-Vinogradov theorem",
+      "authors": [
+        "Enrico Bombieri",
+        "A. I. Vinogradov"
+      ],
+      "year": 1965,
+      "arxiv_id": null,
+      "in_registry": false,
+      "role": "foundational — level-of-distribution input for thm:3.3"
+    }
+  }
+}

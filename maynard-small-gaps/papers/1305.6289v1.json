@@ -1,0 +1,310 @@
+{
+  "paper": "1305.6289v1",
+  "title": "Polignac Numbers, Conjectures of Erdős on Gaps between Primes, Arithmetic Progressions in Primes, and the Bounded Gap Conjecture",
+  "authors": [
+    "János Pintz"
+  ],
+  "generated": "2026-05-06",
+  "status": "complete",
+  "nodes": {
+    "thm:A": {
+      "type": "Theorem",
+      "number": "A",
+      "section": "1",
+      "role": "context",
+      "summary": "Zhang (2013): $\\liminf_n d_n \\le 7 \\times 10^7$. Cited as the unconditional input the paper builds on."
+    },
+    "thm:B": {
+      "type": "Theorem",
+      "number": "B",
+      "section": "1",
+      "role": "context",
+      "summary": "GPY (2009) conditional: under primes-level-of-distribution $\\theta > 1/2$, $\\liminf_n d_n \\le C(\\theta)$; under EH, $\\le 16$."
+    },
+    "thm:C": {
+      "type": "Theorem",
+      "number": "C",
+      "section": "1",
+      "role": "context",
+      "summary": "GPY (2009) unconditional: $\\Delta_1 = \\liminf_n d_n / \\log p_n = 0$."
+    },
+    "thm:D": {
+      "type": "Theorem",
+      "number": "D",
+      "section": "2",
+      "role": "context",
+      "summary": "GPY II (2010) quantitative: $\\liminf_n d_n / [\\sqrt{\\log n}\\,(\\log\\log n)^2] < \\infty$."
+    },
+    "thm:E": {
+      "type": "Theorem",
+      "number": "E",
+      "section": "2",
+      "role": "context",
+      "summary": "Pintz (2013) sharper: $\\liminf_n d_n / [(\\log n)^{3/7}\\,(\\log\\log n)^{4/7}] < \\infty$."
+    },
+    "def:1": {
+      "type": "Definition",
+      "number": "1",
+      "section": "2",
+      "role": "definition",
+      "summary": "Strong Polignac number: $2k$ such that $d_n = 2k$ for infinitely many $n$. (Polignac's original conjecture is that every even $2k$ is one.)"
+    },
+    "def:2": {
+      "type": "Definition",
+      "number": "2",
+      "section": "2",
+      "role": "definition",
+      "summary": "Weak Polignac number: $2k$ expressible as $p - p'$ for infinitely many prime pairs $p > p'$. (Strong implies weak; the converse is open.)"
+    },
+    "thm:1": {
+      "type": "Theorem",
+      "number": "1",
+      "section": "2",
+      "role": "main_result",
+      "summary": "Polignac numbers have positive lower asymptotic density: $\\#\\{$Polignac numbers $\\le N\\} \\ge cN$ for some explicit $c > 0$ and $N > N_0$. First quantitative attack on Polignac's conjecture."
+    },
+    "thm:2": {
+      "type": "Theorem",
+      "number": "2",
+      "section": "2",
+      "role": "main_result",
+      "summary": "Bounded gaps between Polignac numbers: every interval $[M, M + C']$ contains at least one Polignac number."
+    },
+    "thm:3": {
+      "type": "Theorem",
+      "number": "3",
+      "section": "2",
+      "role": "main_result",
+      "summary": "Limit set $J$ of $\\{d_n/\\log n\\}$'s differences contains a full interval $[0, c]$: an Erdős conjecture establishing positive Lebesgue density of the difference-of-limit-points set."
+    },
+    "thm:4": {
+      "type": "Theorem",
+      "number": "4",
+      "section": "2",
+      "role": "main_result",
+      "summary": "Generalized to slowly-growing scaling $f$: for any $f \\in \\mathcal{F}$ with $f(n) \\le \\log n$ and $f \\to \\infty$, the set $J_f := \\{d_n/f(n)\\}'$ contains an interval $[0, c_f]$."
+    },
+    "thm:5": {
+      "type": "Theorem",
+      "number": "5",
+      "section": "2",
+      "role": "main_result",
+      "summary": "Ratio behavior: $\\liminf (d_{n+1}/d_n) \\cdot \\log n < \\infty$ and $\\limsup (d_{n+1}/d_n) / \\log n > 0$. Quantitative oscillation between consecutive gaps."
+    },
+    "thm:6": {
+      "type": "Theorem",
+      "number": "6",
+      "section": "2",
+      "role": "main_result",
+      "summary": "Existence of $d \\le 7 \\times 10^7$ such that arbitrarily long arithmetic progressions of primes $p$ have $p' = p + d$ as the next prime — combining Zhang's bounded gaps with Green-Tao on arithmetic progressions."
+    },
+    "lem:1": {
+      "type": "Lemma",
+      "number": "1",
+      "section": "3",
+      "role": "technical",
+      "summary": "Counting lemma for admissible $k$-tuples with prescribed shift differences. Combinatorial input."
+    },
+    "lem:2": {
+      "type": "Lemma",
+      "number": "2",
+      "section": "3",
+      "role": "technical",
+      "summary": "Density of Polignac-type representations within the Zhang/GPY framework."
+    },
+    "lem:3": {
+      "type": "Lemma",
+      "number": "3",
+      "section": "3",
+      "role": "technical",
+      "summary": "Refinement of GPY weights to count Polignac-type events."
+    },
+    "lem:4": {
+      "type": "Lemma",
+      "number": "4",
+      "section": "3",
+      "role": "technical",
+      "summary": "Bridging lemma from Zhang's bounded-gap result to bounded-gap-between-Polignac-numbers."
+    }
+  },
+  "edges": [
+    {
+      "from": "thm:1",
+      "to": "thm:A",
+      "type": "depends_on",
+      "note": "Zhang's bounded-gap theorem feeds the Polignac density count."
+    },
+    {
+      "from": "thm:1",
+      "to": "lem:1",
+      "type": "depends_on",
+      "note": "Combinatorial counting."
+    },
+    {
+      "from": "thm:1",
+      "to": "lem:2",
+      "type": "depends_on",
+      "note": "Polignac density in Zhang framework."
+    },
+    {
+      "from": "thm:1",
+      "to": "lem:3",
+      "type": "depends_on",
+      "note": "GPY-weight refinement."
+    },
+    {
+      "from": "thm:2",
+      "to": "thm:1",
+      "type": "depends_on",
+      "note": "Bounded gaps between Polignac numbers follows from positive density."
+    },
+    {
+      "from": "thm:2",
+      "to": "lem:4",
+      "type": "depends_on",
+      "note": "Bounded-gap-bridge lemma."
+    },
+    {
+      "from": "thm:3",
+      "to": "thm:D",
+      "type": "depends_on",
+      "note": "GPY II's quantitative $\\sqrt{\\log n}$ bound used to push limit set into $[0,c]$."
+    },
+    {
+      "from": "thm:3",
+      "to": "thm:E",
+      "type": "depends_on",
+      "note": "Pintz's sharper $(\\log n)^{3/7}$ bound also used."
+    },
+    {
+      "from": "thm:4",
+      "to": "thm:3",
+      "type": "extends",
+      "note": "$f$-scaling generalization."
+    },
+    {
+      "from": "thm:5",
+      "to": "thm:A",
+      "type": "depends_on",
+      "note": "Zhang's bounded gaps + Green-Tao APs."
+    },
+    {
+      "from": "thm:6",
+      "to": "thm:A",
+      "type": "depends_on",
+      "note": "Zhang's $d \\le 7\\times 10^7$ bound."
+    }
+  ],
+  "critical_path": [
+    "thm:1",
+    "thm:A",
+    "lem:2",
+    "lem:3"
+  ],
+  "proof_architecture": {
+    "context_results": {
+      "description": "thm:A-E summarize the prior bounded-gaps and small-gaps results being applied. Definitions def:1, def:2 fix Polignac terminology.",
+      "nodes": [
+        "thm:A",
+        "thm:B",
+        "thm:C",
+        "thm:D",
+        "thm:E",
+        "def:1",
+        "def:2"
+      ]
+    },
+    "polignac_density": {
+      "description": "thm:1 (positive lower density) + thm:2 (bounded gaps between Polignac numbers). The structural attack on Polignac's conjecture via Zhang's machinery.",
+      "nodes": [
+        "thm:1",
+        "thm:2"
+      ]
+    },
+    "limit_sets_J_J_f": {
+      "description": "thm:3 ($J \\supset [0,c]$), thm:4 ($J_f \\supset [0, c_f]$) — Erdős conjectures resolved via GPY II / Pintz quantitative liminf bounds.",
+      "nodes": [
+        "thm:3",
+        "thm:4"
+      ]
+    },
+    "ratio_and_AP_results": {
+      "description": "thm:5 (oscillation of $d_{n+1}/d_n$), thm:6 (APs of primes with constant gap $d \\le 7\\times 10^7$). Combines Zhang with Green-Tao.",
+      "nodes": [
+        "thm:5",
+        "thm:6"
+      ]
+    },
+    "technical_lemmas": {
+      "description": "lem:1-4 supply counting, density, and bridging arguments connecting GPY/Zhang weights to Polignac-density statements.",
+      "nodes": [
+        "lem:1",
+        "lem:2",
+        "lem:3",
+        "lem:4"
+      ]
+    }
+  },
+  "bibliography": {
+    "Zhang:2013": {
+      "title": "Bounded gaps between primes",
+      "authors": [
+        "Yitang Zhang"
+      ],
+      "arxiv_id": null,
+      "in_registry": false,
+      "role": "foundational — Zhang's $H_1 \\le 7\\times 10^7$ is the input"
+    },
+    "GPY:I": {
+      "title": "Primes in Tuples I",
+      "authors": [
+        "D. A. Goldston",
+        "J. Pintz",
+        "C. Y. Yıldırım"
+      ],
+      "arxiv_id": "math/0508185",
+      "in_registry": true,
+      "role": "foundational — thm:B/C cite this"
+    },
+    "GPY:II": {
+      "title": "Primes in Tuples II",
+      "authors": [
+        "D. A. Goldston",
+        "J. Pintz",
+        "C. Y. Yıldırım"
+      ],
+      "arxiv_id": "0710.2728",
+      "in_registry": true,
+      "role": "foundational — thm:D cites this; powers thm:3"
+    },
+    "Pintz:2013-earlier": {
+      "title": "Earlier Pintz quantitative liminf paper (referenced as [Pin2013])",
+      "authors": [
+        "János Pintz"
+      ],
+      "arxiv_id": null,
+      "in_registry": false,
+      "role": "predecessor — thm:E cite (sharper liminf)"
+    },
+    "GreenTao:APs": {
+      "title": "The primes contain arbitrarily long arithmetic progressions",
+      "authors": [
+        "Ben Green",
+        "Terence Tao"
+      ],
+      "arxiv_id": "math/0404188",
+      "in_registry": false,
+      "role": "foundational — APs of primes input for thm:6"
+    },
+    "Polignac:1849": {
+      "title": "Recherches nouvelles sur les nombres premiers",
+      "authors": [
+        "Alphonse de Polignac"
+      ],
+      "year": 1849,
+      "arxiv_id": null,
+      "in_registry": false,
+      "role": "foundational — original conjecture"
+    }
+  }
+}

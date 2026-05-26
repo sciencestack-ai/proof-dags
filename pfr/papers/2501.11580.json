@@ -1,0 +1,94 @@
+{
+  "paper": "2501.11580",
+  "title": "A polynomial Freiman-Ruzsa inverse theorem for function fields",
+  "authors": ["Thomas F. Bloom"],
+  "generated": "2026-03-18",
+  "status": "complete",
+
+  "nodes": {
+    "def:1": {
+      "type": "Definition",
+      "number": "1",
+      "title": "Generalised arithmetic progressions",
+      "section": "intro",
+      "role": "definition",
+      "summary": "GAPs over $\\mathbb{F}_q[t]$ — the target structure for inverse theorems."
+    },
+    "thm:1": {
+      "type": "Theorem",
+      "number": "1",
+      "section": "intro",
+      "role": "main_result",
+      "summary": "PFR for function fields: If $|A+tA| \\le K|A|$ then $A$ covered by $K^{O(1)}$ translates of GAP of rank $O(\\log K)$."
+    },
+    "cor:1": {
+      "type": "Corollary",
+      "number": "1",
+      "section": "intro",
+      "role": "corollary",
+      "summary": "Corollary on efficient covering."
+    },
+    "thm:2": {
+      "type": "Theorem",
+      "number": "2",
+      "section": "intro",
+      "role": "key_result",
+      "summary": "Vector space case: weak/structural/strong arithmetic dimensions all equal $k$."
+    },
+    "thm:3": {
+      "type": "Theorem",
+      "number": "3",
+      "section": "1",
+      "role": "key_result",
+      "summary": "Self-contained dimension characterization."
+    },
+    "lem:1": {
+      "type": "Lemma",
+      "number": "1",
+      "section": "1",
+      "role": "key_lemma",
+      "summary": "Technical lemma for the proof."
+    },
+    "thm:4": {
+      "type": "Theorem",
+      "number": "4",
+      "section": "2",
+      "role": "application",
+      "summary": "Optimal lower bound for $|A+\\xi A|$ when $\\xi$ transcendental over $\\mathbb{F}_p[t]$."
+    },
+    "conjecture:1": {
+      "type": "Conjecture",
+      "number": "1",
+      "section": "2",
+      "role": "conjecture",
+      "summary": "Conjecture on higher-parameter bounds with multiple transcendental dilates."
+    }
+  },
+
+  "edges": [
+    {
+      "from": "thm:1",
+      "to": "thm:2",
+      "type": "depends_on",
+      "note": "The function-field PFR theorem rests on the vector-space dimension characterization."
+    },
+    {
+      "from": "thm:3",
+      "to": "thm:2",
+      "type": "proves",
+      "note": "Theorem 3 gives the self-contained proof of the dimension equality."
+    },
+    {
+      "from": "thm:3",
+      "to": "lem:1",
+      "type": "depends_on",
+      "note": "The dimension characterization uses the technical Lemma 1."
+    },
+    {
+      "from": "thm:1",
+      "to": "thm:4",
+      "type": "implies",
+      "note": "Applying the main theorem to transcendental dilates yields the optimal sumset lower bound."
+    }
+  ]
+}

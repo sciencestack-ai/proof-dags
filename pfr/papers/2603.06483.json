@@ -1,0 +1,184 @@
+{
+  "paper": "2603.06483",
+  "title": "Uniform sum-product phenomenon for algebraic groups and Bremner's conjecture",
+  "authors": ["Joseph Harrison", "Akshat Mudgal", "Harry Schmidt"],
+  "generated": "2026-03-19",
+  "status": "complete",
+
+  "nodes": {
+    "thm:1.1": {
+      "type": "Theorem",
+      "number": "1.1",
+      "section": "1",
+      "role": "main_result",
+      "summary": "Bremner's conjecture resolved: For elliptic curve $E$ in Weierstrass form with rank $r$, any arithmetic progression, geometric progression, or squared-AP in coordinates has size at most $C^{1+r}$."
+    },
+    "conjecture:1.2": {
+      "type": "Conjecture",
+      "number": "1.2",
+      "section": "1",
+      "role": "context",
+      "summary": "Bremner's original conjecture on bounded arithmetic progressions in elliptic curve coordinates."
+    },
+    "thm:1.3": {
+      "type": "Theorem",
+      "number": "1.3",
+      "section": "1",
+      "role": "main_result",
+      "summary": "Sum-product for algebraic groups: For 1-dim algebraic group $G \\ne G_a$, finite set $A$, correspondences $C_i$, either sumset or correspondences-sum grows polynomially."
+    },
+    "cor:1.4": {
+      "type": "Corollary",
+      "number": "1.4",
+      "section": "1",
+      "role": "corollary",
+      "summary": "Corollary of the uniform sum-product phenomenon."
+    },
+    "thm:1.5": {
+      "type": "Theorem",
+      "number": "1.5",
+      "section": "1",
+      "role": "key_result",
+      "summary": "Elekes-Szabó for small doubling: For $A$ with $|A+A| \\le K|A|$ in algebraic group $G \\ne G_a$, variety $V$ intersects $A^g$ in at most $K^C + |A|^{\\dim(V)-1}$ points."
+    },
+    "thm:1.8": {
+      "type": "Theorem",
+      "number": "1.8",
+      "section": "1",
+      "role": "key_result",
+      "summary": "Non-degenerate projection bound: For non-degenerate variety $V$ and set $A$ with small doubling, projection of $V \\cap A^g$ has size at least $|A|^g / K^{O(1)}$."
+    },
+    "thm:2.1": {
+      "type": "Theorem",
+      "number": "2.1",
+      "section": "2",
+      "role": "application",
+      "summary": "Generalized Bremner: Bounds APs/GPs in coordinates of arbitrary algebraic groups."
+    },
+    "thm:2.3": {
+      "type": "Theorem",
+      "number": "2.3",
+      "section": "2",
+      "role": "key_result",
+      "summary": "Bourgain-Chang type sum-product: For correspondence $C$ of degree $d$, either $|A+A| > |A|^{1+\\delta}$ or $|C(A)+C(A)| \\ge |A|^{2-D\\delta}$."
+    },
+    "thm:2.6": {
+      "type": "Theorem",
+      "number": "2.6",
+      "section": "2",
+      "role": "key_result",
+      "summary": "Elekes-Szabó with codeficiency: Variety $V$ intersects $A^g$ in at most $K^C + |A|^{\\mathrm{codef}(V)}$ points."
+    },
+    "lem:6.1": {
+      "type": "Lemma",
+      "number": "6.1",
+      "section": "6",
+      "role": "key_lemma",
+      "summary": "Freiman-type rank reduction: If $|nA| \\le K|A|$, then subset $A'$ has bounded rank $d \\ll \\log(K)/\\log(n)$."
+    },
+    "lem:6.2": {
+      "type": "Lemma",
+      "number": "6.2",
+      "section": "6",
+      "role": "key_lemma",
+      "summary": "Doubling to rank: If $|A+A| \\le K|A|$, then subset $A'$ of size $\\ge |A|/K^{C'}$ has rank $\\le C \\cdot \\log(K)$. Uses weak PFR over $\\mathbb{Z}$."
+    },
+    "lem:6.3": {
+      "type": "Lemma",
+      "number": "6.3",
+      "section": "6",
+      "role": "key_lemma",
+      "summary": "$\\mathbb{Z}^D$ version: Small doubling in $\\mathbb{Z}^D$ implies subset lies in low-dimensional sublattice. Direct application of GGMT weak PFR."
+    },
+    "thm:4.2": {
+      "type": "Theorem",
+      "number": "4.2",
+      "section": "4",
+      "role": "key_result",
+      "summary": "Cartesian product projection theorem: Key geometric tool for bounding projections."
+    },
+    "prop:5.1": {
+      "type": "Proposition",
+      "number": "5.1",
+      "section": "5",
+      "role": "key_lemma",
+      "summary": "Non-degenerate correspondences and cosets: Structural result on correspondence behavior."
+    },
+    "thm:A.1": {
+      "type": "Theorem",
+      "number": "A.1",
+      "section": "A",
+      "role": "auxiliary",
+      "summary": "Diophantine equations toolbox from David-Philippon, Laurent, Evertse-Schmidt-Schlickewei."
+    }
+  },
+
+  "edges": [
+    {
+      "from": "lem:6.3",
+      "to": "lem:6.2",
+      "type": "implies",
+      "note": "The $\\mathbb{Z}^D$ rank lemma yields the algebraic-group doubling-to-rank lemma."
+    },
+    {
+      "from": "thm:1.5",
+      "to": "lem:6.2",
+      "type": "depends_on",
+      "note": "The Elekes-Szabó bound for small doubling uses the doubling-to-rank reduction."
+    },
+    {
+      "from": "thm:2.6",
+      "to": "lem:6.2",
+      "type": "depends_on",
+      "note": "The codeficiency bound uses the doubling-to-rank reduction."
+    },
+    {
+      "from": "thm:1.8",
+      "to": "thm:4.2",
+      "type": "depends_on",
+      "note": "The non-degenerate projection bound uses the Cartesian-product projection theorem."
+    },
+    {
+      "from": "thm:1.3",
+      "to": "thm:1.8",
+      "type": "depends_on",
+      "note": "The sum-product dichotomy rests on the non-degenerate projection bound."
+    },
+    {
+      "from": "thm:1.3",
+      "to": "thm:1.1",
+      "type": "proves",
+      "note": "The sum-product phenomenon for algebraic groups settles Bremner's conjecture."
+    },
+    {
+      "from": "thm:1.3",
+      "to": "thm:2.3",
+      "type": "depends_on",
+      "note": "The sum-product dichotomy uses the Bourgain-Chang type estimate."
+    },
+    {
+      "from": "thm:1.8",
+      "to": "prop:5.1",
+      "type": "depends_on",
+      "note": "The non-degenerate projection bound uses the coset structure of non-degenerate correspondences."
+    },
+    {
+      "from": "prop:5.1",
+      "to": "thm:A.1",
+      "type": "depends_on",
+      "note": "The coset-structure result uses the Diophantine toolbox of Appendix A."
+    },
+    {
+      "from": "thm:2.6",
+      "to": "thm:1.5",
+      "type": "generalizes",
+      "note": "The codeficiency version generalizes the dimension-based Elekes-Szabó bound."
+    },
+    {
+      "from": "lem:6.2",
+      "to": "lem:6.1",
+      "type": "depends_on",
+      "note": "The doubling-to-rank lemma uses the $n$-fold sumset rank-reduction lemma."
+    }
+  ]
+}

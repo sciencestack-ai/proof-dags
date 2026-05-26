@@ -1,0 +1,341 @@
+{
+  "paper": "1907.10525",
+  "title": "Prismatic Dieudonné theory",
+  "authors": [
+    "Johannes Anschütz",
+    "Arthur-César Le Bras"
+  ],
+  "year": 2019,
+  "venue": "preprint",
+  "generated": "2026-05-08",
+  "status": "complete",
+  "nodes": {
+    "thm:1.4.1": {
+      "type": "Theorem",
+      "number": "1.4.1",
+      "section": "1.4",
+      "role": "main_result",
+      "summary": "For $G$ a $p$-divisible group over $R$ quasi-syntomic, the pair $(\\mathcal{M}_{\\mathbbl{\\Delta}}(G) = \\mathcal{E}xt^1(G, \\mathcal{O}^{\\mathrm{pris}}), \\varphi_{\\mathcal{M}})$ is an admissible prismatic Dieudonné module. Defines the prismatic Dieudonné functor."
+    },
+    "thm:1.4.4": {
+      "type": "Theorem",
+      "number": "1.4.4",
+      "section": "1.4",
+      "role": "main_result",
+      "summary": "Main theorem (intro): the prismatic Dieudonné functor $\\mathcal{M}_{\\mathbbl{\\Delta}}: G \\mapsto (\\mathcal{M}_{\\mathbbl{\\Delta}}(G), \\varphi)$ is an antiequivalence on quasi-syntomic rings. Headline classification result."
+    },
+    "thm:3.1.6": {
+      "type": "Theorem",
+      "number": "3.1.6",
+      "section": "3.1",
+      "role": "imported",
+      "summary": "Bhatt–Scholze Hodge-Tate comparison (imported, BS thm:4.10): $\\eta_R^*: \\Omega^*_{R/(A/I)} \\to H^*(\\overline{\\mathbbl{\\Delta}}_{R/A})$ extends. Foundation for the prismatic Dieudonné apparatus."
+    },
+    "thm:3.1.7": {
+      "type": "Theorem",
+      "number": "3.1.7",
+      "section": "3.1",
+      "role": "imported",
+      "summary": "Bhatt–Scholze crystalline comparison (imported, BS thm:5.2): $\\mathbbl{\\Delta}_{R^{(1)}/A} \\simeq R\\Gamma_{\\mathrm{crys}}(R/A)$. The char-$p$ specialization the Dieudonné theory runs on."
+    },
+    "thm:3.3.9": {
+      "type": "Theorem",
+      "number": "3.3.9",
+      "section": "3.3",
+      "role": "imported",
+      "summary": "André's lemma (imported, BS thm:7.14): for $R$ perfectoid, exists $p$-completely faithfully flat $R \\to S$ of perfectoids with $S$ absolutely integrally closed. The flatness input."
+    },
+    "thm:3.4.4": {
+      "type": "Theorem",
+      "number": "3.4.4",
+      "section": "3.4",
+      "role": "key_reduction",
+      "summary": "For QRS-perfectoid $R$: $\\mathcal{N}^{\\ge i}/\\mathcal{N}^{\\ge i+1}(\\mathbbl{\\Delta}_R) \\cong \\mathrm{Fil}^{\\mathrm{conj}}_i(\\overline{\\mathbbl{\\Delta}}_R)\\{i\\}$. Nygaard graded matches conjugate filtration on Hodge-Tate side; structural backbone of the Dieudonné identification."
+    },
+    "thm:4.3.2": {
+      "type": "Theorem",
+      "number": "4.3.2",
+      "section": "4.3",
+      "role": "key_reduction",
+      "summary": "For $R$ quasi-syntomic with $pR = 0$ and $G$ a $p$-divisible group: $\\mathcal{M}_{\\mathbbl{\\Delta}}(G) \\cong v_*^{\\mathrm{crys}}(\\mathcal{E}xt^1_{(R/\\mathbb{Z}_p)_{\\mathrm{crys}}}(...))$ Frobenius-equivariantly. Connects prismatic Dieudonné to classical crystalline Dieudonné."
+    },
+    "thm:4.4.1": {
+      "type": "Theorem",
+      "number": "4.4.1",
+      "section": "4.4",
+      "role": "technical",
+      "summary": "Resolution: every abelian group $G$ in the relevant category admits a functorial resolution by polynomial $\\mathbb{Z}[X_i]$ where each $X_i$ is a finite disjoint union. Homological-algebra input enabling Ext computations."
+    },
+    "thm:4.5.4": {
+      "type": "Theorem",
+      "number": "4.5.4",
+      "section": "4.5",
+      "role": "key_reduction",
+      "summary": "Prismatic-cohomology vanishing for abelian schemes: $\\mathcal{E}xt^i_{(R)_{\\mathbbl{\\Delta}}}(u^{-1}(X), \\overline{\\mathcal{O}}_{\\mathbbl{\\Delta}}) = 0$ for $i \\ne ?$ for abelian $X/R$. Computational input."
+    },
+    "thm:4.5.6": {
+      "type": "Theorem",
+      "number": "4.5.6",
+      "section": "4.5",
+      "role": "key_reduction",
+      "summary": "Companion vanishing on the integral $\\mathcal{O}_{\\mathbbl{\\Delta}}$ side: $\\mathcal{E}xt^i_{(R)_{\\mathbbl{\\Delta}}}(u^{-1}(X), \\mathcal{O}_{\\mathbbl{\\Delta}}) = 0$ for $i$ outside the relevant range."
+    },
+    "thm:4.6.1": {
+      "type": "Theorem",
+      "number": "4.6.1",
+      "section": "4.6",
+      "role": "imported",
+      "summary": "Embedding theorem (imported): every finite locally free group scheme over $S$ embeds Zariski-locally in a (projective) abelian scheme. Lets Dieudonné theory of finite group schemes be reduced to abelian schemes."
+    },
+    "thm:4.6.7": {
+      "type": "Theorem",
+      "number": "4.6.7",
+      "section": "4.6",
+      "role": "key_reduction",
+      "summary": "For $R$ quasi-syntomic and $G$ a $p$-divisible group: $(\\mathcal{M}_{\\mathbbl{\\Delta}}(G), \\varphi)$ is admissible — i.e. lies in the right module category. Proves admissibility for the body version of the main theorem."
+    },
+    "thm:4.6.10": {
+      "type": "Theorem",
+      "number": "4.6.10",
+      "section": "4.6",
+      "role": "main_result",
+      "summary": "Main antiequivalence (body): for $R$ quasi-syntomic, $\\mathcal{M}_{\\mathbbl{\\Delta}}: \\mathrm{BT}(R) \\to \\mathrm{DM}^{\\mathrm{adm}}(R)$ is an antiequivalence between $p$-divisible groups and admissible prismatic Dieudonné modules. Body proof of thm:1.4.4."
+    },
+    "thm:4.8.1": {
+      "type": "Theorem",
+      "number": "4.8.1",
+      "section": "4.8",
+      "role": "key_reduction",
+      "summary": "For $R$ quasi-regular semiperfectoid: prismatic Dieudonné functor is fully faithful for $p$-divisible groups. The fully-faithful half on QRSP rings, used in proving thm:4.6.10."
+    },
+    "thm:4.9.5": {
+      "type": "Theorem",
+      "number": "4.9.5",
+      "section": "4.9",
+      "role": "key_reduction",
+      "summary": "For $R$ quasi-regular semiperfectoid: full antiequivalence on QRSP rings. Combined with descent extends to thm:4.6.10."
+    },
+    "thm:5.1.4": {
+      "type": "Theorem",
+      "number": "5.1.4",
+      "section": "5.1",
+      "role": "main_result",
+      "summary": "Natural exact antiequivalence $H \\mapsto (M_{\\mathbbl{\\Delta}}(H), \\varphi, \\psi)$ (with inverse also exact). The fully-faithful + essentially-surjective version of the main theorem at the level of finite group schemes."
+    },
+    "thm:5.2.5": {
+      "type": "Theorem",
+      "number": "5.2.5",
+      "section": "5.2",
+      "role": "key_reduction",
+      "summary": "For complete regular local $R$ with perfect residue field of char $p$: functor $\\mathrm{BT}(R) \\to \\mathrm{BK}_{\\mathrm{min}}(A)$, $G \\mapsto v^* \\mathcal{M}_{\\mathbbl{\\Delta}}(G)((A,I))$. Identifies prismatic Dieudonné with Breuil–Kisin minimal modules over a regular local ring."
+    }
+  },
+  "edges": [
+    {
+      "from": "thm:1.4.1",
+      "to": "thm:4.6.7",
+      "type": "depends_on",
+      "note": "Intro statement is the body theorem about admissibility."
+    },
+    {
+      "from": "thm:1.4.4",
+      "to": "thm:4.6.10",
+      "type": "depends_on",
+      "note": "Main intro theorem is the body antiequivalence."
+    },
+    {
+      "from": "thm:3.4.4",
+      "to": "thm:3.1.6",
+      "type": "depends_on",
+      "note": "Nygaard graded match runs on Bhatt–Scholze Hodge-Tate comparison."
+    },
+    {
+      "from": "thm:3.4.4",
+      "to": "thm:3.1.7",
+      "type": "depends_on",
+      "note": "Crystalline comparison machinery underlies the conjugate-filtration computation."
+    },
+    {
+      "from": "thm:4.3.2",
+      "to": "thm:3.4.4",
+      "type": "depends_on",
+      "note": "Prismatic-vs-crystalline Dieudonné comparison uses the Nygaard graded structure."
+    },
+    {
+      "from": "thm:4.5.4",
+      "to": "thm:4.4.1",
+      "type": "depends_on",
+      "note": "Vanishing computations use the functorial resolution."
+    },
+    {
+      "from": "thm:4.5.6",
+      "to": "thm:4.5.4",
+      "type": "extends",
+      "note": "Integral version of the structure-sheaf vanishing."
+    },
+    {
+      "from": "thm:4.6.7",
+      "to": "thm:4.5.6",
+      "type": "depends_on",
+      "note": "Admissibility uses the integral $\\mathcal{O}_{\\mathbbl{\\Delta}}$-vanishing."
+    },
+    {
+      "from": "thm:4.6.7",
+      "to": "thm:3.4.4",
+      "type": "depends_on",
+      "note": "Nygaard-graded structure characterizes admissibility."
+    },
+    {
+      "from": "thm:4.6.10",
+      "to": "thm:4.6.7",
+      "type": "depends_on",
+      "note": "Antiequivalence requires admissibility on the target side."
+    },
+    {
+      "from": "thm:4.6.10",
+      "to": "thm:4.9.5",
+      "type": "depends_on",
+      "note": "Antiequivalence reduces to QRSP via descent."
+    },
+    {
+      "from": "thm:4.6.10",
+      "to": "thm:4.6.1",
+      "type": "depends_on",
+      "note": "Embedding theorem reduces finite group schemes to abelian schemes."
+    },
+    {
+      "from": "thm:4.8.1",
+      "to": "thm:4.3.2",
+      "type": "depends_on",
+      "note": "Fully-faithful on QRSP via crystalline-Dieudonné identification."
+    },
+    {
+      "from": "thm:4.8.1",
+      "to": "thm:3.3.9",
+      "type": "depends_on",
+      "note": "André's flatness lemma supplies the descent input."
+    },
+    {
+      "from": "thm:4.9.5",
+      "to": "thm:4.8.1",
+      "type": "extends",
+      "note": "Full antiequivalence extends fully-faithfulness on QRSP."
+    },
+    {
+      "from": "thm:5.1.4",
+      "to": "thm:4.6.10",
+      "type": "specializes",
+      "note": "Finite-group-scheme antiequivalence specializes the $p$-divisible group case."
+    },
+    {
+      "from": "thm:5.2.5",
+      "to": "thm:4.6.10",
+      "type": "extends",
+      "note": "BK-minimal-module identification extends antiequivalence to a regular local ring setting."
+    }
+  ],
+  "critical_path": [
+    "thm:1.4.4",
+    "thm:4.6.10",
+    "thm:4.9.5",
+    "thm:4.8.1",
+    "thm:4.3.2",
+    "thm:3.4.4",
+    "thm:3.1.7"
+  ],
+  "proof_architecture": {
+    "main_results": {
+      "description": "Section 1.4, 4.6, 5.1. Definition + main antiequivalence theorem on quasi-syntomic rings; finite-group-scheme version.",
+      "nodes": [
+        "thm:1.4.1",
+        "thm:1.4.4",
+        "thm:4.6.10",
+        "thm:5.1.4"
+      ]
+    },
+    "imported_BS_machinery": {
+      "description": "Section 3. Hodge-Tate comparison, crystalline comparison, André's flatness — the Bhatt–Scholze prismatic foundation imported.",
+      "nodes": [
+        "thm:3.1.6",
+        "thm:3.1.7",
+        "thm:3.3.9"
+      ]
+    },
+    "Nygaard_and_Dieudonne": {
+      "description": "Sections 3.4, 4.3. Nygaard graded matches conjugate filtration; prismatic Dieudonné = crystalline Dieudonné in char $p$.",
+      "nodes": [
+        "thm:3.4.4",
+        "thm:4.3.2"
+      ]
+    },
+    "homological_apparatus": {
+      "description": "Section 4.4–4.6. Functorial resolutions, Ext-vanishing for abelian schemes, embedding finite group schemes, admissibility.",
+      "nodes": [
+        "thm:4.4.1",
+        "thm:4.5.4",
+        "thm:4.5.6",
+        "thm:4.6.1",
+        "thm:4.6.7"
+      ]
+    },
+    "QRSP_antiequivalence": {
+      "description": "Sections 4.8, 4.9. Fully-faithful + full antiequivalence on QRSP rings — the technical heart from which the general result is descended.",
+      "nodes": [
+        "thm:4.8.1",
+        "thm:4.9.5"
+      ]
+    },
+    "applications": {
+      "description": "Section 5.2. Identification with Breuil–Kisin minimal modules over regular local rings.",
+      "nodes": [
+        "thm:5.2.5"
+      ]
+    }
+  },
+  "bibliography": {
+    "Prismatic": {
+      "title": "Prisms and prismatic cohomology",
+      "authors": [
+        "Bhatt",
+        "Scholze"
+      ],
+      "year": 2019,
+      "arxiv_id": "1905.08229",
+      "in_registry": true,
+      "role": "Foundation: Hodge-Tate comparison, crystalline comparison, André's flatness all imported."
+    },
+    "ScholzeWeinstein": {
+      "title": "Moduli of p-divisible groups",
+      "authors": [
+        "Scholze",
+        "Weinstein"
+      ],
+      "year": 2012,
+      "arxiv_id": "1211.6357",
+      "in_registry": true,
+      "role": "Predecessor on $p$-divisible groups in the perfectoid framework. Companion result (geometry side)."
+    },
+    "BMS1": {
+      "title": "Integral p-adic Hodge theory",
+      "authors": [
+        "Bhatt",
+        "Morrow",
+        "Scholze"
+      ],
+      "year": 2016,
+      "arxiv_id": "1602.03148",
+      "in_registry": true,
+      "role": "Breuil–Kisin–Fargues module classification (BMS1 thm:4.28) is parallel-mechanism to thm:5.2.5."
+    },
+    "Faltings:Almost": {
+      "title": "Almost étale extensions",
+      "authors": [
+        "Faltings"
+      ],
+      "year": 2002,
+      "arxiv_id": null,
+      "in_registry": false,
+      "role": "Almost-mathematics foundation in the prismatic Dieudonné apparatus."
+    }
+  }
+}

@@ -1,0 +1,310 @@
+{
+  "paper": "1604.06032",
+  "title": "A study guide for the $l^2$ Decoupling Theorem",
+  "authors": [
+    "Jean Bourgain",
+    "Ciprian Demeter"
+  ],
+  "generated": "2026-05-12",
+  "status": "complete",
+  "nodes": {
+    "thm:1.1": {
+      "type": "Theorem",
+      "number": "1.1",
+      "section": "1",
+      "role": "main_result",
+      "summary": "Sharp (up to $\\delta^{-\\epsilon}$) bound on the decoupling constant for the truncated paraboloid: $\\mathrm{Dec}_n(\\delta,p)\\lesssim_{\\epsilon,p,n}\\delta^{-\\epsilon}$ for $2\\le p\\le\\tfrac{2(n+1)}{n-1}$. A streamlined, self-contained re-proof of the Bourgain–Demeter $l^2$ decoupling theorem with cleaner notation and bookkeeping."
+    },
+    "lem:4.1": {
+      "type": "Lemma",
+      "number": "4.1",
+      "section": "4",
+      "role": "technical",
+      "summary": "Abstract weight-transfer lemma: if $O_1,O_2$ on weights satisfy sub/super-linearity and $O_1(1_B)\\lesssim O_2(w_{B,E})$ on $R$-cubes, then $O_1(w_B)\\lesssim O_2(w_B)$. Lets sharp-cutoff estimates be upgraded to weighted ones, with explicit tail-decay parameter $E$."
+    },
+    "cor:4.3": {
+      "type": "Corollary",
+      "number": "4.3",
+      "section": "4",
+      "role": "technical",
+      "summary": "Reverse Hölder / local constancy for the extension operator: for $q\\ge p\\ge1$, an $R^{-1}$-cube $Q$ and an $R$-cube $B$, $\\|E_Qg\\|_{L^q_\\sharp(w_{B,E})}\\lesssim\\|E_Qg\\|_{L^p_\\sharp(w_{B,Ep/q})}$. $E_Qg$ is essentially constant on $R$-balls."
+    },
+    "thm:5.1": {
+      "type": "Theorem",
+      "number": "5.1",
+      "section": "5",
+      "role": "key_reduction",
+      "summary": "Equivalent formulation: decoupling $\\mathrm{Dec}_n(\\delta,p)\\lesssim\\delta^{-\\epsilon}$ is equivalent to a localized inequality for $f$ Fourier-supported in the $1/R$-neighborhood of the paraboloid over $[0,1]^{n-1}$, with explicit weight $w_{B_R,F}$ and parameter management. The clean statement the rest of the argument runs on."
+    },
+    "prop:6.1": {
+      "type": "Proposition",
+      "number": "6.1",
+      "section": "6",
+      "role": "technical",
+      "summary": "$L^2$ decoupling (the trivial flat case): for a cube $Q$ with $l(Q)\\ge R^{-1}$, $\\|E_Qg\\|_{L^2(w_{B_R})}\\lesssim(\\sum_{q\\in\\mathrm{Part}_{1/R}(Q)}\\|E_qg\\|_{L^2(w_{B_R})}^2)^{1/2}$. Plancherel — the $p=2$ endpoint, no curvature needed."
+    },
+    "prop:7.1": {
+      "type": "Proposition",
+      "number": "7.1",
+      "section": "7",
+      "role": "key_mechanism",
+      "summary": "Parabolic rescaling: for a $\\sigma^{1/2}$-cube $Q\\subset[0,1]^{n-1}$ and $B$ of radius $\\ge\\delta^{-1}$, $\\|E_Qg\\|_{L^p(w_B)}\\lesssim\\mathrm{Dec}_p(\\delta/\\sigma,\\dots)(\\sum_{q\\subset Q,\\,l(q)=\\delta^{1/2}}\\|E_qg\\|^2)^{1/2}$. The affine-invariance step that enables the multiscale self-improvement."
+    },
+    "def:8.1": {
+      "type": "Definition",
+      "number": "8.1",
+      "section": "8",
+      "role": "definition",
+      "summary": "Cubes $Q_1,\\dots,Q_n\\subset[0,1]^{n-1}$ are $\\nu$-transverse if the parallelepiped spanned by the paraboloid's unit normals over the $Q_i$ has volume $>\\nu$. The transversality hypothesis for the multilinear estimates."
+    },
+    "thm:8.2": {
+      "type": "Theorem",
+      "number": "8.2",
+      "section": "8",
+      "role": "key_reduction",
+      "summary": "Linear-versus-multilinear decoupling: assuming the theorem in dimension $n-1$, the linear decoupling constant is controlled by $C_\\nu\\delta^{-\\epsilon(\\nu)}$ times the $\\nu$-transverse multilinear constant, with $\\epsilon(\\nu)\\to0$. The Bourgain–Guth broad/narrow reduction, cleanly stated, with induction on dimension."
+    },
+    "prop:8.4": {
+      "type": "Proposition",
+      "number": "8.4",
+      "section": "8",
+      "role": "technical",
+      "summary": "Broad/narrow inequality ($n=3$): assuming $\\mathrm{Dec}_2(\\delta,p)\\lesssim\\delta^{-\\epsilon}$, for each $m\\ge1$, $R\\ge K^{2^m}$, $\\|Eg\\|_{L^p(w_{B_R,E})}\\le C_\\epsilon K^\\epsilon[(\\sum_\\alpha\\dots)+\\dots]$ — the dichotomy with explicit scale parameter $m$."
+    },
+    "prop:8.5": {
+      "type": "Proposition",
+      "number": "8.5",
+      "section": "8",
+      "role": "technical",
+      "summary": "Cap-localized broad/narrow ($n=3$): the same split applied inside a square $\\tau$ of side $\\ge R^{-1/2}K^{2^{m-1}}$, the rescaled building block of the iteration."
+    },
+    "thm:9.1": {
+      "type": "Theorem",
+      "number": "9.1",
+      "section": "9",
+      "role": "foundational",
+      "summary": "Multilinear Kakeya for tiles: for $n$ families of $R^{1/2}\\times\\cdots\\times R^{1/2}\\times R$ tiles with the long axes pointing in $\\nu$-transverse directions, the appropriate $L^{n/(n-1)}$ overlap integral is controlled. The geometric input (a packaging of Guth's multilinear Kakeya)."
+    },
+    "thm:9.2": {
+      "type": "Theorem",
+      "number": "9.2",
+      "section": "9",
+      "role": "key_mechanism",
+      "summary": "From multilinear Kakeya to multilinear decoupling (ball inflation): for $\\nu$-transverse cubes $Q_1,\\dots,Q_n$, $p\\ge\\tfrac{2n}{n-1}$, and $B$ of radius $\\delta^{-2}$ partitioned into $\\delta^{-1}$-balls $\\Delta$, the averaged product of $l^2$-square-functions over the $\\Delta$ is bounded by the same over $B$, up to $\\delta^{-\\epsilon}$. The engine that gains at each scale."
+    },
+    "prop:10.1": {
+      "type": "Proposition",
+      "number": "10.1",
+      "section": "10",
+      "role": "main_technical",
+      "summary": "Single ball-inflation cycle: $A_p(1,B^2,1,g)\\lesssim_{\\epsilon,\\nu}\\delta^{-\\epsilon}A_p(2,B^2,2,g)^{1-\\kappa_p}D_p(1,B^2,g)^{\\kappa_p}$. One step of the iteration, with exponent $\\kappa_p$ fixed by interpolation."
+    },
+    "prop:10.2": {
+      "type": "Proposition",
+      "number": "10.2",
+      "section": "10",
+      "role": "main_technical",
+      "summary": "Single cycle on a $2^M$-cube, uniformly in $M$: $A_p(1,B^M,1,g)\\lesssim_{\\epsilon,\\nu}\\delta^{-\\epsilon}A_p(2,B^M,2,g)^{1-\\kappa_p}D_p(1,B^M,g)^{\\kappa_p}$. The cycle that survives passing to many nested scales."
+    },
+    "prop:10.3": {
+      "type": "Proposition",
+      "number": "10.3",
+      "section": "10",
+      "role": "main_technical",
+      "summary": "Cycle at level $2^l$: for $l+1\\le m$, $A_p(2^l,B^{2^m},2^l,g)\\lesssim_{\\epsilon,\\nu}\\delta^{-2^l\\epsilon}A_p(2^{l+1},\\dots)^{1-\\kappa_p}D_p(2^l,\\dots)^{\\kappa_p}$. The recursion at each level of the binary scale ladder."
+    },
+    "prop:10.4": {
+      "type": "Proposition",
+      "number": "10.4",
+      "section": "10",
+      "role": "main_technical",
+      "summary": "$m$-fold unrolled iterate: $A_p(1,B^{2^m},1,g)\\lesssim_{\\epsilon,\\nu,m}\\delta^{-\\epsilon}A_p(2^{m-1},\\dots)^{(1-\\kappa_p)^{m-1}}\\prod_{l=0}^{m-2}D_p(2^l,\\dots)^{\\kappa_p(1-\\kappa_p)^l}$. Composing the cycles down the scale ladder."
+    },
+    "thm:11.1": {
+      "type": "Theorem",
+      "number": "11.1",
+      "section": "11",
+      "role": "key_reduction",
+      "summary": "The final argument: $A_p(1,B^{2^m},1,g)\\lesssim_{\\epsilon,\\nu,m}\\delta^{-(\\eta_p+\\epsilon)(2^m-\\frac{2\\kappa_p}{\\cdots})}\\cdots$ — sending $m\\to\\infty$ and optimizing forces $\\eta_p=0$, i.e. $\\mathrm{Dec}_n(\\delta,p)\\lesssim\\delta^{-\\epsilon}$, which is thm:1.1."
+    }
+  },
+  "edges": [
+    {
+      "from": "thm:1.1",
+      "to": "thm:11.1",
+      "type": "depends_on",
+      "note": "The sharp decoupling bound is the $m\\to\\infty$ limit of the final iterated inequality."
+    },
+    {
+      "from": "thm:1.1",
+      "to": "thm:5.1",
+      "type": "depends_on",
+      "note": "Works with the equivalent localized formulation throughout."
+    },
+    {
+      "from": "thm:11.1",
+      "to": "prop:10.4",
+      "type": "depends_on",
+      "note": "The final inequality is the $m$-fold unrolled iterate with the decoupling factors estimated by the inductive hypothesis."
+    },
+    {
+      "from": "prop:10.4",
+      "to": "prop:10.3",
+      "type": "depends_on",
+      "note": "Composes the level-$2^l$ cycles down the binary scale ladder."
+    },
+    {
+      "from": "prop:10.3",
+      "to": "prop:10.2",
+      "type": "generalizes",
+      "note": "The level-$2^l$ recursion is the rescaled form of the single cycle on a $2^M$-cube."
+    },
+    {
+      "from": "prop:10.2",
+      "to": "prop:10.1",
+      "type": "generalizes",
+      "note": "Uniform-in-$M$ version of the basic ball-inflation cycle."
+    },
+    {
+      "from": "prop:10.1",
+      "to": "thm:9.2",
+      "type": "depends_on",
+      "note": "Each cycle is an application of the multilinear decoupling (ball-inflation) inequality."
+    },
+    {
+      "from": "prop:10.1",
+      "to": "thm:8.2",
+      "type": "depends_on",
+      "note": "...combined with the linear-vs-multilinear reduction to put the narrow term back into linear form."
+    },
+    {
+      "from": "thm:9.2",
+      "to": "thm:9.1",
+      "type": "depends_on",
+      "note": "Multilinear decoupling is bootstrapped from the multilinear Kakeya inequality for tiles."
+    },
+    {
+      "from": "thm:9.2",
+      "to": "prop:6.1",
+      "type": "depends_on",
+      "note": "The $L^2$ (flat) decoupling handles the orthogonality at the finest scale."
+    },
+    {
+      "from": "thm:9.2",
+      "to": "cor:4.3",
+      "type": "depends_on",
+      "note": "Local constancy normalizes the $L^p$ norms in the ball-inflation argument."
+    },
+    {
+      "from": "thm:8.2",
+      "to": "prop:8.4",
+      "type": "depends_on",
+      "note": "The reduction runs through the quantitative broad/narrow inequality."
+    },
+    {
+      "from": "thm:8.2",
+      "to": "prop:8.5",
+      "type": "depends_on",
+      "note": "...iterated via the cap-localized version."
+    },
+    {
+      "from": "thm:8.2",
+      "to": "prop:7.1",
+      "type": "depends_on",
+      "note": "Sub-cubes are rescaled to unit scale between steps."
+    },
+    {
+      "from": "thm:8.2",
+      "to": "def:8.1",
+      "type": "depends_on",
+      "note": "Transversality is the regime where the multilinear term is gainful."
+    },
+    {
+      "from": "thm:5.1",
+      "to": "lem:4.1",
+      "type": "depends_on",
+      "note": "The weight-transfer lemma converts the sharp-cutoff inequality to the weighted equivalent form."
+    },
+    {
+      "from": "prop:8.4",
+      "to": "thm:9.2",
+      "type": "depends_on",
+      "note": "The narrow term is recognized as a multilinear-decoupling situation."
+    }
+  ],
+  "critical_path": [
+    "thm:1.1",
+    "thm:11.1",
+    "prop:10.4",
+    "prop:10.1",
+    "thm:9.2",
+    "thm:9.1"
+  ],
+  "proof_architecture": {
+    "main_result": {
+      "description": "The sharp $l^2$ decoupling theorem for the paraboloid, re-proved.",
+      "nodes": [
+        "thm:1.1"
+      ]
+    },
+    "setup_and_tools": {
+      "description": "Weight transfer, local constancy, the equivalent localized formulation, the trivial $L^2$ case, and parabolic rescaling.",
+      "nodes": [
+        "lem:4.1",
+        "cor:4.3",
+        "thm:5.1",
+        "prop:6.1",
+        "prop:7.1"
+      ]
+    },
+    "linear_vs_multilinear": {
+      "description": "The Bourgain–Guth broad/narrow dichotomy and its quantitative forms, with induction on dimension.",
+      "nodes": [
+        "def:8.1",
+        "thm:8.2",
+        "prop:8.4",
+        "prop:8.5"
+      ]
+    },
+    "multilinear_core": {
+      "description": "Multilinear Kakeya for tiles, the ball-inflation inequality it yields, and the iteration scheme (single cycle, uniform-in-$M$, level-$2^l$, $m$-fold) closed by the final argument.",
+      "nodes": [
+        "thm:9.1",
+        "thm:9.2",
+        "prop:10.1",
+        "prop:10.2",
+        "prop:10.3",
+        "prop:10.4",
+        "thm:11.1"
+      ]
+    }
+  },
+  "bibliography": {
+    "BD-l2": {
+      "title": "The proof of the l^2 Decoupling Conjecture",
+      "authors": [
+        "Bourgain",
+        "Demeter"
+      ],
+      "arxiv_id": "1403.5335",
+      "in_registry": true
+    },
+    "Guth:MultilinearKakeya": {
+      "title": "A short proof of the multilinear Kakeya inequality",
+      "authors": [
+        "Guth"
+      ],
+      "arxiv_id": "1409.4683",
+      "in_registry": true
+    },
+    "BD-curves": {
+      "title": "Decouplings for curves and hypersurfaces with nonzero Gaussian curvature",
+      "authors": [
+        "Bourgain",
+        "Demeter"
+      ],
+      "arxiv_id": "1409.1634",
+      "in_registry": true
+    }
+  }
+}

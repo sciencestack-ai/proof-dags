@@ -1,0 +1,4 @@
+{
+  "description": "Papers queued for extraction in the prime-number-theorem DAG. All currently extracted; the classical PNT spine (Riemann → zero-free region → PNT → PNT in APs) is pre-arXiv and lives in manifest.json `foundational`, validated against the PNT+ Lean blueprint rather than extracted. Shared papers (Maynard large-moduli I & II, Guth–Maynard, Tao–Trudgian–Yang, Polymath8a) are extracted in sibling DAGs (`maynard-small-gaps`, `large-values-zero-density`) and reused via cross-DAG edges in graph.json.",
+  "queue": []
+}

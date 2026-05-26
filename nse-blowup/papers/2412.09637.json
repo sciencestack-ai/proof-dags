@@ -1,0 +1,643 @@
+{
+  "paper": "2412.09637",
+  "title": "Sharp non-uniqueness for the Navier-Stokes equations in R^3",
+  "authors": [
+    "Changxing Miao",
+    "Yao Nie",
+    "Weikui Ye"
+  ],
+  "generated": "2026-03-10",
+  "status": "complete",
+  "nodes": {
+    "def:1.1": {
+      "type": "Definition",
+      "number": "1.1",
+      "section": "1",
+      "role": "definition",
+      "summary": "Very weak solution of the Navier-Stokes equations on $R^3$: u in $L^2([0,T]$ x $R^3)$ is divergence-free a.e. and satisfies the integral identity against test functions in $D_T$."
+    },
+    "thm:1.2": {
+      "type": "Theorem",
+      "number": "1.2",
+      "section": "1",
+      "role": "main_result",
+      "summary": "Sharp and strong non-uniqueness: for $1 \\le$ p < 2, any weak solution u of the Navier-Stokes equations in $L^p([0,T_0]$; $L^\\infty(R^3))$ is non-unique. Sharp at the Ladyzhenskaya-Prodi-Serrin endpoint $(2,\\infty)$."
+    },
+    "rem:1.3": {
+      "type": "Remark",
+      "number": "1.3",
+      "section": "1",
+      "role": "context",
+      "summary": "Compares with Cheskidov-Luo's $T^3$ result which required at least one regularity interval. This result removes that assumption and works on the whole space $R^3$ via an incompressible perturbation fluid technique."
+    },
+    "lem:2.1": {
+      "type": "Lemma",
+      "number": "2.1",
+      "section": "2",
+      "role": "auxiliary",
+      "summary": "Geometric Lemma: decomposes any symmetric matrix R near Id as a sum of rank-one tensors sum $a_k^2(R)$ kbar tensor kbar over directions k in $\\Lambda$ subset $S^2$ cap $Q^3$."
+    },
+    "rem:2.2": {
+      "type": "Remark",
+      "number": "2.2",
+      "section": "2",
+      "role": "context",
+      "summary": "Explicit construction of $\\Lambda$ with 6 rational directions in $S^2$ cap $Q^3$ and the associated orthonormal bases (k, kbar, kbarbar)."
+    },
+    "lem:2.3": {
+      "type": "Lemma",
+      "number": "2.3",
+      "section": "2",
+      "role": "auxiliary",
+      "summary": "Decoupling estimate: for smooth f supported on [-L/2,L/2]^d and periodic g on $T^d, ||fg(\\lambda$ .)||_Lp ~ ||f||_Lp ||g||_Lp up to an error of order $\\lambda^{-1/p}$."
+    },
+    "prop:2.4": {
+      "type": "Proposition",
+      "number": "2.4",
+      "section": "2",
+      "role": "foundational",
+      "summary": "Gluing of weak solutions: if $u_1$ and $u_2$ are weak solutions on consecutive time intervals with matching data at the junction, the concatenation is a weak solution on the combined interval."
+    },
+    "def:2.5": {
+      "type": "Definition",
+      "number": "2.5",
+      "section": "2",
+      "role": "definition",
+      "summary": "Standard spatial and temporal mollifiers $\\psi_\\epsilon$ and $\\phi_\\epsilon$ defined from smooth compactly supported kernels."
+    },
+    "def:2.6": {
+      "type": "Definition",
+      "number": "2.6",
+      "section": "2",
+      "role": "definition",
+      "summary": "Mixed time-spatial Besov spaces $tilde{L}^r_T B^s_{p,q}(R^d)$ defined via Littlewood-Paley decomposition."
+    },
+    "lem:2.7": {
+      "type": "Lemma",
+      "number": "2.7",
+      "section": "2",
+      "role": "auxiliary",
+      "summary": "Maximal regularity for the heat equation in Besov spaces: if $u_0$ in $B^s_{p,q}$ and f in $tilde{L}^{r_2}_t B^{s-2+2/r_2}_{p,q}$, then u in $tilde{L}^{r_1}_t B^{s+2/r_1}_{p,q}$ with universal constant."
+    },
+    "prop:3.1": {
+      "type": "Proposition",
+      "number": "3.1",
+      "section": "3.2",
+      "role": "key_reduction",
+      "summary": "Main iterative proposition: given $(u_q, p_q$, $Rring_q)$ solving the Navier-Stokes-Reynolds system at level q, constructs $(u_{q+1}, p_{q+1}$, $Rring_{q+1})$ at level q+1 satisfying all inductive estimates, with $u_{q+1}=u_q$ on [0, $T/4+4\\lambda_q^{-1}]$ and $||u_{q+1}-u_q|| \\le C_0 \\delta_{q+1}^{1/2}$."
+    },
+    "prop:4.1": {
+      "type": "Proposition",
+      "number": "4.1",
+      "section": "4.1",
+      "role": "technical",
+      "summary": "Mollification estimates: bounds on derivatives of $(u_{ell_q}$, $Rring_{ell_q}, R^rem_q)$ in Sobolev norms, with $||Rring_{ell_q}||_{L^1_{t,x}} \\le \\delta_{q+1} \\lambda_q^{-4\\alpha}$."
+    },
+    "prop:4.2": {
+      "type": "Proposition",
+      "number": "4.2",
+      "section": "4.3",
+      "role": "technical",
+      "summary": "Fourier coefficient estimates for the intermittent shear function $\\phi_r$: $|c_{m,r}| \\le CK^{9/2} r^{-9/2} m^{-4}$, giving rapid decay in the frequency parameter m."
+    },
+    "prop:4.3": {
+      "type": "Proposition",
+      "number": "4.3",
+      "section": "4.3",
+      "role": "technical",
+      "summary": "Estimates for the building blocks: $L^p$ bounds and derivative bounds on the spatial profile $\\phi_{(\\epsilon_0,1-\\epsilon_0,k)}$, temporal concentration $g_{(2,\\sigma_0,k)}$, and corrector profile $\\psi'$."
+    },
+    "prop:4.4": {
+      "type": "Proposition",
+      "number": "4.4",
+      "section": "4.3.1",
+      "role": "technical",
+      "summary": "Temporal decomposition: writes $d_t(w^(p)_{q+1}+w^(c)_{q+1})$ as div Rring^(1)_{q+1} + div Rring^(2)_{q+1} + F^(1)_{q+1} + nabla P^(1)_{q+1}, isolating the Reynolds stress contributions from time derivatives."
+    },
+    "prop:4.5": {
+      "type": "Proposition",
+      "number": "4.5",
+      "section": "4.3.1",
+      "role": "key_structural",
+      "summary": "Quadratic decomposition: writes div(w^(p)_{q+1} tensor w^(p)_{q+1}) + div $Rring_{ell_q} =$ div $Rring^(3)_{q+1} + F^(2)_{q+1} + F^(3)_{q+1} + nabla(\\eta^2_q (\\chi_q \\rho_q)^{1/2})$. The oscillation error Rring^(3) comes from non-resonant Fourier interactions."
+    },
+    "prop:4.6": {
+      "type": "Proposition",
+      "number": "4.6",
+      "section": "4.3.2",
+      "role": "technical",
+      "summary": "Estimates for $(\\chi_q \\rho_q)^{1/2}$ and $(\\chi_q \\rho_q)^{-1}$ in $L^\\infty_t H^N$, including time derivatives. Controls the amplitude function that balances compact support of the Reynolds stress."
+    },
+    "prop:4.7": {
+      "type": "Proposition",
+      "number": "4.7",
+      "section": "4.3.2",
+      "role": "key_technical",
+      "summary": "Estimates for the coefficient functions $a_{(k,q)}$ in $L^\\infty_t H^N$: $||a_{(k,q)}||_{L^\\infty_t H^N} \\le C_N ell_q^{-2N}$. These control the amplitude of the intermittent perturbation and appear in every subsequent estimate."
+    },
+    "prop:4.8": {
+      "type": "Proposition",
+      "number": "4.8",
+      "section": "4.3.2",
+      "role": "key_technical",
+      "summary": "Estimates for the incompressible perturbation forcing $F_{q+1}$: the Duhamel integral of $F_{q+1}$ in $tilde{L}^\\infty_t B^{1/2}_{2,1}$ cap tilde{L}^1_t $B^{5/2}_{2,1}$ is bounded by $\\lambda_q^{-20}$. This is the key estimate enabling the incompressible perturbation fluid technique on $R^3$."
+    },
+    "prop:4.9": {
+      "type": "Proposition",
+      "number": "4.9",
+      "section": "4.3.2",
+      "role": "main_technical",
+      "summary": "Estimates for the incompressible perturbation w^(t)_{q+1}: $||w^(t)_{q+1}||_{tilde{L}^\\infty_t B^{1/2}_{2,1}$ cap tilde{L}^1_t $B^{5/2}_{2,1}} \\le (1/2) \\delta_{q+2} \\lambda_{q+1}^{-6\\alpha}$. Obtained via Banach fixed point theorem applied to the mild formulation with forcing $F_{q+1}$."
+    },
+    "prop:4.10": {
+      "type": "Proposition",
+      "number": "4.10",
+      "section": "4.3.2",
+      "role": "main_technical",
+      "summary": "Combined perturbation estimates: $||w_{q+1}||_{L^2_{t,x}$ cap $L^p_t L^\\infty} \\le (1/2) C_0 \\delta_{q+1}^{1/2}$ and $||w_{q+1}||_{L^\\infty_t H^3} \\le (1/2) C_0 \\lambda_{q+1}^{9/2} \\delta_{q+1}^{1/2}$. Assembles w^(p), w^(c), w^(t) estimates."
+    },
+    "prop:4.11": {
+      "type": "Proposition",
+      "number": "4.11",
+      "section": "4.3.3",
+      "role": "main_technical",
+      "summary": "New Reynolds stress estimates: $||Rring_{q+1}||_{L^1_{t,x}} \\le \\delta_{q+2} \\lambda_{q+1}^{-4\\alpha}$ and $||Rring_{q+1}||_{L^\\infty W^{3,1}} \\le \\lambda_{q+1}^5$. Closes the inductive bound on the Reynolds stress at level q+1."
+    },
+    "prop:4.12": {
+      "type": "Proposition",
+      "number": "4.12",
+      "section": "4.3.3",
+      "role": "technical",
+      "summary": "Energy increment estimate: |E $- int_{3T/4}^Tint_{R^3} |u_{q+1}|^2$ dx dt $- 3 \\delta_{q+2}| \\le \\delta_{q+2} \\lambda_q^{-\\alpha}$. Ensures the prescribed energy profile is maintained at each iteration level."
+    }
+  },
+  "edges": [
+    {
+      "from": "thm:1.2",
+      "to": "def:1.1",
+      "type": "depends_on",
+      "note": "Main theorem stated for weak solutions in the sense of Def 1.1"
+    },
+    {
+      "from": "thm:1.2",
+      "to": "prop:3.1",
+      "type": "depends_on",
+      "note": "Proof of Thm 1.2 (Section 3.3) applies Prop 3.1 inductively to build the Cauchy sequence ${u_q}$"
+    },
+    {
+      "from": "thm:1.2",
+      "to": "prop:2.4",
+      "type": "depends_on",
+      "note": "Gluing proposition used in Section 3.3 to concatenate u, $u_1$, tilde{v}, V into a single weak solution v"
+    },
+    {
+      "from": "thm:1.2",
+      "to": "lem:2.7",
+      "type": "depends_on",
+      "note": "Heat semigroup regularity used in the well-posedness step to get $u_1(t_0+\\epsilon)$ in $H^3$"
+    },
+    {
+      "from": "prop:3.1",
+      "to": "prop:4.1",
+      "type": "depends_on",
+      "note": "Mollification estimates feed into the perturbation construction"
+    },
+    {
+      "from": "prop:3.1",
+      "to": "prop:4.10",
+      "type": "depends_on",
+      "note": "Combined perturbation estimate gives (3.16): $||u_{q+1}-u_q|| \\le C_0 \\delta_{q+1}^{1/2}$"
+    },
+    {
+      "from": "prop:3.1",
+      "to": "prop:4.11",
+      "type": "depends_on",
+      "note": "Reynolds stress bound at q+1 level closes inductive estimate (3.14)"
+    },
+    {
+      "from": "prop:3.1",
+      "to": "prop:4.12",
+      "type": "depends_on",
+      "note": "Energy increment estimate closes inductive estimate (3.12)"
+    },
+    {
+      "from": "prop:3.1",
+      "to": "prop:4.9",
+      "type": "depends_on",
+      "note": "Incompressible perturbation w^(t) estimate closes inductive estimates (3.10)-(3.11) for nonlocal part"
+    },
+    {
+      "from": "prop:4.1",
+      "to": "def:2.5",
+      "type": "depends_on",
+      "note": "Mollification defined using the mollifiers from Def 2.5"
+    },
+    {
+      "from": "prop:4.4",
+      "to": "prop:4.3",
+      "type": "depends_on",
+      "note": "Building block estimates used in the temporal decomposition proof"
+    },
+    {
+      "from": "prop:4.4",
+      "to": "prop:4.7",
+      "type": "depends_on",
+      "note": "Coefficient estimates for $a_{(k,q)}$ used to bound Rring^(1), Rring^(2)"
+    },
+    {
+      "from": "prop:4.5",
+      "to": "prop:4.2",
+      "type": "depends_on",
+      "note": "Fourier coefficient decay $|c_{m,r}|$ used to bound oscillation error Rring^(3)"
+    },
+    {
+      "from": "prop:4.5",
+      "to": "lem:2.1",
+      "type": "depends_on",
+      "note": "Geometric lemma decomposition R = sum $a_k^2$ kbar tensor kbar is the algebraic identity that makes the principal perturbation cancel $Rring_{ell_q}$"
+    },
+    {
+      "from": "prop:4.6",
+      "to": "prop:4.1",
+      "type": "depends_on",
+      "note": "Proof uses mollified Reynolds stress bounds from Prop 4.1 to control $\\chi_q \\rho_q$"
+    },
+    {
+      "from": "prop:4.7",
+      "to": "prop:4.1",
+      "type": "depends_on",
+      "note": "Proof combines Prop 4.1 bounds on $Rring_{ell_q}$ with Prop 4.6 bounds on $(\\chi_q \\rho_q)^{-1}$"
+    },
+    {
+      "from": "prop:4.7",
+      "to": "prop:4.6",
+      "type": "depends_on",
+      "note": "$a_{(k,q)} = \\eta_q a_k(Id - Rring_{ell_q}/(\\chi_q \\rho_q)) (\\chi_q \\rho_q)^{1/2}$, so Prop 4.6 estimates are direct inputs"
+    },
+    {
+      "from": "prop:4.8",
+      "to": "lem:2.7",
+      "type": "depends_on",
+      "note": "Heat semigroup estimate in Besov spaces applied to bound the Duhamel integral of $F_{q+1}$"
+    },
+    {
+      "from": "prop:4.8",
+      "to": "prop:4.3",
+      "type": "depends_on",
+      "note": "Building block estimates for the spatial profiles and temporal concentrations in F^(1), F^(2), F^(3)"
+    },
+    {
+      "from": "prop:4.8",
+      "to": "prop:4.5",
+      "type": "depends_on",
+      "note": "F^(2) defined in Prop 4.5 decomposition; its structure determines the Besov regularity"
+    },
+    {
+      "from": "prop:4.8",
+      "to": "prop:4.7",
+      "type": "depends_on",
+      "note": "Coefficient bounds $||a_{(k,q)}||_{W^{3,\\infty}}$ used in estimating F^(1), F^(2), F^(3)"
+    },
+    {
+      "from": "prop:4.8",
+      "to": "prop:4.4",
+      "type": "depends_on",
+      "note": "F^(1) defined in Prop 4.4 decomposition"
+    },
+    {
+      "from": "prop:4.9",
+      "to": "prop:4.8",
+      "type": "depends_on",
+      "note": "Banach fixed point argument uses Prop 4.8 bound ||int $e^{(t-s)\\Delta} F_{q+1} ds|| \\le \\lambda_q^{-20}$ as the forcing estimate"
+    },
+    {
+      "from": "prop:4.9",
+      "to": "lem:2.7",
+      "type": "depends_on",
+      "note": "Besov maximal regularity used in the Duhamel formulation of w^(t)_{q+1}"
+    },
+    {
+      "from": "prop:4.10",
+      "to": "lem:2.3",
+      "type": "depends_on",
+      "note": "Decoupling lemma used to estimate $||w^(p)_{q+1}||_{L^2_{t,x}}$ and $||w^(c)_{q+1}||_{L^2_{t,x}}$"
+    },
+    {
+      "from": "prop:4.10",
+      "to": "prop:4.3",
+      "type": "depends_on",
+      "note": "Building block $L^p$ and $L^\\infty$ estimates used for w^(p) and w^(c)"
+    },
+    {
+      "from": "prop:4.10",
+      "to": "prop:4.7",
+      "type": "depends_on",
+      "note": "Coefficient bounds on $a_{(k,q)}$ in $L^\\infty_t H^N$ control $||w^(p)||_{L^\\infty_t H^3}$"
+    },
+    {
+      "from": "prop:4.10",
+      "to": "prop:4.9",
+      "type": "depends_on",
+      "note": "w^(t)_{q+1} estimate needed to assemble total $w_{q+1} = w^(p) + w^(c) + w^(t)$"
+    },
+    {
+      "from": "prop:4.11",
+      "to": "prop:4.4",
+      "type": "depends_on",
+      "note": "Reynolds stress Rring^(1), Rring^(2) from temporal decomposition estimated here"
+    },
+    {
+      "from": "prop:4.11",
+      "to": "prop:4.5",
+      "type": "depends_on",
+      "note": "Reynolds stress Rring^(3) from quadratic decomposition estimated here"
+    },
+    {
+      "from": "prop:4.11",
+      "to": "prop:4.3",
+      "type": "depends_on",
+      "note": "Building block estimates used throughout the Reynolds stress bounds"
+    },
+    {
+      "from": "prop:4.11",
+      "to": "prop:4.7",
+      "type": "depends_on",
+      "note": "Coefficient estimates on $a_{(k,q)}$ used in bounding all three Reynolds stress components"
+    },
+    {
+      "from": "prop:4.11",
+      "to": "prop:4.2",
+      "type": "depends_on",
+      "note": "Fourier coefficient decay used in bounding Rring^(3) via Prop 4.5"
+    },
+    {
+      "from": "prop:4.11",
+      "to": "prop:4.9",
+      "type": "depends_on",
+      "note": "w^(t)_{q+1} estimates needed for the transport + Nash error terms in $Rring_{q+1}$"
+    },
+    {
+      "from": "prop:4.11",
+      "to": "prop:4.10",
+      "type": "depends_on",
+      "note": "Total perturbation $w_{q+1}$ estimates needed for cross-terms in $Rring_{q+1}$"
+    },
+    {
+      "from": "prop:4.12",
+      "to": "prop:4.1",
+      "type": "depends_on",
+      "note": "Mollification estimates used for the barred solution $ubar_q$"
+    },
+    {
+      "from": "prop:4.12",
+      "to": "prop:4.9",
+      "type": "depends_on",
+      "note": "w^(t)_{q+1} bounds used to control cross-term III = 2 int $ubar_q$ . $w_{q+1}$"
+    },
+    {
+      "from": "prop:4.12",
+      "to": "prop:4.10",
+      "type": "depends_on",
+      "note": "Perturbation $L^2$ estimates needed for term II = int $|w_{q+1}|^2$"
+    },
+    {
+      "from": "prop:4.12",
+      "to": "lem:2.3",
+      "type": "depends_on",
+      "note": "Decoupling lemma used to extract the principal energy contribution from $||w^(p)_{q+1}||^2_{L^2}$"
+    },
+    {
+      "from": "prop:4.5",
+      "to": "lem:2.1",
+      "type": "depends_on",
+      "note": "The geometric lemma decomposition is the mechanism by which w^(p) tensor w^(p) cancels $Rring_{ell_q}$ at leading order"
+    }
+  ],
+  "critical_path": [
+    "thm:1.2",
+    "prop:3.1",
+    "prop:4.11",
+    "prop:4.7",
+    "prop:4.6",
+    "prop:4.1"
+  ],
+  "proof_architecture": {
+    "layer_1_main_result": {
+      "description": "Main theorem reduces to iterating the inductive Prop 3.1, gluing the limit with Prop 2.4",
+      "nodes": [
+        "thm:1.2",
+        "def:1.1",
+        "rem:1.3"
+      ]
+    },
+    "layer_2_preliminaries": {
+      "description": "Geometric lemma, decoupling, gluing, mollifiers, Besov spaces, and heat regularity provide the analytical toolkit",
+      "nodes": [
+        "lem:2.1",
+        "rem:2.2",
+        "lem:2.3",
+        "prop:2.4",
+        "def:2.5",
+        "def:2.6",
+        "lem:2.7"
+      ]
+    },
+    "layer_3_induction_framework": {
+      "description": "Induction scheme with parameters $(\\lambda_q$, $\\delta_q$, $\\Omega_q)$ and iterative proposition producing the Cauchy sequence",
+      "nodes": [
+        "prop:3.1"
+      ]
+    },
+    "layer_4_mollification_and_gluing": {
+      "description": "Mollification step produces smooth $(u_{ell_q}$, $Rring_{ell_q}, R^rem_q)$ with quantitative bounds; gluing secures temporal agreement",
+      "nodes": [
+        "prop:4.1"
+      ]
+    },
+    "layer_5_perturbation_construction": {
+      "description": "Intermittent shear flows, Fourier coefficient estimates, building block estimates, and the quadratic/temporal decompositions that define the perturbation",
+      "nodes": [
+        "prop:4.2",
+        "prop:4.3",
+        "prop:4.4",
+        "prop:4.5"
+      ]
+    },
+    "layer_6_amplitude_and_coefficient_estimates": {
+      "description": "Controls the amplitude function $(\\chi_q \\rho_q)$ and coefficient $a_{(k,q)}$ that balance compact support of Reynolds stress with non-compact support of the solution",
+      "nodes": [
+        "prop:4.6",
+        "prop:4.7"
+      ]
+    },
+    "layer_7_incompressible_perturbation": {
+      "description": "The key new ingredient: incompressible perturbation fluid w^(t)_{q+1} solving a forced Navier-Stokes equation, estimated via Banach fixed point in Besov spaces",
+      "nodes": [
+        "prop:4.8",
+        "prop:4.9"
+      ]
+    },
+    "layer_8_closing_estimates": {
+      "description": "Assembly of perturbation estimates, Reynolds stress closure, and energy increment that verify all inductive hypotheses at level q+1",
+      "nodes": [
+        "prop:4.10",
+        "prop:4.11",
+        "prop:4.12"
+      ]
+    }
+  },
+  "bibliography": {
+    "1Cheskidov": {
+      "title": "Sharp nonuniqueness for the Navier-Stokes equations",
+      "authors": [
+        "A. Cheskidov",
+        "X. Luo"
+      ],
+      "arxiv_id": null,
+      "in_registry": false,
+      "note": "Invent. Math. 229 (2022). The $T^3$ predecessor; this paper extends the result to $R^3$."
+    },
+    "BV": {
+      "title": "Nonuniqueness of weak solutions to the Navier-Stokes equation",
+      "authors": [
+        "T. Buckmaster",
+        "V. Vicol"
+      ],
+      "arxiv_id": null,
+      "in_registry": false,
+      "note": "Ann. of Math. 189 (2019). First convex integration non-uniqueness for Navier-Stokes."
+    },
+    "ABC": {
+      "title": "Non-uniqueness of Leray solutions of the forced Navier-Stokes equations",
+      "authors": [
+        "D. Albritton",
+        "E. Brue",
+        "M. Colombo"
+      ],
+      "arxiv_id": null,
+      "in_registry": false,
+      "note": "Ann. Math. 196 (2022). Non-uniqueness with external forcing."
+    },
+    "2Beekie": {
+      "title": "Weak solutions of ideal MHD which do not conserve magnetic helicity",
+      "authors": [
+        "R. Beekie",
+        "T. Buckmaster",
+        "V. Vicol"
+      ],
+      "arxiv_id": null,
+      "in_registry": false,
+      "note": "Ann. PDE 6 (2020). Source of the geometric lemma (Lem 2.1) and building block estimates (Prop 4.3)."
+    },
+    "Ise18": {
+      "title": "A proof of Onsager's conjecture",
+      "authors": [
+        "P. Isett"
+      ],
+      "arxiv_id": null,
+      "in_registry": false,
+      "note": "Ann. of Math. 188 (2018). Landmark convex integration for Euler equations."
+    },
+    "MoS": {
+      "title": "Non-uniqueness for the transport equation with Sobolev vector fields",
+      "authors": [
+        "S. Modena",
+        "L. Szekeleyhidi Jr."
+      ],
+      "arxiv_id": null,
+      "in_registry": false,
+      "note": "Ann. PDE 4 (2018). Source of the decoupling lemma (Lem 2.3)."
+    },
+    "BCD11": {
+      "title": "Fourier Analysis and Nonlinear Partial Differential Equations",
+      "authors": [
+        "H. Bahouri",
+        "J.Y. Chemin",
+        "R. Danchin"
+      ],
+      "arxiv_id": null,
+      "in_registry": false,
+      "note": "Grundlehren vol. 343 (2011). Source for Besov space theory (Def 2.6, Lem 2.7)."
+    },
+    "MWZ": {
+      "title": "Littlewood-Paley Theory and Applications to Fluid Dynamics Equations",
+      "authors": [
+        "C. Miao",
+        "J. Wu",
+        "Z. Zhang"
+      ],
+      "arxiv_id": null,
+      "in_registry": false,
+      "note": "Monographs on Modern Pure Mathematics vol. 142 (2012). Co-source for Besov space theory."
+    },
+    "I-O": {
+      "title": "On Nonperiodic Euler Flows with Holder Regularity",
+      "authors": [
+        "P. Isett",
+        "S. Oh"
+      ],
+      "arxiv_id": null,
+      "in_registry": false,
+      "note": "Arch. Ration. Mech. Anal. 221 (2016). Prior work on extending convex integration from torus to whole space."
+    },
+    "ESS": {
+      "title": "L_{3,infty}-solutions to the Navier-Stokes equations and backward uniqueness",
+      "authors": [
+        "L. Escauriaza",
+        "G. Seregin",
+        "V. Sverak"
+      ],
+      "arxiv_id": null,
+      "in_registry": false,
+      "note": "Russ. Math. Surv. 58 (2003). Ladyzhenskaya-Prodi-Serrin endpoint uniqueness."
+    },
+    "Lady": {
+      "title": "Uniqueness and smoothness of generalized solutions of Navier-Stokes equations",
+      "authors": [
+        "O. A. Ladyzenskaja"
+      ],
+      "arxiv_id": null,
+      "in_registry": false,
+      "note": "Zap. Naucn. Sem. 5 (1967). Original Ladyzhenskaya uniqueness criterion."
+    },
+    "Prodi": {
+      "title": "Un teorema di unicita per le equazioni di Navier-Stokes",
+      "authors": [
+        "G. Prodi"
+      ],
+      "arxiv_id": null,
+      "in_registry": false,
+      "note": "Ann. Mat. Pura Appl. 48 (1959). Original Prodi uniqueness criterion."
+    },
+    "Serr": {
+      "title": "On the interior regularity of weak solutions of the Navier-Stokes equations",
+      "authors": [
+        "J. Serrin"
+      ],
+      "arxiv_id": null,
+      "in_registry": false,
+      "note": "Arch. Ration. Mech. Anal. 9 (1962). Original Serrin uniqueness criterion."
+    },
+    "MY": {
+      "title": "On the weak solutions for the MHD systems with controllable total energy and cross helicity",
+      "authors": [
+        "C. Miao",
+        "W. Ye"
+      ],
+      "arxiv_id": null,
+      "in_registry": false,
+      "note": "J. Math. Pures Appl. 181 (2024). Prior work by the authors on convex integration for MHD."
+    },
+    "MNY": {
+      "title": "On Onsager's type conjecture for the inviscid Boussinesq equations",
+      "authors": [
+        "C. Miao",
+        "Y. Nie",
+        "W. Ye"
+      ],
+      "arxiv_id": null,
+      "in_registry": false,
+      "note": "J. Funct. Anal. 287 (2024). Prior work by the authors on Boussinesq equations."
+    }
+  }
+}

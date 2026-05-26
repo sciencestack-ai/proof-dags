@@ -1,0 +1,163 @@
+{
+  "paper": "1409.4683",
+  "title": "A short proof of the multilinear Kakeya inequality",
+  "authors": [
+    "Larry Guth"
+  ],
+  "generated": "2026-05-12",
+  "status": "complete",
+  "nodes": {
+    "thm:1": {
+      "type": "Theorem",
+      "number": "1",
+      "section": "1",
+      "role": "main_result",
+      "summary": "Multilinear Kakeya for nearly-axis-parallel lines: if $l_{j,a}\\subset\\mathbb{R}^n$ each make angle $\\le(10n)^{-1}$ with the $x_j$-axis and $T_{j,a}$ is the indicator of the $1$-neighborhood of $l_{j,a}$, then $\\int_{Q_S}\\prod_{j=1}^n(\\sum_{a=1}^{N_j}T_{j,a})^{1/(n-1)}\\le C_\\epsilon S^\\epsilon\\prod_j N_j^{1/(n-1)}$ for $S\\ge1$. The Bennett–Carbery–Tao multilinear Kakeya inequality, with a short Loomis–Whitney-based proof."
+    },
+    "thm:2": {
+      "type": "Theorem",
+      "number": "2",
+      "section": "1",
+      "role": "key_reduction",
+      "summary": "Small-angle version: for every $\\epsilon>0$ there is $\\delta>0$ such that the same inequality $\\int_{Q_S}\\prod_j(\\sum_a T_{j,a})^{1/(n-1)}\\lesssim_\\epsilon S^\\epsilon\\prod_j N_j^{1/(n-1)}$ holds whenever the $l_{j,a}$ make angle $\\le\\delta$ with the $x_j$-axes. The technically convenient form that the multiscale argument proves directly; thm:1 reduces to it."
+    },
+    "thm:3": {
+      "type": "Theorem",
+      "number": "3",
+      "section": "3",
+      "role": "foundational",
+      "summary": "Loomis–Whitney inequality: for measurable $f_j:\\mathbb{R}^{n-1}\\to\\mathbb{R}$, $\\int_{\\mathbb{R}^n}\\prod_{j=1}^n f_j(\\pi_j(x))^{1/(n-1)}\\le\\prod_j\\|f_j\\|_{L^1(\\mathbb{R}^{n-1})}^{1/(n-1)}$, where $\\pi_j$ are the coordinate projections. The exactly-axis-parallel base case."
+    },
+    "lem:4": {
+      "type": "Lemma",
+      "number": "4",
+      "section": "4",
+      "role": "key_mechanism",
+      "summary": "Multiscale rescaling step: for lines with angle $\\le\\delta$ from the $x_j$-axes, if $S\\ge\\delta^{-1}W$ then $\\int_{Q_S}\\prod_j f_{j,W}^{1/(n-1)}\\le C_n\\delta^n\\int_{Q_S}\\prod_j f_{j,\\delta^{-1}W}^{1/(n-1)}$, where $f_{j,W}$ thickens tubes to width $W$. Iterating from width $1$ up to scale $S$ reduces to the axis-parallel case — the heart of the short proof."
+    },
+    "cor:5": {
+      "type": "Corollary",
+      "number": "5",
+      "section": "2",
+      "role": "auxiliary",
+      "summary": "Weighted form of thm:1: with $f_j=\\sum_a w_{j,a}T_{j,a}$, $w_{j,a}\\ge0$, $\\int_{Q_S}\\prod_j f_j^{1/(n-1)}\\le C_\\epsilon S^\\epsilon\\prod_j(\\sum_a w_{j,a})^{1/(n-1)}$. The version with arbitrary tube multiplicities."
+    },
+    "cor:6": {
+      "type": "Corollary",
+      "number": "6",
+      "section": "2",
+      "role": "main_result",
+      "summary": "Transverse-directions form: if the directions of $l_{j,a}$ lie in sets $S_j\\subset S^{n-1}$ with $|v_1\\wedge\\cdots\\wedge v_n|\\ge\\nu$ for all $v_j\\in S_j$, then $\\int_{Q_S}\\prod_j(\\sum_a T_{j,a})^{1/(n-1)}\\le C(\\epsilon)\\,\\mathrm{Poly}(\\nu^{-1})\\,S^\\epsilon\\prod_j N_j^{1/(n-1)}$. This $\\nu$-transverse statement is the form consumed by decoupling and Vinogradov-mean-value arguments."
+    },
+    "thm:7": {
+      "type": "Theorem",
+      "number": "7",
+      "section": "6",
+      "role": "auxiliary",
+      "summary": "Lipschitz-curve generalization: thm:2 still holds when the $l_{j,a}$ are replaced by Lipschitz curves $\\gamma_{j,a}$ making angle $\\le\\delta$ with the $x_j$-axes. Same multiscale argument; needed for applications to curved objects."
+    }
+  },
+  "edges": [
+    {
+      "from": "thm:1",
+      "to": "thm:2",
+      "type": "depends_on",
+      "note": "The $(10n)^{-1}$-angle inequality is reduced to the small-$\\delta$ version by partitioning directions into narrow cones and rescaling each."
+    },
+    {
+      "from": "thm:2",
+      "to": "thm:3",
+      "type": "depends_on",
+      "note": "The multiscale induction bottoms out at the exactly-axis-parallel case, which is Loomis–Whitney."
+    },
+    {
+      "from": "thm:2",
+      "to": "lem:4",
+      "type": "depends_on",
+      "note": "Iterating the rescaling step from tube width $1$ to scale $S$ is the proof of thm:2."
+    },
+    {
+      "from": "cor:5",
+      "to": "thm:1",
+      "type": "depends_on",
+      "note": "The weighted inequality follows from the unweighted one by a standard pigeonholing/dyadic-decomposition of the weights."
+    },
+    {
+      "from": "cor:6",
+      "to": "thm:1",
+      "type": "depends_on",
+      "note": "Transverse directions are split into $\\sim\\nu$-narrow caps; on each cap a linear change of variables makes the tubes nearly axis-parallel, reducing to thm:1 with a $\\mathrm{Poly}(\\nu^{-1})$ loss."
+    },
+    {
+      "from": "thm:7",
+      "to": "lem:4",
+      "type": "depends_on",
+      "note": "The Lipschitz-curve case runs the same width-doubling multiscale argument, with curves replacing lines at each scale."
+    },
+    {
+      "from": "thm:7",
+      "to": "thm:3",
+      "type": "depends_on",
+      "note": "Still terminates at the Loomis–Whitney base case."
+    }
+  ],
+  "critical_path": [
+    "thm:1",
+    "thm:2",
+    "lem:4",
+    "thm:3"
+  ],
+  "proof_architecture": {
+    "main_inequality": {
+      "description": "The multilinear Kakeya inequality in its nearly-axis-parallel, weighted, and transverse-direction forms.",
+      "nodes": [
+        "thm:1",
+        "cor:5",
+        "cor:6"
+      ]
+    },
+    "loomis_whitney_and_multiscale": {
+      "description": "The exactly-axis-parallel base case (Loomis–Whitney) plus the width-doubling rescaling lemma; iterating the latter onto the former proves the small-angle case.",
+      "nodes": [
+        "thm:2",
+        "thm:3",
+        "lem:4"
+      ]
+    },
+    "generalizations": {
+      "description": "Extension to Lipschitz curves making small angles with the axes.",
+      "nodes": [
+        "thm:7"
+      ]
+    }
+  },
+  "bibliography": {
+    "BCT": {
+      "title": "On the multilinear restriction and Kakeya conjectures",
+      "authors": [
+        "Bennett",
+        "Carbery",
+        "Tao"
+      ],
+      "arxiv_id": "math/0509262",
+      "in_registry": false
+    },
+    "Guth2010": {
+      "title": "The endpoint case of the Bennett-Carbery-Tao theorem",
+      "authors": [
+        "Guth"
+      ],
+      "arxiv_id": "0811.2251",
+      "in_registry": false
+    },
+    "LoomisWhitney": {
+      "title": "An inequality related to the isoperimetric inequality",
+      "authors": [
+        "Loomis",
+        "Whitney"
+      ],
+      "arxiv_id": null,
+      "in_registry": false
+    }
+  }
+}

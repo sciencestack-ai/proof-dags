@@ -1,0 +1,398 @@
+{
+  "paper": "math/0509262",
+  "title": "On the Multilinear Restriction and Kakeya conjectures",
+  "authors": [
+    "Jonathan Bennett",
+    "Anthony Carbery",
+    "Terence Tao"
+  ],
+  "generated": "2026-05-12",
+  "status": "complete",
+  "nodes": {
+    "conj:1.1": {
+      "type": "Conjecture",
+      "number": "1.1",
+      "section": "1",
+      "role": "context",
+      "summary": "The linear restriction conjecture: for $S$ with non-vanishing Gaussian curvature, $q>\\tfrac{2d}{d-1}$ and $p'\\le\\tfrac{d-1}{d+1}q$, $\\|\\mathcal{E}g\\|_{L^q(\\mathbb{R}^d)}\\lesssim\\|g\\|_{L^p(U)}$. The classical open problem this paper attacks the multilinear analogue of."
+    },
+    "conj:1.3": {
+      "type": "Conjecture",
+      "number": "1.3",
+      "section": "1",
+      "role": "context",
+      "summary": "The multilinear restriction conjecture: under transversality, $\\|\\prod_{j=1}^d\\mathcal{E}_jg_j\\|_{L^{q/d}(\\mathbb{R}^d)}\\lesssim\\prod_j\\|g_j\\|_{L^p(U_j)}$ for $q\\ge\\tfrac{2d}{d-1}$, $p'\\le\\tfrac{d-1}{d}q$. The sharp statement; thm:1.16 proves it up to an $R^\\epsilon$ loss."
+    },
+    "conj:1.7": {
+      "type": "Conjecture",
+      "number": "1.7",
+      "section": "1",
+      "role": "context",
+      "summary": "The linear Kakeya conjecture: for a $\\delta$-separated set of $\\delta\\times1$-tubes $\\mathbb{T}$, $\\|\\sum_{T\\in\\mathbb{T}}\\chi_T\\|_{L^q(\\mathbb{R}^d)}\\lesssim\\delta^{(d-1)/q}(\\#\\mathbb{T})^{1/q}$ for $q>\\tfrac{d}{d-1}$. Equivalent to the Kakeya/Besicovitch dimension conjecture."
+    },
+    "conj:1.8": {
+      "type": "Conjecture",
+      "number": "1.8",
+      "section": "1",
+      "role": "context",
+      "summary": "The multilinear Kakeya conjecture: for $d$ transversal families of $\\delta\\times1$-tubes, $\\|\\prod_{j=1}^d(\\sum_{T_j\\in\\mathbb{T}_j}\\chi_{T_j})\\|_{L^{q/d}(\\mathbb{R}^d)}\\lesssim\\prod_j(\\delta^{d/q}\\#\\mathbb{T}_j)$ for $\\tfrac{d}{d-1}\\le q\\le\\infty$. thm:1.15 proves this up to an arbitrarily small $\\delta^{-\\epsilon}$ loss."
+    },
+    "thm:1.15": {
+      "type": "Theorem",
+      "number": "1.15",
+      "section": "1",
+      "role": "main_result",
+      "summary": "Near-optimal multilinear Kakeya: for $\\tfrac{d}{d-1}<q\\le\\infty$ and transversal families $\\mathbb{T}_1,\\dots,\\mathbb{T}_d$, $\\|\\prod_j(\\sum_{T_j\\in\\mathbb{T}_j}\\chi_{T_j})\\|_{L^{q/d}}\\lesssim\\prod_j(\\delta^{d/q}\\#\\mathbb{T}_j)$, and with an arbitrarily small $\\delta^{-\\epsilon}$ loss at the endpoint $q=\\tfrac{d}{d-1}$. The multilinear Kakeya conjecture, modulo $\\epsilon$."
+    },
+    "thm:1.16": {
+      "type": "Theorem",
+      "number": "1.16",
+      "section": "1",
+      "role": "main_result",
+      "summary": "Near-optimal multilinear restriction: for $\\epsilon>0$, $q\\ge\\tfrac{2d}{d-1}$, $p'\\le\\tfrac{d-1}{d}q$, $\\|\\prod_{j=1}^d\\mathcal{E}_jg_j\\|_{L^{q/d}(B(0,R))}\\lesssim_\\epsilon R^\\epsilon\\prod_j\\|g_j\\|_{L^p(U_j)}$ for all $R\\ge1$. The multilinear restriction conjecture up to $R^\\epsilon$ — the input later used by Bourgain–Guth and by Bourgain–Demeter's decoupling proof."
+    },
+    "prop:2.1": {
+      "type": "Proposition",
+      "number": "2.1",
+      "section": "2",
+      "role": "key_reduction",
+      "summary": "Restriction-from-Kakeya transfer with self-improvement: $\\mathcal{R}^*(\\dots;\\alpha) + \\mathcal{K}^*(\\dots;\\epsilon) \\implies \\mathcal{R}^*(\\dots;\\tfrac\\alpha2+\\tfrac\\epsilon4)$. Iterated (induction on scales / parabolic rescaling), it bootstraps any multilinear restriction estimate down to the $R^\\epsilon$ statement using multilinear Kakeya."
+    },
+    "lem:2.2": {
+      "type": "Lemma",
+      "number": "2.2",
+      "section": "2",
+      "role": "technical",
+      "summary": "Reformulation: the multilinear restriction estimate $\\mathcal{R}^*(\\dots;\\alpha)$ is equivalent to $\\|\\prod_j\\widehat{f_j}\\|_{L^{q/d}(B(0,R))}\\lesssim R^{\\alpha-d/2}\\prod_j\\|f_j\\|_2$ for $f_j$ Fourier-supported in the $R^{-1}$-neighborhood of the pieces. Lets the transfer be run on $L^2$ functions."
+    },
+    "prop:3.1": {
+      "type": "Proposition",
+      "number": "3.1",
+      "section": "3",
+      "role": "key_mechanism",
+      "summary": "Heat-flow monotonicity (Loomis–Whitney case): for positive semidefinite $A_j$ and the Gaussian-flow quantities $f_j(t,x)=\\int e^{-\\pi\\langle A_j(x-v_jt),x-v_jt\\rangle}d\\mu_j(v_j)$, the weighted integral $\\int\\prod_j f_j(t,x)^{p_j}dx$ is monotone in $t$ when $\\sum_j p_jA_j$ is the Loomis–Whitney configuration. The engine of the whole proof."
+    },
+    "cor:3.2": {
+      "type": "Corollary",
+      "number": "3.2",
+      "section": "3",
+      "role": "auxiliary",
+      "summary": "The (continuous, multilinear) Loomis–Whitney / Brascamp–Lieb inequality $\\int\\prod_j f_j(1,x)^{p_j}dx\\le(\\det A_*)^{-1/2}\\prod_j\\|\\mu_j\\|^{p_j}$, obtained by comparing the monotone quantity of prop:3.1 at $t=1$ and $t=0$."
+    },
+    "prop:4.1": {
+      "type": "Proposition",
+      "number": "4.1",
+      "section": "4",
+      "role": "main_technical",
+      "summary": "Perturbed heat-flow monotonicity: the same Gaussian-flow argument works when the matrices $M_j$ only satisfy $p_1M_1+\\cdots+p_nM_n>_{pd}M_j$ (a strict-domination condition) rather than the exact Loomis–Whitney relation, at the cost of an $O(\\epsilon)$ error. The version actually applied to families of tubes with varying orientations."
+    },
+    "cor:4.2": {
+      "type": "Corollary",
+      "number": "4.2",
+      "section": "4",
+      "role": "auxiliary",
+      "summary": "Perturbed Loomis–Whitney inequality: $\\int\\prod_j f_j(1,x)^{p_j}dx\\le(1+O(\\epsilon))(\\det M_*)^{-1/2}\\prod_j\\|\\mu_j\\|^{p_j}$ under the strict-domination hypothesis. The local building block summed over scales to give thm:1.15."
+    },
+    "lem:4.4": {
+      "type": "Lemma",
+      "number": "4.4",
+      "section": "4",
+      "role": "technical",
+      "summary": "Exact evaluation of the second-derivative ('trace') quantity arising in the heat-flow computation, in terms of $\\det M_*$, the means $\\mathbb{E}(\\mathbf{w}_j)$, and projection-defect variances. The identity that makes the monotonicity inequality tight."
+    },
+    "lem:4.5": {
+      "type": "Lemma",
+      "number": "4.5",
+      "section": "4",
+      "role": "technical",
+      "summary": "Rigidity: for $d\\ge3$, if $A_1,\\dots,A_d$ are rank-$(d-1)$ nonnegative matrices with spanning kernels and $\\tfrac1{d-1}\\sum A_i\\ge A_j$ for all $j$, then $A_d$ is determined by $A_1,\\dots,A_{d-1}$. Pins down when the perturbed inequality can be sharp."
+    },
+    "prop:4.6": {
+      "type": "Proposition",
+      "number": "4.6",
+      "section": "4",
+      "role": "auxiliary",
+      "summary": "Equality analysis: if the perturbed Loomis–Whitney quantity with $p=(\\tfrac1{d-1},\\dots)$ is monotone for all positive measures supported on sets $W_j$, then either $d=2$ or each $W_j$ is a single matrix with $\\tfrac1{d-1}\\sum A_i\\ge A_j$ — the rigid configuration of lem:4.5."
+    },
+    "thm:5.1": {
+      "type": "Theorem",
+      "number": "5.1",
+      "section": "5",
+      "role": "auxiliary",
+      "summary": "Lower levels of multilinearity: for $n\\le d$ transversal families, $\\|\\prod_{j=1}^n(\\sum_{T_j\\in\\mathbb{T}_j}\\chi_{T_j})\\|_{L^{q/n}(\\mathbb{R}^d)}\\lesssim\\prod_j(\\delta^{d/q}\\#\\mathbb{T}_j)$ for $q>\\tfrac n{n-1}$. The $k$-linear ($k<d$) Kakeya estimate, reduced to the $d$-linear case thm:1.15."
+    },
+    "thm:6.2": {
+      "type": "Theorem",
+      "number": "6.2",
+      "section": "6",
+      "role": "auxiliary",
+      "summary": "Variable-coefficient multilinear restriction: for Hörmander-type oscillatory operators $S_\\lambda^{(j)}$ satisfying transversality and a curvature condition, $\\|\\prod_{j=1}^d S_\\lambda^{(j)}g_j\\|_{L^{q/d}}\\lesssim_\\epsilon\\lambda^\\epsilon\\prod_j\\lambda^{-d/q}\\|g_j\\|_{L^p}$. The phase-space generalization of thm:1.16."
+    },
+    "thm:6.5": {
+      "type": "Theorem",
+      "number": "6.5",
+      "section": "6",
+      "role": "auxiliary",
+      "summary": "Variable-coefficient multilinear Kakeya: for tube families with curved cores satisfying transversality, $\\|\\prod_{j=1}^d\\sum_{T_j\\in\\mathbb{T}_j}\\chi_{T_j}\\|_{L^{q/d}}\\lesssim_\\epsilon\\delta^{-\\epsilon}\\cdots$ for $q\\ge\\tfrac d{d-1}$. The phase-space generalization of thm:1.15 — the heat-flow argument is local, so it transfers."
+    },
+    "prop:6.8": {
+      "type": "Proposition",
+      "number": "6.8",
+      "section": "6",
+      "role": "technical",
+      "summary": "Self-improvement for variable-coefficient Kakeya: $\\mathcal{K}_c^*(\\dots;\\alpha)+\\mathcal{K}^*(\\dots;\\epsilon)\\implies\\mathcal{K}_c^*(\\dots;\\tfrac\\alpha2+\\tfrac\\epsilon2)$. The induction-on-scales step for the curved setting."
+    },
+    "prop:6.9": {
+      "type": "Proposition",
+      "number": "6.9",
+      "section": "6",
+      "role": "technical",
+      "summary": "Variable-coefficient restriction-from-Kakeya transfer: $\\mathcal{R}_c^*(\\dots;\\alpha)+\\mathcal{K}_c^*(\\dots;\\epsilon)\\implies\\mathcal{R}_c^*(\\dots;\\tfrac\\alpha2+\\tfrac\\epsilon4+\\epsilon_0)$. The phase-space analogue of prop:2.1."
+    },
+    "thm:7.1": {
+      "type": "Theorem",
+      "number": "7.1",
+      "section": "7",
+      "role": "auxiliary",
+      "summary": "Application to the joints problem: the number of $\\theta$-transverse joints determined by $n$ lines in $\\mathbb{R}^3$ is $O_\\epsilon(n^{3/2+\\epsilon}\\theta^{-1/2-\\epsilon})$. A combinatorial-geometry consequence of multilinear Kakeya thm:1.15."
+    },
+    "lem:8.2": {
+      "type": "Lemma",
+      "number": "8.2",
+      "section": "8",
+      "role": "technical",
+      "summary": "Polynomial extrapolation: if $\\int\\prod_j f_j^{p_j}$-type identities $G_1=G_2$ hold (as polynomials in the exponents $p$) on a suitable set, they extend; the algebraic device that lets the $t=0$/$t=1$ comparison in the heat-flow argument be made rigorous for all admissible exponents."
+    }
+  },
+  "edges": [
+    {
+      "from": "thm:1.16",
+      "to": "prop:2.1",
+      "type": "depends_on",
+      "note": "Multilinear restriction is bootstrapped from any starting estimate down to the $R^\\epsilon$ statement by iterating the restriction-from-Kakeya transfer."
+    },
+    {
+      "from": "thm:1.16",
+      "to": "thm:1.15",
+      "type": "depends_on",
+      "note": "The Kakeya input fed into the transfer is the near-optimal multilinear Kakeya estimate."
+    },
+    {
+      "from": "prop:2.1",
+      "to": "lem:2.2",
+      "type": "depends_on",
+      "note": "The transfer is run on the $L^2$-reformulation of the restriction estimate."
+    },
+    {
+      "from": "prop:2.1",
+      "to": "thm:1.15",
+      "type": "depends_on",
+      "note": "The $\\mathcal{K}^*$ hypothesis in the implication is supplied by thm:1.15."
+    },
+    {
+      "from": "thm:1.15",
+      "to": "prop:4.1",
+      "type": "depends_on",
+      "note": "Multilinear Kakeya is obtained by summing the perturbed Loomis–Whitney inequality over scales (induction on scales / rescaling)."
+    },
+    {
+      "from": "thm:1.15",
+      "to": "cor:4.2",
+      "type": "depends_on",
+      "note": "...applied in its inequality form."
+    },
+    {
+      "from": "prop:4.1",
+      "to": "prop:3.1",
+      "type": "generalizes",
+      "note": "The perturbed monotonicity is the strict-domination relaxation of the exact Loomis–Whitney heat-flow monotonicity."
+    },
+    {
+      "from": "prop:4.1",
+      "to": "lem:4.4",
+      "type": "depends_on",
+      "note": "The monotonicity inequality is established via the exact second-derivative (trace) identity."
+    },
+    {
+      "from": "prop:4.1",
+      "to": "lem:8.2",
+      "type": "depends_on",
+      "note": "The $t=0\\,/\\,t=1$ comparison across all admissible exponents is justified by the polynomial-extrapolation lemma."
+    },
+    {
+      "from": "prop:3.1",
+      "to": "cor:3.2",
+      "type": "proves",
+      "note": "Comparing the monotone quantity at $t=1$ and $t=0$ yields the continuous Loomis–Whitney / Brascamp–Lieb inequality."
+    },
+    {
+      "from": "prop:4.1",
+      "to": "cor:4.2",
+      "type": "proves",
+      "note": "Same comparison in the perturbed setting."
+    },
+    {
+      "from": "prop:4.6",
+      "to": "lem:4.5",
+      "type": "depends_on",
+      "note": "The equality analysis is driven by the rank-$(d-1)$ rigidity lemma."
+    },
+    {
+      "from": "thm:5.1",
+      "to": "thm:1.15",
+      "type": "depends_on",
+      "note": "The $k$-linear ($k<d$) Kakeya estimate is reduced to the $d$-linear case by a transversality/projection argument."
+    },
+    {
+      "from": "thm:6.5",
+      "to": "prop:4.1",
+      "type": "depends_on",
+      "note": "The variable-coefficient Kakeya estimate runs the same (local) heat-flow monotonicity argument."
+    },
+    {
+      "from": "thm:6.5",
+      "to": "prop:6.8",
+      "type": "depends_on",
+      "note": "...combined with the curved-setting induction-on-scales self-improvement."
+    },
+    {
+      "from": "thm:6.2",
+      "to": "thm:6.5",
+      "type": "depends_on",
+      "note": "Variable-coefficient restriction is bootstrapped from variable-coefficient Kakeya, mirroring thm:1.16/thm:1.15."
+    },
+    {
+      "from": "thm:6.2",
+      "to": "prop:6.9",
+      "type": "depends_on",
+      "note": "...via the phase-space restriction-from-Kakeya transfer."
+    },
+    {
+      "from": "thm:7.1",
+      "to": "thm:1.15",
+      "type": "depends_on",
+      "note": "The joints bound is extracted from the multilinear Kakeya estimate."
+    },
+    {
+      "from": "thm:1.15",
+      "to": "conj:1.8",
+      "type": "motivates",
+      "note": "thm:1.15 establishes the multilinear Kakeya conjecture up to an arbitrarily small loss."
+    },
+    {
+      "from": "thm:1.16",
+      "to": "conj:1.3",
+      "type": "motivates",
+      "note": "thm:1.16 establishes the multilinear restriction conjecture up to $R^\\epsilon$."
+    },
+    {
+      "from": "conj:1.3",
+      "to": "conj:1.1",
+      "type": "motivates",
+      "note": "The multilinear restriction conjecture is the transversal companion of (and known to recover much of) the linear restriction conjecture."
+    },
+    {
+      "from": "conj:1.8",
+      "to": "conj:1.7",
+      "type": "motivates",
+      "note": "Likewise on the Kakeya side."
+    }
+  ],
+  "critical_path": [
+    "thm:1.16",
+    "prop:2.1",
+    "thm:1.15",
+    "prop:4.1",
+    "prop:3.1"
+  ],
+  "proof_architecture": {
+    "conjectures": {
+      "description": "The four restriction/Kakeya conjectures, linear and multilinear, that frame the paper.",
+      "nodes": [
+        "conj:1.1",
+        "conj:1.3",
+        "conj:1.7",
+        "conj:1.8"
+      ]
+    },
+    "main_theorems": {
+      "description": "Near-optimal multilinear Kakeya and multilinear restriction.",
+      "nodes": [
+        "thm:1.15",
+        "thm:1.16"
+      ]
+    },
+    "transfer_and_induction_on_scales": {
+      "description": "The equivalence of multilinear restriction and multilinear Kakeya and the self-improving (induction-on-scales) transfer that boots either down to an $\\epsilon$-loss statement.",
+      "nodes": [
+        "prop:2.1",
+        "lem:2.2"
+      ]
+    },
+    "heat_flow_monotonicity": {
+      "description": "The Gaussian-flow monotonicity argument: the exact Loomis–Whitney/Brascamp–Lieb case, its strict-domination perturbation, the trace identity, the polynomial-extrapolation device, and the equality/rigidity analysis.",
+      "nodes": [
+        "prop:3.1",
+        "cor:3.2",
+        "prop:4.1",
+        "cor:4.2",
+        "lem:4.4",
+        "lem:4.5",
+        "prop:4.6",
+        "lem:8.2"
+      ]
+    },
+    "extensions_and_applications": {
+      "description": "Lower levels of multilinearity, the variable-coefficient (Hörmander) generalizations, and the joints-problem application.",
+      "nodes": [
+        "thm:5.1",
+        "thm:6.2",
+        "thm:6.5",
+        "prop:6.8",
+        "prop:6.9",
+        "thm:7.1"
+      ]
+    }
+  },
+  "bibliography": {
+    "BCCT:BrascampLieb": {
+      "title": "Finite bounds for Hölder-Brascamp-Lieb multilinear inequalities",
+      "authors": [
+        "Bennett",
+        "Carbery",
+        "Christ",
+        "Tao"
+      ],
+      "arxiv_id": "math/0505065",
+      "in_registry": false
+    },
+    "Carbery-Christ-Wright": {
+      "title": "Multidimensional van der Corput and sublevel set estimates",
+      "authors": [
+        "Carbery",
+        "Christ",
+        "Wright"
+      ],
+      "arxiv_id": null,
+      "in_registry": false
+    },
+    "Wolff:Kakeya": {
+      "title": "A mixed norm estimate for the X-ray transform",
+      "authors": [
+        "Wolff"
+      ],
+      "arxiv_id": null,
+      "in_registry": false
+    },
+    "TaoVargasVega": {
+      "title": "A bilinear approach to the restriction and Kakeya conjectures",
+      "authors": [
+        "Tao",
+        "Vargas",
+        "Vega"
+      ],
+      "arxiv_id": null,
+      "in_registry": false
+    }
+  }
+}

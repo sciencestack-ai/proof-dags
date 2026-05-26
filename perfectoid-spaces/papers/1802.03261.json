@@ -1,0 +1,368 @@
+{
+  "paper": "1802.03261",
+  "title": "Topological Hochschild homology and integral $p$-adic Hodge theory",
+  "authors": [
+    "Bhargav Bhatt",
+    "Matthew Morrow",
+    "Peter Scholze"
+  ],
+  "year": 2018,
+  "venue": "Publ. Math. IHES 129",
+  "generated": "2026-05-07",
+  "status": "complete",
+  "nodes": {
+    "thm:1.2": {
+      "type": "Theorem",
+      "number": "1.2",
+      "section": "1",
+      "role": "main_result",
+      "summary": "Existence of $\\mathfrak{S}$-linear cohomology theory $R\\Gamma_{\\mathfrak{S}}(\\mathfrak{X})$ with $\\varphi$-linear Frobenius, recovering $A_{\\mathrm{inf}}$-cohomology after base change. The Breuil–Kisin upgrade of BMS1's $A\\Omega$."
+    },
+    "thm:1.6": {
+      "type": "Theorem",
+      "number": "1.6",
+      "section": "1",
+      "role": "main_result",
+      "summary": "For $R$ perfectoid, $\\pi_0 \\mathrm{TC}^-(R; \\mathbb{Z}_p) \\cong A_{\\mathrm{inf}}(R)$ canonically and $\\varphi$-equivariantly. Identifies $A_{\\mathrm{inf}}$ with a topological Hochschild invariant — the bridge from $p$-adic Hodge to homotopy theory."
+    },
+    "thm:1.8": {
+      "type": "Theorem",
+      "number": "1.8",
+      "section": "1",
+      "role": "main_result",
+      "summary": "For $A$ a $p$-adic completion of a smooth $\\mathcal{O}_C$-algebra, $A\\Omega_A \\simeq R\\Gamma_{\\mathrm{syn}}(A, \\pi_0 \\mathrm{TC}^-(-; \\mathbb{Z}_p))$ as $E_\\infty$-$A_{\\mathrm{inf}}$-algebras with $\\varphi$. Realizes $A\\Omega$ as a quasisyntomic-site sheaf cohomology of $\\mathrm{TC}^-$."
+    },
+    "thm:1.10": {
+      "type": "Theorem",
+      "number": "1.10",
+      "section": "1",
+      "role": "main_result",
+      "summary": "For perfect $k$ of char $p$ and $A/k$ smooth: $R\\Gamma_{\\mathrm{crys}}(A/W(k)) \\simeq R\\Gamma_{\\mathrm{syn}}(A, \\pi_0 \\mathrm{TC}^-(-; \\mathbb{Z}_p))$ as $E_\\infty$-$W(k)$-algebras with Frobenius. Char-$p$ specialization recovering crystalline."
+    },
+    "thm:1.12": {
+      "type": "Theorem",
+      "number": "1.12",
+      "section": "1",
+      "role": "main_result",
+      "summary": "Motivic filtration: for $A$ quasisyntomic, locally on $\\mathrm{qSyn}_A$ the spectra $\\mathrm{THH}, \\mathrm{TC}^-, \\mathrm{TP}$ are concentrated in even degrees, and $\\mathrm{Fil}^n \\mathrm{THH}(A; \\mathbb{Z}_p) = R\\Gamma_{\\mathrm{syn}}(A, \\tau_{\\ge 2n})$ (and similarly for $\\mathrm{TC}^-, \\mathrm{TP}$) gives a complete decreasing motivic filtration."
+    },
+    "thm:1.15": {
+      "type": "Theorem",
+      "number": "1.15",
+      "section": "1",
+      "role": "main_result",
+      "summary": "Cohomological identifications: for smooth $A/k$ in char $p$, $\\mathbb{Z}_p(n) \\simeq W\\Omega^n_{X, \\log}[-n]$ on the pro-étale site of $\\mathrm{Spec}(A)$. Realizes the BMS2 motivic-filtration sheaves as classical objects (logarithmic de Rham–Witt)."
+    },
+    "thm:1.17": {
+      "type": "Theorem",
+      "number": "1.17",
+      "section": "1",
+      "role": "main_result",
+      "summary": "Relative motivic filtration: for $R \\in \\mathrm{QSyn}$ and $A \\in \\mathrm{qSyn}_R$, complete exhaustive multiplicative filtrations on $\\mathrm{HC}^-(A/R)$ with graded pieces controlled by $\\tau_{\\ge 2n}$. The relative analog of thm:1.12."
+    },
+    "thm:3.1": {
+      "type": "Theorem",
+      "number": "3.1",
+      "section": "3",
+      "role": "key_mechanism",
+      "summary": "fpqc-sheaf property: $A \\mapsto \\wedge^i_A L_{A/R}$ is an fpqc sheaf with values in $D(R)$. The descent property that licenses building cohomology theories by quasisyntomic sheafification."
+    },
+    "thm:5.4": {
+      "type": "Theorem",
+      "number": "5.4",
+      "section": "5",
+      "role": "key_mechanism",
+      "summary": "Beilinson $t$-structure on $DF(R)$: a symmetric-monoidal $t$-structure with explicit connective cover. The general homological-algebra device used to extract motivic filtrations from filtered objects."
+    },
+    "thm:6.1": {
+      "type": "Theorem",
+      "number": "6.1",
+      "section": "6",
+      "role": "technical",
+      "summary": "$\\pi_* \\mathrm{THH}(R; \\mathbb{Z}_p) = R[u]$ is polynomial in degree $2$, with generator $u \\in \\ker(\\theta)/\\ker(\\theta)^2$. The local computation that powers thm:1.6."
+    },
+    "thm:7.1": {
+      "type": "Theorem",
+      "number": "7.1",
+      "section": "7",
+      "role": "technical",
+      "summary": "For $S \\in \\mathrm{QRSPerfd}_R$, $\\pi_* \\mathrm{THH}(S; \\mathbb{Z}_p)$ is concentrated in even degrees and multiplication by $u$ gives a natural injection $\\pi_{2i-2} \\to \\pi_{2i}$. Even-degree concentration on quasiregular semiperfectoid rings."
+    },
+    "thm:7.2": {
+      "type": "Theorem",
+      "number": "7.2",
+      "section": "7",
+      "role": "key_reduction",
+      "summary": "On quasiregular semiperfectoids, the homotopy-fixed-point and Tate spectral sequences for $\\mathrm{TC}^-, \\mathrm{TP}$ degenerate; both are concentrated in even degrees with explicit canonical map $\\pi_*. The convergence input to the motivic filtration."
+    },
+    "thm:7.15": {
+      "type": "Theorem",
+      "number": "7.15",
+      "section": "7",
+      "role": "auxiliary",
+      "summary": "Clausen–Mathew–Morrow: the trace $K(S; \\mathbb{Z}_p) \\to \\tau_{\\ge 0} \\mathrm{TC}(S; \\mathbb{Z}_p)$ is an equivalence for $S$ Henselian along $pS$ with $S/pS$ semiperfect. The $K$-theory side of the motivic filtration."
+    },
+    "thm:8.14": {
+      "type": "Theorem",
+      "number": "8.14",
+      "section": "8",
+      "role": "key_reduction",
+      "summary": "For $S$ quasiregular semiperfect: $\\mathbb{A}_{\\mathrm{crys}}(S)$ is $p$-torsion-free and $\\varphi_i \\bmod p: \\mathcal{N}^i \\mathbb{A}_{\\mathrm{crys}} \\to \\mathbb{A}_{\\mathrm{crys}}/p$ is injective with image $\\mathrm{Fil}_i^{\\mathrm{conj}}$. Char-$p$ specialization machinery."
+    },
+    "thm:9.6": {
+      "type": "Theorem",
+      "number": "9.6",
+      "section": "9",
+      "role": "key_reduction",
+      "summary": "For smooth $A/\\mathcal{O}_C$ ($p$-adic completion thereof), $\\widehat{\\mathbbl{\\Delta}}_A \\simeq A\\Omega_A$ as $E_\\infty$-$A_{\\mathrm{inf}}$-algebras compatibly with Frobenius. Identifies the BMS2 $\\widehat{\\mathbbl{\\Delta}}$ with BMS1's $A\\Omega$ — the bridge between the two papers."
+    },
+    "thm:10.1": {
+      "type": "Theorem",
+      "number": "10.1",
+      "section": "10",
+      "role": "key_reduction",
+      "summary": "Pro-étale truncation: $\\mathbb{Z}/p^n \\mathbb{Z}(i) \\simeq \\tau^{\\le i} R\\psi_* \\mathbb{Z}/p^n \\mathbb{Z}(i)$ for $\\psi: X_{\\mathrm{\\acute{e}t}} \\to \\mathfrak{X}_{\\mathrm{\\acute{e}t}}$. Connects motivic-filtration sheaves to nearby-cycles cohomology — key bridge to thm:1.15."
+    },
+    "thm:11.2": {
+      "type": "Theorem",
+      "number": "11.2",
+      "section": "11",
+      "role": "key_reduction",
+      "summary": "Construction of the Breuil–Kisin module $\\widehat{\\mathbbl{\\Delta}}_{A/\\mathfrak{S}}$: a $(p,z)$-complete $E_\\infty$-algebra over $\\mathfrak{S}$ with $\\varphi$-linear Frobenius, functorial in smooth affine formal $A/\\mathcal{O}_K$. Body construction underlying thm:1.2."
+    }
+  },
+  "edges": [
+    {
+      "from": "thm:1.2",
+      "to": "thm:11.2",
+      "type": "depends_on",
+      "note": "Existence of the $\\mathfrak{S}$-cohomology theory is the body construction."
+    },
+    {
+      "from": "thm:1.6",
+      "to": "thm:6.1",
+      "type": "depends_on",
+      "note": "Polynomial structure of $\\mathrm{THH}$ is the local computation underlying $A_{\\mathrm{inf}}$ identification."
+    },
+    {
+      "from": "thm:1.6",
+      "to": "thm:7.2",
+      "type": "depends_on",
+      "note": "Even-degree concentration on perfectoids comes from the QRSPerfd computation."
+    },
+    {
+      "from": "thm:1.8",
+      "to": "thm:9.6",
+      "type": "depends_on",
+      "note": "$A\\Omega$-identification is the body theorem thm:9.6."
+    },
+    {
+      "from": "thm:1.10",
+      "to": "thm:1.8",
+      "type": "specializes",
+      "note": "Char-$p$ case specializes the $A\\Omega$-syntomic identification."
+    },
+    {
+      "from": "thm:1.10",
+      "to": "thm:8.14",
+      "type": "depends_on",
+      "note": "Uses crystalline / quasiregular semiperfect machinery."
+    },
+    {
+      "from": "thm:1.12",
+      "to": "thm:7.2",
+      "type": "depends_on",
+      "note": "Motivic filtration uses even-degree concentration to define the syntomic-site filtration."
+    },
+    {
+      "from": "thm:1.12",
+      "to": "thm:5.4",
+      "type": "depends_on",
+      "note": "Beilinson $t$-structure extracts the motivic filtration."
+    },
+    {
+      "from": "thm:1.12",
+      "to": "thm:3.1",
+      "type": "depends_on",
+      "note": "fpqc-sheaf property of cotangent powers is the descent licence."
+    },
+    {
+      "from": "thm:1.15",
+      "to": "thm:10.1",
+      "type": "depends_on",
+      "note": "Pro-étale truncation realizes $\\mathbb{Z}_p(n)$ as the motivic-filtration sheaf."
+    },
+    {
+      "from": "thm:1.15",
+      "to": "thm:1.10",
+      "type": "depends_on",
+      "note": "Char-$p$ identification supplies the de Rham–Witt logarithmic input."
+    },
+    {
+      "from": "thm:1.17",
+      "to": "thm:1.12",
+      "type": "extends",
+      "note": "Relative version of the motivic filtration, with $R$ as the base."
+    },
+    {
+      "from": "thm:7.2",
+      "to": "thm:7.1",
+      "type": "depends_on",
+      "note": "$\\mathrm{TC}^-$/$\\mathrm{TP}$ degeneration uses the $\\mathrm{THH}$ even-degree concentration."
+    },
+    {
+      "from": "thm:7.1",
+      "to": "thm:6.1",
+      "type": "depends_on",
+      "note": "Even-degree concentration uses the polynomial $\\mathrm{THH}$ of perfectoid base."
+    },
+    {
+      "from": "thm:9.6",
+      "to": "thm:1.6",
+      "type": "depends_on",
+      "note": "Identification bridges through the perfectoid-level $A_{\\mathrm{inf}}$-recovery."
+    },
+    {
+      "from": "thm:9.6",
+      "to": "thm:11.2",
+      "type": "depends_on",
+      "note": "Breuil–Kisin construction gives the $\\widehat{\\mathbbl{\\Delta}}$ side of the equivalence."
+    },
+    {
+      "from": "thm:11.2",
+      "to": "thm:1.6",
+      "type": "depends_on",
+      "note": "$A_{\\mathrm{inf}}$-recovery anchors the construction at the perfectoid base."
+    },
+    {
+      "from": "thm:7.15",
+      "to": "thm:1.12",
+      "type": "depends_on",
+      "note": "Gives the $K$-theoretic interpretation of the motivic filtration."
+    },
+    {
+      "from": "thm:8.14",
+      "to": "thm:7.2",
+      "type": "depends_on",
+      "note": "Crystalline data on quasiregular semiperfect rings parallels the topological side."
+    }
+  ],
+  "critical_path": [
+    "thm:1.12",
+    "thm:7.2",
+    "thm:7.1",
+    "thm:6.1",
+    "thm:1.6"
+  ],
+  "proof_architecture": {
+    "main_results": {
+      "description": "Section 1. Statements of the Breuil–Kisin upgrade ($\\mathfrak{S}$-cohomology), $A_{\\mathrm{inf}}$ as $\\mathrm{TC}^-$, $A\\Omega$ as a syntomic-site cohomology, motivic filtration on $\\mathrm{THH/TC^-/TP}$, and the cohomological identification $\\mathbb{Z}_p(n) \\simeq W\\Omega^n_{X,\\log}[-n]$.",
+      "nodes": [
+        "thm:1.2",
+        "thm:1.6",
+        "thm:1.8",
+        "thm:1.10",
+        "thm:1.12",
+        "thm:1.15",
+        "thm:1.17"
+      ]
+    },
+    "homotopy_theoretic_machinery": {
+      "description": "Sections 5–7. Beilinson $t$-structure, $\\mathrm{THH}$ polynomial structure on perfectoids, even-degree concentration on QRSPerfd, $\\mathrm{TC}^-/\\mathrm{TP}$ degeneration, Clausen–Mathew–Morrow trace.",
+      "nodes": [
+        "thm:5.4",
+        "thm:6.1",
+        "thm:7.1",
+        "thm:7.2",
+        "thm:7.15"
+      ]
+    },
+    "descent_and_crystalline_input": {
+      "description": "Sections 3, 8. fpqc descent of $\\wedge^i L_{A/R}$ powering the syntomic-sheaf framework; quasiregular semiperfect crystalline machinery.",
+      "nodes": [
+        "thm:3.1",
+        "thm:8.14"
+      ]
+    },
+    "BMS1_identification_and_pro_etale_truncation": {
+      "description": "Sections 9, 10. Identification of $\\widehat{\\mathbbl{\\Delta}}$ with $A\\Omega$; pro-étale truncation realizing the motivic-filtration sheaves.",
+      "nodes": [
+        "thm:9.6",
+        "thm:10.1"
+      ]
+    },
+    "Breuil_Kisin_module": {
+      "description": "Section 11. Construction of the BK module $\\widehat{\\mathbbl{\\Delta}}_{A/\\mathfrak{S}}$.",
+      "nodes": [
+        "thm:11.2"
+      ]
+    }
+  },
+  "bibliography": {
+    "BMS": {
+      "title": "Integral p-adic Hodge theory",
+      "authors": [
+        "Bhargav Bhatt",
+        "Matthew Morrow",
+        "Peter Scholze"
+      ],
+      "year": 2016,
+      "arxiv_id": "1602.03148",
+      "in_registry": true,
+      "role": "Predecessor; thm:9.6 identifies BMS2's $\\widehat{\\mathbbl{\\Delta}}$ with BMS1's $A\\Omega$."
+    },
+    "Scholze:Perfectoid": {
+      "title": "Perfectoid spaces",
+      "authors": [
+        "Peter Scholze"
+      ],
+      "year": 2012,
+      "arxiv_id": "1111.4914",
+      "in_registry": true,
+      "role": "Perfectoid base used at thm:1.6."
+    },
+    "CMM": {
+      "title": "Algebraic K-theory and descent for blow-ups (or the cyclotomic trace)",
+      "authors": [
+        "Dustin Clausen",
+        "Akhil Mathew",
+        "Matthew Morrow"
+      ],
+      "year": 2018,
+      "arxiv_id": null,
+      "in_registry": false,
+      "role": "Source of thm:7.15."
+    },
+    "NikolausScholze": {
+      "title": "On topological cyclic homology",
+      "authors": [
+        "Thomas Nikolaus",
+        "Peter Scholze"
+      ],
+      "year": 2018,
+      "arxiv_id": null,
+      "in_registry": false,
+      "role": "Foundations of $\\mathrm{TC}, \\mathrm{TC}^-, \\mathrm{TP}$."
+    },
+    "Bhatt:NotesPrismatic": {
+      "title": "Lecture notes on prismatic cohomology",
+      "authors": [
+        "Bhargav Bhatt"
+      ],
+      "year": 2018,
+      "arxiv_id": null,
+      "in_registry": false,
+      "role": "Companion lecture notes."
+    },
+    "Beilinson:tStructure": {
+      "title": "On the derived category of perverse sheaves (Beilinson $t$-structure)",
+      "authors": [
+        "Alexander Beilinson"
+      ],
+      "year": 1987,
+      "arxiv_id": null,
+      "in_registry": false,
+      "role": "Source of thm:5.4."
+    }
+  }
+}

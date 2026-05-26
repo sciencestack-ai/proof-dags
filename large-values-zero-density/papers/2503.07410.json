@@ -1,0 +1,330 @@
+{
+  "paper": "2503.07410",
+  "title": "Large value estimates in number theory, harmonic analysis, and computer science",
+  "authors": [
+    "Larry Guth"
+  ],
+  "generated": "2026-05-12",
+  "status": "complete",
+  "nodes": {
+    "def:2.1": {
+      "type": "Definition",
+      "number": "2.1",
+      "section": "2",
+      "role": "definition",
+      "summary": "The large-value count: for a $T\\times N$ matrix $M$, $\\mathrm{LV}_{M,\\ell^p}(\\lambda):=\\max_{\\|v\\|_p=N^{1/p}}\\#\\{i:|(Mv)_i|>\\lambda\\}$. The single quantity unifying the large-value problem across number theory (Dirichlet polynomials), Fourier analysis (restriction/Strichartz), and statistics/CS (planted-vector detection)."
+    },
+    "prop:3.1": {
+      "type": "Proposition",
+      "number": "3.1",
+      "section": "3",
+      "role": "context",
+      "summary": "Sharpness example: for any $U\\subset\\{1,\\dots,T\\}$ with $|U|\\sim N^{2-2\\sigma}$ one can choose $|b_n|\\lessapprox1$ with $|(M_{\\mathrm{Dir}}b)_t|\\gtrsim N^\\sigma$ for $t\\in U$. Shows the Montgomery bound $N^{2-2\\sigma}$ cannot be beaten — the lower bound the whole problem aims at."
+    },
+    "prop:3.2": {
+      "type": "Proposition",
+      "number": "3.2",
+      "section": "3",
+      "role": "context",
+      "summary": "Random matrices: a random $T\\times N$ matrix (entries from suitable distributions) obeys, with high probability, the conjectured large-value estimate. Evidence that the truth for $M_{\\mathrm{Dir}}$ should be the Montgomery bound, not something weaker."
+    },
+    "conjecture:3.3": {
+      "type": "Conjecture",
+      "number": "3.3",
+      "section": "3",
+      "role": "context",
+      "summary": "Montgomery's large value conjecture: for $\\sigma>\\tfrac12$, $\\mathrm{LV}_{M_{\\mathrm{Dir}},\\ell^\\infty}(N^\\sigma)\\lessapprox N^{2-2\\sigma}$ — i.e. a Dirichlet polynomial $D(t)=\\sum_{n=N}^{2N}b_ne^{it\\log n}$ ($|b_n|\\le1$) exceeds $N^\\sigma$ on $\\lessapprox N^{2-2\\sigma}$ unit-separated points."
+    },
+    "conjecture:3.4": {
+      "type": "Conjecture",
+      "number": "3.4",
+      "section": "3",
+      "role": "context",
+      "summary": "Montgomery's $\\ell^q$ conjecture: $\\|M_{\\mathrm{Dir}}\\|_{\\infty\\to q}\\lessapprox N+N^{1/2}T^{1/q}$ for every $q\\ge2$. The mean-value (rather than large-value) form; equivalent to conjecture:3.3."
+    },
+    "prop:5.1": {
+      "type": "Proposition",
+      "number": "5.1",
+      "section": "5",
+      "role": "key_mechanism",
+      "summary": "Orthogonality / operator-norm method: $\\sum_{t=1}^T|D(t)|^2\\lesssim T\\sum_n|b_n|^2$ for $T\\ge N$. The $L^2$ baseline (Plancherel), giving the trivial large-value bound."
+    },
+    "prop:5.2": {
+      "type": "Proposition",
+      "number": "5.2",
+      "section": "5",
+      "role": "key_mechanism",
+      "summary": "Power method: for even $q$ and $\\sum_n|b_n|^2\\le N$, $\\sum_{t=1}^T|\\sum_{n\\sim N}b_ne^{it\\log n}|^q\\lessapprox N^q+N^{q/2}T$. The high-moment refinement of the $L^2$ bound."
+    },
+    "prop:5.3": {
+      "type": "Proposition",
+      "number": "5.3",
+      "section": "5",
+      "role": "key_mechanism",
+      "summary": "The Montgomery–Halász $MM^*$ method: if every off-diagonal entry of $MM^*$ has norm $\\lessapprox N^{1/2}$, then $|(Mb)_t|\\ge N^\\sigma$ on a controlled set. The duality/spectral method behind most classical large-value theorems — and the one Guth–Maynard refines via the Schatten tensor."
+    },
+    "prop:5.4": {
+      "type": "Proposition",
+      "number": "5.4",
+      "section": "5",
+      "role": "context",
+      "summary": "The $\\sigma\\le\\tfrac34$ obstruction: for $\\tfrac12\\le\\sigma\\le\\tfrac34$ there is a function $\\tilde D$ and set $W$ with $N^{2\\sigma}|W|\\sim TN$ — an 'almost counterexample' showing why the $\\sigma\\le\\tfrac34$ regime is hard and where the classical methods stall."
+    },
+    "thm:6.1": {
+      "type": "Theorem",
+      "number": "6.1",
+      "section": "6",
+      "role": "main_result",
+      "summary": "The Guth–Maynard theorem (= Theorem 1.1 of [GM]): for $T=N^{6/5}$ and $\\sigma\\le\\tfrac34$, a new large-value bound for $M_{\\mathrm{Dir}}$ — proved via the 'Schatten tensor', i.e. a cubic-trace ($\\mathrm{tr}((MM^*)^3)$) refinement of the $MM^*$ method that exploits the multiplicative structure of $\\{e^{it\\log n}\\}$. The first improvement over the classical methods in this regime."
+    },
+    "thm:6.2": {
+      "type": "Theorem",
+      "number": "6.2",
+      "section": "6",
+      "role": "context",
+      "summary": "Random-matrix benchmark (Theorem 4.4 of [DHPT]): for $N\\le T\\le N^2$ and a Gaussian $T\\times N$ matrix, a polynomial-strength large-value bound holds whp. Calibrates how close thm:6.1 gets to the 'generic' truth."
+    },
+    "prop:7.1": {
+      "type": "Proposition",
+      "number": "7.1",
+      "section": "7",
+      "role": "main_technical",
+      "summary": "The no-additive-structure case: if $\\Phi\\subset2\\pi\\mathbb{Z}$ so $D$ is a Fourier series on $\\mathbb{R}/\\mathbb{Z}$, then $\\int_0^1|D(t)|^{2s}dt$ is bounded by the major-arc contribution — Vinogradov-mean-value-flavoured bound when the frequencies carry no extra additive structure."
+    },
+    "prop:7.2": {
+      "type": "Proposition",
+      "number": "7.2",
+      "section": "7",
+      "role": "main_technical",
+      "summary": "The discrete companion of prop:7.1: $\\sum_{t_1,t_2\\in\\mathcal{T}}|D(t_1-t_2)|^{2s}$ bounded by the major-arc term. The form relevant to large-value estimates over discrete point sets."
+    },
+    "conjecture:7.3": {
+      "type": "Conjecture",
+      "number": "7.3",
+      "section": "7",
+      "role": "context",
+      "summary": "The conjectured optimal second-moment large-value (Heath-Brown-type) bound: for $D(t)=\\sum_{n=N}^{2N}b_ne^{it\\log n}$ ($|b_n|\\le1$) and a $1$-separated $\\mathcal{T}$, $\\sum_{t_1,t_2\\in\\mathcal{T}}|D(t_1-t_2)|^2\\le T^{o(1)}(|\\mathcal{T}|N^2+|\\mathcal{T}|^2N+\\cdots)$. The exact form the trace method aims to reach."
+    },
+    "thm:8.1": {
+      "type": "Theorem",
+      "number": "8.1",
+      "section": "8",
+      "role": "context",
+      "summary": "Sum-of-squares strength (Theorem 1.5 of [DHPT]): for a random $T\\times N$ matrix and $\\sigma>1-\\alpha/4$, the SOS hierarchy at degree $O(1)$ certifies $|W|\\lesssim N^{\\alpha+1-2\\sigma-c}$. The algorithmic upper end."
+    },
+    "conjecture:8.2": {
+      "type": "Conjecture",
+      "number": "8.2",
+      "section": "8",
+      "role": "context",
+      "summary": "Computational-complexity barrier ([DHPT]): for $\\sigma\\le1-\\alpha/4$, the degree-$O(1)$ SOS method *cannot* prove $|W|\\lesssim N^{\\cdots-c}$. A conjectural limit on a whole class of proof techniques — including, plausibly, the trace method."
+    },
+    "thm:8.3": {
+      "type": "Theorem",
+      "number": "8.3",
+      "section": "8",
+      "role": "context",
+      "summary": "Planted-vs-random distinguishing ([MW], Theorem 4.5): for $1<\\alpha<2$, $\\tfrac12<\\sigma<1$, $\\sigma>1-\\alpha/4$, the planted-vector and pure-random models are statistically distinguishable. Ties the large-value problem to a well-studied detection problem in statistics."
+    },
+    "conjecture:9.1": {
+      "type": "Conjecture",
+      "number": "9.1",
+      "section": "9",
+      "role": "context",
+      "summary": "A Kakeya-type lower bound: for $d\\ge2$ and tube/dual-tube pairs $(\\theta,\\theta^*)$, $|\\bigcup_\\theta(\\theta^*+x_\\theta)|\\ge C_{\\epsilon,d}^{-1}\\cdots$ for any translates $x_\\theta$. A geometric obstruction: if true it would limit how much the harmonic-analysis side of the large-value problem can be improved."
+    }
+  },
+  "edges": [
+    {
+      "from": "thm:6.1",
+      "to": "prop:5.3",
+      "type": "depends_on",
+      "note": "The Guth–Maynard bound is a cubic-trace ('Schatten tensor') refinement of the Montgomery–Halász $MM^*$ method."
+    },
+    {
+      "from": "prop:5.3",
+      "to": "prop:5.1",
+      "type": "generalizes",
+      "note": "The $MM^*$ method generalizes the bare $L^2$ orthogonality bound by tracking the off-diagonal of $MM^*$."
+    },
+    {
+      "from": "prop:5.2",
+      "to": "prop:5.1",
+      "type": "generalizes",
+      "note": "The power method is the high-even-moment version of the $L^2$ bound."
+    },
+    {
+      "from": "thm:6.1",
+      "to": "prop:7.2",
+      "type": "depends_on",
+      "note": "The trace method splits according to the additive structure of the frequency set, using the structured-case estimates of §7."
+    },
+    {
+      "from": "prop:7.2",
+      "to": "prop:7.1",
+      "type": "generalizes",
+      "note": "Discrete version of the Fourier-series moment bound."
+    },
+    {
+      "from": "prop:5.4",
+      "to": "prop:5.3",
+      "type": "addresses_same_question",
+      "note": "The 'almost counterexample' shows the $MM^*$ method alone cannot reach the conjecture for $\\sigma\\le\\tfrac34$ — the reason a refinement is needed."
+    },
+    {
+      "from": "thm:6.1",
+      "to": "conjecture:7.3",
+      "type": "motivates",
+      "note": "Establishes a partial form of the conjectured optimal second-moment large-value bound."
+    },
+    {
+      "from": "thm:6.1",
+      "to": "conjecture:3.3",
+      "type": "motivates",
+      "note": "Progress toward Montgomery's large value conjecture in the hard regime."
+    },
+    {
+      "from": "conjecture:3.4",
+      "to": "conjecture:3.3",
+      "type": "addresses_same_question",
+      "note": "The $\\ell^q$ mean-value form is equivalent to the large-value form."
+    },
+    {
+      "from": "prop:3.1",
+      "to": "conjecture:3.3",
+      "type": "addresses_same_question",
+      "note": "Shows the conjectured exponent $N^{2-2\\sigma}$ is best possible — it is a lower bound, not just an upper-bound target."
+    },
+    {
+      "from": "prop:3.2",
+      "to": "conjecture:3.3",
+      "type": "motivates",
+      "note": "Random matrices achieve the conjectured bound — heuristic evidence for $M_{\\mathrm{Dir}}$."
+    },
+    {
+      "from": "conjecture:8.2",
+      "to": "thm:8.1",
+      "type": "addresses_same_question",
+      "note": "The SOS barrier is the negative companion of the SOS achievability result."
+    },
+    {
+      "from": "thm:8.3",
+      "to": "thm:8.1",
+      "type": "shared_mechanism",
+      "note": "Both come from the planted-vector / spiked-matrix model of statistics."
+    },
+    {
+      "from": "thm:6.2",
+      "to": "prop:3.2",
+      "type": "depends_on",
+      "note": "The random-matrix benchmark is a quantitative form of the heuristic that random matrices behave well."
+    },
+    {
+      "from": "conjecture:9.1",
+      "to": "conjecture:3.3",
+      "type": "addresses_same_question",
+      "note": "If the Kakeya-type lower bound holds, the harmonic-analysis route to the large-value conjecture faces a geometric obstruction."
+    }
+  ],
+  "critical_path": [
+    "thm:6.1",
+    "prop:5.3",
+    "prop:5.2",
+    "prop:5.1"
+  ],
+  "proof_architecture": {
+    "the_large_value_problem": {
+      "description": "The unifying quantity $\\mathrm{LV}_{M,\\ell^p}(\\lambda)$, the Montgomery conjectures (large-value and $\\ell^q$ forms), the sharpness example, and the random-matrix heuristic.",
+      "nodes": [
+        "def:2.1",
+        "prop:3.1",
+        "prop:3.2",
+        "conjecture:3.3",
+        "conjecture:3.4"
+      ]
+    },
+    "classical_methods": {
+      "description": "Orthogonality / operator-norm, the power method, the Montgomery–Halász $MM^*$ method, and the $\\sigma\\le\\tfrac34$ obstruction that stalls them.",
+      "nodes": [
+        "prop:5.1",
+        "prop:5.2",
+        "prop:5.3",
+        "prop:5.4"
+      ]
+    },
+    "trace_method_and_structure": {
+      "description": "The Guth–Maynard Schatten-tensor (cubic-trace) refinement, the random-matrix benchmark, and the structured/unstructured-frequency special cases it splits along.",
+      "nodes": [
+        "thm:6.1",
+        "thm:6.2",
+        "prop:7.1",
+        "prop:7.2",
+        "conjecture:7.3"
+      ]
+    },
+    "barriers": {
+      "description": "Limits on the problem: the sum-of-squares achievability/lower-bound pair, the planted-vector detection connection, and a Kakeya-type geometric obstruction.",
+      "nodes": [
+        "thm:8.1",
+        "conjecture:8.2",
+        "thm:8.3",
+        "conjecture:9.1"
+      ]
+    }
+  },
+  "bibliography": {
+    "GM": {
+      "title": "New large value estimates for Dirichlet polynomials",
+      "authors": [
+        "Guth",
+        "Maynard"
+      ],
+      "arxiv_id": "2405.20552",
+      "in_registry": true
+    },
+    "DHPT": {
+      "title": "Sum-of-squares lower bounds for the Dirichlet-polynomial large value problem (and random matrix variants)",
+      "authors": [
+        "Dixit",
+        "Hopkins",
+        "Potechin",
+        "Tao(?)"
+      ],
+      "arxiv_id": null,
+      "in_registry": false
+    },
+    "MW": {
+      "title": "Planted-vector detection / spiked random matrices",
+      "authors": [
+        "Müller-Wein(?)"
+      ],
+      "arxiv_id": null,
+      "in_registry": false
+    },
+    "Montgomery:LargeValues": {
+      "title": "Topics in Multiplicative Number Theory",
+      "authors": [
+        "Montgomery"
+      ],
+      "arxiv_id": null,
+      "in_registry": false
+    },
+    "Halasz:1969": {
+      "title": "Über die Mittelwerte multiplikativer zahlentheoretischer Funktionen",
+      "authors": [
+        "Halász"
+      ],
+      "arxiv_id": null,
+      "in_registry": false
+    },
+    "BourgainDemeter:l2": {
+      "title": "The proof of the l^2 Decoupling Conjecture",
+      "authors": [
+        "Bourgain",
+        "Demeter"
+      ],
+      "arxiv_id": "1403.5335",
+      "in_registry": false
+    }
+  }
+}

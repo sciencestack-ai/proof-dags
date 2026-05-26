@@ -1,0 +1,214 @@
+{
+  "paper": "1408.5110v2",
+  "title": "Large gaps between primes",
+  "authors": [
+    "James Maynard"
+  ],
+  "generated": "2026-05-06",
+  "status": "complete",
+  "nodes": {
+    "thm:1": {
+      "type": "Theorem",
+      "number": "1",
+      "section": "1",
+      "role": "main_result",
+      "summary": "$\\limsup_n (p_{n+1}-p_n) / [(\\log p_n)(\\log_2 p_n)(\\log_4 p_n)/(\\log_3 p_n)^2] = \\infty$. Largest known prime gaps; matches Ford-Green-Konyagin-Tao independently. Erdős's \\$10000 problem solved (with FGKT)."
+    },
+    "lem:2": {
+      "type": "Lemma",
+      "number": "2",
+      "section": "3",
+      "role": "technical",
+      "summary": "Bound on the size of $\\mathcal{R}'$ (the set of primes that have to be hit by sieving with smooth tuples after the $y$-residue sieve). $|\\mathcal{R}'| \\ll x/(\\log x)^{1+\\varepsilon}$."
+    },
+    "lem:3": {
+      "type": "Lemma",
+      "number": "3",
+      "section": "3",
+      "role": "technical",
+      "summary": "Density of primes $p \\equiv a \\pmod{m}$ with $(mp-1, P_y) = 1$. Quantitative Westzynthius-Erdős-Rankin sieve estimate over twisted residues."
+    },
+    "lem:4": {
+      "type": "Lemma",
+      "number": "4",
+      "section": "3",
+      "role": "technical",
+      "summary": "Auxiliary distribution lemma controlling residual sieve errors before invoking the multidimensional Maynard-Tao construction."
+    },
+    "prop:5": {
+      "type": "Proposition",
+      "number": "5",
+      "section": "4",
+      "role": "key_reduction",
+      "summary": "Covering proposition: there exist residue classes $a_q \\pmod{q}$ for primes $q \\in \\mathcal{I}_m$ such that every $p \\in \\mathcal{R}_m$ satisfies $p \\equiv a_q \\pmod{q}$ for some $q$. Reduces the gap problem to a sieve-weight optimization."
+    },
+    "lem:6": {
+      "type": "Lemma",
+      "number": "6",
+      "section": "5",
+      "role": "key_mechanism",
+      "summary": "Computes $\\alpha_{m,q}^{-1}$ via $I_k^{(1)}(F) I_k^{(2)}(G)$ — the same simplex moment integrals from Maynard 1311.4600 prop:4.1, here repurposed to weight the covering construction."
+    },
+    "lem:7": {
+      "type": "Lemma",
+      "number": "7",
+      "section": "5",
+      "role": "key_mechanism",
+      "summary": "Lower bound on $\\sum \\mu_{m,q}(p_0)$ via $J_k^{(1)}(F) J_k^{(2)}(G)$. Same $J$-integrals as 1311.4600 prop:4.1, again pivoted to large-gap construction."
+    },
+    "lem:8": {
+      "type": "Lemma",
+      "number": "8",
+      "section": "5",
+      "role": "key_reduction",
+      "summary": "Existence of smooth $F, G$ with $k J^{(1)}(F) J^{(2)}(G) / (I^{(1)}(F) I^{(2)}(G)) \\gg \\log k$. This is the same kind of $M_k > \\log k - O(\\log\\log k)$ bound that drives Maynard's small-gaps thm:1.1; the argument mirrors 1311.4600 prop:4.3 part 3."
+    }
+  },
+  "edges": [
+    {
+      "from": "thm:1",
+      "to": "prop:5",
+      "type": "depends_on",
+      "note": "Existence of a covering reduces 'large gap of size $G$' to 'find $n$ such that $p_{n+1} > n + G$'."
+    },
+    {
+      "from": "thm:1",
+      "to": "lem:8",
+      "type": "depends_on",
+      "note": "$\\log k$ ratio drives the size of the gap that can be sieved out — same role as $M_k$ in small-gaps."
+    },
+    {
+      "from": "prop:5",
+      "to": "lem:6",
+      "type": "depends_on",
+      "note": "Weights $\\alpha_{m,q}$ from lem:6 supply the probabilistic measure used in the covering."
+    },
+    {
+      "from": "prop:5",
+      "to": "lem:7",
+      "type": "depends_on",
+      "note": "Marginal estimates from lem:7 ensure the chosen residue classes hit enough primes."
+    },
+    {
+      "from": "prop:5",
+      "to": "lem:2",
+      "type": "depends_on",
+      "note": "$|\\mathcal{R}'|$ bound limits the residual primes the covering must absorb."
+    },
+    {
+      "from": "prop:5",
+      "to": "lem:3",
+      "type": "depends_on",
+      "note": "Density of $m$-twisted primes feeds the covering count."
+    },
+    {
+      "from": "prop:5",
+      "to": "lem:4",
+      "type": "depends_on",
+      "note": "Distribution control on the residual set."
+    },
+    {
+      "from": "lem:6",
+      "to": "lem:3",
+      "type": "depends_on",
+      "note": "Singular series $\\mathfrak{S}_{m,q}$ comes from the density estimate."
+    },
+    {
+      "from": "lem:7",
+      "to": "lem:3",
+      "type": "depends_on",
+      "note": "Same singular series."
+    },
+    {
+      "from": "lem:8",
+      "to": "lem:6",
+      "type": "depends_on",
+      "note": "Optimization over smooth $F, G$ uses the explicit form of the $I$-integrals."
+    },
+    {
+      "from": "lem:8",
+      "to": "lem:7",
+      "type": "depends_on",
+      "note": "Optimization uses the $J$-integrals."
+    }
+  ],
+  "critical_path": [
+    "thm:1",
+    "prop:5",
+    "lem:6",
+    "lem:8"
+  ],
+  "proof_architecture": {
+    "main_result": {
+      "description": "thm:1: largest prime-gap lower bound. Solves Erdős's \\$10000 problem (jointly with FGKT).",
+      "nodes": [
+        "thm:1"
+      ]
+    },
+    "westzynthius_layer": {
+      "description": "Classical Erdős-Rankin sieve setup. lem:2/3/4 bound the residual primes after killing those with small prime factors.",
+      "nodes": [
+        "lem:2",
+        "lem:3",
+        "lem:4"
+      ]
+    },
+    "covering_reduction": {
+      "description": "prop:5: reduce 'find a long prime-free interval' to 'cover $\\mathcal{R}_m$ by primes $q$ with appropriate residue classes'.",
+      "nodes": [
+        "prop:5"
+      ]
+    },
+    "multidimensional_sieve_layer": {
+      "description": "lem:6/7/8: import Maynard's own multidimensional Selberg sieve (from 1311.4600) and run it backwards — pick weights so that primes concentrate on the chosen residue, instead of avoiding them.",
+      "nodes": [
+        "lem:6",
+        "lem:7",
+        "lem:8"
+      ]
+    }
+  },
+  "bibliography": {
+    "Maynard:smallgaps": {
+      "title": "Small gaps between primes",
+      "authors": [
+        "James Maynard"
+      ],
+      "arxiv_id": "1311.4600",
+      "in_registry": true,
+      "role": "method_source — same multidimensional sieve, used backwards"
+    },
+    "FGKT:2014": {
+      "title": "Long gaps between primes",
+      "authors": [
+        "Kevin Ford",
+        "Ben Green",
+        "Sergei Konyagin",
+        "Terence Tao"
+      ],
+      "arxiv_id": "1408.4505",
+      "in_registry": false,
+      "role": "parallel — independent simultaneous proof of the same result"
+    },
+    "ErdosRankin:1938": {
+      "title": "On the difference of consecutive primes (Rankin)",
+      "authors": [
+        "Robert Rankin"
+      ],
+      "year": 1938,
+      "arxiv_id": null,
+      "in_registry": false,
+      "role": "foundational — classical large-gap construction"
+    },
+    "Westzynthius:1931": {
+      "title": "Über die Verteilung der Zahlen, die zu den n ersten Primzahlen teilerfremd sind",
+      "authors": [
+        "Erik Westzynthius"
+      ],
+      "year": 1931,
+      "arxiv_id": null,
+      "in_registry": false,
+      "role": "foundational — Westzynthius residue sieve"
+    }
+  }
+}

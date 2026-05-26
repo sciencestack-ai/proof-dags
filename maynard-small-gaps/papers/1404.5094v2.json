@@ -1,0 +1,151 @@
+{
+  "paper": "1404.5094v2",
+  "title": "On limit points of the sequence of normalized prime gaps",
+  "authors": [
+    "William D. Banks",
+    "Tristan Freiberg",
+    "James Maynard"
+  ],
+  "generated": "2026-05-06",
+  "status": "complete",
+  "nodes": {
+    "thm:1.1": {
+      "type": "Theorem",
+      "number": "1.1",
+      "section": "1",
+      "role": "main_result",
+      "summary": "For any 9-tuple of nonneg $\\beta_1 \\le \\cdots \\le \\beta_9$, at least one $\\beta_j - \\beta_i$ lies in $L = $ limit points of $\\{d_n / \\log p_n\\}$. Quantitative density of the limit set."
+    },
+    "cor:1.2": {
+      "type": "Corollary",
+      "number": "1.2",
+      "section": "1",
+      "role": "main_result",
+      "summary": "Lebesgue measure: $\\lambda([0,T] \\cap L) \\ge T/22$ unconditional, $\\ge (1-o(1)) T/8$ asymptotic. Shows $L$ has positive density on the half-line."
+    },
+    "thm:1.3": {
+      "type": "Theorem",
+      "number": "1.3",
+      "section": "1",
+      "role": "main_result",
+      "summary": "$m$-tuple version: for fixed $m \\ge 2$, the $m$-tuple limit set $L_m$ hits $S_m(\\boldsymbol{\\beta})$ for any $\\boldsymbol{\\beta} \\in \\mathbb{R}^k$ with $k \\ge k_0(m)$. Multivariate generalization of thm:1.1."
+    },
+    "lem:4.1": {
+      "type": "Lemma",
+      "number": "4.1",
+      "section": "4",
+      "role": "foundational",
+      "summary": "Refined Page-Landau zero-free region: among primitive $\\chi \\bmod q$ with $q \\le T$ and $P^+(q) \\le P$, at most one $L(s,\\chi)$ has a zero in $\\mathrm{Re}(s) > 1 - c/\\log P$, $|\\mathrm{Im}(s)| \\le \\exp(\\log P / \\sqrt{\\log T})$; if it exists, $\\chi$ is real and unique."
+    },
+    "thm:4.2": {
+      "type": "Theorem",
+      "number": "4.2",
+      "section": "4",
+      "role": "key_reduction",
+      "summary": "Modified Bombieri-Vinogradov theorem: BV-style equidistribution for primes restricted to moduli $q$ with $P^+(q)$ bounded. The level-of-distribution input feeding Maynard's sieve in this setting."
+    }
+  },
+  "edges": [
+    {
+      "from": "thm:1.1",
+      "to": "thm:4.2",
+      "type": "depends_on",
+      "note": "Modified BV is the level-of-distribution Maynard's sieve consumes."
+    },
+    {
+      "from": "thm:1.1",
+      "to": "lem:4.1",
+      "type": "depends_on",
+      "note": "Zero-free region for primes to bounded-$P^+(q)$ moduli."
+    },
+    {
+      "from": "cor:1.2",
+      "to": "thm:1.1",
+      "type": "depends_on",
+      "note": "Lebesgue-measure consequence of the 9-tuple density statement."
+    },
+    {
+      "from": "thm:1.3",
+      "to": "thm:1.1",
+      "type": "extends",
+      "note": "$m$-tuple generalization."
+    },
+    {
+      "from": "thm:1.3",
+      "to": "thm:4.2",
+      "type": "depends_on",
+      "note": "Same modified BV input."
+    },
+    {
+      "from": "thm:4.2",
+      "to": "lem:4.1",
+      "type": "depends_on",
+      "note": "Page-Landau exceptional zero handling."
+    }
+  ],
+  "critical_path": [
+    "thm:1.1",
+    "thm:4.2",
+    "lem:4.1"
+  ],
+  "proof_architecture": {
+    "main_results": {
+      "description": "thm:1.1 (9-tuple density of $L$), cor:1.2 (Lebesgue measure $\\ge T/22$), thm:1.3 ($m$-tuple version).",
+      "nodes": [
+        "thm:1.1",
+        "cor:1.2",
+        "thm:1.3"
+      ]
+    },
+    "analytic_inputs": {
+      "description": "lem:4.1 (refined Page-Landau zero-free region) + thm:4.2 (modified Bombieri-Vinogradov for primes-at-smooth-moduli). The level-of-distribution apparatus, sharper than standard BV, that powers Maynard's multidim sieve in this application.",
+      "nodes": [
+        "lem:4.1",
+        "thm:4.2"
+      ]
+    }
+  },
+  "bibliography": {
+    "Maynard:smallgaps": {
+      "title": "Small gaps between primes",
+      "authors": [
+        "James Maynard"
+      ],
+      "arxiv_id": "1311.4600",
+      "in_registry": true,
+      "role": "method_source — the multidim sieve consumed by thm:1.1"
+    },
+    "GPY:I": {
+      "title": "Primes in Tuples I",
+      "authors": [
+        "D. A. Goldston",
+        "J. Pintz",
+        "C. Y. Yıldırım"
+      ],
+      "arxiv_id": "math/0508185",
+      "in_registry": true,
+      "role": "predecessor"
+    },
+    "Hildebrand:1985": {
+      "title": "On the number of positive integers $\\le x$ and free of prime factors $> y$",
+      "authors": [
+        "Adolf Hildebrand"
+      ],
+      "year": 1985,
+      "arxiv_id": null,
+      "in_registry": false,
+      "role": "foundational — smooth-number distribution, used in lem:4.1"
+    },
+    "BombieriVinogradov:1965": {
+      "title": "Bombieri-Vinogradov theorem",
+      "authors": [
+        "Enrico Bombieri",
+        "A. I. Vinogradov"
+      ],
+      "year": 1965,
+      "arxiv_id": null,
+      "in_registry": false,
+      "role": "foundational — baseline being modified"
+    }
+  }
+}

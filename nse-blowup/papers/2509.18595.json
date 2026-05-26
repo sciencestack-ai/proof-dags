@@ -1,0 +1,445 @@
+{
+  "paper": "2509.18595",
+  "title": "Arbitrary norm growth in the 3D Navier-Stokes equations",
+  "authors": [
+    "Stan Palasek"
+  ],
+  "generated": "2026-03-11",
+  "status": "complete",
+  "nodes": {
+    "thm:1.1": {
+      "type": "Theorem",
+      "number": "1.1",
+      "section": "1",
+      "role": "main_result",
+      "summary": "For any non-zero $\\Theta_*$, $\\eta_*$ with $\\Theta_*\\cdoteta_*=0$, any $\\epsilon_*>0$ and $n_max$, there exists smooth divergence-free $u^0$ with ‖$u^0$‖$_{B^{-1}_{\\infty,1}} \\le 10^5$ whose NSE global strong solution approximates $\\Theta_*sin(x\\cdoteta_*)exp(-|\\eta_*|^2t)$ with $C^{n_max}$ error at most $\\epsilon_*$ on the interval $[1/2|\\eta_*|^{-2}, 2|\\eta_*|^{-2}]$. This is the norm growth construction."
+    },
+    "rem:1.2": {
+      "type": "Remark",
+      "number": "1.2",
+      "section": "1",
+      "role": "context",
+      "summary": "The bound in thm:1.1 is in $B^{-1}_{\\infty,1} (stronger$ than $BMO^{-1})$. Also notes $BMO^{-1} \\cap C^\\infty \\subsetVMO^{-1}$ where Koch-Tataru local well-posedness applies. The constant 10^5 is not optimized."
+    },
+    "rem:1.3": {
+      "type": "Remark",
+      "number": "1.3",
+      "section": "1",
+      "role": "context",
+      "summary": "Thm:1.1 and cor:1.5 likely extend to data bounded in $B^{-1}_{\\infty,1}$ and small in $B^{-1}_{\\infty,\\infty}$ by combining with Bourgain-Pavlović ideas, but this is left to future work."
+    },
+    "rem:1.4": {
+      "type": "Remark",
+      "number": "1.4",
+      "section": "1",
+      "role": "context",
+      "summary": "Thm:1.1 says data from a bounded set can be chosen so that u approximates any prescribed global solution at a particular time scale; likely strengthens to u scattering to any global mild solution."
+    },
+    "cor:1.5": {
+      "type": "Corollary",
+      "number": "1.5",
+      "section": "1",
+      "role": "main_result",
+      "summary": "For any T>0 and non-decreasing f, the following hypothetical a priori estimates all fail: (1) ‖u(t)‖$_{BMO^{-1}} \\le$ f(‖$u^0$‖$_{BMO^{-1}}), (2) t^{(1+n)/2}$‖$\\nabla^n$ u(t)‖$_\\infty \\le$ f(‖$u^0$‖), (3) localized enstrophy bound, (4) Prodi-Serrin-Ladyzhenskaya norms — ruling out all scale-invariant a priori estimates."
+    },
+    "rem:1.6": {
+      "type": "Remark",
+      "number": "1.6",
+      "section": "1",
+      "role": "context",
+      "summary": "Cor:1.5 holds with $B^{-1}_{\\infty,1}$ on the RHS; in fact even estimates from $B^{-1}_{\\infty,1}$ data to $B^{-1}_{\\infty,\\infty}$ fail — growth occurs in the weakest critical translation-invariant space."
+    },
+    "rem:1.7": {
+      "type": "Remark",
+      "number": "1.7",
+      "section": "1",
+      "role": "context",
+      "summary": "The four estimate types in cor:1.5 are not exhaustive — the same failure holds for essentially any scale-invariant measure. Discusses analogy with Strichartz estimates for critical dispersive equations."
+    },
+    "cor:1.8": {
+      "type": "Corollary",
+      "number": "1.8",
+      "section": "1",
+      "role": "auxiliary",
+      "summary": "For any T, R>0, there exists data $u^0 \\in B_{VMO^{-1}}(0, r_0) \\cap C^\\infty$ for which the Picard iteration map $\\Phi$ fails to converge in $B_{X_T}(0$, R). Proves Picard method is not robust in the well-posed class."
+    },
+    "rem:2.1": {
+      "type": "Remark",
+      "number": "2.1",
+      "section": "2",
+      "role": "context",
+      "summary": "Order of parameter choices: $\\gamma$ and b free (subject to constraints), then k_* large depending on $|\\Theta_*|$, then A large depending on all others. Also explains why controlling $n_max$ derivatives requires tracking $n_max' \\gg n_max$ throughout the proof."
+    },
+    "lem:2.2": {
+      "type": "Lemma",
+      "number": "2.2",
+      "section": "2.1",
+      "role": "key_mechanism",
+      "summary": "Nash lemma: there exist $\\theta_1,...,\\theta_6 \\in Q^3 \\cap S^2$ and smooth $\\Gamma_j \\in C^\\infty(B$; [1/5,1]) on the ball B = B(Id, 1/7) of symmetric $3\\times3$ matrices such that M $= sum_j \\Gamma_j(M)^2 \\theta_j$ ⊗ $\\theta_j$ for all M $\\in$ B. Key algebraic tool enabling the Mikado flow ansatz to cancel leading-order NSE nonlinearity."
+    },
+    "def:2.3": {
+      "type": "Definition",
+      "number": "2.3",
+      "section": "2.1",
+      "role": "definition",
+      "summary": "Mikado flow geometry: oscillation directions $\\eta_j (from {e_1,e_2,e_3}$ with $\\eta_j\\cdottheta_j=0)$, mollifiers $\\phi_k$ at scales $ell_k = N_k^{-3/4}N_{k+1}^{-1/4}$, positions $(x_j)$, cylinders $C_j(r)$, and profiles $\\phi_j \\in C^\\infty_c(C_j(\\delta_0))$ satisfying shear-flow and normalization conditions."
+    },
+    "lem:2.4": {
+      "type": "Lemma",
+      "number": "2.4",
+      "section": "2.1",
+      "role": "technical",
+      "summary": "Explicit positions $(x_j)^6_{j=1}$ satisfying def:2.3 exist with $\\delta_0 = 1/15$. Verified by computing pairwise distances between periodic lines $L_j$, the smallest being $(8(49-15\\pi))/(5*sqrt(481)) \\approx 0.137 > 201/100 * 1/15$."
+    },
+    "def:2.5": {
+      "type": "Definition",
+      "number": "2.5",
+      "section": "2.1",
+      "role": "definition",
+      "summary": "Multi-scale velocity field construction: oscillatory profiles $\\Psi_{j,k}(x,t) = \\phi_j(M_k x) sin(N_k \\eta_j\\cdotx) e^{-N_k^2t}$, vector potentials $\\psi_k$, and frequency-localized components $v_k(x,t) = C_k(1-e^{-2N_{k+1}^2t})$ P $\\Delta\\psi_k$. Full field v $= sum_k v_k$, with special forms at k=0 and k=k_*."
+    },
+    "rem:2.6": {
+      "type": "Remark",
+      "number": "2.6",
+      "section": "2.1",
+      "role": "context",
+      "summary": "Explains rationale of def:2.5: the $(1-e^{-2N_{k+1}^2t})$ factor reflects k-th scale activation; mollification in $\\psi_k$ avoids derivative loss in lem:2.7; shear flow property kills cross-term divergences; $\\Psi_{j,k}$ solves heat equation to leading order."
+    },
+    "lem:2.7": {
+      "type": "Lemma",
+      "number": "2.7",
+      "section": "2.1",
+      "role": "main_technical",
+      "summary": "Main inductive construction: existence of $a_{j,k} \\in C^\\infty(T^3)$ satisfying the matrix equation $sum_j B_{j,k} a_{j,k}^2(x) \\theta_j$⊗$\\theta_j = -4N_{k-1}$ D $\\psi_{k-1}^0 + p_k$ Id (which encodes the cascade mechanism), plus norm bounds $1 \\le a_{j,k} \\le 32000$ and $c_*^{2^{-k}} N_k^{-1} \\le$ ‖D $\\psi_k^0$‖$_\\infty \\leC\\cdotN_k^{-1} (repeated$ squaring growth). The Nash lemma is applied inductively to solve the matrix equation at each scale."
+    },
+    "lem:2.8": {
+      "type": "Lemma",
+      "number": "2.8",
+      "section": "2.1",
+      "role": "main_technical",
+      "summary": "Decay bounds: ‖$\\nabla^n v_k(t)$‖$_\\infty$ ≲ $(|\\Theta_*|/|\\eta_*|)^{2^{-k}} N_k^{1+n} e^{-N_k^2t}$ for n $\\le n_max'$, and the global bound ‖$t^{1/2-1/p}$ v‖$_{L^p_t L^\\infty_x}$ ≲$_{\\Theta_*, k_*} 1$ for all p $\\in [1,\\infty]$. Both follow from lem:2.7 via Leibniz rule."
+    },
+    "def:2.9": {
+      "type": "Definition",
+      "number": "2.9",
+      "section": "2.2",
+      "role": "definition",
+      "summary": "Defines initial data $u^0 = v(\\cdot,0) \\in C^\\infty(T^3)$, the local-in-time strong NSE solution u from $u^0$, maximal time T_*, and the error w(t,x) = u(t,x) - v(t,x) for t $\\in [0,T_*)$."
+    },
+    "prop:2.10": {
+      "type": "Proposition",
+      "number": "2.10",
+      "section": "2.2",
+      "role": "key_technical",
+      "summary": "Defect equation: v satisfies $\\partial_t$ v $- \\Deltav +$ P div(v⊗v) = P div f for a smooth forcing f obeying $t^{(2+n+\\alpha)/2}$‖$\\nabla^n$ f(t)‖$_{C^\\alpha}$ ≲ $A^{-\\beta}(N_0^2t)^{\\alpha/2+\\beta} e^{-N_0^2t}$. The force f collets all error terms from the cascade; its smallness $(O(A^{-\\beta}))$ is the main technical output."
+    },
+    "prop:2.11": {
+      "type": "Proposition",
+      "number": "2.11",
+      "section": "2.2",
+      "role": "key_technical",
+      "summary": "Smallness of error and globality: $T_* = \\infty$ and $t^{(1+n)/2}$‖$\\nabla^n$ w(t)‖$_\\infty \\le\\epsilon (N_0^2t)^\\beta$ for t $\\in (0$, $KN_0^{-2}]$, all n $\\le n_max'''$. Proved via Duhamel formula, Grönwall with singular kernel, and a bootstrap argument using Kato's mild solution theory to extend $T_* = \\infty$."
+    }
+  },
+  "edges": [
+    {
+      "from": "thm:1.1",
+      "to": "prop:2.11",
+      "type": "depends_on",
+      "note": "Globality $T_*=\\infty$ and the error bound on $\\nabla^n$ E follow directly from prop:2.11; without it the solution might blow up before the claimed time interval."
+    },
+    {
+      "from": "thm:1.1",
+      "to": "lem:2.8",
+      "type": "depends_on",
+      "note": "Bounds ‖$\\nabla^n v_k(t)$‖$_\\infty$ from lem:2.8 are used in the final estimate of ‖$\\nabla^n$ E‖$_\\infty$ on $[|\\eta_*|^{-2}, 2|\\eta_*|^{-2}]$ to show each $v_k$ contributes negligibly for $k\\ge1$."
+    },
+    {
+      "from": "thm:1.1",
+      "to": "lem:2.7",
+      "type": "depends_on",
+      "note": "Coefficient estimates from lem:2.7 are used to bound ‖$P_N v_{k_*}(0)$‖$_\\infty$ and ultimately ‖$u^0$‖$_{B^{-1}_{\\infty,1}} \\le 10^5$."
+    },
+    {
+      "from": "thm:1.1",
+      "to": "def:2.9",
+      "type": "depends_on",
+      "note": "$u^0$, u, and w are defined in def:2.9; the proof of thm:1.1 directly references these objects."
+    },
+    {
+      "from": "cor:1.5",
+      "to": "thm:1.1",
+      "type": "depends_on",
+      "note": "Applies thm:1.1 with $\\Theta_*=ne_1$, $\\eta_*=me_2$ for each $n,m\\inN$, producing global solutions $u_{n,m}$ with ‖$u_{n,m}^0$‖$_{B^{-1}_{\\infty,1}} =$ O(1) but ‖$u_{n,m}(m^{-2})$‖$_{BMO^{-1}}$ ≳ n/m $- 1 \\to \\infty$."
+    },
+    {
+      "from": "cor:1.8",
+      "to": "cor:1.5",
+      "type": "depends_on",
+      "note": "Uses the same sequence $u_{n,m}$ from cor:1.5 to show the Picard iterate must leave any ball $B_{X_T}(0,R)$ since ‖$u_{n,m}(m^{-2})$‖$_\\infty$ ≳ n - 1."
+    },
+    {
+      "from": "prop:2.11",
+      "to": "prop:2.10",
+      "type": "depends_on",
+      "note": "w satisfies $\\partial_t$ w $- \\Deltaw +$ P div(w⊗w + 2v⊙w) = -P div f, where f is the defect from prop:2.10; smallness of f drives smallness of w via Grönwall."
+    },
+    {
+      "from": "prop:2.11",
+      "to": "lem:2.8",
+      "type": "depends_on",
+      "note": "The $L^p_t L^\\infty_x$ bound on v from lem:2.8 controls the bilinear term v⊙w in the Grönwall argument; also ‖v‖$_{L^2_t L^\\infty_x}$ appears explicitly in the exponential factor."
+    },
+    {
+      "from": "prop:2.11",
+      "to": "def:2.9",
+      "type": "depends_on",
+      "note": "w = u - v is defined in def:2.9; the Duhamel formula and bootstrap are set up for this object."
+    },
+    {
+      "from": "prop:2.10",
+      "to": "lem:2.7",
+      "type": "depends_on",
+      "note": "Error estimates for $E_{1,k}, E_{2,k}, R_k^{high}$ all require the coefficient bounds ‖$\\nabla^n a_{j,k}$‖$_\\infty$ and ‖D $\\psi_k^0$‖$_\\infty$ from lem:2.7; the key cancellation in prop:2.10 relies on the inductive formula (lem:2.7, eq 21)."
+    },
+    {
+      "from": "prop:2.10",
+      "to": "def:2.5",
+      "type": "depends_on",
+      "note": "The proof decomposes $v_k = v_k^p + v_k^e$ using the structure of def:2.5, and the anti-divergence operator R acts on P $div(v_k^p$ ⊗ $v_k^p)$ to isolate low- and high-frequency error terms."
+    },
+    {
+      "from": "prop:2.10",
+      "to": "lem:2.2",
+      "type": "depends_on",
+      "note": "The stationary phase estimate for R (eq 37) and the Calderon-Zygmund boundedness of $\\nablaR$ are invoked; the operator R acts on Mikado structures built from the $\\theta_j$ of lem:2.2."
+    },
+    {
+      "from": "prop:2.10",
+      "to": "lem:2.8",
+      "type": "depends_on",
+      "note": "Decay bounds ‖$\\nabla^n v_k(t)$‖$_\\infty$ from lem:2.8 are used in the cross-term estimates for $sum_{k1\\nek2} v_{k1}$⊗$v_{k2}$ and for $v_k^e$."
+    },
+    {
+      "from": "lem:2.8",
+      "to": "lem:2.7",
+      "type": "depends_on",
+      "note": "Proof of lem:2.8:9 (eq 32) is immediate from lem:2.7:27 (bounds on $\\nabla^n \\psi_k)$ via Leibniz rule with P $\\Delta = -curl$ curl; higher derivative estimates use lem:2.7:27:1 and lem:2.7:27:2."
+    },
+    {
+      "from": "lem:2.8",
+      "to": "def:2.5",
+      "type": "depends_on",
+      "note": "$v_k$ is defined in def:2.5 as $C_k(1-e^{-2N_{k+1}^2t})$ P $\\Delta\\psi_k$; the proof directly substitutes this definition."
+    },
+    {
+      "from": "lem:2.7",
+      "to": "lem:2.2",
+      "type": "depends_on",
+      "note": "The $\\Gamma_j$ from Nash lemma define $a_{j,k}$ inductively: $a_{j,k}(x) = (28 B_{j,k}^{-1} N_{k-1}$ ‖D $\\psi_{k-1}^0$‖$_\\infty)^{1/2} \\Gamma_j(Id -$ D $\\psi_{k-1}^0 / (7$‖D $\\psi_{k-1}^0$‖$_\\infty))$. This is the core algebraic step that cancels $R_{k+1}^{low}$."
+    },
+    {
+      "from": "lem:2.7",
+      "to": "def:2.5",
+      "type": "depends_on",
+      "note": "$\\psi_k$ and $\\Psi_{j,k}$ are defined in def:2.5; lem:2.7 constructs the coefficient functions $a_{j,k}$ that make these vector potentials satisfy the inductive matrix equation."
+    },
+    {
+      "from": "lem:2.7",
+      "to": "def:2.3",
+      "type": "depends_on",
+      "note": "The mollifiers $\\phi_k$ and scale $ell_k$ from def:2.3 appear in the derivative estimates for $\\psi_k$; the shear flow property (def:2.3 eq 17) and normalization (def:2.3 eq 18) are used to bound $E_1$ and identify the leading term."
+    },
+    {
+      "from": "def:2.5",
+      "to": "def:2.3",
+      "type": "depends_on",
+      "note": "def:2.5 uses oscillation directions $\\eta_j$, mollifiers $\\phi_k$, Mikado profiles $\\phi_j$, and cylinders $C_j$ from def:2.3 to build the vector potentials $\\psi_k$ and oscillatory profiles $\\Psi_{j,k}$."
+    },
+    {
+      "from": "def:2.5",
+      "to": "lem:2.2",
+      "type": "depends_on",
+      "note": "$\\theta_j$ from the Nash lemma (lem:2.2) appear as the transport directions in the vector potentials: $\\psi_k = N_k^{-2} \\phi_k * sum_j a_{j,k} \\Psi_{j,k} \\theta_j$."
+    },
+    {
+      "from": "def:2.3",
+      "to": "lem:2.2",
+      "type": "depends_on",
+      "note": "Oscillation directions $\\eta_j$ are chosen from ${e_1,e_2,e_3}$ satisfying $\\eta_j\\cdottheta_j=0$, where $\\theta_j \\in Q^3 \\cap S^2$ are the directions from the Nash lemma (lem:2.2)."
+    },
+    {
+      "from": "lem:2.4",
+      "to": "def:2.3",
+      "type": "proves",
+      "note": "Establishes that concrete positions $(x_j)^6_{j=1}$ exist satisfying the spatial separation condition (def:2.3 eq 15) with $\\delta_0 = 1/15$, by explicit computation of pairwise line distances."
+    }
+  ],
+  "critical_path": [
+    "thm:1.1",
+    "prop:2.11",
+    "prop:2.10",
+    "lem:2.7",
+    "lem:2.2"
+  ],
+  "proof_architecture": {
+    "layer_1_algebraic_tools": {
+      "description": "Nash lemma and Mikado flow geometry — the algebraic foundations enabling the inverse cascade",
+      "nodes": [
+        "lem:2.2",
+        "def:2.3",
+        "lem:2.4"
+      ]
+    },
+    "layer_2_cascade_construction": {
+      "description": "Multi-scale velocity field definition — the principal ansatz for the norm growth solution",
+      "nodes": [
+        "def:2.3",
+        "lem:2.4",
+        "def:2.5",
+        "rem:2.6"
+      ]
+    },
+    "layer_3_inductive_cascade": {
+      "description": "Coefficient construction and cascade estimates — the heart of the inverse cascade via repeated squaring",
+      "nodes": [
+        "rem:2.1",
+        "lem:2.7",
+        "lem:2.8"
+      ]
+    },
+    "layer_4_perturbation": {
+      "description": "Closeness of u to v: defect equation and bootstrap — showing the constructed v is a good approximate solution",
+      "nodes": [
+        "def:2.9",
+        "prop:2.10",
+        "prop:2.11"
+      ]
+    },
+    "layer_5_main_results": {
+      "description": "Main theorem, a priori estimate failure, and Picard divergence — the consequences of norm growth",
+      "nodes": [
+        "thm:1.1",
+        "rem:1.2",
+        "rem:1.3",
+        "rem:1.4",
+        "cor:1.5",
+        "rem:1.6",
+        "rem:1.7",
+        "cor:1.8"
+      ]
+    }
+  },
+  "bibliography": {
+    "bahouri1999high": {
+      "title": "High frequency approximation of solutions to critical nonlinear wave equations",
+      "arxiv_id": null,
+      "in_registry": false
+    },
+    "bourgain2008ill": {
+      "title": "Ill-posedness of the Navier-Stokes equations in a critical space in 3D",
+      "arxiv_id": null,
+      "in_registry": false
+    },
+    "cannone1994ondelettes": {
+      "title": "Ondelettes, paraproduits et Navier-Stokes (PhD thesis)",
+      "arxiv_id": null,
+      "in_registry": false
+    },
+    "cheskidov2014norm": {
+      "title": "Norm inflation for generalized Navier-Stokes equations",
+      "arxiv_id": null,
+      "in_registry": false
+    },
+    "coic-palasek": {
+      "title": "Non-uniqueness of smooth solutions of the Navier-Stokes equations from critical data",
+      "arxiv_id": "2503.14699",
+      "in_registry": true
+    },
+    "de2009euler": {
+      "title": "The Euler equations as a differential inclusion",
+      "arxiv_id": null,
+      "in_registry": false
+    },
+    "fujita1964navier": {
+      "title": "On the Navier-Stokes initial value problem. I",
+      "arxiv_id": null,
+      "in_registry": false
+    },
+    "germain2008second": {
+      "title": "The second iterate for the Navier-Stokes equation",
+      "arxiv_id": null,
+      "in_registry": false
+    },
+    "jia-sverak-minimal": {
+      "title": "Minimal L^3-initial data for potential Navier-Stokes singularities",
+      "arxiv_id": null,
+      "in_registry": false
+    },
+    "kato1984strong": {
+      "title": "Strong L^p-solutions of the Navier-Stokes equation in R^m",
+      "arxiv_id": null,
+      "in_registry": false
+    },
+    "koch2001well": {
+      "title": "Well-posedness for the Navier-Stokes equations",
+      "arxiv_id": null,
+      "in_registry": false
+    },
+    "leray1934mouvement": {
+      "title": "Sur le mouvement d'un liquide visqueux emplissant l'espace",
+      "arxiv_id": null,
+      "in_registry": false
+    },
+    "luo2024illposedness": {
+      "title": "Illposedness of incompressible fluids in supercritical Sobolev spaces",
+      "arxiv_id": "2404.07813",
+      "in_registry": false
+    },
+    "luo2025sharp": {
+      "title": "Sharp norm inflation for 3D Navier-Stokes equations in supercritical spaces",
+      "arxiv_id": "2504.08288",
+      "in_registry": false
+    },
+    "modena2018non": {
+      "title": "Non-uniqueness for the transport equation with Sobolev vector fields",
+      "arxiv_id": null,
+      "in_registry": false
+    },
+    "palasek2024non": {
+      "title": "Non-uniqueness in the Leray-Hopf class for a dyadic Navier-Stokes model",
+      "arxiv_id": "2407.06179",
+      "in_registry": true
+    },
+    "planchon1998asymptotic": {
+      "title": "Asymptotic behavior of global solutions to the Navier-Stokes equations in R^3",
+      "arxiv_id": null,
+      "in_registry": false
+    },
+    "rusin-sverak": {
+      "title": "Minimal initial data for potential Navier-Stokes singularities",
+      "arxiv_id": null,
+      "in_registry": false
+    },
+    "tao-quantitative-formulation-navier": {
+      "title": "A quantitative formulation of the global regularity problem for the periodic Navier-Stokes equation",
+      "arxiv_id": null,
+      "in_registry": false
+    },
+    "tao-pseudoconformal": {
+      "title": "A pseudoconformal compactification of the nonlinear Schrödinger equation and applications",
+      "arxiv_id": null,
+      "in_registry": false
+    },
+    "wang2015ill": {
+      "title": "Ill-posedness for the Navier-Stokes equations in critical Besov spaces",
+      "arxiv_id": null,
+      "in_registry": false
+    },
+    "yoneda2010ill": {
+      "title": "Ill-posedness of the 3D-Navier-Stokes equations in a generalized Besov space near BMO^{-1}",
+      "arxiv_id": null,
+      "in_registry": false
+    }
+  }
+}

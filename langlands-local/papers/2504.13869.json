@@ -1,0 +1,134 @@
+{
+  "paper": "2504.13869",
+  "title": "On the categorical local Langlands conjectures for depth-zero regular supercuspidal representations",
+  "authors": ["Chenji Fu"],
+  "generated": "2026-05-20",
+  "status": "complete",
+  "nodes": {
+    "thm:2.1.10": {
+      "type": "Theorem",
+      "number": "2.1.10",
+      "section": "2.1",
+      "role": "key_reduction",
+      "summary": "For a tame regular semisimple elliptic $L$-parameter (TRSELP) $\\varphi$, the connected component $X_\\varphi$ of the stack of $L$-parameters $Z^1(W_F,\\widehat{G})$ containing $\\varphi$ is computed explicitly as a quotient of $\\widehat{G} \\times T \\times \\mu$ — the geometric description of the spectral side."
+    },
+    "thm:2.2.1": {
+      "type": "Theorem",
+      "number": "2.2.1",
+      "section": "2.2",
+      "role": "main_result",
+      "summary": "$L$-parameter side: when $Z(\\widehat{G})$ is finite, $X_\\varphi/\\widehat{G} \\cong [*/S_\\psi] \\times \\mu$. The component of the moduli of $L$-parameters attached to a depth-zero supercuspidal packet is a point-mod-$S_\\varphi$ times a discrete $\\mu$-factor."
+    },
+    "thm:3.1.2": {
+      "type": "Theorem",
+      "number": "3.1.2",
+      "section": "3.1",
+      "role": "main_result",
+      "summary": "Representation side (Main Theorem): for $q$ above the Coxeter number, compact induction $\\mathrm{c\\text{-}Ind}_{G_x}^{G(F)}$ induces an equivalence $\\mathcal{B}_{x,1} \\to \\mathcal{C}_{x,1}$ between the parahoric block and the depth-zero supercuspidal block of $G(F)$."
+    },
+    "thm:3.1.3": {
+      "type": "Theorem",
+      "number": "3.1.3",
+      "section": "3.1",
+      "role": "key_technical",
+      "summary": "Every representation in the block $\\mathcal{B}_{x,1}$ of a representation with regular supercuspidal reduction itself has supercuspidal reduction — the closure property making the block well-behaved."
+    },
+    "thm:3.1.4": {
+      "type": "Theorem",
+      "number": "3.1.4",
+      "section": "3.1",
+      "role": "technical",
+      "summary": "Dichotomy for two vertices $x,y$: parahoric representations trivial on the pro-unipotent radical, one with supercuspidal reduction, are either linked in a controlled way or orthogonal — controls how blocks at different vertices interact."
+    },
+    "thm:3.4.1": {
+      "type": "Theorem",
+      "number": "3.4.1",
+      "section": "3.4",
+      "role": "key_reduction",
+      "summary": "$\\Pi_{x,1} = \\mathrm{c\\text{-}Ind}_{G_x}^{G(F)} \\sigma_{x,1}$ is a projective generator of the block $\\mathcal{C}_{x,1}$ — the Morita-theoretic engine that turns the block into modules over its endomorphism algebra."
+    },
+    "prop:3.2.2": {
+      "type": "Proposition",
+      "number": "3.2.2",
+      "section": "3.2",
+      "role": "auxiliary",
+      "summary": "Deligne–Lusztig duality: $\\mathbb{G}^F$-classes of pairs $(\\mathbb{T},\\theta)$ correspond to $\\mathbb{G}^{*F^*}$-classes of semisimple pairs $(\\mathbb{T}^*,s)$ — the dual-group dictionary for the finite group of Lie type $G_x$."
+    },
+    "thm:3.2.4": {
+      "type": "Theorem",
+      "number": "3.2.4",
+      "section": "3.2",
+      "role": "foundational",
+      "summary": "Broué's equivalence (imported): for $X_{\\mathbb{U}}$ affine of dimension $d$ ($q$ above the Coxeter number), the cohomology $R\\Gamma_c(X_{\\mathbb{U}})$ of the Deligne–Lusztig variety induces a derived equivalence between blocks — the finite-group-of-Lie-type input."
+    },
+    "thm:3.2.10": {
+      "type": "Theorem",
+      "number": "3.2.10",
+      "section": "3.2",
+      "role": "key_technical",
+      "summary": "Over $\\overline{\\mathbb{Z}}_\\ell$-coefficients, members of the block of a regular-supercuspidal-reduction representation again have supercuspidal reduction — the integral refinement underpinning the block equivalence."
+    },
+    "lem:5.1.1": {
+      "type": "Lemma",
+      "number": "5.1.1",
+      "section": "5.1",
+      "role": "technical",
+      "summary": "Nilpotent-singular-support reduction: $\\mathcal{D}^b_{\\mathrm{Coh},\\mathrm{Nilp}}(C_\\varphi) \\cong \\mathcal{D}^b_{\\mathrm{Coh},\\{0\\}}(C_\\varphi)$ — for this component the nilpotent singular-support condition collapses to support at the origin, simplifying the spectral side to perfect complexes."
+    },
+    "prop:5.1.2": {
+      "type": "Proposition",
+      "number": "5.1.2",
+      "section": "5.1",
+      "role": "key_mechanism",
+      "summary": "The Fargues–Scholze spectral action by the line bundle $\\mathcal{L}_\\chi$ sends $\\mathcal{D}(G_b(F))$ into $\\mathcal{D}(G_{b-\\chi}(F))$, i.e. it acts on the cohomology of $\\mathrm{Bun}_G$ by translating Harder–Narasimhan strata — the mechanism linking the spectral and automorphic sides."
+    },
+    "lem:5.2.1": {
+      "type": "Lemma",
+      "number": "5.2.1",
+      "section": "5.2",
+      "role": "key_technical",
+      "summary": "The Whittaker representation $W_{\\vartheta,[\\pi]}$ restricts to a finitely generated projective generator of $\\mathrm{Rep}_\\Lambda(G(F))_{[\\pi]}$ — the object on which the spectral action is evaluated to build the equivalence functor."
+    },
+    "prop:5.2.3": {
+      "type": "Proposition",
+      "number": "5.2.3",
+      "section": "5.2",
+      "role": "main_result",
+      "summary": "Categorical equivalence: the functor $\\Theta_0: \\mathrm{Perf}(\\mathbb{G}_m \\times \\mu_{\\ell^k}) \\to \\mathcal{D}(\\mathrm{Rep}_{\\overline{\\mathbb{Z}}_\\ell}(G(F))_{[\\pi]})^\\omega$, $A \\mapsto A \\ast W_{\\vartheta,[\\pi]}$ (spectral action on the Whittaker generator), is an equivalence of derived categories — verifying the categorical local Langlands conjecture for depth-zero regular supercuspidals."
+    },
+    "lem:5.2.5": {
+      "type": "Lemma",
+      "number": "5.2.5",
+      "section": "5.2",
+      "role": "technical",
+      "summary": "Generator criterion: a triangulated functor $F$ commuting with sums that sends a generator $E$ to a generator and induces isomorphisms $\\mathrm{Hom}(E,E[n]) \\cong \\mathrm{Hom}(F(E),F(E[n]))$ for all $n$ is an equivalence — the abstract tool upgrading degree-zero faithfulness to the full equivalence."
+    }
+  },
+  "edges": [
+    { "from": "thm:2.2.1", "to": "thm:2.1.10", "type": "depends_on", "note": "The quotient $X_\\varphi/\\widehat{G} \\cong [*/S_\\psi] \\times \\mu$ is read off the explicit description of the component $X_\\varphi$." },
+    { "from": "thm:3.1.2", "to": "thm:3.4.1", "type": "depends_on", "note": "The compact-induction equivalence is a Morita equivalence via the projective generator $\\Pi_{x,1}$." },
+    { "from": "thm:3.4.1", "to": "thm:3.1.3", "type": "depends_on", "note": "That $\\Pi_{x,1}$ generates $\\mathcal{C}_{x,1}$ uses that the block is closed under supercuspidal reduction." },
+    { "from": "thm:3.4.1", "to": "thm:3.1.4", "type": "uses", "note": "Controlling generation across vertices uses the linkage/orthogonality dichotomy for parahoric blocks." },
+    { "from": "thm:3.1.3", "to": "thm:3.2.10", "type": "depends_on", "note": "The supercuspidal-reduction closure is the integral ($\\overline{\\mathbb{Z}}_\\ell$) block statement." },
+    { "from": "thm:3.2.10", "to": "thm:3.2.4", "type": "depends_on", "note": "The block structure for the finite group of Lie type is obtained from Broué's Deligne–Lusztig equivalence." },
+    { "from": "thm:3.2.10", "to": "prop:3.2.2", "type": "uses", "note": "Indexing the blocks uses the $(\\mathbb{T},\\theta) \\leftrightarrow (\\mathbb{T}^*,s)$ Deligne–Lusztig duality." },
+    { "from": "prop:5.2.3", "to": "thm:2.2.1", "type": "depends_on", "note": "The source $\\mathrm{Perf}(\\mathbb{G}_m \\times \\mu_{\\ell^k})$ is identified with perfect complexes on the $L$-parameter component $X_\\varphi/\\widehat{G}$ computed in Thm 2.2.1." },
+    { "from": "prop:5.2.3", "to": "thm:3.1.2", "type": "depends_on", "note": "The target block $\\mathrm{Rep}_\\Lambda(G(F))_{[\\pi]}$ is identified through the compact-induction equivalence." },
+    { "from": "prop:5.2.3", "to": "lem:5.2.1", "type": "depends_on", "note": "The functor is defined by acting on the Whittaker projective generator $W_{\\vartheta,[\\pi]}$." },
+    { "from": "prop:5.2.3", "to": "prop:5.1.2", "type": "uses", "note": "The functor is the spectral action, whose stratum-shifting behaviour (Prop 5.1.2) makes it land in the correct block." },
+    { "from": "prop:5.2.3", "to": "lem:5.1.1", "type": "uses", "note": "The nilpotent-singular-support reduction collapses the spectral side to $\\mathrm{Perf}$, the source of $\\Theta_0$." },
+    { "from": "prop:5.2.3", "to": "lem:5.2.5", "type": "uses", "note": "Full equivalence is concluded from degree-zero faithfulness via the generator criterion." }
+  ],
+  "critical_path": ["thm:3.2.10", "thm:3.1.3", "thm:3.4.1", "thm:3.1.2", "prop:5.2.3"],
+  "proof_architecture": {
+    "lparameter_side": { "description": "Explicit computation of the component of the stack of $L$-parameters attached to a depth-zero TRSELP.", "nodes": ["thm:2.1.10", "thm:2.2.1"] },
+    "representation_side": { "description": "Identification of the depth-zero supercuspidal block via compact induction and finite-group-of-Lie-type block theory.", "nodes": ["thm:3.1.2", "thm:3.1.3", "thm:3.1.4", "thm:3.4.1", "prop:3.2.2", "thm:3.2.4", "thm:3.2.10"] },
+    "categorical_equivalence": { "description": "Matching the two sides through the Fargues–Scholze spectral action on the Whittaker generator.", "nodes": ["lem:5.1.1", "prop:5.1.2", "lem:5.2.1", "prop:5.2.3", "lem:5.2.5"] }
+  },
+  "bibliography": {
+    "FS": { "title": "Geometrization of the local Langlands correspondence", "arxiv_id": "2102.13459", "in_registry": true, "role": "supplies the spectral action of $\\mathrm{Perf}(Z^1(W_F,\\widehat{G})/\\widehat{G})$ on $D(\\mathrm{Bun}_G)$ (used in Prop 5.1.2 and as the functor in Prop 5.2.3); the categorical conjecture verified here is the categorical form of the FS correspondence" },
+    "broue1990isometries": { "title": "Broué, Isométries parfaites, types de blocs, catégories dérivées", "arxiv_id": null, "in_registry": false, "role": "the perfect-isometry / derived block equivalence for Deligne–Lusztig varieties (Thm 3.2.4)" },
+    "DeligneLusztig": { "title": "Deligne–Lusztig, Representations of reductive groups over finite fields", "arxiv_id": null, "in_registry": false, "role": "the $(\\mathbb{T},\\theta) \\leftrightarrow (\\mathbb{T}^*,s)$ duality (Prop 3.2.2)" },
+    "DHKM": { "title": "Dat–Helm–Kurinczuk–Moss, moduli of Langlands parameters", "arxiv_id": null, "in_registry": false, "role": "the integral moduli space $Z^1(W_F,\\widehat{G})$ whose components are computed in Chapter 2" }
+  }
+}

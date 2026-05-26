@@ -1,0 +1,646 @@
+{
+  "paper": "1407.4897v4",
+  "title": "Variants of the Selberg sieve, and bounded intervals containing many primes",
+  "authors": [
+    "D. H. J. Polymath"
+  ],
+  "generated": "2026-05-06",
+  "status": "complete",
+  "nodes": {
+    "thm:1.1": {
+      "type": "Theorem",
+      "number": "1.1",
+      "section": "1",
+      "role": "context",
+      "summary": "GPY (2005): assuming $\\mathrm{EH}[\\theta]$ for all $\\theta < 1$, $H_1 \\le 16$. Cited as the historical 1D-sieve baseline."
+    },
+    "thm:1.2": {
+      "type": "Theorem",
+      "number": "1.2",
+      "section": "1",
+      "role": "context",
+      "summary": "Zhang (2014): unconditionally $H_1 \\le 7\\times 10^7$. Cited as the breakthrough being optimized."
+    },
+    "thm:1.3": {
+      "type": "Theorem",
+      "number": "1.3",
+      "section": "1",
+      "role": "context",
+      "summary": "Maynard (2013): unconditionally $H_1 \\le 600$ and $H_m \\ll m^3 e^{4m}$. Under EH: $H_1 \\le 12$, $H_2 \\le 600$, $H_m \\ll m^3 e^{2m}$. The result this paper directly improves."
+    },
+    "thm:1.4": {
+      "type": "Theorem",
+      "number": "1.4",
+      "section": "1",
+      "role": "main_result",
+      "summary": "Polymath8b headline: unconditionally $H_1 \\le 246$; conditional refinements down to $H_1 \\le 6$ under GEH. Improves Maynard ($600 \\to 246$) and gives the first results for $H_2,\\ldots,H_5$."
+    },
+    "thm:1.5": {
+      "type": "Theorem",
+      "number": "1.5",
+      "section": "1",
+      "role": "main_result",
+      "summary": "Disjunction theorem: assuming GEH for all $\\theta < 1$, either the twin prime conjecture ($H_1 = 2$) holds, or every sufficiently large multiple of 6 lies within 2 of a sum of two primes (Goldbach near-miss)."
+    },
+    "def:2.1": {
+      "type": "Definition",
+      "number": "2.1",
+      "section": "2",
+      "role": "definition",
+      "summary": "Signed discrepancy $\\Delta(\\alpha; a\\,(q))$ of a sequence $\\alpha$ relative to a residue class — the basic quantity for level-of-distribution claims."
+    },
+    "claim:2.2": {
+      "type": "Conjecture",
+      "number": "2.2",
+      "section": "2",
+      "role": "context",
+      "summary": "Elliott-Halberstam $\\mathrm{EH}[\\theta]$: primes have level of distribution $\\theta$ — sup over residue classes of $|\\Delta(\\Lambda; a(q))|$ sums to $o(x/\\log^A x)$ for $q \\le x^\\theta$."
+    },
+    "thm:2.3": {
+      "type": "Theorem",
+      "number": "2.3",
+      "section": "2",
+      "role": "foundational",
+      "summary": "Bombieri-Vinogradov: $\\mathrm{EH}[\\theta]$ holds unconditionally for every $\\theta < 1/2$. The unconditional input feeding thm:3.8."
+    },
+    "claim:2.4": {
+      "type": "Conjecture",
+      "number": "2.4",
+      "section": "2",
+      "role": "context",
+      "summary": "Motohashi-Pintz-Zhang $\\mathrm{MPZ}[\\varpi,\\delta]$: weaker but quantitative level-of-distribution restricted to smooth moduli. The hypothesis Zhang and Polymath8a establish."
+    },
+    "thm:2.5": {
+      "type": "Theorem",
+      "number": "2.5",
+      "section": "2",
+      "role": "foundational",
+      "summary": "$\\mathrm{MPZ}[\\varpi,\\delta]$ holds whenever $600\\varpi + 180\\delta < 7$ (the Polymath8a inequality). Drives the unconditional $H_1 \\le 246$ via thm:3.10/3.11."
+    },
+    "claim:2.6": {
+      "type": "Conjecture",
+      "number": "2.6",
+      "section": "2",
+      "role": "context",
+      "summary": "Generalized Elliott-Halberstam $\\mathrm{GEH}[\\theta]$: level-of-distribution for arbitrary Dirichlet convolutions $\\alpha \\star \\beta$ with Siegel-Walfisz $\\beta$. Strictly stronger than EH; powers thm:3.14, thm:1.5, prop:9.1."
+    },
+    "prop:2.7": {
+      "type": "Proposition",
+      "number": "2.7",
+      "section": "2",
+      "role": "auxiliary",
+      "summary": "$\\mathrm{GEH}[\\theta]$ implies $\\mathrm{EH}[\\theta]$. Lets one drop EH-only inputs once GEH is assumed."
+    },
+    "thm:2.8": {
+      "type": "Theorem",
+      "number": "2.8",
+      "section": "2",
+      "role": "foundational",
+      "summary": "Generalized Bombieri-Vinogradov (Motohashi): $\\mathrm{GEH}[\\theta]$ holds for every $\\theta < 1/2$."
+    },
+    "claim:3.1": {
+      "type": "Conjecture",
+      "number": "3.1",
+      "section": "3",
+      "role": "context",
+      "summary": "Weak Dickson-Hardy-Littlewood $\\mathrm{DHL}[k,j]$: every admissible $k$-tuple has infinitely many translates containing at least $j$ primes. Quantitative skeleton bridging sieve hypotheses to gap bounds."
+    },
+    "thm:3.2": {
+      "type": "Theorem",
+      "number": "3.2",
+      "section": "3",
+      "role": "key_reduction",
+      "summary": "Unconditional DHL bounds — $\\mathrm{DHL}[50,2]$, $\\mathrm{DHL}[35410,3]$, $\\mathrm{DHL}[1649821,4]$, $\\mathrm{DHL}[75845707,5]$, $\\mathrm{DHL}[3473955908,6]$; under EH, sharper $k$. Together with thm:3.3 yields thm:1.4."
+    },
+    "thm:3.3": {
+      "type": "Theorem",
+      "number": "3.3",
+      "section": "3",
+      "role": "key_reduction",
+      "summary": "Explicit narrow admissible $k$-tuples: $H(50)=246$, $H(54)=270$, $H(51)=252$, etc., plus $H(k) \\le k\\log k + k\\log\\log k - k + o(k)$ asymptotically. Combinatorial input that turns $\\mathrm{DHL}[k,m+1]$ into a numerical $H_m$ bound."
+    },
+    "thm:3.5": {
+      "type": "Theorem",
+      "number": "3.5",
+      "section": "3",
+      "role": "main_technical",
+      "summary": "Asymptotic for prime sums: under EH or MPZ on the simplex with $\\sum (S(F_i) + S(G_i))$ below the threshold, the weighted prime-counting sum equals $(c+o(1)) B^{-k} x/W$."
+    },
+    "thm:3.6": {
+      "type": "Theorem",
+      "number": "3.6",
+      "section": "3",
+      "role": "main_technical",
+      "summary": "Asymptotic for non-prime sums: trivial regime when $\\sum S < 1$, GEH regime when $\\sum S < \\theta$. Companion of thm:3.5 — together they evaluate $S_2 - \\rho S_1$."
+    },
+    "thm:3.8": {
+      "type": "Theorem",
+      "number": "3.8",
+      "section": "3",
+      "role": "key_reduction",
+      "summary": "Sieving on the standard simplex (Maynard-Tao framework, restated): if $\\mathrm{EH}[\\theta]$ and $M_k > 2m/\\theta$, then $\\mathrm{DHL}[k,m+1]$. Polymath8b's clean formulation of Maynard prop:4.2 with simplex moments $I(F), J_i(F)$."
+    },
+    "thm:3.9": {
+      "type": "Theorem",
+      "number": "3.9",
+      "section": "3",
+      "role": "key_reduction",
+      "summary": "Numerical lower bounds on $M_k$: $M_{54} > 4.00238$, $M_{5511} > 6$, $M_{41588} > 8$, $M_{309661} > 10$; $M_k \\ge \\log k - C$ asymptotically. Sharper than Maynard prop:4.3."
+    },
+    "thm:3.10": {
+      "type": "Theorem",
+      "number": "3.10",
+      "section": "3",
+      "role": "key_reduction",
+      "summary": "Sieving on a truncated simplex: under $\\mathrm{MPZ}[\\varpi,\\delta]$, if $M_k^{[\\delta/(1/4+\\varpi)]} > m/(1/4+\\varpi)$, then $\\mathrm{DHL}[k,m+1]$. The Polymath8a $\\times$ Maynard hybrid that drives the unconditional improvements."
+    },
+    "thm:3.11": {
+      "type": "Theorem",
+      "number": "3.11",
+      "section": "3",
+      "role": "key_reduction",
+      "summary": "Numerical lower bounds on $M_k^{[\\alpha]}$ matching the MPZ window $600\\varpi+180\\delta<7$. Provides the unconditional input that turns thm:3.10 into $\\mathrm{DHL}[35410,3]$, $\\mathrm{DHL}[1649821,4]$, etc."
+    },
+    "thm:3.12": {
+      "type": "Theorem",
+      "number": "3.12",
+      "section": "3",
+      "role": "key_mechanism",
+      "summary": "Sieving on an $\\varepsilon$-enlarged simplex: extends $F$'s support to $(1+\\varepsilon)\\cdot\\mathcal{R}_k$ via marginal integration on $(1-\\varepsilon)\\cdot\\mathcal{R}_{k-1}$. Crucially gives $M_{k,\\varepsilon}$ bounds that strictly beat $M_k$ — the new ingredient beyond Maynard."
+    },
+    "thm:3.13": {
+      "type": "Theorem",
+      "number": "3.13",
+      "section": "3",
+      "role": "key_reduction",
+      "summary": "Numerical: $M_{50,1/25} > 4.0043$, $M_{4,0.168} > 2.00558$, $M_{51,1/50} > 4.00156$. The first directly yields $\\mathrm{DHL}[50,2] \\Rightarrow H_1 \\le 246$; the second + GEH gives $H_1 \\le 12$."
+    },
+    "thm:3.14": {
+      "type": "Theorem",
+      "number": "3.14",
+      "section": "3",
+      "role": "key_mechanism",
+      "summary": "Going beyond $\\varepsilon$ enlargement, under GEH: support up to $(k/(k-1))\\cdot\\mathcal{R}_k$ allowed, with a vanishing-marginal condition. The mechanism enabling $H_1 \\le 6$ under GEH."
+    },
+    "thm:3.15": {
+      "type": "Theorem",
+      "number": "3.15",
+      "section": "3",
+      "role": "main_technical",
+      "summary": "Explicit piecewise polynomial cutoff $F$ on $(3/2)\\cdot\\mathcal{R}_3$ with vanishing marginal condition and ratio $> 2$ — concrete witness for thm:3.14 with $k=3, m=1$, giving $H_1 \\le 6$ under GEH."
+    },
+    "lem:4.1": {
+      "type": "Lemma",
+      "number": "4.1",
+      "section": "4",
+      "role": "technical",
+      "summary": "Base asymptotic for sums of $\\mu(d)\\mu(d')F(\\log_x d)G(\\log_x d')/[d,d']$ over $k$-tuples coprime to $W$ and $N$ — the workhorse identity behind thm:3.5 and thm:3.6."
+    },
+    "prop:4.2": {
+      "type": "Proposition",
+      "number": "4.2",
+      "section": "4",
+      "role": "technical",
+      "summary": "Almost primality: bounds on weighted sums $\\sum |\\lambda_F(n+h_j)|^a \\tau(n+h_j)^m$. Lets one localize to almost-prime $n+h_i$ and discard contributions from small primes."
+    },
+    "lem:4.4": {
+      "type": "Lemma",
+      "number": "4.4",
+      "section": "4",
+      "role": "technical",
+      "summary": "Symmetric-group identity $1/(t_1\\cdots t_r) = \\sum_{\\sigma \\in S_r} 1/\\prod_i \\sum_{j \\ge i} t_{\\sigma(j)}$. Reduces multi-dimensional simplex integrals to iterated 1D ones in the $M_k$ computations."
+    },
+    "prop:9.1": {
+      "type": "Proposition",
+      "number": "9.1",
+      "section": "9",
+      "role": "key_reduction",
+      "summary": "Under GEH for all $\\theta < 1$, every large multiple of 6 admits $n \\in [\\varepsilon x, (1-\\varepsilon)x]$ such that at least 2 of $\\{n, n-2, x-n\\}$ are prime. Combined with thm:3.14/thm:3.15 yields thm:1.5."
+    }
+  },
+  "edges": [
+    {
+      "from": "thm:1.4",
+      "to": "thm:3.2",
+      "type": "depends_on",
+      "note": "$\\mathrm{DHL}[50,2]$, $\\mathrm{DHL}[35410,3]$, etc. directly translate to $H_1 \\le 246$, $H_2 \\le 398130$, ..."
+    },
+    {
+      "from": "thm:1.4",
+      "to": "thm:3.3",
+      "type": "depends_on",
+      "note": "Numerical $H(k)$ values turn $\\mathrm{DHL}[k,m+1]$ into the explicit gap bounds in thm:1.4."
+    },
+    {
+      "from": "thm:1.5",
+      "to": "prop:9.1",
+      "type": "depends_on",
+      "note": "Goldbach near-miss disjunction is built on prop:9.1's two-prime structure."
+    },
+    {
+      "from": "thm:1.5",
+      "to": "thm:3.14",
+      "type": "depends_on",
+      "note": "GEH-driven enlarged-simplex sieving is what eliminates the non-twin-prime case."
+    },
+    {
+      "from": "thm:1.5",
+      "to": "thm:3.15",
+      "type": "depends_on",
+      "note": "The explicit $(3/2)\\cdot\\mathcal{R}_3$ polynomial cutoff is the concrete witness."
+    },
+    {
+      "from": "thm:3.2",
+      "to": "thm:3.8",
+      "type": "depends_on",
+      "note": "Standard-simplex sieving yields the EH-conditional DHL bounds."
+    },
+    {
+      "from": "thm:3.2",
+      "to": "thm:3.9",
+      "type": "depends_on",
+      "note": "Numerical $M_k > 2m/\\theta$ feeds thm:3.8 to give $\\mathrm{DHL}[k,m+1]$."
+    },
+    {
+      "from": "thm:3.2",
+      "to": "thm:3.10",
+      "type": "depends_on",
+      "note": "Truncated-simplex sieving (under MPZ) gives the unconditional $\\mathrm{DHL}[35410,3]$ etc."
+    },
+    {
+      "from": "thm:3.2",
+      "to": "thm:3.11",
+      "type": "depends_on",
+      "note": "Numerical $M_k^{[\\alpha]} > m/(1/4+\\varpi)$ within MPZ window $600\\varpi+180\\delta<7$."
+    },
+    {
+      "from": "thm:3.2",
+      "to": "thm:3.12",
+      "type": "depends_on",
+      "note": "$\\varepsilon$-enlarged sieving + thm:3.13 numerics is what cuts the unconditional $k$ from 105 down to 50 ($H_1 \\le 246$)."
+    },
+    {
+      "from": "thm:3.2",
+      "to": "thm:3.13",
+      "type": "depends_on",
+      "note": "$M_{50,1/25} > 4.0043$ is the explicit witness for $\\mathrm{DHL}[50,2]$."
+    },
+    {
+      "from": "thm:3.8",
+      "to": "thm:3.5",
+      "type": "depends_on",
+      "note": "Maynard-style sieve evaluation: prime-side asymptotic."
+    },
+    {
+      "from": "thm:3.8",
+      "to": "thm:3.6",
+      "type": "depends_on",
+      "note": "Non-prime side, trivial regime."
+    },
+    {
+      "from": "thm:3.10",
+      "to": "thm:3.5",
+      "type": "depends_on",
+      "note": "Prime asymptotic in the MPZ regime."
+    },
+    {
+      "from": "thm:3.10",
+      "to": "thm:3.6",
+      "type": "depends_on",
+      "note": "Non-prime side."
+    },
+    {
+      "from": "thm:3.12",
+      "to": "thm:3.5",
+      "type": "depends_on",
+      "note": "Same prime-asymptotic engine, but with enlarged-simplex weights."
+    },
+    {
+      "from": "thm:3.12",
+      "to": "thm:3.6",
+      "type": "depends_on",
+      "note": "Non-prime asymptotic."
+    },
+    {
+      "from": "thm:3.14",
+      "to": "thm:3.5",
+      "type": "depends_on",
+      "note": "GEH version of the prime asymptotic."
+    },
+    {
+      "from": "thm:3.14",
+      "to": "thm:3.6",
+      "type": "depends_on",
+      "note": "GEH non-prime asymptotic."
+    },
+    {
+      "from": "thm:3.5",
+      "to": "lem:4.1",
+      "type": "depends_on",
+      "note": "Base asymptotic for the divisor sums."
+    },
+    {
+      "from": "thm:3.5",
+      "to": "prop:4.2",
+      "type": "depends_on",
+      "note": "Almost-primality bounds remove residual error terms."
+    },
+    {
+      "from": "thm:3.6",
+      "to": "lem:4.1",
+      "type": "depends_on",
+      "note": "Same base asymptotic."
+    },
+    {
+      "from": "thm:3.6",
+      "to": "prop:4.2",
+      "type": "depends_on",
+      "note": "Almost-primality control on the non-prime side."
+    },
+    {
+      "from": "thm:3.5",
+      "to": "lem:4.4",
+      "type": "depends_on",
+      "note": "Symmetric-group identity simplifies the integral evaluation."
+    },
+    {
+      "from": "thm:3.6",
+      "to": "lem:4.4",
+      "type": "depends_on",
+      "note": "Same identity in non-prime evaluation."
+    },
+    {
+      "from": "thm:3.10",
+      "to": "claim:2.4",
+      "type": "depends_on",
+      "note": "Truncated-simplex result is conditional on $\\mathrm{MPZ}[\\varpi,\\delta]$."
+    },
+    {
+      "from": "thm:3.10",
+      "to": "thm:2.5",
+      "type": "depends_on",
+      "note": "Polymath8a's MPZ inequality $600\\varpi+180\\delta<7$ supplies the unconditional input."
+    },
+    {
+      "from": "thm:3.8",
+      "to": "claim:2.2",
+      "type": "depends_on",
+      "note": "Standard-simplex result is conditional on $\\mathrm{EH}[\\theta]$."
+    },
+    {
+      "from": "thm:3.8",
+      "to": "thm:2.3",
+      "type": "depends_on",
+      "note": "Bombieri-Vinogradov gives unconditional $\\theta < 1/2$ case."
+    },
+    {
+      "from": "thm:3.12",
+      "to": "claim:2.2",
+      "type": "depends_on",
+      "note": "$\\mathrm{EH}[\\theta]$ hypothesis."
+    },
+    {
+      "from": "thm:3.14",
+      "to": "claim:2.6",
+      "type": "depends_on",
+      "note": "Requires the full GEH conjecture."
+    },
+    {
+      "from": "claim:2.2",
+      "to": "def:2.1",
+      "type": "depends_on",
+      "note": "EH stated in terms of the discrepancy $\\Delta$."
+    },
+    {
+      "from": "claim:2.4",
+      "to": "def:2.1",
+      "type": "depends_on",
+      "note": "Same definitional dependency."
+    },
+    {
+      "from": "claim:2.6",
+      "to": "def:2.1",
+      "type": "depends_on",
+      "note": "GEH stated via $\\Delta$ on convolutions $\\alpha \\star \\beta$."
+    },
+    {
+      "from": "prop:2.7",
+      "to": "claim:2.2",
+      "type": "proves",
+      "note": "GEH $\\Rightarrow$ EH."
+    },
+    {
+      "from": "prop:2.7",
+      "to": "claim:2.6",
+      "type": "proves",
+      "note": "Extracts EH from GEH."
+    },
+    {
+      "from": "thm:2.8",
+      "to": "claim:2.6",
+      "type": "proves",
+      "note": "GEH unconditional in $\\theta < 1/2$."
+    },
+    {
+      "from": "thm:2.3",
+      "to": "claim:2.2",
+      "type": "proves",
+      "note": "Classical Bombieri-Vinogradov: $\\mathrm{EH}[\\theta]$ for $\\theta<1/2$."
+    },
+    {
+      "from": "thm:2.5",
+      "to": "claim:2.4",
+      "type": "proves",
+      "note": "Polymath8a: MPZ holds in $600\\varpi+180\\delta<7$ region."
+    },
+    {
+      "from": "claim:3.1",
+      "to": "thm:1.4",
+      "type": "addresses_same_question",
+      "note": "$\\mathrm{DHL}[k,j]$ is the abstract structural form behind thm:1.4's $H_m$ bounds."
+    },
+    {
+      "from": "thm:3.12",
+      "to": "thm:3.8",
+      "type": "extends",
+      "note": "$\\varepsilon$-enlargement strictly extends the standard-simplex setup."
+    },
+    {
+      "from": "thm:3.14",
+      "to": "thm:3.12",
+      "type": "extends",
+      "note": "Going beyond $\\varepsilon$ enlargement under GEH; vanishing marginal condition replaces hard cutoff."
+    },
+    {
+      "from": "thm:3.15",
+      "to": "thm:3.14",
+      "type": "proves",
+      "note": "Concrete piecewise-polynomial witness for the $k=3$ case."
+    },
+    {
+      "from": "thm:3.13",
+      "to": "thm:3.12",
+      "type": "proves",
+      "note": "Numerical existence of admissible $F$."
+    },
+    {
+      "from": "thm:3.11",
+      "to": "thm:3.10",
+      "type": "proves",
+      "note": "Numerical existence within the MPZ window."
+    },
+    {
+      "from": "thm:3.9",
+      "to": "thm:3.8",
+      "type": "proves",
+      "note": "Numerical $M_k$ inputs under EH."
+    }
+  ],
+  "critical_path": [
+    "thm:1.4",
+    "thm:3.2",
+    "thm:3.12",
+    "thm:3.13",
+    "thm:3.5",
+    "lem:4.1"
+  ],
+  "proof_architecture": {
+    "main_results": {
+      "description": "Polymath8b's headline statements (thm:1.4, thm:1.5) and the historical predecessors they improve on (thm:1.1 GPY, thm:1.2 Zhang, thm:1.3 Maynard).",
+      "nodes": [
+        "thm:1.1",
+        "thm:1.2",
+        "thm:1.3",
+        "thm:1.4",
+        "thm:1.5"
+      ]
+    },
+    "level_of_distribution_layer": {
+      "description": "Discrepancy framework and the four levels of arithmetic input: EH (claim:2.2), MPZ (claim:2.4), GEH (claim:2.6), with their unconditional versions Bombieri-Vinogradov (thm:2.3), Polymath8a's MPZ window (thm:2.5), Motohashi GBV (thm:2.8).",
+      "nodes": [
+        "def:2.1",
+        "claim:2.2",
+        "thm:2.3",
+        "claim:2.4",
+        "thm:2.5",
+        "claim:2.6",
+        "prop:2.7",
+        "thm:2.8"
+      ]
+    },
+    "DHL_reduction_layer": {
+      "description": "$\\mathrm{DHL}[k,j]$ is the structural target. thm:3.2 collects the unconditional and conditional DHL records; thm:3.3 supplies the admissible-tuple combinatorics that turns $\\mathrm{DHL}[k,m+1]$ into numerical $H_m$ bounds.",
+      "nodes": [
+        "claim:3.1",
+        "thm:3.2",
+        "thm:3.3"
+      ]
+    },
+    "Mk_variational_layer": {
+      "description": "The four sieve geometries: standard simplex (thm:3.8/3.9), truncated simplex under MPZ (thm:3.10/3.11), epsilon-enlarged simplex (thm:3.12/3.13), and the GEH-only beyond-epsilon regime (thm:3.14/3.15). Each pair = framework theorem + numerical lower bound.",
+      "nodes": [
+        "thm:3.8",
+        "thm:3.9",
+        "thm:3.10",
+        "thm:3.11",
+        "thm:3.12",
+        "thm:3.13",
+        "thm:3.14",
+        "thm:3.15"
+      ]
+    },
+    "asymptotic_engine": {
+      "description": "The analytic core: thm:3.5 evaluates prime-weighted sums, thm:3.6 evaluates non-prime sums. Both reduce to the divisor identity lem:4.1, with prop:4.2 controlling almost-prime contamination and lem:4.4 simplifying simplex integrals.",
+      "nodes": [
+        "thm:3.5",
+        "thm:3.6",
+        "lem:4.1",
+        "prop:4.2",
+        "lem:4.4"
+      ]
+    },
+    "disjunction_layer": {
+      "description": "Section 9: the GEH-conditional disjunction (twin primes vs. Goldbach near-miss). prop:9.1 supplies the two-prime existence statement that thm:1.5 packages.",
+      "nodes": [
+        "prop:9.1"
+      ]
+    }
+  },
+  "bibliography": {
+    "Maynard:2013": {
+      "title": "Small gaps between primes",
+      "authors": [
+        "James Maynard"
+      ],
+      "arxiv_id": "1311.4600",
+      "in_registry": true,
+      "role": "direct ancestor — $k$-dimensional Selberg sieve framework Polymath8b sharpens"
+    },
+    "Zhang:2014": {
+      "title": "Bounded gaps between primes",
+      "authors": [
+        "Yitang Zhang"
+      ],
+      "arxiv_id": null,
+      "in_registry": false,
+      "role": "predecessor — first bounded-gap proof; Polymath8a/8b optimization target"
+    },
+    "Polymath8a:2014": {
+      "title": "New equidistribution estimates of Zhang type",
+      "authors": [
+        "D. H. J. Polymath"
+      ],
+      "arxiv_id": "1402.0811",
+      "in_registry": false,
+      "role": "sibling — establishes $\\mathrm{MPZ}[\\varpi,\\delta]$ window $600\\varpi+180\\delta<7$ (thm:2.5)"
+    },
+    "GPY:2009": {
+      "title": "Primes in tuples. I",
+      "authors": [
+        "D. A. Goldston",
+        "J. Pintz",
+        "C. Y. Yıldırım"
+      ],
+      "arxiv_id": "math/0508185",
+      "in_registry": false,
+      "role": "foundational — 1D Selberg sieve baseline (thm:1.1)"
+    },
+    "Bombieri:1965": {
+      "title": "On the large sieve",
+      "authors": [
+        "Enrico Bombieri"
+      ],
+      "arxiv_id": null,
+      "in_registry": false,
+      "role": "foundational — Bombieri-Vinogradov (thm:2.3)"
+    },
+    "Vinogradov:1965": {
+      "title": "On the density hypothesis for Dirichlet L-series",
+      "authors": [
+        "A. I. Vinogradov"
+      ],
+      "arxiv_id": null,
+      "in_registry": false,
+      "role": "foundational — Bombieri-Vinogradov"
+    },
+    "Motohashi:1976": {
+      "title": "An induction principle for the generalization of Bombieri's prime number theorem",
+      "authors": [
+        "Yoichi Motohashi"
+      ],
+      "arxiv_id": null,
+      "in_registry": false,
+      "role": "foundational — generalized Bombieri-Vinogradov (thm:2.8)"
+    },
+    "ElliottHalberstam:1970": {
+      "title": "A conjecture in prime number theory",
+      "authors": [
+        "P. D. T. A. Elliott",
+        "H. Halberstam"
+      ],
+      "arxiv_id": null,
+      "in_registry": false,
+      "role": "foundational — EH conjecture (claim:2.2)"
+    }
+  }
+}

@@ -1,0 +1,617 @@
+{
+  "description": "Cross-paper edges in the Perfectoid Spaces / Scholze program DAG. 8 papers, 2011–2021. Spans the lineage Scholze→{BMS1,BMS2}→Prismatic, the Kedlaya–Liu parallel development, and the geometric arc Diamonds→Fargues–Scholze.",
+  "edges": [
+    {
+      "from": "1301.0792:thm:3.5.3",
+      "to": "1111.4914:thm:3.7",
+      "type": "parallel_result",
+      "note": "Perfectoid correspondence at the field level. KL via Witt vectors + primitive ideals; Scholze via tilting $K^\\flat = \\varprojlim K$. Independent simultaneous proofs (Scholze 2011-11, KL 2013-01)."
+    },
+    {
+      "from": "1301.0792:thm:3.5.6",
+      "to": "1111.4914:thm:1.3",
+      "type": "parallel_result",
+      "note": "Galois group equivalence $G_K \\cong G_{K^\\flat}$ — independent proofs."
+    },
+    {
+      "from": "1301.0792:thm:3.6.5",
+      "to": "1111.4914:thm:5.2",
+      "type": "parallel_result",
+      "note": "Tilting at the algebra level. Different engines: KL uniform-Banach + primitive-ideal; Scholze almost-math + cotangent vanishing."
+    },
+    {
+      "from": "1301.0792:thm:3.6.5",
+      "to": "1111.4914:thm:5.10",
+      "type": "parallel_result",
+      "note": "Same goal, structurally different machinery (Witt-vector vs. mod-$\\varpi$ deformation)."
+    },
+    {
+      "from": "1301.0792:thm:3.6.14",
+      "to": "1111.4914:thm:6.3",
+      "type": "parallel_result",
+      "note": "Affinoid Spa homeomorphism across tilting."
+    },
+    {
+      "from": "1301.0792:thm:3.6.15",
+      "to": "1111.4914:prop:6.14",
+      "type": "parallel_result",
+      "note": "KL: stably-uniform implies sheafy. Scholze: almost-Tate acyclicity."
+    },
+    {
+      "from": "1301.0792:thm:3.6.21",
+      "to": "1111.4914:thm:5.25",
+      "type": "parallel_result",
+      "note": "Finite-étale tensor equivalence across tilting."
+    },
+    {
+      "from": "1301.0792:thm:5.5.9",
+      "to": "1111.4914:thm:1.10",
+      "type": "parallel_result",
+      "note": "Almost purity via different routes."
+    },
+    {
+      "from": "1301.0792:thm:8.3.5",
+      "to": "1111.4914:prop:6.17",
+      "type": "parallel_result",
+      "note": "Equivalence of perfectoid spaces with their characteristic-$p$ counterparts."
+    },
+    {
+      "from": "1301.0792:thm:8.5.5",
+      "to": "1111.4914:thm:7.12",
+      "type": "parallel_result",
+      "note": "Étale local systems / sites equivalence across tilting."
+    },
+    {
+      "from": "1301.0792:thm:9.5.6",
+      "to": "1111.4914:thm:1.7",
+      "type": "extends",
+      "note": "Recovers Fontaine's $(\\varphi, \\Gamma)$-modules inside the relative perfectoid framework."
+    },
+    {
+      "from": "1301.0792:thm:6.3.12",
+      "to": "1111.4914:thm:1.7",
+      "type": "extends",
+      "note": "Relative Fargues–Fontaine vector-bundle dictionary built on perfectoid framework."
+    },
+    {
+      "from": "1301.0792:thm:4.1.10",
+      "to": "1111.4914:thm:5.10",
+      "type": "shared_mechanism",
+      "note": "Both exploit 'char-$p$ side controls char-$0$ side' to lift filtrations."
+    },
+    {
+      "from": "1211.6357:thm:2.4.7",
+      "to": "1111.4914:thm:1.9",
+      "type": "imports_result",
+      "note": "Scholze–Weinstein imports Scholze's inverse-limit-perfectoid criterion (Perfectoid Spaces Thm 7.17) to license $\\mathcal{M}_\\infty$ as a perfectoid space."
+    },
+    {
+      "from": "1211.6357:thm:6.3.4",
+      "to": "1111.4914:thm:1.9",
+      "type": "extends",
+      "note": "Infinite-level Rapoport–Zink space as a preperfectoid adic space — first major application of perfectoid theory to Shimura-style moduli."
+    },
+    {
+      "from": "1211.6357:thm:5.2.1",
+      "to": "1111.4914:thm:1.7",
+      "type": "extends",
+      "note": "Hodge-Tate classification of $p$-divisible groups: a perfectoid-side classification using the tilting framework."
+    },
+    {
+      "from": "1602.03148:thm:5.1",
+      "to": "1111.4914:thm:1.7",
+      "type": "imports_result",
+      "note": "BMS1 imports Scholze's earlier rational $p$-adic Hodge comparison (downstream of perfectoid technology) to bootstrap to integral level."
+    },
+    {
+      "from": "1602.03148:thm:1.10",
+      "to": "1111.4914:thm:1.7",
+      "type": "extends",
+      "note": "$A\\Omega$ master comparison extends tilting / perfectoid covers to integrally-functorial cohomology theory."
+    },
+    {
+      "from": "1602.03148:thm:1.8",
+      "to": "1301.0792:thm:6.3.12",
+      "type": "shared_mechanism",
+      "note": "Both papers build coherent-cohomology theories living over $A_{\\mathrm{inf}}$-like rings: BMS1's $R\\Gamma_{A_{\\mathrm{inf}}}$ and KL's $\\varphi$-modules over relative Robba — independent realizations of the 'integral / Witt-vector' upgrade."
+    },
+    {
+      "from": "1802.03261:thm:9.6",
+      "to": "1602.03148:thm:1.10",
+      "type": "re_derives",
+      "note": "BMS2 identifies $\\widehat{\\mathbbl{\\Delta}}_A \\simeq A\\Omega_A$, recasting BMS1's $A\\Omega$ via topological Hochschild homology. Same cohomology object, new construction."
+    },
+    {
+      "from": "1802.03261:thm:1.6",
+      "to": "1111.4914:def:1.6",
+      "type": "imports_result",
+      "note": "$\\pi_0 \\mathrm{TC}^-(R; \\mathbb{Z}_p) \\cong A_{\\mathrm{inf}}(R)$ is a statement about perfectoid rings as defined by Scholze — anchors the homotopy-theoretic recasting in the perfectoid foundations."
+    },
+    {
+      "from": "1802.03261:thm:1.12",
+      "to": "1602.03148:thm:1.10",
+      "type": "extends",
+      "note": "Motivic filtration on $\\mathrm{THH}/\\mathrm{TC}^-/\\mathrm{TP}$ extends BMS1's $A\\Omega$ comparison into a filtered framework with $K$-theoretic interpretation."
+    },
+    {
+      "from": "1905.08229:thm:3.10",
+      "to": "1111.4914:def:1.6",
+      "type": "generalizes",
+      "note": "Bhatt–Scholze recast Scholze's perfectoid rings as the perfect objects of a new category — perfect prisms. Definition lifted into $\\delta$-ring deformation theory."
+    },
+    {
+      "from": "1905.08229:thm:3.10",
+      "to": "1111.4914:thm:1.7",
+      "type": "generalizes",
+      "note": "Tilting equivalence becomes a special case of the perfect-prism dictionary."
+    },
+    {
+      "from": "1905.08229:thm:1.17",
+      "to": "1111.4914:thm:1.10",
+      "type": "extends",
+      "note": "Almost purity in the prismatic framework: extends Scholze's almost purity to perfectoidization of integral algebras."
+    },
+    {
+      "from": "1905.08229:thm:7.14",
+      "to": "1111.4914:thm:1.10",
+      "type": "parallel_result",
+      "note": "Almost-purity engine difference: prismatic uses André's flatness lemma; Scholze uses cotangent vanishing + tilting."
+    },
+    {
+      "from": "1905.08229:thm:9.1",
+      "to": "1111.4914:thm:1.11",
+      "type": "extends",
+      "note": "Étale comparison generalizes Scholze's étale-site tilting to cohomological-coefficients form."
+    },
+    {
+      "from": "1905.08229:thm:1.8",
+      "to": "1111.4914:thm:1.7",
+      "type": "generalizes",
+      "note": "Master prismatic theorem unifies all $p$-adic cohomology theories; tilting becomes one input."
+    },
+    {
+      "from": "1905.08229:thm:17.2",
+      "to": "1602.03148:thm:1.10",
+      "type": "re_derives",
+      "note": "$A\\Omega$ recovered as Frobenius-twisted prismatic cohomology. Subsumes BMS1 inside the prismatic framework."
+    },
+    {
+      "from": "1905.08229:thm:1.18",
+      "to": "1802.03261:thm:1.15",
+      "type": "extends",
+      "note": "Discreteness + $p$-torsion-freeness of $\\mathbf{Z}_p(n)$ extends BMS2's cohomological identification with logarithmic de Rham–Witt."
+    },
+    {
+      "from": "1905.08229:thm:13.1",
+      "to": "1802.03261:thm:9.6",
+      "type": "re_derives",
+      "note": "Identifies the Nygaard completion with BMS2's $\\widehat{\\mathbbl{\\Delta}}$, re-deriving the BMS2 ↔ BMS1 bridge inside prismatic."
+    },
+    {
+      "from": "1905.08229:thm:3.10",
+      "to": "1301.0792:thm:3.5.3",
+      "type": "generalizes",
+      "note": "Perfect-prism dictionary subsumes KL's primitive-ideal formulation."
+    },
+    {
+      "from": "1905.08229:thm:3.10",
+      "to": "1301.0792:thm:3.6.5",
+      "type": "generalizes",
+      "note": "Algebra-level perfectoid correspondence recast as 'perfect $\\delta$-rings'."
+    },
+    {
+      "from": "1905.08229:thm:1.17",
+      "to": "1301.0792:thm:5.5.9",
+      "type": "extends",
+      "note": "Almost purity extended from finite-étale to perfectoidization-of-integral case."
+    },
+    {
+      "from": "1905.08229:thm:1.16",
+      "to": "1301.0792:thm:9.5.6",
+      "type": "shared_mechanism",
+      "note": "Filtered cohomological structures recovering classical $p$-adic Hodge theory."
+    },
+    {
+      "from": "1709.07343:thm:6.1",
+      "to": "1111.4914:thm:1.10",
+      "type": "imports_result",
+      "note": "Diamonds explicitly imports Scholze's almost-purity theorem from Perfectoid Spaces."
+    },
+    {
+      "from": "1709.07343:thm:6.3",
+      "to": "1111.4914:thm:1.11",
+      "type": "imports_result",
+      "note": "Diamonds explicitly imports the étale-site tilting from Perfectoid Spaces."
+    },
+    {
+      "from": "1709.07343:thm:6.1",
+      "to": "1301.0792:thm:5.5.9",
+      "type": "imports_result",
+      "note": "Diamonds imports Kedlaya–Liu's almost-purity (thm:3.6.21 and thm:5.5.9 cited in text)."
+    },
+    {
+      "from": "1709.07343:thm:1.5",
+      "to": "1111.4914:thm:1.9",
+      "type": "extends",
+      "note": "Diamond functor $X \\mapsto X^\\diamondsuit$ extends perfectoid spaces to a wider category (locally spatial diamonds) closed under $v$-stack operations."
+    },
+    {
+      "from": "1709.07343:thm:1.10",
+      "to": "1111.4914:thm:1.11",
+      "type": "extends",
+      "note": "Cohomological smoothness in the diamond category is a far-reaching extension of perfectoid étale-site tilting."
+    },
+    {
+      "from": "1709.07343:thm:1.12",
+      "to": "1111.4914:thm:1.14",
+      "type": "extends",
+      "note": "Poincaré duality for diamonds is a categorical / six-functor strengthening of the kind of duality first hinted at in Scholze's weight-monodromy application."
+    },
+    {
+      "from": "2102.13459:thm:I.4.1",
+      "to": "1709.07343:thm:1.10",
+      "type": "imports_result",
+      "note": "$\\mathrm{Bun}_G$ as a $v$-stack with cohomological-smoothness statements relies critically on Diamonds' six-functor formalism."
+    },
+    {
+      "from": "2102.13459:thm:I.7.2",
+      "to": "1709.07343:thm:1.11",
+      "type": "imports_result",
+      "note": "Hecke functor preservation of compactness / ULA uses Diamonds' constructibility theorem."
+    },
+    {
+      "from": "2102.13459:thm:I.4.1",
+      "to": "1709.07343:thm:1.5",
+      "type": "imports_result",
+      "note": "$\\mathrm{Bun}_G$ is a diamond-style $v$-stack — uses the diamond functor to import adic-space data."
+    },
+    {
+      "from": "2102.13459:thm:I.10.1",
+      "to": "1709.07343:thm:1.12",
+      "type": "imports_result",
+      "note": "Categorical local Langlands runs inside Diamonds' Verdier-duality framework."
+    },
+    {
+      "from": "2102.13459:thm:I.6.3",
+      "to": "1211.6357:thm:6.3.4",
+      "type": "extends",
+      "note": "Geometric Satake / dual-group construction extends the infinite-level Rapoport–Zink perfectoid story."
+    },
+    {
+      "from": "2102.13459:thm:I.4.1",
+      "to": "1111.4914:thm:1.9",
+      "type": "imports_result",
+      "note": "$\\mathrm{Bun}_G$ ultimately runs on perfectoid covers of the FF curve — perfectoid foundations."
+    },
+    {
+      "from": "2102.13459:thm:II.0.5",
+      "to": "1301.0792:thm:7.4.5",
+      "type": "extends",
+      "note": "HN-polygon semicontinuity extends Kedlaya–Liu's slope-polygon semicontinuity to the FF-curve / $\\mathrm{Bun}_G$ setting."
+    },
+    {
+      "from": "2102.13459:thm:I.3.2",
+      "to": "1301.0792:thm:6.3.12",
+      "type": "extends",
+      "note": "FF-curve vector-bundle classification extends KL's $\\varphi^a$-module / FF-bundle dictionary into the absolute setting."
+    },
+    {
+      "from": "1602.03148:thm:1.8",
+      "to": "1301.0792:thm:5.3.9",
+      "type": "imports_result",
+      "note": "BMS1's $R\\Gamma_{A_{\\mathrm{inf}}}$ is built on perfectoid covers whose Banach-algebra structure KL formalized: KL thm:5.3.9 establishes that the relative Robba rings $\\tilde{\\mathcal{R}}^{[s,r]}_R$ are relatively perfectoid, providing the sheaf-theoretic substrate. BMS1 uses this implicitly when invoking 'sheafy structure presheaves on perfectoid affinoids'."
+    },
+    {
+      "from": "1602.03148:thm:4.28",
+      "to": "1301.0792:thm:6.3.12",
+      "type": "parallel_result",
+      "note": "Both papers organize $\\varphi$-module data over $A_{\\mathrm{inf}}$-like rings into module categories: BMS1 via Breuil–Kisin–Fargues modules, KL via $\\varphi^a$-bundles on the relative FF curve. Independent constructions of equivalent categorical frameworks."
+    },
+    {
+      "from": "1602.03148:thm:1.10",
+      "to": "1301.0792:thm:5.5.9",
+      "type": "parallel_result",
+      "note": "Almost purity in different formulations: BMS1 implicitly uses the almost-zero cohomology of perfectoid covers (the $A\\Omega$ master comparison rests on it); KL states almost purity directly. Both proved within ~3 years via different routes."
+    },
+    {
+      "from": "1905.08229:thm:1.18",
+      "to": "1602.03148:thm:14.5",
+      "type": "imports_result",
+      "note": "BMS1's torsion comparison theorem provides the integral-cohomology bounds that prismatic uses to derive the odd $K$-theory vanishing application. The arithmetic chain runs BMS1 → BMS2 → prismatic."
+    },
+    {
+      "from": "2102.13459:thm:I.4.1",
+      "to": "1602.03148:thm:1.7",
+      "type": "imports_result",
+      "note": "$B_{\\mathrm{dR}}^+$-cohomology framework is one of the period-ring scaffolds Fargues–Scholze use when relating $\\mathrm{Bun}_G$ to classical $L$-parameter spaces. The Hodge-Tate / de Rham comparison underlies the geometric Satake construction's coefficient theory."
+    },
+    {
+      "from": "1802.03261:thm:11.2",
+      "to": "1602.03148:thm:1.8",
+      "type": "extends",
+      "note": "BMS2's $\\mathfrak{S}$-cohomology theory extends BMS1's $R\\Gamma_{A_{\\mathrm{inf}}}$ object: same shape (perfect complex, $\\varphi$-linear endomorphism), but with finer base-ring structure and a topological-Hochschild-homology origin."
+    },
+    {
+      "from": "1602.03148:thm:1.17",
+      "to": "1802.03261:thm:1.12",
+      "type": "motivates",
+      "note": "BMS1's $q$-de Rham computation on the torus is the local model that motivated the systematic motivic filtration of BMS2: the $q$-deformation interpolates between Hodge-Tate ($q=1$) and crystalline (Frobenius-twisted), suggesting a filtered framework with graded pieces."
+    },
+    {
+      "from": "1802.03261:thm:3.1",
+      "to": "1709.07343:thm:1.2",
+      "type": "shared_mechanism",
+      "note": "Both papers exploit fpqc/$v$-style descent for structure sheaves: BMS2 via fpqc-sheaf property of cotangent powers, Diamonds via $v$-topology subcanonicity. Same conceptual mechanism (faithful flatness implies sheaf descent for the relevant cohomology theory) deployed in adjacent contexts."
+    },
+    {
+      "from": "1802.03261:thm:1.6",
+      "to": "1905.08229:thm:3.10",
+      "type": "shared_mechanism",
+      "note": "Both identify $A_{\\mathrm{inf}}(R)$ structurally for $R$ perfectoid: BMS2 as $\\pi_0 \\mathrm{TC}^-(R; \\mathbb{Z}_p)$ via topological Hochschild homology; prismatic as the perfect-prism side of the dictionary. Independent realizations of $A_{\\mathrm{inf}}$ as a canonical functorial invariant of perfectoid rings."
+    },
+    {
+      "from": "1802.03261:thm:1.15",
+      "to": "2102.13459:thm:II.0.3",
+      "type": "shared_mechanism",
+      "note": "Both papers use logarithmic de Rham–Witt / FF-curve frameworks to organize cohomology of perfectoid-related objects: BMS2 identifies $\\mathbb{Z}_p(n) \\simeq W\\Omega^n_{X,\\log}[-n]$; FS classifies vector bundles on $X_C$ via isocrystals. Common ancestor: the Witt-vector / period-ring machinery."
+    },
+    {
+      "from": "1709.07343:thm:1.10",
+      "to": "1905.08229:thm:9.1",
+      "type": "shared_mechanism",
+      "note": "Cohomological smoothness and étale-coefficients comparison both run on the same six-functor formalism over perfectoid-style $v$-stacks. Prismatic's étale comparison uses the nearby-cycles framework; Diamonds developed the formalism in which 'nearby cycles' is well-defined."
+    },
+    {
+      "from": "1709.07343:thm:1.5",
+      "to": "1905.08229:thm:1.8",
+      "type": "shared_mechanism",
+      "note": "Diamond functor and prismatic master comparison both let cohomology theories be formulated over $p$-adic formal schemes by passing to a perfectoid-style framework. Prismatic uses the diamond setting implicitly when stating étale comparison over the adic generic fibre."
+    },
+    {
+      "from": "2102.13459:thm:I.5.1",
+      "to": "1709.07343:thm:1.8",
+      "type": "imports_result",
+      "note": "Fargues–Scholze's semiorthogonal decomposition of $D(\\mathrm{Bun}_G, \\Lambda)$ along the Newton stratification depends critically on Diamonds' six-functor compatibilities — tensor compatibility, projection formulas, and base change for $D^+_{\\mathrm{\\acute{e}t}}$ are what make the excision triangles defining the decomposition well-formed."
+    },
+    {
+      "from": "2102.13459:thm:I.10.1",
+      "to": "1709.07343:thm:1.13",
+      "type": "imports_result",
+      "note": "FS's categorical Langlands correspondence requires base-change invariance under extension of algebraically-closed nonarchimedean base fields — this is exactly Diamonds thm:1.13. Otherwise the categorical functor wouldn't be well-defined across base-field extensions."
+    },
+    {
+      "from": "2102.13459:thm:I.4.1",
+      "to": "1709.07343:thm:1.19",
+      "type": "imports_result",
+      "note": "$\\mathrm{Bun}_G$ being a $v$-stack relies on Diamonds' establishing that the relevant prestacks (perfectoid spaces, étale maps) are $v$-stacks. FS imports this descent foundation directly."
+    },
+    {
+      "from": "1905.08229:thm:9.1",
+      "to": "2102.13459:thm:II.0.3",
+      "type": "shared_mechanism",
+      "note": "Prismatic étale comparison and FF-curve classification both rest on the same perfectoid foundation: étale cohomology of the adic generic fibre identified via Frobenius fixed points. The vector-bundle classification on $X_C$ in FS is the geometric realization of the perfect-prism dictionary."
+    },
+    {
+      "from": "1905.08229:thm:3.10",
+      "to": "2102.13459:thm:I.3.2",
+      "type": "shared_mechanism",
+      "note": "Perfect-prism / perfectoid dictionary and FF-curve isocrystal classification are dual organizations of the same arithmetic data: a perfectoid ring's $A_{\\mathrm{inf}}$ side carries Frobenius-equivariant structure that, on the Fargues–Fontaine side, becomes a vector bundle with prescribed slopes."
+    },
+    {
+      "from": "1211.6357:thm:6.3.4",
+      "to": "1709.07343:thm:1.5",
+      "type": "motivates",
+      "note": "Scholze–Weinstein's infinite-level Rapoport–Zink space as a preperfectoid adic space was one of the earliest examples motivating the diamond formalism — the construction $X \\sim \\varprojlim X_n$ becomes a representable diamond exactly when the limit is perfectoid. The Diamonds paper formalizes this pattern."
+    },
+    {
+      "from": "1211.6357:thm:7.2.3",
+      "to": "2102.13459:thm:I.7.2",
+      "type": "motivates",
+      "note": "RZ-tower duality (Faltings–Fargues–Scholze–Weinstein) is the structural prototype for the Hecke / dual-group symmetry that FS extends to a geometric Satake-style equivalence on $\\mathrm{Bun}_G$. The infinite-level perfectoid moduli were the first place this duality became explicit."
+    },
+    {
+      "from": "2102.13459:thm:I.6.3",
+      "to": "1211.6357:thm:5.2.1",
+      "type": "imports_result",
+      "note": "Hodge-Tate classification of $p$-divisible groups (free $\\mathbb{Z}_p$-module + $C$-subspace data) provides the local-systems input the FS dual-group construction operates on at the geometric level. The dictionary $\\{p\\text{-div groups}\\} \\leftrightarrow \\{(T,W)\\}$ is the fibrewise content of the geometric Satake equivalence."
+    },
+    {
+      "from": "1211.6357:thm:6.3.4",
+      "to": "1602.03148:thm:4.28",
+      "type": "parallel_result",
+      "note": "Both papers organize the algebraic data of $p$-divisible groups over $\\mathcal{O}_C$: SW via the moduli space $\\mathcal{M}_\\infty$, BMS1 (via Fargues, thm:4.28) via the Breuil–Kisin–Fargues module classification. Sister statements: BMS1 is the algebra side, SW is the geometry side of the same arithmetic phenomenon."
+    },
+    {
+      "from": "1709.07343:thm:1.5",
+      "to": "1301.0792:thm:8.3.5",
+      "type": "extends",
+      "note": "Diamonds' diamond functor extends KL's perfectoid-adic-space framework: KL thm:8.3.5 gives the first systematic perfectoid-vs-perfect-adic-space dictionary; Diamonds enlarges the target category to locally spatial diamonds (sheaves of perfectoid spaces), licensing limits and quotients KL couldn't form."
+    },
+    {
+      "from": "1301.0792:thm:9.4.2",
+      "to": "1709.07343:thm:1.13",
+      "type": "shared_mechanism",
+      "note": "Pro-étale cohomology of perfectoid spaces vs. base-change-invariance of étale cohomology under extension of base fields — both rest on the same framework: pro-étale topology lifts naturally through perfectoid covers, with cohomology behaving stably."
+    },
+    {
+      "from": "1301.0792:thm:4.1.10",
+      "to": "1905.08229:thm:5.2",
+      "type": "shared_mechanism",
+      "note": "Slope filtrations over the Robba ring (KL) and crystalline comparison in characteristic $p$ (prismatic) both organize $\\varphi$-module data via 'slope = Newton-polygon-like invariant': KL gets a unique filtration by saturated submodules with strictly decreasing slopes; prismatic uses the perfect-prism crystalline identification to access the same slope structure."
+    },
+    {
+      "from": "1301.0792:thm:9.5.6",
+      "to": "1905.08229:thm:1.16",
+      "type": "shared_mechanism",
+      "note": "Recovering classical $p$-adic Hodge / $(\\varphi, \\Gamma)$-module theory (KL) and constructing a Nygaard-filtered prismatic site (prismatic) both yield filtered cohomology theories whose graded pieces recover classical Galois-representation data. KL via Robba/period rings; prismatic via $\\delta$-rings + quasisyntomic descent."
+    },
+    {
+      "from": "2102.13459:thm:I.6.3",
+      "to": "1301.0792:thm:9.5.8",
+      "type": "imports_result",
+      "note": "FS's geometric Satake construction works in a category whose objects include $B$-pairs and $\\Gamma$-equivariant vector bundles on FF — exactly the categorical equivalences KL set up at thm:9.5.8. KL's framework supplies the categorical input for FS's dual-group construction."
+    },
+    {
+      "from": "1301.0792:thm:6.3.12",
+      "to": "1602.03148:thm:14.3",
+      "type": "parallel_result",
+      "note": "$\\varphi^a$-modules over the relative Robba ring (KL) and $A_{\\mathrm{inf}}$-perfect complexes with $\\varphi$ (BMS1) are independent realizations of 'perfect $\\varphi$-equivariant data over a Witt-style ring'. Together they comprise the algebraic backbone the prismatic framework later abstracts."
+    },
+    {
+      "from": "1301.0792:thm:7.4.5",
+      "to": "1905.08229:thm:15.2",
+      "type": "shared_mechanism",
+      "note": "Geometric variation of slopes (KL) and concentration in degree zero of derived prismatic cohomology over large quasisyntomic algebras (prismatic) both rest on flatness/degeneration arguments that propagate point-wise structure to the family. KL: slope polygon semicontinuity; prismatic: $(p,I)$-completely flat $\\delta$-algebra structure."
+    },
+    {
+      "from": "2102.13459:thm:I.4.1",
+      "to": "1709.07343:thm:6.3",
+      "type": "imports_result",
+      "note": "$\\mathrm{Bun}_G$ as a $v$-stack on $\\mathrm{Perf}$ inherits its étale-topos behavior from the étale-site tilting Diamonds imports from Scholze. FS uses this implicitly throughout when manipulating $\\ell$-adic sheaves on $\\mathrm{Bun}_G$."
+    },
+    {
+      "from": "1905.08229:thm:1.8",
+      "to": "1602.03148:thm:14.3",
+      "type": "extends",
+      "note": "BMS1's perfectness of $R\\Gamma_{A_{\\mathrm{inf}}}(\\mathfrak{X})$ becomes a special case of prismatic cohomology over the perfect prism $(A_{\\mathrm{inf}}, \\ker\\theta)$. Prismatic's master comparison thm:1.8 generalizes the BMS1 perfectness statement to arbitrary bounded prisms."
+    },
+    {
+      "from": "1905.08229:thm:9.1",
+      "to": "1602.03148:thm:13.1",
+      "type": "extends",
+      "note": "BMS1's $B_{\\mathrm{dR}}^+$-cohomology comparison is upgraded by prismatic's étale comparison theorem: nearby-cycles cohomology on the adic generic fibre identified as Frobenius-fixed inverted-$d$ prismatic cohomology. BMS1 is the rational/de Rham case; prismatic supplies the integral version."
+    },
+    {
+      "from": "1905.08229:thm:13.1",
+      "to": "1802.03261:thm:9.6",
+      "type": "extends",
+      "note": "BMS2 identifies $\\widehat{\\mathbbl{\\Delta}}_A \\simeq A\\Omega_A$; prismatic's thm:13.1 sharpens this by giving the Nygaard completion a $\\delta$-ring structure refining $\\varphi$. The bridge BMS2 ↔ BMS1 ↔ prismatic is now triangulated."
+    },
+    {
+      "from": "1709.07343:thm:6.1",
+      "to": "1905.08229:thm:1.17",
+      "type": "shared_mechanism",
+      "note": "Diamonds' imported almost-purity (Scholze, Kedlaya–Liu) and prismatic almost-purity (Bhatt–Scholze via André's flatness) are different formulations / reach of the same theorem the perfectoid program keeps strengthening. The shared tool is 'finite étale cover stays inside the perfectoid world up to almost-isomorphism'."
+    },
+    {
+      "from": "2201.06120:thm:1.2.1",
+      "to": "1602.03148:thm:1.10",
+      "type": "imports_result",
+      "note": "Bhatt–Lurie open by quoting BMS1's master $A\\Omega$ comparison verbatim — the relative-perfectoid theorem the absolute version generalizes. The import is explicit (BMS1 thm:1.10 cited in the statement of thm:1.2.1)."
+    },
+    {
+      "from": "2201.06120:thm:6.2.1",
+      "to": "1802.03261:thm:1.6",
+      "type": "imports_result",
+      "note": "BMS2's QRS-perfectoid $\\mathrm{TC}^- \\cong A_{\\mathrm{inf}}$ identification imported verbatim as input to the Chern-class machinery."
+    },
+    {
+      "from": "2201.06120:thm:6.2.4",
+      "to": "1802.03261:thm:1.12",
+      "type": "imports_result",
+      "note": "BMS2 motivic filtration on $\\mathrm{TP}$ imported and lifted to absolute prismatic setting via syntomic-site colimit description."
+    },
+    {
+      "from": "2201.06120:thm:4.6.1",
+      "to": "1905.08229:thm:5.2",
+      "type": "extends",
+      "note": "Bhatt–Lurie's absolute char-$p$ prismatic = crystalline extends Bhatt–Scholze's relative version (which lives over a fixed prism $(A,(p))$): the absolute case identifies $R\\Gamma_{\\mathbbl{\\Delta}}(X)$ on the absolute prismatic site with $R\\Gamma_{\\mathrm{crys}}(X/\\mathbb{Z}_p)$ for any quasisyntomic $\\mathbb{F}_p$-scheme."
+    },
+    {
+      "from": "2201.06120:thm:8.1.9",
+      "to": "1905.08229:thm:9.1",
+      "type": "extends",
+      "note": "Étale-syntomic comparison extends Bhatt–Scholze's prismatic étale comparison to the absolute setting with explicit fibre description."
+    },
+    {
+      "from": "2201.06120:thm:3.4.13",
+      "to": "1905.08229:thm:3.10",
+      "type": "generalizes",
+      "note": "The Cartier-Witt stack's Hodge-Tate locus $\\mathrm{WCart}^{\\mathrm{HT}} \\cong \\mathrm{Spf}(\\mathbb{Z}_p)$ is the *geometric* incarnation of Bhatt–Scholze's perfect-prism dictionary — the algebraic equivalence becomes an isomorphism of stacks. Same content, geometrically reformulated."
+    },
+    {
+      "from": "2201.06120:thm:8.3.1",
+      "to": "1602.03148:thm:1.10",
+      "type": "generalizes",
+      "note": "Combined Chern-class isomorphism unifies BMS1's $A\\Omega$ comparison and the synthetic / de Rham / crystalline Chern classes into one universal coherent system over the absolute prismatic site."
+    },
+    {
+      "from": "2005.04746:def:5.2.1",
+      "to": "1905.08229:thm:3.10",
+      "type": "re_derives",
+      "note": "Drinfeld's prismatization stack $\\Sigma'(S) = \\{(M, \\xi) : M \\text{ admissible }W_S\\text{-module}, \\xi: M \\to W_S \\text{ primitive}\\}$ is a moduli-theoretic restatement of Bhatt–Scholze's perfect-prism dictionary $(A,I)$. Same data — admissible Witt-vector module + primitive morphism — geometrically packaged as a stack."
+    },
+    {
+      "from": "2005.04746:thm:5.4.5",
+      "to": "1905.08229:thm:1.8",
+      "type": "parallel_result",
+      "note": "Drinfeld's algebraicity / Mor-affine / formal-c-stack structure on $\\Sigma'$ is an alternative geometric engine for prismatic cohomology: where Bhatt–Scholze define the prismatic site and prove the master theorem object-wise, Drinfeld presents the underlying moduli stack and derives properties stack-theoretically."
+    },
+    {
+      "from": "2005.04746:thm:5.4.5",
+      "to": "2201.06120:thm:3.4.13",
+      "type": "parallel_result",
+      "note": "Drinfeld's $\\Sigma'$ and Bhatt–Lurie's Cartier-Witt stack $\\mathrm{WCart}$ are independent moduli-theoretic incarnations of absolute prismatic geometry. Parallel reformulations (~2020 vs 2022); both algebraic stacks classifying admissible Witt-vector modules + primitive morphism, with different presentation."
+    },
+    {
+      "from": "2005.04746:def:6.2.1",
+      "to": "2102.13459:thm:I.3.2",
+      "type": "shared_mechanism",
+      "note": "Drinfeld's rigid fibre $\\Sigma'_{\\mathrm{Rig}}$ and the Fargues–Fontaine curve are both 'rigid-analytic shadows' of perfectoid moduli. Different specialisations: $\\Sigma'_{\\mathrm{Rig}}$ classifies admissible-module data; FF curve classifies vector bundles with prescribed slopes."
+    },
+    {
+      "from": "1907.10525:thm:3.1.6",
+      "to": "1905.08229:thm:6.3",
+      "type": "imports_result",
+      "note": "Anschütz–Le Bras explicitly imports Bhatt–Scholze's Hodge-Tate comparison (thm:6.3 in prismatic, cited as 'Theorem 4.10' in their numbering) as the structural backbone for prismatic Dieudonné theory."
+    },
+    {
+      "from": "1907.10525:thm:3.1.7",
+      "to": "1905.08229:thm:5.2",
+      "type": "imports_result",
+      "note": "ALB explicitly imports Bhatt–Scholze's char-$p$ crystalline comparison as the input that makes prismatic Dieudonné modules track crystalline Dieudonné modules in characteristic $p$."
+    },
+    {
+      "from": "1907.10525:thm:3.3.9",
+      "to": "1905.08229:thm:7.14",
+      "type": "imports_result",
+      "note": "ALB explicitly imports Bhatt–Scholze's André flatness lemma as the absolutely-integrally-closed-cover input for QRS-perfectoid descent."
+    },
+    {
+      "from": "1907.10525:thm:5.2.5",
+      "to": "1602.03148:thm:4.28",
+      "type": "extends",
+      "note": "ALB's identification of prismatic Dieudonné with Breuil–Kisin minimal modules over regular local rings extends Fargues's BKF module classification (BMS1 thm:4.28). BMS1 classifies finite-free BKF modules over $A_{\\mathrm{inf}}$ for algebraically closed $C$; ALB extends to general regular local rings."
+    },
+    {
+      "from": "1907.10525:thm:4.6.10",
+      "to": "1211.6357:thm:5.2.1",
+      "type": "extends",
+      "note": "ALB's antiequivalence between $p$-divisible groups and admissible prismatic Dieudonné modules over quasi-syntomic $R$ extends Scholze–Weinstein's Hodge-Tate classification of $p$-divisible groups over $\\mathcal{O}_C$ (which equates them with pairs $(T, W)$ of free $\\mathbb{Z}_p$-module + $C$-subspace). ALB lifts the classification beyond $\\mathcal{O}_C$ to all quasi-syntomic rings."
+    },
+    {
+      "from": "1907.10525:thm:5.1.4",
+      "to": "1211.6357:thm:5.1.4",
+      "type": "extends",
+      "note": "(Numbering coincidence: both papers' theorem 5.1.4.) ALB's exact antiequivalence on finite group schemes extends SW's quasi-isogeny lifting result for $p$-divisible groups — same Dieudonné-style classification, broader category, prismatic engine."
+    },
+    {
+      "from": "1211.6357:thm:5.1.4",
+      "to": "1602.03148:thm:4.28",
+      "type": "parallel_result",
+      "note": "Algebraic-side companion to SW thm:6.3.4 ↔ BMS1 thm:4.28 already in the graph: SW's Dieudonné lifting and BMS1's BKF module classification are sister statements organizing the same $p$-divisible-group data — SW from the moduli side, BMS1 from the linear-algebra side."
+    },
+    {
+      "from": "2102.13459:thm:I.3.2",
+      "to": "1211.6357:thm:6.4.1",
+      "type": "imports_result",
+      "note": "SW's cartesian diagram for $\\mathcal{M}_\\infty$ (Hodge-Tate periods + universal cover description) provides the geometric input for FS's FF-curve classification: the period-map structure SW set up is what makes the Newton stratification + isocrystal classification on $\\mathrm{Bun}_G$ tractable."
+    },
+    {
+      "from": "1211.6357:thm:6.3.4",
+      "to": "1301.0792:thm:8.3.5",
+      "type": "shared_mechanism",
+      "note": "SW's preperfectoid $\\mathcal{M}_\\infty$ (infinite-level Rapoport–Zink space, $\\sim \\varprojlim \\mathcal{M}_n$) and KL's perfectoid adic-space framework are both organizing 'limits of adic spaces become perfectoid' structures; SW provides the application-side example, KL provides the systematic categorical framework."
+    }
+  ]
+}

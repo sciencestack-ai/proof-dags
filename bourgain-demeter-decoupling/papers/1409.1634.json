@@ -1,0 +1,405 @@
+{
+  "paper": "1409.1634",
+  "title": "Decouplings for curves and hypersurfaces with nonzero Gaussian curvature",
+  "authors": [
+    "Jean Bourgain",
+    "Ciprian Demeter"
+  ],
+  "generated": "2026-05-12",
+  "status": "complete",
+  "nodes": {
+    "thm:1.1": {
+      "type": "Theorem",
+      "number": "1.1",
+      "section": "1",
+      "role": "main_result",
+      "summary": "$l^p$ decoupling for compact hypersurfaces with positive definite second fundamental form: for $\\widehat f$ supported in $\\mathcal{N}_\\delta$, $p\\ge\\tfrac{2(n+1)}{n-1}$, $\\|f\\|_p\\lesssim_\\epsilon\\delta^{\\frac np-\\frac{n-1}{2}-\\epsilon}(\\sum_{\\theta}\\|f_\\theta\\|_p^p)^{1/p}$. The $l^p$ (rather than $l^2$) form, complementing the Bourgain–Demeter $l^2$ theorem."
+    },
+    "thm:1.2": {
+      "type": "Theorem",
+      "number": "1.2",
+      "section": "1",
+      "role": "main_result",
+      "summary": "$l^2$ decoupling for hypersurfaces $H^{n-1}_\\upsilon$ of any signature with $n-1$ nonzero principal curvatures: $\\|f\\|_p\\lesssim_\\epsilon\\delta^{-\\epsilon}K^{(2)}_{n,p,\\upsilon}(\\delta)(\\sum_\\theta\\|f_\\theta\\|_p^2)^{1/2}$ with $K^{(2)}=\\delta^{-\\frac{n-1}{4}+\\frac{n+1}{2p}}$ for $p\\ge\\tfrac{2(n+1)}{n-1}$. Removes the positive-definiteness hypothesis from Bourgain–Demeter's hypersurface decoupling."
+    },
+    "cor:1.3": {
+      "type": "Corollary",
+      "number": "1.3",
+      "section": "1",
+      "role": "auxiliary",
+      "summary": "Strichartz estimates for irrational tori, hyperbolic case: $\\|e^{itT}\\phi\\|_{L^p(\\mathbb{T}^{n-1}\\times I)}\\lesssim_\\epsilon N^\\epsilon K^{(2)}_{n,p,\\upsilon}(N^{-1})\\|\\phi\\|_2$ for the indefinite-signature Schrödinger-type evolution. The PDE payoff of thm:1.2."
+    },
+    "thm:1.4": {
+      "type": "Theorem",
+      "number": "1.4",
+      "section": "1",
+      "role": "main_result",
+      "summary": "$l^2$ decoupling for nondegenerate curves $\\Phi$ in $\\mathbb{R}^n$: $\\|f\\|_{L^p(\\mathbb{R}^n)}\\lesssim_\\epsilon\\delta^{-\\epsilon}(\\sum_\\theta\\|f_\\theta\\|_{L^p}^2)^{1/2}$ for $2\\le p\\le4n-2$. The first decoupling for general nondegenerate curves — a (subcritical) precursor to Bourgain–Demeter–Guth's sharp moment-curve decoupling at $p=n(n+1)$."
+    },
+    "cor:1.5": {
+      "type": "Corollary",
+      "number": "1.5",
+      "section": "1",
+      "role": "auxiliary",
+      "summary": "Discrete restriction for curves: for $p\\le4n-2$, a $\\delta$-separated set $\\Lambda$ on $\\Phi$, and any coefficients, $(\\tfrac1{|B_R|}\\int_{B_R}|\\sum_{\\xi\\in\\Lambda}a_\\xi e(\\xi\\cdot x)|^p)^{1/p}\\lesssim_\\epsilon\\delta^{-\\epsilon}\\|a_\\xi\\|_{l^2}$. The exponential-sum form of thm:1.4."
+    },
+    "def:2.1": {
+      "type": "Definition",
+      "number": "2.1",
+      "section": "2",
+      "role": "definition",
+      "summary": "Caps $\\tau_1,\\dots,\\tau_n$ on $H^{n-1}_\\upsilon$ are $\\nu$-transverse if the parallelepiped spanned by unit normals $n_i$ at the $\\tau_i$ has volume $>\\nu$. The transversality hypothesis for the multilinear estimates."
+    },
+    "thm:2.2": {
+      "type": "Theorem",
+      "number": "2.2",
+      "section": "2",
+      "role": "key_reduction",
+      "summary": "Linear-vs-multilinear reduction for $H^{n-1}_\\upsilon$: assuming the $(n-2)$-dimensional decoupling estimate, the linear decoupling constant $K_{p,n,\\upsilon}(\\delta)$ is controlled by $C_\\nu\\delta^{-\\epsilon(\\nu)}$ times the $\\nu$-transverse multilinear constant, with $\\epsilon(\\nu)\\to0$. The Bourgain–Guth dichotomy for indefinite-signature hypersurfaces, with induction on dimension."
+    },
+    "lem:2.4": {
+      "type": "Lemma",
+      "number": "2.4",
+      "section": "2",
+      "role": "technical",
+      "summary": "Decoupling for $H^{n-1}_{(\\upsilon_1,\\dots,\\upsilon_{n-2},a)}$ with a possibly-zero last principal curvature $a$: the estimate holds uniformly in $a$ (including $a=0$, the degenerate cylinder over a lower-dimensional hypersurface). Lets the induction on dimension proceed through degenerate intermediate surfaces."
+    },
+    "lem:2.5": {
+      "type": "Lemma",
+      "number": "2.5",
+      "section": "2",
+      "role": "technical",
+      "summary": "Decoupling for general $C^2$ hypersurfaces with $\\ge n-2$ principal curvatures $\\sim1$ (the remaining one $\\lesssim1$): reduces, via lem:2.6, to the model surfaces $H^{n-1}_\\upsilon$. The bridge from arbitrary curved hypersurfaces to the model family."
+    },
+    "lem:2.6": {
+      "type": "Lemma",
+      "number": "2.6",
+      "section": "2",
+      "role": "technical",
+      "summary": "Linear-algebra fact: an invertible symmetric $A$ and an $m$-dimensional affine subspace $S$; if the quadratic hypersurface $x_{m+1}=\\langle Ax,x\\rangle$ on $S$ has $l$ principal curvatures in $[-\\delta,\\delta]$ then $l\\le n-m$. Controls how flat a slice of a curved quadric can be — used to localize curvature."
+    },
+    "prop:2.7": {
+      "type": "Proposition",
+      "number": "2.7",
+      "section": "2",
+      "role": "technical",
+      "summary": "Broad/narrow inequality for $H^{n-1}_\\upsilon$: bounds the global decoupling-type norm by a sum over coarse caps (the 'narrow' multilinear term) plus a lower-dimensional contribution, under the inductive hypothesis on $K_{p,n-2,\\upsilon'}$. The quantitative dichotomy."
+    },
+    "prop:2.9": {
+      "type": "Proposition",
+      "number": "2.9",
+      "section": "2",
+      "role": "technical",
+      "summary": "Cap-localized version of prop:2.7 — the broad/narrow split inside a single cap, the rescaled building block of the multiscale iteration."
+    },
+    "prop:2.10": {
+      "type": "Proposition",
+      "number": "2.10",
+      "section": "2",
+      "role": "main_technical",
+      "summary": "Self-improvement / induction-on-scales for hypersurfaces: inequality (22) holds with $\\beta=1$ and an explicit $A_1(N)$, and if it holds for some $\\beta\\in(0,1]$ then for $\\tfrac{2\\beta}{(p-2)(n-1)}$ with an improved $A$. Iterating drives the exponent to the conjectured value — the technical heart for hypersurfaces."
+    },
+    "lem:3.1": {
+      "type": "Lemma",
+      "number": "3.1",
+      "section": "3",
+      "role": "technical",
+      "summary": "Lower-dimensional reduction: assuming the main hypersurface decoupling theorem in dimension $n-1$, decoupling holds for $\\mathcal{N}_\\delta(S)$ in the range $2\\le p\\le\\tfrac{2(n-d(S))}{n-2-d(S)}$ with constant $K^{(2)}_{S,p}(\\delta)=\\delta^{d(S)(-\\frac14+\\cdots)}$, where $d(S)$ counts the flat directions. The induction-on-dimension input."
+    },
+    "prop:3.2": {
+      "type": "Proposition",
+      "number": "3.2",
+      "section": "3",
+      "role": "technical",
+      "summary": "Broad/narrow inequality for a general curved surface $S$, assuming the theorem in dimensions $\\le n-1$: bounds $\\|\\widehat{gd\\sigma}\\|_{L^p}$ by $l^2$-sums over $1/K$-caps plus a multilinear remainder. The general-surface analogue of prop:2.7."
+    },
+    "thm:4.1": {
+      "type": "Theorem",
+      "number": "4.1",
+      "section": "4",
+      "role": "key_reduction",
+      "summary": "Linear-vs-multilinear reduction for curves: $K_p(R)\\le C_\\nu R^{\\epsilon(\\nu)}C_p(R,\\nu)$ with $\\epsilon(\\nu)\\to0$, where $C_p(R,\\nu)$ is the $\\nu$-transverse multilinear curve-decoupling constant. The hinge of the curve-decoupling proof."
+    },
+    "prop:4.2": {
+      "type": "Proposition",
+      "number": "4.2",
+      "section": "4",
+      "role": "technical",
+      "summary": "Broad/narrow decomposition for curves at scale $R$: $\\|E_{[0,1]}g\\|_{L^p(B_R)}$ is bounded by $C_p(R,\\nu)C_\\nu(\\sum_{|U|=R^{-1/n}}\\|E_Ug\\|^2)^{1/2}$ plus a $\\nu$-localized term with $\\nu$-independent constant. The quantitative dichotomy for curves."
+    },
+    "prop:4.3": {
+      "type": "Proposition",
+      "number": "4.3",
+      "section": "4",
+      "role": "technical",
+      "summary": "Interval-localized version of prop:4.2: the same split applied inside a $\\delta$-interval $H\\subset[0,1]$, valid for $R\\gtrsim\\delta^{-n}$. The rescaled building block of the curve iteration."
+    },
+    "prop:5.1": {
+      "type": "Proposition",
+      "number": "5.1",
+      "section": "5",
+      "role": "key_mechanism",
+      "summary": "Multilinear (transverse) restriction for curves: for $\\nu$-transverse intervals $I_1,\\dots,I_n\\subset[0,1]$, $\\|(\\prod_{i=1}^n|E_{I_i}g|)^{1/n}\\|_{L^{2n}(\\mathbb{R}^n)}\\lesssim_\\nu(\\prod_i\\|g\\|_{L^2(I_i)})^{1/n}$. The geometric input (multilinear Kakeya/restriction for the curve) the multilinear decoupling is built on."
+    },
+    "lem:5.2": {
+      "type": "Lemma",
+      "number": "5.2",
+      "section": "5",
+      "role": "technical",
+      "summary": "Multilinear square-function decoupling for curves: for $\\nu$-transverse $I_i$ and $f_i$ Fourier-supported near $\\Phi(I_i)$, $\\|(\\prod_i(\\sum_\\tau|f_{i,\\tau}|^2)^{1/2})^{1/n}\\|_{L^p}\\lesssim_\\nu N^{-\\frac{n(n-1)}{p}+\\epsilon}(\\prod_i\\sum_\\tau\\|f_{i,\\tau}\\|_{L^{p/n}}^2)^{1/\\cdots}$ for $2n\\le p\\le\\infty$. Multilinear restriction upgraded to a square-function decoupling statement."
+    },
+    "cor:5.3": {
+      "type": "Corollary",
+      "number": "5.3",
+      "section": "5",
+      "role": "main_technical",
+      "summary": "Ball-inflation step for curves: relates the $\\delta^{1/4}$-scale transverse square-function product to the $\\delta^{1/2}$-scale one via a Hölder interpolation with exponent $\\kappa_p$. One scale-doubling cycle."
+    },
+    "lem:5.4": {
+      "type": "Lemma",
+      "number": "5.4",
+      "section": "5",
+      "role": "main_technical",
+      "summary": "Iterated ball-inflation: for $s\\ge2$, $\\|(\\prod_i|E_{I_i}g|)^{1/n}\\|_{L^p(B_N)}\\le N^{2^{-s-1}}\\|(\\prod_i\\sum_{|J_s|=\\delta^{2^{-s}},\\,J_s\\subset I_i}|E_{J_s}g|^2)^{1/(2n)}\\|_{L^p(B_N)}$. Iterating cor:5.3 $s$ times pushes the loss to $N^{2^{-s-1}}\\to1$ — the induction-on-scales engine for curves."
+    },
+    "prop:6.1": {
+      "type": "Proposition",
+      "number": "6.1",
+      "section": "6",
+      "role": "foundational",
+      "summary": "Base case: for $\\sim1$-transverse intervals $I_1,\\dots,I_{n-1}$, $\\|(\\prod_{j=1}^{n-1}|E_{I_j}g|)^{1/(n-1)}\\|_{L^{2(n+1)}_\\sharp(B_N)}\\lesssim_\\epsilon N^{\\frac1{2(n+1)}+\\epsilon}(\\prod_i\\sum_{\\Delta}\\|E_\\Delta g\\|^{\\cdots})^{1/(2(n+1))}$. The lower-dimensional ($(n-1)$-linear) input — supplied by Bourgain–Demeter hypersurface decoupling — that the curve iteration bottoms out at."
+    }
+  },
+  "edges": [
+    {
+      "from": "thm:1.2",
+      "to": "thm:2.2",
+      "type": "depends_on",
+      "note": "Decoupling for indefinite-signature hypersurfaces follows from the linear-vs-multilinear reduction by sending $\\nu\\to0$ and inducting on dimension."
+    },
+    {
+      "from": "thm:1.1",
+      "to": "thm:1.2",
+      "type": "depends_on",
+      "note": "The $l^p$ form is deduced from the $l^2$ form by interpolation with the trivial $l^p$-orthogonality bound."
+    },
+    {
+      "from": "cor:1.3",
+      "to": "thm:1.2",
+      "type": "depends_on",
+      "note": "Hyperbolic-torus Strichartz is the exponential-sum specialization of indefinite-signature hypersurface decoupling."
+    },
+    {
+      "from": "thm:2.2",
+      "to": "prop:2.7",
+      "type": "depends_on",
+      "note": "The reduction runs through the quantitative broad/narrow inequality."
+    },
+    {
+      "from": "thm:2.2",
+      "to": "prop:2.9",
+      "type": "depends_on",
+      "note": "...iterated via the cap-localized version across scales."
+    },
+    {
+      "from": "thm:2.2",
+      "to": "prop:2.10",
+      "type": "depends_on",
+      "note": "The narrow (transverse) term is controlled and improved by the multilinear self-improvement iteration."
+    },
+    {
+      "from": "thm:2.2",
+      "to": "lem:2.4",
+      "type": "depends_on",
+      "note": "The induction on dimension passes through possibly-degenerate intermediate hypersurfaces $H^{n-1}_{(\\dots,a)}$."
+    },
+    {
+      "from": "prop:2.7",
+      "to": "lem:3.1",
+      "type": "depends_on",
+      "note": "The lower-dimensional contribution is bounded using decoupling in dimension $n-1$."
+    },
+    {
+      "from": "prop:2.7",
+      "to": "prop:3.2",
+      "type": "depends_on",
+      "note": "Built from the general-surface broad/narrow inequality."
+    },
+    {
+      "from": "lem:2.5",
+      "to": "lem:2.6",
+      "type": "depends_on",
+      "note": "Reducing a general curved hypersurface to the model family $H^{n-1}_\\upsilon$ uses the curvature-localization linear-algebra lemma."
+    },
+    {
+      "from": "lem:2.5",
+      "to": "thm:2.2",
+      "type": "depends_on",
+      "note": "Once reduced to the model surfaces, the decoupling for general hypersurfaces follows from thm:2.2."
+    },
+    {
+      "from": "lem:3.1",
+      "to": "lem:2.5",
+      "type": "depends_on",
+      "note": "The lower-dimensional reduction is phrased for general curved surfaces $S$."
+    },
+    {
+      "from": "thm:1.4",
+      "to": "thm:4.1",
+      "type": "depends_on",
+      "note": "Curve decoupling follows from the linear-vs-multilinear reduction by sending $\\nu\\to0$."
+    },
+    {
+      "from": "thm:4.1",
+      "to": "prop:4.2",
+      "type": "depends_on",
+      "note": "The reduction is the quantitative broad/narrow decomposition for curves."
+    },
+    {
+      "from": "thm:4.1",
+      "to": "prop:4.3",
+      "type": "depends_on",
+      "note": "...iterated via the interval-localized version."
+    },
+    {
+      "from": "thm:4.1",
+      "to": "lem:5.4",
+      "type": "depends_on",
+      "note": "The transverse multilinear term is controlled by the iterated ball-inflation, which sends the loss to $1$."
+    },
+    {
+      "from": "lem:5.4",
+      "to": "cor:5.3",
+      "type": "depends_on",
+      "note": "Iterates the single ball-inflation cycle $s$ times."
+    },
+    {
+      "from": "cor:5.3",
+      "to": "lem:5.2",
+      "type": "depends_on",
+      "note": "Each cycle uses the multilinear square-function decoupling."
+    },
+    {
+      "from": "lem:5.2",
+      "to": "prop:5.1",
+      "type": "depends_on",
+      "note": "Multilinear square-function decoupling is bootstrapped from the multilinear restriction estimate for curves."
+    },
+    {
+      "from": "lem:5.4",
+      "to": "prop:6.1",
+      "type": "depends_on",
+      "note": "The iteration bottoms out at the $(n-1)$-linear base estimate at $L^{2(n+1)}$."
+    },
+    {
+      "from": "thm:1.4",
+      "to": "thm:1.2",
+      "type": "depends_on",
+      "note": "The curve case feeds on hypersurface decoupling in lower dimensions (the base case prop:6.1 is of that type)."
+    },
+    {
+      "from": "cor:1.5",
+      "to": "thm:1.4",
+      "type": "depends_on",
+      "note": "Discrete restriction for curves is the exponential-sum form of curve decoupling."
+    },
+    {
+      "from": "prop:4.2",
+      "to": "prop:5.1",
+      "type": "depends_on",
+      "note": "The narrow term is recognized as a multilinear-restriction situation."
+    }
+  ],
+  "critical_path": [
+    "thm:1.4",
+    "thm:4.1",
+    "lem:5.4",
+    "cor:5.3",
+    "lem:5.2",
+    "prop:5.1",
+    "prop:6.1"
+  ],
+  "proof_architecture": {
+    "main_results": {
+      "description": "$l^p$ and $l^2$ decoupling for hypersurfaces of arbitrary signature, $l^2$ decoupling for nondegenerate curves, and the Strichartz / discrete-restriction corollaries.",
+      "nodes": [
+        "thm:1.1",
+        "thm:1.2",
+        "cor:1.3",
+        "thm:1.4",
+        "cor:1.5"
+      ]
+    },
+    "hypersurface_decoupling": {
+      "description": "Linear-vs-multilinear reduction, broad/narrow dichotomies, curvature-localization, lower-dimensional induction, and the multilinear self-improvement — all for hypersurfaces of any signature.",
+      "nodes": [
+        "def:2.1",
+        "thm:2.2",
+        "lem:2.4",
+        "lem:2.5",
+        "lem:2.6",
+        "prop:2.7",
+        "prop:2.9",
+        "prop:2.10",
+        "lem:3.1",
+        "prop:3.2"
+      ]
+    },
+    "curve_decoupling": {
+      "description": "The parallel machinery for nondegenerate curves: linear-vs-multilinear reduction, broad/narrow decompositions, multilinear restriction and square-function decoupling, and the iterated ball-inflation that drives the loss to $1$.",
+      "nodes": [
+        "thm:4.1",
+        "prop:4.2",
+        "prop:4.3",
+        "prop:5.1",
+        "lem:5.2",
+        "cor:5.3",
+        "lem:5.4"
+      ]
+    },
+    "base_case": {
+      "description": "The $(n-1)$-linear transverse decoupling estimate at $L^{2(n+1)}$ that the curve iteration terminates at — of the type supplied by Bourgain–Demeter hypersurface decoupling.",
+      "nodes": [
+        "prop:6.1"
+      ]
+    }
+  },
+  "bibliography": {
+    "BD-l2": {
+      "title": "The proof of the l^2 Decoupling Conjecture",
+      "authors": [
+        "Bourgain",
+        "Demeter"
+      ],
+      "arxiv_id": "1403.5335",
+      "in_registry": true
+    },
+    "BCT": {
+      "title": "On the multilinear restriction and Kakeya conjectures",
+      "authors": [
+        "Bennett",
+        "Carbery",
+        "Tao"
+      ],
+      "arxiv_id": "math/0509262",
+      "in_registry": true
+    },
+    "Guth:MultilinearKakeya": {
+      "title": "A short proof of the multilinear Kakeya inequality",
+      "authors": [
+        "Guth"
+      ],
+      "arxiv_id": "1409.4683",
+      "in_registry": true
+    },
+    "BourgainGuth": {
+      "title": "Bounds on oscillatory integral operators based on multilinear estimates",
+      "authors": [
+        "Bourgain",
+        "Guth"
+      ],
+      "arxiv_id": "1012.3760",
+      "in_registry": false
+    }
+  }
+}

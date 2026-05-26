@@ -1,0 +1,580 @@
+{
+  "paper": "1402.0290v3",
+  "title": "Finite time blowup for an averaged three-dimensional Navier-Stokes equation",
+  "authors": [
+    "Terence Tao"
+  ],
+  "generated": "2026-03-08",
+  "status": "complete",
+  "nodes": {
+    "conjecture:1.1": {
+      "type": "Conjecture",
+      "number": "1.1",
+      "section": "1.1",
+      "role": "context",
+      "summary": "Classical formulation: smooth solutions with finite energy exist globally for Schwartz initial data."
+    },
+    "conjecture:1.2": {
+      "type": "Conjecture",
+      "number": "1.2",
+      "section": "1.1",
+      "role": "context",
+      "summary": "Mild solution formulation: global mild solution in $H^10_df$ exists for Schwartz initial data."
+    },
+    "lem:1.3": {
+      "type": "Lemma",
+      "number": "1.3",
+      "section": "1.1",
+      "role": "auxiliary",
+      "summary": "Conjecture 1.1 and Conjecture 1.2 are equivalent."
+    },
+    "thm:1.5": {
+      "type": "Theorem",
+      "number": "1.5",
+      "section": "1.1",
+      "role": "main_result",
+      "summary": "There exists a symmetric averaged Euler bilinear operator and Schwartz initial data such that no global mild solution exists. THE MAIN THEOREM."
+    },
+    "def:3.1": {
+      "type": "Definition",
+      "number": "3.1",
+      "section": "3",
+      "role": "definition",
+      "summary": "Bilinear operators built from Littlewood-Paley-type projections at dyadic scales, acting on divergence-free fields."
+    },
+    "thm:3.2": {
+      "type": "Theorem",
+      "number": "3.2",
+      "section": "3",
+      "role": "key_reduction",
+      "summary": "For small enough dyadic parameter, every local cascade operator is an averaged Euler bilinear operator. Proved via 9 steps of harmonic analysis (Sections 3.1-3.9)."
+    },
+    "thm:3.3": {
+      "type": "Theorem",
+      "number": "3.3",
+      "section": "3",
+      "role": "key_reduction",
+      "summary": "There exists a symmetric local cascade operator and initial data with no global mild solution. Combined with Thm 3.2, this gives the main theorem."
+    },
+    "def:3.4": {
+      "type": "Definition",
+      "number": "3.4",
+      "section": "3.1",
+      "role": "definition",
+      "summary": "Formalization of what it means for one bilinear operator to be a complex average of another, via rotations, dilations, and Fourier multipliers."
+    },
+    "lem:4.1": {
+      "type": "Lemma",
+      "number": "4.1",
+      "section": "4",
+      "role": "key_reduction",
+      "summary": "Reduces the PDE (cascade equation) to an infinite-dimensional ODE system in coefficients $X_{i,n}$ and energies $E_{i,n}$, with a priori regularity, energy defect control, and frequency localization."
+    },
+    "thm:4.2": {
+      "type": "Theorem",
+      "number": "4.2",
+      "section": "4",
+      "role": "key_reduction",
+      "summary": "There exist structure constants such that for large enough $n_0$, no continuously differentiable functions can satisfy the ODE system from Lemma 4.1. The ODE-level blowup result."
+    },
+    "prop:5.1": {
+      "type": "Proposition",
+      "number": "5.1",
+      "section": "5.2",
+      "role": "warmup",
+      "summary": "Finite time blowup for a simplified dyadic model with exogenous truncation. Warmup for the full argument — shows energy cascading to finer scales via pump gates."
+    },
+    "thm:5.3": {
+      "type": "Theorem",
+      "number": "5.3",
+      "section": "5.5",
+      "role": "key_mechanism",
+      "summary": "The 5-mode circuit (a,b,c,d,ã) with pump + amplifier + rotor gates produces a delayed but abrupt transfer of energy from a to ã at a critical time $t_c$. THIS IS THE CORE MECHANISM that Section 6 iterates at every scale."
+    },
+    "thm:6.2": {
+      "type": "Theorem",
+      "number": "6.2",
+      "section": "6",
+      "role": "main_technical",
+      "summary": "For appropriate parameters (K large, $\\varepsilon$ small, $n_0$ large), the ODE system has no global solution. Direct implication of Thm 4.2 with explicit structure constants."
+    },
+    "prop:6.3": {
+      "type": "Proposition",
+      "number": "6.3",
+      "section": "6.2",
+      "role": "main_technical",
+      "summary": "The main inductive proposition. Energy concentrates at scale n at time $t_n$, then transfers to scale n+1 by time $t_{n+1}$. Transition states and energy bounds are maintained inductively."
+    },
+    "prop:6.4": {
+      "type": "Proposition",
+      "number": "6.4",
+      "section": "6.2",
+      "role": "main_technical",
+      "summary": "Given Prop 6.3 at level N, produces the N+1 case. The inductive step. Reduces to the rescaled Prop 6.5."
+    },
+    "prop:6.5": {
+      "type": "Proposition",
+      "number": "6.5",
+      "section": "6.3",
+      "role": "main_technical",
+      "summary": "The rescaled version of the inductive step. Works with normalized variables $(a_k,b_k,c_k,d_k)$ at scale 0. THIS IS THE TECHNICAL HEART — everything in Sections 6.4-6.7 proves this."
+    },
+    "lem:6.7": {
+      "type": "Lemma",
+      "number": "6.7",
+      "section": "6.4",
+      "role": "technical",
+      "summary": "Integral of energy at any fixed scale over the history is bounded. Uses energy estimates from Prop 6.5 and geometric series."
+    },
+    "lem:6.8": {
+      "type": "Lemma",
+      "number": "6.8",
+      "section": "6.5",
+      "role": "technical",
+      "summary": "Establishes improved initial bounds at time 0 for the rescaled system, using transition state from Prop 6.5 and cumulative energy from Lem 6.7."
+    },
+    "lem:6.9": {
+      "type": "Lemma",
+      "number": "6.9",
+      "section": "6.5",
+      "role": "technical",
+      "summary": "Energy at each scale is essentially captured by the four primary modes (a,b,c,d), up to small viscosity error. Uses energy defect (eq:6.51) and Lem 6.7."
+    },
+    "lem:6.10": {
+      "type": "Lemma",
+      "number": "6.10",
+      "section": "6.5",
+      "role": "technical",
+      "summary": "Rules out energy escaping to distant scales. Uses initial bounds (Lem 6.8), energy inequality (eq:6.49), and energy estimates."
+    },
+    "cor:6.11": {
+      "type": "Corollary",
+      "number": "6.11",
+      "section": "6.5",
+      "role": "technical",
+      "summary": "At the exit time $T_1$, exactly one of three things happens: energy flows backward, energy flows forward (via $d_1)$, or we run out of time. Follows from Lem 6.10."
+    },
+    "prop:6.12": {
+      "type": "Proposition",
+      "number": "6.12",
+      "section": "6.5",
+      "role": "technical",
+      "summary": "First reduction of what needs to be proved: find $\\tau_1$ and $\\mu_1$ satisfying the transition state bounds. Assuming the 'running out the clock' exit."
+    },
+    "prop:6.13": {
+      "type": "Proposition",
+      "number": "6.13",
+      "section": "6.6",
+      "role": "technical",
+      "summary": "If the integral of $a_1^2$ is small, then $b_1, c_1, d_1$ remain small. Controls subsidiary modes when the primary mode hasn't activated yet. Uses Lem 6.7, Lem 6.8, Gronwall."
+    },
+    "cor:6.14": {
+      "type": "Corollary",
+      "number": "6.14",
+      "section": "6.6",
+      "role": "technical",
+      "summary": "Refined exit trichotomy after eliminating the $b_1,c_1,d_1$ contributions. Uses Prop 6.13 to simplify Cor 6.11."
+    },
+    "prop:6.15": {
+      "type": "Proposition",
+      "number": "6.15",
+      "section": "6.6",
+      "role": "technical",
+      "summary": "Second reduction: strengthened transition state bounds. Assuming the 'forwards flow' or 'running out the clock' exit from Cor 6.14."
+    },
+    "prop:6.16": {
+      "type": "Proposition",
+      "number": "6.16",
+      "section": "6.7",
+      "role": "technical",
+      "summary": "Reduces the trichotomy to a dichotomy: either energy flows backward or we run out the clock. The forwards flow case has been handled."
+    },
+    "prop:6.17": {
+      "type": "Proposition",
+      "number": "6.17",
+      "section": "6.7",
+      "role": "technical",
+      "summary": "Rules out backward energy flow using modified energy / equipartition argument (parallel to Thm 5.3's proof). Forces 'running out the clock', which completes the induction."
+    }
+  },
+  "edges": [
+    {
+      "from": "lem:1.3",
+      "to": "conjecture:1.1",
+      "type": "depends_on",
+      "note": "Shows equivalence of the two formulations"
+    },
+    {
+      "from": "lem:1.3",
+      "to": "conjecture:1.2",
+      "type": "depends_on",
+      "note": "Shows equivalence of the two formulations"
+    },
+    {
+      "from": "thm:1.5",
+      "to": "thm:3.2",
+      "type": "depends_on",
+      "note": "Main theorem = cascade operators are averaged Euler (3.2) + cascade equation blows up (3.3)"
+    },
+    {
+      "from": "thm:1.5",
+      "to": "thm:3.3",
+      "type": "depends_on",
+      "note": "Main theorem = cascade operators are averaged Euler (3.2) + cascade equation blows up (3.3)"
+    },
+    {
+      "from": "thm:3.2",
+      "to": "def:3.1",
+      "type": "depends_on",
+      "note": "Statement references local cascade operators"
+    },
+    {
+      "from": "thm:3.2",
+      "to": "def:3.4",
+      "type": "depends_on",
+      "note": "Proof goes through complex averaging (9 steps in Sections 3.1-3.9)"
+    },
+    {
+      "from": "thm:3.3",
+      "to": "def:3.1",
+      "type": "depends_on",
+      "note": "Statement: blowup for a local cascade operator"
+    },
+    {
+      "from": "thm:3.3",
+      "to": "lem:4.1",
+      "type": "depends_on",
+      "note": "Reduction: cascade PDE $\\to$ ODE system via Fourier projection"
+    },
+    {
+      "from": "thm:3.3",
+      "to": "thm:4.2",
+      "type": "depends_on",
+      "note": "ODE system has no global solution $\\to$ cascade equation has no global mild solution"
+    },
+    {
+      "from": "lem:4.1",
+      "to": "def:3.1",
+      "type": "depends_on",
+      "note": "Derives equations of motion for cascade operator structure"
+    },
+    {
+      "from": "thm:4.2",
+      "to": "lem:4.1",
+      "type": "depends_on",
+      "note": "References conclusions (eq:4.6)-(eq:4.13) of Lemma 4.1"
+    },
+    {
+      "from": "thm:4.2",
+      "to": "thm:6.2",
+      "type": "depends_on",
+      "note": "ODE blowup for specific structure constants proved in Section 6"
+    },
+    {
+      "from": "thm:6.2",
+      "to": "prop:6.3",
+      "type": "depends_on",
+      "note": "Proof by contradiction: assume global solution exists, Prop 6.3 gives blowup dynamics for all N, taking $N\\to\\infty$ gives contradiction"
+    },
+    {
+      "from": "prop:6.3",
+      "to": "prop:6.4",
+      "type": "depends_on",
+      "note": "Base case is direct; inductive step is Prop 6.4"
+    },
+    {
+      "from": "prop:6.4",
+      "to": "prop:6.3",
+      "type": "depends_on",
+      "note": "Assumes Prop 6.3 at level N, proves level N+1"
+    },
+    {
+      "from": "prop:6.4",
+      "to": "prop:6.5",
+      "type": "depends_on",
+      "note": "Reduces to rescaled version by change of variables"
+    },
+    {
+      "from": "prop:6.5",
+      "to": "thm:5.3",
+      "type": "depends_on",
+      "note": "The rescaled dynamics are infinite copies of the 5-mode circuit from Thm 5.3 chained together (Remark 6.1)"
+    },
+    {
+      "from": "prop:6.5",
+      "to": "lem:6.7",
+      "type": "depends_on",
+      "note": "Cumulative energy control needed throughout"
+    },
+    {
+      "from": "prop:6.5",
+      "to": "lem:6.8",
+      "type": "depends_on",
+      "note": "Initial bounds at time 0 for the rescaled system"
+    },
+    {
+      "from": "prop:6.5",
+      "to": "lem:6.9",
+      "type": "depends_on",
+      "note": "Energy essentially in primary modes — allows working with (a,b,c,d) instead of full energy"
+    },
+    {
+      "from": "prop:6.5",
+      "to": "cor:6.11",
+      "type": "depends_on",
+      "note": "Exit trichotomy structures the case analysis"
+    },
+    {
+      "from": "prop:6.5",
+      "to": "prop:6.12",
+      "type": "depends_on",
+      "note": "Handles the 'running out the clock' exit"
+    },
+    {
+      "from": "prop:6.5",
+      "to": "cor:6.14",
+      "type": "depends_on",
+      "note": "Refined exit trichotomy after controlling subsidiary modes"
+    },
+    {
+      "from": "prop:6.5",
+      "to": "prop:6.15",
+      "type": "depends_on",
+      "note": "Handles forwards flow / running out clock from refined trichotomy"
+    },
+    {
+      "from": "prop:6.5",
+      "to": "prop:6.17",
+      "type": "depends_on",
+      "note": "Rules out backward energy flow — forces running out the clock, completing the proof"
+    },
+    {
+      "from": "lem:6.7",
+      "to": "prop:6.5",
+      "type": "shared_mechanism",
+      "note": "Lemma 6.7 is proved within Prop 6.5's hypothetical framework, sharing its energy estimates (eq:6.64)-(eq:6.66) and scale-evolution bound (eq:6.53); not a dependency on Prop 6.5's conclusion."
+    },
+    {
+      "from": "lem:6.8",
+      "to": "prop:6.5",
+      "type": "shared_mechanism",
+      "note": "Lemma 6.8 is proved within Prop 6.5's hypothetical framework, sharing its transition-state and energy estimates; not a dependency on Prop 6.5's conclusion."
+    },
+    {
+      "from": "lem:6.8",
+      "to": "lem:6.7",
+      "type": "depends_on",
+      "note": "Cumulative energy bound controls error from energy defect (eq:6.51)"
+    },
+    {
+      "from": "lem:6.9",
+      "to": "lem:6.7",
+      "type": "depends_on",
+      "note": "Cumulative energy bound controls the viscosity error term in eq:6.51"
+    },
+    {
+      "from": "lem:6.10",
+      "to": "lem:6.8",
+      "type": "depends_on",
+      "note": "Initial bounds feed into energy inequality integration"
+    },
+    {
+      "from": "cor:6.11",
+      "to": "lem:6.10",
+      "type": "depends_on",
+      "note": "Exits to distant scales are closed, leaving only three possibilities"
+    },
+    {
+      "from": "prop:6.12",
+      "to": "cor:6.11",
+      "type": "depends_on",
+      "note": "Case analysis on the three exits"
+    },
+    {
+      "from": "prop:6.13",
+      "to": "lem:6.7",
+      "type": "depends_on",
+      "note": "Cumulative energy bound used in Gronwall argument"
+    },
+    {
+      "from": "prop:6.13",
+      "to": "lem:6.8",
+      "type": "depends_on",
+      "note": "Initial bounds on $d_1 (eq$:6.88)"
+    },
+    {
+      "from": "prop:6.13",
+      "to": "lem:6.9",
+      "type": "depends_on",
+      "note": "Energy in primary modes used to bound subsidiary modes"
+    },
+    {
+      "from": "cor:6.14",
+      "to": "cor:6.11",
+      "type": "depends_on",
+      "note": "Refines exit trichotomy using Prop 6.13"
+    },
+    {
+      "from": "cor:6.14",
+      "to": "prop:6.13",
+      "type": "depends_on",
+      "note": "Small $a_1$ controls $b_1,c_1,d_1$, simplifying the exit conditions"
+    },
+    {
+      "from": "prop:6.15",
+      "to": "cor:6.14",
+      "type": "depends_on",
+      "note": "Uses refined exit trichotomy"
+    },
+    {
+      "from": "prop:6.16",
+      "to": "prop:6.15",
+      "type": "depends_on",
+      "note": "Reduces to dichotomy: backward flow or running out the clock"
+    },
+    {
+      "from": "prop:6.17",
+      "to": "prop:6.16",
+      "type": "depends_on",
+      "note": "Uses exit dichotomy — proves backward flow doesn't happen"
+    },
+    {
+      "from": "prop:6.17",
+      "to": "lem:6.9",
+      "type": "depends_on",
+      "note": "Energy in primary modes needed for modified energy argument"
+    },
+    {
+      "from": "prop:6.17",
+      "to": "thm:5.3",
+      "type": "depends_on",
+      "note": "Modified energy / equipartition argument parallels the proof of Thm 5.3"
+    },
+    {
+      "from": "prop:5.1",
+      "to": "thm:5.3",
+      "type": "motivates",
+      "note": "Warmup: truncated dyadic blowup $\\to$ need delayed energy transition mechanism $\\to$ Thm 5.3"
+    }
+  ],
+  "critical_path": [
+    "thm:1.5",
+    "thm:3.3",
+    "thm:4.2",
+    "thm:6.2",
+    "prop:6.3",
+    "prop:6.4",
+    "prop:6.5",
+    "prop:6.17"
+  ],
+  "proof_architecture": {
+    "layer_1_main_reduction": {
+      "description": "Main theorem splits into two independent parts",
+      "nodes": [
+        "thm:1.5",
+        "thm:3.2",
+        "thm:3.3"
+      ]
+    },
+    "layer_2_averaging": {
+      "description": "9-step harmonic analysis argument showing cascade operators are averaged Euler operators",
+      "nodes": [
+        "thm:3.2",
+        "def:3.1",
+        "def:3.4"
+      ]
+    },
+    "layer_3_pde_to_ode": {
+      "description": "Reduction from cascade PDE to infinite-dimensional ODE system",
+      "nodes": [
+        "thm:3.3",
+        "lem:4.1",
+        "thm:4.2"
+      ]
+    },
+    "layer_4_circuit_design": {
+      "description": "Quadratic circuits: pump, amplifier, rotor gates produce delayed abrupt energy transition",
+      "nodes": [
+        "prop:5.1",
+        "thm:5.3"
+      ]
+    },
+    "layer_5_induction_framework": {
+      "description": "Multi-scale induction: energy cascades through scales, each step is a rescaled copy of the circuit",
+      "nodes": [
+        "thm:6.2",
+        "prop:6.3",
+        "prop:6.4",
+        "prop:6.5"
+      ]
+    },
+    "layer_6_technical_core": {
+      "description": "The 7-step proof of the rescaled inductive step — the technical heart of the paper",
+      "nodes": [
+        "lem:6.7",
+        "lem:6.8",
+        "lem:6.9",
+        "lem:6.10",
+        "cor:6.11",
+        "prop:6.12",
+        "prop:6.13",
+        "cor:6.14",
+        "prop:6.15",
+        "prop:6.16",
+        "prop:6.17"
+      ]
+    }
+  },
+  "bibliography": {
+    "tao-localisation": {
+      "title": "Localisation and compactness properties of the Navier-Stokes global regularity problem",
+      "arxiv_id": "1108.1165v4",
+      "in_registry": false
+    },
+    "tao-hyper": {
+      "title": "Global regularity for a logarithmically supercritical hyperdissipative Navier-Stokes equation",
+      "arxiv_id": "0906.3070v4",
+      "in_registry": false
+    },
+    "cheskidov": {
+      "title": "Blow-up in finite time for the dyadic model of the Navier-Stokes equations",
+      "arxiv_id": "math/0601074v2",
+      "in_registry": true
+    },
+    "waleffe": {
+      "title": "On some dyadic models of the Euler equations",
+      "arxiv_id": "math/0410380v2",
+      "in_registry": false
+    },
+    "bmr-conj": {
+      "title": "Global regularity for a slightly supercritical hyperdissipative Navier-Stokes system",
+      "arxiv_id": "1407.6734v1",
+      "in_registry": false
+    },
+    "katz-dyadic": {
+      "title": "Finite time blow-up for a dyadic model of the Euler equations",
+      "arxiv_id": null,
+      "in_registry": false
+    },
+    "fefferman": {
+      "title": "Existence and smoothness of the Navier-Stokes equation",
+      "arxiv_id": null,
+      "in_registry": false
+    },
+    "bmr": {
+      "title": "Smooth solutions for the dyadic model",
+      "arxiv_id": null,
+      "in_registry": false
+    },
+    "fp": {
+      "title": "Remarks concerning modified Navier-Stokes equations",
+      "arxiv_id": null,
+      "in_registry": false
+    },
+    "mont": {
+      "title": "Finite time blow up for a Navier-Stokes like equation",
+      "arxiv_id": null,
+      "in_registry": false
+    }
+  }
+}

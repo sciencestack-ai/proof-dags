@@ -1,0 +1,424 @@
+{
+  "paper": "2504.08288",
+  "title": "Sharp norm inflation for 3D Navier-Stokes equations in supercritical spaces",
+  "authors": [
+    "Xiaoyutao Luo"
+  ],
+  "generated": "2026-03-11",
+  "status": "complete",
+  "nodes": {
+    "thm:1.1": {
+      "type": "Theorem",
+      "number": "1.1",
+      "section": "1",
+      "role": "main_result",
+      "summary": "NSE is strongly ill-posed in Ḃˢₚ,$q(\\mathbb{R}^3)$ for any s,p,q with -3 < s - 3/p < -1: for any $\\varepsilon>0$ there exists $t*\\le\\varepsilon$ and a smooth solution u with ||u₀||_{Ḃˢₚ,$1} \\le \\varepsilon$ that develops norm inflation ||u(t*)||_{Ḃˢₚ,$\\infty} \\ge \\varepsilon$⁻^1 at time t*. In particular the initial data can be taken in $C^\\infty_c$."
+    },
+    "rem:1.2": {
+      "type": "Remark",
+      "number": "1.2",
+      "section": "1",
+      "role": "context",
+      "summary": "Notes that the upper bound s = -1 + 3/p is sharp (solution map continuous for small data in $B^{-1+3/p}_{p,\\infty})$, that thm:1.1 extends Bourgain-Pavlović Ḃ⁻$^1\\infty,\\infty$ norm inflation, and that thm:1.1 implies the same strong ill-posedness in supercritical Sobolev spaces Ẇˢ,ᵖ."
+    },
+    "thm:1.3": {
+      "type": "Theorem",
+      "number": "1.3",
+      "section": "1",
+      "role": "main_result",
+      "summary": "Vorticity norm inflation: for any M>0 there exists t*>0 and a smooth NSE solution with u₀$\\inC^\\infty_c$ such that $|\\omega(t*)|_{L^\\infty}/|\\omega$₀$|_{L^\\infty} \\ge$ M. In particular the initial data can be arbitrarily small in any supercritical homogeneous Sobolev/Besov space."
+    },
+    "lem:1.4": {
+      "type": "Lemma",
+      "number": "1.4",
+      "section": "1",
+      "role": "auxiliary",
+      "summary": "Besov interpolation inequality (from Bahouri-Chemin-Danchin): for s₁ < s₂ and $\\alpha$ interpolation parameter, |f|_{Ḃˢₚ,1} ≲ $|f|^\\alpha_{$Ḃˢ^1ₚ,$\\infty} |f|^{1-\\alpha}_{$Ḃˢ^2ₚ,$\\infty}$ where s $= \\alphas$₁ $+ (1-\\alpha)s$₂."
+    },
+    "prop:1.5": {
+      "type": "Proposition",
+      "number": "1.5",
+      "section": "1",
+      "role": "auxiliary",
+      "summary": "Smooth NSE solution Sobolev propagation (from Kato-Ponce): if $|\\nablau|_{L^\\infty([0,t$₀];$L^\\infty)} \\le$ M then $|u(t)|_{W^{k,p}} \\le |u$₀$|_{W^{k,p}} exp(C_{k,p}$ M t) for all $t\\in[0,t$₀], with universal constants independent of M and t₀."
+    },
+    "prop:2.1": {
+      "type": "Proposition",
+      "number": "2.1",
+      "section": "2",
+      "role": "key_mechanism",
+      "summary": "Main construction: for given s,p in the range of thm:1.1 and any $\\varepsilon>0, \\mu,\\nu\\ge1$ satisfying eq:2.13, there exists a smooth axisymmetric approximate solution ū: $[0,\\infty)\\times\\mathbb{R}^3\\to\\mathbb{R}^3$ and critical time $t*(\\mu,\\nu,\\varepsilon)$ such that ū satisfies NSE with error Ē with regularity estimates (2.1) and error decay (2.3) in $W^{k,q}$ norms depending on $\\mu^{k-s}$ and $\\nu^{1/p}$."
+    },
+    "lem:2.2": {
+      "type": "Lemma",
+      "number": "2.2",
+      "section": "2",
+      "role": "technical",
+      "summary": "Pressure construction for stationary Euler subsystem: there exists smooth pressure p̄(r,z) such that the radial-z components (ū_r, ū_{z,p}) satisfy a stationary Euler equation (2.21) on $\\mathbb{R}$⁺$\\times\\mathbb{R}$, and the rotation formula (2.22): (ū_r $\\partial_r +$ ū$_{z,p} \\partial_z)G = \\varepsilon^2\\mu^{-s+2/p}\\nu^{1/p} f'(\\rho)/\\rho \\cdot \\partial_\\varphi$ G for any smooth G."
+    },
+    "lem:2.3": {
+      "type": "Lemma",
+      "number": "2.3",
+      "section": "2",
+      "role": "technical",
+      "summary": "Sobolev/Besov regularity estimates for ū: |ū$|_{L^\\infty([0,t*]$; $W^{k,q})} \\le C_{\\varepsilon,k,q} \\mu^{k-s}(\\mu^{2/p-2/q} \\nu^{1/p-1/q})$, with constant independent of $\\mu,\\nu$."
+    },
+    "prop:3.1": {
+      "type": "Proposition",
+      "number": "3.1",
+      "section": "3",
+      "role": "main_technical",
+      "summary": "Norm inflation for ū in the case s>0: (1) initial data is small: |ū₀|_{Ḃˢₚ,1} ≲ $\\varepsilon^2$; (2) at critical time t* defined in eq:2.14, ū exhibits Ḃˢₚ,$\\infty$ inflation: |ū(t*)|_{Ḃˢₚ,$\\infty}$ ≳ $\\varepsilon$⁻^2. Both bounds independent of $\\varepsilon,\\mu,\\nu$."
+    },
+    "lem:3.2": {
+      "type": "Lemma",
+      "number": "3.2",
+      "section": "3",
+      "role": "key_technical",
+      "summary": "Core oscillation estimate: for twisted profile G $= h(\\varphi - \\zeta(\\rho))g(\\mu\\rho)$ with $\\zeta(\\rho) = \\varepsilon^{-N}\\mu$⁻$^1\\rho$⁻^1, the $L^q$ radial derivative satisfies $|\\partial_\\rho$ᵏ $G|_{L^q(\\mathbb{R}^3)}$ ~ $\\varepsilon^{-Nk} \\mu^{k-2/q} \\nu^{-1/q}$ for $\\varepsilon$ small enough. This twisting mechanism is the engine of the norm inflation."
+    },
+    "lem:3.3": {
+      "type": "Lemma",
+      "number": "3.3",
+      "section": "3",
+      "role": "technical",
+      "summary": "Vorticity lower bound: under prop:3.1 setting, $|\\omega$̄$(t*)|_{L^q}$ ≳ $\\varepsilon$⁻$^2 \\mu^{1-s} \\mu^{2/p-2/q} \\nu^{1/p-1/q}$, where $\\omega$̄ $= \\nabla\\times$ū is the vorticity of the approximate solution."
+    },
+    "prop:4.1": {
+      "type": "Proposition",
+      "number": "4.1",
+      "section": "4",
+      "role": "main_technical",
+      "summary": "Norm inflation for ū in the case s<0: same structure as prop:3.1 — small initial data |ū₀|_{Ḃˢₚ,1} ≲ $\\varepsilon^2 (proved$ by decomposing ū into radial, z, and $\\theta$ components via lem:4.2-4.5) and inflation |ū(t*)|_{Ḃˢₚ,$\\infty}$ ≳ $\\varepsilon$⁻^2 at critical time t*."
+    },
+    "lem:4.2": {
+      "type": "Lemma",
+      "number": "4.2",
+      "section": "4",
+      "role": "technical",
+      "summary": "Radial component initial data is small: under prop:4.1 setting, |ū_r $e_r|_{$Ḃˢₚ,1} ≲ $\\varepsilon^2$. This bounds the initial Besov norm contribution from the radial part of the axisymmetric field."
+    },
+    "lem:4.3": {
+      "type": "Lemma",
+      "number": "4.3",
+      "section": "4",
+      "role": "technical",
+      "summary": "z-component initial data is small: under prop:4.1 setting, |ū_z $e_z|_{$Ḃˢₚ,1} ≲ $\\varepsilon^2$. Bounds initial Besov norm from the vertical component."
+    },
+    "lem:4.4": {
+      "type": "Lemma",
+      "number": "4.4",
+      "section": "4",
+      "role": "technical",
+      "summary": "$\\theta-component$ initial data is small: $|u_{0,\\theta} e_\\theta|_{$Ḃˢₚ,1} ≲ $\\varepsilon^2$. Together with lem:4.2 and lem:4.3 this establishes the small initial data part of prop:4.1."
+    },
+    "lem:4.5": {
+      "type": "Lemma",
+      "number": "4.5",
+      "section": "4",
+      "role": "technical",
+      "summary": "$\\theta-component$ at critical time is large: |ū$_\\theta(t*) e_\\theta|_{$Ḃˢₚ,1} ≳ $\\varepsilon$⁻^2 for $\\varepsilon\\le\\varepsilon$₀. This is the source of the norm inflation in the s<0 case, via the twisting mechanism from lem:3.2."
+    },
+    "prop:5.1": {
+      "type": "Proposition",
+      "number": "5.1",
+      "section": "5",
+      "role": "key_reduction",
+      "summary": "Approximation of true NSE solution: for $\\mu\\ge\\mu_\\varepsilon$ sufficiently large, the maximal existence time T satisfies t*<T (the solution exists past t*), and |u-ū$|_{L^\\infty([0,t*]$; Ḃᵏ$q,\\infty)} \\le C_{k,\\varepsilon}(\\mu$⁻$^1\\nu)^\\gamma \\mu^{k-s} \\mu^{2/p-2/q} \\nu^{1/p-1/q}$ with $\\gamma=9/10 (q\\le2)$ or 4/10 (q>2). True solution u is $O(\\mu^{-\\gamma})-close$ to ū, so inflation transfers."
+    },
+    "lem:5.2": {
+      "type": "Lemma",
+      "number": "5.2",
+      "section": "5",
+      "role": "main_technical",
+      "summary": "Bootstrap $H^k$ estimate for difference w=u-ū: under bootstrap assumption (†), $|\\nabla$ᵏ$w(t)|_{L^2} \\le C_{\\varepsilon,k}(\\mu$⁻$^1\\nu)^{\\delta_k} \\mu^{k-s} \\mu^{2/p-1} \\nu^{1/p-1/2}$ for $\\delta_k = (9+10^{-k})/10 > 0$. This is the core energy estimate that closes the bootstrap in prop:5.1."
+    }
+  },
+  "edges": [
+    {
+      "from": "thm:1.1",
+      "to": "prop:3.1",
+      "type": "depends_on",
+      "note": "thm:1.1 s>0 case: norm inflation of true solution u follows from inflation of ū (prop:3.1) plus approximation (prop:5.1)"
+    },
+    {
+      "from": "thm:1.1",
+      "to": "prop:4.1",
+      "type": "depends_on",
+      "note": "thm:1.1 s<0 case: norm inflation of u follows from inflation of ū (prop:4.1) plus approximation (prop:5.1)"
+    },
+    {
+      "from": "thm:1.1",
+      "to": "prop:5.1",
+      "type": "depends_on",
+      "note": "thm:1.1 uses prop:5.1 to transfer norm inflation from approximate solution ū to true solution u"
+    },
+    {
+      "from": "thm:1.3",
+      "to": "lem:3.3",
+      "type": "depends_on",
+      "note": "thm:1.3 vorticity inflation follows from lem:3.3 (vorticity bound on ū) combined with prop:5.1 approximation"
+    },
+    {
+      "from": "thm:1.3",
+      "to": "prop:5.1",
+      "type": "depends_on",
+      "note": "thm:1.3 uses prop:5.1 to show vorticity of u tracks that of ū, so inflation transfers"
+    },
+    {
+      "from": "prop:5.1",
+      "to": "prop:2.1",
+      "type": "depends_on",
+      "note": "prop:5.1 uses the approximate solution ū and its error estimate Ē from prop:2.1 to control the difference w=u-ū"
+    },
+    {
+      "from": "prop:5.1",
+      "to": "lem:5.2",
+      "type": "depends_on",
+      "note": "prop:5.1 is proved by closing the bootstrap via the $H^k$ energy estimate lem:5.2"
+    },
+    {
+      "from": "prop:5.1",
+      "to": "prop:1.5",
+      "type": "depends_on",
+      "note": "prop:5.1 uses the Sobolev propagation estimate prop:1.5 for the bootstrap in the high-regularity regime"
+    },
+    {
+      "from": "lem:5.2",
+      "to": "prop:2.1",
+      "type": "depends_on",
+      "note": "lem:5.2 bootstrap estimate uses the error bound |Ē$|_{W^{k,q}}$ from prop:2.1 as the forcing for the w=u-ū equation"
+    },
+    {
+      "from": "prop:3.1",
+      "to": "prop:2.1",
+      "type": "depends_on",
+      "note": "prop:3.1 norm inflation of ū for s>0 invokes the specific structure and parameters of the approximate solution from prop:2.1"
+    },
+    {
+      "from": "prop:3.1",
+      "to": "lem:3.2",
+      "type": "depends_on",
+      "note": "prop:3.1 uses lem:3.2 (oscillation estimate for twisted profile) to compute the Besov norm inflation at t*"
+    },
+    {
+      "from": "prop:3.1",
+      "to": "lem:3.3",
+      "type": "depends_on",
+      "note": "prop:3.1 references lem:3.3 for the vorticity lower bound as a consequence"
+    },
+    {
+      "from": "prop:4.1",
+      "to": "prop:2.1",
+      "type": "depends_on",
+      "note": "prop:4.1 norm inflation of ū for s<0 invokes the approximate solution structure from prop:2.1"
+    },
+    {
+      "from": "prop:4.1",
+      "to": "lem:4.2",
+      "type": "depends_on",
+      "note": "prop:4.1 smallness of initial data (s<0 case) uses lem:4.2 for the radial component bound"
+    },
+    {
+      "from": "prop:4.1",
+      "to": "lem:4.3",
+      "type": "depends_on",
+      "note": "prop:4.1 uses lem:4.3 for z-component initial data bound"
+    },
+    {
+      "from": "prop:4.1",
+      "to": "lem:4.4",
+      "type": "depends_on",
+      "note": "prop:4.1 uses lem:4.4 for $\\theta-component$ initial data bound"
+    },
+    {
+      "from": "prop:4.1",
+      "to": "lem:4.5",
+      "type": "depends_on",
+      "note": "prop:4.1 norm inflation at t* uses lem:4.5: $\\theta-component$ grows ≳ $\\varepsilon$⁻^2 due to twisting"
+    },
+    {
+      "from": "prop:2.1",
+      "to": "lem:2.2",
+      "type": "depends_on",
+      "note": "prop:2.1 uses the pressure construction lem:2.2 (stationary Euler for the radial-z subsystem) to build ū with the required axisymmetric structure"
+    },
+    {
+      "from": "prop:2.1",
+      "to": "lem:2.3",
+      "type": "depends_on",
+      "note": "prop:2.1 uses the regularity estimates of lem:2.3 to verify the $W^{k,q}$ bounds (2.1) on ū"
+    },
+    {
+      "from": "lem:3.2",
+      "to": "lem:2.2",
+      "type": "depends_on",
+      "note": "lem:3.2 uses the rotation formula (2.22) from lem:2.2 — the twisting $\\zeta(\\rho)$ in the profile G arises from the Euler flow structure of ū"
+    },
+    {
+      "from": "lem:3.3",
+      "to": "lem:3.2",
+      "type": "depends_on",
+      "note": "lem:3.3 vorticity lower bound uses the oscillation estimate lem:3.2 to compute $|\\nabla\\times$ū$|_{L^q}$ at time t*"
+    },
+    {
+      "from": "lem:4.5",
+      "to": "lem:3.2",
+      "type": "depends_on",
+      "note": "lem:$4.5 \\theta-component$ inflation uses the same twisted profile oscillation mechanism as lem:3.2, adapted to the $\\theta-component$ Besov norm"
+    },
+    {
+      "from": "lem:4.2",
+      "to": "lem:2.3",
+      "type": "depends_on",
+      "note": "lem:4.2 uses the $W^{k,q}$ estimates of lem:2.3 to bound the radial component initial data in Ḃˢₚ,1"
+    },
+    {
+      "from": "lem:4.3",
+      "to": "lem:2.3",
+      "type": "depends_on",
+      "note": "lem:4.3 uses lem:2.3 estimates for z-component bound"
+    },
+    {
+      "from": "rem:1.2",
+      "to": "thm:1.1",
+      "type": "depends_on",
+      "note": "rem:1.2 annotates and contextualizes thm:1.1 — sharpness at s=-1+3/p, comparison to Bourgain-Pavlović"
+    }
+  ],
+  "critical_path": [
+    "thm:1.1",
+    "prop:5.1",
+    "lem:5.2",
+    "prop:2.1",
+    "lem:2.2"
+  ],
+  "proof_architecture": {
+    "approximate_construction": {
+      "description": "Build smooth axisymmetric approximate solution ū satisfying NSE with small error, with precise regularity and rotation structure",
+      "nodes": [
+        "prop:2.1",
+        "lem:2.2",
+        "lem:2.3"
+      ]
+    },
+    "inflation_s_positive": {
+      "description": "Prove norm inflation for ū in the s>0 case via oscillatory twisted profile",
+      "nodes": [
+        "prop:3.1",
+        "lem:3.2",
+        "lem:3.3"
+      ]
+    },
+    "inflation_s_negative": {
+      "description": "Prove norm inflation for ū in the s<0 case by decomposing into axisymmetric components",
+      "nodes": [
+        "prop:4.1",
+        "lem:4.2",
+        "lem:4.3",
+        "lem:4.4",
+        "lem:4.5"
+      ]
+    },
+    "approximation_and_transfer": {
+      "description": "Show true NSE solution u tracks ū closely enough that inflation transfers from ū to u",
+      "nodes": [
+        "prop:5.1",
+        "lem:5.2"
+      ]
+    },
+    "main_results_and_tools": {
+      "description": "Main theorems and auxiliary embedding/propagation tools",
+      "nodes": [
+        "thm:1.1",
+        "thm:1.3",
+        "rem:1.2",
+        "lem:1.4",
+        "prop:1.5"
+      ]
+    }
+  },
+  "bibliography": {
+    "MR4462623": {
+      "title": "Sharp nonuniqueness for the Navier-Stokes equations",
+      "authors": [
+        "Alexey Cheskidov",
+        "Xiaoyutao Luo"
+      ],
+      "arxiv_id": "2009.06596",
+      "in_registry": true,
+      "note": "Direct predecessor by same author; CL2022 proves non-uniqueness of weak solutions in $L^p_t L^\\infty$, Luo2025 proves norm inflation in Ḃˢₚ,q supercritical spaces"
+    },
+    "MR3898708": {
+      "title": "Nonuniqueness of weak solutions to the Navier-Stokes equation",
+      "authors": [
+        "Tristan Buckmaster",
+        "Vlad Vicol"
+      ],
+      "arxiv_id": "1709.10033",
+      "in_registry": true,
+      "note": "Foundational convex integration non-uniqueness result; cited as ancestor of the non-uniqueness program"
+    },
+    "2112.03116": {
+      "title": "Non-uniqueness of Leray solutions of the forced Navier-Stokes equations",
+      "authors": [
+        "Dallas Albritton",
+        "Elia Brué",
+        "Maria Colombo"
+      ],
+      "arxiv_id": "2112.03116",
+      "in_registry": false,
+      "note": "Leray non-uniqueness via forced NSE (ABC2022); closely related program, pending queue priority 27"
+    },
+    "2503.14699": {
+      "title": "Non-Uniqueness of Smooth Solutions of the Navier-Stokes Equations from Critical Data",
+      "authors": [
+        "Matei P. Coiculescu",
+        "Stan Palasek"
+      ],
+      "arxiv_id": "2503.14699",
+      "in_registry": true,
+      "note": "Related 2025 result on smooth non-uniqueness from critical data; same landscape as this paper"
+    },
+    "2404.07813": {
+      "title": "Illposedness of incompressible fluids in supercritical Sobolev spaces",
+      "authors": [
+        "Xiaoyutao Luo"
+      ],
+      "arxiv_id": "2404.07813",
+      "in_registry": false,
+      "note": "Companion paper by same author (2024); Luo2025 (this paper) is cited as sharper follow-up. Not indexed in ScienceStack."
+    },
+    "MR2473255": {
+      "title": "Ill-posedness of the Navier-Stokes equations in a critical space in 3D",
+      "authors": [
+        "Jean Bourgain",
+        "Nataša Pavlović"
+      ],
+      "arxiv_id": null,
+      "in_registry": false,
+      "note": "Original Ḃ⁻$^1\\infty,\\infty$ norm inflation for NSE (Bourgain-Pavlović 2008). Thm:1.1 extends this result to the full supercritical Besov range."
+    },
+    "MR2768550": {
+      "title": "Fourier analysis and nonlinear partial differential equations",
+      "authors": [
+        "Hajer Bahouri",
+        "Jean-Yves Chemin",
+        "Raphaël Danchin"
+      ],
+      "arxiv_id": null,
+      "in_registry": false,
+      "note": "Besov space textbook; lem:1.4 is [Proposition 2.22] from this book"
+    },
+    "MR951744": {
+      "title": "Commutator estimates and the Euler and Navier-Stokes equations",
+      "authors": [
+        "Tosio Kato",
+        "Gustavo Ponce"
+      ],
+      "arxiv_id": null,
+      "in_registry": false,
+      "note": "Kato-Ponce 1988; prop:1.5 is [Proposition 4.2] from this paper"
+    }
+  }
+}

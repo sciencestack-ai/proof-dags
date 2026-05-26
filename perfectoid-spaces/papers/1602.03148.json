@@ -1,0 +1,393 @@
+{
+  "paper": "1602.03148",
+  "title": "Integral p-adic Hodge theory",
+  "authors": [
+    "Bhargav Bhatt",
+    "Matthew Morrow",
+    "Peter Scholze"
+  ],
+  "year": 2016,
+  "venue": "Publ. Math. IHES 128",
+  "generated": "2026-05-07",
+  "status": "complete",
+  "nodes": {
+    "thm:1.1": {
+      "type": "Theorem",
+      "number": "1.1",
+      "section": "1",
+      "role": "main_result",
+      "summary": "Integral comparison: for proper smooth formal $\\mathfrak{X}/\\mathcal{O}_K$, $\\mathrm{length}_{\\mathbb{Z}_p}(H^i_{\\mathrm{\\acute{e}t}}(\\mathfrak{X}_C, \\mathbb{Z}_p)_{\\mathrm{tors}}) \\le \\mathrm{length}_{W(k)}(H^i_{\\mathrm{crys}}(\\mathfrak{X}_k/W(k))_{\\mathrm{tors}})$. The headline integrality result: crystalline torsion bounds étale torsion."
+    },
+    "thm:1.4": {
+      "type": "Theorem",
+      "number": "1.4",
+      "section": "1",
+      "role": "main_result",
+      "summary": "Recovery: when crystalline cohomology is $p$-torsion free, $H^i_{\\mathrm{crys}}(\\mathfrak{X}_k/W(k))$ with its $\\varphi$-action is functorially recovered from the rigid-analytic generic fibre $X$. Generalizes ordinary $p$-adic Hodge to the integral level."
+    },
+    "thm:1.7": {
+      "type": "Theorem",
+      "number": "1.7",
+      "section": "1",
+      "role": "main_result",
+      "summary": "$B_{\\mathrm{dR}}^+$-comparison: for proper smooth adic $X/C$, there are cohomology groups $H^i_{\\mathrm{crys}}(X/B_{\\mathrm{dR}}^+)$ with $H^i_{\\mathrm{crys}}(X/B_{\\mathrm{dR}}^+) \\otimes B_{\\mathrm{dR}} \\cong H^i_{\\mathrm{\\acute{e}t}}(X, \\mathbb{Z}_p) \\otimes B_{\\mathrm{dR}}$. The de Rham comparison at the integral level."
+    },
+    "thm:1.8": {
+      "type": "Theorem",
+      "number": "1.8",
+      "section": "1",
+      "role": "key_mechanism",
+      "summary": "$A_{\\mathrm{inf}}$-cohomology object: there is a perfect complex $R\\Gamma_{A_{\\mathrm{inf}}}(\\mathfrak{X})$ with a $\\varphi$-linear endomorphism specializing to crystalline ($\\mathfrak{X}_k$), de Rham (along $\\widetilde{\\theta}$), and étale (after inverting $\\mu$). The single object that interpolates all $p$-adic cohomology theories integrally."
+    },
+    "thm:1.10": {
+      "type": "Theorem",
+      "number": "1.10",
+      "section": "1",
+      "role": "main_result",
+      "summary": "Master comparison for $A\\Omega_{\\mathfrak{X}}$: canonical quasi-isomorphisms of sheaves on $\\mathfrak{X}_{\\mathrm{Zar}}$ recovering crystalline ($\\widehat{\\otimes} W(k)$), de Rham–Witt ($\\widehat{\\otimes} \\mathcal{O}/p$), Hodge-Tate ($\\widehat{\\otimes}_{\\widetilde{\\theta}} \\mathcal{O}$), and étale ($\\otimes \\mathbb{Z}_p$ after inverting). Sheaf-level form of thm:1.8."
+    },
+    "thm:1.17": {
+      "type": "Theorem",
+      "number": "1.17",
+      "section": "1",
+      "role": "auxiliary",
+      "summary": "On the torus $R = \\mathcal{O}\\langle T^{\\pm 1}\\rangle$, $A\\Omega_R$ is computed by the $q$-de Rham complex $A_{\\mathrm{inf}}\\langle T^{\\pm 1}\\rangle \\xrightarrow{\\partial_q/\\partial_q T} A_{\\mathrm{inf}}\\langle T^{\\pm 1}\\rangle$ with $q = [\\epsilon]$. The local model that motivates $q$-de Rham as the right specialization."
+    },
+    "thm:2.1": {
+      "type": "Theorem",
+      "number": "2.1",
+      "section": "2",
+      "role": "context",
+      "summary": "Counterexample: a smooth projective surface $X/\\mathbb{Z}_2$ with $\\mathbb{Z}_2$-free étale $H^i$ but with $H^2_{\\mathrm{crys}}(X_{\\overline{\\mathbb{F}}_2}/W(\\overline{\\mathbb{F}}_2))$ having $2$-torsion. Shows the asymmetric inequality of thm:1.1 is sharp — étale-torsion-free does not imply crystalline-torsion-free."
+    },
+    "thm:4.28": {
+      "type": "Theorem",
+      "number": "4.28",
+      "section": "4",
+      "role": "key_reduction",
+      "summary": "Fargues's classification: over algebraically closed $C$ of characteristic $0$, finite free Breuil–Kisin–Fargues modules are equivalent to pairs $(T, \\Xi)$ of a finite free $\\mathbb{Z}_p$-module $T$ and a $B_{\\mathrm{dR}}^+$-lattice $\\Xi$ in $T \\otimes B_{\\mathrm{dR}}$. The classification of the algebraic structure $A_{\\mathrm{inf}}$-cohomology lives in."
+    },
+    "thm:5.1": {
+      "type": "Theorem",
+      "number": "5.1",
+      "section": "5",
+      "role": "foundational",
+      "summary": "Scholze's $p$-adic Hodge: $H^i_{\\mathrm{\\acute{e}t}}(X_C, \\mathbb{Z}_p)$ is finitely generated, with a comparison isomorphism $H^i_{\\mathrm{\\acute{e}t}} \\otimes B_{\\mathrm{dR}} \\cong H^i_{\\mathrm{dR}}(X) \\otimes B_{\\mathrm{dR}}$. Imported from prior Scholze work; the rational starting point BMS1 strengthens integrally."
+    },
+    "thm:8.3": {
+      "type": "Theorem",
+      "number": "8.3",
+      "section": "8",
+      "role": "key_reduction",
+      "summary": "Hodge-Tate sheaf computation: $H^i(\\widetilde{\\Omega}_{\\mathfrak{X}}) \\cong \\Omega^{i,\\mathrm{cont}}_{\\mathfrak{X}/\\mathcal{O}}\\{-i\\}$ on $\\mathfrak{X}_{\\mathrm{Zar}}$, where $\\widetilde{\\Omega} = L\\eta_{\\zeta_p-1}(R\\nu_* \\widehat{\\mathcal{O}}^+_X)$. The Hodge-Tate decomposition at the integral level."
+    },
+    "thm:9.2": {
+      "type": "Theorem",
+      "number": "9.2",
+      "section": "9",
+      "role": "key_reduction",
+      "summary": "Base change of $A\\Omega$: the natural map $A\\Omega_{\\mathfrak{X}} \\otimes^{\\mathbb{L}}_{A_{\\mathrm{inf}}, \\widetilde{\\theta}} \\mathcal{O} \\to L\\eta_{\\zeta_p-1}(R\\nu_* \\widehat{\\mathcal{O}}^+_X) = \\widetilde{\\Omega}_{\\mathfrak{X}}$ is a quasi-isomorphism, generalized to higher $r$. Mechanism for specializing $A\\Omega$ to Hodge-Tate."
+    },
+    "thm:10.7": {
+      "type": "Theorem",
+      "number": "10.7",
+      "section": "10",
+      "role": "technical",
+      "summary": "Langer–Zink: there is an initial $F$-$V$-procomplex $\\{W_r\\Omega^\\bullet_{B/A}\\}_r$ — the relative de Rham–Witt complex. Imported foundation for the de Rham–Witt half of the comparison."
+    },
+    "thm:10.13": {
+      "type": "Theorem",
+      "number": "10.13",
+      "section": "10",
+      "role": "technical",
+      "summary": "The map of complexes $\\tau: \\Omega^\\bullet \\to W\\Omega^\\bullet$ is an injective quasi-isomorphism. Imported Langer–Zink result used in the de Rham–Witt comparison chain."
+    },
+    "thm:11.1": {
+      "type": "Theorem",
+      "number": "11.1",
+      "section": "11",
+      "role": "technical",
+      "summary": "Truncated Hodge-Tate: for small formally smooth $R/\\mathcal{O}$, $H^i(\\widetilde{W_r\\Omega}_R) \\cong W_r\\Omega^{i,\\mathrm{cont}}_{R/\\mathcal{O}}\\{-i\\}$. Hodge-Tate computation at level $r$."
+    },
+    "thm:12.1": {
+      "type": "Theorem",
+      "number": "12.1",
+      "section": "12",
+      "role": "key_reduction",
+      "summary": "Crystalline comparison: $A\\Omega_{\\mathfrak{X}} \\widehat{\\otimes}_{A_{\\mathrm{inf}}} A_{\\mathrm{crys}} \\simeq Ru_* \\mathcal{O}^{\\mathrm{crys}}_{Y/A_{\\mathrm{crys}}}$ in $D(\\mathfrak{X}_{\\mathrm{Zar}})$. Bridges $A\\Omega$ to crystalline cohomology over $A_{\\mathrm{crys}}$."
+    },
+    "thm:13.1": {
+      "type": "Theorem",
+      "number": "13.1",
+      "section": "13",
+      "role": "key_reduction",
+      "summary": "Existence of $H^i_{\\mathrm{crys}}(X/B_{\\mathrm{dR}}^+)$ with the de Rham–étale comparison $H^i_{\\mathrm{crys}} \\otimes B_{\\mathrm{dR}} \\cong H^i_{\\mathrm{\\acute{e}t}} \\otimes B_{\\mathrm{dR}}$. Body proof of thm:1.7."
+    },
+    "thm:14.1": {
+      "type": "Theorem",
+      "number": "14.1",
+      "section": "14",
+      "role": "key_reduction",
+      "summary": "Full $A\\Omega$ comparison theorem: canonical quasi-isomorphisms with crystalline ($\\widehat{\\otimes} W(k)$, recovers $W\\Omega^\\bullet_{\\mathfrak{X}_k/W(k)}$), de Rham ($\\widehat{\\otimes}_{\\widetilde{\\theta}} \\mathcal{O}$), Hodge-Tate, and étale. Body proof of thm:1.10."
+    },
+    "thm:14.3": {
+      "type": "Theorem",
+      "number": "14.3",
+      "section": "14",
+      "role": "key_reduction",
+      "summary": "Perfectness: $R\\Gamma_{A_{\\mathrm{inf}}}(\\mathfrak{X}) = R\\Gamma(\\mathfrak{X}, A\\Omega_{\\mathfrak{X}})$ is a perfect complex of $A_{\\mathrm{inf}}$-modules with $\\varphi$-linear $\\varphi$. Body proof of thm:1.8."
+    },
+    "thm:14.5": {
+      "type": "Theorem",
+      "number": "14.5",
+      "section": "14",
+      "role": "main_result",
+      "summary": "Torsion comparison: $H^i_{\\mathrm{crys}}(\\mathfrak{X}_{\\mathcal{O}/p}/A_{\\mathrm{crys}}) \\otimes \\dots$ specializes to crystalline / de Rham / étale, with explicit length inequalities recovering thm:1.1. The proof of the integrality main result."
+    }
+  },
+  "edges": [
+    {
+      "from": "thm:1.1",
+      "to": "thm:14.5",
+      "type": "depends_on",
+      "note": "Integrality bound is the body theorem thm:14.5 specialized to $A_{\\mathrm{crys}}$ side."
+    },
+    {
+      "from": "thm:1.4",
+      "to": "thm:14.1",
+      "type": "depends_on",
+      "note": "Recovery of crystalline cohomology comes from the master comparison of thm:14.1."
+    },
+    {
+      "from": "thm:1.7",
+      "to": "thm:13.1",
+      "type": "depends_on",
+      "note": "$B_{\\mathrm{dR}}^+$-comparison statement is the intro form of thm:13.1."
+    },
+    {
+      "from": "thm:1.8",
+      "to": "thm:14.3",
+      "type": "depends_on",
+      "note": "Perfectness / $\\varphi$-action stated in intro is the body theorem."
+    },
+    {
+      "from": "thm:1.10",
+      "to": "thm:14.1",
+      "type": "depends_on",
+      "note": "Master $A\\Omega$ comparison in intro is the body theorem thm:14.1."
+    },
+    {
+      "from": "thm:14.1",
+      "to": "thm:9.2",
+      "type": "depends_on",
+      "note": "Hodge-Tate specialization of $A\\Omega$ is the input to the master comparison."
+    },
+    {
+      "from": "thm:14.1",
+      "to": "thm:12.1",
+      "type": "depends_on",
+      "note": "Crystalline specialization runs through $A_{\\mathrm{crys}}$ comparison."
+    },
+    {
+      "from": "thm:14.3",
+      "to": "thm:14.1",
+      "type": "depends_on",
+      "note": "Perfectness uses the comparison structure to control the complex's homotopy type."
+    },
+    {
+      "from": "thm:14.5",
+      "to": "thm:14.1",
+      "type": "depends_on",
+      "note": "Length comparison is read off from the master comparison after specialization."
+    },
+    {
+      "from": "thm:14.5",
+      "to": "thm:14.3",
+      "type": "depends_on",
+      "note": "Perfect complex structure controls torsion."
+    },
+    {
+      "from": "thm:9.2",
+      "to": "thm:8.3",
+      "type": "depends_on",
+      "note": "Base change to $\\mathcal{O}$ recovers the Hodge-Tate sheaf computation."
+    },
+    {
+      "from": "thm:8.3",
+      "to": "thm:11.1",
+      "type": "depends_on",
+      "note": "Truncated Hodge-Tate computation is the local input limited to level $r=1$."
+    },
+    {
+      "from": "thm:11.1",
+      "to": "thm:10.7",
+      "type": "depends_on",
+      "note": "Relative de Rham–Witt complex is the model the truncated Hodge-Tate is compared against."
+    },
+    {
+      "from": "thm:11.1",
+      "to": "thm:10.13",
+      "type": "depends_on",
+      "note": "Injective quasi-isomorphism input from Langer–Zink."
+    },
+    {
+      "from": "thm:12.1",
+      "to": "thm:14.3",
+      "type": "shared_mechanism",
+      "note": "Theorem 12.1 (crystalline comparison) and Theorem 14.3 (perfectness of R-Gamma_Ainf) both organize the structure of the A_inf-cohomology complex; they share that machinery rather than 12.1 depending on the later 14.3."
+    },
+    {
+      "from": "thm:13.1",
+      "to": "thm:5.1",
+      "type": "depends_on",
+      "note": "$B_{\\mathrm{dR}}^+$-comparison reduces to Scholze's earlier rational comparison after inverting $\\mu$."
+    },
+    {
+      "from": "thm:13.1",
+      "to": "thm:14.1",
+      "type": "depends_on",
+      "note": "$B_{\\mathrm{dR}}^+$-cohomology defined via $A\\Omega$ specialization."
+    },
+    {
+      "from": "thm:1.17",
+      "to": "thm:1.10",
+      "type": "specializes",
+      "note": "Local torus computation specializes the master comparison."
+    },
+    {
+      "from": "thm:1.17",
+      "to": "thm:8.3",
+      "type": "depends_on",
+      "note": "Hodge-Tate specialization on the torus matches $q$-de Rham at $q=1$."
+    },
+    {
+      "from": "thm:4.28",
+      "to": "thm:14.3",
+      "type": "depends_on",
+      "note": "Fargues's BKF classification organizes the algebraic data of $R\\Gamma_{A_{\\mathrm{inf}}}$."
+    },
+    {
+      "from": "thm:2.1",
+      "to": "thm:1.1",
+      "type": "motivates",
+      "note": "Counterexample shows the asymmetric integrality inequality is sharp and not strengthen-able."
+    }
+  ],
+  "critical_path": [
+    "thm:1.1",
+    "thm:14.5",
+    "thm:14.1",
+    "thm:9.2",
+    "thm:8.3",
+    "thm:11.1"
+  ],
+  "proof_architecture": {
+    "main_results_and_motivation": {
+      "description": "Section 1–2. Statement of the integral comparison results and counterexample motivating their asymmetric form.",
+      "nodes": [
+        "thm:1.1",
+        "thm:1.4",
+        "thm:1.7",
+        "thm:1.10",
+        "thm:1.8",
+        "thm:1.17",
+        "thm:2.1"
+      ]
+    },
+    "A_inf_cohomology_object": {
+      "description": "Sections 8, 9, 14. Construction of $A\\Omega_{\\mathfrak{X}}$ and $R\\Gamma_{A_{\\mathrm{inf}}}$ as perfect complexes carrying Frobenius. The central technical object.",
+      "nodes": [
+        "thm:8.3",
+        "thm:9.2",
+        "thm:14.1",
+        "thm:14.3"
+      ]
+    },
+    "specializations_to_classical_theories": {
+      "description": "Sections 5, 12, 13, 14. Specializations of $A\\Omega$ recovering crystalline, $B_{\\mathrm{dR}}^+$, and de Rham–Witt cohomology — and the integral comparison.",
+      "nodes": [
+        "thm:5.1",
+        "thm:12.1",
+        "thm:13.1",
+        "thm:14.5"
+      ]
+    },
+    "de_Rham_Witt_machinery": {
+      "description": "Sections 10–11. Imported Langer–Zink relative de Rham–Witt complex and its truncated Hodge-Tate identification.",
+      "nodes": [
+        "thm:10.7",
+        "thm:10.13",
+        "thm:11.1"
+      ]
+    },
+    "module_classification": {
+      "description": "Section 4. Fargues's classification of Breuil–Kisin–Fargues modules — the algebraic skeleton of $A_{\\mathrm{inf}}$-cohomology.",
+      "nodes": [
+        "thm:4.28"
+      ]
+    }
+  },
+  "bibliography": {
+    "Scholze:Perfectoid": {
+      "title": "Perfectoid spaces",
+      "authors": [
+        "Peter Scholze"
+      ],
+      "year": 2012,
+      "arxiv_id": "1111.4914",
+      "in_registry": true,
+      "role": "Foundation: perfectoid covers underlie the local computation of $A\\Omega$."
+    },
+    "Scholze:PAdicHodge": {
+      "title": "$p$-adic Hodge theory for rigid-analytic varieties",
+      "authors": [
+        "Peter Scholze"
+      ],
+      "year": 2013,
+      "arxiv_id": null,
+      "in_registry": false,
+      "role": "Source of thm:5.1; rational comparison BMS1 strengthens integrally."
+    },
+    "LangerZink": {
+      "title": "De Rham–Witt cohomology for a proper and smooth morphism",
+      "authors": [
+        "Andreas Langer",
+        "Thomas Zink"
+      ],
+      "year": 2004,
+      "arxiv_id": null,
+      "in_registry": false,
+      "role": "Source of thm:10.7 and thm:10.13 (relative de Rham–Witt machinery)."
+    },
+    "Fargues": {
+      "title": "Quelques résultats et conjectures concernant la courbe",
+      "authors": [
+        "Laurent Fargues"
+      ],
+      "year": 2017,
+      "arxiv_id": null,
+      "in_registry": false,
+      "role": "Source of thm:4.28 (BKF module classification)."
+    },
+    "Fontaine:CDVR": {
+      "title": "Le corps des périodes p-adiques",
+      "authors": [
+        "Jean-Marc Fontaine"
+      ],
+      "year": 1994,
+      "arxiv_id": null,
+      "in_registry": false,
+      "role": "$A_{\\mathrm{inf}}$, $B_{\\mathrm{dR}}^+$, $A_{\\mathrm{crys}}$ definitions."
+    },
+    "Illusie:DRW": {
+      "title": "Complexe de de Rham–Witt et cohomologie cristalline",
+      "authors": [
+        "Luc Illusie"
+      ],
+      "year": 1979,
+      "arxiv_id": null,
+      "in_registry": false,
+      "role": "Classical de Rham–Witt foundations."
+    }
+  }
+}

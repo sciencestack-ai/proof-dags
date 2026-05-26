@@ -1,0 +1,352 @@
+{
+  "description": "Proof DAG registry index for the Navier-Stokes blowup and non-uniqueness program. Covers finite-time blowup of averaged/dyadic models, hyperdissipative regularity thresholds, and convex-integration non-uniqueness.",
+  "papers": {
+    "0906.3070": {
+      "status": "complete",
+      "title": "Global regularity for a logarithmically supercritical hyperdissipative Navier-Stokes equation",
+      "authors": [
+        "Terence Tao"
+      ],
+      "year": 2009,
+      "nodes": 3,
+      "edges": 2,
+      "updated": "2026-05-18"
+    },
+    "1108.1165": {
+      "status": "complete",
+      "title": "Localisation and compactness properties of the Navier-Stokes global regularity problem",
+      "authors": [
+        "Terence Tao"
+      ],
+      "year": 2011,
+      "nodes": 35,
+      "edges": 46,
+      "updated": "2026-05-18"
+    },
+    "1402.0290": {
+      "status": "complete",
+      "title": "Finite time blowup for an averaged three-dimensional Navier-Stokes equation",
+      "authors": [
+        "Terence Tao"
+      ],
+      "year": 2014,
+      "nodes": 27,
+      "edges": 43,
+      "updated": "2026-05-18"
+    },
+    "1407.6734": {
+      "status": "complete",
+      "title": "Global regularity for a slightly supercritical hyperdissipative Navier-Stokes system",
+      "authors": [
+        "David Barbato",
+        "Francesco Morandin",
+        "Marco Romito"
+      ],
+      "year": 2014,
+      "nodes": 24,
+      "edges": 32,
+      "updated": "2026-05-18"
+    },
+    "1608.08301": {
+      "status": "complete",
+      "title": "A Proof of Onsager's Conjecture",
+      "authors": [
+        "Philip Isett"
+      ],
+      "year": 2016,
+      "nodes": 38,
+      "edges": 39,
+      "updated": "2026-05-18"
+    },
+    "1709.10033": {
+      "status": "complete",
+      "title": "Nonuniqueness of weak solutions to the Navier-Stokes equation",
+      "authors": [
+        "Tristan Buckmaster",
+        "Vlad Vicol"
+      ],
+      "year": 2017,
+      "nodes": 22,
+      "edges": 23,
+      "updated": "2026-05-18"
+    },
+    "1809.00600": {
+      "status": "complete",
+      "title": "Wild solutions of the Navier-Stokes equations whose singular sets in time have Hausdorff dimension strictly less than 1",
+      "authors": [
+        "Tristan Buckmaster",
+        "Maria Colombo",
+        "Vlad Vicol"
+      ],
+      "year": 2018,
+      "nodes": 19,
+      "edges": 22,
+      "updated": "2026-05-18"
+    },
+    "2009.06596": {
+      "status": "complete",
+      "title": "Sharp nonuniqueness for the Navier-Stokes equations",
+      "authors": [
+        "Alexey Cheskidov",
+        "Xiaoyutao Luo"
+      ],
+      "year": 2020,
+      "nodes": 38,
+      "edges": 38,
+      "updated": "2026-05-18"
+    },
+    "2101.09278": {
+      "status": "complete",
+      "title": "Non-conservative H^{1/2-} weak solutions of the incompressible 3D Euler equations",
+      "authors": [
+        "Tristan Buckmaster",
+        "Nader Masmoudi",
+        "Matthew Novack",
+        "Vlad Vicol"
+      ],
+      "year": 2021,
+      "nodes": 27,
+      "edges": 39,
+      "updated": "2026-05-18"
+    },
+    "2112.03116": {
+      "status": "complete",
+      "title": "Non-uniqueness of Leray solutions of the forced Navier-Stokes equations",
+      "authors": [
+        "Dallas Albritton",
+        "Elia Brué",
+        "Maria Colombo"
+      ],
+      "year": 2021,
+      "nodes": 22,
+      "edges": 22,
+      "updated": "2026-05-18"
+    },
+    "2306.04146": {
+      "status": "complete",
+      "title": "Blowup analysis for a quasi-exact 1D model of 3D Euler and Navier-Stokes",
+      "authors": [
+        "Thomas Y. Hou",
+        "Yixuan Wang"
+      ],
+      "year": 2023,
+      "nodes": 19,
+      "edges": 12,
+      "updated": "2026-05-18"
+    },
+    "2402.13229": {
+      "status": "complete",
+      "title": "A note on potential Type II blowups of axisymmetric solutions to the Navier-Stokes equations",
+      "authors": [
+        "Gregory Seregin"
+      ],
+      "year": 2024,
+      "nodes": 7,
+      "edges": 7,
+      "updated": "2026-05-18"
+    },
+    "2404.07813": {
+      "status": "complete",
+      "title": "Illposedness of incompressible fluids in supercritical Sobolev spaces",
+      "authors": [
+        "Xiaoyutao Luo"
+      ],
+      "year": 2024,
+      "nodes": 13,
+      "edges": 14,
+      "updated": "2026-05-18"
+    },
+    "2407.06179": {
+      "status": "complete",
+      "title": "Non-uniqueness in the Leray-Hopf class for a dyadic Navier-Stokes model",
+      "authors": [
+        "Stan Palasek"
+      ],
+      "year": 2024,
+      "nodes": 18,
+      "edges": 21,
+      "updated": "2026-05-18"
+    },
+    "2410.16468": {
+      "status": "complete",
+      "title": "On regularity of solutions to the Navier-Stokes equation with initial data in BMO^{-1}",
+      "authors": [
+        "Hedong Hou"
+      ],
+      "year": 2024,
+      "nodes": 11,
+      "edges": 13,
+      "updated": "2026-05-18"
+    },
+    "2412.09637": {
+      "status": "complete",
+      "title": "Sharp non-uniqueness for the Navier-Stokes equations in R^3",
+      "authors": [
+        "Changxing Miao",
+        "Yao Nie",
+        "Weikui Ye"
+      ],
+      "year": 2024,
+      "nodes": 23,
+      "edges": 40,
+      "updated": "2026-05-18"
+    },
+    "2412.10404": {
+      "status": "complete",
+      "title": "Non-uniqueness of weak solutions to the Navier-Stokes equations in R^3",
+      "authors": [
+        "Changxing Miao",
+        "Yao Nie",
+        "Weikui Ye"
+      ],
+      "year": 2024,
+      "nodes": 31,
+      "edges": 40,
+      "updated": "2026-05-18"
+    },
+    "2503.14699": {
+      "status": "complete",
+      "title": "Non-Uniqueness of Smooth Solutions of the Navier-Stokes Equations from Critical Data",
+      "authors": [
+        "Matei P. Coiculescu",
+        "Stan Palasek"
+      ],
+      "year": 2025,
+      "nodes": 34,
+      "edges": 57,
+      "updated": "2026-05-18"
+    },
+    "2504.08288": {
+      "status": "complete",
+      "title": "Sharp norm inflation for 3D Navier-Stokes equations in supercritical spaces",
+      "authors": [
+        "Xiaoyutao Luo"
+      ],
+      "year": 2025,
+      "nodes": 18,
+      "edges": 25,
+      "updated": "2026-05-18"
+    },
+    "2507.08733": {
+      "status": "complete",
+      "title": "A note on certain scenarios of Type II blowups of suitable weak solutions to the Navier-Stokes equations",
+      "authors": [
+        "Gregory Seregin"
+      ],
+      "year": 2025,
+      "nodes": 7,
+      "edges": 7,
+      "updated": "2026-05-18"
+    },
+    "2509.14185": {
+      "status": "partial",
+      "title": "Discovery of Unstable Singularities",
+      "authors": [
+        "Yongji Wang",
+        "Mehdi Bennani",
+        "James Martens",
+        "Sébastien Racanière",
+        "Sam Blackwell",
+        "Alex Matthews",
+        "Stanislav Nikolov",
+        "Gonzalo Cao-Labora",
+        "Daniel S. Park",
+        "Martin Arjovsky",
+        "Daniel Worrall",
+        "Chongli Qin",
+        "Ferran Alet",
+        "Borislav Kozlovskii",
+        "Nenad Tomašev",
+        "Alex Davies",
+        "Pushmeet Kohli",
+        "Tristan Buckmaster",
+        "Bogdan Georgiev",
+        "Javier Gómez-Serrano",
+        "Ray Jiang",
+        "Ching-Yao Lai"
+      ],
+      "year": 2025,
+      "nodes": 8,
+      "edges": 6,
+      "updated": "2026-05-18"
+    },
+    "2509.18595": {
+      "status": "complete",
+      "title": "Arbitrary norm growth in the 3D Navier-Stokes equations",
+      "authors": [
+        "Stan Palasek"
+      ],
+      "year": 2025,
+      "nodes": 19,
+      "edges": 22,
+      "updated": "2026-05-18"
+    },
+    "2509.25116": {
+      "status": "complete",
+      "title": "Nonuniqueness of Leray-Hopf solutions to the unforced incompressible 3D Navier-Stokes Equation",
+      "authors": [
+        "Thomas Hou",
+        "Yixuan Wang",
+        "Changhe Yang"
+      ],
+      "year": 2025,
+      "nodes": 31,
+      "edges": 26,
+      "updated": "2026-05-18"
+    },
+    "2511.09556": {
+      "status": "complete",
+      "title": "Instantaneous Type I blow-up and non-uniqueness of smooth solutions of the Navier-Stokes equations",
+      "authors": [
+        "Alexey Cheskidov",
+        "Mimi Dai",
+        "Stan Palasek"
+      ],
+      "year": 2025,
+      "nodes": 18,
+      "edges": 27,
+      "updated": "2026-05-18"
+    },
+    "2602.19074": {
+      "status": "complete",
+      "title": "Non-uniqueness of smooth solutions to the Navier-Stokes equations on torus T^2",
+      "authors": [
+        "Changxing Miao",
+        "Yao Nie",
+        "Weikui Ye"
+      ],
+      "year": 2026,
+      "nodes": 17,
+      "edges": 22,
+      "updated": "2026-05-18"
+    },
+    "math/0410380": {
+      "status": "complete",
+      "title": "On some dyadic models of the Euler equations",
+      "authors": [
+        "Fabian Waleffe"
+      ],
+      "year": 2004,
+      "nodes": 7,
+      "edges": 7,
+      "updated": "2026-05-18"
+    },
+    "math/0601074": {
+      "status": "complete",
+      "title": "Blow-up in finite time for the dyadic model of the Navier-Stokes equations",
+      "authors": [
+        "Alexey Cheskidov"
+      ],
+      "year": 2006,
+      "nodes": 14,
+      "edges": 12,
+      "updated": "2026-05-18"
+    }
+  },
+  "totals": {
+    "papers": 27,
+    "nodes": 550,
+    "intra_paper_edges": 664,
+    "cross_paper_edges": 75
+  }
+}

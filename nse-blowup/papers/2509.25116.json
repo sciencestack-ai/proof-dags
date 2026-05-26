@@ -1,0 +1,551 @@
+{
+  "paper": "2509.25116",
+  "title": "Nonuniqueness of Leray-Hopf solutions to the unforced incompressible 3D Navier-Stokes Equation",
+  "authors": [
+    "Thomas Hou",
+    "Yixuan Wang",
+    "Changhe Yang"
+  ],
+  "generated": "2026-03-11",
+  "status": "complete",
+  "nodes": {
+    "thm:1": {
+      "type": "Theorem",
+      "number": "1",
+      "section": "1",
+      "role": "main_result",
+      "summary": "There exist infinitely many distinct suitable Leray-Hopf solutions to the unforced NSE on $R^3\\times[0,1]$ with the same initial data $u_in\\inL^q (q<3)$, living in $L^s L^q$ spaces that just miss the Prodi-Serrin uniqueness threshold (3/q+2/s>1)."
+    },
+    "def:1": {
+      "type": "Definition",
+      "number": "1",
+      "section": "1.1",
+      "role": "definition",
+      "summary": "Leray-Hopf solution: divergence-free vector field in $L\\infty_loc L^2\\capL^2_loc H^1$ satisfying the weak NSE formulation and the global energy inequality."
+    },
+    "rem:1": {
+      "type": "Remark",
+      "number": "1",
+      "section": "1.1",
+      "role": "context",
+      "summary": "Suitability: Leray's construction yields the stronger local energy inequality (1.2), enabling partial regularity via Caffarelli-Kohn-Nirenberg theory."
+    },
+    "rem:2": {
+      "type": "Remark",
+      "number": "2",
+      "section": "1.2",
+      "role": "context",
+      "summary": "The self-similar 1/|x| profile is not in $L^2$, but Jia-Sverak showed it can be localized to yield valid Leray-Hopf initial data $u_in$."
+    },
+    "thm:2": {
+      "type": "Theorem",
+      "number": "2",
+      "section": "1.3",
+      "role": "key_reduction",
+      "summary": "Existence of a weak solution (Ũ, ᵼ, $\\lambda$̃) with Ũ$\\inH^1_loc$ and ᵼ$\\inH^1$ to the coupled self-similar NSE + linearized eigenvalue system (1.12); the negative eigenvalue $\\lambda$̃<0 certifies an unstable perturbation yielding the second Leray-Hopf solution."
+    },
+    "assump:1": {
+      "type": "Assumption",
+      "number": "1",
+      "section": "1.3",
+      "role": "technical",
+      "summary": "Approximate profiles (Ū, P̄, v̄, q̄, $\\lambda$̄) nearly solving the coupled NSE+eigenvalue system (1.12) with residuals bounded by $\\varepsilon^U$ and $\\varepsilon^v$, satisfying $1/|\\xi|$ far-field decay (1.13)-(1.14). Verified numerically."
+    },
+    "prop:1": {
+      "type": "Proposition",
+      "number": "1",
+      "section": "1.3",
+      "role": "key_mechanism",
+      "summary": "Given Assump 1, there exists an exact perturbation $U\\inH^1$ with ‖U‖$_{L^2}$≲$\\varepsilon^U$ such that Ũ=Ū+U solves the NSE component of (1.12). Proved by applying the abstract Thm 3."
+    },
+    "prop:2": {
+      "type": "Proposition",
+      "number": "2",
+      "section": "1.3",
+      "role": "key_mechanism",
+      "summary": "Given Assump 1 and Prop 1, there exists an exact perturbation $(\\lambda,v)\\inH^1$ such that $(\\lambda$̄$+\\lambda$, v̄+v) is a genuine eigenpair of the linearized operator with negative eigenvalue, certifying an unstable direction. Proved by applying Thm 3."
+    },
+    "prop:3": {
+      "type": "Proposition",
+      "number": "3",
+      "section": "1.3",
+      "role": "regularity",
+      "summary": "The exact self-similar profile Ũ from Prop 1 is smooth $(C\\infty$ₛ away from origin)."
+    },
+    "prop:4": {
+      "type": "Proposition",
+      "number": "4",
+      "section": "1.3",
+      "role": "technical",
+      "summary": "Ũ from Prop 1 satisfies the same far-field boundary condition (1.7) as the approximation Ū, ensuring the self-similar setup is self-consistent."
+    },
+    "assump:2": {
+      "type": "Assumption",
+      "number": "2",
+      "section": "3",
+      "role": "technical",
+      "summary": "Abstract framework: Hilbert chain $H^1\\subsetB\\subsetH^0$ with compact embedding $H^1\\toB$, and operator decomposition L=L₁+L₂ with L₁ coercive (constant K₁) and L₂ compact/bounded (constant K₂)."
+    },
+    "assump:3": {
+      "type": "Assumption",
+      "number": "3",
+      "section": "3",
+      "role": "technical",
+      "summary": "Finite-rank operator $I_n$ approximates identity with interpolation error $\\delta$₁(n)‖f‖$_{H^1}$; solution $\\Phi$ to the projected system (3.11) exists with small residual $\\varepsilon$₁ and explicit $H^1$ bound $\\gamma$₂(n)."
+    },
+    "assump:4": {
+      "type": "Assumption",
+      "number": "4",
+      "section": "3",
+      "role": "technical",
+      "summary": "Residual E is sufficiently small: ‖E‖$_{H^0}\\le\\varepsilon$₂. This is the numerically-verified condition (via computer-assisted bounds) that closes the proof."
+    },
+    "assump:5": {
+      "type": "Assumption",
+      "number": "5",
+      "section": "3",
+      "role": "technical",
+      "summary": "Nonlinear term N(w) satisfies quadratic boundedness (K₃ bound in $H^1)$ and Lipschitz continuity in B-norm, enabling a Schauder fixed-point argument."
+    },
+    "thm:3": {
+      "type": "Theorem",
+      "number": "3",
+      "section": "3",
+      "role": "main_technical",
+      "summary": "Abstract existence: if Assump 2-5 hold and the discriminant conditions (3.16)-(3.17) on K₁,K₂,$\\delta$₁,$\\varepsilon$₁,$\\varepsilon$₂,K₃ are satisfied, then (3.13) has a solution w₁ with explicit $H^1$ bound (3.18). Core engine of the computer-assisted proof."
+    },
+    "rem:3": {
+      "type": "Remark",
+      "number": "3",
+      "section": "3",
+      "role": "context",
+      "summary": "Quadratic nonlinearity with Sobolev embedding satisfies Assump 5; proof uses Schauder fixed-point on a ball in $H^1$."
+    },
+    "rem:4": {
+      "type": "Remark",
+      "number": "4",
+      "section": "3",
+      "role": "context",
+      "summary": "Logical order for verifying Thm 3: first check Assump 2,5 qualitatively; choose n large for Assump 3; choose $\\varepsilon$₂ small for Assump 4."
+    },
+    "rem:5": {
+      "type": "Remark",
+      "number": "5",
+      "section": "3",
+      "role": "key_structural",
+      "summary": "Key implementation shortcut: rather than verifying all five assumptions separately, verify Assump 2,4 and directly extract estimates (3.20),(3.24) from the Thm 3 proof for sharper constants."
+    },
+    "lem:1": {
+      "type": "Lemma",
+      "number": "1",
+      "section": "4",
+      "role": "technical",
+      "summary": "Quasi-orthonormal projection: estimate (4.13) controls how close the Q-orthogonal projection onto $V_lg$ is to exact Q-orthonormality via Gram matrix constant $\\varepsilon$₃ (eq. 4.14)."
+    },
+    "lem:2": {
+      "type": "Lemma",
+      "number": "2",
+      "section": "4",
+      "role": "technical",
+      "summary": "Quasi-orthogonality: for $f\\inV_lg$ and u Q-orthogonal to $V_lg, |$⟨f,u⟩$_E|\\le\\varepsilon$₄‖f‖_E‖u‖_E, where $\\varepsilon$₄ measures residuals of the approximate eigenvector problem."
+    },
+    "lem:3": {
+      "type": "Lemma",
+      "number": "3",
+      "section": "4",
+      "role": "technical",
+      "summary": "Finite-rank approximation bound: |⟨(L₂$-L_ap)f,f$⟩$|\\leM$₁‖$\\nablaf$‖^2+M₂‖f‖^2, where M₁,M₂ depend on $\\varepsilon$₃,$\\varepsilon$₄ from Lem 1-2 and spectral constants K₅,K₆,K₇."
+    },
+    "assump:6": {
+      "type": "Assumption",
+      "number": "6",
+      "section": "4",
+      "role": "technical",
+      "summary": "Bounded mapping assumption for U: discriminant condition M₄^U>0, ensuring the nonlinear iteration for the self-similar profile closes with an $H^1$ bound."
+    },
+    "assump:7": {
+      "type": "Assumption",
+      "number": "7",
+      "section": "4",
+      "role": "technical",
+      "summary": "Bounded mapping assumption for v: discriminant condition M₄^v>0 incorporating eigenvalue correction terms and bounds on U from Prop 1, ensuring the eigenfunction iteration closes."
+    },
+    "rem:6": {
+      "type": "Remark",
+      "number": "6",
+      "section": "5",
+      "role": "context",
+      "summary": "Dirichlet BC at finite radius R distorts numerical solutions (Guillod-Sverak issue); interpolation-based extension is used instead for rigorous analysis."
+    },
+    "rem:7": {
+      "type": "Remark",
+      "number": "7",
+      "section": "5",
+      "role": "context",
+      "summary": "Numerical instabilities produce spurious high-oscillation eigenvalues, but the method still accurately captures genuine eigenmodes of the linearized operator."
+    },
+    "lem:4": {
+      "type": "Lemma",
+      "number": "4",
+      "section": "6",
+      "role": "technical",
+      "summary": "Complete characterization of Stokes eigenpairs on the 3D unit ball: first is $(0,(cos\\theta,-sin\\theta,0))$; remaining indexed by two families of Bessel zeros via vector spherical harmonics (Y,Z families, eqs 6.3-6.4)."
+    },
+    "rem:8": {
+      "type": "Remark",
+      "number": "8",
+      "section": "6",
+      "role": "context",
+      "summary": "Rescaling for $\\Omega=B_0(32)$: eigenvalues scale as $\\lambda^s_n/R$₀^2; retain only even or odd-l harmonics based on parity of U and v."
+    },
+    "lem:5": {
+      "type": "Lemma",
+      "number": "5",
+      "section": "6",
+      "role": "technical",
+      "summary": "Distribution of Bessel zeros: equations (6.3) and (6.4) each have exactly one root per interlacing interval; first zeros satisfy lower bounds $\\alpha^Y_{l,1}\\ge\\sqrts_l$ and $\\alpha^Z_{l,1}\\get_l=\\sqrt(l(l+1))$."
+    },
+    "rem:9": {
+      "type": "Remark",
+      "number": "9",
+      "section": "6",
+      "role": "context",
+      "summary": "Boundary condition for $\\varphi^U_n$ requires homogeneous Dirichlet $(sin(2m\\beta)$ basis), differing from the general-U condition $sin((2m-1)\\beta)$; FEM must impose this exactly."
+    },
+    "lem:6": {
+      "type": "Lemma",
+      "number": "6",
+      "section": "4",
+      "role": "auxiliary",
+      "summary": "Sobolev embedding in 3D: ‖u‖$^2_{L^4}\\leK$₄(‖u‖$_{L^2}+$‖$\\nablau$‖$_{L^2})^2$ with explicit constant K₄$=3^{3/4}/(8\\pi)\\approx0.0907$, used to control the NSE nonlinearity."
+    },
+    "rem:10": {
+      "type": "Remark",
+      "number": "10",
+      "section": "6",
+      "role": "context",
+      "summary": "Recurrence identity $J'_{l+1/2}(r)=J_{l-1/2}(r)-(l+1/2)/r\\cdotJ_{l+1/2}(r)$ simplifies eqs (6.3)-(6.4) for numerical root-finding."
+    }
+  },
+  "edges": [
+    {
+      "from": "thm:1",
+      "to": "thm:2",
+      "type": "depends_on",
+      "note": "Nonuniqueness follows from Thm 2: negative eigenvalue $\\lambda$̃<0 implies existence of a second Leray-Hopf solution via the self-similar perturbation"
+    },
+    {
+      "from": "thm:2",
+      "to": "prop:1",
+      "type": "depends_on",
+      "note": "Thm 2 combines Props 1-2; Prop 1 provides the base exact self-similar solution Ũ"
+    },
+    {
+      "from": "thm:2",
+      "to": "prop:2",
+      "type": "depends_on",
+      "note": "Prop 2 provides the exact unstable eigenpair $(\\lambda$̃,ᵼ) certifying instability and the second solution"
+    },
+    {
+      "from": "prop:1",
+      "to": "assump:1",
+      "type": "depends_on",
+      "note": "Prop 1 begins 'If Assumption 1 holds...' — numerically verified approximate profiles are the input"
+    },
+    {
+      "from": "prop:2",
+      "to": "assump:1",
+      "type": "depends_on",
+      "note": "Prop 2 begins 'If Assumption 1 holds...'"
+    },
+    {
+      "from": "prop:2",
+      "to": "prop:1",
+      "type": "depends_on",
+      "note": "Prop 2 uses Ũ=Ū+U from Prop 1 in the linearized eigenvalue equation (1.17)"
+    },
+    {
+      "from": "prop:3",
+      "to": "prop:1",
+      "type": "depends_on",
+      "note": "Smoothness is a property of Ũ constructed in Prop 1"
+    },
+    {
+      "from": "prop:4",
+      "to": "prop:1",
+      "type": "depends_on",
+      "note": "Far-field asymptotics are a property of Ũ from Prop 1"
+    },
+    {
+      "from": "prop:1",
+      "to": "thm:3",
+      "type": "depends_on",
+      "note": "Prop 1 is proved by instantiating abstract Thm 3 for the U-equation (1.15)"
+    },
+    {
+      "from": "prop:2",
+      "to": "thm:3",
+      "type": "depends_on",
+      "note": "Prop 2 is proved by instantiating abstract Thm 3 for the v-equation (1.17)"
+    },
+    {
+      "from": "thm:3",
+      "to": "assump:2",
+      "type": "depends_on",
+      "note": "Thm 3 requires coercive+compact decomposition of L (Assump 2)"
+    },
+    {
+      "from": "thm:3",
+      "to": "assump:3",
+      "type": "depends_on",
+      "note": "Thm 3 requires finite-rank approximation with small $\\delta$₁(n) (Assump 3)"
+    },
+    {
+      "from": "thm:3",
+      "to": "assump:4",
+      "type": "depends_on",
+      "note": "Thm 3 requires small residual $\\varepsilon$₂ (Assump 4)"
+    },
+    {
+      "from": "thm:3",
+      "to": "assump:5",
+      "type": "depends_on",
+      "note": "Thm 3 requires quadratic nonlinear estimates (Assump 5)"
+    },
+    {
+      "from": "prop:1",
+      "to": "assump:6",
+      "type": "depends_on",
+      "note": "Bounded mapping condition M₄^U>0 (Assump 6) is verified to apply Thm 3 to the U-equation"
+    },
+    {
+      "from": "prop:2",
+      "to": "assump:7",
+      "type": "depends_on",
+      "note": "Bounded mapping condition M₄^v>0 (Assump 7) is verified to apply Thm 3 to the v-equation"
+    },
+    {
+      "from": "assump:7",
+      "to": "prop:1",
+      "type": "depends_on",
+      "note": "Assump 7 references ‖U‖$_{L^2}$ and ‖$\\nablaU$‖$_{L^2}$ bounds from Prop 1 to define $x_0^U, x_1^U$"
+    },
+    {
+      "from": "lem:3",
+      "to": "lem:1",
+      "type": "depends_on",
+      "note": "Lem 3 uses quasi-orthonormality constant $\\varepsilon$₃ from Lem 1 in the bound for M₂"
+    },
+    {
+      "from": "lem:3",
+      "to": "lem:2",
+      "type": "depends_on",
+      "note": "Lem 3 uses quasi-orthogonality constant $\\varepsilon$₄ from Lem 2 in the bound for M₁"
+    },
+    {
+      "from": "assump:3",
+      "to": "lem:3",
+      "type": "depends_on",
+      "note": "Assump 3 is instantiated using Lem 3 to bound the finite-rank approximation error"
+    },
+    {
+      "from": "assump:6",
+      "to": "lem:3",
+      "type": "depends_on",
+      "note": "M₁,M₂ from Lem 3 enter the discriminant M₄^U in Assump 6"
+    },
+    {
+      "from": "assump:7",
+      "to": "lem:3",
+      "type": "depends_on",
+      "note": "M₁,M₂ from Lem 3 enter the discriminant M₄^v in Assump 7"
+    },
+    {
+      "from": "lem:4",
+      "to": "lem:5",
+      "type": "depends_on",
+      "note": "Lem 4 uses the zero distribution from Lem 5 to verify completeness of the Bessel-based eigenfunction expansion"
+    },
+    {
+      "from": "thm:3",
+      "to": "lem:6",
+      "type": "depends_on",
+      "note": "Sobolev $L^4$ embedding (Lem 6, explicit K₄) used to verify Assump 5 for the NSE nonlinearity $u\\cdot\\nablau$"
+    },
+    {
+      "from": "def:1",
+      "to": "thm:1",
+      "type": "motivates",
+      "note": "Definition of Leray-Hopf frames the precise meaning of 'nonuniqueness' in Thm 1"
+    },
+    {
+      "from": "rem:5",
+      "to": "thm:3",
+      "type": "depends_on",
+      "note": "Rem 5 describes how to bypass the full assumption list and extract sharper constants directly from the Thm 3 proof"
+    }
+  ],
+  "critical_path": [
+    "assump:2",
+    "thm:3",
+    "prop:1",
+    "prop:2",
+    "thm:2",
+    "thm:1"
+  ],
+  "proof_architecture": {
+    "Definitions_and_Setup": {
+      "description": "Foundational definitions establishing Leray-Hopf solutions and the self-similar initial data setting",
+      "nodes": [
+        "def:1",
+        "rem:1",
+        "rem:2"
+      ]
+    },
+    "Main_Result_and_Reduction": {
+      "description": "The main nonuniqueness theorem and its immediate reduction to constructing an exact solution-plus-negative-eigenvalue pair",
+      "nodes": [
+        "thm:1",
+        "thm:2"
+      ]
+    },
+    "Self_Similar_Input_Profiles": {
+      "description": "Numerically-verified approximate profiles that serve as input to the computer-assisted existence argument",
+      "nodes": [
+        "assump:1",
+        "prop:3",
+        "prop:4"
+      ]
+    },
+    "Exact_Solution_Construction": {
+      "description": "Core propositions: exact self-similar profile and exact unstable eigenpair, both obtained by perturbing numerical approximations",
+      "nodes": [
+        "prop:1",
+        "prop:2"
+      ]
+    },
+    "Abstract_Existence_Framework": {
+      "description": "Abstract Hilbert space framework (coercive+compact, Schauder fixed-point) enabling rigorous computer-assisted verification of existence",
+      "nodes": [
+        "assump:2",
+        "assump:3",
+        "assump:4",
+        "assump:5",
+        "thm:3",
+        "rem:3",
+        "rem:4",
+        "rem:5"
+      ]
+    },
+    "Functional_Analysis_Tools": {
+      "description": "Quasi-orthogonality lemmas, finite-rank bounds, Sobolev embedding, and bounded-mapping assumptions that instantiate the abstract framework",
+      "nodes": [
+        "lem:1",
+        "lem:2",
+        "lem:3",
+        "lem:6",
+        "assump:6",
+        "assump:7"
+      ]
+    },
+    "Numerical_Basis_Construction": {
+      "description": "Explicit Stokes eigenbasis on the ball via Bessel functions, including scaling, parity selection, and boundary conditions for the FEM solver",
+      "nodes": [
+        "lem:4",
+        "lem:5",
+        "rem:6",
+        "rem:7",
+        "rem:8",
+        "rem:9",
+        "rem:10"
+      ]
+    }
+  },
+  "bibliography": {
+    "buckmaster2019nonuniqueness": {
+      "title": "Nonuniqueness of weak solutions to the Navier-Stokes equation",
+      "arxiv_id": "1709.10033",
+      "in_registry": true
+    },
+    "isett2018proof": {
+      "title": "A proof of Onsager's conjecture",
+      "arxiv_id": "1608.08301",
+      "in_registry": true
+    },
+    "coiculescu2025non": {
+      "title": "Non-Uniqueness of Smooth Solutions of the Navier-Stokes Equations from Critical Data",
+      "arxiv_id": "2503.14699",
+      "in_registry": true
+    },
+    "palasek2024non": {
+      "title": "Non-uniqueness in the Leray-Hopf class for a dyadic Navier-Stokes model",
+      "arxiv_id": "2407.06179",
+      "in_registry": true
+    },
+    "albritton2022non": {
+      "title": "Non-uniqueness of Leray solutions of the forced Navier-Stokes equations",
+      "arxiv_id": null,
+      "in_registry": false,
+      "note": "Albritton-Brue-Colombo 2022, Annals of Mathematics vol. 196"
+    },
+    "cheskidov2022sharp": {
+      "title": "Sharp nonuniqueness for the Navier-Stokes equations",
+      "arxiv_id": "2112.09717",
+      "in_registry": false,
+      "note": "Pending in queue (priority 23)"
+    },
+    "cheskidov20232": {
+      "title": "L2-Critical Nonuniqueness for the 2D Navier-Stokes Equations",
+      "arxiv_id": null,
+      "in_registry": false,
+      "note": "Cheskidov-Luo 2023, Annals of PDE vol. 9"
+    },
+    "guillod2023numerical": {
+      "title": "Numerical investigations of non-uniqueness for the Navier-Stokes initial value problem in borderline spaces",
+      "arxiv_id": null,
+      "in_registry": false
+    },
+    "jia2014local": {
+      "title": "Local-in-space estimates near initial time for weak solutions of the Navier-Stokes equations and forward self-similar solutions",
+      "arxiv_id": null,
+      "in_registry": false,
+      "note": "Jia-Sverak 2014, Inventiones mathematicae vol. 196"
+    },
+    "jia2015incompressible": {
+      "title": "Are the incompressible 3D Navier-Stokes equations locally ill-posed in the natural energy space?",
+      "arxiv_id": null,
+      "in_registry": false,
+      "note": "Jia-Sverak 2015, Journal of Functional Analysis vol. 268"
+    },
+    "wang2025discovery": {
+      "title": "Discovery of Unstable Singularities",
+      "arxiv_id": "2509.14185",
+      "in_registry": false,
+      "note": "Wang et al. (Hou group + DeepMind) 2025 — closely related computer-assisted instability approach"
+    },
+    "ChenHou2025": {
+      "title": "Singularity Formation in 3D Euler Equations with Smooth Initial Data and Boundary",
+      "arxiv_id": null,
+      "in_registry": false,
+      "note": "Chen-Hou 2025, PNAS vol. 122"
+    },
+    "caffarelli1982partial": {
+      "title": "Partial regularity of suitable weak solutions of the Navier-Stokes equations",
+      "arxiv_id": null,
+      "in_registry": false,
+      "note": "Caffarelli-Kohn-Nirenberg 1982, CPAM vol. 35"
+    },
+    "leray1934": {
+      "title": "Sur le mouvement d'un liquide visqueux emplissant l'espace",
+      "arxiv_id": null,
+      "in_registry": false,
+      "note": "Leray 1934, Acta Math. vol. 63 — original Leray-Hopf construction"
+    },
+    "buckmaster2019onsager": {
+      "title": "Onsager's Conjecture for Admissible Weak Solutions",
+      "arxiv_id": null,
+      "in_registry": false,
+      "note": "Buckmaster-de Lellis-Szekelyhidi-Vicol 2019, CPAM vol. 72"
+    }
+  }
+}

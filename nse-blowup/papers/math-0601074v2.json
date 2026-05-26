@@ -1,0 +1,237 @@
+{
+  "paper": "math/0601074v2",
+  "title": "Blow-up in finite time for the dyadic model of the Navier-Stokes equations",
+  "authors": [
+    "Alexey Cheskidov"
+  ],
+  "generated": "2026-03-08",
+  "status": "complete",
+  "nodes": {
+    "def:3.1": {
+      "type": "Definition",
+      "number": "3.1",
+      "section": "3",
+      "role": "definition",
+      "summary": "Weak solution: H-valued function u(t) with $u_n \\in C^1$ satisfying the dyadic ODE (eq:3.1) for all n."
+    },
+    "def:3.2": {
+      "type": "Definition",
+      "number": "3.2",
+      "section": "3",
+      "role": "definition",
+      "summary": "Leray-Hopf solution: weak solution satisfying energy inequality (eq:3.3) for a.e. t₀."
+    },
+    "thm:4.1": {
+      "type": "Theorem",
+      "number": "4.1",
+      "section": "4",
+      "role": "foundational",
+      "summary": "Existence of weak solutions via Galerkin approximation. Energy inequality holds for a.e. t₀. Classical NSE proof adapted to dyadic setting."
+    },
+    "thm:4.2": {
+      "type": "Theorem",
+      "number": "4.2",
+      "section": "4",
+      "role": "key_structural",
+      "summary": "Nonnegativity preservation: $u_n(0) \\ge 0 \\Rightarrow u_n(t) \\ge 0$ for all t. Energy inequality holds for ALL t₀ (no exceptional set). Key insight: no backward energy transfer."
+    },
+    "thm:4.3": {
+      "type": "Theorem",
+      "number": "4.3",
+      "section": "4",
+      "role": "regularity",
+      "summary": "Local regularity for $\\alpha > 1/3$. Enstrophy estimate gives Riccati inequality for ‖u‖^2, bounded for short time."
+    },
+    "thm:4.4": {
+      "type": "Theorem",
+      "number": "4.4",
+      "section": "4",
+      "role": "regularity",
+      "summary": "Global regularity for $\\alpha \\ge 1/2$. Enstrophy Riccati inequality + energy inequality $\\Rightarrow$ contradiction with blowup."
+    },
+    "lem:5.1": {
+      "type": "Lemma",
+      "number": "5.1",
+      "section": "5",
+      "role": "key_technical",
+      "summary": "Sobolev inversion: for $\\alpha < 1/3, \\sum\\lambda^{(1+2\\gamma)n}|u_n|^3 \\ge$A‖u‖$_{\\alpha+\\gamma}^3$. Uses Hölder with p=3, q=3/2. The exponent gap $\\varepsilon = 2-6\\alpha-2\\gamma > 0$ is what makes $\\alpha < 1/3$ critical."
+    },
+    "lem:5.2": {
+      "type": "Lemma",
+      "number": "5.2",
+      "section": "5",
+      "role": "technical",
+      "summary": "Continuity of the cross-term $\\sum\\lambda^{2\\gamman}(u_n u_{n+1})(t)$. Needed to ensure the Lyapunov function H(t) is continuous."
+    },
+    "thm:5.3": {
+      "type": "Theorem",
+      "number": "5.3",
+      "section": "5",
+      "role": "main_result",
+      "summary": "MAIN BLOWUP: for $\\alpha < 1/3$, large initial data $\\Rightarrow$ ‖u‖$^3_{1/3+\\gamma}$ not locally integrable. Proof: define Lyapunov H(t) = ‖u‖$^2_\\gamma +$ c₂$\\sum(u_n u_{n+1})$, show dH/dt ≳ $H^{3/2}$ via Sobolev inversion, Riccati comparison $\\Rightarrow$ finite-time blowup."
+    },
+    "def:6.1": {
+      "type": "Definition",
+      "number": "6.1",
+      "section": "6",
+      "role": "definition",
+      "summary": "Attracting set and global attractor definitions in strong/weak metrics."
+    },
+    "thm:6.2": {
+      "type": "Theorem",
+      "number": "6.2",
+      "section": "6",
+      "role": "attractor",
+      "summary": "Weak global attractor exists. If trajectories are compact, it equals the maximal invariant set."
+    },
+    "lem:6.3": {
+      "type": "Lemma",
+      "number": "6.3",
+      "section": "6",
+      "role": "technical",
+      "summary": "Compactness of trajectories in $C([0,\\infty)$; $H_w)$."
+    },
+    "thm:6.4": {
+      "type": "Theorem",
+      "number": "6.4",
+      "section": "6",
+      "role": "regularity",
+      "summary": "Energy equality (not just inequality) for $\\alpha \\ge 1/2$."
+    },
+    "cor:6.5": {
+      "type": "Corollary",
+      "number": "6.5",
+      "section": "6",
+      "role": "attractor",
+      "summary": "For $\\alpha \\ge 1/2$, weak attractor is a strongly compact strong global attractor."
+    }
+  },
+  "edges": [
+    {
+      "from": "thm:4.1",
+      "to": "def:3.1",
+      "type": "depends_on",
+      "note": "Constructs a weak solution in the sense of def:3.1"
+    },
+    {
+      "from": "thm:4.1",
+      "to": "def:3.2",
+      "type": "proves",
+      "note": "Shows the constructed solution is Leray-Hopf (energy inequality a.e.)"
+    },
+    {
+      "from": "thm:4.2",
+      "to": "thm:4.1",
+      "type": "depends_on",
+      "note": "Uses existence from Galerkin (thm:4.1), then strengthens to energy inequality for all t₀"
+    },
+    {
+      "from": "thm:4.3",
+      "to": "thm:4.1",
+      "type": "depends_on",
+      "note": "Applies Galerkin + enstrophy estimates to get local strong solutions"
+    },
+    {
+      "from": "thm:4.4",
+      "to": "thm:4.2",
+      "type": "depends_on",
+      "note": "Energy inequality (all t₀) contradicts Riccati blowup of ‖u‖^2 for $\\alpha \\ge 1/2$"
+    },
+    {
+      "from": "thm:5.3",
+      "to": "thm:4.2",
+      "type": "depends_on",
+      "note": "Explicitly cited: $'u_n(t) \\ge 0$ for all n,t>0 due to Theorem 4.2'. Nonnegativity is essential for the product estimates."
+    },
+    {
+      "from": "thm:5.3",
+      "to": "lem:5.1",
+      "type": "depends_on",
+      "note": "Sobolev inversion gives $\\sum\\lambda^{(1+2\\gamma)n}u_n^3 \\ge$A‖u‖$^3_{\\alpha+\\gamma}$, converting the nonlinear term into $H^{3/2}$ growth."
+    },
+    {
+      "from": "thm:5.3",
+      "to": "lem:5.2",
+      "type": "depends_on",
+      "note": "'Thanks to Lemma 5.2, H(t) is continuous on $[0,\\infty)'$. Continuity needed for the Riccati comparison argument."
+    },
+    {
+      "from": "thm:6.2",
+      "to": "lem:6.3",
+      "type": "depends_on",
+      "note": "Compactness of trajectories gives maximal invariant set characterization"
+    },
+    {
+      "from": "thm:6.4",
+      "to": "thm:4.4",
+      "type": "depends_on",
+      "note": "Global regularity for $\\alpha \\ge 1/2$ needed to upgrade inequality to equality"
+    },
+    {
+      "from": "cor:6.5",
+      "to": "thm:6.2",
+      "type": "depends_on",
+      "note": "Inherits weak attractor existence"
+    },
+    {
+      "from": "cor:6.5",
+      "to": "thm:6.4",
+      "type": "depends_on",
+      "note": "Energy equality + continuity in H $\\Rightarrow$ strong attractor"
+    }
+  ],
+  "critical_path": [
+    "thm:5.3",
+    "lem:5.1",
+    "thm:4.2",
+    "thm:4.1"
+  ],
+  "proof_architecture": {
+    "layer_1_foundations": {
+      "description": "Existence and structural properties of solutions",
+      "nodes": [
+        "def:3.1",
+        "def:3.2",
+        "thm:4.1",
+        "thm:4.2"
+      ]
+    },
+    "layer_2_regularity_boundary": {
+      "description": "Regularity above $\\alpha = 1/3$, global above $\\alpha = 1/2$",
+      "nodes": [
+        "thm:4.3",
+        "thm:4.4"
+      ]
+    },
+    "layer_3_blowup": {
+      "description": "Blowup below $\\alpha = 1/3$ via Lyapunov function / Sobolev inversion",
+      "nodes": [
+        "lem:5.1",
+        "lem:5.2",
+        "thm:5.3"
+      ]
+    },
+    "layer_4_attractor": {
+      "description": "Global attractor theory (weak for all $\\alpha$, strong for $\\alpha \\ge 1/2)$",
+      "nodes": [
+        "def:6.1",
+        "thm:6.2",
+        "lem:6.3",
+        "thm:6.4",
+        "cor:6.5"
+      ]
+    }
+  },
+  "bibliography": {
+    "waleffe": {
+      "title": "On some dyadic models of the Euler equations",
+      "arxiv_id": "math/0410380v2",
+      "in_registry": false
+    },
+    "katz-pavlovic": {
+      "title": "Finite time blow-up for a dyadic model of the Euler equations",
+      "arxiv_id": null,
+      "in_registry": false
+    }
+  }
+}

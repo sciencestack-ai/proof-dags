@@ -1,0 +1,455 @@
+{
+  "description": "Cross-paper edges of the NSE blowup / non-uniqueness proof dependency graph. Each edge connects theorem-level node IDs across papers. Direction reads subject-verb-object: '{from} {type} {to}'.",
+  "edges": [
+    {
+      "from": "1402.0290v3:prop:5.1",
+      "to": "math/0601074v2:thm:5.3",
+      "type": "re_derives",
+      "note": "Tao re-derives Cheskidov's blowup for $\\alpha < 1/3$ via truncated dyadic model with pump gates. Cheskidov uses Sobolev-inversion; Tao uses explicit mode-by-mode construction with exogenous time cutoffs."
+    },
+    {
+      "from": "1407.6734v1:thm:1.1",
+      "to": "0906.3070v4:rem:1.2",
+      "type": "proves",
+      "note": "BMR prove Tao's 2009 conjecture: regularity holds under $\\intds/sg^2=\\infty$. TRIANGLE: Tao-averaged:rem:$5.2 \\to$ BMR:thm:$1.1 \\to$ Tao-hyper:sec:1."
+    },
+    {
+      "from": "1402.0290v3:lem:1.3",
+      "to": "1108.1165v4:cor:11.1",
+      "type": "imports_result",
+      "note": "Proof direction $(1.1\\Rightarrow1.2)$: Corollary 11.1 (bounded enstrophy) promotes smooth finite-energy solution to $H^1$ solution."
+    },
+    {
+      "from": "1402.0290v3:lem:1.3",
+      "to": "1108.1165v4:cor:4.3",
+      "type": "imports_result",
+      "note": "Corollary 4.3 (almost smooth $H^1$ solutions are essentially mild) gives the integral equation (1.5)."
+    },
+    {
+      "from": "1402.0290v3:lem:1.3",
+      "to": "1108.1165v4:thm:5.4",
+      "type": "imports_result",
+      "note": "Theorem 5.4 parts (ii), (iii), (iv): $H^1$ local well-posedness yields $H^k$ regularity for all k; uniqueness of mild solutions; smoothness of u and p."
+    },
+    {
+      "from": "1402.0290v3:prop:5.1",
+      "to": "math/0410380v2:sec:3",
+      "type": "generalizes",
+      "note": "Waleffe reduces K-P model to dyadic Burgers (eq:17). Tao's prop:5.1 uses a truncated version of the same dyadic chain with viscous dissipation and explicit pump-gate scheduling."
+    },
+    {
+      "from": "1402.0290v3:prop:5.1",
+      "to": "math/0410380v2:thm:1",
+      "type": "extends",
+      "note": "Waleffe proves $H^\\alpha$ blowup for inviscid dyadic models (any $\\alpha > 0)$. Tao extends to viscous case $(\\alpha < 1/2)$ using pump gates with exogenous time truncation."
+    },
+    {
+      "from": "math/0601074v2:def:3.1",
+      "to": "math/0410380v2:sec:3",
+      "type": "extends",
+      "note": "Cheskidov sec:2: 'As it was proposed in [W] in the case $\\nu=0$, we simplify the model.' Adopts Waleffe's chain reduction of the K-P model, extends to viscous case."
+    },
+    {
+      "from": "2407.06179:def:1.1",
+      "to": "math/0601074v2:def:3.2",
+      "type": "extends",
+      "note": "Palasek's Leray-Hopf definition for the Obukhov dyadic model directly extends Cheskidov's dyadic Leray-Hopf class."
+    },
+    {
+      "from": "2407.06179:prop:3.7",
+      "to": "math/0601074v2:thm:4.2",
+      "type": "imports_result",
+      "note": "Prop 3.7 constructs two non-negative solutions of the Obukhov model. Cheskidov's thm:4.2 proves non-negativity preservation and energy inequality upgrades."
+    },
+    {
+      "from": "2407.06179:thm:1.2",
+      "to": "math/0601074v2:thm:5.3",
+      "type": "imports_result",
+      "note": "Palasek's non-uniqueness operates in the same supercritical dyadic regime as Cheskidov's blowup."
+    },
+    {
+      "from": "2407.06179:rem:1.3",
+      "to": "1407.6734v1:thm:1.1",
+      "type": "imports_result",
+      "note": "Rem 1.3 states 'The lower bound $\\alpha > 2$ is sharp (subcritical regime has uniqueness).' BMR's thm:1.1 provides this uniqueness."
+    },
+    {
+      "from": "2407.06179:thm:1.2",
+      "to": "1407.6734v1:thm:1.1",
+      "type": "addresses_same_question",
+      "note": "BMR's regularity threshold is tight: non-uniqueness begins exactly where BMR's dissipation condition fails."
+    },
+    {
+      "from": "2407.06179:thm:1.2",
+      "to": "1402.0290v3:prop:5.1",
+      "type": "imports_result",
+      "note": "Tao's pump-gate cascade is the structural predecessor of Palasek's non-uniqueness mechanism."
+    },
+    {
+      "from": "2407.06179:prop:2.1",
+      "to": "math/0601074v2:thm:4.1",
+      "type": "extends",
+      "note": "Palasek's Prop 2.1 is a quantitative strengthening of Cheskidov's Leray-Hopf existence."
+    },
+    {
+      "from": "2503.14699:rem:1.5",
+      "to": "1402.0290v3:thm:1.5",
+      "type": "motivates",
+      "note": "rem:1.5 cites Tao's averaged NSE blowup as the foundational program underpinning the non-uniqueness strategy."
+    },
+    {
+      "from": "2503.14699:rem:1.5",
+      "to": "1402.0290v3:thm:3.2",
+      "type": "motivates",
+      "note": "rem:1.5 references the challenge of embedding Obukhov dyadic model behavior into actual NSE."
+    },
+    {
+      "from": "2503.14699:rem:1.5",
+      "to": "2407.06179:thm:1.2",
+      "type": "re_derives",
+      "note": "rem:1.5 explicitly states the construction uses 'a simplified version of the mechanism proposed by the second author in [palasek2024non]'."
+    },
+    {
+      "from": "2503.14699:def:3.10",
+      "to": "2407.06179:prop:2.1",
+      "type": "re_derives",
+      "note": "The two principal parts $v^{(1)}/v^{(2)}$ are the simplified analog of Palasek's two stable-manifold branches."
+    },
+    {
+      "from": "2503.14699:prop:4.3",
+      "to": "2407.06179:prop:3.7",
+      "type": "extends",
+      "note": "prop:4.3 is the NSE analog of Palasek's prop:3.7 bootstrap construction."
+    },
+    {
+      "from": "2503.14699:rem:1.4",
+      "to": "2410.16468:thm:1",
+      "type": "motivates",
+      "note": "rem:1.4 explicitly cites Hou's regularity theorem as showing $BMO^{-1}$ is the natural well-posedness threshold."
+    },
+    {
+      "from": "2503.14699:thm:1.2",
+      "to": "2410.16468:thm:1",
+      "type": "addresses_same_question",
+      "note": "Individual solutions are regular (Hou), but the Cauchy problem is not well-posed — two distinct regular solutions can share the same critical data."
+    },
+    {
+      "from": "2412.10404:thm:1.2",
+      "to": "2412.09637:thm:1.2",
+      "type": "parallel_result",
+      "note": "Companion results by same authors using the same technical framework."
+    },
+    {
+      "from": "2412.10404:lem:A.1",
+      "to": "2412.09637:lem:2.1",
+      "type": "shared_mechanism",
+      "note": "Identical geometric lemma from Beekie-Buckmaster-Vicol."
+    },
+    {
+      "from": "2412.10404:lem:A.4",
+      "to": "2412.09637:lem:2.3",
+      "type": "shared_mechanism",
+      "note": "Same $L^p$ localization/decoupling lemma from Cheskidov-Modena-Szekely."
+    },
+    {
+      "from": "2412.10404:lem:A.7",
+      "to": "2412.09637:lem:2.7",
+      "type": "shared_mechanism",
+      "note": "Same Besov-space maximal regularity theorem for the heat equation."
+    },
+    {
+      "from": "2412.10404:def:A.6",
+      "to": "2412.09637:def:2.6",
+      "type": "shared_mechanism",
+      "note": "Identical definition of Chemin-Lerner mixed time-space Besov norms."
+    },
+    {
+      "from": "2412.10404:prop:3.8",
+      "to": "2412.09637:prop:4.9",
+      "type": "parallel_result",
+      "note": "Both construct the key $R^3-specific$ correction via forced linearized NSE."
+    },
+    {
+      "from": "2602.19074v1:thm:1.1",
+      "to": "2412.10404:thm:1.2",
+      "type": "extends",
+      "note": "2602.19074v1 extends 2412.10404's $R^3$ convex integration scheme to the 2D torus $T^2$."
+    },
+    {
+      "from": "2602.19074v1:prop:3.7",
+      "to": "2412.10404:prop:3.8",
+      "type": "parallel_result",
+      "note": "2602.19074v1's perturbation flow is the $T^2$ analogue of 2412.10404's non-stationary correction."
+    },
+    {
+      "from": "2412.10404:thm:1.2",
+      "to": "2511.09556:thm:1.1",
+      "type": "parallel_result",
+      "note": "Parallel non-uniqueness results with fundamentally different methods."
+    },
+    {
+      "from": "2412.10404:thm:1.2",
+      "to": "2503.14699:thm:1.2",
+      "type": "parallel_result",
+      "note": "Parallel non-uniqueness results in different regularity classes."
+    },
+    {
+      "from": "2412.10404:thm:1.2",
+      "to": "2407.06179:thm:1.2",
+      "type": "parallel_result",
+      "note": "Parallel Leray-Hopf non-uniqueness results using wholly different techniques."
+    },
+    {
+      "from": "2507.08733v2:prop:4.2",
+      "to": "2402.13229v1:prop:2.2",
+      "type": "imports_result",
+      "note": "prop:4.2 is the vorticity conservation law with explicit attribution to 2402.13229v1."
+    },
+    {
+      "from": "2507.08733v2:thm:3.1",
+      "to": "2402.13229v1:prop:1.1",
+      "type": "extends",
+      "note": "Both extract nontrivial ancient Euler solutions from Type II blowup sequences."
+    },
+    {
+      "from": "2507.08733v2:thm:5.1",
+      "to": "2402.13229v1:prop:2.3",
+      "type": "extends",
+      "note": "Both exclude Type II blowup at the origin under integrability conditions."
+    },
+    {
+      "from": "2511.09556:thm:1.1",
+      "to": "2410.16468:thm:1",
+      "type": "parallel_result",
+      "note": "The Type I blowup solution satisfies Hou's weak-* continuity in $BMO^{-1}$."
+    },
+    {
+      "from": "2511.09556:prop:6.2",
+      "to": "2410.16468:thm:1",
+      "type": "imports_result",
+      "note": "prop:6.2 verifies the constructed solution lies in the Koch-Tataru path space."
+    },
+    {
+      "from": "2412.09637:thm:1.2",
+      "to": "2511.09556:thm:1.10",
+      "type": "addresses_same_question",
+      "note": "Together these sharply pin the Ladyzhenskaya-Prodi-Serrin threshold at p = 2."
+    },
+    {
+      "from": "2412.09637:thm:1.2",
+      "to": "2602.19074v1:rem:1.2",
+      "type": "motivates",
+      "note": "The incompressible perturbation technique developed in 2412.09637 directly precedes the $T^2$ result."
+    },
+    {
+      "from": "2412.09637:thm:1.2",
+      "to": "2503.14699:thm:1.2",
+      "type": "parallel_result",
+      "note": "Both prove non-uniqueness at critical regularity thresholds via distinct mechanisms."
+    },
+    {
+      "from": "2412.09637:thm:1.2",
+      "to": "1402.0290v3:thm:1.5",
+      "type": "motivates",
+      "note": "Tao's averaged NSE blowup motivates the broader program of proving pathological behavior in NS-like equations."
+    },
+    {
+      "from": "2101.09278:prop:4.1",
+      "to": "1709.10033:prop:3.2",
+      "type": "extends",
+      "note": "BMNV replaces rank-2 Beltrami projectors with rank-1 pipe flow projectors."
+    },
+    {
+      "from": "2101.09278:prop:4.4",
+      "to": "1709.10033:prop:3.4",
+      "type": "extends",
+      "note": "BMNV replaces Beltrami waves with intermittent pipe flows."
+    },
+    {
+      "from": "2101.09278:prop:A.18",
+      "to": "1709.10033:lem:B.1",
+      "type": "extends",
+      "note": "BMNV's iterated inverse divergence achieves $(\\lambda/\\zeta)^d$ polynomial gain."
+    },
+    {
+      "from": "2101.09278:lem:A.2",
+      "to": "1709.10033:lem:3.7",
+      "type": "extends",
+      "note": "Both are $L^p$ decorrelation lemmas for slow $\\times$ fast products."
+    },
+    {
+      "from": "2101.09278:prop:3.6",
+      "to": "1709.10033:prop:2.1",
+      "type": "extends",
+      "note": "BMNV introduces two nested inductions for $H^{1/2-}$ regularity."
+    },
+    {
+      "from": "2101.09278:thm:1.1",
+      "to": "1709.10033:thm:1.2",
+      "type": "extends",
+      "note": "BMNV proves flexibility for 3D Euler in $C^0_t H^{1/2-}_x$ — the sharp Onsager threshold."
+    },
+    {
+      "from": "2412.10404:lem:A.5",
+      "to": "2101.09278:prop:A.17",
+      "type": "imports_result",
+      "note": "2412.10404's inverse divergence iteration step is directly imported from BMNV."
+    },
+    {
+      "from": "1709.10033:thm:1.2",
+      "to": "1608.08301:thm:1",
+      "type": "extends",
+      "note": "Buckmaster-Vicol's thm:1.2 (non-uniqueness of NSE weak solutions in $C^0_t H^\\beta_x)$ extends Isett's Euler construction to the Navier-Stokes equations. The convex integration scheme is adapted from Euler to NSE with viscous dissipation absorbing errors."
+    },
+    {
+      "from": "1709.10033:prop:2.1",
+      "to": "1608.08301:lem:2.1",
+      "type": "extends",
+      "note": "BV's main iterative proposition adapts Isett's Main Lemma (lem:2.1) structure: frequency-energy iteration $(\\Xi,e_v,e_R) \\to (\\Xi',e_v',e_R')$ with N-dependent gains. The key modification is adapting the stress correction to handle NSE viscous terms."
+    },
+    {
+      "from": "2101.09278:thm:1.1",
+      "to": "1608.08301:thm:1",
+      "type": "extends",
+      "note": "BMNV's $H^{1/2-}$ Euler non-uniqueness extends Isett's $C^\\alpha_{t,x}$ result, reaching the sharp $L^2-based$ Onsager threshold. The pipe flow construction and higher-order stresses are the key advances beyond Isett's Mikado-type flows."
+    },
+    {
+      "from": "2101.09278:prop:A.17",
+      "to": "1608.08301:prop:17.6",
+      "type": "extends",
+      "note": "BMNV's iterated inverse divergence (prop:A.17) extends Isett's parametrix construction (prop:17.6). Isett uses Fourier series expansion; BMNV iterates d times for polynomial gain $(\\lambda/\\zeta)^d$ while preserving compact support."
+    },
+    {
+      "from": "1709.10033:def:1.1",
+      "to": "1608.08301:def:2.1",
+      "type": "extends",
+      "note": "BV adopts Isett's Euler-Reynolds framework (def:2.1): $\\partial_t$ v $+ \\nabla\\cdot(v$⊗$v) + \\nablap = \\nabla\\cdotR$. The symmetric stress tensor R captures the Reynolds stress error in convex integration."
+    },
+    {
+      "from": "1709.10033:def:1.1",
+      "to": "1608.08301:def:2.2",
+      "type": "extends",
+      "note": "BV adopts Isett's frequency-energy level framework (def:2.2): bounds ‖$\\nabla^k$ v‖ $\\le \\Xi^k e_v^{1/2}$, ‖$\\nabla^k$ R‖ $\\le \\Xi^k e_R$. This parameterization governs the iteration."
+    },
+    {
+      "from": "2101.09278:prop:4.8",
+      "to": "1608.08301:lem:3.2",
+      "type": "parallel_result",
+      "note": "BMNV's spatial disjointness of pipe flows (prop:4.8) replaces Isett's temporal gluing approximation (lem:3.2). Isett localizes stress in time; BMNV achieves disjointness in space via pipe geometry."
+    },
+    {
+      "from": "2412.10404:thm:1.2",
+      "to": "1608.08301:thm:1",
+      "type": "extends",
+      "note": "Miao-Nie-Ye's $R^3$ non-uniqueness (thm:1.2) is a descendant of Isett's Onsager construction. The convex integration framework — Euler-Reynolds flows, frequency-energy iteration, Mikado-type perturbations — originates in Isett's proof."
+    },
+    {
+      "from": "2602.19074v1:thm:1.1",
+      "to": "1608.08301:thm:1",
+      "type": "extends",
+      "note": "Miao-Nie-Ye's $T^2$ smooth non-uniqueness (thm:1.1) is a descendant of Isett's framework. The 2D result requires different technical tools but the conceptual architecture (convex integration with localized stress corrections) traces to Isett."
+    },
+    {
+      "from": "2509.18595:prop:2.11",
+      "to": "2503.14699:lem:B.3",
+      "type": "imports_result",
+      "note": "Proof of prop:2.11 explicitly cites 'Gronwall inequality [Lemma B.3]' from Coiculescu-Palasek (2503.14699) — the singular Gronwall inequality with (t-s)^{-1/2} kernel used to close the bootstrap argument for w = u - v."
+    },
+    {
+      "from": "2009.06596:prop:2.2",
+      "to": "1709.10033:prop:2.1",
+      "type": "imports_result",
+      "note": "CL's main iteration proposition uses the NSE-Reynolds framework from BV (prop:2.1), adding temporal concentration as the new mechanism on top of BV's convex integration scheme."
+    },
+    {
+      "from": "2009.06596:thm:1.6",
+      "to": "1709.10033:thm:1.2",
+      "type": "extends",
+      "note": "BV (thm:1.2) proved nonuniqueness in $H^{-1+\\beta}$ below the critical Sobolev threshold; CL sharpens this to $L^p_t L^\\infty (p < 2)$, which is the sharp Ladyzhenskaya-Prodi-Serrin endpoint."
+    },
+    {
+      "from": "2009.06596:def:2.1",
+      "to": "1709.10033:prop:2.1",
+      "type": "extends",
+      "note": "The NSE-Reynolds system formulation (well-prepared solutions, stress tensor, relaxation) is adopted from BV's framework (prop:2.1 and surrounding definitions)."
+    },
+    {
+      "from": "2009.06596:prop:3.2",
+      "to": "1608.08301:lem:3.2",
+      "type": "imports_result",
+      "note": "CL's sharp gluing (prop:3.2) — splicing together short-time smooth NSE solutions to concentrate the stress — directly adapts Isett's gluing approximation (lem:3.2) for the viscous setting."
+    },
+    {
+      "from": "2009.06596:thm:1.11",
+      "to": "1608.08301:thm:1",
+      "type": "imports_result",
+      "note": "CL's anomalous dissipation result (thm:1.11, solutions in $L^{3/2-eps}_t C^{1/3})$ places their solutions exactly at the Onsager threshold whose negative direction Isett proved (thm:1 of 1608.08301)."
+    },
+    {
+      "from": "2504.08288:thm:1.1",
+      "to": "2009.06596:thm:1.6",
+      "type": "parallel_result",
+      "note": "Luo2025 proves strong ill-posedness (norm inflation) in Ḃˢₚ,q supercritical spaces; CL2022 (same author Luo) proves non-uniqueness of weak solutions in $L^p_t L^\\infty$ below LPS threshold. Both papers establish the borderline nature of NSE well-posedness in the same supercritical regime."
+    },
+    {
+      "from": "2504.08288:thm:1.1",
+      "to": "1709.10033:thm:1.2",
+      "type": "parallel_result",
+      "note": "Luo2025 (norm inflation via oscillatory construction) and BV2019 (non-uniqueness via convex integration) both establish ill-behavior of NSE below critical Sobolev regularity, using fundamentally different mechanisms."
+    },
+    {
+      "from": "2504.08288:thm:1.1",
+      "to": "2503.14699:thm:1.1",
+      "type": "parallel_result",
+      "note": "Both 2025 papers study fine-scale behavior at the regularity threshold: CP2025 constructs non-unique smooth solutions from critical data, Luo2025 shows sharp norm inflation for small data in supercritical Besov spaces. Cited together in the same cluster of results."
+    },
+    {
+      "from": "2112.03116:thm:1.2",
+      "to": "1709.10033:thm:1.2",
+      "type": "parallel_result",
+      "note": "Both prove non-uniqueness of Leray-class NSE solutions; BV2019 uses convex integration on $T^3 (no$ forcing), ABC uses Vishik's unstable eigenvalue on $\\mathbb{R}^3 (with$ forcing). Fundamentally different mechanisms producing the same type of non-uniqueness."
+    },
+    {
+      "from": "2112.03116:thm:1.2",
+      "to": "2009.06596:thm:1.6",
+      "type": "parallel_result",
+      "note": "ABC2022 and CL2022 both establish Leray-class non-uniqueness. CL uses convex integration to achieve non-uniqueness in $L^p_t L^\\infty (sharp$ LPS threshold), ABC uses Vishik instability for Leray-Hopf with forcing. Cited together as the two main approaches."
+    },
+    {
+      "from": "2509.25116:thm:1",
+      "to": "2112.03116:thm:1.2",
+      "type": "extends",
+      "note": "Yang et al (Hou+DeepMind, Sep 2025) extend ABC's result to the UNFORCED setting: both papers prove non-uniqueness of Leray-Hopf solutions, but Yang et al remove the need for a body force using a computer-assisted unstable eigenpair computation. ABC is the direct predecessor."
+    },
+    {
+      "from": "2511.09556:thm:1.1",
+      "to": "2112.03116:thm:1.2",
+      "type": "parallel_result",
+      "note": "Cheskidov-Dai-Palasek (CDP2025) prove non-uniqueness of Leray solutions via Type I blow-up + non-uniqueness for any smooth data — a different mechanism from ABC's Vishik instability approach. Both are Leray non-uniqueness results but with distinct techniques."
+    },
+    {
+      "from": "2602.19074v1:thm:1.1",
+      "to": "2112.03116:thm:1.2",
+      "type": "parallel_result",
+      "note": "Miao-Nie-Ye (2025) prove non-uniqueness of smooth NSE solutions on torus, extending the ABC program to a different setting (smooth solutions, no force, on $T^3)$."
+    },
+    {
+      "from": "1809.00600:thm:1.1",
+      "to": "1709.10033:thm:1.2",
+      "type": "extends",
+      "note": "BCV2021 extends BV2019's non-uniqueness result: BV2019 proves non-unique weak NSE solutions with singular time set $dim(\\Sigma_T)=1$; BCV2021 additionally glues between any two strong solutions and achieves $dim(\\Sigma_T) < 1$. Buckmaster and Vicol are co-authors on both."
+    },
+    {
+      "from": "1809.00600:thm:1.1",
+      "to": "1608.08301:thm:1",
+      "type": "imports_result",
+      "note": "BCV2021 uses the intermittent convex integration scheme (developed for Euler in Isett2018) adapted to NSE with temporal intermittency. The Beltrami wave structure and iteration scheme builds on Isett's framework."
+    },
+    {
+      "from": "2112.03116:thm:1.2",
+      "to": "1809.00600:thm:1.1",
+      "type": "parallel_result",
+      "note": "ABC2022 (Albritton-Brué-Colombo) and BCV2021 both prove non-uniqueness of weak NSE solutions, but by different methods: BCV uses convex integration to glue strong solutions; ABC uses Vishik's unstable eigenvalue to construct Leray-Hopf solutions. Colombo is co-author on both."
+    }
+  ]
+}

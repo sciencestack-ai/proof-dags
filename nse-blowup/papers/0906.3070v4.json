@@ -1,0 +1,106 @@
+{
+  "paper": "0906.3070v4",
+  "title": "Global regularity for a logarithmically supercritical hyperdissipative Navier-Stokes equation",
+  "authors": [
+    "Terence Tao"
+  ],
+  "generated": "2026-03-09",
+  "status": "complete",
+  "nodes": {
+    "thm:1.1": {
+      "type": "Theorem",
+      "number": "1.1",
+      "section": "1",
+      "role": "main_result",
+      "summary": "Global smooth solutions for generalized NSE with dissipation $m(\\xi) \\ge |\\xi|^{(d+2)/4}/g(|\\xi|)$ when $\\int$₁$^\\infty$ ds/(s $g(s)^4) = +\\infty$. Covers logarithmically supercritical case $m(\\xi) = |\\xi|^{(d+2)/4}/log^{1/4}(2+|\\xi|^2)$. Proof: higher-order Sobolev energy $E_k$ satisfies $\\partial_t E_k \\le$ C $g(1+E_k)^4 E_k(1+a(t))$ after Littlewood-Paley frequency splitting at N $= 1+E_k$. Divergence condition on g prevents ODE blowup via separation of variables."
+    },
+    "rem:1.2": {
+      "type": "Remark",
+      "number": "1.2",
+      "section": "1",
+      "role": "context",
+      "summary": "Heuristic argument that the exponent 4 in $\\intds/sg^4=\\infty$ should be improvable to 2 (i.e. $\\intds/sg^2=\\infty)$. Blowup scenario: energy concentrates on ball of radius 1/N(t), gives blowup rate N(t) ~ (T*-t)^{-2/(d+2)}. Energy inequality then contradicts blowup if $\\intds/sg^2=\\infty$. Author unable to make rigorous — different definitions of frequency scale N(t) lose powers of g(s). Going beyond $g^2-barrier$ would require forcing turbulent energy distribution."
+    },
+    "rem:2.1": {
+      "type": "Remark",
+      "number": "2.1",
+      "section": "2",
+      "role": "context",
+      "summary": "The proof extends to torus $R^d/Z^d$ and other smooth domains by replacing Littlewood-Paley operators $P_{\\leN}, P_{>N}$ with spectral projections of the Laplacian."
+    }
+  },
+  "edges": [
+    {
+      "from": "rem:1.2",
+      "to": "thm:1.1",
+      "type": "depends_on",
+      "note": "Analyzes whether thm:1.1's divergence condition $(\\intds/sg^4=\\infty)$ can be weakened to $\\intds/sg^2=\\infty$. Uses the same energy framework but with a blowup-rate argument instead of direct energy estimates."
+    },
+    {
+      "from": "rem:2.1",
+      "to": "thm:1.1",
+      "type": "depends_on",
+      "note": "Notes that the Littlewood-Paley decomposition in thm:1.1's proof can be replaced by spectral projections on other domains (torus, smooth bounded domains)."
+    }
+  ],
+  "critical_path": [
+    "thm:1.1"
+  ],
+  "proof_architecture": {
+    "layer_1_main_theorem": {
+      "description": "Single monolithic proof via energy method + Littlewood-Paley decomposition + ODE comparison",
+      "nodes": [
+        "thm:1.1"
+      ]
+    },
+    "layer_2_commentary": {
+      "description": "Heuristic improvements $(g^4\\tog^2$ barrier) and domain generalizations",
+      "nodes": [
+        "rem:1.2",
+        "rem:2.1"
+      ]
+    }
+  },
+  "bibliography": {
+    "bkm": {
+      "title": "Remarks on the breakdown of smooth solutions for the 3-D Euler equations",
+      "arxiv_id": null,
+      "in_registry": false
+    },
+    "bw": {
+      "title": "A note on limiting cases of Sobolev embeddings and convolution inequalities",
+      "arxiv_id": null,
+      "in_registry": false
+    },
+    "ckn": {
+      "title": "Partial regularity of suitable weak solutions to the Navier-Stokes equations",
+      "arxiv_id": null,
+      "in_registry": false
+    },
+    "kato": {
+      "title": "Abstract differential equations and nonlinear mixed problems",
+      "arxiv_id": null,
+      "in_registry": false
+    },
+    "kp": {
+      "title": "A cheap Caffarelli-Kohn-Nirenberg inequality for the Navier-Stokes equation with hyper-dissipation",
+      "arxiv_id": null,
+      "in_registry": false
+    },
+    "roy1": {
+      "title": "Global Existence Of Smooth Solutions Of A 3D Loglog Energy-Supercritical Wave Equation",
+      "arxiv_id": null,
+      "in_registry": false
+    },
+    "roy2": {
+      "title": "One Remark on Barely H^{s_p} Supercritical Wave Equations",
+      "arxiv_id": null,
+      "in_registry": false
+    },
+    "tao-supercrit": {
+      "title": "Global regularity for a logarithmically supercritical defocusing nonlinear wave equation for spherically symmetric data",
+      "arxiv_id": null,
+      "in_registry": false
+    }
+  }
+}

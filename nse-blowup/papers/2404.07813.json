@@ -1,0 +1,229 @@
+{
+  "paper": "2404.07813v2",
+  "title": "Illposedness of incompressible fluids in supercritical Sobolev spaces",
+  "authors": [
+    "Xiaoyutao Luo"
+  ],
+  "generated": "2026-03-12",
+  "status": "complete",
+  "nodes": {
+    "thm:1.1": {
+      "type": "Theorem",
+      "number": "1.1",
+      "section": "1",
+      "role": "main_result",
+      "summary": "3D Euler is strongly illposed in $H^s(R^3)$ for 0 < s < 5/2: for any $\\varepsilon>0$, there exists smooth divergence-free u₀ with ||u₀$||_{H^s} \\le \\varepsilon$ such that ||u(t*)||_{Ḣ$^s} \\ge \\varepsilon$⁻^1 at some $t* \\le \\varepsilon$."
+    },
+    "rem:1.2": {
+      "type": "Remark",
+      "number": "1.2",
+      "section": "1",
+      "role": "context",
+      "summary": "Construction is explicit: axisymmetric with large swirl, solution remains smooth at inflation time t*. Norm inflation visible only for s' $\\ge$ s."
+    },
+    "thm:1.3": {
+      "type": "Theorem",
+      "number": "1.3",
+      "section": "1",
+      "role": "main_result",
+      "summary": "3D Navier-Stokes is strongly illposed in $H^s(R^3)$ for 0 < s < 1/2: same norm inflation construction as Euler but with restricted range."
+    },
+    "prop:2.1": {
+      "type": "Proposition",
+      "number": "2.1",
+      "section": "2",
+      "role": "foundational",
+      "summary": "If $|\\nablau|_{L^\\infty} \\le$ M on [0,t₀], then $||u(t)||_{W^{k,p}} \\le ||u$₀$||_{W^{k,p}} exp(C_{k,p}$ M t). Standard Sobolev propagation under bounded gradient."
+    },
+    "lem:2.2": {
+      "type": "Lemma",
+      "number": "2.2",
+      "section": "2",
+      "role": "technical",
+      "summary": "Gronwall's inequality: if $d\\eta/dt \\le \\alpha(t)\\eta + \\beta(t)$ with nonnegative summable $\\alpha, \\beta$, then $\\eta(t) \\leexp(\\int\\alpha)(\\eta(0) + \\int\\beta)$."
+    },
+    "rem:3.1": {
+      "type": "Remark",
+      "number": "3.1",
+      "section": "3",
+      "role": "context",
+      "summary": "Initial data u₀ is axisymmetric: vortex ring + rotational flow supported in small torus at distance $~\\nu$⁻^1 from origin with cross-section $~\\mu$⁻^1."
+    },
+    "lem:3.2": {
+      "type": "Lemma",
+      "number": "3.2",
+      "section": "3",
+      "role": "key_technical",
+      "summary": "The initial data u₀ is smooth, divergence-free, compactly supported, and satisfies ||u₀$||_{W^{k,p}} \\le C_{k,p} \\varepsilon^2 \\mu^{k-s}$ with ||u₀$||_{H^s} \\le \\varepsilon$ for small $\\varepsilon$."
+    },
+    "rem:3.3": {
+      "type": "Remark",
+      "number": "3.3",
+      "section": "3",
+      "role": "context",
+      "summary": "Only swirl component ū$_\\theta$ evolves in time; vortex ring part is stationary. $L^p$ norms almost constant but norms with derivatives grow — this drives Ḣ^s inflation."
+    },
+    "prop:3.4": {
+      "type": "Proposition",
+      "number": "3.4",
+      "section": "3",
+      "role": "key_mechanism",
+      "summary": "The approximate solution ū is smooth, divergence-free, axisymmetric, satisfies $W^{k,p}$ bounds, and solves Euler up to a controlled error field Ē with $||\\nabla^k$ Ē$||_{L^2} \\le$ C $\\mu^{k-s}(\\mu$⁻$^1\\nu)(\\mu^{2-s}\\nu^{1/2})$."
+    },
+    "lem:3.5": {
+      "type": "Lemma",
+      "number": "3.5",
+      "section": "3",
+      "role": "key_technical",
+      "summary": "Lower bound: ||ū(t*)||_{Ḣ$^s} \\ge \\varepsilon$⁻^2 at critical time t*. Proves the norm inflation actually occurs for the approximate solution."
+    },
+    "prop:4.1": {
+      "type": "Proposition",
+      "number": "4.1",
+      "section": "4",
+      "role": "main_technical",
+      "summary": "The true Euler solution u exists smoothly up to t* and satisfies ||u - ū$||_{L^\\infty([0,t*]$;$H^k)} \\le C_{k,\\varepsilon} \\mu^{k-s}$. Perturbation stays controlled."
+    },
+    "lem:4.2": {
+      "type": "Lemma",
+      "number": "4.2",
+      "section": "4",
+      "role": "technical",
+      "summary": "$L^2$ estimate: under bootstrap assumption, $||w(t)||_{L^2} \\le C_\\varepsilon \\mu^{-s}(\\mu$⁻$^1\\nu)$ where w = u - ū."
+    },
+    "lem:4.3": {
+      "type": "Lemma",
+      "number": "4.3",
+      "section": "4",
+      "role": "technical",
+      "summary": "Higher Sobolev estimate by induction: $||\\nabla^k w(t)||_{L^2} \\le C_{\\varepsilon,k} \\mu^{k-s}(\\mu$⁻$^1\\nu)^{\\delta_k}$ with $\\delta_k = (9 + 10^{-k})/10 > 0$."
+    }
+  },
+  "edges": [
+    {
+      "from": "thm:1.1",
+      "to": "prop:4.1",
+      "type": "depends_on",
+      "note": "Main theorem reduces to showing smooth existence up to t*"
+    },
+    {
+      "from": "thm:1.1",
+      "to": "lem:3.5",
+      "type": "depends_on",
+      "note": "Needs lower bound on ū(t*) which transfers to u"
+    },
+    {
+      "from": "thm:1.3",
+      "to": "thm:1.1",
+      "type": "depends_on",
+      "note": "Same construction with restricted s range"
+    },
+    {
+      "from": "prop:4.1",
+      "to": "lem:4.2",
+      "type": "depends_on",
+      "note": "Uses $L^2$ control on perturbation"
+    },
+    {
+      "from": "prop:4.1",
+      "to": "lem:4.3",
+      "type": "depends_on",
+      "note": "Uses higher Sobolev control for bootstrap improvement"
+    },
+    {
+      "from": "prop:4.1",
+      "to": "prop:3.4",
+      "type": "depends_on",
+      "note": "Uses error field bounds from approximate solution"
+    },
+    {
+      "from": "lem:4.2",
+      "to": "prop:3.4",
+      "type": "depends_on",
+      "note": "Uses $\\nabla$ū and Ē bounds"
+    },
+    {
+      "from": "lem:4.2",
+      "to": "lem:2.2",
+      "type": "depends_on",
+      "note": "Gronwall inequality for $L^2$ bound"
+    },
+    {
+      "from": "lem:4.3",
+      "to": "lem:4.2",
+      "type": "depends_on",
+      "note": "Base case k=0 from lem:4.2"
+    },
+    {
+      "from": "lem:4.3",
+      "to": "prop:3.4",
+      "type": "depends_on",
+      "note": "Uses error and ū bounds"
+    },
+    {
+      "from": "lem:3.5",
+      "to": "prop:3.4",
+      "type": "depends_on",
+      "note": "Uses $W^{k,p}$ bounds on ū"
+    },
+    {
+      "from": "lem:3.5",
+      "to": "lem:3.2",
+      "type": "depends_on",
+      "note": "Uses initial data bounds"
+    },
+    {
+      "from": "prop:3.4",
+      "to": "lem:3.2",
+      "type": "depends_on",
+      "note": "Uses initial data structure and bounds"
+    },
+    {
+      "from": "lem:3.2",
+      "to": "rem:3.1",
+      "type": "depends_on",
+      "note": "Construction geometry from remark"
+    }
+  ],
+  "critical_path": [
+    "thm:1.1",
+    "prop:4.1",
+    "lem:4.3",
+    "lem:4.2",
+    "prop:3.4",
+    "lem:3.2"
+  ],
+  "proof_architecture": {
+    "construction": {
+      "description": "Build axisymmetric initial data as vortex ring + swirl in small torus",
+      "nodes": [
+        "rem:3.1",
+        "lem:3.2"
+      ]
+    },
+    "approximate_solution": {
+      "description": "Construct ū solving Euler up to controlled error, with explicit $W^{k,p}$ bounds and norm inflation at t*",
+      "nodes": [
+        "rem:3.3",
+        "prop:3.4",
+        "lem:3.5"
+      ]
+    },
+    "perturbation_control": {
+      "description": "Bootstrap argument: w = u - ū stays small in all Sobolev norms up to t*",
+      "nodes": [
+        "lem:4.2",
+        "lem:4.3",
+        "prop:4.1"
+      ]
+    },
+    "tools": {
+      "description": "Standard PDE tools: Gronwall, Sobolev propagation",
+      "nodes": [
+        "prop:2.1",
+        "lem:2.2"
+      ]
+    }
+  },
+  "bibliography": {}
+}

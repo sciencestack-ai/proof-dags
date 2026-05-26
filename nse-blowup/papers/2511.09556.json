@@ -1,0 +1,450 @@
+{
+  "paper": "2511.09556",
+  "title": "Instantaneous Type I blow-up and non-uniqueness of smooth solutions of the Navier-Stokes equations",
+  "authors": [
+    "Alexey Cheskidov",
+    "Mimi Dai",
+    "Stan Palasek"
+  ],
+  "generated": "2026-03-10",
+  "status": "complete",
+  "nodes": {
+    "thm:1.1": {
+      "type": "Theorem",
+      "number": "1.1",
+      "section": "1.1",
+      "role": "main_result",
+      "summary": "For any smooth divergence-free $u_0$ on $T^d (d\\ge2)$, there exists a weak solution with Type I blow-up: ‖u(t)‖$_\\infty$ ~ $1/\\sqrt(t$−T_*) from the right, smooth at every time including T_*, weak-* continuous in $BMO^{-1}$, and satisfying logarithmically-weakened Prodi-Serrin bounds."
+    },
+    "thm:1.6": {
+      "type": "Theorem",
+      "number": "1.6",
+      "section": "1.1",
+      "role": "main_result",
+      "summary": "Constructs a continuous one-parameter family $u^(\\sigma)$ of weak solutions with the same initial data, all smooth in space, agreeing with the classical solution U on [0,T_*] but diverging for t > T_*. The family converges weak-* in $BMO^{-1}$ to U along a discrete subsequence $\\sigma_n \\to 0+$."
+    },
+    "thm:1.10": {
+      "type": "Theorem",
+      "number": "1.10",
+      "section": "1.5",
+      "role": "context",
+      "summary": "Sharpness: if a weak solution with the same smooth initial data satisfies u $\\in L^2_t L^\\infty_x$, then it must equal the classical solution. The constructed solutions just barely fail this condition."
+    },
+    "thm:1.11": {
+      "type": "Theorem",
+      "number": "1.11",
+      "section": "1.5",
+      "role": "context",
+      "summary": "Sharpness: zero initial data + energy class + either $(i) L^\\infty_t B^{-1}_{\\infty,\\infty}$ or (ii) Leray-Hopf $+ L^{2,\\infty}_t L^\\infty_x$ implies u ≡ 0. Shows the constructed non-trivial solutions live just outside these uniqueness classes."
+    },
+    "def:2.1": {
+      "type": "Definition",
+      "number": "2.1",
+      "section": "2.3",
+      "role": "definition",
+      "summary": "Weak solution of NSE on $T^d \\times [0,T]$: divergence-free u $\\in L^2$ satisfying the distributional formulation against test functions in $D_T$."
+    },
+    "lem:3.1": {
+      "type": "Lemma",
+      "number": "3.1",
+      "section": "3.2",
+      "role": "technical",
+      "summary": "Exponential measure decay: $|\\Omega_k| \\le 2^{-k}|T^d|$, and a localized version $|\\Omega_k \\capQ| \\le 2^{-(k-k_0)}|Q|$ for cubes Q of appropriate scale. Proved by improved Hölder's inequality on periodic cutoffs."
+    },
+    "lem:3.2": {
+      "type": "Lemma",
+      "number": "3.2",
+      "section": "3.3",
+      "role": "key_mechanism",
+      "summary": "Constructs smooth coefficient functions $a_{j,k}$ and velocity potentials $\\psi_{j,k}$ satisfying the rank-one decomposition identity (3.10), support inclusion supp $\\psi_{j,k} \\subset \\Omega_k$, and derivative bounds ‖$\\nabla^n \\psi_{j,k}$‖$_\\infty$ ≲ $N_{j,k}^{n-2}$. This is the core convex-integration-style building block."
+    },
+    "prop:4.1": {
+      "type": "Proposition",
+      "number": "4.1",
+      "section": "4.1",
+      "role": "technical",
+      "summary": "Error bound between R̄_k and its leading-order integral $I_k$: ‖$\\nabla^n(R$̄_k − $I_k)$‖$_\\infty \\le \\varepsilon_0 N^{-\\alpha}_{1,k+1}(t^{-n/2+\\alpha}+1)$ for A, b, m large enough. Separates oscillatory errors from the dominant downscale interaction."
+    },
+    "prop:4.2": {
+      "type": "Proposition",
+      "number": "4.2",
+      "section": "4.1",
+      "role": "main_technical",
+      "summary": "Error bound between the true remainder $R_k$ and its approximation R̄_k: ‖$\\nabla^n(R_k$ − R̄_k)‖$_\\infty \\le \\varepsilon_0 N^{-\\alpha}_{1,k+1}(t^{-n/2+\\alpha}+1)$. Controls the deviation of v from v̄ in all derivative norms."
+    },
+    "prop:4.3": {
+      "type": "Proposition",
+      "number": "4.3",
+      "section": "4.2",
+      "role": "key_reduction",
+      "summary": "The principal part v satisfies a forced NSE $\\partial_t$ v − $\\Deltav +$ P div(v⊗v) = P div f with Hölder-small error f (4.16), Type I velocity bounds ‖$\\nabla^n$ v(t)‖$_\\infty$ ≲ $t^{-(1+n)/2} (4.18)$, and a logarithmic spacetime bound (4.19). This is the central estimate that reduces the full problem to a perturbation."
+    },
+    "lem:5.1": {
+      "type": "Lemma",
+      "number": "5.1",
+      "section": "5.2",
+      "role": "technical",
+      "summary": "Bilinear estimate: the tensor product f ⊙ g maps X $\\times$ X $\\to$ Y, with ‖f ⊙ g‖_Y ≲ ‖f‖_X ‖g‖_X. Enables the contraction mapping for the corrector."
+    },
+    "prop:5.2": {
+      "type": "Proposition",
+      "number": "5.2",
+      "section": "5.1",
+      "role": "main_technical",
+      "summary": "Semigroup mapping estimate: the propagator S(t,t') (linearized around $U^{1/N_0} +$ v) satisfies ‖$S(t,t')\\varphi$‖$_\\infty + (t$−t')^{1/2}‖$\\nablaS(t,t')\\varphi$‖$_{C^\\kappa}$ ≲ $t^{-1/2}(t')^{-1+\\alpha}(t/t')^\\varepsilon$ ‖$\\varphi$‖_Y. Proved by Duhamel iteration using the log-spacetime bound (4.19) on v."
+    },
+    "prop:5.3": {
+      "type": "Proposition",
+      "number": "5.3",
+      "section": "5.2",
+      "role": "key_reduction",
+      "summary": "Fixed point: for A $\\gg 1$ there exists a small corrector w $\\in B_X(0,\\delta)$ such that u $= U^{1/N_0} +$ v + w solves NSE on [0,T̄]. Extends to a classical solution on [0,T] by choosing $N_0$ large and applying the Auscher-Dubois-Tchamitchian stability theorem."
+    },
+    "lem:6.1": {
+      "type": "Lemma",
+      "number": "6.1",
+      "section": "6",
+      "role": "auxiliary",
+      "summary": "Weak solution gluing: if u is classical on [0,T_*) and (T_*,T] separately, u $\\in L^2 \\cap L^\\infty_t H^s$, and the distributional limits from left and right at T_* agree, then u is a weak solution on [0,T]."
+    },
+    "prop:6.2": {
+      "type": "Proposition",
+      "number": "6.2",
+      "section": "6",
+      "role": "main_technical",
+      "summary": "The constructed u belongs to $L^{2,\\infty}_t L^\\infty_x \\cap L^2_t L^p_x (all$ p $< \\infty)$, lies in the Koch-Tataru path space $X_{[0,T-T_*]}$, is weak-* continuous into $BMO^{-1}$, and (for d $\\ge 3)$ satisfies u $\\in L^\\infty_t$ Ẇ$^{-1,\\infty}_x$. The BMO estimate on $\\sum N_{j,k}\\nabla\\psi_{j,k}$ uses Lem 3.1's localized measure bound."
+    },
+    "lem:A.1": {
+      "type": "Lemma",
+      "number": "A.1",
+      "section": "A",
+      "role": "auxiliary",
+      "summary": "Commutator estimate: ‖$\\nabla^n[e^{t\\Delta}$, $a(x)]sin(\\xi\\cdotx)$‖$_\\infty$ is bounded by terms involving $|\\xi|^n$, derivatives of a, and exponential decay $e^{-|\\xi|^2 t/4}$. Controls the error when the heat semigroup acts on spatially modulated oscillations."
+    },
+    "lem:A.2": {
+      "type": "Lemma",
+      "number": "A.2",
+      "section": "A",
+      "role": "auxiliary",
+      "summary": "Riesz-projected oscillation estimate: bounds ‖$\\nabla^n e^{t\\Delta}$ R P(a $e^{i\\xi\\cdotx})$‖$_{C^\\kappa}$ with Hölder regularity, extending lem:A.1 to include the Riesz transform and Leray projection."
+    },
+    "lem:A.3": {
+      "type": "Lemma",
+      "number": "A.3",
+      "section": "A",
+      "role": "auxiliary",
+      "summary": "Oscillation estimate: bounds the heat-evolved Riesz-projected product $a(x)(b(\\lambdax)sin^2(\\Xi\\cdotx)$ − mean) in $C^\\kappa$. Controls interactions between building blocks at different frequency scales."
+    }
+  },
+  "edges": [
+    {
+      "from": "thm:1.1",
+      "to": "lem:6.1",
+      "type": "depends_on",
+      "note": "Uses lem:6.1 to establish that u = U + v + w is a weak solution across the blow-up time T_*"
+    },
+    {
+      "from": "thm:1.1",
+      "to": "prop:4.3",
+      "type": "depends_on",
+      "note": "Type I upper bound ‖v(t)‖$_\\infty$ ≲ $t^{-1/2}$ from estimate (4.18)"
+    },
+    {
+      "from": "thm:1.1",
+      "to": "prop:5.3",
+      "type": "depends_on",
+      "note": "Corrector bound ‖w(t)‖$_\\infty$ ≲ $t^{-1/2+\\alpha/2}$ from w $\\in B_X(0,\\delta)$"
+    },
+    {
+      "from": "thm:1.1",
+      "to": "prop:6.2",
+      "type": "depends_on",
+      "note": "Borderline space membership $(L^{2,\\infty}L^\\infty$, Koch-Tataru, $BMO^{-1})$ for conclusions (iii)-(v)"
+    },
+    {
+      "from": "thm:1.6",
+      "to": "prop:5.3",
+      "type": "depends_on",
+      "note": "Family $u^(\\sigma)$ defined by varying $N_0 = C/\\sigma$ in prop:5.3; fixed point applies for each $\\sigma$"
+    },
+    {
+      "from": "thm:1.6",
+      "to": "prop:6.2",
+      "type": "depends_on",
+      "note": "Koch-Tataru space membership and $BMO^{-1}$ uniform bound needed for weak-* convergence argument"
+    },
+    {
+      "from": "lem:6.1",
+      "to": "def:2.1",
+      "type": "depends_on",
+      "note": "Verifies the distributional weak formulation from def:2.1 by splitting the time integral at T_*"
+    },
+    {
+      "from": "prop:6.2",
+      "to": "prop:4.2",
+      "type": "depends_on",
+      "note": "$R_k$ − R̄_k bounds used in Ẇ$^{-1,\\infty}$ estimate via ‖$R_k(t)$‖$_\\infty$ ≲ $N_{1,k+1}^{-\\alpha} + 1_{t\\leN_{1,k}^{-2}}$"
+    },
+    {
+      "from": "prop:6.2",
+      "to": "prop:4.3",
+      "type": "depends_on",
+      "note": "Bounds (4.17)-(4.18) on v for $L^{2,\\infty}L^\\infty$ and $L^2 L^p$; estimate (4.18) for Koch-Tataru criterion via (6.1)"
+    },
+    {
+      "from": "prop:6.2",
+      "to": "prop:5.3",
+      "type": "depends_on",
+      "note": "w $\\in B_X(0,\\delta)$ gives ‖w(t)‖$_\\infty$ ≲ $t^{-1/2+\\alpha/2}$ for Koch-Tataru criterion"
+    },
+    {
+      "from": "prop:6.2",
+      "to": "lem:3.1",
+      "type": "depends_on",
+      "note": "Localized measure bound $|\\Omega_k \\capQ| \\le 2^{-(k-k_*)}|Q|$ controls the BMO norm of $\\sum N_{j,k}\\nabla\\psi_{j,k}$"
+    },
+    {
+      "from": "prop:6.2",
+      "to": "lem:3.2",
+      "type": "depends_on",
+      "note": "Derivative bounds ‖$\\nabla^n \\psi_{j,k}$‖$_\\infty$ ≲ $N_{j,k}^{n-2}$ for BMO and $L^p$ estimates on v"
+    },
+    {
+      "from": "prop:6.2",
+      "to": "lem:A.1",
+      "type": "depends_on",
+      "note": "Commutator estimate bounds the $u_1 = \\sum[e^{t\\Delta}, a_{j,k}\\varphi_{j,k}]sin(\\cdot)$ term in the Koch-Tataru decomposition"
+    },
+    {
+      "from": "prop:5.3",
+      "to": "prop:5.2",
+      "type": "depends_on",
+      "note": "Semigroup estimate on S(t,t') needed to bound F(w) in the contraction mapping"
+    },
+    {
+      "from": "prop:5.3",
+      "to": "prop:4.3",
+      "type": "depends_on",
+      "note": "Bound ‖f‖_Y $\\le \\varepsilon_0$ from (4.16) ensures the forcing is small enough for the fixed point to close"
+    },
+    {
+      "from": "prop:5.3",
+      "to": "lem:5.1",
+      "type": "depends_on",
+      "note": "Bilinear estimate ‖w ⊗ w‖_Y ≲ ‖w‖$_X^2$ controls the nonlinear term in F(w)"
+    },
+    {
+      "from": "prop:5.2",
+      "to": "prop:4.3",
+      "type": "depends_on",
+      "note": "Log-spacetime bound (4.19) on v controls the integral of ‖v(s)‖$_\\infty$ in the Duhamel iteration for S(t,t')"
+    },
+    {
+      "from": "prop:4.3",
+      "to": "prop:4.2",
+      "type": "depends_on",
+      "note": "$R_k$ − R̄_k bounds combine with v̄_k estimates to give full $v_k$ bounds via (4.21)"
+    },
+    {
+      "from": "prop:4.3",
+      "to": "lem:3.2",
+      "type": "depends_on",
+      "note": "Derivative bounds on $\\psi_{j,k}$ give the leading-order estimate ‖$\\nabla^n$ v̄_k‖_p ≲ $2^{-k/p} \\sum N_{j,k}^{1+n} e^{-N_{j,k}^2$ t} via (4.20)"
+    },
+    {
+      "from": "prop:4.2",
+      "to": "prop:4.1",
+      "type": "depends_on",
+      "note": "R̄_k − $I_k$ error feeds into the triangle inequality $R_k$ − R̄_k $= (R_k$ − $I_k)$ − (R̄_k − $I_k) +$ oscillatory terms"
+    },
+    {
+      "from": "prop:4.2",
+      "to": "lem:A.1",
+      "type": "depends_on",
+      "note": "Commutator estimates for heat semigroup acting on oscillatory building blocks"
+    },
+    {
+      "from": "prop:4.2",
+      "to": "lem:A.2",
+      "type": "depends_on",
+      "note": "Riesz-projected oscillation estimates for Hölder-norm control"
+    },
+    {
+      "from": "prop:4.2",
+      "to": "lem:A.3",
+      "type": "depends_on",
+      "note": "Oscillation estimates for cross-scale interaction terms"
+    },
+    {
+      "from": "prop:4.1",
+      "to": "lem:3.2",
+      "type": "depends_on",
+      "note": "Coefficient bounds ‖$\\nabla^n a_{j,k}$‖$_\\infty$ and $\\psi_{j,k}$ support properties from lem:3.2 enter the R̄_k decomposition"
+    },
+    {
+      "from": "prop:4.1",
+      "to": "lem:A.1",
+      "type": "depends_on",
+      "note": "Commutator estimate controls $[e^{t\\Delta}, a_{j,k+1}^2]sin(\\cdot)$ terms in $I_k$"
+    },
+    {
+      "from": "prop:4.1",
+      "to": "lem:A.3",
+      "type": "depends_on",
+      "note": "Oscillation estimate bounds the mean-subtracted interaction terms in $I_k$"
+    },
+    {
+      "from": "lem:3.2",
+      "to": "lem:3.1",
+      "type": "depends_on",
+      "note": "Support inclusion supp $\\psi_{j,k} \\subset \\Omega_k$ requires the measure and geometric structure of $\\Omega_k$ from lem:3.1"
+    }
+  ],
+  "critical_path": [
+    "thm:1.1",
+    "prop:5.3",
+    "prop:5.2",
+    "prop:4.3",
+    "prop:4.2",
+    "prop:4.1",
+    "lem:3.2",
+    "lem:3.1"
+  ],
+  "proof_architecture": {
+    "layer_1_building_blocks": {
+      "description": "Construction of oscillatory building blocks: frequency scales, geometric cutoffs, velocity potentials with rank-one decomposition",
+      "nodes": [
+        "lem:3.1",
+        "lem:3.2"
+      ]
+    },
+    "layer_2_leading_order_estimates": {
+      "description": "Error bounds comparing the true remainder $R_k$ to its approximation, culminating in Type I bounds and small residual f for the principal part v",
+      "nodes": [
+        "prop:4.1",
+        "prop:4.2",
+        "prop:4.3"
+      ]
+    },
+    "layer_3_corrector": {
+      "description": "Fixed point construction of corrector w via semigroup estimates for the linearization around v, upgrading the approximate solution to an exact one",
+      "nodes": [
+        "lem:5.1",
+        "prop:5.2",
+        "prop:5.3"
+      ]
+    },
+    "layer_4_main_results": {
+      "description": "Assembly: u = U + v + w is a weak solution with Type I blow-up, borderline regularity, and non-uniqueness via the $N_0$ parametrization",
+      "nodes": [
+        "def:2.1",
+        "lem:6.1",
+        "prop:6.2",
+        "thm:1.1",
+        "thm:1.6"
+      ]
+    },
+    "layer_5_sharpness": {
+      "description": "Uniqueness results in $L^2_t L^\\infty_x$ and related classes establishing that the construction is borderline-optimal",
+      "nodes": [
+        "thm:1.10",
+        "thm:1.11"
+      ]
+    },
+    "layer_6_appendix_estimates": {
+      "description": "Technical commutator and oscillation estimates for the heat semigroup acting on spatially modulated oscillations",
+      "nodes": [
+        "lem:A.1",
+        "lem:A.2",
+        "lem:A.3"
+      ]
+    }
+  },
+  "bibliography": {
+    "CoiculescuPalasek2025": {
+      "title": "Non-Uniqueness of Smooth Solutions of the Navier-Stokes Equations from Critical Data",
+      "arxiv_id": "2503.14699",
+      "in_registry": false
+    },
+    "BuckmasterVicol2019": {
+      "title": "Nonuniqueness of weak solutions to the Navier-Stokes equations",
+      "arxiv_id": null,
+      "in_registry": false
+    },
+    "CheskidovLuo2022": {
+      "title": "Sharp nonuniqueness for the Navier-Stokes equations",
+      "arxiv_id": "2009.06596",
+      "in_registry": false
+    },
+    "palasek2024non": {
+      "title": "Non-uniqueness in the Leray-Hopf class for a dyadic Navier-Stokes model",
+      "arxiv_id": "2407.06179",
+      "in_registry": false
+    },
+    "palasek2025arbitrary": {
+      "title": "Arbitrary norm growth in the 3D Navier-Stokes equations",
+      "arxiv_id": "2509.18595",
+      "in_registry": false
+    },
+    "abc": {
+      "title": "Non-uniqueness of Leray solutions of the forced Navier-Stokes equations",
+      "arxiv_id": null,
+      "in_registry": false
+    },
+    "hou2024regularity": {
+      "title": "On regularity of solutions to the Navier-Stokes equation with initial data in BMO^{-1}",
+      "arxiv_id": "2410.16468",
+      "in_registry": false
+    },
+    "hou2025nonuniqueness": {
+      "title": "Nonuniqueness of Leray-Hopf solutions to the unforced incompressible 3D Navier-Stokes Equation",
+      "arxiv_id": "2509.25116",
+      "in_registry": false
+    },
+    "CZZ2025": {
+      "title": "Global dissipative solutions of the 3D Navier-Stokes and MHD equations",
+      "arxiv_id": "2503.05692",
+      "in_registry": false
+    },
+    "KochTataru2001": {
+      "title": "Well-posedness for the Navier-Stokes equations",
+      "arxiv_id": null,
+      "in_registry": false
+    },
+    "CheskidovLuo2020": {
+      "title": "Energy equality for the Navier-Stokes equations in weak-in-time Onsager spaces",
+      "arxiv_id": "1802.05785",
+      "in_registry": false
+    },
+    "CheskidovLuo2023": {
+      "title": "L^2-critical nonuniqueness for the 2D Navier-Stokes equations",
+      "arxiv_id": null,
+      "in_registry": false
+    },
+    "Isett2018": {
+      "title": "A proof of Onsager's conjecture",
+      "arxiv_id": null,
+      "in_registry": false
+    },
+    "vishik1": {
+      "title": "Instability and non-uniqueness in the Cauchy problem for the Euler equations, Part I",
+      "arxiv_id": "1805.09426",
+      "in_registry": false
+    },
+    "ModenaSz18": {
+      "title": "Non-uniqueness for the transport equation with Sobolev vector fields",
+      "arxiv_id": null,
+      "in_registry": false
+    },
+    "MR4776418": {
+      "title": "Instantaneous gap loss of Sobolev regularity for the 2D incompressible Euler equations",
+      "arxiv_id": null,
+      "in_registry": false
+    },
+    "Escauriaza": {
+      "title": "$L_{3,\\infty}$-solutions to the Navier-Stokes equations and backward uniqueness",
+      "arxiv_id": null,
+      "in_registry": false
+    }
+  }
+}

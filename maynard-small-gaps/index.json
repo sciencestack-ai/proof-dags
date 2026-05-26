@@ -1,0 +1,207 @@
+{
+  "description": "Proof DAG registry index for the Maynard-Tao bounded-gaps program.",
+  "papers": {
+    "math/0508185v1": {
+      "status": "complete",
+      "title": "Primes in Tuples I",
+      "authors": [
+        "D. A. Goldston",
+        "J. Pintz",
+        "C. Y. Yıldırım"
+      ],
+      "year": 2005,
+      "nodes": 8,
+      "edges": 12,
+      "generated": "2026-05-06",
+      "updated": "2026-05-19"
+    },
+    "0710.2728v1": {
+      "status": "complete",
+      "title": "Primes in Tuples II",
+      "authors": [
+        "D. A. Goldston",
+        "J. Pintz",
+        "C. Y. Yıldırım"
+      ],
+      "year": 2007,
+      "nodes": 12,
+      "edges": 17,
+      "generated": "2026-05-06",
+      "updated": "2026-05-19"
+    },
+    "1305.6289v1": {
+      "status": "complete",
+      "title": "Polignac Numbers, Conjectures of Erdős on Gaps between Primes, Arithmetic Progressions in Primes, and the Bounded Gap Conjecture",
+      "authors": [
+        "János Pintz"
+      ],
+      "year": 2013,
+      "nodes": 17,
+      "edges": 11,
+      "generated": "2026-05-06",
+      "updated": "2026-05-19"
+    },
+    "1311.4600v3": {
+      "status": "complete",
+      "title": "Small gaps between primes",
+      "authors": [
+        "James Maynard"
+      ],
+      "year": 2013,
+      "nodes": 17,
+      "edges": 22,
+      "generated": "2026-05-06",
+      "updated": "2026-05-19"
+    },
+    "1402.0811": {
+      "status": "partial",
+      "title": "New equidistribution estimates of Zhang type",
+      "authors": [
+        "D. H. J. Polymath"
+      ],
+      "year": 2014,
+      "nodes": 20,
+      "edges": 21,
+      "generated": "2026-05-06",
+      "updated": "2026-05-19",
+      "partial_reason": "88 math envs in source; spine captured (~25 nodes), Section 4-6 minor remarks omitted."
+    },
+    "1403.5808v1": {
+      "status": "complete",
+      "title": "Bounded gaps between primes in number fields and function fields",
+      "authors": [
+        "Abel Castillo",
+        "Chris Hall",
+        "Robert J. Lemke Oliver",
+        "Paul Pollack",
+        "Lola Thompson"
+      ],
+      "year": 2014,
+      "nodes": 15,
+      "edges": 17,
+      "generated": "2026-05-06",
+      "updated": "2026-05-19"
+    },
+    "1404.5094v2": {
+      "status": "complete",
+      "title": "On limit points of the sequence of normalized prime gaps",
+      "authors": [
+        "William D. Banks",
+        "Tristan Freiberg",
+        "James Maynard"
+      ],
+      "year": 2014,
+      "nodes": 5,
+      "edges": 6,
+      "generated": "2026-05-06",
+      "updated": "2026-05-19"
+    },
+    "1405.2593v2": {
+      "status": "complete",
+      "title": "Dense clusters of primes in subsets",
+      "authors": [
+        "James Maynard"
+      ],
+      "year": 2014,
+      "nodes": 13,
+      "edges": 16,
+      "generated": "2026-05-06",
+      "updated": "2026-05-19"
+    },
+    "1407.4897v4": {
+      "status": "complete",
+      "title": "Variants of the Selberg sieve, and bounded intervals containing many primes",
+      "authors": [
+        "D. H. J. Polymath"
+      ],
+      "year": 2014,
+      "nodes": 30,
+      "edges": 46,
+      "generated": "2026-05-06",
+      "updated": "2026-05-19"
+    },
+    "1408.4505v2": {
+      "status": "complete",
+      "title": "Large gaps between consecutive prime numbers",
+      "authors": [
+        "Kevin Ford",
+        "Ben Green",
+        "Sergei Konyagin",
+        "Terence Tao"
+      ],
+      "year": 2014,
+      "nodes": 18,
+      "edges": 21,
+      "generated": "2026-05-06",
+      "updated": "2026-05-19"
+    },
+    "1408.5110v2": {
+      "status": "complete",
+      "title": "Large gaps between primes",
+      "authors": [
+        "James Maynard"
+      ],
+      "year": 2014,
+      "nodes": 8,
+      "edges": 11,
+      "generated": "2026-05-06",
+      "updated": "2026-05-19"
+    },
+    "1511.04468": {
+      "status": "complete",
+      "title": "Chains of large gaps between primes",
+      "authors": [
+        "Kevin Ford",
+        "James Maynard",
+        "Terence Tao"
+      ],
+      "year": 2015,
+      "nodes": 16,
+      "edges": 16,
+      "generated": "2026-05-06",
+      "updated": "2026-05-19"
+    },
+    "1604.01041v2": {
+      "status": "complete",
+      "title": "Primes with restricted digits",
+      "authors": [
+        "James Maynard"
+      ],
+      "year": 2016,
+      "nodes": 9,
+      "edges": 10,
+      "generated": "2026-05-07",
+      "updated": "2026-05-19"
+    },
+    "2006.06572v2": {
+      "status": "complete",
+      "title": "Primes in arithmetic progressions to large moduli I: Fixed residue classes",
+      "authors": [
+        "James Maynard"
+      ],
+      "year": 2020,
+      "nodes": 12,
+      "edges": 12,
+      "generated": "2026-05-07",
+      "updated": "2026-05-19"
+    },
+    "2006.07088v2": {
+      "status": "complete",
+      "title": "Primes in arithmetic progressions to large moduli II: Well-factorable estimates",
+      "authors": [
+        "James Maynard"
+      ],
+      "year": 2020,
+      "nodes": 10,
+      "edges": 9,
+      "generated": "2026-05-07",
+      "updated": "2026-05-19"
+    }
+  },
+  "totals": {
+    "papers": 15,
+    "nodes": 210,
+    "intra_paper_edges": 247,
+    "cross_paper_edges": 84
+  }
+}

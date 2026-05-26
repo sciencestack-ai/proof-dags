@@ -1,0 +1,135 @@
+{
+  "paper": "1603.04246v2",
+  "title": "The sphere packing problem in dimension 8",
+  "authors": ["Maryna Viazovska"],
+  "generated": "2026-05-26",
+  "status": "complete",
+  "nodes": {
+    "thm:1": {
+      "type": "Theorem",
+      "number": "1",
+      "section": "1",
+      "role": "main_result",
+      "summary": "$E_8$ is the densest sphere packing in $\\mathbb{R}^8$: no packing of unit balls in $\\mathbb{R}^8$ has density greater than that of the $E_8$-lattice packing — the Fields-medal result resolving Conjecture 2 of Cohn–Elkies for $n=8$."
+    },
+    "thm:2": {
+      "type": "Theorem",
+      "number": "2",
+      "section": "2",
+      "role": "foundational",
+      "summary": "Restatement of the Cohn–Elkies linear-programming bound: an admissible $f:\\mathbb{R}^d\\to\\mathbb{R}$ with $f(x)\\le 0$ for $\\|x\\|\\ge 1$, $\\widehat{f}(x)\\ge 0$ everywhere, and $f(0)=\\widehat{f}(0)$ gives a density bound. Imported from Cohn–Elkies (math/0110009)."
+    },
+    "thm:3": {
+      "type": "Theorem",
+      "number": "3",
+      "section": "1",
+      "role": "key_reduction",
+      "summary": "Existence of the magic function for $E_8$: a radial Schwartz $g:\\mathbb{R}^8\\to\\mathbb{R}$ with $g(x)\\le 0$ for $\\|x\\|\\ge\\sqrt{2}$, $\\widehat{g}(x)\\ge 0$ everywhere, and $g(0)=\\widehat{g}(0)=1$ — the function whose existence, by Theorem 2 applied at radius $r=\\sqrt{2}$, proves Theorem 1."
+    },
+    "thm:4": {
+      "type": "Theorem",
+      "number": "4",
+      "section": "1",
+      "role": "key_mechanism",
+      "summary": "Explicit construction of the magic function: $g(x):=\\frac{\\pi i}{8640}a(x)+\\frac{i}{240\\pi}b(x)$ satisfies the three magic-function conditions, and $g$ and $\\widehat{g}$ vanish only at vectors $x$ with $\\|x\\|^2\\in 2\\mathbb{Z}_{>0}$ — exactly the squared lengths of $E_8$ vectors."
+    },
+    "prop:1": {
+      "type": "Proposition",
+      "number": "1",
+      "section": "4",
+      "role": "key_mechanism",
+      "summary": "The function $a$ is a Schwartz $+1$-eigenfunction of the Fourier transform: $\\widehat{a}(x)=a(x)$ — the symmetric ingredient of the magic-function combination."
+    },
+    "prop:2": {
+      "type": "Proposition",
+      "number": "2",
+      "section": "4",
+      "role": "technical",
+      "summary": "Modular-form integral representation of $a$ for $r>\\sqrt{2}$: $a(r) = -4\\sin^2(\\pi r^2/2)\\int_0^{i\\infty}\\phi_0(-1/z)\\,z^2\\,e^{\\pi i r^2 z}\\,dz$ — expresses $a$ as a contour integral of a quasi-modular form."
+    },
+    "prop:3": {
+      "type": "Proposition",
+      "number": "3",
+      "section": "4",
+      "role": "technical",
+      "summary": "Explicit formula for $a(r)$, $r\\ge 0$: combines a rational part with poles at $r=0,\\sqrt{2}$ and an absolutely convergent integral — the form used to read off $a(0)$, $a(\\sqrt{2})$, and $a'(\\sqrt{2})$."
+    },
+    "prop:4": {
+      "type": "Proposition",
+      "number": "4",
+      "section": "4",
+      "role": "technical",
+      "summary": "Boundary values of $a$: $a(0)=-i\\,8640/\\pi$, $a(\\sqrt{2})=0$, $a'(\\sqrt{2})=i\\,72\\sqrt{2}/\\pi$ — the values calibrating the $\\pi i/8640$ coefficient in $g$'s definition."
+    },
+    "prop:5": {
+      "type": "Proposition",
+      "number": "5",
+      "section": "4",
+      "role": "key_mechanism",
+      "summary": "The function $b$ is a Schwartz $-1$-eigenfunction of the Fourier transform: $\\widehat{b}(x)=-b(x)$ — the antisymmetric ingredient combining with $a$ to form $g$."
+    },
+    "prop:6": {
+      "type": "Proposition",
+      "number": "6",
+      "section": "4",
+      "role": "technical",
+      "summary": "Modular-form integral representation of $b$ for $r>\\sqrt{2}$: $b(r) = -4\\sin^2(\\pi r^2/2)\\int_0^{i\\infty}\\psi_I(z)\\,e^{\\pi i r^2 z}\\,dz$."
+    },
+    "prop:7": {
+      "type": "Proposition",
+      "number": "7",
+      "section": "4",
+      "role": "technical",
+      "summary": "Explicit formula for $b(r)$, $r\\ge 0$: a rational part with poles at $r=0,\\sqrt{2}$ plus an absolutely convergent integral — the form used to read off $b$'s values."
+    },
+    "prop:8": {
+      "type": "Proposition",
+      "number": "8",
+      "section": "4",
+      "role": "technical",
+      "summary": "Boundary values of $b$: $b(0)=0$, $b(\\sqrt{2})=0$, $b'(\\sqrt{2})=2\\sqrt{2}\\,\\pi i$ — the values calibrating the $i/(240\\pi)$ coefficient in $g$'s definition."
+    }
+  },
+  "edges": [
+    { "from": "thm:1", "to": "thm:3", "type": "depends_on", "note": "Applying the Cohn–Elkies LP bound (Theorem 2) at radius $r=\\sqrt{2}$ with the magic function from Theorem 3 yields the density bound met by $E_8$." },
+    { "from": "thm:1", "to": "thm:2", "type": "uses", "note": "The proof uses the Cohn–Elkies LP bound (Theorem 2)." },
+    { "from": "thm:3", "to": "thm:4", "type": "depends_on", "note": "Existence of the magic function is established by the explicit formula in Theorem 4." },
+    { "from": "thm:4", "to": "prop:1", "type": "depends_on", "note": "The explicit $g$ uses the $+1$-eigenfunction $a$ (Proposition 1)." },
+    { "from": "thm:4", "to": "prop:5", "type": "depends_on", "note": "The explicit $g$ uses the $-1$-eigenfunction $b$ (Proposition 5)." },
+    { "from": "thm:4", "to": "prop:4", "type": "depends_on", "note": "The coefficient $\\pi i/8640$ is determined by $a(0)$ from Proposition 4." },
+    { "from": "thm:4", "to": "prop:8", "type": "depends_on", "note": "The coefficient $i/(240\\pi)$ is determined by $b'(\\sqrt{2})$ from Proposition 8." },
+    { "from": "prop:2", "to": "prop:1", "type": "depends_on", "note": "The modular-form integral representation derives from the definition of $a$ used in Proposition 1." },
+    { "from": "prop:3", "to": "prop:2", "type": "depends_on", "note": "The explicit formula on $[0,\\sqrt{2}]$ is obtained by analytic continuation from the $r>\\sqrt{2}$ integral representation." },
+    { "from": "prop:4", "to": "prop:3", "type": "depends_on", "note": "Boundary values are read off from the explicit formula." },
+    { "from": "prop:6", "to": "prop:5", "type": "depends_on", "note": "The modular-form integral representation derives from the definition of $b$." },
+    { "from": "prop:7", "to": "prop:6", "type": "depends_on", "note": "The explicit formula is the analytic continuation of the integral representation." },
+    { "from": "prop:8", "to": "prop:7", "type": "depends_on", "note": "Boundary values are read off from the explicit formula." }
+  ],
+  "critical_path": ["thm:1", "thm:3", "thm:4", "prop:1"],
+  "proof_architecture": {
+    "main_result": {
+      "description": "The headline: $E_8$ is the densest packing in $\\mathbb{R}^8$.",
+      "nodes": ["thm:1"]
+    },
+    "LP_bound_import": {
+      "description": "The Cohn–Elkies linear-programming bound, restated from math/0110009 as the framework Viazovska's construction plugs into.",
+      "nodes": ["thm:2"]
+    },
+    "magic_function": {
+      "description": "Existence and explicit form of the magic function $g$ for $E_8$, written as $g = \\frac{\\pi i}{8640}a + \\frac{i}{240\\pi}b$.",
+      "nodes": ["thm:3", "thm:4"]
+    },
+    "eigenfunction_a": {
+      "description": "The $+1$-Fourier-eigenfunction $a$: definition (Schwartz, $\\widehat a = a$), modular-form integral representation, explicit formula, and boundary values $a(0)$, $a(\\sqrt 2)$, $a'(\\sqrt 2)$.",
+      "nodes": ["prop:1", "prop:2", "prop:3", "prop:4"]
+    },
+    "eigenfunction_b": {
+      "description": "The $-1$-Fourier-eigenfunction $b$: definition ($\\widehat b = -b$), modular-form integral representation, explicit formula, and boundary values.",
+      "nodes": ["prop:5", "prop:6", "prop:7", "prop:8"]
+    }
+  },
+  "bibliography": {
+    "ElkiesCohn": { "title": "New upper bounds on sphere packings I (Cohn–Elkies)", "arxiv_id": "math/0110009", "in_registry": true },
+    "ConwaySloane": { "title": "Conway–Sloane — Sphere Packings, Lattices and Groups", "arxiv_id": null, "in_registry": false }
+  }
+}

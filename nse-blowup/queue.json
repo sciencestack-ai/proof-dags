@@ -1,0 +1,176 @@
+{
+  "description": "Work queue for proof DAG extraction. Agents pick from here.",
+  "queue": [
+    {
+      "arxiv_id": "1407.6734v1",
+      "priority": 1,
+      "reason": "Constrains Tao's method — proves regularity in intermediate regime. 40 mathEnvs, in index.",
+      "status": "complete"
+    },
+    {
+      "arxiv_id": "1108.1165v4",
+      "priority": 2,
+      "reason": "Prerequisite for Tao lem:1.3 — 3 cross-paper edges depend on this. 107 mathEnvs, in index.",
+      "status": "complete"
+    },
+    {
+      "arxiv_id": "math/0410380v2",
+      "priority": 3,
+      "reason": "Direct ancestor — Waleffe dyadic models. 2 cross-paper edges. 4 mathEnvs, in index.",
+      "status": "complete"
+    },
+    {
+      "arxiv_id": "0906.3070v4",
+      "priority": 4,
+      "reason": "Tao's earlier hyperdissipative regularity. 3 mathEnvs (1 theorem, 2 remarks). Monolithic proof.",
+      "status": "complete"
+    },
+    {
+      "arxiv_id": "2306.04146v2",
+      "priority": 5,
+      "reason": "Hou-Wang quasi-exact 1D model — lateral comparison to Tao. 22 mathEnvs, in index.",
+      "status": "complete"
+    },
+    {
+      "arxiv_id": "2507.08733v2",
+      "priority": 6,
+      "reason": "Seregin — rules out blowup scenarios. 10 mathEnvs, in index.",
+      "status": "complete"
+    },
+    {
+      "arxiv_id": "2602.19074v1",
+      "priority": 7,
+      "reason": "Miao-Nie-Ye — non-uniqueness in 2D. Parallel development. 22 mathEnvs, in index.",
+      "status": "complete"
+    },
+    {
+      "arxiv_id": "2511.09556",
+      "priority": 8,
+      "reason": "Cheskidov-Dai-Palasek — Type I blow-up + non-uniqueness for any smooth data. Different mechanism from CP. Cited by 2602.19074v1.",
+      "status": "complete"
+    },
+    {
+      "arxiv_id": "2412.10404",
+      "priority": 9,
+      "reason": "Miao-Nie-Ye — non-uniqueness in C_t L^2(R^3). Predecessor of 2602.19074v1, iterative scheme reused. Needs /parse-paper first.",
+      "status": "complete"
+    },
+    {
+      "arxiv_id": "2412.09637",
+      "priority": 10,
+      "reason": "Miao-Nie-Ye — sharp non-uniqueness in L^p_t L^q(R^3). Predecessor of 2602.19074v1.",
+      "status": "complete"
+    },
+    {
+      "arxiv_id": "2402.13229v1",
+      "priority": 11,
+      "reason": "Seregin — Type II blowups of axisymmetric NSE. Contains proofs of Props 4.1 and 4.2 from 2507.08733v2.",
+      "status": "complete"
+    },
+    {
+      "arxiv_id": "2503.14699",
+      "priority": 12,
+      "reason": "Coiculescu-Palasek — Non-uniqueness from critical data. Closely related technique to 2511.09556 (Prop 3.8, Lem 3.3 cited).",
+      "status": "complete"
+    },
+    {
+      "arxiv_id": "2407.06179",
+      "priority": 13,
+      "reason": "Palasek — Leray-Hopf non-uniqueness for dyadic NSE model. Same author family as 2511.09556.",
+      "status": "complete"
+    },
+    {
+      "arxiv_id": "2410.16468",
+      "priority": 14,
+      "reason": "Hou — BMO^{-1} regularity. Directly used in proof of 2511.09556 Prop 6.2 (right continuity at T_*).",
+      "status": "complete"
+    },
+    {
+      "arxiv_id": "unknown:katz-dyadic",
+      "priority": 15,
+      "reason": "Katz-Pavlovic 2005 Trans. AMS — pre-arXiv, not available on arxiv.org.",
+      "status": "archived"
+    },
+    {
+      "arxiv_id": "unknown:mont",
+      "priority": 16,
+      "reason": "Montgomery-Smith — no arXiv version found. Journal-only or misattribution.",
+      "status": "archived"
+    },
+    {
+      "arxiv_id": "1709.10033",
+      "priority": 17,
+      "reason": "Buckmaster-Vicol — non-uniqueness on T^3 (this paper extends to R^3). Primary structural ancestor. Same convex integration scheme.",
+      "status": "complete"
+    },
+    {
+      "arxiv_id": "2101.09278",
+      "priority": 18,
+      "reason": "Buckmaster-Masmoudi-Novack-Vicol — non-conservative Euler weak solutions. Source of inverse divergence iteration step (lem:A.5 in 2412.10404).",
+      "status": "complete"
+    },
+    {
+      "arxiv_id": "2509.25116",
+      "priority": 19,
+      "reason": "Yang et al — FIRST COMPUTER-ASSISTED PROOF of Leray-Hopf nonuniqueness (unforced NSE). The holy grail result. Uses self-similar setting + unstable eigenpair to produce infinitely many Leray-Hopf solutions. Sep 2025.",
+      "status": "complete"
+    },
+    {
+      "arxiv_id": "2509.18595",
+      "priority": 20,
+      "reason": "Palasek — Arbitrary norm growth in BMO^{-1} bounded data. First unbounded growth in well-posed setting. Inverse cascade via repeated squaring. Rules out a priori estimates. Sep 2025.",
+      "status": "complete"
+    },
+    {
+      "arxiv_id": "2009.06596",
+      "priority": 21,
+      "reason": "Buckmaster-Colombo-Vicol — Sharp nonuniqueness in L^p_t L^∞ (Ladyzhenskaya-Prodi-Serrin threshold). Published in Inventiones. Foundational for convex integration approach.",
+      "status": "complete"
+    },
+    {
+      "arxiv_id": "1608.08301",
+      "priority": 22,
+      "reason": "Isett — Proof of Onsager's conjecture. C_t C_x^α non-conservative Euler for α < 1/3. Introduced gluing approximation + Mikado flows. Foundational ancestor of all convex integration NSE work.",
+      "status": "complete"
+    },
+    {
+      "arxiv_id": "2112.09717",
+      "priority": 23,
+      "reason": "REMOVED: Wrong arXiv ID — is nuclear physics paper. Correct paper is 2112.03116 (Albritton-Brué-Colombo), already complete at priority 27.",
+      "status": "archived",
+      "blocked_reason": "WRONG ID: arxiv 2112.09717 is a PREX-II nuclear physics paper, not Cheskidov-Luo NSE. No Cheskidov-Luo \"forced NSE Leray\" paper identified — possible the Albritton-Brue-Colombo 2112.03116 was meant (priority 27). Needs ID correction."
+    },
+    {
+      "arxiv_id": "2509.14185",
+      "priority": 24,
+      "reason": "Wang et al (Hou+DeepMind) — Discovery of Unstable Singularities. Closely related computer-assisted instability approach to 2509.25116. Same Hou group.",
+      "status": "complete",
+      "blocked_reason": "Not indexed in ScienceStack as of 2026-03-11. Needs /parse-paper first."
+    },
+    {
+      "arxiv_id": "2404.07813",
+      "priority": 25,
+      "reason": "Luo — Ill-posedness in supercritical Sobolev spaces. Adjacent ill-posedness technique, cited by 2509.18595. Complements norm-growth vs ill-posedness comparison.",
+      "status": "complete",
+      "blocked_reason": "Not indexed in ScienceStack as of 2026-03-11. Needs /parse-paper first."
+    },
+    {
+      "arxiv_id": "2504.08288",
+      "priority": 26,
+      "reason": "Luo — Sharp norm inflation for 3D NSE in supercritical spaces (2025). More recent, closely related to 2509.18595; cited there.",
+      "status": "complete"
+    },
+    {
+      "arxiv_id": "2112.03116",
+      "priority": 27,
+      "reason": "Albritton-Brue-Colombo — Non-uniqueness of Leray solutions of forced NSE. First Leray-Hopf non-uniqueness result. Closely related to 2009.06596 and 2112.09717. Cited by CL.",
+      "status": "complete"
+    },
+    {
+      "arxiv_id": "1809.00600",
+      "priority": 28,
+      "reason": "BCV Wild solutions — Hausdorff dim of singular set < 1. Parallel work to 2009.06596; both construct non-Leray solutions with fractal singular sets. Cited by CL.",
+      "status": "complete"
+    }
+  ]
+}

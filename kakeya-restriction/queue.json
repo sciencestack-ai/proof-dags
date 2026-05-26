@@ -1,0 +1,8 @@
+[
+  { "arxiv_id": "2502.17655", "priority": 1, "reason": "Wang–Zahl, the Kakeya resolution in R^3. Headline of the DAG.", "status": "complete" },
+  { "arxiv_id": "2604.03416", "priority": 2, "reason": "Guth's survey of the Wang–Zahl proof; the conceptual proof-map.", "status": "complete" },
+  { "arxiv_id": "2402.03470", "priority": 3, "reason": "Study guide for Guth's restriction estimate via polynomial partitioning. Adds the restriction layer and the LOAD-BEARING edge restriction depends_on multilinear restriction (BCT). Makes the harmonic-analysis cross-DAG region load-bearing, not just thematic.", "status": "complete" },
+  { "arxiv_id": "1409.4683", "priority": 3, "reason": "Guth, A short proof of the multilinear Kakeya inequality (Gut14). Shared node from the decoupling DAG; re_derives BCT thm:1.15 and Guth's own endpoint result 0811.2251:thm:1.", "status": "complete" },
+  { "arxiv_id": "0811.2251", "priority": 4, "reason": "Guth, The endpoint case of the Bennett–Carbery–Tao multilinear Kakeya conjecture. Shared node from the decoupling DAG; improves BCT thm:1.15 (removes the ε-loss). Added 2026-05-23 to make the hub a genuine dependency cluster.", "status": "complete" },
+  { "arxiv_id": "2407.20958", "priority": 5, "reason": "Resolved to 'On Hopkins' Picard group' (homotopy theory) — not a Kakeya/restriction paper. The speculative citation-neighborhood candidate was a wrong ID. Do not extract.", "status": "out_of_scope" }
+]

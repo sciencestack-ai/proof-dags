@@ -1,0 +1,76 @@
+{
+  "paper": "2501.07944",
+  "title": "Geometrization of the local Langlands correspondence, motivically",
+  "authors": ["Peter Scholze"],
+  "generated": "2026-05-20",
+  "status": "complete",
+  "nodes": {
+    "thm:1.1": {
+      "type": "Theorem",
+      "number": "1.1",
+      "section": "1",
+      "role": "main_result",
+      "summary": "The Fargues–Scholze parameter $\\varphi_{\\pi,\\iota}$ attached to an irreducible representation $\\pi$ is independent of the choice of $\\ell$ and isomorphism $\\iota$ — resolving the $\\ell$-independence of the correspondence via a motivic refinement."
+    },
+    "thm:1.2": {
+      "type": "Theorem",
+      "number": "1.2",
+      "section": "1",
+      "role": "main_result",
+      "summary": "Fargues–Scholze Conjecture I.9.5 holds for every reductive $G$: the map from the excursion (spectral Bernstein-center) algebra to $G(\\mathbb{Q}_p)$-representations is independent of $\\ell$ and $\\iota$ as a refinement of the geometric Langlands correspondence."
+    },
+    "thm:3.1": {
+      "type": "Theorem",
+      "number": "3.1",
+      "section": "3",
+      "role": "key_mechanism",
+      "summary": "The motivic category $\\mathcal{D}_{\\mathrm{mot}}(\\mathrm{Bun}_G)$: the Harder–Narasimhan charts $\\pi_b: \\mathcal{M}_b \\to \\mathrm{Bun}_G$ are cohomologically smooth, giving an excision/semiorthogonal decomposition along $B(G)$ — the motivic lift of the Fargues–Scholze sheaf theory on $\\mathrm{Bun}_G$."
+    },
+    "def:4.1": {
+      "type": "Definition",
+      "number": "4.1",
+      "section": "4",
+      "role": "definition",
+      "summary": "The motivic coefficient system $\\mathrm{MG}$ over $\\mathrm{Div}^1$: a motivic refinement of the unit coefficients, the device that makes the construction $\\ell$-independent by working with motivic rather than $\\ell$-adic sheaves."
+    },
+    "thm:5.6": {
+      "type": "Theorem",
+      "number": "5.6",
+      "section": "5",
+      "role": "key_mechanism",
+      "summary": "The motivic Hecke (universally locally acyclic) category is stable under constant-term functors — the geometric input that lets Satake descend to motivic coefficients."
+    },
+    "thm:5.7": {
+      "type": "Theorem",
+      "number": "5.7",
+      "section": "5",
+      "role": "main_result",
+      "summary": "Motivic geometric Satake: for each finite set $I$, the Satake category $\\mathrm{Sat}_G^I$ is equivalent to representations of $\\widehat{G}^I$ on vector bundles over $\\mathrm{MG}_{\\mathrm{Div}^I}$ — the motivic construction of the Langlands dual group and the spectral action."
+    },
+    "cor:6.3": {
+      "type": "Corollary",
+      "number": "6.3",
+      "section": "6",
+      "role": "main_result",
+      "summary": "The independence-of-$\\ell$ conjecture (Fargues–Scholze Conjecture I.9.5) holds — the synthesis of the motivic geometric Satake and spectral action, specialized back to $\\ell$-adic coefficients."
+    }
+  },
+  "edges": [
+    { "from": "thm:1.1", "to": "thm:5.7", "type": "depends_on", "note": "The parameter's $\\ell$-independence comes from constructing it through the motivic geometric Satake / dual-group action, which is manifestly $\\ell$-independent." },
+    { "from": "thm:1.2", "to": "thm:5.7", "type": "depends_on", "note": "The excursion / spectral-action statement is read off the motivic geometric Satake equivalence." },
+    { "from": "thm:1.2", "to": "thm:3.1", "type": "depends_on", "note": "The argument runs on the motivic category $\\mathcal{D}_{\\mathrm{mot}}(\\mathrm{Bun}_G)$ and its strata decomposition." },
+    { "from": "cor:6.3", "to": "thm:1.2", "type": "depends_on", "note": "The formal independence-of-$\\ell$ corollary is the specialization of Theorem 1.2." },
+    { "from": "thm:5.7", "to": "thm:5.6", "type": "depends_on", "note": "Motivic Satake is built from the constant-term-stable motivic Hecke category." },
+    { "from": "thm:5.7", "to": "def:4.1", "type": "uses", "note": "The Satake equivalence is stated over the motivic coefficient system $\\mathrm{MG}_{\\mathrm{Div}^I}$." },
+    { "from": "thm:3.1", "to": "def:4.1", "type": "uses", "note": "The motivic $\\mathrm{Bun}_G$ category is defined with motivic coefficients." }
+  ],
+  "critical_path": ["def:4.1", "thm:5.6", "thm:5.7", "thm:1.2", "cor:6.3"],
+  "proof_architecture": {
+    "motivic_infrastructure": { "description": "The motivic coefficient system and the motivic category on $\\mathrm{Bun}_G$.", "nodes": ["def:4.1", "thm:3.1"] },
+    "motivic_geometric_satake": { "description": "Motivic Hecke category and the motivic geometric Satake equivalence constructing the dual group / spectral action over motivic coefficients.", "nodes": ["thm:5.6", "thm:5.7"] },
+    "main_results": { "description": "$\\ell$-independence of the Fargues–Scholze parameter and the resolution of Conjecture I.9.5.", "nodes": ["thm:1.1", "thm:1.2", "cor:6.3"] }
+  },
+  "bibliography": {
+    "FarguesScholze": { "title": "Geometrization of the local Langlands correspondence", "arxiv_id": "2102.13459", "in_registry": true, "role": "the construction this paper refines to motivic coefficients; Conjecture I.9.5 (independence of $\\ell$) is the target, proved by the motivic geometric Satake / spectral action" }
+  }
+}

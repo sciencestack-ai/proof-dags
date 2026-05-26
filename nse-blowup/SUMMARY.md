@@ -1,0 +1,11 @@
+# Navier–Stokes: blowup and non-uniqueness
+
+Two intertwined programs on the 3D Navier–Stokes and Euler equations — finite-time singularity for model/averaged equations, and non-uniqueness of weak solutions by convex integration — plus the ill-posedness and conditional-regularity results around them.
+
+**Averaged / model blowup.** Tao (`1402.0290`) builds an averaged Euler bilinear operator (same energy identity and scaling as Euler) with Schwartz data and no global mild solution — finite-time blowup for an equation obeying the supercritical scaling, the central "barrier" result. The mechanism is a delayed abrupt energy transition iterated across scales. Dyadic and shell models realize the same idea concretely: Katz–Pavlovic-type chains (`math/0410380`) and Cheskidov's dyadic blowup for $\alpha < 1/3$ via a Lyapunov argument (`math/0601074`), with the matching global-regularity side at the optimal dissipation $\int ds/(s\,g(s)) = \infty$ (`0906.3070`, `1407.6734`).
+
+**Convex-integration non-uniqueness.** Buckmaster–Vicol (`1709.10033`) prescribe the energy profile of a weak solution; the wild-solution gluing / $h$-principle machinery (`1809.00600`) and its sharp Ladyzhenskaya–Prodi–Serrin endpoints (`2009.06596`, sharp at $L^p_t L^\infty_x$, $p<2$; `2412.09637`) follow. Recent work pushes to Leray–Hopf solutions: non-uniqueness with force (`2112.03116`), in $C_t L^2(\mathbb{R}^3)$ (`2412.10404`), in $\mathrm{BMO}^{-1}$ with two distinct global *smooth* solutions (`2503.14699`), infinitely many suitable Leray–Hopf solutions from one datum (`2509.25116`), and 2D smooth non-uniqueness (`2602.19074`).
+
+**Ill-posedness and blowup scenarios.** Strong ill-posedness / norm inflation for Euler in $H^s$, $0<s<5/2$ and NSE in $H^s$, $0<s<1/2$ (`2404.07813`) and in Besov spaces (`2504.08288`); Type I blowup constructions (`2511.09556`); conditional exclusion of Type II singularities under LPS-type bounds (`2402.13229`, `2507.08733`); and a PINN-based computational search for unstable self-similar Euler singularities (`2509.14185`).
+
+**Cross-graph.** Self-contained in the registry; the dyadic-model nodes (`math/0410380`, `math/0601074`) connect the PDE-blowup and infinite-dimensional-dynamics literatures.

@@ -1,0 +1,135 @@
+{
+  "paper": "2604.03416",
+  "title": "The Kakeya conjecture, after Wang and Zahl",
+  "authors": ["Larry Guth"],
+  "generated": "2026-05-20",
+  "status": "complete",
+  "nodes": {
+    "conjecture:1.1": {
+      "type": "Conjecture",
+      "number": "1.1",
+      "section": "1",
+      "role": "context",
+      "summary": "The Kakeya conjecture: for a set $\\mathbb{T}$ of $\\sim \\delta^{-(n-1)}$ $\\delta$-tubes in $\\mathbb{R}^n$ in $\\delta$-separated directions, $|U(\\mathbb{T})| \\ge c(n,\\epsilon)\\delta^\\epsilon$ — Kakeya sets have full dimension. The target."
+    },
+    "thm:1.2": {
+      "type": "Theorem",
+      "number": "1.2",
+      "section": "1",
+      "role": "main_result",
+      "summary": "Wang–Zahl (resolution in $\\mathbb{R}^3$): if $\\mathbb{T}$ is a set of $\\delta$-tubes in $\\mathbb{R}^3$ with $\\Delta_{\\max}(\\mathbb{T}) \\lessapprox 1$, then $\\mu(\\mathbb{T}) \\lessapprox 1$ — the Kakeya set conjecture in three dimensions."
+    },
+    "thm:6.1": {
+      "type": "Theorem",
+      "number": "6.1",
+      "section": "6",
+      "role": "main_result",
+      "summary": "Sticky Kakeya theorem: $\\beta_{\\mathrm{sticky}} = 0$, i.e. every sticky Kakeya set $\\mathbb{T}$ has $\\mu(\\mathbb{T}) \\lessapprox 1$. The hard case of the conjecture (the self-similar/sticky configurations)."
+    },
+    "lem:6.2": {
+      "type": "Lemma",
+      "number": "6.2",
+      "section": "6",
+      "role": "technical",
+      "summary": "Submultiplicativity of the volume defect across scales: $\\mu(\\mathbb{T}) \\lessapprox \\mu(\\mathbb{T}_\\rho)\\,\\mu(\\mathbb{T}[T_\\rho])$ — the multiscale factorization that makes induction on scales possible."
+    },
+    "lem:6.6": {
+      "type": "Lemma",
+      "number": "6.6",
+      "section": "6",
+      "role": "key_mechanism",
+      "summary": "Grain structure: for a worst-case sticky Kakeya set with $\\beta_{\\mathrm{sticky}} > 0$, in a typical ball $B_{\\sqrt{\\delta}}$ the union $U(\\mathbb{T}) \\cap B$ is organized into slabs ('grains'), forcing a rigid fractal structure on $A$."
+    },
+    "lem:7.1": {
+      "type": "Lemma",
+      "number": "7.1",
+      "section": "7",
+      "role": "key_mechanism",
+      "summary": "Complex conjugation structure: for a worst-case sticky Kakeya set, the grain data satisfies $A + s(x)y + \\tilde{s}(y)x \\approx A$ for $x \\in [0,\\delta^{1/4}]$, $y \\in [0,\\delta^{1/2}]$ — an approximate additive symmetry of the set $A$."
+    },
+    "thm:8.1": {
+      "type": "Theorem",
+      "number": "8.1",
+      "section": "8",
+      "role": "foundational",
+      "summary": "Bourgain's discretized sum-product theorem: a $\\delta$-set $A \\subset [0,1]$ with $|A|_\\delta \\approx \\delta^{-s}$ and non-concentration has $|A+A|_\\delta + |A \\cdot A|_\\delta \\gtrapprox \\delta^{-s-\\epsilon}$ — the rigidity input that the additive symmetry contradicts."
+    },
+    "lem:8.2": {
+      "type": "Lemma",
+      "number": "8.2",
+      "section": "8",
+      "role": "technical",
+      "summary": "Finite-field expansion dichotomy: for $A \\subset \\mathbb{F}_p$, either $(A-A)/(A-A) = \\mathbb{F}_p$, or $|((A\\cdot A)^{\\oplus 3} - (A\\cdot A)^{\\oplus 3})/(A-A)| \\ge |A|^2$ — the combinatorial core behind the sum-product growth."
+    },
+    "lem:9.1": {
+      "type": "Lemma",
+      "number": "9.1",
+      "section": "9",
+      "role": "key_reduction",
+      "summary": "Sum-product at many scales: if $\\beta_{\\mathrm{sticky}}(\\delta_1) \\ge \\beta$ then at a much finer scale $\\delta_2 \\le \\delta_1^K$, $\\beta_{\\mathrm{sticky}}(\\delta_2) < \\beta_{\\mathrm{sticky}}(\\delta_1) - \\epsilon$ — the strict multiscale decrement that drives $\\beta_{\\mathrm{sticky}}$ to $0$."
+    },
+    "lem:12.1": {
+      "type": "Lemma",
+      "number": "12.1",
+      "section": "12",
+      "role": "key_technical",
+      "summary": "Non-sticky bound: a worst-case Kakeya set that is not sticky, with $\\Delta_{\\max}(\\mathbb{T}_B) \\lessapprox 1$, satisfies $\\mu(\\mathbb{T}) \\ll |\\mathbb{T}|^\\beta$ — non-stickiness already forces a gain."
+    },
+    "def:12.1": {
+      "type": "Definition",
+      "number": "12.1",
+      "section": "12",
+      "role": "definition",
+      "summary": "Frostman condition: a set of tubes $\\tilde{\\mathbb{T}}$ in a convex $K$ is Frostman if $\\Delta(\\tilde{\\mathbb{T}}, K') \\lessapprox \\Delta(\\tilde{\\mathbb{T}}, K)$ for all convex $K' \\subset K$ — uniform non-concentration at all scales."
+    },
+    "lem:12.2": {
+      "type": "Lemma",
+      "number": "12.2",
+      "section": "12",
+      "role": "key_reduction",
+      "summary": "High density lemma: for $\\tilde{\\mathbb{T}}$ Frostman in $B_1$, $|U(\\tilde{\\mathbb{T}})| \\gtrapprox (\\delta^2|\\tilde{\\mathbb{T}}|)^{1-\\beta}\\delta^{2\\beta}$ — the estimate that handles the non-sticky regime and reduces it to the sticky case."
+    },
+    "lem:14.1": {
+      "type": "Lemma",
+      "number": "14.1",
+      "section": "14",
+      "role": "technical",
+      "summary": "Frostman-to-sticky reduction: if the nested tube families are Frostman at each scale, then $\\mathbb{T}$ contains a sticky Kakeya subset $\\mathbb{T}'$ (and decomposes into sticky pieces) — the bridge making the sticky theorem applicable in general."
+    },
+    "lem:14.3": {
+      "type": "Lemma",
+      "number": "14.3",
+      "section": "14",
+      "role": "technical",
+      "summary": "Good-scale selection: for a worst-case high-density example with $|\\mathbb{T}| \\gg \\delta^{-2}$, there is a scale $a$ with $\\delta \\ll a \\ll 1$ at which both $\\mathbb{T}[T_a]$ and $\\mathbb{T}_a$ are Frostman — the multiscale decomposition feeding the reduction."
+    }
+  },
+  "edges": [
+    { "from": "thm:1.2", "to": "thm:6.1", "type": "depends_on", "note": "The Kakeya theorem reduces (via the high density lemma) to the sticky case, settled by the sticky Kakeya theorem." },
+    { "from": "thm:1.2", "to": "lem:12.2", "type": "depends_on", "note": "The non-sticky regime is handled by the high density lemma, which also drives the reduction to the sticky case." },
+    { "from": "thm:6.1", "to": "lem:6.6", "type": "depends_on", "note": "Worst-case sticky sets are forced into grain structure, the starting point of the contradiction." },
+    { "from": "thm:6.1", "to": "lem:9.1", "type": "depends_on", "note": "$\\beta_{\\mathrm{sticky}} = 0$ follows from the strict multiscale decrement, iterated to drive the exponent to zero." },
+    { "from": "lem:6.6", "to": "lem:6.2", "type": "depends_on", "note": "Grain structure is read off the multiscale factorization of the volume defect." },
+    { "from": "lem:7.1", "to": "lem:6.6", "type": "depends_on", "note": "The approximate additive symmetry of $A$ is extracted from the grain (slab) structure." },
+    { "from": "lem:9.1", "to": "lem:7.1", "type": "depends_on", "note": "The decrement argument feeds on the complex-conjugation/additive-symmetry structure of $A$." },
+    { "from": "lem:9.1", "to": "thm:8.1", "type": "depends_on", "note": "The strict gain at finer scales comes from Bourgain's sum-product theorem applied to $A$, whose additive symmetry contradicts sum-product expansion." },
+    { "from": "thm:8.1", "to": "lem:8.2", "type": "uses", "note": "The discretized sum-product theorem rests on the finite-field expansion dichotomy." },
+    { "from": "lem:12.2", "to": "lem:12.1", "type": "depends_on", "note": "The high density estimate builds on the non-sticky bound." },
+    { "from": "lem:12.2", "to": "lem:14.3", "type": "depends_on", "note": "The reduction uses the existence of a good scale for multiscale decomposition." },
+    { "from": "lem:12.1", "to": "def:12.1", "type": "uses", "note": "The non-sticky bound is stated for Frostman families." },
+    { "from": "lem:14.3", "to": "lem:14.1", "type": "depends_on", "note": "Good-scale selection feeds the Frostman-to-sticky reduction." }
+  ],
+  "critical_path": ["lem:6.2", "lem:6.6", "lem:7.1", "lem:9.1", "thm:6.1", "thm:1.2"],
+  "proof_architecture": {
+    "main_results": { "description": "The Kakeya conjecture and Wang–Zahl's $\\mathbb{R}^3$ resolution.", "nodes": ["conjecture:1.1", "thm:1.2"] },
+    "sticky_case": { "description": "The hard self-similar case: sticky Kakeya sets forced into grain structure.", "nodes": ["thm:6.1", "lem:6.2", "lem:6.6"] },
+    "contradiction_via_sumproduct": { "description": "Grain structure yields an additive symmetry that contradicts Bourgain's sum-product theorem across scales.", "nodes": ["lem:7.1", "thm:8.1", "lem:8.2", "lem:9.1"] },
+    "nonsticky_and_reduction": { "description": "The non-sticky regime via the high density lemma, and the reduction of the general case to the sticky case.", "nodes": ["lem:12.1", "def:12.1", "lem:12.2", "lem:14.1", "lem:14.3"] }
+  },
+  "bibliography": {
+    "WZ": { "title": "Volume estimates for unions of convex sets, and the Kakeya set conjecture", "arxiv_id": "2502.17655", "in_registry": true, "role": "the paper this survey explains; Theorem 1.2 is its main result" },
+    "WZ1": { "title": "Wang–Zahl, the sticky Kakeya theorem (earlier paper)", "arxiv_id": null, "in_registry": false, "role": "the sticky Kakeya theorem (Thm 6.1) proved in earlier Wang–Zahl work" },
+    "Bou": { "title": "Bourgain, on the dimension of Kakeya sets and discretized sum-product", "arxiv_id": null, "in_registry": false, "role": "the discretized sum-product theorem (Thm 8.1)" },
+    "BCT": { "title": "Bennett–Carbery–Tao, On the multilinear restriction and Kakeya conjectures", "arxiv_id": "math/0509262", "in_registry": true, "role": "multilinear Kakeya — earlier partial progress on the Kakeya problem; SHARED node with the bourgain-demeter-decoupling DAG (where it is an input to decoupling)" }
+  }
+}

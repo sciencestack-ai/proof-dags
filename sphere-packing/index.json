@@ -1,0 +1,14 @@
+{
+  "description": "Extraction status per paper for the sphere-packing DAG.",
+  "papers": {
+    "math/0110009v3": { "status": "complete", "nodes": 12, "edges": 10, "critical_path": 3, "generated": "2026-05-26" },
+    "1603.04246v2": { "status": "complete", "nodes": 12, "edges": 13, "critical_path": 4, "generated": "2026-05-26" },
+    "1603.06518v3": { "status": "complete", "nodes": 7, "edges": 6, "critical_path": 2, "generated": "2026-05-26" },
+    "1603.04759v1": { "status": "complete", "nodes": 13, "edges": 10, "critical_path": 4, "generated": "2026-05-26" },
+    "1701.00265v2": { "status": "complete", "nodes": 16, "edges": 18, "critical_path": 3, "generated": "2026-05-26" },
+    "math/0607446v2": { "status": "complete", "nodes": 11, "edges": 10, "critical_path": 4, "generated": "2026-05-26" },
+    "1902.05438v3": { "status": "complete", "nodes": 25, "edges": 27, "critical_path": 4, "generated": "2026-05-26" },
+    "2604.23468v2": { "status": "complete", "nodes": 2, "edges": 1, "critical_path": 2, "generated": "2026-05-26" }
+  },
+  "totals": { "papers": 8, "nodes": 98, "intra_paper_edges": 95, "cross_paper_edges": 22, "cross_dag_edges": 0 }
+}

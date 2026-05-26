@@ -1,0 +1,65 @@
+{
+  "description": "Cross-paper edges for the large-values / zero-density DAG. from/to are '<arxiv_id>:<node_id>'; direction is subject-verb-object (from {type} to). Note: 1408.5794 and 2405.20552 are SHARED nodes with the bourgain-demeter-decoupling DAG — that overlap is the cross-DAG link (the decoupling → ζ → large-values descent); see manifest.related_dags.",
+  "edges": [
+    {
+      "from": "2503.07410:thm:6.1",
+      "to": "2405.20552:thm:1.1",
+      "type": "imports_result",
+      "note": "Guth's survey states the Guth–Maynard large-value estimate (its Theorem 6.1) verbatim as Theorem 1.1 of the Guth–Maynard paper."
+    },
+    {
+      "from": "2501.16779:thm:49",
+      "to": "2405.20552:thm:1.2",
+      "type": "imports_result",
+      "note": "The 'Guth–Maynard bound' $A(\\sigma)\\le\\tfrac{15}{3+5\\sigma}$ catalogued in Tao–Trudgian–Yang is exactly the zero-density estimate of the Guth–Maynard paper."
+    },
+    {
+      "from": "2501.16779:thm:50",
+      "to": "2405.20552:thm:1.2",
+      "type": "improves",
+      "note": "Tao–Trudgian–Yang's improved Heath-Brown zero-density theorem $A(\\sigma)\\le\\tfrac3{10\\sigma-7}$ sharpens the Guth–Maynard bound over part of the range $\\tfrac7{10}<\\sigma\\le1$, by feeding new large-value and additive-energy estimates through the Heath-Brown relation."
+    },
+    {
+      "from": "2501.16779:thm:20",
+      "to": "1408.5794:sec:5",
+      "type": "improves",
+      "note": "Tao–Trudgian–Yang's new exponent pairs improve on Bourgain's $(\\tfrac{13}{84},\\tfrac{55}{84})$ exponent pair (the '$\\zeta$-paper' exponent), which itself came from decoupling-derived exponential sums."
+    },
+    {
+      "from": "2403.13157:thm:1.2",
+      "to": "2501.16779:thm:63",
+      "type": "addresses_same_question",
+      "note": "Matomäki–Teräväinen prove zero density ⟹ large value estimates; the Heath-Brown relation (catalogued by Tao–Trudgian–Yang) is the reverse, large value + additive energy ⟹ zero density. Together they make the two essentially equivalent — exactly the kind of structural fact a typed graph surfaces."
+    },
+    {
+      "from": "2403.13157:thm:1.5",
+      "to": "2405.20552:cor:1.3",
+      "type": "addresses_same_question",
+      "note": "Two routes to primes in short intervals: Matomäki–Teräväinen get (conditionally on a power-saving density hypothesis) intervals of length $(\\log X)^{2+\\epsilon}$ for almost all $x$; Guth–Maynard get (unconditionally) intervals of length $x^{17/30+\\epsilon}$."
+    },
+    {
+      "from": "2411.01845:thm:2.3",
+      "to": "2405.20552:cor:1.3",
+      "type": "generalizes",
+      "note": "Starichkova's general theorem 'zero-density exponent $b$ ⟹ primes in $x^{1-1/b+\\epsilon}$ intervals' is the abstract mechanism that Guth–Maynard's $x^{17/30+\\epsilon}$ result instantiates (with the weighted-zero-density refinements)."
+    },
+    {
+      "from": "2411.01845:cor:2.4",
+      "to": "2405.20552:cor:1.3",
+      "type": "addresses_same_question",
+      "note": "The classical zero-density route gives primes in $x^{7/12+\\epsilon}$ intervals; Guth–Maynard's improved zero density pushes this to $x^{17/30+\\epsilon}$."
+    },
+    {
+      "from": "2501.16779:thm:32",
+      "to": "2503.07410:prop:5.3",
+      "type": "shared_mechanism",
+      "note": "Bourgain's large-values theorem and the Montgomery–Halász $MM^*$ method described in Guth's survey are the same family of spectral/duality argument; Tao–Trudgian–Yang's pipeline runs on it."
+    },
+    {
+      "from": "2503.07410:conjecture:3.3",
+      "to": "2501.16779:conjecture:30",
+      "type": "addresses_same_question",
+      "note": "Montgomery's large value conjecture, stated in both papers (Guth in $\\mathrm{LV}_{M,\\ell^\\infty}$ form, Tao–Trudgian–Yang in $\\mathrm{LV}(\\sigma,\\tau)$ form) — the common target of the whole large-values program."
+    }
+  ]
+}

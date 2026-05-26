@@ -1,0 +1,104 @@
+{
+  "description": "Proof DAG registry index for the large-values / zero-density / primes-in-short-intervals program.",
+  "papers": {
+    "1408.5794": {
+      "status": "partial",
+      "title": "Decoupling, exponential sums and the Riemann zeta function",
+      "authors": [
+        "Jean Bourgain"
+      ],
+      "year": 2014,
+      "nodes": 6,
+      "edges": 6,
+      "generated": "2026-05-12",
+      "updated": "2026-05-19",
+      "note": "Shared node with the bourgain-demeter-decoupling DAG. Partial: headline results (exp-sum bound §3, ζ bound §4, exponent pair §5) are section-anchored."
+    },
+    "2405.20552": {
+      "status": "complete",
+      "title": "New large value estimates for Dirichlet polynomials",
+      "authors": [
+        "Larry Guth",
+        "James Maynard"
+      ],
+      "year": 2024,
+      "nodes": 35,
+      "edges": 43,
+      "generated": "2026-05-12",
+      "updated": "2026-05-19",
+      "note": "Shared node with the bourgain-demeter-decoupling DAG."
+    },
+    "2503.07410": {
+      "status": "complete",
+      "title": "Large value estimates in number theory, harmonic analysis, and computer science",
+      "authors": [
+        "Larry Guth"
+      ],
+      "year": 2025,
+      "nodes": 18,
+      "edges": 15,
+      "generated": "2026-05-12",
+      "updated": "2026-05-19"
+    },
+    "2501.16779": {
+      "status": "complete",
+      "title": "New exponent pairs, zero density estimates, and zero additive energy estimates: a systematic approach",
+      "authors": [
+        "Terence Tao",
+        "Tim Trudgian",
+        "Andrew Yang"
+      ],
+      "year": 2025,
+      "nodes": 23,
+      "edges": 24,
+      "generated": "2026-05-12",
+      "updated": "2026-05-19"
+    },
+    "2403.13157": {
+      "status": "complete",
+      "title": "A note on zero density results implying large value estimates for Dirichlet polynomials",
+      "authors": [
+        "Kaisa Matomäki",
+        "Joni Teräväinen"
+      ],
+      "year": 2024,
+      "nodes": 16,
+      "edges": 17,
+      "generated": "2026-05-12",
+      "updated": "2026-05-19"
+    },
+    "2411.01845": {
+      "status": "complete",
+      "title": "A note on zero-density approaches for the difference between consecutive primes",
+      "authors": [
+        "Valeriia Starichkova"
+      ],
+      "year": 2024,
+      "nodes": 12,
+      "edges": 13,
+      "generated": "2026-05-12",
+      "updated": "2026-05-19"
+    }
+  },
+  "excluded": {
+    "2405.12545": {
+      "status": "out_of_scope",
+      "title": "An explicit log-free zero density estimate for the Riemann zeta-function",
+      "authors": [
+        "Chiara Bellotti"
+      ],
+      "year": 2024,
+      "nodes": 0,
+      "edges": 0,
+      "generated": "2026-05-12",
+      "updated": "2026-05-12",
+      "note": "Relevant (explicit log-free zero density) but the parser produced unusable node IDs (\\oldthetheorem placeholders from a \\renewcommand) — can't anchor nodes. Re-attempt after a parser fix."
+    }
+  },
+  "totals": {
+    "papers": 6,
+    "nodes": 110,
+    "intra_paper_edges": 118,
+    "cross_paper_edges": 10
+  }
+}

@@ -1,0 +1,562 @@
+{
+  "arxiv_id": "1608.08301v2",
+  "title": "A Proof of Onsager's Conjecture",
+  "authors": [
+    "Philip Isett"
+  ],
+  "year": 2016,
+  "generated": "2026-03-11",
+  "sciencestack_paper_id": "58db79e1-8475-54cc-98ec-99235b4c8c46",
+  "nodes": [
+    {
+      "id": "conjecture:1",
+      "type": "conjecture",
+      "name": "Onsager's Conjecture (Positive Direction)",
+      "statement": "If $\\alpha > 1/3$, every weak solution satisfying $|v(t,x+\\Deltax)-v(t,x)| \\leC|\\Deltax|^\\alpha$ conserves energy",
+      "role": "motivation"
+    },
+    {
+      "id": "conjecture:2",
+      "type": "conjecture",
+      "name": "Onsager's Conjecture (Negative Direction)",
+      "statement": "For every $\\alpha < 1/3$, there exist periodic weak solutions in $L^\\infty_t C^\\alpha_x$ that fail to conserve energy",
+      "role": "main_target"
+    },
+    {
+      "id": "thm:1",
+      "type": "theorem",
+      "name": "Main Theorem",
+      "statement": "For any $\\alpha < 1/3$, there is a nonzero weak solution to incompressible Euler in $C^\\alpha_{t,x}(R\\times(R/Z)^3)$ with compact support in time. In particular, energy conservation fails.",
+      "role": "main_result"
+    },
+    {
+      "id": "thm:2",
+      "type": "theorem",
+      "name": "Local Well-Posedness",
+      "statement": "For smooth divergence-free initial data u₀, there exists a unique maximal interval J̃ and smooth solution u with $\\nablau$ blowing up at boundary of J̃",
+      "role": "auxiliary"
+    },
+    {
+      "id": "thm:3",
+      "type": "theorem",
+      "name": "Sharp Regularity Threshold",
+      "statement": "For $0 < \\delta < 1/4$, weak solutions exist in $C^\\alpha_{t,x}$ with compact support whenever certain regularity conditions hold",
+      "role": "sharp_bound"
+    },
+    {
+      "id": "thm:4",
+      "type": "theorem",
+      "name": "Transport Equation Existence",
+      "statement": "Existence and uniqueness for transport-like symmetric tensor equations with anti-divergence forcing",
+      "role": "technical_tool"
+    },
+    {
+      "id": "def:2.1",
+      "type": "definition",
+      "name": "Euler-Reynolds Flow",
+      "statement": "$\\partial_t$ v $+ \\nabla_j(v^j v) + \\nablap = \\nabla_j R^{jℓ}, \\nabla_j v^j = 0$. The tensor R is the stress tensor.",
+      "role": "framework"
+    },
+    {
+      "id": "def:2.2",
+      "type": "definition",
+      "name": "Frequency-Energy Levels",
+      "statement": "(v,p,R) have frequency-energy levels bounded by $(\\Xi,e_v,e_R)$ to order L in $C^0$ if ‖$\\nabla^k$ v‖ $\\le \\Xi^k e_v^{1/2}$ and ‖$\\nabla^k$ R‖ $\\le \\Xi^k e_R$ for k $\\le$ L",
+      "role": "framework"
+    },
+    {
+      "id": "lem:2.1",
+      "type": "lemma",
+      "name": "The Main Lemma",
+      "statement": "Given Euler-Reynolds flow with frequency-energy levels $(\\Xi,e_v,e_R)$, construct new flow with levels $(C\\cdotN\\cdot\\Xi$, $log(\\Xi$̂$)\\cdote_R$, $log(\\Xi$̂$)^{5/2}\\cdote_v^{1/2}\\cdote_R^{1/2}/N)$",
+      "role": "key_iteration"
+    },
+    {
+      "id": "lem:3.1",
+      "type": "lemma",
+      "name": "Regularization Lemma",
+      "statement": "Smooths Euler-Reynolds flow while preserving frequency-energy estimates, with ‖v-v₀‖ $\\le$ C₀ $e_R^{1/2}$",
+      "role": "regularization"
+    },
+    {
+      "id": "lem:3.2",
+      "type": "lemma",
+      "name": "Gluing Approximation",
+      "statement": "Decomposes stress into time-localized pieces $R_I$ with disjoint temporal supports, enabling convex integration",
+      "role": "temporal_decomposition"
+    },
+    {
+      "id": "lem:3.3",
+      "type": "lemma",
+      "name": "Convex Integration Lemma",
+      "statement": "Given Euler-Reynolds with localized stress pieces, constructs new flow with upgraded frequency-energy levels",
+      "role": "convex_integration"
+    },
+    {
+      "id": "prop:2.1",
+      "type": "proposition",
+      "name": "Hölder Interpolation",
+      "statement": "‖f‖_{Ċ$^\\alpha}$ ≲ ‖$\\nablaf$‖$^\\alpha_{C^0}$ ‖f‖$^{1-\\alpha}_{C^0}$",
+      "role": "interpolation"
+    },
+    {
+      "id": "prop:4.1",
+      "type": "proposition",
+      "name": "Mollification Commutator",
+      "statement": "‖$\\nabla^k(\\eta_\\varepsilon*(fg) - (\\eta_\\varepsilon*f)(\\eta_\\varepsilon*g))$‖ ≲ $\\varepsilon^{2-k}$ ‖$\\nablaf$‖ ‖$\\nablag$‖",
+      "role": "mollification"
+    },
+    {
+      "id": "prop:8.1",
+      "type": "proposition",
+      "name": "Anti-Divergence Identity",
+      "statement": "If $z_I, \\rho_I$ solve the gluing transport equations, then $r_I = \\rho_I + z_I$ is a symmetric anti-divergence for $y_I$",
+      "role": "anti_divergence"
+    },
+    {
+      "id": "prop:8.2",
+      "type": "proposition",
+      "name": "Gluing Proposition",
+      "statement": "Local existence and estimates for glued velocity $y_I$ and anti-divergence tensors $\\rho_I, z_I$",
+      "role": "gluing_core"
+    },
+    {
+      "id": "def:9.1",
+      "type": "definition",
+      "name": "Littlewood-Paley Decomposition",
+      "statement": "$P_{\\leq}f = \\chi_{\\leq}*f, P_q$ f $= P_{\\leq}f - P_{\\leq-1}f$ frequency projections",
+      "role": "frequency_analysis"
+    },
+    {
+      "id": "prop:9.1",
+      "type": "proposition",
+      "name": "Littlewood-Paley Hölder Characterization",
+      "statement": "‖f‖_{Ċ$^\\alpha}$ ~ $sup_q 2^{\\alphaq}$ ‖$P_q$ f‖$_{C^0}$",
+      "role": "holder_characterization"
+    },
+    {
+      "id": "prop:9.2",
+      "type": "proposition",
+      "name": "Littlewood-Paley Commutator",
+      "statement": "‖$u\\cdot\\nablaP_q$ f $- P_q(u\\cdot\\nablaf)$‖ ≲ $2^{-\\alphaq}$ ‖$\\nablau$‖ ‖f‖_{Ċ$^\\alpha}$",
+      "role": "commutator"
+    },
+    {
+      "id": "def:10.1",
+      "type": "definition",
+      "name": "Dimensionless Norm h(t)",
+      "statement": "Weighted sum of $y_I, \\rho_I, z_I$ derivatives measuring deviation from bootstrap estimates",
+      "role": "bootstrap_norm"
+    },
+    {
+      "id": "prop:10.1",
+      "type": "proposition",
+      "name": "Bootstrap Estimate",
+      "statement": "$h(t) \\le$ B₁(log $\\Xi$̂$)^2 \\Xi e_v^{1/2} |\\int(1+h(\\tau))^2 d\\tau|$",
+      "role": "bootstrap_core"
+    },
+    {
+      "id": "prop:10.2",
+      "type": "proposition",
+      "name": "Pressure Estimates",
+      "statement": "Bounds on $\\nabla^k$ p̄_I in terms of h(t) and frequency-energy parameters",
+      "role": "pressure_bounds"
+    },
+    {
+      "id": "prop:10.3",
+      "type": "proposition",
+      "name": "Velocity Estimates",
+      "statement": "Bounds on $y_I$ derivatives and material derivatives involving h(t)",
+      "role": "velocity_bounds"
+    },
+    {
+      "id": "prop:10.4",
+      "type": "proposition",
+      "name": "Anti-Divergence Estimates",
+      "statement": "Bounds on $z_I, \\rho_I$ and their material derivatives",
+      "role": "antidiv_bounds"
+    },
+    {
+      "id": "prop:10.5",
+      "type": "proposition",
+      "name": "Combined Flow Estimates",
+      "statement": "Estimates for full glued flow y $= \\Sigma \\eta_I y_I$ and Reynolds stress $R_I$",
+      "role": "combined_bounds"
+    },
+    {
+      "id": "prop:10.6",
+      "type": "proposition",
+      "name": "Final Flow Bounds",
+      "statement": "‖$\\nabla^k$ ṽ‖ ≲ $\\Xi^k e_v^{1/2}$, $sup_I$ ‖$\\nabla^k R_I$‖ ≲ N̂^{(k-2)₊$} \\Xi^k$ log $\\Xi$̂ $e_R$",
+      "role": "final_bounds"
+    },
+    {
+      "id": "prop:12.1",
+      "type": "proposition",
+      "name": "Back-to-Labels Map Estimates",
+      "statement": "$\\nabla\\Gamma_I$ and its inverse satisfy uniform bounds under $\\theta$‖$\\nablav$‖ $\\le 1$",
+      "role": "labels_map"
+    },
+    {
+      "id": "prop:16.1",
+      "type": "proposition",
+      "name": "Coarse-Scale Advective Derivative",
+      "statement": "‖$\\nabla^k$ D̄_t $R_\\varepsilon$‖ ≲ (log $\\Xi$̂$)^3 N^{(k-1)₊/2} \\Xi^{k+1} e_v^{1/2} e_R$",
+      "role": "advective_bounds"
+    },
+    {
+      "id": "prop:17.1",
+      "type": "proposition",
+      "name": "Back-to-Labels Derivatives",
+      "statement": "‖$\\nabla^k \\nabla\\Gamma_I$‖ + ‖$\\nabla^k \\nabla\\Gamma_I^{-1}$‖ ≲ $N^{(k-1)₊/2} \\Xi^k$",
+      "role": "labels_derivatives"
+    },
+    {
+      "id": "prop:17.2",
+      "type": "proposition",
+      "name": "Amplitude Estimates",
+      "statement": "Estimates for $\\varepsilon_I, \\gamma_J, v_J, \\deltav_{J,\\alpha\\beta}$ and their advective derivatives",
+      "role": "amplitude_bounds"
+    },
+    {
+      "id": "prop:17.3",
+      "type": "proposition",
+      "name": "Correction Estimates",
+      "statement": "‖$\\nabla^k$ V̊_J‖, ‖$\\nabla^k \\deltaV_J$‖, ‖$\\nabla^k$ V‖ ≲ $(B_\\lambda$ N $\\Xi)^k (log \\Xi$̂$)^{1/2} e_R^{1/2}$",
+      "role": "correction_bounds"
+    },
+    {
+      "id": "prop:17.4",
+      "type": "proposition",
+      "name": "Error Stress Bounds",
+      "statement": "‖$R_M$‖ + ‖$R_S$‖ $\\le$ log $\\Xi$̂ $\\cdot e_v^{1/2} e_R^{1/2}/(10N)$",
+      "role": "error_bounds"
+    },
+    {
+      "id": "prop:17.5",
+      "type": "proposition",
+      "name": "Transport and High-Frequency Stress",
+      "statement": "Existence of $R_T, R_H$ solving div $R_T =$ transport term, div $R_H =$ high-freq term, with ‖$\\cdot$‖ $\\le (log \\Xi$̂$)^{5/2} e_v^{1/2} e_R^{1/2}/(20N)$",
+      "role": "stress_construction"
+    },
+    {
+      "id": "prop:17.6",
+      "type": "proposition",
+      "name": "Parametrix Integral Operator",
+      "statement": "For u with bounded derivatives and $\\omega$ with mean zero, construct Q solving div Q $= (1-\\Pi$₀$)[u\\cdot\\omega(\\lambda\\Gamma_I)]$",
+      "role": "parametrix"
+    },
+    {
+      "id": "prop:17.7",
+      "type": "proposition",
+      "name": "Phase Function Estimates",
+      "statement": "For $\\xi_m = m\\cdot\\Gamma_I$, bounds on $\\nabla^k \\nabla\\xi_m$ and $|\\nabla\\xi_m|^{-1}$",
+      "role": "phase_bounds"
+    },
+    {
+      "id": "prop:17.8",
+      "type": "proposition",
+      "name": "Single Fourier Mode Antidivergence",
+      "statement": "For each $m\\ne0$, construct $Q_m$ solving div $Q_m = (1-\\Pi$₀)[u $e^{2\\pii m\\cdot\\lambda\\Gamma_I}]$",
+      "role": "fourier_antidiv"
+    },
+    {
+      "id": "prop:18.1",
+      "type": "proposition",
+      "name": "Iteration Sequence Bounds",
+      "statement": "The sequence $(\\Xi_k, e_{v,k}, e_{R,k})$ determined by the iteration satisfies all required conditions",
+      "role": "iteration_closure"
+    },
+    {
+      "id": "prop:A.1",
+      "type": "proposition",
+      "name": "Transport Equation Well-Posedness",
+      "statement": "For smooth u,g, solution f exists in $C^1(J\\timesT^n) \\cap C_t C^k_x$ for all k, with $L^\\infty$ bound",
+      "role": "transport_wp"
+    }
+  ],
+  "edges": [
+    {
+      "from": "thm:1",
+      "to": "conjecture:2",
+      "type": "proves"
+    },
+    {
+      "from": "thm:1",
+      "to": "lem:2.1",
+      "type": "depends_on"
+    },
+    {
+      "from": "lem:2.1",
+      "to": "lem:3.1",
+      "type": "depends_on"
+    },
+    {
+      "from": "lem:2.1",
+      "to": "lem:3.2",
+      "type": "depends_on"
+    },
+    {
+      "from": "lem:2.1",
+      "to": "lem:3.3",
+      "type": "depends_on"
+    },
+    {
+      "from": "lem:3.1",
+      "to": "prop:4.1",
+      "type": "depends_on"
+    },
+    {
+      "from": "lem:3.2",
+      "to": "prop:8.2",
+      "type": "depends_on"
+    },
+    {
+      "from": "lem:3.3",
+      "to": "prop:17.3",
+      "type": "depends_on"
+    },
+    {
+      "from": "lem:3.3",
+      "to": "prop:17.4",
+      "type": "depends_on"
+    },
+    {
+      "from": "lem:3.3",
+      "to": "prop:17.5",
+      "type": "depends_on"
+    },
+    {
+      "from": "prop:8.2",
+      "to": "prop:8.1",
+      "type": "depends_on"
+    },
+    {
+      "from": "prop:8.2",
+      "to": "prop:10.1",
+      "type": "depends_on"
+    },
+    {
+      "from": "prop:8.1",
+      "to": "thm:2",
+      "type": "depends_on"
+    },
+    {
+      "from": "prop:10.1",
+      "to": "prop:10.2",
+      "type": "depends_on"
+    },
+    {
+      "from": "prop:10.1",
+      "to": "prop:10.3",
+      "type": "depends_on"
+    },
+    {
+      "from": "prop:10.1",
+      "to": "prop:10.4",
+      "type": "depends_on"
+    },
+    {
+      "from": "prop:10.2",
+      "to": "prop:9.1",
+      "type": "depends_on"
+    },
+    {
+      "from": "prop:10.2",
+      "to": "prop:9.2",
+      "type": "depends_on"
+    },
+    {
+      "from": "prop:10.3",
+      "to": "prop:9.2",
+      "type": "depends_on"
+    },
+    {
+      "from": "prop:10.4",
+      "to": "prop:9.2",
+      "type": "depends_on"
+    },
+    {
+      "from": "prop:10.5",
+      "to": "prop:10.3",
+      "type": "depends_on"
+    },
+    {
+      "from": "prop:10.5",
+      "to": "prop:10.4",
+      "type": "depends_on"
+    },
+    {
+      "from": "prop:10.6",
+      "to": "prop:10.5",
+      "type": "depends_on"
+    },
+    {
+      "from": "prop:17.3",
+      "to": "prop:17.2",
+      "type": "depends_on"
+    },
+    {
+      "from": "prop:17.3",
+      "to": "prop:17.1",
+      "type": "depends_on"
+    },
+    {
+      "from": "prop:17.4",
+      "to": "prop:17.3",
+      "type": "depends_on"
+    },
+    {
+      "from": "prop:17.5",
+      "to": "prop:17.6",
+      "type": "depends_on"
+    },
+    {
+      "from": "prop:17.6",
+      "to": "prop:17.7",
+      "type": "depends_on"
+    },
+    {
+      "from": "prop:17.6",
+      "to": "prop:17.8",
+      "type": "depends_on"
+    },
+    {
+      "from": "prop:17.2",
+      "to": "prop:16.1",
+      "type": "depends_on"
+    },
+    {
+      "from": "prop:17.2",
+      "to": "prop:12.1",
+      "type": "depends_on"
+    },
+    {
+      "from": "prop:17.1",
+      "to": "prop:12.1",
+      "type": "depends_on"
+    },
+    {
+      "from": "thm:3",
+      "to": "thm:1",
+      "type": "improves"
+    },
+    {
+      "from": "thm:3",
+      "to": "prop:18.1",
+      "type": "depends_on"
+    },
+    {
+      "from": "prop:18.1",
+      "to": "lem:2.1",
+      "type": "depends_on"
+    },
+    {
+      "from": "thm:4",
+      "to": "prop:A.1",
+      "type": "depends_on"
+    },
+    {
+      "from": "prop:10.4",
+      "to": "thm:4",
+      "type": "depends_on"
+    },
+    {
+      "from": "prop:2.1",
+      "to": "prop:9.1",
+      "type": "addresses_same_question"
+    },
+    {
+      "from": "def:2.2",
+      "to": "def:2.1",
+      "type": "extends"
+    }
+  ],
+  "critical_path": [
+    "thm:1",
+    "lem:2.1",
+    "lem:3.3",
+    "prop:17.5",
+    "prop:17.6",
+    "prop:17.8"
+  ],
+  "proof_architecture": {
+    "description": "Convex integration scheme for incompressible Euler. Main iteration (lem:2.1) composed of three steps: regularization (lem:3.1), gluing (lem:3.2), and convex integration (lem:3.3). Gluing uses transport equations for anti-divergence tensors. Convex integration uses Mikado-type flows with high-frequency oscillations.",
+    "key_innovations": [
+      "Gluing approximation to localize stress in time (lem:3.2)",
+      "Transport equations for anti-divergence tensors (prop:8.1, thm:4)",
+      "Parametrix expansion for inverse divergence (prop:17.6)",
+      "Frequency-energy level iteration with logarithmic factors"
+    ],
+    "external_dependencies": [
+      "Constantin-E-Titi energy conservation criterion",
+      "Littlewood-Paley theory",
+      "Calderon-Zygmund theory for singular integrals"
+    ]
+  },
+  "bibliography": {
+    "primary_ancestors": [
+      {
+        "key": "deLSzeHoldCts",
+        "title": "Dissipative Euler flows and Onsager's conjecture",
+        "authors": [
+          "De Lellis",
+          "Székelyhidi"
+        ],
+        "year": 2014,
+        "relation": "Previous best result (α < 1/5)"
+      },
+      {
+        "key": "buckDeLSzeOnsCrit",
+        "title": "Dissipative Euler flows with Onsager-critical spatial regularity",
+        "authors": [
+          "Buckmaster",
+          "De Lellis",
+          "Székelyhidi"
+        ],
+        "year": 2016,
+        "relation": "Previous iteration improving exponent"
+      },
+      {
+        "key": "onsag",
+        "title": "Statistical hydrodynamics",
+        "authors": [
+          "Onsager"
+        ],
+        "year": 1949,
+        "relation": "Original conjecture"
+      },
+      {
+        "key": "CET",
+        "title": "Onsager's conjecture on energy conservation",
+        "authors": [
+          "Constantin",
+          "E",
+          "Titi"
+        ],
+        "year": 1994,
+        "relation": "Positive direction (α > 1/3)"
+      }
+    ],
+    "technical_tools": [
+      {
+        "key": "isettThesis",
+        "title": "Hölder continuous Euler flows with compact support in time",
+        "authors": [
+          "Isett"
+        ],
+        "year": 2013,
+        "relation": "Author's thesis with foundational techniques"
+      },
+      {
+        "key": "choff",
+        "title": "h-Principles for the Incompressible Euler Equations",
+        "authors": [
+          "Choffrut"
+        ],
+        "year": 2013,
+        "relation": "h-principle framework"
+      }
+    ]
+  }
+}

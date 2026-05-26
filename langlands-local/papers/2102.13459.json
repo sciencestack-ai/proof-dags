@@ -1,0 +1,384 @@
+{
+  "paper": "2102.13459",
+  "title": "Geometrization of the local Langlands correspondence",
+  "authors": [
+    "Laurent Fargues",
+    "Peter Scholze"
+  ],
+  "year": 2021,
+  "venue": "preprint",
+  "generated": "2026-05-07",
+  "status": "complete",
+  "nodes": {
+    "thm:I.2.1": {
+      "type": "Theorem",
+      "number": "I.2.1",
+      "section": "I.2",
+      "role": "main_result",
+      "summary": "$G\\text{-}\\mathcal{I}\\mathrm{soc}$ is a $v$-stack on perfect $\\overline{\\mathbb{F}}_q$-algebras with stratification by $b \\in B(E,G)$. The Kottwitz / Newton stratification at the level of $G$-isocrystals."
+    },
+    "thm:I.2.6": {
+      "type": "Theorem",
+      "number": "I.2.6",
+      "section": "I.2",
+      "role": "key_reduction",
+      "summary": "Geometric points of $\\mathrm{Bun}_G$: for $S = \\mathrm{Spa}(C)$, the natural map $B(G) \\to \\mathrm{Bun}_G(S)/\\cong$ is a bijection; vector bundles on $X_S$ decompose as $\\bigoplus \\mathcal{O}_{X_S}(\\lambda)$. Identifies points of $\\mathrm{Bun}_G$ with $G$-isocrystals."
+    },
+    "thm:I.2.11": {
+      "type": "Theorem",
+      "number": "I.2.11",
+      "section": "I.2",
+      "role": "key_reduction",
+      "summary": "Pullback equivalence: $D(\\mathrm{Bun}_G \\times \\mathrm{Div}^1, \\overline{\\mathbb{Q}}_\\ell) \\cong D(\\mathrm{Bun}_G \\times [*/W_E], \\overline{\\mathbb{Q}}_\\ell) \\cong D(\\mathrm{Bun}_G, \\overline{\\mathbb{Q}}_\\ell)$. Smith-style descent identifying derived categories on $\\mathrm{Bun}_G$ with $W_E$-equivariant ones."
+    },
+    "thm:I.3.2": {
+      "type": "Theorem",
+      "number": "I.3.2",
+      "section": "I.3",
+      "role": "imported",
+      "summary": "Fargues–Fontaine classification: vector bundles on the FF curve $X_C$ are direct sums of stable bundles $\\mathcal{O}(\\lambda)$ of slopes $\\lambda \\in \\mathbb{Q}$, with isomorphism classes parameterized by isocrystals $\\mathrm{Isoc}_E$. Imported foundational theorem."
+    },
+    "thm:I.3.3": {
+      "type": "Theorem",
+      "number": "I.3.3",
+      "section": "I.3",
+      "role": "key_reduction",
+      "summary": "Ample-bundle / Proj computation: for affinoid $S$ and vector bundle $\\mathcal{E}$ on $X_S$, twists $\\mathcal{E}(n)$ are globally generated for $n \\gg 0$, and the graded ring $P = \\bigoplus H^0(X_S, \\mathcal{O}(n))$ recovers $X_S$ as $\\mathrm{Proj}(P)$. Geometric input behind the relative FF curve."
+    },
+    "thm:I.4.1": {
+      "type": "Theorem",
+      "number": "I.4.1",
+      "section": "I.4",
+      "role": "main_result",
+      "summary": "$\\mathrm{Bun}_G$ structure: $v$-stack, points $\\leftrightarrow B(G)$, the Newton stratification with closed substacks $\\mathrm{Bun}_G^{\\le b}$, smoothness on each stratum. The geometric heart of the geometrization."
+    },
+    "thm:I.4.2": {
+      "type": "Theorem",
+      "number": "I.4.2",
+      "section": "I.4",
+      "role": "technical",
+      "summary": "Moduli of subspaces: for $Z \\to X_S$ embeddable as Zariski-closed in adic $\\mathbb{P}^n_{X_S}$, $\\mathcal{M}_Z \\to S$ is representable in locally spatial diamonds, compactifiable, finite $\\dim$. Geometric input for relative-curve constructions."
+    },
+    "thm:I.5.1": {
+      "type": "Theorem",
+      "number": "I.5.1",
+      "section": "I.5",
+      "role": "key_reduction",
+      "summary": "Semiorthogonal decomposition of $D(\\mathrm{Bun}_G, \\Lambda)$ along $b \\in B(G)$ via excision; explicit description of each $D(\\mathrm{Bun}_G^b, \\Lambda)$ via pullback. The categorical analog of the Newton stratification."
+    },
+    "thm:I.6.3": {
+      "type": "Theorem",
+      "number": "I.6.3",
+      "section": "I.6",
+      "role": "key_mechanism",
+      "summary": "Construction of the Langlands dual group $\\widehat{G}_\\Lambda$ via geometric Satake on the FF curve: a canonical isomorphism with $W_E$-action recovering the dual group. The Tannakian heart of the geometrization."
+    },
+    "thm:I.7.2": {
+      "type": "Theorem",
+      "number": "I.7.2",
+      "section": "I.7",
+      "role": "key_reduction",
+      "summary": "Hecke functors $T_V: D(\\mathrm{Bun}_G) \\to D(\\mathrm{Bun}_G)$ preserve compactness and universal local acyclicity, commute with BZ and Verdier duality. The geometric Hecke side of the local Langlands correspondence."
+    },
+    "thm:I.8.1": {
+      "type": "Theorem",
+      "number": "I.8.1",
+      "section": "I.8",
+      "role": "key_reduction",
+      "summary": "Moduli of $L$-parameters: a scheme $Z^1(W_E, \\widehat{G})/\\mathbb{Z}_\\ell$ representing condensed $1$-cocycles $\\varphi: W_E \\to \\widehat{G}(\\Lambda)$. The space of $\\widehat{G}$-valued $L$-parameters as an algebraic geometry object."
+    },
+    "thm:I.8.2": {
+      "type": "Theorem",
+      "number": "I.8.2",
+      "section": "I.8",
+      "role": "technical",
+      "summary": "Cohomological vanishing on the parameter space: when $\\ell \\nmid |\\pi_0 Z(G)|$, $H^i(\\widehat{G}, \\mathcal{O}(Z^1(W_E/P, \\widehat{G}))) = 0$ for $i>0$ and invariants commute with base change. Lets the parameter space behave well derived-categorically."
+    },
+    "thm:I.9.6": {
+      "type": "Theorem",
+      "number": "I.9.6",
+      "section": "I.9",
+      "role": "main_result",
+      "summary": "Compatibility of the Fargues–Scholze correspondence: for $G = T$ a torus, $\\pi \\mapsto \\varphi_\\pi$ is the usual local Langlands; compatible with twisting, central characters, parabolic induction, and other classical reductions. The verification suite confirming the geometrization recovers known cases."
+    },
+    "thm:I.10.1": {
+      "type": "Theorem",
+      "number": "I.10.1",
+      "section": "I.10",
+      "role": "main_result",
+      "summary": "Excursion-operator construction: when $\\ell \\nmid |\\pi_0 Z(G)|$, an exact $\\mathrm{Rep}_\\Lambda(Q^I)$-linear monoidal functor on a $\\Lambda$-linear stable $\\infty$-category $\\mathcal{C}$ yields a compatible system parameterized by $L$-parameters. The categorical-Langlands-correspondence statement."
+    },
+    "thm:II.0.1": {
+      "type": "Theorem",
+      "number": "II.0.1",
+      "section": "II",
+      "role": "imported",
+      "summary": "Local description of $\\mathcal{Y}_C$: locally adic spectra $\\mathrm{Spa}(B, B^+)$ with $B$ a principal-ideal-domain Banach algebra. Imported FF-curve foundations."
+    },
+    "thm:II.0.3": {
+      "type": "Theorem",
+      "number": "II.0.3",
+      "section": "II",
+      "role": "key_reduction",
+      "summary": "Body version of FF classification: vector bundles on $X_C$ classified by $\\mathrm{Isoc}_E$. Body proof of thm:I.3.2."
+    },
+    "thm:II.0.5": {
+      "type": "Theorem",
+      "number": "II.0.5",
+      "section": "II",
+      "role": "key_reduction",
+      "summary": "Harder–Narasimhan polygon semicontinuity: for $S \\in \\mathrm{Perf}$, the function $s \\mapsto \\mathrm{HN}\\text{-polygon}(\\mathcal{E}|_{X_s})$ is semicontinuous in $S$. The variation-of-slopes theorem on the relative FF curve."
+    },
+    "thm:III.0.2": {
+      "type": "Theorem",
+      "number": "III.0.2",
+      "section": "III",
+      "role": "key_reduction",
+      "summary": "Body theorem for $\\mathrm{Bun}_G$ structure: assembles $v$-stack property, point-set bijection with $B(G)$, Newton stratification, smoothness — the body proof of thm:I.4.1."
+    }
+  },
+  "edges": [
+    {
+      "from": "thm:I.2.6",
+      "to": "thm:I.3.2",
+      "type": "depends_on",
+      "note": "Geometric points of $\\mathrm{Bun}_G$ identified via the FF classification of vector bundles."
+    },
+    {
+      "from": "thm:I.4.1",
+      "to": "thm:III.0.2",
+      "type": "depends_on",
+      "note": "Intro statement is the body theorem."
+    },
+    {
+      "from": "thm:I.4.1",
+      "to": "thm:I.2.6",
+      "type": "depends_on",
+      "note": "Point-set bijection $|\\mathrm{Bun}_G| \\leftrightarrow B(G)$ runs through the geometric-point identification."
+    },
+    {
+      "from": "thm:I.4.1",
+      "to": "thm:II.0.5",
+      "type": "depends_on",
+      "note": "Newton stratification uses HN-polygon semicontinuity."
+    },
+    {
+      "from": "thm:I.5.1",
+      "to": "thm:I.4.1",
+      "type": "depends_on",
+      "note": "Semiorthogonal decomposition runs along the Newton stratification."
+    },
+    {
+      "from": "thm:I.5.1",
+      "to": "thm:I.2.1",
+      "type": "depends_on",
+      "note": "Stratification of $G$-isocrystal stack provides the index set for the decomposition."
+    },
+    {
+      "from": "thm:I.6.3",
+      "to": "thm:I.4.1",
+      "type": "depends_on",
+      "note": "Geometric Satake construction runs over $\\mathrm{Bun}_G$ stratification."
+    },
+    {
+      "from": "thm:I.7.2",
+      "to": "thm:I.6.3",
+      "type": "depends_on",
+      "note": "Hecke functors are built from the dual-group Tannakian description."
+    },
+    {
+      "from": "thm:I.7.2",
+      "to": "thm:I.5.1",
+      "type": "depends_on",
+      "note": "Compactness / ULA preservation runs through the strata."
+    },
+    {
+      "from": "thm:I.8.2",
+      "to": "thm:I.8.1",
+      "type": "depends_on",
+      "note": "Cohomology vanishing is on the parameter scheme."
+    },
+    {
+      "from": "thm:I.10.1",
+      "to": "thm:I.7.2",
+      "type": "depends_on",
+      "note": "Excursion operators are built from Hecke functors and dualities."
+    },
+    {
+      "from": "thm:I.10.1",
+      "to": "thm:I.8.1",
+      "type": "depends_on",
+      "note": "Excursion correspondence requires the parameter scheme as target."
+    },
+    {
+      "from": "thm:I.10.1",
+      "to": "thm:I.8.2",
+      "type": "depends_on",
+      "note": "Cohomological vanishing makes the categorical statement well-behaved."
+    },
+    {
+      "from": "thm:I.9.6",
+      "to": "thm:I.10.1",
+      "type": "depends_on",
+      "note": "Compatibility checks run on the categorical correspondence."
+    },
+    {
+      "from": "thm:I.3.2",
+      "to": "thm:II.0.3",
+      "type": "depends_on",
+      "note": "Intro statement = body theorem II.0.3."
+    },
+    {
+      "from": "thm:II.0.3",
+      "to": "thm:II.0.1",
+      "type": "depends_on",
+      "note": "Local PID description of $\\mathcal{Y}_C$ underlies the classification proof."
+    },
+    {
+      "from": "thm:I.3.3",
+      "to": "thm:I.3.2",
+      "type": "depends_on",
+      "note": "Ample-twist / $\\mathrm{Proj}$ result uses the FF classification."
+    },
+    {
+      "from": "thm:I.4.2",
+      "to": "thm:I.3.3",
+      "type": "depends_on",
+      "note": "Moduli of subspaces uses the relative-$\\mathbb{P}^n$ / Proj construction."
+    },
+    {
+      "from": "thm:II.0.5",
+      "to": "thm:II.0.3",
+      "type": "depends_on",
+      "note": "Semicontinuity of HN polygon uses the FF classification on each fibre."
+    },
+    {
+      "from": "thm:I.2.11",
+      "to": "thm:I.4.1",
+      "type": "depends_on",
+      "note": "Smith descent runs over the $v$-stack structure of $\\mathrm{Bun}_G$."
+    }
+  ],
+  "critical_path": [
+    "thm:I.10.1",
+    "thm:I.7.2",
+    "thm:I.6.3",
+    "thm:I.4.1",
+    "thm:I.2.6",
+    "thm:I.3.2"
+  ],
+  "proof_architecture": {
+    "main_results": {
+      "description": "Section I. Statement of geometrization: $\\mathrm{Bun}_G$ as a $v$-stack with Newton stratification; Hecke / dual-group / parameter scheme; categorical correspondence; classical compatibilities.",
+      "nodes": [
+        "thm:I.2.1",
+        "thm:I.2.6",
+        "thm:I.4.1",
+        "thm:I.5.1",
+        "thm:I.6.3",
+        "thm:I.7.2",
+        "thm:I.8.1",
+        "thm:I.8.2",
+        "thm:I.9.6",
+        "thm:I.10.1"
+      ]
+    },
+    "fargues_fontaine_curve": {
+      "description": "Sections II–III. The FF curve as a geometric object: vector-bundle classification, ampleness / $\\mathrm{Proj}$ description, HN-polygon semicontinuity in families.",
+      "nodes": [
+        "thm:I.3.2",
+        "thm:I.3.3",
+        "thm:II.0.1",
+        "thm:II.0.3",
+        "thm:II.0.5"
+      ]
+    },
+    "geometric_input": {
+      "description": "Sections I.2.11, I.4.2. Smith descent for $\\mathrm{Bun}_G \\times \\mathrm{Div}^1$ and moduli of Zariski-closed subspaces.",
+      "nodes": [
+        "thm:I.2.11",
+        "thm:I.4.2"
+      ]
+    },
+    "Bun_G_geometry": {
+      "description": "Section III. Body theorem for $\\mathrm{Bun}_G$ structure.",
+      "nodes": [
+        "thm:III.0.2"
+      ]
+    }
+  },
+  "bibliography": {
+    "Scholze:Diamonds": {
+      "title": "Étale cohomology of diamonds",
+      "authors": [
+        "Peter Scholze"
+      ],
+      "year": 2017,
+      "arxiv_id": "1709.07343",
+      "in_registry": true,
+      "role": "Diamond / six-functor formalism heavily used throughout."
+    },
+    "ScholzeWeinstein:RZ": {
+      "title": "Moduli of p-divisible groups",
+      "authors": [
+        "Peter Scholze",
+        "Jared Weinstein"
+      ],
+      "year": 2012,
+      "arxiv_id": "1211.6357",
+      "in_registry": true,
+      "role": "Infinite-level moduli; geometric Satake input."
+    },
+    "FarguesFontaine:Curve": {
+      "title": "Courbes et fibrés vectoriels en théorie de Hodge p-adique",
+      "authors": [
+        "Laurent Fargues",
+        "Jean-Marc Fontaine"
+      ],
+      "year": 2018,
+      "arxiv_id": null,
+      "in_registry": false,
+      "role": "FF-curve foundations (thm:I.3.2 imports the classification)."
+    },
+    "Kottwitz": {
+      "title": "Isocrystals with additional structure",
+      "authors": [
+        "Robert Kottwitz"
+      ],
+      "year": 1985,
+      "arxiv_id": null,
+      "in_registry": false,
+      "role": "Defines $B(G)$, the index set for the Newton stratification."
+    },
+    "Borel79": {
+      "title": "Automorphic L-functions",
+      "authors": [
+        "Armand Borel"
+      ],
+      "year": 1979,
+      "arxiv_id": null,
+      "in_registry": false,
+      "role": "Classical Langlands compatibility statements at thm:I.9.6."
+    },
+    "VLafforgue": {
+      "title": "Chtoucas pour les groupes réductifs et paramétrisation de Langlands",
+      "authors": [
+        "Vincent Lafforgue"
+      ],
+      "year": 2018,
+      "arxiv_id": null,
+      "in_registry": false,
+      "role": "Excursion-operator framework adapted to the local case at thm:I.10.1."
+    },
+    "Scholze:Perfectoid": {
+      "title": "Perfectoid spaces",
+      "authors": [
+        "Peter Scholze"
+      ],
+      "year": 2012,
+      "arxiv_id": "1111.4914",
+      "in_registry": true,
+      "role": "Foundational; tilting and perfectoid covers used throughout."
+    }
+  }
+}

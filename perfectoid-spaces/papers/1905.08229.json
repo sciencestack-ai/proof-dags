@@ -1,0 +1,560 @@
+{
+  "paper": "1905.08229",
+  "title": "Prisms and Prismatic Cohomology",
+  "authors": [
+    "Bhargav Bhatt",
+    "Peter Scholze"
+  ],
+  "year": 2019,
+  "venue": "Annals of Mathematics 196",
+  "generated": "2026-05-07",
+  "status": "complete",
+  "nodes": {
+    "thm:3.10": {
+      "type": "Theorem",
+      "number": "3.10",
+      "section": "3",
+      "role": "key_mechanism",
+      "summary": "Perfectoid rings $=$ perfect prisms. Equivalence of categories between perfectoid rings $R$ (in the BMS1 sense) and perfect prisms $(A,I)$, via $R \\mapsto (A_{\\mathrm{inf}}(R), \\ker \\theta)$ and $(A,I) \\mapsto A/I$. The structural theorem that turns the perfectoid framework into a deformation problem on $\\delta$-rings."
+    },
+    "thm:1.8": {
+      "type": "Theorem",
+      "number": "1.8",
+      "section": "1",
+      "role": "main_result",
+      "summary": "Master theorem: for a bounded prism $(A,I)$ and smooth $p$-adic formal scheme $X/A/I$, prismatic cohomology $R\\Gamma_{\\mathbbl{\\Delta}}(X/A)$ specializes to crystalline (when $I = (p)$, thm:5.2), Hodge-Tate (thm:6.3), de Rham (thm:6.4), and étale (thm:9.1) comparisons. The theorem the rest of the paper assembles."
+    },
+    "thm:4.11": {
+      "type": "Theorem",
+      "number": "4.11",
+      "section": "4",
+      "role": "key_reduction",
+      "summary": "Hodge-Tate comparison (formal): the map $\\eta^*_X: \\Omega^*_{X/(A/I)} \\to H^*(\\overline{\\mathbbl{\\Delta}}_{X/A})\\{*\\}$ is an isomorphism of dg $A/I$-algebras. The graded form of $H^i \\cong \\Omega^i\\{-i\\}$ is the technical heart making prismatic cohomology computable."
+    },
+    "thm:5.2": {
+      "type": "Theorem",
+      "number": "5.2",
+      "section": "5",
+      "role": "key_reduction",
+      "summary": "Crystalline comparison in characteristic $p$: $\\mathbbl{\\Delta}_{R^{(1)}/A} \\simeq R\\Gamma_{\\mathrm{crys}}(R/A)$ canonically, compatibly with Frobenius. Recovers crystalline cohomology as a special case of prismatic; the simplest nontrivial verification of thm:1.8."
+    },
+    "thm:6.3": {
+      "type": "Theorem",
+      "number": "6.3",
+      "section": "6",
+      "role": "key_reduction",
+      "summary": "Hodge-Tate comparison (mixed characteristic): $\\Omega^i_{X/(A/I)} \\to H^i(\\overline{\\mathbbl{\\Delta}}_{X/A})\\{i\\}$ is an isomorphism of étale sheaves. Promotes thm:4.11 to mixed characteristic — the geometric content of prismatic cohomology."
+    },
+    "thm:6.4": {
+      "type": "Theorem",
+      "number": "6.4",
+      "section": "6",
+      "role": "key_reduction",
+      "summary": "De Rham comparison: $\\mathbbl{\\Delta}_{X/A} \\widehat{\\otimes}^L_{A,\\phi} A/I \\simeq \\Omega^*_{X/(A/I)}$. The tensor product along Frobenius recovers de Rham; provides another specialization in the master theorem thm:1.8."
+    },
+    "thm:1.12": {
+      "type": "Theorem",
+      "number": "1.12",
+      "section": "1",
+      "role": "main_result",
+      "summary": "Semiperfectoid rings: any $p$-adically complete quotient $S$ of a perfectoid ring admits a universal prism $(\\mathbbl{\\Delta}_S^{\\mathrm{init}}, I)$ with $I = (d)$ principal, and a perfectoidization $S \\to S_{\\mathrm{perfd}}$. The structural extension of perfectoid theory beyond the perfectoid case."
+    },
+    "thm:7.4": {
+      "type": "Theorem",
+      "number": "7.4",
+      "section": "7",
+      "role": "key_reduction",
+      "summary": "The perfectoidization map $S \\to S_{\\mathrm{perfd}}$ is surjective. The technical fact that lets perfectoidization behave like a quotient construction."
+    },
+    "thm:7.14": {
+      "type": "Theorem",
+      "number": "7.14",
+      "section": "7",
+      "role": "key_mechanism",
+      "summary": "André's flatness lemma: every perfectoid ring $R$ admits a $p$-completely faithfully flat map to a perfectoid $S$ that is absolutely integrally closed (every monic polynomial has a root). The strong flatness input to the almost-purity proof."
+    },
+    "thm:1.14": {
+      "type": "Theorem",
+      "number": "1.14",
+      "section": "1",
+      "role": "main_result",
+      "summary": "Quasiregular semiperfectoid case: when $S$ is quasiregular semiperfectoid (bounded $p^\\infty$-torsion + $p$-completely flat shifted cotangent complex), the prismatic cohomology $\\mathbbl{\\Delta}_S$ is discrete, $(p,I)$-completely flat, and the universal prism in the prismatic site of $S$."
+    },
+    "thm:9.1": {
+      "type": "Theorem",
+      "number": "9.1",
+      "section": "9",
+      "role": "key_reduction",
+      "summary": "Étale comparison: $R\\mu_* \\mathbf{Z}/p^n \\simeq (\\mathbbl{\\Delta}_{X/A}[1/d]/p^n)^{\\phi=1}$ via nearby cycles to the adic generic fibre. Recovers étale cohomology as Frobenius fixed points of inverted-$d$ prismatic cohomology — the étale specialization in thm:1.8."
+    },
+    "thm:9.4": {
+      "type": "Theorem",
+      "number": "9.4",
+      "section": "9",
+      "role": "key_reduction",
+      "summary": "For $R$ perfectoid: $\\mathbf{Z}_p(n)(R) \\simeq R\\Gamma(\\mathrm{Spec}(R[1/p]), \\mathbf{Z}_p(n))$ for $n \\geq 1$. The arithmetic content of étale comparison restricted to the perfectoid case."
+    },
+    "thm:1.17": {
+      "type": "Theorem",
+      "number": "1.17",
+      "section": "1",
+      "role": "main_result",
+      "summary": "Almost purity (intro statement): for $R$ perfectoid and $S$ an integral $R$-algebra finite étale away from $V(J)$ (finitely generated $J \\subset R$), $S_{\\mathrm{perfd}}$ is a perfectoid ring (thm:10.11) and $R/p^n \\to S_{\\mathrm{perfd}}/p^n$ is almost finite étale (thm:10.9). The Faltings-style almost-purity theorem in the prismatic framework."
+    },
+    "thm:10.9": {
+      "type": "Theorem",
+      "number": "10.9",
+      "section": "10",
+      "role": "main_result",
+      "summary": "Almost purity (technical form): for $R$ perfectoid, $J \\subset R$ finitely generated, $S$ finitely presented finite over $R$ with $\\mathrm{Spec}(S) \\to \\mathrm{Spec}(R)$ finite étale outside $V(J)$, the perfectoidization $S_{\\mathrm{perfd}}$ is discrete perfectoid, isomorphic to $S$ away from $V(J)$, and $R/p^n \\to S_{\\mathrm{perfd}}/p^n$ is almost finite étale."
+    },
+    "thm:10.11": {
+      "type": "Theorem",
+      "number": "10.11",
+      "section": "10",
+      "role": "key_reduction",
+      "summary": "For $R$ perfectoid corresponding to perfect prism $(A,I)$ and $R \\to S$ the $p$-completion of an integral map, $\\mathbbl{\\Delta}_{S/A,\\mathrm{perf}}$ is discrete and a perfect $p$-complete $\\delta$-$A$-algebra; consequently $S_{\\mathrm{perfd}}$ is discrete perfectoid. The integral perfectoidization construction underwriting almost purity."
+    },
+    "thm:11.1": {
+      "type": "Theorem",
+      "number": "11.1",
+      "section": "11",
+      "role": "auxiliary",
+      "summary": "$\\mathbf{F}_p$-étale cohomological dimension: for $R$ perfectoid, $\\mathrm{Spec}(R[1/p])$ has $\\mathbf{F}_p$-étale cohomological dimension $\\le 1$. Counterintuitively low — a structural application of almost purity."
+    },
+    "thm:1.16": {
+      "type": "Theorem",
+      "number": "1.16",
+      "section": "1",
+      "role": "main_result",
+      "summary": "Nygaard filtration on the prismatic site: for a bounded prism $(A,I)$ and smooth affine $X = \\mathrm{Spf}(R)/A/I$, prismatic cohomology equips a quasisyntomic-site sheaf with a Nygaard filtration on its Frobenius twist. The $p$-adic Hodge / motivic-filtration content."
+    },
+    "thm:12.2": {
+      "type": "Theorem",
+      "number": "12.2",
+      "section": "12",
+      "role": "key_reduction",
+      "summary": "Nygaard graded $\\cong$ Hodge-Tate filtered: $\\mathrm{gr}^i_N \\mathbbl{\\Delta}_S \\cong \\mathrm{Fil}_i \\overline{\\mathbbl{\\Delta}}_S \\{i\\}$ via $\\phi/d^i$. Identifies graded pieces of the Nygaard filtration with Frobenius-twisted Hodge-Tate filtration pieces."
+    },
+    "thm:13.1": {
+      "type": "Theorem",
+      "number": "13.1",
+      "section": "13",
+      "role": "technical",
+      "summary": "Nygaard completion is $\\delta$-ring: $\\widehat{\\mathbbl{\\Delta}}_S$ admits a functorial $\\delta$-ring structure refining $\\phi$, identifying it with the Nygaard completion of $\\mathbbl{\\Delta}_S$ compatibly with filtrations. Bridge to BMS2."
+    },
+    "thm:14.1": {
+      "type": "Theorem",
+      "number": "14.1",
+      "section": "14",
+      "role": "key_reduction",
+      "summary": "$\\mathbf{Z}_p(n)$ sheaves are discrete and $p$-torsion-free for all $n \\geq 0$. The structural input for the odd $K$-theory vanishing in thm:1.18."
+    },
+    "thm:1.18": {
+      "type": "Theorem",
+      "number": "1.18",
+      "section": "1",
+      "role": "main_result",
+      "summary": "Quasisyntomic-local odd vanishing: BMS2's $\\mathbf{Z}_p(n)$ are concentrated in degree $0$ and $p$-torsion-free; locally in the quasisyntomic topology, mod-$p$ algebraic $K$-theory $K(-)/p$ is concentrated in even degrees. Application to algebraic $K$-theory."
+    },
+    "thm:15.3": {
+      "type": "Theorem",
+      "number": "15.3",
+      "section": "15",
+      "role": "key_reduction",
+      "summary": "Quasisyntomic resolution: $R\\Gamma_{\\mathbbl{\\Delta}}(X/A) \\cong R\\Gamma(X_{\\mathrm{qsyn}}, \\mathbbl{\\Delta}_{-/A})$ canonically, compatibly with Nygaard filtrations. Lets prismatic cohomology be computed via quasisyntomic descent — proves the relative Nygaard structure of thm:1.16."
+    },
+    "thm:15.2": {
+      "type": "Theorem",
+      "number": "15.2",
+      "section": "15",
+      "role": "technical",
+      "summary": "For large quasisyntomic $S$, derived prismatic cohomology $\\mathbbl{\\Delta}_{S/A}$ is concentrated in degree $0$, $(p,I)$-completely flat, and the initial object of the relative prismatic site. Gives the local model for thm:15.3."
+    },
+    "thm:16.14": {
+      "type": "Theorem",
+      "number": "16.14",
+      "section": "16",
+      "role": "auxiliary",
+      "summary": "$q$-crystalline / crystalline comparison: $q\\Omega_{R/D} \\widehat{\\otimes}^L_D D/(q-1) \\simeq R\\Gamma_{\\mathrm{crys}}(R/(D/(q-1)))$. Specializes the $q$-deformation back to ordinary crystalline cohomology."
+    },
+    "thm:16.18": {
+      "type": "Theorem",
+      "number": "16.18",
+      "section": "16",
+      "role": "key_reduction",
+      "summary": "$q$-crystalline / prismatic comparison: for $p$-completely smooth $R/D/I$, $\\mathbbl{\\Delta}_{R^{(1)}/D} \\simeq q\\Omega_{R/D}$ canonically. Identifies the prismatic cohomology of a Frobenius twist with $q$-de Rham cohomology."
+    },
+    "thm:17.2": {
+      "type": "Theorem",
+      "number": "17.2",
+      "section": "17",
+      "role": "main_result",
+      "summary": "Comparison with $A\\Omega$ (BMS1): $A\\Omega_R \\simeq q\\Omega_{R/A} \\simeq \\mathbbl{\\Delta}_{R^{(1)}/A} = \\phi_A^* \\mathbbl{\\Delta}_{R/A}$ as $E_\\infty$-$A$-algebras compatible with Frobenius. Recovers BMS1's $A\\Omega$ as Frobenius-twisted prismatic cohomology — the integration of BMS1 into the prismatic framework."
+    }
+  },
+  "edges": [
+    {
+      "from": "thm:1.8",
+      "to": "thm:5.2",
+      "type": "depends_on",
+      "note": "Crystalline-comparison case of the master theorem."
+    },
+    {
+      "from": "thm:1.8",
+      "to": "thm:6.3",
+      "type": "depends_on",
+      "note": "Hodge-Tate-comparison case of the master theorem."
+    },
+    {
+      "from": "thm:1.8",
+      "to": "thm:6.4",
+      "type": "depends_on",
+      "note": "De Rham comparison case."
+    },
+    {
+      "from": "thm:1.8",
+      "to": "thm:9.1",
+      "type": "depends_on",
+      "note": "Étale comparison case."
+    },
+    {
+      "from": "thm:6.3",
+      "to": "thm:4.11",
+      "type": "depends_on",
+      "note": "Mixed-characteristic Hodge-Tate uses the formal/algebraic Hodge-Tate isomorphism as input."
+    },
+    {
+      "from": "thm:6.4",
+      "to": "thm:6.3",
+      "type": "depends_on",
+      "note": "De Rham comparison reduces along Frobenius to Hodge-Tate."
+    },
+    {
+      "from": "thm:5.2",
+      "to": "thm:3.10",
+      "type": "depends_on",
+      "note": "Char-$p$ case is computed by the perfect-prism dictionary specialized to the Frobenius twist."
+    },
+    {
+      "from": "thm:4.11",
+      "to": "thm:3.10",
+      "type": "depends_on",
+      "note": "Coefficient ring $A/I$ comes from a (possibly non-perfect) prism whose perfect base case relies on this dictionary."
+    },
+    {
+      "from": "thm:1.12",
+      "to": "thm:7.4",
+      "type": "depends_on",
+      "note": "Surjectivity of perfectoidization is part of the semiperfectoid structural package."
+    },
+    {
+      "from": "thm:1.12",
+      "to": "thm:3.10",
+      "type": "depends_on",
+      "note": "Universal prism for a semiperfectoid sits over the perfect-prism dictionary on its perfectoid quotient."
+    },
+    {
+      "from": "thm:1.14",
+      "to": "thm:1.12",
+      "type": "specializes",
+      "note": "Quasiregular semiperfectoid case sharpens the general semiperfectoid structure."
+    },
+    {
+      "from": "thm:1.14",
+      "to": "thm:15.2",
+      "type": "depends_on",
+      "note": "Discreteness and flatness on quasiregular semiperfectoids is the input the qsyn comparison uses globally."
+    },
+    {
+      "from": "thm:1.17",
+      "to": "thm:10.9",
+      "type": "depends_on",
+      "note": "Almost purity intro statement is the body theorem thm:10.9."
+    },
+    {
+      "from": "thm:1.17",
+      "to": "thm:10.11",
+      "type": "depends_on",
+      "note": "Perfectoidization of integral algebras is the integral-extension half of the intro statement."
+    },
+    {
+      "from": "thm:10.9",
+      "to": "thm:10.11",
+      "type": "depends_on",
+      "note": "Almost étale follows once $S_{\\mathrm{perfd}}$ is constructed and shown discrete perfectoid."
+    },
+    {
+      "from": "thm:10.9",
+      "to": "thm:7.14",
+      "type": "depends_on",
+      "note": "André's flatness lemma is the key flatness input that makes the almost-étale conclusion go through after pulling back to absolutely integrally closed cover."
+    },
+    {
+      "from": "thm:10.11",
+      "to": "thm:7.4",
+      "type": "depends_on",
+      "note": "Surjectivity of perfectoidization is used to prove discreteness of $S_{\\mathrm{perfd}}$ in the integral case."
+    },
+    {
+      "from": "thm:10.11",
+      "to": "thm:3.10",
+      "type": "depends_on",
+      "note": "Perfect-prism dictionary identifies $S_{\\mathrm{perfd}}$ with its $A_{\\mathrm{inf}}$ side."
+    },
+    {
+      "from": "thm:7.14",
+      "to": "thm:3.10",
+      "type": "depends_on",
+      "note": "André's lemma constructs the cover at the level of perfectoid rings, which corresponds to a perfect-prism cover via the dictionary."
+    },
+    {
+      "from": "thm:9.1",
+      "to": "thm:6.3",
+      "type": "depends_on",
+      "note": "Étale comparison routes through Hodge-Tate and inverted-$d$ prismatic to identify nearby-cycles cohomology."
+    },
+    {
+      "from": "thm:9.1",
+      "to": "thm:3.10",
+      "type": "depends_on",
+      "note": "Statement is over a perfectoid base, identified via the perfect-prism dictionary."
+    },
+    {
+      "from": "thm:9.4",
+      "to": "thm:9.1",
+      "type": "specializes",
+      "note": "Perfectoid case of étale comparison."
+    },
+    {
+      "from": "thm:11.1",
+      "to": "thm:10.9",
+      "type": "depends_on",
+      "note": "Cohomological-dimension bound uses almost purity to pass between $R$ and integral covers."
+    },
+    {
+      "from": "thm:14.1",
+      "to": "thm:9.4",
+      "type": "depends_on",
+      "note": "Discreteness of $\\mathbf{Z}_p(n)$ on perfectoids is the key local computation."
+    },
+    {
+      "from": "thm:14.1",
+      "to": "thm:1.14",
+      "type": "depends_on",
+      "note": "Quasiregular semiperfectoid descent computes $\\mathbf{Z}_p(n)$ globally."
+    },
+    {
+      "from": "thm:1.18",
+      "to": "thm:14.1",
+      "type": "depends_on",
+      "note": "Odd-$K$-theory vanishing is the consequence of $\\mathbf{Z}_p(n)$ discreteness via the BMS2 motivic filtration."
+    },
+    {
+      "from": "thm:1.16",
+      "to": "thm:15.3",
+      "type": "depends_on",
+      "note": "Existence + sheafiness of the Nygaard filtration is established via quasisyntomic descent."
+    },
+    {
+      "from": "thm:15.3",
+      "to": "thm:15.2",
+      "type": "depends_on",
+      "note": "Global qsyn statement is glued from the local large-quasisyntomic case."
+    },
+    {
+      "from": "thm:15.3",
+      "to": "thm:1.14",
+      "type": "depends_on",
+      "note": "Quasiregular semiperfectoid descent gives the local model used to define the qsyn sheaf."
+    },
+    {
+      "from": "thm:12.2",
+      "to": "thm:1.16",
+      "type": "depends_on",
+      "note": "Graded comparison runs inside the Nygaard-filtered qsyn sheaf."
+    },
+    {
+      "from": "thm:13.1",
+      "to": "thm:1.16",
+      "type": "depends_on",
+      "note": "Nygaard completion lives on the qsyn-sheaf object built in thm:1.16."
+    },
+    {
+      "from": "thm:16.14",
+      "to": "thm:5.2",
+      "type": "depends_on",
+      "note": "$q$-crystalline specialization at $q=1$ recovers ordinary crystalline; consistency check against thm:5.2."
+    },
+    {
+      "from": "thm:16.18",
+      "to": "thm:1.8",
+      "type": "depends_on",
+      "note": "Identifies $q$-de Rham cohomology with prismatic cohomology of the Frobenius twist over the $q$-prism $(D, [p]_q)$."
+    },
+    {
+      "from": "thm:17.2",
+      "to": "thm:16.18",
+      "type": "depends_on",
+      "note": "$A\\Omega$-comparison is the $q$-crystalline / prismatic identification specialized to the perfectoid base."
+    },
+    {
+      "from": "thm:17.2",
+      "to": "thm:6.4",
+      "type": "depends_on",
+      "note": "De Rham comparison is consistent with the BMS1 specialization."
+    }
+  ],
+  "critical_path": [
+    "thm:1.17",
+    "thm:10.9",
+    "thm:10.11",
+    "thm:7.14",
+    "thm:3.10"
+  ],
+  "proof_architecture": {
+    "prism_foundations": {
+      "description": "Sections 2–3. $\\delta$-rings, prisms, the perfect-prism / perfectoid dictionary. The structural foundation: prisms are the deformation-theoretic carriers of perfectoid information.",
+      "nodes": [
+        "thm:3.10"
+      ]
+    },
+    "prismatic_cohomology_and_comparisons": {
+      "description": "Sections 4–6. Prismatic cohomology $\\mathbbl{\\Delta}_{X/A}$, Hodge-Tate comparison, de Rham comparison, char-$p$ crystalline comparison. The unification of $p$-adic cohomology theories the paper achieves.",
+      "nodes": [
+        "thm:1.8",
+        "thm:4.11",
+        "thm:5.2",
+        "thm:6.3",
+        "thm:6.4"
+      ]
+    },
+    "perfectoidization": {
+      "description": "Sections 7, 10. Semiperfectoid rings, perfectoidization $S \\mapsto S_{\\mathrm{perfd}}$, André's flatness lemma. The category-theoretic bridge from non-perfectoid quotients back to the perfectoid framework.",
+      "nodes": [
+        "thm:1.12",
+        "thm:1.14",
+        "thm:7.4",
+        "thm:7.14",
+        "thm:10.11"
+      ]
+    },
+    "almost_purity_and_etale": {
+      "description": "Sections 9–11. Étale comparison, almost purity for perfectoid rings, $\\mathbf{F}_p$-étale cohomological dimension. The arithmetic-geometric content (and the part Lean formalizers care most about).",
+      "nodes": [
+        "thm:1.17",
+        "thm:9.1",
+        "thm:9.4",
+        "thm:10.9",
+        "thm:11.1"
+      ]
+    },
+    "nygaard_and_K_theory": {
+      "description": "Sections 12–15. Nygaard filtration, quasisyntomic descent, $\\mathbf{Z}_p(n)$ discreteness, application to algebraic $K$-theory.",
+      "nodes": [
+        "thm:1.16",
+        "thm:1.18",
+        "thm:12.2",
+        "thm:13.1",
+        "thm:14.1",
+        "thm:15.2",
+        "thm:15.3"
+      ]
+    },
+    "q_crystalline_and_BMS_bridge": {
+      "description": "Sections 16–17. $q$-crystalline / $q$-de Rham cohomology, comparison with $A\\Omega$ (BMS1). Integrates the prior BMS work as Frobenius-twisted prismatic.",
+      "nodes": [
+        "thm:16.14",
+        "thm:16.18",
+        "thm:17.2"
+      ]
+    }
+  },
+  "bibliography": {
+    "Scholze:Perfectoid": {
+      "title": "Perfectoid spaces",
+      "authors": [
+        "Peter Scholze"
+      ],
+      "year": 2012,
+      "arxiv_id": "1111.4914",
+      "in_registry": true,
+      "role": "Defines perfectoid rings; perfect-prism dictionary thm:3.10 makes them equivalent to perfect prisms."
+    },
+    "BMS1": {
+      "title": "Integral p-adic Hodge theory",
+      "authors": [
+        "Bhargav Bhatt",
+        "Matthew Morrow",
+        "Peter Scholze"
+      ],
+      "year": 2016,
+      "arxiv_id": "1602.03148",
+      "in_registry": true,
+      "role": "Predecessor; $A\\Omega$ recovered as Frobenius-twisted prismatic in thm:17.2."
+    },
+    "BMS2": {
+      "title": "Topological Hochschild homology and integral p-adic Hodge theory",
+      "authors": [
+        "Bhargav Bhatt",
+        "Matthew Morrow",
+        "Peter Scholze"
+      ],
+      "year": 2018,
+      "arxiv_id": "1802.03261",
+      "in_registry": true,
+      "role": "Source of the quasisyntomic / motivic filtration; thm:1.18 + thm:14.1 are about the BMS2 sheaves $\\mathbf{Z}_p(n)$."
+    },
+    "Andre:Perfectoid": {
+      "title": "Le lemme d'Abhyankar perfectoide",
+      "authors": [
+        "Yves André"
+      ],
+      "year": 2018,
+      "arxiv_id": null,
+      "in_registry": false,
+      "role": "Source of André's flatness lemma; thm:7.14 imports / sharpens it."
+    },
+    "FaltingsAlmostEtale": {
+      "title": "Almost étale extensions",
+      "authors": [
+        "Gerd Faltings"
+      ],
+      "year": 2002,
+      "arxiv_id": null,
+      "in_registry": false,
+      "role": "Original almost-purity setting; thm:1.17 / thm:10.9 is the prismatic-framework version."
+    },
+    "GabberRamero": {
+      "title": "Almost ring theory",
+      "authors": [
+        "Ofer Gabber",
+        "Lorenzo Ramero"
+      ],
+      "year": 2003,
+      "arxiv_id": null,
+      "in_registry": false,
+      "role": "Almost mathematics foundations used in the almost-purity proof."
+    },
+    "Joyal:DeltaRing": {
+      "title": "$\\delta$-anneaux et vecteurs de Witt",
+      "authors": [
+        "André Joyal"
+      ],
+      "year": 1985,
+      "arxiv_id": null,
+      "in_registry": false,
+      "role": "$\\delta$-ring foundations underlying §2."
+    },
+    "Fontaine:CDVR": {
+      "title": "Le corps des périodes p-adiques",
+      "authors": [
+        "Jean-Marc Fontaine"
+      ],
+      "year": 1994,
+      "arxiv_id": null,
+      "in_registry": false,
+      "role": "$A_{\\mathrm{inf}}$ construction; perfect-prism dictionary thm:3.10 is via $A_{\\mathrm{inf}}$."
+    }
+  }
+}

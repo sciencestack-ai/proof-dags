@@ -1,0 +1,456 @@
+{
+  "paper": "2112.03116",
+  "title": "Non-uniqueness of Leray solutions of the forced Navier-Stokes equations",
+  "authors": [
+    "Dallas Albritton",
+    "Elia Brué",
+    "Maria Colombo"
+  ],
+  "generated": "2026-03-11",
+  "status": "complete",
+  "nodes": {
+    "def:1.1": {
+      "type": "Definition",
+      "number": "1.1",
+      "section": "1",
+      "role": "definition",
+      "summary": "Leray-Hopf solution: a divergence-free vector field u $\\in L^\\infty_t L^2_x \\cap L^2_t$ Ḣ^1_x on $\\mathbb{R}^3\\times(0,T)$ that belongs to $C_w([0,T]$;$L^2)$, solves NSE distributionally, and satisfies the energy inequality (1.2)."
+    },
+    "thm:1.2": {
+      "type": "Theorem",
+      "number": "1.2",
+      "section": "1",
+      "role": "main_result",
+      "summary": "Main non-uniqueness result (basic form): there exist T>0, body force $f\\inL^1_t L^2_x$, and two distinct suitable Leray-Hopf solutions u, ū with zero initial data and the same force f. First proof that Leray-Hopf solutions of NSE are non-unique (with forcing)."
+    },
+    "thm:1.3": {
+      "type": "Theorem",
+      "number": "1.3",
+      "section": "1",
+      "role": "main_result",
+      "summary": "Refined non-uniqueness: specifies the construction explicitly — a smooth compactly supported background profile Ū with force F̄ such that (a) linearized operator $L_ss$ has unstable eigenvalue $\\lambda$ with smooth eigenfunction $\\eta$, and (b) there exists $U^per$ on the unstable manifold with $||U^per||_{H^k}$ ≲ $e^{2\\taua}$, giving two distinct suitable Leray-Hopf solutions ū and ū $+ u^lin + u^per$."
+    },
+    "thm:2.1": {
+      "type": "Theorem",
+      "number": "2.1",
+      "section": "2",
+      "role": "key_mechanism",
+      "summary": "Unstable 2D vortex: there exists $m\\ge2$ and smooth radially symmetric vorticity profile $\\omega$̄$(\\rho)$ with $|\\omega$̄$| + \\rho|\\partial_\\rho\\omega$̄| ≲ ⟨$\\rho$⟩^{-2} such that the linearized operator A on $L^2_m$ has an unstable eigenvalue $\\lambda$ with $Re(\\lambda)>0$. Adapts Vishik's 2D Euler instability to the NSE similarity setting."
+    },
+    "prop:2.2": {
+      "type": "Proposition",
+      "number": "2.2",
+      "section": "2",
+      "role": "main_technical",
+      "summary": "Truncated unstable vortex: for an unstable vortex $\\omega$̄ from thm:2.1 and $\\lambda_\\infty$ an unstable eigenvalue of A, for any $\\varepsilon>0$ there exists R₀ such that for all $R\\geR$₀, the truncated operator $A_R$ has an unstable eigenvalue $\\lambda_R$ with $|\\lambda_R - \\lambda_\\infty| < \\varepsilon$."
+    },
+    "cor:2.3": {
+      "type": "Corollary",
+      "number": "2.3",
+      "section": "2",
+      "role": "auxiliary",
+      "summary": "The operator $L_\\infty$ has an unstable eigenvalue. This is the key corollary of prop:2.2 in the limit ℓ$\\to\\infty$ that feeds into prop:2.6."
+    },
+    "lem:2.4": {
+      "type": "Lemma",
+      "number": "2.4",
+      "section": "2",
+      "role": "technical",
+      "summary": "Divergence correction: for each ℓ$\\ge2R$̄, there exists v_ℓ$\\inC^\\infty_0(B_{R̄}$;$\\mathbb{R}^2)$ such that div_ℓ(ũ + v_ℓ) = 0, with v_ℓ $\\to 0$ in $C^k(B_{R̄})$ as ℓ$\\to\\infty$. Corrects the approximate eigenvector to exactly satisfy the divergence-free condition."
+    },
+    "lem:2.5": {
+      "type": "Lemma",
+      "number": "2.5",
+      "section": "2",
+      "role": "technical",
+      "summary": "Basic properties of operators K_ℓ, S_ℓ on $L^2_{\\gamma$,ℓ}: K_ℓ is bounded and compact, S_ℓ is bounded with ||S_ℓ$||_{L^2_{\\gamma$,ℓ$}\\toL^2_\\gamma} \\to 0$ as ℓ$\\to\\infty$. These properties are essential for the Fredholm analysis in prop:2.2."
+    },
+    "prop:2.6": {
+      "type": "Proposition",
+      "number": "2.6",
+      "section": "2",
+      "role": "main_technical",
+      "summary": "Axisymmetric 3D instability: for $\\lambda_\\infty$ an unstable eigenvalue of $L_\\infty$ and any $\\varepsilon>0$, there exists ℓ₀ such that for all ℓ$\\ge$ℓ₀, the axisymmetric 3D linearized operator L_ℓ has an unstable eigenvalue $\\lambda_$ℓ with $|\\lambda_$ℓ $- \\lambda_\\infty| < \\varepsilon$. Key $2D\\to3D$ lifting of the instability."
+    },
+    "lem:2.7": {
+      "type": "Lemma",
+      "number": "2.7",
+      "section": "2",
+      "role": "technical",
+      "summary": "Resolvent convergence: for compact K $\\subset \\rho(M_\\infty + K_\\infty) \\cap {Re \\lambda > 0}$, the resolvents $R(\\lambda, M_$ℓ P_ℓ $+ K_\\infty)$ converge to $R(\\lambda, M_\\infty + K_\\infty)$ in $L^2_\\gamma$ uniformly on K. Used in prop:2.6 to transfer eigenvalue from ℓ$=\\infty$ to large ℓ."
+    },
+    "thm:3.1": {
+      "type": "Theorem",
+      "number": "3.1",
+      "section": "3",
+      "role": "key_reduction",
+      "summary": "Self-similar NSE instability (vorticity form): for $\\lambda_\\infty$ an unstable eigenvalue of $T_\\infty$ with Re $\\lambda_\\infty > \\mu$, for all $\\varepsilon>0$ there exists $\\beta$₀ such that for $\\beta\\ge\\beta$₀, $T_\\beta$ has unstable eigenvalue $\\lambda_\\beta$ with $|\\lambda_\\beta - \\lambda_\\infty| < \\varepsilon$, and $L^{(\\beta)}_vor$ has eigenvalue $\\beta$̃$\\lambda_\\beta = \\beta\\lambda_\\beta + 1/4$. Transfers 2D axisymmetric instability to self-similar 3D NSE vorticity operator."
+    },
+    "cor:3.2": {
+      "type": "Corollary",
+      "number": "3.2",
+      "section": "3",
+      "role": "auxiliary",
+      "summary": "Self-similar NSE instability (velocity form): the unstable eigenvalue $\\beta$̃$\\lambda_\\beta$ of $L^{(\\beta)}_vor$ from thm:3.1 is also an unstable eigenvalue of $L^{(\\beta)}_vel$. Translates vorticity instability into velocity instability needed for thm:1.3."
+    },
+    "lem:3.3": {
+      "type": "Lemma",
+      "number": "3.3",
+      "section": "3",
+      "role": "technical",
+      "summary": "Resolvent bound and convergence: $||R(\\lambda, \\beta$⁻^1D + M $+ S)||_{L^2_aps} \\le (Re \\lambda - \\mu)$⁻^1, and $R(\\lambda, \\beta$⁻^1D + M $+ S) \\toR(\\lambda$, M + S) in $L^2$ as $\\beta\\to\\infty$, locally uniformly in {Re $\\lambda > \\mu}$. Used in thm:3.1 to pass from finite $\\beta$ to the $\\beta\\to\\infty$ limit."
+    },
+    "lem:3.4": {
+      "type": "Lemma",
+      "number": "3.4",
+      "section": "3",
+      "role": "technical",
+      "summary": "Resolvent convergence for $T_\\beta$: uniform bounds $sup_\\beta ||R(\\lambda, T_\\beta)|| < \\infty$ on compact sets, and $R(\\lambda, T_\\beta)\\Omega \\toR(\\lambda, T_\\infty)\\Omega$ in $L^2 uniformly-in-\\lambda$. Essential for eigenvalue perturbation theory in thm:3.1."
+    },
+    "thm:4.1": {
+      "type": "Theorem",
+      "number": "4.1",
+      "section": "4",
+      "role": "key_reduction",
+      "summary": "Non-uniqueness criterion: given Ū compactly supported smooth divergence-free and $L_ss$ having an unstable eigenvalue $\\lambda$, then the maximally unstable eigenvalue exists (Re $\\lambda =$ sup Re $\\sigma(L_ss) > 0)$ and the unstable manifold perturbation $U^per$ of thm:1.3 part (b) exists. Converts the existence of ANY unstable eigenvalue into the maximally unstable one needed for the construction."
+    },
+    "lem:4.2": {
+      "type": "Lemma",
+      "number": "4.2",
+      "section": "4",
+      "role": "technical",
+      "summary": "Spectral bound for $L_ss$: the growth bound $\\omega$₀$(L_ss) = max{\\omega_ess(L_ss)$, $s(L_ss)}$, and the spectrum in {Re $\\lambda > \\omega_ess}$ is finite with finite-rank projections. Used to establish maximality of the unstable eigenvalue in thm:4.1."
+    },
+    "prop:4.3": {
+      "type": "Proposition",
+      "number": "4.3",
+      "section": "4",
+      "role": "main_technical",
+      "summary": "Maximally unstable eigenvalue: if a $= s(L_ss) > 0$ then a $< \\infty$, and there exist eigenvalue $\\lambda =$ a+ib and smooth eigenfunction $\\eta$ with $L_ss \\eta = \\lambda\\eta$. Semigroup bound: $||e^{\\tau L_ss}$ U₀$||_{L^2} \\leM(\\delta) e^{\\tau(a+\\delta)} ||U$₀$||_{L^2}$ for any $\\delta>0$. The eigenfunction $\\eta$ enters the construction of $u^lin$."
+    },
+    "lem:4.4": {
+      "type": "Lemma",
+      "number": "4.4",
+      "section": "4",
+      "role": "technical",
+      "summary": "Semigroup smoothing: $||e^{\\tau L_ss}$ U₀$||_{H^{\\sigma₂}} \\le$ M $\\tau^{-(\\sigma$₂$-\\sigma$₁$)/2} e^{\\tau(a+\\delta)} ||U$₀$||_{H^{\\sigma₁}}$ for $\\sigma$₂$\\ge\\sigma$₁$\\ge0$. Provides the high-regularity estimates needed for the fixed-point argument in prop:4.7."
+    },
+    "prop:4.5": {
+      "type": "Proposition",
+      "number": "4.5",
+      "section": "4",
+      "role": "main_technical",
+      "summary": "Unstable manifold existence: for $a=s(L_ss)>0$ and N>5/2, there exist T, $\\varepsilon$₀>0 and $U^per \\inC((-\\infty,T]$; $H^N(\\mathbb{R}^3))$ solving the nonlinear NSE perturbation equation with $||U^per(\\cdot,\\tau)||_{H^N} \\le e^{(a+\\varepsilon₀)\\tau}$ for all $\\tau\\leT$. This is part (b) of thm:1.3."
+    },
+    "rem:4.6": {
+      "type": "Remark",
+      "number": "4.6",
+      "section": "4",
+      "role": "context",
+      "summary": "Notes that existence of $U^per$ could follow from abstract semilinear parabolic theory (Henry's book), but the explicit construction given generalizes to non-compactly supported backgrounds (see rem:4.8)."
+    },
+    "prop:4.7": {
+      "type": "Proposition",
+      "number": "4.7",
+      "section": "4",
+      "role": "main_technical",
+      "summary": "Contraction for the unstable manifold map: the fixed-point map T is a contraction on ${U\\inX$ : ||U||_X $\\le 1}$, proving existence of $U^per$. T maps the ball to itself (4.22) and is contractive, establishing prop:4.5 via Banach fixed-point theorem."
+    },
+    "rem:4.8": {
+      "type": "Remark",
+      "number": "4.8",
+      "section": "4",
+      "role": "context",
+      "summary": "Extension to non-compactly supported backgrounds: general Ū with natural decay $|\\nabla^k$ Ū$(\\xi)|$ ≲ ⟨$\\xi$⟩^{-k-1} can be treated using the modified ansatz ũ(x,t) = ū$(x)\\chi(x/t^\\alpha)$, introducing forcing and lower-order terms handled perturbatively."
+    }
+  },
+  "edges": [
+    {
+      "from": "thm:1.2",
+      "to": "thm:1.3",
+      "type": "depends_on",
+      "note": "thm:1.2 basic non-uniqueness follows from the refined thm:1.3 which specifies the explicit construction with Ū, $\\eta$, and $U^per$"
+    },
+    {
+      "from": "thm:1.3",
+      "to": "thm:4.1",
+      "type": "depends_on",
+      "note": "thm:1.3 part (b) (existence of $U^per)$ follows from thm:4.1 given part $(a) (L_ss$ has an unstable eigenvalue); thm:4.1 handles the passage to the maximally unstable eigenvalue"
+    },
+    {
+      "from": "thm:1.3",
+      "to": "thm:3.1",
+      "type": "depends_on",
+      "note": "thm:1.3 part $(a) (L_ss$ has an unstable eigenvalue) is established via thm:3.1 (self-similar NSE vorticity instability) and cor:3.2 (velocity form)"
+    },
+    {
+      "from": "thm:1.3",
+      "to": "cor:3.2",
+      "type": "depends_on",
+      "note": "cor:3.2 (velocity version of instability) directly provides the unstable eigenvalue of $L^{(\\beta)}_vel = L_ss$ needed for thm:1.3 part (a)"
+    },
+    {
+      "from": "thm:4.1",
+      "to": "prop:4.3",
+      "type": "depends_on",
+      "note": "thm:4.1 uses prop:4.3 to find the maximally unstable eigenvalue a $= s(L_ss)$ and eigenfunction $\\eta$ from any unstable eigenvalue"
+    },
+    {
+      "from": "thm:4.1",
+      "to": "prop:4.5",
+      "type": "depends_on",
+      "note": "thm:4.1 conclusion (part b of thm:1.3) is proved by prop:4.5 (unstable manifold existence)"
+    },
+    {
+      "from": "prop:4.3",
+      "to": "lem:4.2",
+      "type": "depends_on",
+      "note": "prop:4.3 uses lem:4.2 spectral theory for $L_ss$ to establish the finiteness of $s(L_ss)$ and the existence of the maximally unstable eigenvalue"
+    },
+    {
+      "from": "prop:4.3",
+      "to": "lem:4.4",
+      "type": "depends_on",
+      "note": "prop:4.3 semigroup smoothing lem:4.4 provides the $H^{\\sigma₂}$ bounds from $H^{\\sigma₁}$ data needed throughout Section 4"
+    },
+    {
+      "from": "prop:4.5",
+      "to": "prop:4.7",
+      "type": "depends_on",
+      "note": "prop:4.5 existence of $U^per$ is proved via the contraction in prop:4.7 (Banach fixed-point theorem for the nonlinear map T)"
+    },
+    {
+      "from": "prop:4.7",
+      "to": "prop:4.3",
+      "type": "depends_on",
+      "note": "prop:4.7 contraction estimate uses the semigroup bounds from prop:$4.3 (||e^{\\tau L_ss}||_{L^2} \\le$ M $e^{\\tau(a+\\delta)})$ to bound the fixed-point map T"
+    },
+    {
+      "from": "prop:4.7",
+      "to": "lem:4.4",
+      "type": "depends_on",
+      "note": "prop:4.7 uses smoothing lem:4.4 in the definition of the X-norm (and $H^N$ estimates for T) to close the contraction"
+    },
+    {
+      "from": "thm:3.1",
+      "to": "lem:3.3",
+      "type": "depends_on",
+      "note": "thm:3.1 proof uses the resolvent bound and convergence from lem:3.3 to show $\\beta$⁻^1D + M + S $\\to$ M + S resolvent-wise, enabling eigenvalue perturbation theory"
+    },
+    {
+      "from": "thm:3.1",
+      "to": "lem:3.4",
+      "type": "depends_on",
+      "note": "thm:3.1 uses lem:3.4 resolvent convergence $T_\\beta \\to T_\\infty$ to transfer the unstable eigenvalue from $\\beta\\to\\infty$ limit to large finite $\\beta$"
+    },
+    {
+      "from": "thm:3.1",
+      "to": "thm:2.1",
+      "type": "depends_on",
+      "note": "thm:3.1 uses the unstable 2D vortex $\\omega$̄ from thm:2.1 as the initial construction from which the self-similar NSE instability is built"
+    },
+    {
+      "from": "cor:3.2",
+      "to": "thm:3.1",
+      "type": "depends_on",
+      "note": "cor:3.2 (velocity eigenvalue) follows directly from thm:3.1 (vorticity eigenvalue) by the algebraic relation between $L^{(\\beta)}_vor$ and $L^{(\\beta)}_vel$"
+    },
+    {
+      "from": "thm:2.1",
+      "to": "prop:2.6",
+      "type": "depends_on",
+      "note": "thm:2.1 proof uses prop:2.6 (axisymmetric 3D L_ℓ has unstable eigenvalue) to establish the full 3D axisymmetric instability"
+    },
+    {
+      "from": "thm:2.1",
+      "to": "prop:2.2",
+      "type": "depends_on",
+      "note": "thm:2.1 proof uses prop:2.2 to pass from the infinite-domain operator A to the truncated $A_R$ with controlled eigenvalue"
+    },
+    {
+      "from": "prop:2.6",
+      "to": "lem:2.4",
+      "type": "depends_on",
+      "note": "prop:2.6 uses lem:2.4 to correct the divergence of the approximate eigenfunction, ensuring the eigenfunction for L_ℓ is exactly divergence-free"
+    },
+    {
+      "from": "prop:2.6",
+      "to": "lem:2.7",
+      "type": "depends_on",
+      "note": "prop:2.6 uses the resolvent convergence lem:2.7 to transfer the unstable eigenvalue from ℓ$=\\infty (cor$:2.3) to large finite ℓ"
+    },
+    {
+      "from": "prop:2.6",
+      "to": "lem:2.5",
+      "type": "depends_on",
+      "note": "prop:2.6 uses the compactness of K_ℓ and decay of S_ℓ from lem:2.5 in the Fredholm theory for L_ℓ"
+    },
+    {
+      "from": "cor:2.3",
+      "to": "lem:2.5",
+      "type": "depends_on",
+      "note": "cor:$2.3 (L_\\infty$ unstable eigenvalue) uses the compactness of $K_\\infty$ from lem:2.5 in the Fredholm alternative to find the unstable spectrum"
+    },
+    {
+      "from": "prop:2.2",
+      "to": "lem:2.5",
+      "type": "depends_on",
+      "note": "prop:2.2 uses boundedness and compactness of K_ℓ from lem:2.5 in the spectral approximation argument"
+    }
+  ],
+  "critical_path": [
+    "thm:1.2",
+    "thm:1.3",
+    "thm:4.1",
+    "prop:4.5",
+    "prop:4.7",
+    "prop:4.3",
+    "lem:4.2"
+  ],
+  "proof_architecture": {
+    "leray_hopf_setup": {
+      "description": "Definition of Leray-Hopf solutions and statement of the non-uniqueness theorems",
+      "nodes": [
+        "def:1.1",
+        "thm:1.2",
+        "thm:1.3"
+      ]
+    },
+    "2d_vortex_instability": {
+      "description": "Construct an unstable 2D Vishik-type vortex profile and lift it to axisymmetric 3D instability",
+      "nodes": [
+        "thm:2.1",
+        "prop:2.2",
+        "cor:2.3",
+        "lem:2.4",
+        "lem:2.5",
+        "prop:2.6",
+        "lem:2.7"
+      ]
+    },
+    "3d_nse_instability": {
+      "description": "Transfer the 2D axisymmetric instability to the full self-similar 3D NSE linearized operators (vorticity and velocity forms)",
+      "nodes": [
+        "thm:3.1",
+        "cor:3.2",
+        "lem:3.3",
+        "lem:3.4"
+      ]
+    },
+    "unstable_manifold_construction": {
+      "description": "Use the unstable eigenvalue to construct the nonlinear perturbation on the unstable manifold via fixed-point theorem",
+      "nodes": [
+        "thm:4.1",
+        "lem:4.2",
+        "prop:4.3",
+        "lem:4.4",
+        "prop:4.5",
+        "prop:4.7"
+      ]
+    },
+    "remarks_and_extensions": {
+      "description": "Remarks on abstract alternatives and generalization to non-compactly supported backgrounds",
+      "nodes": [
+        "rem:4.6",
+        "rem:4.8"
+      ]
+    }
+  },
+  "bibliography": {
+    "BuckmasterVicolAnnals": {
+      "title": "Nonuniqueness of weak solutions to the Navier-Stokes equation",
+      "authors": [
+        "Tristan Buckmaster",
+        "Vlad Vicol"
+      ],
+      "arxiv_id": "1709.10033",
+      "in_registry": true,
+      "note": "Parallel non-uniqueness result using convex integration; ABC's mechanism (Vishik instability) is completely different"
+    },
+    "IsettOnsager": {
+      "title": "A proof of Onsager's conjecture",
+      "authors": [
+        "Philip Isett"
+      ],
+      "arxiv_id": "1608.08301",
+      "in_registry": true,
+      "note": "Cited as background for the convex integration / non-uniqueness landscape"
+    },
+    "cheskidov2020sharp": {
+      "title": "Sharp nonuniqueness for the Navier-Stokes equations",
+      "authors": [
+        "Alexey Cheskidov",
+        "Xiaoyutao Luo"
+      ],
+      "arxiv_id": "2009.06596",
+      "in_registry": true,
+      "note": "Parallel non-uniqueness result; CL uses convex integration for sharp LPS-threshold non-uniqueness, ABC uses Vishik instability for Leray-Hopf"
+    },
+    "buckmaster2021non": {
+      "title": "Non-conservative H^{1/2} weak solutions of the incompressible 3D Euler equations",
+      "authors": [
+        "Tristan Buckmaster",
+        "Nader Masmoudi",
+        "Matthew Novack",
+        "Vlad Vicol"
+      ],
+      "arxiv_id": "2101.09278",
+      "in_registry": true,
+      "note": "Cited as related convex integration result for non-conservative Euler solutions"
+    },
+    "BuckmasterColomboVicol": {
+      "title": "Wild solutions of the Navier-Stokes equations whose singular sets in time have Hausdorff dimension strictly less than 1",
+      "authors": [
+        "Tristan Buckmaster",
+        "Maria Colombo",
+        "Vlad Vicol"
+      ],
+      "arxiv_id": "1809.00600",
+      "in_registry": false,
+      "note": "Colombo is co-author here; BCV constructs non-Leray wild solutions, ABC constructs Leray-Hopf non-uniqueness. Related program."
+    },
+    "Vishik1": {
+      "title": "Instability and non-uniqueness in the Cauchy problem for the Euler equations. Part I",
+      "authors": [
+        "Misha Vishik"
+      ],
+      "arxiv_id": "1805.09426",
+      "in_registry": false,
+      "note": "Primary predecessor — Vishik's unstable 2D vortex construction is adapted in Section 2 of this paper"
+    },
+    "Vishik2": {
+      "title": "Instability and non-uniqueness in the Cauchy problem for the Euler equations. Part II",
+      "authors": [
+        "Misha Vishik"
+      ],
+      "arxiv_id": "1805.09440",
+      "in_registry": false,
+      "note": "Second part of Vishik's instability construction"
+    },
+    "jiasverakselfsim": {
+      "title": "Local-in-space estimates near initial time for weak solutions of the Navier-Stokes equations and forward self-similar solutions",
+      "authors": [
+        "Hao Jia",
+        "Vladimir Šverák"
+      ],
+      "arxiv_id": null,
+      "in_registry": false,
+      "note": "Jia-Šverák predicted the non-uniqueness mechanism: if self-similar NSE has an unstable perturbation, then non-uniqueness follows. ABC proves this prediction."
+    },
+    "OurLectureNotes": {
+      "title": "Instability and nonuniqueness for the 2D Euler equations in vorticity form, after M. Vishik",
+      "authors": [
+        "Dallas Albritton",
+        "Elia Brué",
+        "Maria Colombo",
+        "Camillo De Lellis",
+        "Vikram Giri",
+        "Maximilian Janisch",
+        "Hyunju Kwon"
+      ],
+      "arxiv_id": "2112.04943",
+      "in_registry": false,
+      "note": "Companion paper by the same group explaining Vishik's 2D instability in detail"
+    }
+  }
+}

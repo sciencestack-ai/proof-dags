@@ -1,0 +1,420 @@
+{
+  "paper": "1708.01220",
+  "title": "Nested efficient congruencing and relatives of Vinogradov's mean value theorem",
+  "authors": [
+    "Trevor D. Wooley"
+  ],
+  "generated": "2026-05-12",
+  "status": "complete",
+  "nodes": {
+    "thm:1.1": {
+      "type": "Theorem",
+      "number": "1.1",
+      "section": "1",
+      "role": "main_result",
+      "summary": "The full main conjecture in Vinogradov's mean value theorem, by nested efficient congruencing: for $k\\ge2$ and $s\\ge1$, $J_{s,k}(X)\\ll X^{\\epsilon}(X^s+X^{2s-\\frac12k(k+1)})$, with the sharp asymptotic $J_{s,k}(X)\\asymp X^{2s-\\frac12k(k+1)}$ for $s\\ge\\tfrac12k(k+1)$. A second, purely arithmetic, proof of the theorem proved by Bourgain–Demeter–Guth via decoupling — and the engine of the applications below."
+    },
+    "cor:1.2": {
+      "type": "Corollary",
+      "number": "1.2",
+      "section": "1",
+      "role": "auxiliary",
+      "summary": "Asymptotic form: for $s>\\tfrac12k(k+1)$, $J_{s,k}(X)\\sim\\mathfrak{S}_{s,k}\\mathfrak{J}_{s,k}X^{2s-\\frac12k(k+1)}$ with the expected singular series and integral — Hardy–Littlewood asymptotics for the Vinogradov system in the optimal range."
+    },
+    "thm:3.1": {
+      "type": "Theorem",
+      "number": "3.1",
+      "section": "3",
+      "role": "key_reduction",
+      "summary": "The central technical theorem: a bound for the conditioned mean values driving the congruencing iteration, established by a (nested) induction whose conclusion, fed back, forces the critical exponent. thm:1.1 is deduced from it by standard reductions."
+    },
+    "cor:3.2": {
+      "type": "Corollary",
+      "number": "3.2",
+      "section": "3",
+      "role": "key_reduction",
+      "summary": "The mean-value bound at the critical number of variables extracted from thm:3.1 — the form directly implying the main conjecture thm:1.1."
+    },
+    "lem:4.1": {
+      "type": "Lemma",
+      "number": "4.1",
+      "section": "4",
+      "role": "technical",
+      "summary": "Properties of translation-dilation invariant families of exponential sums: the algebraic structure (closure under affine changes of variable in the underlying tuple) that makes the conditioning meaningful."
+    },
+    "lem:4.2": {
+      "type": "Lemma",
+      "number": "4.2",
+      "section": "4",
+      "role": "technical",
+      "summary": "Further structural lemma on translation-dilation invariant families — the bookkeeping identities used when passing between congruence levels."
+    },
+    "lem:5.1": {
+      "type": "Lemma",
+      "number": "5.1",
+      "section": "5",
+      "role": "technical",
+      "summary": "Base of the induction, the trivial case $k=1$: the linear Vinogradov system, where the mean value is computed exactly. Anchors the induction on degree."
+    },
+    "lem:6.1": {
+      "type": "Lemma",
+      "number": "6.1",
+      "section": "6",
+      "role": "key_mechanism",
+      "summary": "Initial conditioning: replace the raw exponential sum by a 'well-conditioned' one supported on residues with controlled spacing modulo a prime power, at negligible cost. The first move of efficient congruencing."
+    },
+    "lem:6.2": {
+      "type": "Lemma",
+      "number": "6.2",
+      "section": "6",
+      "role": "technical",
+      "summary": "Quantitative form of the conditioning loss — how much is given up when restricting to the conditioned residue classes, in terms of the prime and the congruence level."
+    },
+    "lem:6.3": {
+      "type": "Lemma",
+      "number": "6.3",
+      "section": "6",
+      "role": "technical",
+      "summary": "Auxiliary congruence-counting estimate underlying the conditioning step (a Hensel/Jacobian-type count of solutions in the relevant residue classes)."
+    },
+    "lem:7.1": {
+      "type": "Lemma",
+      "number": "7.1",
+      "section": "7",
+      "role": "key_mechanism",
+      "summary": "Harnessing approximate translation-dilation invariance: even when a family is only approximately invariant under the affine action, the mean value transforms predictably up to a controlled error. The flexibility that makes the *nested* iteration possible (rather than the single-grade iteration of earlier efficient-congruencing papers)."
+    },
+    "lem:8.1": {
+      "type": "Lemma",
+      "number": "8.1",
+      "section": "8",
+      "role": "main_technical",
+      "summary": "The iterative step (first part): one cycle of nested efficient congruencing — descend simultaneously through several congruence levels ('multigrade'), producing a combination of deeper-level conditioned mean values with improved exponents."
+    },
+    "lem:8.2": {
+      "type": "Lemma",
+      "number": "8.2",
+      "section": "8",
+      "role": "main_technical",
+      "summary": "The iterative step (second part): the precise bookkeeping inequality combining the multigrade descent with the approximate-invariance lemma — the recursion that, iterated, yields thm:3.1."
+    },
+    "lem:9.1": {
+      "type": "Lemma",
+      "number": "9.1",
+      "section": "9",
+      "role": "main_technical",
+      "summary": "Distillation (first part): convert a multigrade combination of conditioned mean values into a single monograde quantity, so the iteration can be closed by an ordinary descent. The step that makes 'nested' congruencing tractable."
+    },
+    "lem:9.2": {
+      "type": "Lemma",
+      "number": "9.2",
+      "section": "9",
+      "role": "technical",
+      "summary": "Distillation (second part): the convexity/Hölder manipulation realizing the multigrade-to-monograde reduction with the right exponents."
+    },
+    "lem:9.3": {
+      "type": "Lemma",
+      "number": "9.3",
+      "section": "9",
+      "role": "technical",
+      "summary": "Distillation (third part): closing estimate ensuring the monograde process inherits the gain — the final ingredient of the descent."
+    },
+    "thm:11.1": {
+      "type": "Theorem",
+      "number": "11.1",
+      "section": "11",
+      "role": "auxiliary",
+      "summary": "Solutions of congruences in short intervals: optimal bounds on the number of solutions of the Vinogradov congruence system with variables confined to a short interval, deduced from the mean-value theorem."
+    },
+    "cor:11.2": {
+      "type": "Corollary",
+      "number": "11.2",
+      "section": "11",
+      "role": "auxiliary",
+      "summary": "A clean special case of thm:11.1 in the form most often applied."
+    },
+    "thm:13.1": {
+      "type": "Theorem",
+      "number": "13.1",
+      "section": "13",
+      "role": "auxiliary",
+      "summary": "Tarry's problem: the least $s$ for which the system $\\sum x_i^j=\\sum y_i^j$ ($1\\le j\\le k$) has non-trivial solutions is $s=k+1$ for $k\\ge2$ (matching the lower bound) — a clean consequence of the sharp mean value."
+    },
+    "thm:14.1": {
+      "type": "Theorem",
+      "number": "14.1",
+      "section": "14",
+      "role": "auxiliary",
+      "summary": "Analogue of Hua's lemma and Waring's problem: improved bounds for $\\oint|\\sum_{n\\le X}e(\\alpha n^k)|^t\\,d\\alpha$ and hence for $G(k)$ (the Waring number), via the Vinogradov mean value theorem."
+    },
+    "thm:15.1": {
+      "type": "Theorem",
+      "number": "15.1",
+      "section": "15",
+      "role": "auxiliary",
+      "summary": "Vinogradov's mean value theorem in number fields: the analogue of thm:1.1 with rational integers replaced by the integers of a number field, by transliterating the nested efficient-congruencing argument."
+    },
+    "thm:16.1": {
+      "type": "Theorem",
+      "number": "16.1",
+      "section": "16",
+      "role": "auxiliary",
+      "summary": "Multidimensional analogues via restriction of scalars: a Vinogradov-type mean value theorem for systems indexed by points of $\\mathbb{Z}^d$, obtained from the number-field case by Weil restriction."
+    },
+    "thm:17.1": {
+      "type": "Theorem",
+      "number": "17.1",
+      "section": "17",
+      "role": "auxiliary",
+      "summary": "Vinogradov's mean value theorem in function fields $\\mathbb{F}_q[t]$: the function-field analogue of thm:1.1, by the function-field version of nested efficient congruencing."
+    }
+  },
+  "edges": [
+    {
+      "from": "thm:1.1",
+      "to": "cor:3.2",
+      "type": "depends_on",
+      "note": "The main conjecture follows from the critical-variables mean-value bound by standard interpolation over the number of variables."
+    },
+    {
+      "from": "cor:1.2",
+      "to": "thm:1.1",
+      "type": "depends_on",
+      "note": "The asymptotic formula is the upper bound combined with the (easy) lower bound and a circle-method singular-series analysis."
+    },
+    {
+      "from": "cor:3.2",
+      "to": "thm:3.1",
+      "type": "depends_on",
+      "note": "Specialization of the central technical theorem to the critical number of variables."
+    },
+    {
+      "from": "thm:3.1",
+      "to": "lem:8.2",
+      "type": "depends_on",
+      "note": "Proved by iterating the nested efficient-congruencing step to (effective) infinity."
+    },
+    {
+      "from": "thm:3.1",
+      "to": "lem:9.3",
+      "type": "depends_on",
+      "note": "Closing the iteration requires distilling the multigrade combinations into a single monograde process."
+    },
+    {
+      "from": "thm:3.1",
+      "to": "lem:5.1",
+      "type": "depends_on",
+      "note": "The induction on degree is anchored at the trivial case $k=1$."
+    },
+    {
+      "from": "thm:3.1",
+      "to": "lem:6.1",
+      "type": "depends_on",
+      "note": "The iteration is launched from the initial conditioning of the raw exponential sum."
+    },
+    {
+      "from": "lem:8.1",
+      "to": "lem:7.1",
+      "type": "depends_on",
+      "note": "The multigrade descent step exploits approximate translation-dilation invariance."
+    },
+    {
+      "from": "lem:8.2",
+      "to": "lem:8.1",
+      "type": "depends_on",
+      "note": "The bookkeeping inequality is built on the descent step."
+    },
+    {
+      "from": "lem:8.2",
+      "to": "lem:6.2",
+      "type": "depends_on",
+      "note": "The conditioning-loss estimate enters the cost accounting of each cycle."
+    },
+    {
+      "from": "lem:8.1",
+      "to": "lem:4.1",
+      "type": "depends_on",
+      "note": "Each descent stays within a translation-dilation invariant family."
+    },
+    {
+      "from": "lem:9.1",
+      "to": "lem:8.2",
+      "type": "depends_on",
+      "note": "Distillation operates on the multigrade combinations produced by the iterative step."
+    },
+    {
+      "from": "lem:9.2",
+      "to": "lem:9.1",
+      "type": "depends_on",
+      "note": "The convexity manipulation realizing the multigrade-to-monograde reduction."
+    },
+    {
+      "from": "lem:9.3",
+      "to": "lem:9.2",
+      "type": "depends_on",
+      "note": "Final closing estimate of the distillation."
+    },
+    {
+      "from": "lem:7.1",
+      "to": "lem:4.2",
+      "type": "depends_on",
+      "note": "Approximate invariance is quantified using the structural lemmas on invariant families."
+    },
+    {
+      "from": "lem:6.1",
+      "to": "lem:6.3",
+      "type": "depends_on",
+      "note": "The conditioning relies on the auxiliary congruence-solution count."
+    },
+    {
+      "from": "lem:6.2",
+      "to": "lem:6.3",
+      "type": "depends_on",
+      "note": "Same count, used to bound the conditioning loss."
+    },
+    {
+      "from": "lem:6.1",
+      "to": "lem:4.1",
+      "type": "depends_on",
+      "note": "Conditioning is set up inside a translation-dilation invariant family."
+    },
+    {
+      "from": "thm:11.1",
+      "to": "thm:3.1",
+      "type": "depends_on",
+      "note": "Short-interval congruence counts are read off from the conditioned mean-value bound."
+    },
+    {
+      "from": "cor:11.2",
+      "to": "thm:11.1",
+      "type": "depends_on",
+      "note": "A packaged special case."
+    },
+    {
+      "from": "thm:13.1",
+      "to": "thm:1.1",
+      "type": "depends_on",
+      "note": "The optimal exponent in Tarry's problem follows from the sharp Vinogradov mean value."
+    },
+    {
+      "from": "thm:14.1",
+      "to": "thm:1.1",
+      "type": "depends_on",
+      "note": "Hua-type bounds and the Waring number $G(k)$ improve via the mean value theorem."
+    },
+    {
+      "from": "thm:15.1",
+      "to": "thm:1.1",
+      "type": "extends",
+      "note": "The number-field mean value theorem is proved by transliterating nested efficient congruencing to $\\mathcal{O}_K$."
+    },
+    {
+      "from": "thm:16.1",
+      "to": "thm:15.1",
+      "type": "depends_on",
+      "note": "The multidimensional analogue is obtained from the number-field case by restriction of scalars."
+    },
+    {
+      "from": "thm:17.1",
+      "to": "thm:1.1",
+      "type": "extends",
+      "note": "The function-field mean value theorem is the $\\mathbb{F}_q[t]$ version of nested efficient congruencing."
+    }
+  ],
+  "critical_path": [
+    "thm:1.1",
+    "cor:3.2",
+    "thm:3.1",
+    "lem:8.2",
+    "lem:9.1",
+    "lem:7.1",
+    "lem:6.1",
+    "lem:5.1"
+  ],
+  "proof_architecture": {
+    "main_results": {
+      "description": "The full main conjecture in Vinogradov's mean value theorem and its asymptotic form.",
+      "nodes": [
+        "thm:1.1",
+        "cor:1.2"
+      ]
+    },
+    "central_technical_theorem": {
+      "description": "The conditioned-mean-value bound that the bulk of the paper proves and from which the main conjecture follows.",
+      "nodes": [
+        "thm:3.1",
+        "cor:3.2"
+      ]
+    },
+    "invariant_families_and_conditioning": {
+      "description": "Translation-dilation invariant families, the initial conditioning of the exponential sum, and the base case k=1.",
+      "nodes": [
+        "lem:4.1",
+        "lem:4.2",
+        "lem:5.1",
+        "lem:6.1",
+        "lem:6.2",
+        "lem:6.3"
+      ]
+    },
+    "nested_iteration_and_distillation": {
+      "description": "Approximate translation-dilation invariance, the multigrade descent step, and the distillation of multigrade combinations into closable monograde processes.",
+      "nodes": [
+        "lem:7.1",
+        "lem:8.1",
+        "lem:8.2",
+        "lem:9.1",
+        "lem:9.2",
+        "lem:9.3"
+      ]
+    },
+    "applications": {
+      "description": "Solutions of congruences in short intervals, Tarry's problem, Hua-type estimates and Waring's problem, and Vinogradov's mean value theorem in number fields, multidimensional settings, and function fields.",
+      "nodes": [
+        "thm:11.1",
+        "cor:11.2",
+        "thm:13.1",
+        "thm:14.1",
+        "thm:15.1",
+        "thm:16.1",
+        "thm:17.1"
+      ]
+    }
+  },
+  "bibliography": {
+    "Wooley:Nested-precursor": {
+      "title": "The cubic case of the main conjecture in Vinogradov's mean value theorem",
+      "authors": [
+        "Wooley"
+      ],
+      "arxiv_id": "1401.3150",
+      "in_registry": true
+    },
+    "BDG": {
+      "title": "Proof of the main conjecture in Vinogradov's mean value theorem for degrees higher than three",
+      "authors": [
+        "Bourgain",
+        "Demeter",
+        "Guth"
+      ],
+      "arxiv_id": "1512.01565",
+      "in_registry": true
+    },
+    "Wooley:EfficientCongruencing": {
+      "title": "Vinogradov's mean value theorem via efficient congruencing",
+      "authors": [
+        "Wooley"
+      ],
+      "arxiv_id": "1101.0574",
+      "in_registry": false
+    },
+    "Vaughan:HLMethod": {
+      "title": "The Hardy-Littlewood Method",
+      "authors": [
+        "Vaughan"
+      ],
+      "arxiv_id": null,
+      "in_registry": false
+    }
+  }
+}

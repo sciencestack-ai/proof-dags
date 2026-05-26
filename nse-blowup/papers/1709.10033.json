@@ -1,0 +1,477 @@
+{
+  "paper": "1709.10033",
+  "title": "Nonuniqueness of weak solutions to the Navier-Stokes equation",
+  "authors": [
+    "Tristan Buckmaster",
+    "Vlad Vicol"
+  ],
+  "generated": "2026-03-10",
+  "status": "complete",
+  "nodes": {
+    "def:1.1": {
+      "type": "Definition",
+      "number": "1.1",
+      "section": "1.2",
+      "role": "definition",
+      "summary": "Defines weak solution of the 3D NSE on $T^3$: v in $C^0(R$; $L^2)$ that is weakly divergence-free and satisfies the equation in the distributional sense against divergence-free test functions."
+    },
+    "thm:1.2": {
+      "type": "Theorem",
+      "number": "1.2",
+      "section": "1.2",
+      "role": "main_result",
+      "summary": "Main nonuniqueness result: there exists $\\beta>0$ such that for any prescribed nonneg smooth energy profile e(t), there exists a weak NSE solution v in $C^0_t H^\\beta_x$ whose kinetic energy equals e(t) for all t. Implies non-uniqueness in the Leray class."
+    },
+    "thm:1.3": {
+      "type": "Theorem",
+      "number": "1.3",
+      "section": "1.2",
+      "role": "main_result",
+      "summary": "Hölder-continuous dissipative Euler weak solutions arise as strong $L^2$ vanishing viscosity limits of finite-energy NSE weak solutions; the approximating sequence is constructed by the same convex integration scheme as thm:1.2."
+    },
+    "prop:2.1": {
+      "type": "Proposition",
+      "number": "2.1",
+      "section": "2.3",
+      "role": "key_reduction",
+      "summary": "Main iterative proposition: given a triple $(v_q, p_q, R_q)$ satisfying the NSE-Reynolds system and inductive estimates at level q, there exists a next triple $(v_{q+1}, p_{q+1}, R_{q+1})$ satisfying the same estimates at level q+1, with $||v_{q+1}-v_q||_{L^2} \\le$ M $\\delta_{q+1}^{1/2}$. The entire proof of thm:1.2 and thm:1.3 reduces to iterating this proposition."
+    },
+    "prop:3.1": {
+      "type": "Proposition",
+      "number": "3.1",
+      "section": "3.1",
+      "role": "foundational",
+      "summary": "Beltrami wave construction: for rational directions $\\xi$, defines vector fields $W(x) = \\Sigma a_\\xi B_\\xi e^{i\\lambda\\xi\\cdotx}$ that are real, divergence-free, and satisfy div(W⊗$W) = \\nabla(|W|^2/2)$, enabling stress cancellation in the NSE-Reynolds system."
+    },
+    "prop:3.2": {
+      "type": "Proposition",
+      "number": "3.2",
+      "section": "3.1",
+      "role": "key_mechanism",
+      "summary": "Geometric amplitude decomposition: for any R near the identity in the space of $3\\times3$ symmetric matrices, constructs disjoint sets $\\Lambda_\\alpha \\subset S^2\\capQ^3$ and smooth amplitude functions $\\gamma_\\xi^(\\alpha)(R)$ such that R $= (1/2) \\Sigma_{\\xi\\in\\Lambda_\\alpha} \\gamma_\\xi^(\\alpha)(R)^2 (Id - \\xi$⊗$\\xi)$. This is the mechanism for canceling the Reynolds stress."
+    },
+    "rem:3.3": {
+      "type": "Remark",
+      "number": "3.3",
+      "section": "3.1",
+      "role": "context",
+      "summary": "Specifies the number $N_\\Lambda$ of direction sets needed in prop:3.2, which constrains the divisibility condition on the base frequency parameter a in prop:2.1."
+    },
+    "prop:3.4": {
+      "type": "Proposition",
+      "number": "3.4",
+      "section": "3.2",
+      "role": "key_mechanism",
+      "summary": "Intermittent Beltrami wave stress identity: the intermittent wave $W_{(\\xi)}(x,t) (localized$ to a sparse spatial grid of scale r) satisfies $\\Sigma \\gamma_{(\\xi)}(R)^2 \\int W_{(\\xi)}$ ⊗ $W_{(-\\xi)}$ dx = R, enabling cancellation of the Reynolds stress R via the amplitude functions from prop:3.2."
+    },
+    "prop:3.5": {
+      "type": "Proposition",
+      "number": "3.5",
+      "section": "3.2",
+      "role": "technical",
+      "summary": "$L^p$ derivative bounds for intermittent Beltrami waves $W_{(\\xi)}$: $||\\nabla^N \\partial_t^K W_{(\\xi)}||_{L^p}$ ≲ $\\lambda^N (\\lambda\\sigmar\\mu)^K r^{3/2-3/p}$, tracking the wave's frequency $(\\lambda)$, spatial concentration (r), temporal oscillation $(\\mu)$, and lattice spacing $(\\sigma)$."
+    },
+    "lem:3.7": {
+      "type": "Lemma",
+      "number": "3.7",
+      "section": "3.3",
+      "role": "technical",
+      "summary": "$L^p$ decorrelation/independence lemma: for a slow function f (Lipschitz scale $\\lambda)$ and a fast periodic function g (period $1/\\kappa \\gg 1/\\lambda), ||fg||_{L^p}$ ≲ $C_f ||g||_{L^p}$. Used to estimate products of the slowly-varying amplitude with the rapidly-oscillating Beltrami waves."
+    },
+    "lem:4.1": {
+      "type": "Lemma",
+      "number": "4.1",
+      "section": "4.5",
+      "role": "technical",
+      "summary": "Stress cutoff finiteness and amplitude bounds: $i_max(q)$ is finite (only finitely many cutoff levels are active), $\\rho_i$ ≲ ℓ^{-1}, and the key summation $\\Sigma \\rho_i^{1/2} 2^{-i} \\le 3\\delta_{q+1}^{1/2}$, controlling the total $L^2$ contribution from all cutoff levels."
+    },
+    "lem:4.2": {
+      "type": "Lemma",
+      "number": "4.2",
+      "section": "4.5",
+      "role": "technical",
+      "summary": "Bounds for the stress cutoff functions $\\chi_{(i)}$: $||\\chi_{(i)}||_{L^2}$ ≲ 2^{-i} and $||\\chi_{(i)}||_{C^N_{x,t}}$ ≲ ℓ^{-N} for $N\\ge1$, establishing that cutoffs are localized in space and regular at scale ℓ."
+    },
+    "lem:4.3": {
+      "type": "Lemma",
+      "number": "4.3",
+      "section": "4.5",
+      "role": "technical",
+      "summary": "Energy cutoff estimates: the zeroth-level cutoff $\\chi_{(0)}$ is large $(\\int \\chi_{(0)}^2 \\ge |T^3|/2$, ensuring the energy iterate works), while higher-level contributions $\\Sigma_{i\\ge1} \\rho_i \\int \\chi_{(i)}^2$ ≲ $\\lambda_q^{-\\varepsilon_R} \\delta_{q+1}$ are negligible."
+    },
+    "lem:4.4": {
+      "type": "Lemma",
+      "number": "4.4",
+      "section": "4.5",
+      "role": "technical",
+      "summary": "Amplitude coefficient $a_{(\\xi)}$ bounds: $||a_{(\\xi)}||_{L^2}$ ≲ $\\rho_i^{1/2} 2^{-i}$ ≲ $\\delta_{q+1}^{1/2}, ||a_{(\\xi)}||_{L^\\infty}$ ≲ $\\rho_i^{1/2}$ ≲ $\\delta_{q+1}^{1/2} 2^i$, and $C^N$ bounds ≲ ℓ^{-N}. These amplitudes drive the velocity perturbation."
+    },
+    "prop:4.5": {
+      "type": "Proposition",
+      "number": "4.5",
+      "section": "4.5",
+      "role": "main_technical",
+      "summary": "Full perturbation estimates: the principal part $w^{(p)}_{q+1}$, incompressibility corrector $w^{(c)}_{q+1}$, and temporal corrector $w^{(t)}_{q+1}$ satisfy sharp $L^2, W^{1,p}, \\partial_t L^p$, and $C^N$ bounds in terms of $\\delta_{q+1}, \\lambda_{q+1}$, r, $\\sigma, \\mu$, ℓ. This is the central technical proposition for the perturbation step."
+    },
+    "cor:4.6": {
+      "type": "Corollary",
+      "number": "4.6",
+      "section": "4.5",
+      "role": "key_reduction",
+      "summary": "Combines prop:4.5 into bounds on the total velocity increment $w_{q+1} = w^{(p)} + w^{(c)} + w^{(t)}$: $||w_{q+1}||_{L^2} \\le (3M/4) \\delta_{q+1}^{1/2}, ||v_{q+1} - v_q||_{L^2} \\le$ M $\\delta_{q+1}^{1/2}$, plus $W^{1,p}$ and $C^N$ estimates. These feed directly into prop:2.1."
+    },
+    "prop:5.1": {
+      "type": "Proposition",
+      "number": "5.1",
+      "section": "5.1",
+      "role": "main_technical",
+      "summary": "Reynolds stress reduction: for suitable p>1 and $\\varepsilon_R>0 (depending$ only on b and $\\beta)$, the new Reynolds stress R̃ satisfies ||R̃$||_{L^p}$ ≲ $\\lambda_{q+1}^{-2\\varepsilon_R} \\delta_{q+2}$. This is the key estimate showing the Reynolds stress shrinks at each iteration step."
+    },
+    "cor:5.2": {
+      "type": "Corollary",
+      "number": "5.2",
+      "section": "5",
+      "role": "key_reduction",
+      "summary": "NSE-Reynolds closure: upgrades prop:5.1 to produce a traceless symmetric tensor $R_{q+1}$ satisfying both $||R_{q+1}||_{L^1} \\le \\lambda_{q+1}^{-\\varepsilon_R} \\delta_{q+2}$ and $||R_{q+1}||_{C^1_{x,t}} \\le \\lambda_{q+1}^{10}$, completing the inductive step for prop:2.1."
+    },
+    "lem:6.1": {
+      "type": "Lemma",
+      "number": "6.1",
+      "section": "6",
+      "role": "technical",
+      "summary": "Energy continuity: for $|t-t'| \\le 2$ℓ, the prescribed energy e(t), the $L^2$ norm of $v_q$, the cutoff integrals $\\int \\chi_i^2$ dx, and the density $\\rho(t)$ all vary by at most O(ℓ^{1/2}). Controls temporal fluctuations in the energy matching step."
+    },
+    "lem:6.2": {
+      "type": "Lemma",
+      "number": "6.2",
+      "section": "6",
+      "role": "key_technical",
+      "summary": "Energy tracking when $\\rho_0(t) \\ne 0$: the prescribed energy profile e(t) and the kinetic energy of $v_{q+1}(t)$ agree to within $\\delta_{q+2}/4$, i.e., $|e(t) - \\int|v_{q+1}|^2$ dx $- \\delta_{q+2}/2| \\le \\delta_{q+2}/4$, enabling the inductive energy estimate to close."
+    },
+    "lem:6.3": {
+      "type": "Lemma",
+      "number": "6.3",
+      "section": "6",
+      "role": "technical",
+      "summary": "Energy tracking when $\\rho_0(t) = 0$: the iterate trivializes $(v_{q+1}$ ≡ 0, $R_{q+1}$ ≡ 0) and the energy gap $e(t) - \\int|v_{q+1}|^2 \\le (3/4)\\delta_{q+2}$, maintaining the inductive bound trivially."
+    },
+    "lem:B.1": {
+      "type": "Lemma",
+      "number": "B.1",
+      "section": "B",
+      "role": "technical",
+      "summary": "Anti-divergence commutator estimate: for slowly-varying a (scale $\\lambda \\le \\kappa)$ and a high-frequency function ℙ$_{\\ge\\kappa}f$, the inverse-divergence $|\\nabla|^{-1}(a$ ℙ$_{\\ge\\kappa}$ f) satisfies an $L^p$ bound ≲ $C_a (1 + \\lambda^L/\\kappa^{L-2}) ||f||_{L^p}/\\kappa$. Used to estimate the commutator/oscillation error in Section 5."
+    }
+  },
+  "edges": [
+    {
+      "from": "thm:1.2",
+      "to": "prop:2.1",
+      "type": "depends_on",
+      "note": "thm:1.2 is proved by iterating prop:2.1 starting from $(v_0, p_0, 0)$ and taking the $L^2$ limit; the energy prescription is encoded in the initial data and $\\rho_0$"
+    },
+    {
+      "from": "thm:1.3",
+      "to": "prop:2.1",
+      "type": "depends_on",
+      "note": "thm:1.3 uses the same iterative scheme as thm:1.2 but with viscosity parameter $\\nu_n \\to 0$, producing a sequence converging strongly to the given Euler solution"
+    },
+    {
+      "from": "thm:1.3",
+      "to": "thm:1.2",
+      "type": "depends_on",
+      "note": "The vanishing viscosity construction is a variant of the nonuniqueness construction; same scheme, different parameter regime"
+    },
+    {
+      "from": "prop:2.1",
+      "to": "cor:4.6",
+      "type": "depends_on",
+      "note": "prop:2.1 requires $||v_{q+1}-v_q||_{L^2} \\le$ M $\\delta_{q+1}^{1/2}$, which is exactly (4.46) from cor:4.6"
+    },
+    {
+      "from": "prop:2.1",
+      "to": "cor:5.2",
+      "type": "depends_on",
+      "note": "prop:2.1 requires the inductive Reynolds stress bounds at level q+1; these are the $L^1$ and $C^1$ estimates of cor:5.2"
+    },
+    {
+      "from": "prop:2.1",
+      "to": "lem:6.2",
+      "type": "depends_on",
+      "note": "Energy inductive estimate at level q+1 (eq:2.6) when $\\rho_0 \\ne 0$ follows from lem:6.2"
+    },
+    {
+      "from": "prop:2.1",
+      "to": "lem:6.3",
+      "type": "depends_on",
+      "note": "Energy inductive estimate at level q+1 when $\\rho_0 = 0$ follows from lem:6.3"
+    },
+    {
+      "from": "cor:4.6",
+      "to": "prop:4.5",
+      "type": "depends_on",
+      "note": "cor:4.6 combines the individual component estimates of prop:4.5 into total perturbation bounds"
+    },
+    {
+      "from": "cor:5.2",
+      "to": "prop:5.1",
+      "type": "depends_on",
+      "note": "cor:5.2 upgrades prop:5.1's $L^p$ stress bound to the required $L^1$ and $C^1$ bounds via interpolation and the $C^N$ estimates from cor:4.6"
+    },
+    {
+      "from": "prop:4.5",
+      "to": "lem:4.4",
+      "type": "depends_on",
+      "note": "$L^2$ bound for $w^{(p)}_{q+1}$ uses lem:4.4 amplitude bounds and prop:3.5 wave estimates via lem:3.7"
+    },
+    {
+      "from": "prop:4.5",
+      "to": "prop:3.5",
+      "type": "depends_on",
+      "note": "$W^{1,p}$ and $C^N$ estimates for the velocity perturbation use the $L^p$ derivative bounds for the intermittent Beltrami waves"
+    },
+    {
+      "from": "lem:4.4",
+      "to": "lem:4.2",
+      "type": "depends_on",
+      "note": "Amplitude $a_{(\\xi)}$ bounds inherit $C^N$ estimates from the cutoff $\\chi_{(i)}$ via lem:4.2"
+    },
+    {
+      "from": "lem:4.4",
+      "to": "lem:4.1",
+      "type": "depends_on",
+      "note": "The key summation bound $\\Sigma \\rho_i^{1/2} 2^{-i} \\le 3\\delta_{q+1}^{1/2}$ from lem:4.1 is used to bound $||a_{(\\xi)}||_{L^2}$"
+    },
+    {
+      "from": "prop:5.1",
+      "to": "prop:3.5",
+      "type": "depends_on",
+      "note": "Reynolds stress reduction uses $L^p$ estimates for the waves (linear error, corrector error, oscillation error all bounded via prop:3.5)"
+    },
+    {
+      "from": "prop:5.1",
+      "to": "lem:3.7",
+      "type": "depends_on",
+      "note": "The oscillation error in Section 5.3 uses the $L^p$ decorrelation lemma to separate slow (amplitude) from fast (wave) factors"
+    },
+    {
+      "from": "prop:5.1",
+      "to": "lem:B.1",
+      "type": "depends_on",
+      "note": "The oscillation/commutator error (Section 5.3) applies the anti-divergence estimate lem:B.1 to the product of the amplitude and the projected stress"
+    },
+    {
+      "from": "prop:5.1",
+      "to": "prop:3.4",
+      "type": "depends_on",
+      "note": "The stress cancellation (main term in prop:5.1) uses prop:3.4's identity $\\Sigma \\gamma_{(\\xi)}^2 \\int W_{(\\xi)}$⊗$W_{(-\\xi)} =$ R to absorb the Reynolds stress $R_q$"
+    },
+    {
+      "from": "prop:3.4",
+      "to": "prop:3.2",
+      "type": "depends_on",
+      "note": "The amplitude functions $\\gamma_{(\\xi)}(R)$ and the direction sets $\\Lambda_\\alpha$ in prop:3.4 are the ones constructed in prop:3.2"
+    },
+    {
+      "from": "prop:3.4",
+      "to": "prop:3.1",
+      "type": "depends_on",
+      "note": "The intermittent Beltrami wave $W_{(\\xi)}$ is built from the Beltrami flow structure of prop:3.1, inheriting div(W⊗$W) = \\nabla(|W|^2/2)$"
+    },
+    {
+      "from": "prop:3.5",
+      "to": "prop:3.4",
+      "type": "depends_on",
+      "note": "$L^p$ estimates for $W_{(\\xi)}$ in prop:3.5 apply to the intermittent Beltrami waves defined in prop:3.4"
+    },
+    {
+      "from": "lem:6.2",
+      "to": "lem:6.1",
+      "type": "depends_on",
+      "note": "Energy continuity lem:6.1 is used to control temporal fluctuations of e(t) and $||v_q||_{L^2}^2$ in the energy matching argument of lem:6.2"
+    },
+    {
+      "from": "lem:6.2",
+      "to": "lem:4.3",
+      "type": "depends_on",
+      "note": "The lower bound $\\int \\chi_{(0)}^2 \\ge |T^3|/2$ from lem:4.3 is needed to ensure the energy matching via $\\rho_0$ is non-degenerate when $\\rho_0 \\ne 0$"
+    },
+    {
+      "from": "prop:2.1",
+      "to": "rem:3.3",
+      "type": "depends_on",
+      "note": "The condition that a is a multiple of $N_\\Lambda (from$ rem:3.3) is a hypothesis of prop:2.1, ensuring the Beltrami direction sets tile $T^3$ compatibly"
+    }
+  ],
+  "critical_path": [
+    "thm:1.2",
+    "prop:2.1",
+    "cor:5.2",
+    "prop:5.1",
+    "prop:3.4",
+    "prop:3.2"
+  ],
+  "proof_architecture": {
+    "foundations": {
+      "description": "Basic definitions and geometric building blocks for the convex integration scheme",
+      "nodes": [
+        "def:1.1",
+        "prop:3.1",
+        "prop:3.2",
+        "rem:3.3"
+      ]
+    },
+    "wave_construction": {
+      "description": "Intermittent Beltrami waves: definition, stress identity, $L^p$ estimates, and decorrelation. The intermittency (spatial concentration parameter r $\\ll 1)$ is what makes the construction work for NSE (unlike the Euler case).",
+      "nodes": [
+        "prop:3.4",
+        "prop:3.5",
+        "lem:3.7",
+        "lem:B.1"
+      ]
+    },
+    "perturbation_construction": {
+      "description": "Building the velocity increment $w_{q+1}$ from stress cutoffs, amplitude coefficients, and Beltrami waves; establishing all required bounds",
+      "nodes": [
+        "lem:4.1",
+        "lem:4.2",
+        "lem:4.3",
+        "lem:4.4",
+        "prop:4.5",
+        "cor:4.6"
+      ]
+    },
+    "stress_reduction": {
+      "description": "Showing the new Reynolds stress $R_{q+1}$ is smaller than $R_q$ by factor $\\lambda_{q+1}^{-\\varepsilon_R}$; the heart of why the iteration converges",
+      "nodes": [
+        "prop:5.1",
+        "cor:5.2"
+      ]
+    },
+    "energy_matching": {
+      "description": "Ensuring the iterates track the prescribed energy profile e(t); the intermittency parameter r is calibrated to keep energy errors within the inductive $\\delta_{q+2}$ budget",
+      "nodes": [
+        "lem:6.1",
+        "lem:6.2",
+        "lem:6.3"
+      ]
+    },
+    "main_iteration": {
+      "description": "The single inductive proposition that packages all the above into one step: $(v_q, R_q) \\to (v_{q+1}, R_{q+1})$ with improved estimates",
+      "nodes": [
+        "prop:2.1"
+      ]
+    },
+    "main_results": {
+      "description": "The two main theorems: nonuniqueness of finite-energy NSE solutions, and Euler solutions as vanishing viscosity limits",
+      "nodes": [
+        "thm:1.2",
+        "thm:1.3"
+      ]
+    }
+  },
+  "bibliography": {
+    "Leray34": {
+      "title": "Sur le mouvement d'un liquide visqueux emplissant l'espace",
+      "authors": [
+        "Jean Leray"
+      ],
+      "arxiv_id": null,
+      "in_registry": false,
+      "note": "1934 foundational paper proving existence of finite-energy weak NSE solutions; thm:1.2 directly contradicts uniqueness in this class"
+    },
+    "DLSZ09": {
+      "title": "The Euler equations as a differential inclusion",
+      "authors": [
+        "Camillo De Lellis",
+        "László Székelyhidi Jr"
+      ],
+      "arxiv_id": null,
+      "in_registry": false,
+      "note": "Introduces convex integration for fluid equations; foundational predecessor of this paper's method"
+    },
+    "DLSZ13": {
+      "title": "Dissipative continuous Euler flows",
+      "authors": [
+        "Camillo De Lellis",
+        "László Székelyhidi Jr"
+      ],
+      "arxiv_id": null,
+      "in_registry": false,
+      "note": "Key predecessor in the Onsager/Euler nonuniqueness program"
+    },
+    "DSZ17": {
+      "title": "Non-uniqueness and h-principle for Hölder-continuous weak solutions of the Euler equations",
+      "authors": [
+        "Sara Daneri",
+        "László Székelyhidi Jr"
+      ],
+      "arxiv_id": "1710.01473",
+      "in_registry": false,
+      "note": "Closest Euler analogue; this paper extends the technique to NSE with intermittent waves"
+    },
+    "Isett16": {
+      "title": "A proof of Onsager's conjecture",
+      "authors": [
+        "Philip Isett"
+      ],
+      "arxiv_id": "1608.08301",
+      "in_registry": false,
+      "note": "Proves Onsager $C^{1/3}$ threshold for Euler; the NSE result here uses a different (lower) Hölder regularity but the same h-principle philosophy"
+    },
+    "BDLSV17": {
+      "title": "Onsager's conjecture for admissible weak solutions",
+      "authors": [
+        "Tristan Buckmaster",
+        "Camillo De Lellis",
+        "László Székelyhidi Jr",
+        "Vlad Vicol"
+      ],
+      "arxiv_id": "1712.02830",
+      "in_registry": false,
+      "note": "Concurrent work in the same program; admissible Euler solutions below $C^{1/3}$"
+    },
+    "BMV17": {
+      "title": "Unpublished work on NSE non-uniqueness from smooth data",
+      "authors": [
+        "Tristan Buckmaster",
+        "Nader Masmoudi",
+        "Vlad Vicol"
+      ],
+      "arxiv_id": "2101.09278",
+      "in_registry": false,
+      "note": "Successor work extending to smooth initial data; blocked in queue as prerequisite context"
+    },
+    "GuillodSverak17": {
+      "title": "Numerical investigations of non-uniqueness for the Navier-Stokes initial value problem in borderline spaces",
+      "authors": [
+        "Julien Guillod",
+        "Vladimir Šverák"
+      ],
+      "arxiv_id": "1704.00560",
+      "in_registry": false,
+      "note": "Numerical evidence for nonuniqueness; cited as motivation alongside this paper's analytic proof"
+    },
+    "JiaSverak15": {
+      "title": "Are the incompressible 3d Navier-Stokes equations locally ill-posed in the natural energy space?",
+      "authors": [
+        "Hao Jia",
+        "Vladimir Šverák"
+      ],
+      "arxiv_id": null,
+      "in_registry": false,
+      "note": "Ill-posedness result in energy space, related context"
+    },
+    "CaffarelliKohnNirenberg82": {
+      "title": "Partial regularity of suitable weak solutions of the Navier-Stokes equations",
+      "authors": [
+        "Luis Caffarelli",
+        "Robert Kohn",
+        "Louis Nirenberg"
+      ],
+      "arxiv_id": null,
+      "in_registry": false,
+      "note": "CKN partial regularity theorem for suitable weak solutions"
+    }
+  }
+}

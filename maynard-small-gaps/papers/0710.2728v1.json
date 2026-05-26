@@ -1,0 +1,281 @@
+{
+  "paper": "0710.2728v1",
+  "title": "Primes in Tuples II",
+  "authors": [
+    "D. A. Goldston",
+    "J. Pintz",
+    "C. Y. Yıldırım"
+  ],
+  "generated": "2026-05-06",
+  "status": "complete",
+  "nodes": {
+    "thm:1": {
+      "type": "Theorem",
+      "number": "1",
+      "section": "1",
+      "role": "main_result",
+      "summary": "Quantitative liminf: $\\liminf_n (p_{n+1} - p_n) / [\\sqrt{\\log p_n}\\,(\\log_2 p_n)^2] < \\infty$. Sharpens GPY I's qualitative $E_1 = 0$ to an explicit decay rate."
+    },
+    "thm:2": {
+      "type": "Theorem",
+      "number": "2",
+      "section": "2",
+      "role": "main_technical",
+      "summary": "Conditional version: under hypothetical zero-free region for $L(s,\\chi)$ at primitive real characters with $q \\le \\exp(3\\sqrt{\\log N})$, an admissible $h$-tuple $\\mathcal{A} = \\{a_i\\}$ with $h \\ge C \\sqrt{\\log N}\\,\\log_2^2 N$ captures small gaps. The key 'modulo Siegel zero' framework."
+    },
+    "thm:3": {
+      "type": "Theorem",
+      "number": "3",
+      "section": "2",
+      "role": "main_result",
+      "summary": "$(\\mathcal{P} - \\mathcal{P}) \\cap (\\mathcal{A} - \\mathcal{A})$ is infinite for any sufficiently dense set $\\mathcal{A} \\subset \\mathbb{N}$ with $|\\mathcal{A} \\cap [1,N]| \\gg \\sqrt{\\log N}\\,\\log_2^2 N$ for $N \\ge N_0$. Strong density-of-prime-differences statement."
+    },
+    "thm:4": {
+      "type": "Theorem",
+      "number": "4",
+      "section": "4",
+      "role": "main_technical",
+      "summary": "$\\mathcal{A}$-restricted $\\Lambda_R$-correlation asymptotic: $\\sum_{n \\in \\mathcal{A}(\\mathcal{H}_1) \\cap \\mathcal{A}(\\mathcal{H}_2)} \\Lambda_R(n;\\mathcal{H}_1,\\ell_1)\\,\\Lambda_R(n;\\mathcal{H}_2,\\ell_2) = N \\cdot \\binom{\\ell_1+\\ell_2}{\\ell_1} \\frac{(\\log R)^{r+\\ell_1+\\ell_2}}{(r+\\ell_1+\\ell_2)!} \\cdot \\frac{\\mathfrak{S}(\\mathcal{H})\\,P}{|\\mathcal{A}(\\mathcal{H})|} \\cdot (1 + O(\\cdot))$. The $S_1$ calculation, generalized to a set $\\mathcal{A}$."
+    },
+    "thm:5": {
+      "type": "Theorem",
+      "number": "5",
+      "section": "4",
+      "role": "main_technical",
+      "summary": "$\\mathcal{A}$-restricted $\\Lambda_R$-correlation with prime indicator (the $S_2$ analog). Together with thm:4 evaluates $S_2 - \\rho S_1$ over a restricted domain."
+    },
+    "thm:6": {
+      "type": "Theorem",
+      "number": "6",
+      "section": "12",
+      "role": "main_technical",
+      "summary": "Approximate orthogonality / equidistribution for primes in arithmetic progressions to small moduli, used to translate GPY's argument into the $\\mathcal{A}$-restricted setting."
+    },
+    "lem:1": {
+      "type": "Lemma",
+      "number": "1",
+      "section": "5",
+      "role": "technical",
+      "summary": "Contour integral bound for $\\int_{\\mathcal{L}} (\\log(|s|+3))^B |R^s/s^k\\,ds|$. Same role as math/0508185:lem:1, refined for the $\\mathcal{A}$-restricted case."
+    },
+    "lem:2": {
+      "type": "Lemma",
+      "number": "2",
+      "section": "5",
+      "role": "technical",
+      "summary": "Divisor sum bounds $\\sum d_m(q)/q \\ll (m+\\log x)^{m+1}$. Standard analytic workhorse."
+    },
+    "lem:3": {
+      "type": "Lemma",
+      "number": "3",
+      "section": "8",
+      "role": "technical",
+      "summary": "Perturbed $\\mathcal{T}^*_R$ asymptotic — analytic core of thm:4, thm:5. Refines math/0508185:lem:3 to handle restriction to $\\mathcal{A}$."
+    },
+    "lem:4": {
+      "type": "Lemma",
+      "number": "4",
+      "section": "10",
+      "role": "technical",
+      "summary": "Singular-series factorization for primes restricted to a set $\\mathcal{A}$. Replaces standard $\\mathfrak{S}(\\mathcal{H})$ with $\\mathcal{A}$-twisted version."
+    },
+    "lem:5": {
+      "type": "Lemma",
+      "number": "5",
+      "section": "10",
+      "role": "technical",
+      "summary": "Counting lemma for $\\mathcal{A} \\cap$ residue-class intersections, used in evaluating the $S_1$ sum."
+    },
+    "lem:6": {
+      "type": "Lemma",
+      "number": "6",
+      "section": "11",
+      "role": "technical",
+      "summary": "Conditional Bombieri-Vinogradov-style estimate compatible with the assumption of thm:2."
+    }
+  },
+  "edges": [
+    {
+      "from": "thm:1",
+      "to": "thm:2",
+      "type": "depends_on",
+      "note": "Conditional thm:2 plus zero-free-region elimination yields unconditional thm:1."
+    },
+    {
+      "from": "thm:1",
+      "to": "thm:3",
+      "type": "addresses_same_question",
+      "note": "Both quantify the small-gaps phenomenon — thm:1 for primes, thm:3 for prime-difference / general-set differences."
+    },
+    {
+      "from": "thm:2",
+      "to": "thm:4",
+      "type": "depends_on",
+      "note": "$S_1$ evaluation in the $\\mathcal{A}$-restricted setting."
+    },
+    {
+      "from": "thm:2",
+      "to": "thm:5",
+      "type": "depends_on",
+      "note": "$S_2$ evaluation in the $\\mathcal{A}$-restricted setting."
+    },
+    {
+      "from": "thm:2",
+      "to": "lem:6",
+      "type": "depends_on",
+      "note": "Conditional Bombieri-Vinogradov input."
+    },
+    {
+      "from": "thm:3",
+      "to": "thm:4",
+      "type": "depends_on",
+      "note": "Same correlation machinery, set-theoretic specialization."
+    },
+    {
+      "from": "thm:3",
+      "to": "thm:5",
+      "type": "depends_on",
+      "note": "Same prime-side correlation."
+    },
+    {
+      "from": "thm:3",
+      "to": "thm:6",
+      "type": "depends_on",
+      "note": "AP equidistribution input."
+    },
+    {
+      "from": "thm:4",
+      "to": "lem:1",
+      "type": "depends_on",
+      "note": "Contour bound."
+    },
+    {
+      "from": "thm:4",
+      "to": "lem:2",
+      "type": "depends_on",
+      "note": "Divisor moment."
+    },
+    {
+      "from": "thm:4",
+      "to": "lem:3",
+      "type": "depends_on",
+      "note": "Perturbed $\\mathcal{T}^*_R$ asymptotic."
+    },
+    {
+      "from": "thm:4",
+      "to": "lem:4",
+      "type": "depends_on",
+      "note": "$\\mathcal{A}$-twisted singular series."
+    },
+    {
+      "from": "thm:4",
+      "to": "lem:5",
+      "type": "depends_on",
+      "note": "Set-intersection counting."
+    },
+    {
+      "from": "thm:5",
+      "to": "lem:1",
+      "type": "depends_on",
+      "note": "Same contour bound."
+    },
+    {
+      "from": "thm:5",
+      "to": "lem:2",
+      "type": "depends_on",
+      "note": "Same divisor moment."
+    },
+    {
+      "from": "thm:5",
+      "to": "lem:3",
+      "type": "depends_on",
+      "note": "Same perturbed asymptotic."
+    },
+    {
+      "from": "thm:5",
+      "to": "lem:4",
+      "type": "depends_on",
+      "note": "Same $\\mathcal{A}$-twisted singular series."
+    }
+  ],
+  "critical_path": [
+    "thm:1",
+    "thm:2",
+    "thm:5",
+    "lem:3",
+    "lem:1"
+  ],
+  "proof_architecture": {
+    "main_results": {
+      "description": "thm:1 (quantitative $\\sqrt{\\log p_n}$ liminf), thm:2 (conditional version under zero-free region), thm:3 ($\\mathcal{P}-\\mathcal{P}$ density in $\\mathcal{A}-\\mathcal{A}$).",
+      "nodes": [
+        "thm:1",
+        "thm:2",
+        "thm:3"
+      ]
+    },
+    "A_restricted_correlation_engine": {
+      "description": "thm:4 ($S_1$ over $\\mathcal{A}$), thm:5 ($S_2$ over $\\mathcal{A}$), thm:6 (AP equidistribution). The set-restricted analogs of GPY I's prop:1, prop:2.",
+      "nodes": [
+        "thm:4",
+        "thm:5",
+        "thm:6"
+      ]
+    },
+    "analytic_machinery": {
+      "description": "lem:1 (contour), lem:2 (divisor moments), lem:3 ($\\mathcal{T}^*_R$ asymptotic), lem:4 (singular series), lem:5 (set counting), lem:6 (conditional BV).",
+      "nodes": [
+        "lem:1",
+        "lem:2",
+        "lem:3",
+        "lem:4",
+        "lem:5",
+        "lem:6"
+      ]
+    }
+  },
+  "bibliography": {
+    "GPY:I": {
+      "title": "Primes in Tuples I",
+      "authors": [
+        "D. A. Goldston",
+        "J. Pintz",
+        "C. Y. Yıldırım"
+      ],
+      "arxiv_id": "math/0508185",
+      "in_registry": true,
+      "role": "direct_predecessor — quantitative refinement of GPY I"
+    },
+    "ElliottHalberstam:1970": {
+      "title": "A conjecture in prime number theory",
+      "authors": [
+        "P. D. T. A. Elliott",
+        "H. Halberstam"
+      ],
+      "year": 1970,
+      "arxiv_id": null,
+      "in_registry": false,
+      "role": "foundational — EH conjecture"
+    },
+    "Selberg": {
+      "title": "Selberg sieve methodology",
+      "authors": [
+        "Atle Selberg"
+      ],
+      "arxiv_id": null,
+      "in_registry": false,
+      "role": "foundational"
+    },
+    "BombieriVinogradov:1965": {
+      "title": "Bombieri-Vinogradov theorem",
+      "authors": [
+        "Enrico Bombieri",
+        "A. I. Vinogradov"
+      ],
+      "year": 1965,
+      "arxiv_id": null,
+      "in_registry": false,
+      "role": "foundational"
+    }
+  }
+}

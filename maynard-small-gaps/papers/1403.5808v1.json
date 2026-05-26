@@ -1,0 +1,319 @@
+{
+  "paper": "1403.5808v1",
+  "title": "Bounded gaps between primes in number fields and function fields",
+  "authors": [
+    "Abel Castillo",
+    "Chris Hall",
+    "Robert J. Lemke Oliver",
+    "Paul Pollack",
+    "Lola Thompson"
+  ],
+  "generated": "2026-05-06",
+  "status": "complete",
+  "nodes": {
+    "sec:1:45": {
+      "type": "Conjecture",
+      "number": "(prime k-tuples)",
+      "section": "1",
+      "role": "context",
+      "summary": "Generalized prime $k$-tuples: every admissible $k$-tuple of integers contains infinitely many translates with all entries prime. Motivating conjecture, restated for the $K / \\mathbb{F}_q[t]$ setting."
+    },
+    "sec:1:51": {
+      "type": "Theorem",
+      "number": "(Maynard-Tao)",
+      "section": "1",
+      "role": "context",
+      "summary": "Maynard-Tao (2013): for any $m$, there exists $k_0(m)$ such that any admissible $k$-tuple with $k \\ge k_0$ has infinitely many translates with $\\ge m$ primes. The $\\mathbb{Q}$-version restated verbatim."
+    },
+    "thm:1.1": {
+      "type": "Theorem",
+      "number": "1.1",
+      "section": "1",
+      "role": "main_result",
+      "summary": "Number-field version: for any $m$ and any number field $K$, there is $k_0 = k_0(m, K)$ such that any admissible $k$-tuple of elements in $\\mathcal{O}_K$ ($k \\ge k_0$) has infinitely many $\\alpha \\in \\mathcal{O}_K$ with $\\ge m$ of $\\alpha + h_i$ prime in $\\mathcal{O}_K$. Direct generalization of Maynard-Tao to rings of integers."
+    },
+    "cor:1.2": {
+      "type": "Corollary",
+      "number": "1.2",
+      "section": "1",
+      "role": "main_result",
+      "summary": "For totally real $K$: infinitely many prime pairs $\\alpha_1, \\alpha_2 \\in \\mathcal{O}_K$ with $|\\sigma(\\alpha_1 - \\alpha_2)| \\le 600$ for every embedding $\\sigma$. Bounded-gap analog over totally real fields."
+    },
+    "thm:1.3": {
+      "type": "Theorem",
+      "number": "1.3",
+      "section": "1",
+      "role": "main_result",
+      "summary": "Function-field version $\\mathbb{F}_q[t]$: for any $m$, there is $k_0 = k_0(m)$ (independent of $q$!) such that admissible $k$-tuples of polynomials with $k \\ge k_0$ have infinitely many $f \\in \\mathbb{F}_q[t]$ with $\\ge m$ of $f + h_i$ irreducible. The function-field analog with $q$-uniform constants."
+    },
+    "thm:1.4": {
+      "type": "Theorem",
+      "number": "1.4",
+      "section": "1",
+      "role": "main_result",
+      "summary": "Quantitative gap in $\\mathbb{F}_q[t]$: explicit fraction $(1/(k_0-1) - 1/(q-1))$ of degree-$d$ elements occur as gaps between consecutive monic irreducibles of degree $n$. Stronger than the $K$-case because of finer $\\mathbb{F}_q[t]$ structure."
+    },
+    "prop:2.1": {
+      "type": "Proposition",
+      "number": "2.1",
+      "section": "2",
+      "role": "key_reduction",
+      "summary": "Maynard-style sieve weight asymptotic in $\\mathcal{O}_K$: with $R = |\\mathcal{A}(N)|^{\\theta/2-\\delta}$ and weights $\\lambda$ defined from $F$ supported on simplex $\\mathcal{R}_k$ via ideal-multiplied $\\mu$-sums, $S_1$ and $S_2$ evaluate analogously to Maynard prop:4.1. The number-field translation."
+    },
+    "lem:2.2": {
+      "type": "Lemma",
+      "number": "2.2",
+      "section": "2",
+      "role": "technical",
+      "summary": "Diagonalization $S_1$ in $y$-variables for ideals: $y_{\\mathfrak{r}_1,\\ldots,\\mathfrak{r}_k} = \\big(\\prod_i \\mu(\\mathfrak{r}_i)\\,\\varphi(\\mathfrak{r}_i)\\big) \\sum_{\\mathfrak{d}} \\lambda_{\\mathfrak{d}}/\\prod_i |\\mathfrak{d}_i|$. Direct ideal-version of Maynard 1311.4600 lem:5.1."
+    },
+    "lem:2.3": {
+      "type": "Lemma",
+      "number": "2.3",
+      "section": "2",
+      "role": "technical",
+      "summary": "$S_2$ diagonalization with multiplicative $g(\\mathfrak{p}) = |\\mathfrak{p}| - 2$ over prime ideals. Ideal-version of Maynard 1311.4600 lem:5.2."
+    },
+    "lem:2.4": {
+      "type": "Lemma",
+      "number": "2.4",
+      "section": "2",
+      "role": "technical",
+      "summary": "$y^{(m)}$-to-$y$ bridging when $\\mathfrak{r}_m = 1$. Ideal-version of Maynard 1311.4600 lem:5.3."
+    },
+    "lem:2.5": {
+      "type": "Lemma",
+      "number": "2.5",
+      "section": "2",
+      "role": "technical",
+      "summary": "Selberg-type weighted ideal sum identity $\\sum \\mu(\\mathfrak{d})^2 g(\\mathfrak{d}) G(\\log|\\mathfrak{d}|/\\log z) = \\mathfrak{S}\\,\\log z \\int G + O(\\cdot)$. Ideal-version of Maynard 1311.4600 lem:6.1."
+    },
+    "cor:2.6": {
+      "type": "Corollary",
+      "number": "2.6",
+      "section": "2",
+      "role": "key_reduction",
+      "summary": "Smooth-$F$ sieve sum evaluation in $\\mathcal{O}_K$ assembling lem:2.2-2.5 into the analog of Maynard's prop:4.1 conclusion."
+    },
+    "thm:2.7": {
+      "type": "Theorem",
+      "number": "2.7",
+      "section": "2",
+      "role": "key_reduction",
+      "summary": "Number-field $\\mathrm{DHL}[k,m]$-style reduction: $M_k > 2m/\\theta \\Rightarrow \\mathrm{DHL}[k,m+1]$ in $\\mathcal{O}_K$. Direct lift of Maynard's prop:4.2."
+    },
+    "thm:2.8": {
+      "type": "Theorem",
+      "number": "2.8",
+      "section": "2",
+      "role": "key_reduction",
+      "summary": "Function-field $\\mathrm{DHL}[k,m]$-style reduction in $\\mathbb{F}_q[t]$. Same $M_k > 2m/\\theta$ statement, function-field flavor."
+    },
+    "lem:3.1": {
+      "type": "Lemma",
+      "number": "3.1",
+      "section": "3",
+      "role": "foundational",
+      "summary": "Bombieri-Vinogradov-type level-of-distribution $\\theta = 1/2$ in $\\mathcal{O}_K$ and $\\mathbb{F}_q[t]$. The arithmetic input that lets thm:2.7 / thm:2.8 fire."
+    }
+  },
+  "edges": [
+    {
+      "from": "thm:1.1",
+      "to": "thm:2.7",
+      "type": "depends_on",
+      "note": "$\\mathrm{DHL}[k,m]$-style reduction in $\\mathcal{O}_K$."
+    },
+    {
+      "from": "thm:1.1",
+      "to": "lem:3.1",
+      "type": "depends_on",
+      "note": "Number-field BV gives $\\theta = 1/2$ input."
+    },
+    {
+      "from": "cor:1.2",
+      "to": "thm:1.1",
+      "type": "depends_on",
+      "note": "Totally real specialization with $k = 105$ / $m = 2$ and admissible-tuple diameter 600."
+    },
+    {
+      "from": "thm:1.3",
+      "to": "thm:2.8",
+      "type": "depends_on",
+      "note": "Function-field DHL reduction."
+    },
+    {
+      "from": "thm:1.3",
+      "to": "lem:3.1",
+      "type": "depends_on",
+      "note": "Function-field BV."
+    },
+    {
+      "from": "thm:1.4",
+      "to": "thm:1.3",
+      "type": "depends_on",
+      "note": "Quantitative gap follows from DHL plus $\\mathbb{F}_q[t]$ counting."
+    },
+    {
+      "from": "thm:2.7",
+      "to": "prop:2.1",
+      "type": "depends_on",
+      "note": "Sieve weight asymptotic."
+    },
+    {
+      "from": "thm:2.7",
+      "to": "cor:2.6",
+      "type": "depends_on",
+      "note": "Assembled smooth-$F$ sieve sum."
+    },
+    {
+      "from": "thm:2.8",
+      "to": "prop:2.1",
+      "type": "depends_on",
+      "note": "Same sieve weight in $\\mathbb{F}_q[t]$."
+    },
+    {
+      "from": "thm:2.8",
+      "to": "cor:2.6",
+      "type": "depends_on",
+      "note": "Same assembled corollary."
+    },
+    {
+      "from": "prop:2.1",
+      "to": "lem:2.2",
+      "type": "depends_on",
+      "note": "$y$-diagonalization."
+    },
+    {
+      "from": "prop:2.1",
+      "to": "lem:2.3",
+      "type": "depends_on",
+      "note": "$y^{(m)}$-diagonalization."
+    },
+    {
+      "from": "prop:2.1",
+      "to": "lem:2.4",
+      "type": "depends_on",
+      "note": "$y^{(m)}$-to-$y$ bridge."
+    },
+    {
+      "from": "prop:2.1",
+      "to": "lem:2.5",
+      "type": "depends_on",
+      "note": "Selberg ideal sum."
+    },
+    {
+      "from": "cor:2.6",
+      "to": "prop:2.1",
+      "type": "depends_on",
+      "note": "Smooth-$F$ evaluation."
+    },
+    {
+      "from": "thm:1.1",
+      "to": "sec:1:45",
+      "type": "addresses_same_question",
+      "note": "Number-field unconditional partial result toward the prime $k$-tuples conjecture in $\\mathcal{O}_K$."
+    },
+    {
+      "from": "thm:1.1",
+      "to": "sec:1:51",
+      "type": "extends",
+      "note": "Maynard-Tao's $\\mathbb{Q}$-version extended to arbitrary number fields."
+    }
+  ],
+  "critical_path": [
+    "thm:1.1",
+    "thm:2.7",
+    "prop:2.1",
+    "lem:2.2",
+    "lem:2.5"
+  ],
+  "proof_architecture": {
+    "main_results": {
+      "description": "thm:1.1 (number-field bounded gaps), cor:1.2 (totally-real $H_1 \\le 600$ in embedding norm), thm:1.3 (function-field bounded gaps), thm:1.4 (quantitative $\\mathbb{F}_q[t]$ gap distribution).",
+      "nodes": [
+        "sec:1:45",
+        "sec:1:51",
+        "thm:1.1",
+        "cor:1.2",
+        "thm:1.3",
+        "thm:1.4"
+      ]
+    },
+    "DHL_reductions": {
+      "description": "thm:2.7 ($\\mathrm{DHL}[k,m]$ in $\\mathcal{O}_K$) + thm:2.8 ($\\mathrm{DHL}[k,m]$ in $\\mathbb{F}_q[t]$). Direct lifts of Maynard's prop:4.2.",
+      "nodes": [
+        "thm:2.7",
+        "thm:2.8"
+      ]
+    },
+    "ideal_sieve_machinery": {
+      "description": "prop:2.1 (sieve weight asymptotic for ideals) + cor:2.6 (smooth-$F$ evaluation) + lem:2.2-2.5 (diagonalization and Selberg ideal sums). Verbatim translation of Maynard 1311.4600 prop:4.1 / lem:5.1-5.3 / lem:6.1 to ideals.",
+      "nodes": [
+        "prop:2.1",
+        "cor:2.6",
+        "lem:2.2",
+        "lem:2.3",
+        "lem:2.4",
+        "lem:2.5"
+      ]
+    },
+    "level_of_distribution": {
+      "description": "lem:3.1 — Bombieri-Vinogradov in $\\mathcal{O}_K$ and $\\mathbb{F}_q[t]$ at $\\theta = 1/2$.",
+      "nodes": [
+        "lem:3.1"
+      ]
+    }
+  },
+  "bibliography": {
+    "Maynard:smallgaps": {
+      "title": "Small gaps between primes",
+      "authors": [
+        "James Maynard"
+      ],
+      "arxiv_id": "1311.4600",
+      "in_registry": true,
+      "role": "method_source — this paper transliterates 1311.4600 to ideals"
+    },
+    "Tao:blog": {
+      "title": "Tao's parallel discovery of the multidimensional sieve (blog)",
+      "authors": [
+        "Terence Tao"
+      ],
+      "arxiv_id": null,
+      "in_registry": false,
+      "role": "context — independent invention of the same sieve"
+    },
+    "GPY:I": {
+      "title": "Primes in Tuples I",
+      "authors": [
+        "D. A. Goldston",
+        "J. Pintz",
+        "C. Y. Yıldırım"
+      ],
+      "arxiv_id": "math/0508185",
+      "in_registry": true,
+      "role": "predecessor"
+    },
+    "BombieriVinogradov:1965": {
+      "title": "Bombieri-Vinogradov theorem",
+      "authors": [
+        "Enrico Bombieri",
+        "A. I. Vinogradov"
+      ],
+      "year": 1965,
+      "arxiv_id": null,
+      "in_registry": false,
+      "role": "foundational — number-field generalization used in lem:3.1"
+    },
+    "ThorneEffective:2008": {
+      "title": "Effective Bombieri-Vinogradov in number fields (typical reference)",
+      "authors": [
+        "various"
+      ],
+      "arxiv_id": null,
+      "in_registry": false,
+      "role": "foundational — supplies the $K$-version of BV"
+    }
+  }
+}

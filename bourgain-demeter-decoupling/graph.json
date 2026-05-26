@@ -1,0 +1,149 @@
+{
+  "description": "Cross-paper edges for the Fourier decoupling tower. from/to are '<arxiv_id>:<node_id>'; direction is subject-verb-object (from {type} to).",
+  "edges": [
+    {
+      "from": "1512.01565:thm:1.2",
+      "to": "1403.5335:thm:1.1",
+      "type": "imports_result",
+      "note": "Moment-curve $l^2$ decoupling in $\\mathbb{R}^n$ is proved by induction on degree; the base case $n=2$ (the parabola/curve in $\\mathbb{R}^2$) is exactly Bourgain–Demeter's hypersurface decoupling."
+    },
+    {
+      "from": "1512.01565:thm:7.4",
+      "to": "1403.5335:thm:5.3",
+      "type": "shared_mechanism",
+      "note": "Both reduce the linear decoupling constant to a transverse multilinear one via the Bourgain–Guth broad/narrow dichotomy; thm:7.4 is the moment-curve transcription of thm:5.3."
+    },
+    {
+      "from": "1512.01565:thm:6.6",
+      "to": "1403.5335:prop:6.3",
+      "type": "shared_mechanism",
+      "note": "Ball-inflation (multilinear decoupling driven by induction on scales) in BDG plays the role of the self-improvement iteration prop:6.3 in the parabola proof."
+    },
+    {
+      "from": "1512.01565:thm:6.5",
+      "to": "1403.5335:thm:6.1",
+      "type": "shared_mechanism",
+      "note": "Both proofs are built on a multilinear Kakeya / Brascamp–Lieb input; BDG needs the moment-curve-tangent-plate version, the parabola proof needs the transverse-cap version."
+    },
+    {
+      "from": "2405.20552:thm:1.1",
+      "to": "1512.01565:thm:1.2",
+      "type": "addresses_same_question",
+      "note": "Decoupling (e.g. via BDG) yields large-value estimates for Dirichlet polynomials / exponential sums; Guth–Maynard obtain new such estimates in the critical $V\\approx N^{3/4}$ range by an unrelated singular-value/trace method. Thematic sibling in the harmonic-analysis-meets-analytic-NT space, not a logical dependency."
+    },
+    {
+      "from": "1512.01565:prop:6.2",
+      "to": "1409.4683:cor:6",
+      "type": "imports_result",
+      "note": "BDG's multilinear Kakeya for transverse plates is exactly Guth's $\\nu$-transverse multilinear Kakeya corollary; BDG cites this paper for it."
+    },
+    {
+      "from": "1403.5335:thm:6.1",
+      "to": "math/0509262:thm:1.16",
+      "type": "imports_result",
+      "note": "The multilinear restriction estimate the Bourgain–Demeter decoupling proof invokes (with the $R^\\epsilon$ loss) is exactly Bennett–Carbery–Tao's near-optimal multilinear restriction."
+    },
+    {
+      "from": "0811.2251:thm:2",
+      "to": "math/0509262:thm:1.15",
+      "type": "improves",
+      "note": "Guth's polynomial-method argument removes the arbitrarily-small $\\delta^{-\\epsilon}$ endpoint loss from Bennett–Carbery–Tao's near-optimal multilinear Kakeya, settling the endpoint case."
+    },
+    {
+      "from": "1409.4683:thm:1",
+      "to": "0811.2251:thm:2",
+      "type": "re_derives",
+      "note": "Guth's 'short proof' re-proves his own endpoint multilinear Kakeya inequality via Loomis–Whitney plus a width-doubling multiscale induction, replacing the polynomial ham sandwich argument."
+    },
+    {
+      "from": "1512.01565:thm:1.1",
+      "to": "1401.3150:thm:1.1",
+      "type": "parallel_result",
+      "note": "Wooley's cubic case of Vinogradov's main conjecture (2014) was obtained by efficient congruencing; Bourgain–Demeter–Guth (2015) re-derive it — and extend the main conjecture to all degrees $\\ge4$ — via $l^2$ decoupling for the moment curve. Two structurally unrelated proofs of an overlapping conclusion (cf. the Zhang/Maynard parallel discovery in the bounded-gaps program)."
+    },
+    {
+      "from": "1512.01565:thm:6.5",
+      "to": "1409.4683:thm:7",
+      "type": "imports_result",
+      "note": "The moment-curve-tangent plate multilinear estimate in BDG is built on Guth's curved (Lipschitz/curve) multiscale multilinear-Kakeya machinery."
+    },
+    {
+      "from": "1408.5794:thm:1",
+      "to": "1403.5335:thm:1.1",
+      "type": "imports_result",
+      "note": "Bourgain's curve decoupling here is an ad-hoc adaptation of the Bourgain–Demeter $l^2$-decoupling method to the specific curve $\\Phi$; it postdates 1403.5335 by ~5 months."
+    },
+    {
+      "from": "1512.01565:thm:1.2",
+      "to": "1408.5794:thm:1",
+      "type": "generalizes",
+      "note": "BDG's sharp $l^2$ decoupling for the full moment curve subsumes Bourgain's hand-tailored decoupling for the auxiliary curve used to bound $\\zeta$."
+    },
+    {
+      "from": "2405.20552:thm:1.2",
+      "to": "1408.5794:sec:4",
+      "type": "improves",
+      "note": "Both advance control of $\\zeta$ near the critical line for prime-counting purposes: Bourgain's route is the pointwise bound $|\\zeta(1/2+it)|\\ll t^{13/84+\\epsilon}$ (via decoupling-derived exponential sums); Guth–Maynard's route is a new large-value / zero-density estimate that supersedes the prime-distribution consequences (zero density, primes in short intervals) descending from the Huxley–Bourgain exponential-sum lineage. Edge granularity is 'improves the downstream consequences', not 'improves this exact inequality'."
+    },
+    {
+      "from": "2405.20552:thm:1.1",
+      "to": "1408.5794:sec:3",
+      "type": "addresses_same_question",
+      "note": "Bourgain's §3 derives exponential-sum bounds from decoupling; Guth–Maynard's large-value estimate is the modern descendant of that exponential-sum / large-value machinery, obtained instead by a singular-value/trace method."
+    },
+    {
+      "from": "1409.1634:thm:1.2",
+      "to": "1403.5335:thm:1.1",
+      "type": "generalizes",
+      "note": "$l^2$ decoupling for hypersurfaces of arbitrary signature with $n-1$ nonzero principal curvatures generalizes the positive-definite case proved by Bourgain–Demeter."
+    },
+    {
+      "from": "1409.1634:thm:4.1",
+      "to": "1403.5335:thm:5.3",
+      "type": "shared_mechanism",
+      "note": "Both are the linear-vs-multilinear (Bourgain–Guth broad/narrow) reduction; thm:4.1 transcribes it to nondegenerate curves."
+    },
+    {
+      "from": "1512.01565:thm:1.2",
+      "to": "1409.1634:thm:1.4",
+      "type": "improves",
+      "note": "Bourgain–Demeter–Guth's sharp moment-curve $l^2$ decoupling extends Bourgain–Demeter's nondegenerate-curve decoupling from the subcritical range $p\\le4n-2$ up to the critical exponent $p=n(n+1)$."
+    },
+    {
+      "from": "1708.01220:thm:1.1",
+      "to": "1512.01565:thm:1.1",
+      "type": "parallel_result",
+      "note": "Two independent proofs of the full main conjecture in Vinogradov's mean value theorem: Bourgain–Demeter–Guth (2015) via $l^2$ decoupling for the moment curve, Wooley (2017) via nested efficient congruencing. Structurally unrelated machinery, identical conclusion."
+    },
+    {
+      "from": "1708.01220:thm:1.1",
+      "to": "1401.3150:thm:1.1",
+      "type": "extends",
+      "note": "Nested efficient congruencing extends Wooley's cubic-case efficient-congruencing proof to all degrees $k\\ge2$."
+    },
+    {
+      "from": "1604.06032:thm:1.1",
+      "to": "1403.5335:thm:1.1",
+      "type": "re_derives",
+      "note": "The 'study guide' is a streamlined, self-contained re-proof of the Bourgain–Demeter $l^2$ decoupling theorem with cleaner notation and bookkeeping."
+    },
+    {
+      "from": "1604.06032:thm:9.1",
+      "to": "1409.4683:cor:6",
+      "type": "imports_result",
+      "note": "The multilinear Kakeya for tiles used in the study-guide proof is a packaging of Guth's $\\nu$-transverse multilinear Kakeya corollary."
+    },
+    {
+      "from": "1509.05388:thm:1.1",
+      "to": "1512.01565:thm:1.2",
+      "type": "shared_mechanism",
+      "note": "Decoupling for the 2D Parsell–Vinogradov surface and decoupling for the 1D moment curve run the same machinery — Brascamp–Lieb/multilinear-Kakeya geometry, ball inflation, induction-on-scales/dimension; the 2D paper is the codimension-$>1$ analogue."
+    },
+    {
+      "from": "1509.05388:thm:3.2",
+      "to": "1512.01565:thm:6.1",
+      "type": "shared_mechanism",
+      "note": "Both proofs rest on the $L^n$ Brascamp–Lieb finiteness criterion applied to the relevant tangent-space configurations."
+    }
+  ]
+}

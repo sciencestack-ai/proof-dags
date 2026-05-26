@@ -1,0 +1,8 @@
+[
+  { "arxiv_id": "2503.00621", "priority": 1, "reason": "Smallest clean member (8 secs / 31 mathEnvs); endoscopic refinement of FS L-packets — direct depends_on FS correspondence (thm:I.10.1).", "status": "complete" },
+  { "arxiv_id": "2109.01210", "priority": 2, "reason": "Hamann compatibility (FS = Gan–Takeda for GSp_4); the canonical verification edge into FS. 20 secs / 99 mathEnvs.", "status": "complete" },
+  { "arxiv_id": "2504.13869", "priority": 3, "reason": "Fu categorical LLC for depth-zero supercuspidals; tests the strong categorical form of the FS conjecture. 46 secs / 83 mathEnvs.", "status": "complete" },
+  { "arxiv_id": "2403.10651", "priority": 4, "reason": "Achar–Lourenço–Richarz–Riche modular ramified geometric Satake. ASSESSED: cites FS (citeKey 'fs') but is NOT downstream — it is a parallel development of the geometric-Satake tool FS uses for the dual group (thm:I.6.3), in a modular/ramified coefficient setting. FS predates it; neither logically depends on the other. Relationship is shared_mechanism, not depends_on. Excluded to avoid a forced edge; revisit only if a load-bearing dependency surfaces.", "status": "skipped" },
+  { "arxiv_id": "2504.03341", "priority": 5, "reason": "Candidate from FS citation neighborhood (perverse sheaves / Frobenius-kernel reps); verify FS dependency before extracting. Deferred for future growth.", "status": "pending" },
+  { "arxiv_id": "2005.08522", "priority": 6, "reason": "Lu–Zheng, Categorical traces / relative Lefschetz-Verdier — appears in FS citation neighborhood and underpins the trace methods in categorical local Langlands. Verify dependency before extracting. Deferred.", "status": "pending" }
+]

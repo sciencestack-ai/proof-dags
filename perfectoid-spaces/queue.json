@@ -1,0 +1,30 @@
+{
+  "description": "Work queue for proof DAG extraction in the Perfectoid Spaces / Scholze program DAG.",
+  "queue": [
+    { "arxiv_id": "1111.4914", "priority": 1, "status": "complete",
+      "reason": "Scholze 'Perfectoid spaces' — root paper. 33 nodes, 37 edges, critical path length 11; tilting equivalence + almost purity + weight-monodromy chain captured." },
+    { "arxiv_id": "1211.6357", "priority": 2, "status": "pending",
+      "reason": "Scholze-Weinstein 'Moduli of p-divisible groups' — first major application of perfectoid technology to Shimura varieties at infinite level. Indexed 30 sec / 131 math envs." },
+    { "arxiv_id": "1301.0792", "priority": 3, "status": "complete",
+      "reason": "Kedlaya-Liu 'Relative p-adic Hodge theory: Foundations' — independent / parallel development. 30 nodes, 40 edges, critical path length 6. Headline: recovers Fontaine's $(\\varphi, \\Gamma)$-modules inside the relative perfectoid framework." },
+    { "arxiv_id": "1709.07343", "priority": 4, "status": "pending",
+      "reason": "Scholze 'Étale cohomology of diamonds' — framework-generalization. Diamonds = v-sheaves of perfectoid; foundation for Fargues-Scholze." },
+    { "arxiv_id": "1602.03148", "priority": 5, "status": "pending",
+      "reason": "Bhatt-Morrow-Scholze 'Integral p-adic Hodge theory' (BMS1) — perfectoid → crystalline/de Rham bridge; precursor to prismatic." },
+    { "arxiv_id": "1802.03261", "priority": 6, "status": "pending",
+      "reason": "Bhatt-Morrow-Scholze 'THH and integral p-adic Hodge theory' (BMS2) — recasts BMS1 via topological Hochschild homology." },
+    { "arxiv_id": "1905.08229", "priority": 7, "status": "complete",
+      "reason": "Bhatt-Scholze 'Prisms and prismatic cohomology'. 26 nodes, 35 edges, critical path length 5 (almost-purity chain). Perfect-prism / perfectoid dictionary (thm:3.10) abstracts both Scholze and KL formulations; thm:1.17 extends almost purity to integral algebras." },
+    { "arxiv_id": "2102.13459", "priority": 8, "status": "pending",
+      "reason": "Fargues-Scholze 'Geometrization of local Langlands' — flagship application of diamonds. Long paper (~350pp); may need partial DAG." },
+    { "arxiv_id": "1709.06436", "priority": 9, "status": "blocked",
+      "reason": "Caraiani-Scholze 'Generic part of cohomology of compact unitary Shimura varieties' — candidate addition.",
+      "blocked_reason": "Decide after first batch whether Shimura-variety side warrants inclusion — may belong to a sister DAG." },
+    { "arxiv_id": "1907.10525", "priority": 10, "status": "complete",
+      "reason": "Anschütz–Le Bras 'Prismatic Dieudonné theory'. 17 nodes, 17 edges. Extends SW Hodge-Tate classification of $p$-divisible groups via prismatic framework; antiequivalence with admissible prismatic Dieudonné modules. Fills gap between SW and prismatic." },
+    { "arxiv_id": "2005.04746", "priority": 11, "status": "complete",
+      "reason": "Drinfeld 'Prismatization'. 17 nodes, 18 edges. Geometric / moduli-stack reformulation of perfect prisms via $\\Sigma'(S) = \\{(M, \\xi)\\}$. Alternative engine to BS prismatic + parallel mechanism to Bhatt–Lurie Cartier-Witt stack." },
+    { "arxiv_id": "2201.06120", "priority": 12, "status": "complete",
+      "reason": "Bhatt–Lurie 'Absolute prismatic cohomology'. 18 nodes, 18 edges. Absolute (vs relative) prismatic via Cartier-Witt stack; étale-syntomic comparison; combined Chern-class isomorphism. Extends BS prismatic to absolute setting." }
+  ]
+}

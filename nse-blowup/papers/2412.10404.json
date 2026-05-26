@@ -1,0 +1,630 @@
+{
+  "paper": "2412.10404v1",
+  "title": "Non-uniqueness of weak solutions to the Navier-Stokes equations in R^3",
+  "authors": [
+    "Changxing Miao",
+    "Yao Nie",
+    "Weikui Ye"
+  ],
+  "generated": "2026-03-10",
+  "status": "complete",
+  "nodes": {
+    "def:1.1": {
+      "type": "Definition",
+      "number": "1.1",
+      "section": "1.1",
+      "role": "definition",
+      "summary": "Weak solution of NSE on $R^3$: u $\\in$ C([0,T); $L^2(R^3))$ satisfying the distributional form of NSE against all divergence-free test functions in $C^\\infty_0$."
+    },
+    "thm:1.2": {
+      "type": "Theorem",
+      "number": "1.2",
+      "section": "1.1",
+      "role": "main_result",
+      "summary": "MAIN RESULT: Non-uniqueness in $C_t L^2(R^3)$. For any two energy profiles e(t) = ẽ(t) on [0, T/2], there exist weak solutions u, ũ with identical initial data but ‖u(t)‖$^2 = e(t) \\ne$ ẽ(t) = ‖ũ(t)‖^2 for t > T/2. Extends Buckmaster-Vicol $(T^3)$ to whole space $R^3$."
+    },
+    "cor:1.3": {
+      "type": "Corollary",
+      "number": "1.3",
+      "section": "1.3",
+      "role": "auxiliary",
+      "summary": "Infinitely many weak solutions in $C_t L^2(R^3)$ that dissipate kinetic energy; follows from thm:1.2 by choosing e(t) decreasing and ẽ(t) = const after T/2."
+    },
+    "thm:1.4": {
+      "type": "Theorem",
+      "number": "1.4",
+      "section": "1.3.1",
+      "role": "auxiliary",
+      "summary": "Application I: Non-uniqueness in smooth bounded domain D. Infinitely many energy-dissipating weak solutions in C([0,T]; $L^2(D))$."
+    },
+    "thm:1.5": {
+      "type": "Theorem",
+      "number": "1.5",
+      "section": "1.3.2",
+      "role": "auxiliary",
+      "summary": "Application II: Couette flow instability. For any small $\\varepsilon > 0$, there is a weak solution $u^\\varepsilon$ with ‖$u^\\varepsilon(0) -$ U‖ $\\le \\varepsilon$ that departs distance $\\varepsilon^{-1/2}$ from Couette flow U for t $\\in [3\\varepsilon^{1/2}, 5\\varepsilon^{1/2}]$."
+    },
+    "prop:2.1": {
+      "type": "Proposition",
+      "number": "2.1",
+      "section": "2.2",
+      "role": "key_reduction",
+      "summary": "Main iteration step: given $(u_q, p_q$, R̊_q) satisfying inductive estimates at level q, there exists $(u_{q+1}, p_{q+1}$, R̊_{q+1}) satisfying the same estimates at level q+1 with ‖$u_{q+1} - u_q$‖$_{L^\\infty_t L^2} \\le C_0 \\delta_{q+1}^{1/2}$. One convex integration step on $R^3$."
+    },
+    "prop:2.2": {
+      "type": "Proposition",
+      "number": "2.2",
+      "section": "2.2",
+      "role": "key_mechanism",
+      "summary": "Branching proposition: if two sequences $(u_q$, R̊_q) and (ũ_q, R̊̃_q) agree (loc and non-loc parts) on [0, $T/4 + \\lambda^{-1}_q]$, then their next iterates agree on [0, $T/4 + \\lambda^{-1}_{q+1}]$. This shrinking agreement interval is how distinct energy profiles diverge after T/2."
+    },
+    "prop:3.1": {
+      "type": "Proposition",
+      "number": "3.1",
+      "section": "3.1",
+      "role": "technical",
+      "summary": "Mollification estimates: bounds on $(u^{loc}_{$ℓ$_q} - u^{loc}_q, u^{non-loc}_{$ℓ$_q} - u^{non-loc}_q$, R̊_{ℓ_q}, $R^{rem}_q)$ in $H^4, W^{N+5,1}$, and $L^1$ norms. Ensures mollified data controls the energy gap $\\delta_{q+1}/2 \\lee(t) - \\int|u_{ℓ_q}|^2 \\le 4\\delta_{q+1}$."
+    },
+    "prop:3.2": {
+      "type": "Proposition",
+      "number": "3.2",
+      "section": "3.2",
+      "role": "technical",
+      "summary": "Estimates for amplitude modulator $(\\chi_q \\rho_q)^{1/2}$ and $(\\chi_q \\rho_q)^{-1}$ in $H^N$ norms. These encode the energy gap into the perturbation amplitude. Bound: ‖$(\\chi_q \\rho_q)^{1/2}$‖$_{H^N}$ ≲ $\\delta^{-N+1/2}_{q+1} \\lambda^{10N+2N\\alpha}_q$ ℓ^{-N}_q."
+    },
+    "prop:3.3": {
+      "type": "Proposition",
+      "number": "3.3",
+      "section": "3.2.1",
+      "role": "technical",
+      "summary": "Estimates for amplitude functions $a_{(k,q)}$: ‖$a_{(k,q)}$‖$_{H^N}$ ≲ ℓ^{-2N}_q and ‖$\\partial_t a_{(k,q)}$‖$_{H^N}$ ≲ ℓ^{-6N}_q. These amplitudes select the Mikado wave direction k and encode R̊ via the geometric lemma."
+    },
+    "prop:3.4": {
+      "type": "Proposition",
+      "number": "3.4",
+      "section": "3.2",
+      "role": "technical",
+      "summary": "Space-time estimates for localized building blocks $\\varphi_{k,k$̄,k̄̄,$\\sigma}$: ‖$D^n_t D^m_x \\varphi$‖$_{L^\\infty_t L^p(T^3)}$ ≲ $N^{m+n}_\\Lambda \\lambda^{13m/16 + 33n/16 - 9(1/p - 1/2)/4}_{q+1}$. Controls the Mikado wave packet oscillation in the periodic cell, transferred to $R^3$ via localized cutoff."
+    },
+    "prop:3.5": {
+      "type": "Proposition",
+      "number": "3.5",
+      "section": "3.2.2",
+      "role": "main_technical",
+      "summary": "Principal Reynolds stress decomposition: $div(w^{(p)}_{q+1}$ ⊗̊ $w^{(p)}_{q+1}) +$ div R̊_{ℓ_q} = div R̊$^{(1)}_{q+1} - \\partial_t w^{(t)}_{q+1} + F^{(1)}_{q+1} + \\nablaP^{(1)}_{q+1}$. The new stress R̊^{(1)} satisfies ‖R̊^{(1)}‖$_{L^1}$ ≲ ℓ^{-8}_q $\\lambda^{-3/16}_{q+1}$: cancels the old stress while introducing only a small new one. Core step of convex integration."
+    },
+    "prop:3.6": {
+      "type": "Proposition",
+      "number": "3.6",
+      "section": "3.2.2",
+      "role": "main_technical",
+      "summary": "Temporal correction decomposition: $\\partial_t(w^{(p)}_{q+1} + w^{(c)}_{q+1}) =$ div R̊$^{(2)}_{q+1} + \\nablaP^{(2)}_{q+1} + F^{(2)}_{q+1}$. Controls time-derivative errors from the principal perturbation; R̊^{(2)} is localized to $\\Omega_{q+1}$ and satisfies ‖R̊^{(2)}‖$_{L^1}$ ≲ ℓ^{-12}_q $\\lambda^{-1/16}_{q+1}$."
+    },
+    "prop:3.7": {
+      "type": "Proposition",
+      "number": "3.7",
+      "section": "3.2.3",
+      "role": "technical",
+      "summary": "Combined error $F_{q+1} = F^{(1)}_{q+1} + F^{(2)}_{q+1}$ satisfies ‖$F_{q+1}$‖$_{H^4} \\le \\lambda^5_{q+1}$ and ‖$F_{q+1}$‖_{Ẽ$^\\infty_t B^{-3/2}_{2,1}}$ ≲ $\\lambda^{-40}_q$. The $B^{-3/2}$ norm being small is what makes the non-stationary correction $w^{(ns)}_{q+1}$ small."
+    },
+    "prop:3.8": {
+      "type": "Proposition",
+      "number": "3.8",
+      "section": "3.2.3",
+      "role": "key_mechanism",
+      "summary": "Non-stationary correction $w^{(ns)}_{q+1}$: the unique new ingredient for $R^3$. Solves linearized NSE (eq:LNS) with forcing $F_{q+1}$ and background v $= u_{ℓ_q}$. Bounds: ‖$w^{(ns)}_{q+1}$‖$_{B^{1/2}_{2,1}} \\le \\lambda^{-20}_q (very$ small). This localized corrector balances compact support of Reynolds stress error against non-compact support of the non-local part of the solution."
+    },
+    "prop:3.9": {
+      "type": "Proposition",
+      "number": "3.9",
+      "section": "3.2.3",
+      "role": "main_technical",
+      "summary": "Full perturbation estimates: $w_{q+1} = w^{(p)} + w^{(c)} + w^{(t)} + w^{(tc)} + w^{(ns)}$ satisfies ‖$w_{q+1}$‖$_{L^2} \\le C_0 \\delta^{1/2}_{q+1}/2$ and ‖$w_{q+1}$‖$_{H^5} \\le \\lambda^6_{q+1} C_0 \\delta^{1/2}_{q+1}/2$. Each component (principal, corrector, temporal, t-corrector, non-stationary) bounded separately."
+    },
+    "prop:3.10": {
+      "type": "Proposition",
+      "number": "3.10",
+      "section": "3.2.4",
+      "role": "key_technical",
+      "summary": "New Reynolds stress estimate: R̊_{q+1} defined as sum of R̊^{(1)}, R̊^{(2)}, and remainder terms satisfies ‖R̊_{q+1}‖$_{L^1} \\le \\delta_{q+2} \\lambda^{-4\\alpha}_{q+1}$ and ‖R̊_{q+1}‖$_{W^{5,1}} \\le \\lambda^7_{q+1}$. This closes the inductive hypothesis at level q+1 — the hardest estimate to close in the whole paper."
+    },
+    "prop:3.11": {
+      "type": "Proposition",
+      "number": "3.11",
+      "section": "3.2.5",
+      "role": "technical",
+      "summary": "Energy gap estimate: $|e(t) - \\int|u_{q+1}|^2 - 2\\delta_{q+2}| \\le \\delta_{q+2} \\lambda^{-\\alpha}_q$. Ensures the energy tracks e(t) precisely at level q+1, with room for the next perturbation $\\delta_{q+2}$."
+    },
+    "prop:5.1": {
+      "type": "Proposition",
+      "number": "5.1",
+      "section": "5",
+      "role": "main_technical",
+      "summary": "Bounded domain analogue of thm:1.2: non-uniqueness for NSE on smooth bounded domain D $\\subset R^3$ in $C_t L^2(D)$. Proved via the same convex integration scheme adapted to D using Dirichlet boundary conditions."
+    },
+    "prop:5.2": {
+      "type": "Proposition",
+      "number": "5.2",
+      "section": "5.1",
+      "role": "technical",
+      "summary": "Iteration step for bounded domain: given $(v_q, p_q$, R̊_q) on D $\\times (0, T_q]$, produces $(v_{q+1}, p_{q+1}$, R̊_{q+1}) on D $\\times (0, T_{q+1}]$ with ‖$v_{q+1} - v_q$‖$_{L^2(D)} \\le C_0 \\delta^{1/2}_{q+1}$. Analogous to prop:2.1."
+    },
+    "prop:5.3": {
+      "type": "Proposition",
+      "number": "5.3",
+      "section": "5.1",
+      "role": "technical",
+      "summary": "Branching proposition for bounded domain: two sequences agreeing in $(v^{loc}_q, v^D_q$, R̊_q) on [0, $T/4 + \\lambda^{-1}_q]$ produce next iterates agreeing on [0, $T/4 + \\lambda^{-1}_{q+1}]$. Analogous to prop:2.2."
+    },
+    "prop:5.4": {
+      "type": "Proposition",
+      "number": "5.4",
+      "section": "5.2",
+      "role": "main_technical",
+      "summary": "Couette flow instability: for $\\varepsilon > 0$ small, there exists a weak solution $v^\\varepsilon$ of the perturbation-from-Couette system with ‖$v^\\varepsilon(0)$‖$_{L^2} \\le \\varepsilon$ but ‖$v^\\varepsilon(t)$‖$_{L^2} \\ge \\varepsilon^{-1/4}$ for t $\\in [3\\varepsilon^{1/2}, 5\\varepsilon^{1/2}]$. Shows $L^2$ instability of Couette flow in spite of linear stability above threshold."
+    },
+    "prop:5.5": {
+      "type": "Proposition",
+      "number": "5.5",
+      "section": "5.2",
+      "role": "technical",
+      "summary": "Iteration step for Couette perturbation system: given $(v_q, P_q$, R̊_q) solving the Couette-minus-Couette system (eq:5.16) at level q, produces level q+1 with ‖$v_{q+1} - v_q$‖$_{L^2} \\le C_0 \\delta^{1/2}_{q+1}$."
+    },
+    "lem:A.1": {
+      "type": "Lemma",
+      "number": "A.1",
+      "section": "A",
+      "role": "foundational",
+      "summary": "Geometric lemma (from Beekie-Buckmaster-Vicol): any positive definite symmetric matrix R near Id decomposes as R $= \\Sigma_{k \\in \\Lambda} a^2_k(R)$ k̄ ⊗ k̄ for rational unit vectors k̄. Enables the convex integration construction to express R̊ as a sum of rank-one terms using Mikado waves."
+    },
+    "rem:A.2": {
+      "type": "Remark",
+      "number": "A.2",
+      "section": "A",
+      "role": "context",
+      "summary": "Explicit example of the direction set $\\Lambda$ in lem:A.1 using 6 vectors from Pythagorean triples (5/13, 12/13), with explicit orthonormal bases (k, k̄, k̄̄)."
+    },
+    "def:A.3": {
+      "type": "Definition",
+      "number": "A.3",
+      "section": "A",
+      "role": "definition",
+      "summary": "Standard temporal $(\\varphi)$ and spatial $(\\psi)$ mollifier kernels with unit mass. Used to define the mollified sequence $u_{ℓ_q} = u_q * \\varphi_{$ℓ$_q} * \\psi_{$ℓ_q}."
+    },
+    "lem:A.4": {
+      "type": "Lemma",
+      "number": "A.4",
+      "section": "A",
+      "role": "technical",
+      "summary": "$L^p$ localization lemma (Cheskidov-Modena-Szekely): for compactly supported f on $\\Omega \\subset [-1/2,1/2]^3$ and $\\lambda-periodic$ g, ‖f $\\cdotg(\\lambda\\cdot)$‖$_{L^p} \\approx$ ‖f‖$_{L^p}$‖g‖$_{L^p}$ up to error $\\lambda^{-1/p}$ ‖f‖$_{C^1}$ ‖g‖$_{L^p}$. Allows Mikado waves on $T^3$ to approximate their $R^3$ analogues."
+    },
+    "lem:A.5": {
+      "type": "Lemma",
+      "number": "A.5",
+      "section": "A",
+      "role": "key_structural",
+      "summary": "Inverse divergence iteration (from BMNV): $G^i \\rho^{(0)}(\\lambdax) = \\partial_j$ R̊$^{ij}_{(N)} + \\partial_i P_{(N)} + E^i_{(N)}$ with ‖$E_{(N)}$‖ $= O(\\lambda^{-N})$. Decomposes a product into traceless symmetric stress + pressure + error of any desired order. Key tool for constructing $w^{(p)}$ with controlled Reynolds stress support."
+    },
+    "def:A.6": {
+      "type": "Definition",
+      "number": "A.6",
+      "section": "A",
+      "role": "definition",
+      "summary": "Mixed time-space Besov space L̃$^r_T B^s_{p,q}(R^d)$ via Chemin-Lerner norms: ‖u‖ = ‖(2^{js} ‖$\\Delta_j$ u‖$_{L^r_t L^p})_{j}$‖_{ℓ^q}. Used for the Besov-type estimates on $w^{(ns)}_{q+1}$ and $F_{q+1}$."
+    },
+    "lem:A.7": {
+      "type": "Lemma",
+      "number": "A.7",
+      "section": "A",
+      "role": "foundational",
+      "summary": "Maximal regularity for heat equation in Besov spaces (from Bahouri-Chemin-Danchin): if $u_0 \\in B^s_{p,q}$ and $\\partial_t$ u $- \\Deltau =$ f $\\in$ L̃$^{r_2}_t B^{s-2+2/r_2}_{p,q}$, then u $\\in$ L̃$^{r_1}_t B^{s+2/r_1}_{p,q}$ with natural bound. Used to solve eq:LNS for $w^{(ns)}_{q+1}$."
+    },
+    "prop:A.8": {
+      "type": "Proposition",
+      "number": "A.8",
+      "section": "A",
+      "role": "technical",
+      "summary": "Local well-posedness for perturbed Couette NSE (eq:A.3): if ‖$u_0$‖$_{B^{1/2}_{2,1}} +$ ‖v‖_{L̃$^\\infty B^{1/2}_{2,1}} +$ ‖f‖_{L̃$^\\infty B^{-3/2}_{2,1}} \\le \\varepsilon$, then solution u exists on [0,T] with T $\\le 1/4$. Used in prop:5.5 to close the Couette iteration."
+    }
+  },
+  "edges": [
+    {
+      "from": "thm:1.2",
+      "to": "def:1.1",
+      "type": "depends_on",
+      "note": "Main result is stated in the class of weak solutions defined by def:1.1"
+    },
+    {
+      "from": "thm:1.2",
+      "to": "prop:2.1",
+      "type": "depends_on",
+      "note": "Proved by iterating prop:2.1 from q=0 (trivial zero solution) to q $\\to \\infty$, then taking limit in $L^2$"
+    },
+    {
+      "from": "thm:1.2",
+      "to": "prop:2.2",
+      "type": "depends_on",
+      "note": "Non-uniqueness follows from prop:2.2: two starting sequences with e $\\ne$ ẽ on [T/2, T] agree on initial interval, then diverge — giving distinct limits with same initial data"
+    },
+    {
+      "from": "cor:1.3",
+      "to": "thm:1.2",
+      "type": "depends_on",
+      "note": "Corollary follows by choosing e(t) strictly decreasing and ẽ(t) = e(T/2) for t > T/2"
+    },
+    {
+      "from": "thm:1.4",
+      "to": "prop:5.1",
+      "type": "depends_on",
+      "note": "thm:1.4 follows from prop:5.1 exactly as thm:1.2 follows from prop:2.1 + prop:2.2"
+    },
+    {
+      "from": "thm:1.5",
+      "to": "prop:5.4",
+      "type": "depends_on",
+      "note": "Couette instability thm:1.5 is exactly prop:5.4 restated in terms of $u^\\varepsilon =$ U $+ v^\\varepsilon (U =$ Couette flow)"
+    },
+    {
+      "from": "prop:2.1",
+      "to": "prop:3.10",
+      "type": "depends_on",
+      "note": "Reynolds stress at level q+1 must satisfy inductive bound — prop:3.10 is the estimate that closes this"
+    },
+    {
+      "from": "prop:2.1",
+      "to": "prop:3.11",
+      "type": "depends_on",
+      "note": "Energy gap must track e(t) at level q+1 — prop:3.11 provides this"
+    },
+    {
+      "from": "prop:2.1",
+      "to": "prop:3.9",
+      "type": "depends_on",
+      "note": "Perturbation $w_{q+1}$ must satisfy $L^2$ and $H^5$ bounds at level q+1 — prop:3.9 provides these"
+    },
+    {
+      "from": "prop:2.1",
+      "to": "prop:3.1",
+      "type": "depends_on",
+      "note": "Mollification estimates control starting point for each iteration step"
+    },
+    {
+      "from": "prop:3.10",
+      "to": "prop:3.5",
+      "type": "depends_on",
+      "note": "R̊_{q+1} is assembled from R̊^{(1)} (from prop:3.5), R̊^{(2)} (from prop:3.6), and linear NSE error (from prop:3.8)"
+    },
+    {
+      "from": "prop:3.10",
+      "to": "prop:3.6",
+      "type": "depends_on",
+      "note": "R̊^{(2)} contributes the temporal correction part to R̊_{q+1}"
+    },
+    {
+      "from": "prop:3.10",
+      "to": "prop:3.8",
+      "type": "depends_on",
+      "note": "The non-stationary correction $w^{(ns)}_{q+1}$ contributes additional Reynolds stress terms from the nonlinear NSE interaction"
+    },
+    {
+      "from": "prop:3.9",
+      "to": "prop:3.5",
+      "type": "depends_on",
+      "note": "$w^{(p)}_{q+1}$ bounds in prop:3.9 use the decomposition and estimates from prop:3.5"
+    },
+    {
+      "from": "prop:3.9",
+      "to": "prop:3.6",
+      "type": "depends_on",
+      "note": "$w^{(c)}_{q+1}$ and $w^{(t)}_{q+1}$ bounds use the temporal decomposition from prop:3.6"
+    },
+    {
+      "from": "prop:3.9",
+      "to": "prop:3.8",
+      "type": "depends_on",
+      "note": "$w^{(ns)}_{q+1}$ bound from prop:3.8 enters the total perturbation estimate"
+    },
+    {
+      "from": "prop:3.11",
+      "to": "prop:3.9",
+      "type": "depends_on",
+      "note": "Energy gap $e(t) - \\int|u_{q+1}|^2$ computed using the $L^2$ bounds on $w_{q+1}$ from prop:3.9"
+    },
+    {
+      "from": "prop:3.11",
+      "to": "prop:3.1",
+      "type": "depends_on",
+      "note": "Mollified energy gap (prop:3.1 eq:3.14) is the starting point for the energy gap at q+1"
+    },
+    {
+      "from": "prop:3.5",
+      "to": "lem:A.1",
+      "type": "depends_on",
+      "note": "Geometric lemma decomposes R̊_{ℓ_q} into rank-one components $\\Sigma_k a^2_{(k,q)}$ k̄ ⊗ k̄, enabling construction of $w^{(p)}_{q+1}$ via Mikado waves"
+    },
+    {
+      "from": "prop:3.5",
+      "to": "lem:A.5",
+      "type": "depends_on",
+      "note": "Inverse divergence iteration converts G $* \\rho^{(0)}(\\lambdax)$ into compact-support Reynolds stress R̊^{(1)}, which is the key $R^3$ adaptation vs the $T^3$ case"
+    },
+    {
+      "from": "prop:3.5",
+      "to": "prop:3.3",
+      "type": "depends_on",
+      "note": "Amplitude estimates for $a_{(k,q)}$ control the $H^N$ norms needed to bound R̊^{(1)} in prop:3.5"
+    },
+    {
+      "from": "prop:3.5",
+      "to": "prop:3.4",
+      "type": "depends_on",
+      "note": "Building block estimates for $\\varphi_{k,k$̄,k̄̄,$\\sigma}$ control the oscillating perturbation in space-time"
+    },
+    {
+      "from": "prop:3.6",
+      "to": "prop:3.5",
+      "type": "depends_on",
+      "note": "Temporal decomposition $\\partial_t(w^{(p)} + w^{(c)})$ reuses the inverse divergence mechanism from prop:3.5 for the time-derivative error"
+    },
+    {
+      "from": "prop:3.6",
+      "to": "lem:A.5",
+      "type": "depends_on",
+      "note": "Inverse divergence applied again to handle $\\partial_t w^{(p)}_{q+1}$ contribution to temporal Reynolds stress R̊^{(2)}"
+    },
+    {
+      "from": "prop:3.3",
+      "to": "prop:3.2",
+      "type": "depends_on",
+      "note": "$a_{(k,q)}$ are defined as $a_k((\\chi_q \\rho_q)$ R̊_{ℓ$_q} / \\delta_{q+1})$ via lem:A.1; bounds on $(\\chi_q \\rho_q)^{1/2}$ and $(\\chi_q \\rho_q)^{-1}$ from prop:3.2 feed directly into $H^N$ estimates for $a_{(k,q)}$"
+    },
+    {
+      "from": "prop:3.2",
+      "to": "prop:3.1",
+      "type": "depends_on",
+      "note": "$\\rho_q$ derived from mollified Reynolds stress; $L^1$ and $W^{N,1}$ bounds from prop:3.1 give $L^\\infty H^N$ control of $(\\chi_q \\rho_q)$"
+    },
+    {
+      "from": "prop:3.4",
+      "to": "lem:A.4",
+      "type": "depends_on",
+      "note": "$L^p$ localization lemma controls ‖f $\\cdot \\varphi(\\lambda\\cdot)$‖$_{L^p}$ for the building block functions, converting $T^3$ estimates to $R^3$ with compact support"
+    },
+    {
+      "from": "prop:3.7",
+      "to": "prop:3.5",
+      "type": "depends_on",
+      "note": "$F_{q+1}$ includes $F^{(1)}_{q+1}$ from prop:3.5; the $B^{-3/2}_{2,1}$ bound is the key output"
+    },
+    {
+      "from": "prop:3.7",
+      "to": "prop:3.6",
+      "type": "depends_on",
+      "note": "$F_{q+1}$ includes $F^{(2)}_{q+1}$ from prop:3.6"
+    },
+    {
+      "from": "prop:3.8",
+      "to": "lem:A.7",
+      "type": "depends_on",
+      "note": "$w^{(ns)}_{q+1}$ solves linearized NSE (heat equation + lower-order terms); lem:A.7 provides Besov-space maximal regularity estimate that gives ‖$w^{(ns)}$‖$_{B^{1/2}_{2,1}} \\le \\lambda^{-20}_q$"
+    },
+    {
+      "from": "prop:3.8",
+      "to": "prop:3.7",
+      "type": "depends_on",
+      "note": "$F_{q+1}$ is the forcing for eq:LNS; ‖$F_{q+1}$‖$_{B^{-3/2}_{2,1}}$ ≲ $\\lambda^{-40}_q$ being small is what makes $w^{(ns)}$ negligible"
+    },
+    {
+      "from": "lem:A.7",
+      "to": "def:A.6",
+      "type": "depends_on",
+      "note": "Maximal regularity estimate stated in the Chemin-Lerner Besov norms defined by def:A.6"
+    },
+    {
+      "from": "prop:5.1",
+      "to": "prop:5.2",
+      "type": "depends_on",
+      "note": "Non-uniqueness in bounded domain proved by iterating prop:5.2 (domain-adapted convex integration step)"
+    },
+    {
+      "from": "prop:5.1",
+      "to": "prop:5.3",
+      "type": "depends_on",
+      "note": "Branching at q $\\to \\infty$ limit uses prop:5.3 to propagate initial agreement into distinct limits"
+    },
+    {
+      "from": "prop:5.4",
+      "to": "prop:5.5",
+      "type": "depends_on",
+      "note": "Couette instability built via iterated prop:5.5 (iteration step for Couette-perturbation system)"
+    },
+    {
+      "from": "prop:5.4",
+      "to": "prop:A.8",
+      "type": "depends_on",
+      "note": "Local WP for Couette perturbation (prop:A.8) is used to close the iteration at each step when $L^2$ norm is small"
+    },
+    {
+      "from": "prop:5.5",
+      "to": "prop:A.8",
+      "type": "depends_on",
+      "note": "prop:A.8 provides existence of the next iterate for the Couette perturbation system (eq:5.16)"
+    },
+    {
+      "from": "prop:A.8",
+      "to": "lem:A.7",
+      "type": "depends_on",
+      "note": "Local WP proof uses Besov-space regularity for heat-type equations (linearized Couette NSE is heat equation + drift + nonlinear terms)"
+    },
+    {
+      "from": "prop:A.8",
+      "to": "def:A.6",
+      "type": "depends_on",
+      "note": "Well-posedness estimate for prop:A.8 stated in $B^{1/2}_{2,1}$ Besov norms"
+    },
+    {
+      "from": "lem:A.1",
+      "to": "rem:A.2",
+      "type": "motivates",
+      "note": "rem:A.2 gives the explicit Pythagorean triple direction set $\\Lambda$ implementing lem:A.1"
+    }
+  ],
+  "critical_path": [
+    "thm:1.2",
+    "prop:2.1",
+    "prop:3.10",
+    "prop:3.5",
+    "lem:A.1"
+  ],
+  "proof_architecture": {
+    "layer_1_main_results": {
+      "description": "The main theorem and its direct corollaries; all proved from the induction propositions in layer 2",
+      "nodes": [
+        "def:1.1",
+        "thm:1.2",
+        "cor:1.3"
+      ]
+    },
+    "layer_2_induction_propositions": {
+      "description": "The two propositions that drive non-uniqueness: one-step iteration (prop:2.1) and branching (prop:2.2); thm:1.2 is proved in sec:2.3 by combining these",
+      "nodes": [
+        "prop:2.1",
+        "prop:2.2"
+      ]
+    },
+    "layer_3_mollification": {
+      "description": "Regularization of $u_q$ to smooth mollified data $u_{ℓ_q}$; provides starting estimates for the convex integration step",
+      "nodes": [
+        "def:A.3",
+        "prop:3.1"
+      ]
+    },
+    "layer_4_amplitude_building_blocks": {
+      "description": "Amplitude modulator construction and localized Mikado wave estimates; feed into the principal perturbation construction",
+      "nodes": [
+        "prop:3.2",
+        "prop:3.3",
+        "prop:3.4",
+        "lem:A.4"
+      ]
+    },
+    "layer_5_perturbation_construction": {
+      "description": "The core convex integration construction on $R^3$: geometric decomposition of R̊ (lem:A.1), inverse divergence to maintain compact support (lem:A.5), assembly of $w^{(p)}$ and Reynolds stress decompositions",
+      "nodes": [
+        "lem:A.1",
+        "rem:A.2",
+        "lem:A.5",
+        "prop:3.5",
+        "prop:3.6"
+      ]
+    },
+    "layer_6_r3_correction": {
+      "description": "The uniquely $R^3$ ingredient: $w^{(ns)}_{q+1}$ corrects for the non-compact support of the non-local part; requires Besov-space maximal regularity",
+      "nodes": [
+        "def:A.6",
+        "lem:A.7",
+        "prop:3.7",
+        "prop:3.8"
+      ]
+    },
+    "layer_7_closing_induction": {
+      "description": "Assembles all perturbation estimates to close the inductive hypotheses at level q+1: full $w_{q+1}$ bounds, R̊_{q+1} bound, energy gap",
+      "nodes": [
+        "prop:3.9",
+        "prop:3.10",
+        "prop:3.11"
+      ]
+    },
+    "layer_8_bounded_domain_application": {
+      "description": "Parallel convex integration on smooth bounded domain D; same architecture adapted to Dirichlet boundary",
+      "nodes": [
+        "prop:5.1",
+        "prop:5.2",
+        "prop:5.3",
+        "thm:1.4"
+      ]
+    },
+    "layer_9_couette_application": {
+      "description": "Couette flow instability in $L^2(R^3)$; convex integration in the Couette-perturbation system, with local WP to start each step",
+      "nodes": [
+        "prop:5.4",
+        "prop:5.5",
+        "prop:A.8",
+        "thm:1.5"
+      ]
+    }
+  },
+  "bibliography": {
+    "BV": {
+      "title": "Nonuniqueness of weak solutions to the Navier-Stokes equation",
+      "authors": "Buckmaster, Vicol",
+      "journal": "Ann. of Math. 189(1) (2019), 101-144",
+      "arxiv_id": "1709.10033",
+      "in_registry": false,
+      "note": "Primary predecessor: proved non-uniqueness on $T^3$; this paper extends to $R^3$"
+    },
+    "ABC": {
+      "title": "Non-uniqueness of Leray solutions of the forced Navier-Stokes equations",
+      "authors": "Albritton, Brué, Colombo",
+      "journal": "Ann. Math. 196(1) (2022), 415-455",
+      "arxiv_id": "2112.03116",
+      "in_registry": false,
+      "note": "Non-uniqueness for forced NSE; related technique"
+    },
+    "BMNV": {
+      "title": "Non-conservative H^{1/2-} weak solutions of the incompressible 3D Euler equations",
+      "authors": "Buckmaster, Masmoudi, Novack, Vicol",
+      "arxiv_id": "2101.09278",
+      "in_registry": false,
+      "note": "Source of inverse divergence iteration step (lem:A.5)"
+    },
+    "1Cheskidov": {
+      "title": "Sharp nonuniqueness for the Navier-Stokes equations",
+      "authors": "Cheskidov, Luo",
+      "journal": "Invent. Math. 229(3) (2022): 987-1054",
+      "arxiv_id": null,
+      "in_registry": false,
+      "note": "Source of $L^p$ localization lemma (lem:A.4)"
+    },
+    "2Beekie": {
+      "title": "Weak solutions of ideal MHD which do not conserve magnetic helicity",
+      "authors": "Beekie, Buckmaster, Vicol",
+      "journal": "Ann. PDE 6(1) (2020), 1-40",
+      "arxiv_id": null,
+      "in_registry": false,
+      "note": "Source of geometric lemma (lem:A.1)"
+    },
+    "MoS": {
+      "title": "Non-uniqueness for the transport equation with Sobolev vector fields",
+      "authors": "Modena, Szekely",
+      "journal": "Ann. PDE 4(2) (2018), 18-38",
+      "arxiv_id": null,
+      "in_registry": false,
+      "note": "Co-source of lem:A.4 localization"
+    },
+    "BCD11": {
+      "title": "Fourier Analysis and Nonlinear Partial Differential Equations",
+      "authors": "Bahouri, Chemin, Danchin",
+      "journal": "Grundlehren vol. 343, Springer, 2011",
+      "arxiv_id": null,
+      "in_registry": false,
+      "note": "Source of Besov space tools: def:A.6 and lem:A.7"
+    },
+    "MWZ": {
+      "title": "Littlewood-Paley Theory and Applications to Fluid Dynamics Equations",
+      "authors": "Miao, Wu, Zhang",
+      "journal": "Science Press, 2012",
+      "arxiv_id": null,
+      "in_registry": false,
+      "note": "Co-source of Besov maximal regularity (lem:A.7)"
+    },
+    "BGM17": {
+      "title": "On the stability threshold for the 3D Couette flow in Sobolev regularity",
+      "authors": "Bedrossian, Germain, Masmoudi",
+      "journal": "Ann. of Math. (2) 185 (2017), 541-608",
+      "arxiv_id": "1306.5028",
+      "in_registry": false,
+      "note": "Background for Couette flow stability; motivates thm:1.5"
+    }
+  }
+}

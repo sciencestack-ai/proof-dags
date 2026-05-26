@@ -1,0 +1,196 @@
+{
+  "paper": "2311.05762",
+  "title": "On a conjecture of Marton",
+  "authors": ["W. T. Gowers", "Ben Green", "Freddie Manners", "Terence Tao"],
+  "generated": "2026-03-18",
+  "updated": "2026-05-18",
+  "status": "complete",
+
+  "nodes": {
+    "conjecture:1.1": {
+      "type": "Conjecture",
+      "number": "1.1",
+      "section": "1",
+      "role": "main_conjecture",
+      "summary": "Polynomial Freiman-Ruzsa conjecture (Marton's conjecture). If $A \\subseteq \\mathbf{F}_2^n$ with $|A+A| \\le K|A|$, then $A$ is covered by at most $2K^C$ cosets of a subgroup $H \\le \\mathbf{F}_2^n$ with $|H| \\le |A|$."
+    },
+    "thm:1.2": {
+      "type": "Theorem",
+      "number": "1.2",
+      "section": "1",
+      "role": "main_result",
+      "summary": "The main theorem: Conjecture 1.1 holds with $C = 12$."
+    },
+    "thm:1.3": {
+      "type": "Theorem",
+      "number": "1.3",
+      "section": "1",
+      "role": "key_result",
+      "summary": "Weak PFR over the integers. For finite $A \\subset \\mathbf{Z}^D$ with $|A+A| \\le K|A|$, there is $A' \\subseteq A$ with $|A'| \\ge K^{-C_1/2}|A|$ and $\\dim A' \\le C_2 \\log K$."
+    },
+    "cor:1.4": {
+      "type": "Corollary",
+      "number": "1.4",
+      "section": "1",
+      "role": "corollary",
+      "summary": "Approximate-homomorphism form. If $f: \\mathbf{F}_2^m \\to \\mathbf{F}_2^n$ has $|\\{f(x)+f(y)-f(x+y)\\}| \\le K$, then $f = g + h$ with $g$ linear and $|\\mathrm{range}(h)| = O(K^{C_3})$."
+    },
+    "cor:1.5": {
+      "type": "Corollary",
+      "number": "1.5",
+      "section": "1",
+      "role": "corollary",
+      "summary": "Statistical approximate-homomorphism form. If $\\mathbf{P}(f(x+y)=f(x)+f(y)) \\ge 1/K$ over uniform $x,y$, then there is a homomorphism $g$ with $\\mathbf{P}(f(x)=g(x)) \\gg K^{-C_4}$."
+    },
+    "cor:1.6": {
+      "type": "Corollary",
+      "number": "1.6",
+      "section": "1",
+      "role": "corollary",
+      "summary": "$U^3$ inverse theorem. If a 1-bounded $f: \\mathbf{F}_2^n \\to \\mathbf{C}$ has $\\|f\\|_{U^3} \\ge 1/K$, then $f$ correlates $\\gg K^{-C_5}$ with $(-1)^{P(x)}$ for some quadratic polynomial $P$."
+    },
+    "cor:1.7": {
+      "type": "Corollary",
+      "number": "1.7",
+      "section": "1",
+      "role": "corollary",
+      "title": "Mudgal",
+      "summary": "Sum-product corollary. For finite $A \\subset \\mathbf{R}$ with $|A| \\ge 2$, either the $m$-fold sumset $mA$ or product set $A^{(m)}$ has size $\\ge |A|^{f(m)}$ with $f(m) \\to \\infty$."
+    },
+    "thm:1.8": {
+      "type": "Theorem",
+      "number": "1.8",
+      "section": "1",
+      "role": "key_result",
+      "summary": "Entropic PFR. For $\\mathbf{F}_2^n$-valued $X_1^0, X_2^0$ there is a subgroup $H$ with $d[X_1^0;U_H] + d[X_2^0;U_H] \\le 11\\, d[X_1^0;X_2^0]$, each term at most $6\\, d[X_1^0;X_2^0]$. The entropy-language theorem that yields the combinatorial PFR."
+    },
+    "prop:2.1": {
+      "type": "Proposition",
+      "number": "2.1",
+      "section": "2",
+      "role": "key_reduction",
+      "summary": "The $\\tau$-functional always decreases. If $d[X_1;X_2] > 0$ there exist $X_1', X_2'$ with $\\tau[X_1';X_2'] < \\tau[X_1;X_2]$. The core induction step; Theorem 1.8 follows from its contrapositive applied to a $\\tau$-minimizer."
+    },
+    "lem:2.2": {
+      "type": "Lemma",
+      "number": "2.2",
+      "section": "2",
+      "role": "auxiliary",
+      "summary": "Zero-distance lemma. If $d[X_1;X_2] = 0$ then there is a subgroup $H$ with $d[X_1;U_H] = d[X_2;U_H] = 0$. Converts a $\\tau$-minimizer into the subgroup of Theorem 1.8."
+    },
+    "rem:2.3": {
+      "type": "Remark",
+      "number": "2.3",
+      "section": "2",
+      "role": "remark",
+      "summary": "The proof of Proposition 2.1 is algorithmic, but the compactness used for Theorem 1.8 is not. Sketches a constructive variant via the stronger decrement (2.3), iterated to exponential decay, at the cost of worse constants."
+    },
+    "rem:2.4": {
+      "type": "Remark",
+      "number": "2.4",
+      "section": "2",
+      "role": "remark",
+      "summary": "A weak Bogolyubov consequence of the constructive variant: if $|A+A| \\le K|A|$ then some subspace $H$ with $|H| \\gg K^{-O(1)}|A|$ is contained in an iterated sumset $mA$ for $m = O(\\log^{O(1)}(2+K))$."
+    },
+    "prop:4.1": {
+      "type": "Proposition",
+      "number": "4.1",
+      "section": "4",
+      "role": "key_lemma",
+      "summary": "Fibring lemma. For a homomorphism $\\pi: H \\to H'$, $d[Z_1;Z_2] \\ge d[\\pi(Z_1);\\pi(Z_2)] + d[Z_1|\\pi(Z_1);Z_2|\\pi(Z_2)]$, with the gap an explicit mutual-information term when $Z_1,Z_2$ are independent."
+    },
+    "cor:4.2": {
+      "type": "Corollary",
+      "number": "4.2",
+      "section": "4",
+      "role": "corollary",
+      "summary": "Four-variable fibring identity. For independent $Y_1,\\dots,Y_4$, $d[Y_1-Y_3;Y_2-Y_4] + d[Y_1|Y_1-Y_3;Y_2|Y_2-Y_4] + \\mathbf{I}[\\cdots] = d[Y_1;Y_2] + d[Y_3;Y_4]$."
+    },
+    "rem:4.3": {
+      "type": "Remark",
+      "number": "4.3",
+      "section": "4",
+      "role": "remark",
+      "summary": "In the characteristic-2 setting the minus signs in Proposition 4.1 and Corollary 4.2 may be replaced with plus signs."
+    },
+    "lem:5.1": {
+      "type": "Lemma",
+      "number": "5.1",
+      "section": "5",
+      "role": "key_lemma",
+      "summary": "First estimate. For $(X,Z)$ and $(Y,W)$, $d[X|Z;Y|W] \\le d[X;Y] + \\tfrac12 \\mathbf{I}[X:Z] + \\tfrac12 \\mathbf{I}[Y:W]$."
+    },
+    "lem:5.2": {
+      "type": "Lemma",
+      "number": "5.2",
+      "section": "5",
+      "role": "key_lemma",
+      "summary": "Second estimate. For $Y,Z$ independent, $d[X;Y-Z] - d[X;Y] \\le \\tfrac12(\\mathbf{H}[Y-Z]-\\mathbf{H}[Y])$. A sign error here was caught during the Lean 4 formalization."
+    },
+    "lem:7.1": {
+      "type": "Lemma",
+      "number": "7.1",
+      "section": "7",
+      "role": "key_lemma",
+      "summary": "Endgame lemma 1. For independent $Y,Z,Z'$, bounds $d[X;Y-Z\\,|\\,Y-Z-Z'] - d[X;Y]$ by an explicit entropy difference. Handles the conditionally independent case."
+    },
+    "lem:7.2": {
+      "type": "Lemma",
+      "number": "7.2",
+      "section": "7",
+      "role": "key_lemma",
+      "summary": "Endgame lemma 2. For $(T_1,T_2,T_3)$ with $T_1+T_2+T_3=0$ and $\\delta = \\sum_{i<j}\\mathbf{I}[T_i;T_j]$, constructs $T_1',T_2'$ satisfying a $\\tau$-type inequality. The Balog-Szemeredi-Gowers variant for small nonzero mutual information."
+    },
+    "lem:A.1": {
+      "type": "Lemma",
+      "number": "A.1",
+      "section": "A",
+      "role": "auxiliary",
+      "summary": "Submodularity of entropy under sums. For independent $X,Y,Z$, $\\mathbf{H}[X+Y+Z] - \\mathbf{H}[X+Y] \\le \\mathbf{H}[Y+Z] - \\mathbf{H}[Y]$."
+    },
+    "lem:A.2": {
+      "type": "Lemma",
+      "number": "A.2",
+      "section": "A",
+      "role": "auxiliary",
+      "summary": "Conditional Ruzsa distance bound. For $(A,B)$ with $Z = A+B$, $\\sum_z p_Z(z)\\, d[(A|Z=z);(B|Z=z)] \\le 3\\mathbf{I}[A:B] + 2\\mathbf{H}[Z] - \\mathbf{H}[A] - \\mathbf{H}[B]$."
+    }
+  },
+
+  "edges": [
+    { "from": "thm:1.8", "to": "thm:1.2", "type": "proves",
+      "note": "Entropic PFR (Theorem 1.8) yields the combinatorial main theorem via the deduction in Appendix B." },
+    { "from": "thm:1.2", "to": "conjecture:1.1", "type": "proves",
+      "note": "Theorem 1.2 settles Conjecture 1.1 with the explicit constant $C = 12$." },
+    { "from": "thm:1.2", "to": "thm:1.3", "type": "implies",
+      "note": "Combining the main theorem with the Green-Manners-Tao machinery gives weak PFR over the integers." },
+    { "from": "thm:1.2", "to": "cor:1.4", "type": "implies",
+      "note": "The covering theorem yields the approximate-homomorphism decomposition." },
+    { "from": "thm:1.2", "to": "cor:1.5", "type": "implies",
+      "note": "The covering theorem yields the statistical approximate-homomorphism form." },
+    { "from": "thm:1.2", "to": "cor:1.6", "type": "implies",
+      "note": "The covering theorem yields the quadratic $U^3$ inverse theorem." },
+    { "from": "thm:1.2", "to": "cor:1.7", "type": "implies",
+      "note": "The covering theorem yields Mudgal's sum-product corollary over the reals." },
+    { "from": "thm:1.8", "to": "prop:2.1", "type": "depends_on",
+      "note": "Theorem 1.8 is proved by applying the contrapositive of Proposition 2.1 to a $\\tau$-minimizer." },
+    { "from": "thm:1.8", "to": "lem:2.2", "type": "depends_on",
+      "note": "Lemma 2.2 converts the zero-distance minimizer into the subgroup $H$ of Theorem 1.8." },
+    { "from": "prop:2.1", "to": "lem:7.1", "type": "depends_on",
+      "note": "Endgame Lemma 7.1 supplies the conditionally independent case of the $\\tau$-decrement (Section 7 endgame proves Proposition 2.1)." },
+    { "from": "prop:2.1", "to": "lem:7.2", "type": "depends_on",
+      "note": "Endgame Lemma 7.2 supplies the small-nonzero-mutual-information case of the $\\tau$-decrement." },
+    { "from": "prop:2.1", "to": "prop:4.1", "type": "depends_on",
+      "note": "The $\\tau$-decrement uses the fibring lemma to find a sumset or fibre that improves the functional." },
+    { "from": "prop:2.1", "to": "lem:5.1", "type": "depends_on",
+      "note": "The first estimate feeds the bound on $\\tau$ after the decrement step." },
+    { "from": "prop:2.1", "to": "lem:5.2", "type": "depends_on",
+      "note": "The second estimate feeds the bound on $\\tau$ after the decrement step." },
+    { "from": "prop:4.1", "to": "cor:4.2", "type": "implies",
+      "note": "The four-variable identity is a direct corollary of the fibring lemma." },
+    { "from": "prop:4.1", "to": "lem:A.1", "type": "depends_on",
+      "note": "The fibring inequality rests on submodularity of entropy under sums." },
+    { "from": "lem:7.2", "to": "lem:A.2", "type": "depends_on",
+      "note": "The endgame BSG variant uses the conditional Ruzsa distance bound of Lemma A.2." }
+  ]
+}

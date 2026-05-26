@@ -1,0 +1,128 @@
+{
+  "paper": "2312.11017",
+  "title": "Information Inequalities via Ideas from Additive Combinatorics",
+  "authors": ["Chin Wa Lau", "Chandra Nair"],
+  "generated": "2026-03-18",
+  "status": "complete",
+
+  "nodes": {
+    "thm:1": {
+      "type": "Theorem",
+      "number": "1",
+      "section": "2.1",
+      "role": "main_result",
+      "summary": "Generalized Ruzsa equivalence: formal equivalence between sumset inequalities and entropic inequalities."
+    },
+    "def:1": {
+      "type": "Definition",
+      "number": "1",
+      "section": "2.1",
+      "role": "definition",
+      "summary": "Framework for converting combinatorial to entropic inequalities."
+    },
+    "cor:1": {
+      "type": "Corollary",
+      "number": "1",
+      "section": "2.1",
+      "role": "corollary",
+      "summary": "Corollary of the equivalence theorem."
+    },
+    "cor:2": {
+      "type": "Corollary",
+      "number": "2",
+      "section": "2.1",
+      "role": "corollary",
+      "summary": "Further corollary."
+    },
+    "thm:2": {
+      "type": "Theorem",
+      "number": "2",
+      "section": "2.2",
+      "role": "key_result",
+      "summary": "Katz-Tao sum-difference inequality in information-theoretic form."
+    },
+    "thm:3": {
+      "type": "Theorem",
+      "number": "3",
+      "title": "Equivalence Theorem 2 (Ruzsa)",
+      "section": "2.2",
+      "role": "key_result",
+      "summary": "Ruzsa's original equivalence theorem cited."
+    },
+    "cor:6": {
+      "type": "Corollary",
+      "number": "6",
+      "title": "Generalized Ruzsa sum-difference inequality",
+      "section": "2.2",
+      "role": "key_result",
+      "summary": "Entropic version of Ruzsa sum-difference."
+    },
+    "thm:7": {
+      "type": "Theorem",
+      "number": "7",
+      "title": "Entropic characterization of magnification ratio",
+      "section": "3",
+      "role": "main_result",
+      "summary": "Information-theoretic characterization of the magnification ratio for graphs."
+    },
+    "lem:4": {
+      "type": "Lemma",
+      "number": "4",
+      "section": "3",
+      "role": "key_lemma",
+      "summary": "Entropic copy-lemma."
+    },
+    "lem:5": {
+      "type": "Lemma",
+      "number": "5",
+      "section": "3",
+      "role": "key_lemma",
+      "summary": "Uniformity result."
+    }
+  },
+
+  "edges": [
+    {
+      "from": "thm:1",
+      "to": "def:1",
+      "type": "depends_on",
+      "note": "The generalized Ruzsa equivalence theorem is stated in terms of the conversion framework of Definition 1."
+    },
+    {
+      "from": "thm:1",
+      "to": "cor:1",
+      "type": "implies",
+      "note": "Equivalence theorem gives corollaries."
+    },
+    {
+      "from": "thm:1",
+      "to": "cor:2",
+      "type": "implies",
+      "note": "Further corollary."
+    },
+    {
+      "from": "thm:2",
+      "to": "thm:3",
+      "type": "extends",
+      "note": "The information-theoretic Katz-Tao inequality builds on Ruzsa's equivalence theorem."
+    },
+    {
+      "from": "thm:2",
+      "to": "cor:6",
+      "type": "implies",
+      "note": "Sum-difference inequality follows."
+    },
+    {
+      "from": "thm:7",
+      "to": "lem:4",
+      "type": "depends_on",
+      "note": "The magnification-ratio characterization uses the entropic copy-lemma."
+    },
+    {
+      "from": "thm:7",
+      "to": "lem:5",
+      "type": "depends_on",
+      "note": "The magnification-ratio characterization uses the uniformity lemma."
+    }
+  ]
+}

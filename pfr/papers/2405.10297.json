@@ -1,0 +1,330 @@
+{
+  "paper": "2405.10297",
+  "title": "Low-Degree Polynomials Are Good Extractors",
+  "authors": ["Omar Alrabiah", "Jesse Goodman", "Jonathan Mosheiff", "João Ribeiro"],
+  "generated": "2026-03-19",
+  "status": "complete",
+
+  "nodes": {
+    "thm:0": {
+      "type": "Theorem",
+      "number": "0",
+      "section": "1",
+      "role": "background",
+      "title": "Random low-degree polynomials are unbiased (BHL12)",
+      "summary": "Classical result: random low-degree polynomials over $\\mathbb{F}_2$ have small bias for uniform sources."
+    },
+    "def:1": {
+      "type": "Definition",
+      "number": "1",
+      "section": "1",
+      "role": "definition",
+      "title": "Randomness extractor",
+      "summary": "Definition of $\\varepsilon$-extractor for $(n,k)$-sources."
+    },
+    "thm:1": {
+      "type": "Theorem",
+      "number": "1",
+      "section": "1",
+      "role": "main_result",
+      "title": "Low-degree polynomials extract from a single source",
+      "summary": "For source $X$ with min-entropy $k$ and $d \\le (1-\\delta)k$, random degree-$d$ polynomial $f$ has $|\\mathrm{bias}_X(f)| > 2^{-ck/d}$ with probability $\\le 2^{-c \\cdot C(k, \\le d)}$."
+    },
+    "cor:1": {
+      "type": "Corollary",
+      "number": "1",
+      "section": "1",
+      "role": "corollary",
+      "title": "Low-degree polynomials extract from small families",
+      "summary": "Random low-degree polynomial is good extractor for any small family of sources."
+    },
+    "thm:2": {
+      "type": "Theorem",
+      "number": "2",
+      "section": "1",
+      "role": "main_result",
+      "title": "Low-degree polynomials extract from sumset sources",
+      "summary": "For $k \\ge Cd(n/\\varepsilon^2)^{1/\\lfloor d/2 \\rfloor}$, random degree-$d$ polynomial is $\\varepsilon$-extractor for $(n,k)$-sumset sources. Nearly tight in polynomial error regime."
+    },
+    "def:5": {
+      "type": "Definition",
+      "number": "5",
+      "section": "3",
+      "role": "definition",
+      "title": "$(n,k)$-sumset source",
+      "summary": "Distribution $X = Y + Z$ where $Y, Z$ are independent $(n,k/2)$-sources over $\\mathbb{F}_2^n$."
+    },
+    "lem:3": {
+      "type": "Lemma",
+      "number": "3",
+      "section": "3",
+      "role": "tool",
+      "title": "Leftover Hash Lemma",
+      "summary": "Classical LHL for strong seeded extractors."
+    },
+    "lem:6": {
+      "type": "Lemma",
+      "number": "6",
+      "section": "4",
+      "role": "key_lemma",
+      "title": "Extension of BHL12",
+      "summary": "Simple extension of Bogdanov-Huang-Lelarge bias bound."
+    },
+    "cor:2": {
+      "type": "Corollary",
+      "number": "2",
+      "section": "4",
+      "role": "application",
+      "title": "Good local source extractors",
+      "summary": "Low-degree polynomials are good extractors for local sources (improving ACGLR22)."
+    },
+    "cor:3": {
+      "type": "Corollary",
+      "number": "3",
+      "section": "4",
+      "role": "application",
+      "title": "Extract from polynomial sources",
+      "summary": "Low-degree polynomials extract from polynomial sources."
+    },
+    "cor:4": {
+      "type": "Corollary",
+      "number": "4",
+      "section": "4",
+      "role": "application",
+      "title": "Extract from variety sources",
+      "summary": "Low-degree polynomials extract from variety sources."
+    },
+    "def:12": {
+      "type": "Definition",
+      "number": "12",
+      "section": "4",
+      "role": "definition",
+      "title": "Almost balanced codes",
+      "summary": "Definition for codes with near-equal 0/1 weight in codewords."
+    },
+    "def:13": {
+      "type": "Definition",
+      "number": "13",
+      "section": "4",
+      "role": "definition",
+      "title": "Reed-Muller codes",
+      "summary": "$RM(d,n)$ = evaluation codes of degree-$d$ polynomials over $\\mathbb{F}_2^n$."
+    },
+    "thm:3": {
+      "type": "Theorem",
+      "number": "3",
+      "section": "4",
+      "role": "key_result",
+      "title": "Strong seeded extractors from random subcodes",
+      "summary": "Random subcodes of almost-balanced linear codes yield strong seeded extractors."
+    },
+    "thm:4": {
+      "type": "Theorem",
+      "number": "4",
+      "section": "4",
+      "role": "key_result",
+      "title": "Extractors from RM subcodes",
+      "summary": "Random subcodes of Reed-Muller codes are strong seeded extractors."
+    },
+    "thm:5": {
+      "type": "Theorem",
+      "number": "5",
+      "section": "4",
+      "role": "technical",
+      "summary": "Technical theorem on code-based extractors."
+    },
+    "thm:6": {
+      "type": "Theorem",
+      "number": "6",
+      "section": "5",
+      "role": "key_result",
+      "summary": "Low-degree polynomials disperse from sumset sources — the disperser precursor to extraction."
+    },
+    "lem:12": {
+      "type": "Lemma",
+      "number": "12",
+      "section": "5",
+      "role": "key_lemma",
+      "summary": "Structural lemma on sumset-punctured RM codes."
+    },
+    "lem:13": {
+      "type": "Lemma",
+      "number": "13",
+      "section": "5",
+      "role": "technical",
+      "summary": "Technical lemma for disperser-to-extractor reduction."
+    },
+    "thm:7": {
+      "type": "Theorem",
+      "number": "7",
+      "section": "5",
+      "role": "impossibility",
+      "summary": "Impossibility result: limits on sumset extractors."
+    },
+    "cor:6": {
+      "type": "Corollary",
+      "number": "6",
+      "section": "5",
+      "role": "corollary",
+      "summary": "Corollary strengthening CGG24 impossibility."
+    },
+    "thm:8": {
+      "type": "Theorem",
+      "number": "8",
+      "section": "6",
+      "role": "application",
+      "title": "Low-degree low-error two-source extractor",
+      "summary": "Two-source extractor construction from low-degree polynomials."
+    },
+    "thm:9": {
+      "type": "Theorem",
+      "number": "9",
+      "section": "6",
+      "role": "key_tool",
+      "title": "BR15 + Polynomial Freiman-Ruzsa (GGMT23)",
+      "summary": "Key theorem combining Ben-Aroya-Regev with PFR: $(k,\\rho n)$-two-source disperser with rank $\\le Cn$ is also $(k'=(\\rho+\\gamma)n, \\varepsilon=2^{-\\eta n})$-two-source extractor."
+    },
+    "lem:17": {
+      "type": "Lemma",
+      "number": "17",
+      "section": "6",
+      "role": "tool",
+      "title": "PR04/BR15",
+      "summary": "Lemma from Pudlak-Rodl and Ben-Aroya-Regev on bilinear complexity."
+    },
+    "def:17": {
+      "type": "Definition",
+      "number": "17",
+      "section": "6",
+      "role": "definition",
+      "title": "Subspace-evasive sets and functions",
+      "summary": "$f$ is $r$-subspace-evasive if $f^{-1}(0)$ contains no $r$-dim subspace."
+    },
+    "thm:10": {
+      "type": "Theorem",
+      "number": "10",
+      "section": "6",
+      "role": "structural",
+      "summary": "Dimension expansion result for low-degree polynomials."
+    },
+    "thm:11": {
+      "type": "Theorem",
+      "number": "11",
+      "section": "6",
+      "role": "structural",
+      "summary": "Related dimension expansion theorem."
+    },
+    "def:18": {
+      "type": "Definition",
+      "number": "18",
+      "section": "6",
+      "role": "definition",
+      "title": "Sumset-evasive sets and functions",
+      "summary": "$f$ is $(k,\\varepsilon)$-sumset-evasive if $f^{-1}(0)$ has no sumset of min-entropy $k$ with probability $1-\\varepsilon$."
+    },
+    "thm:12": {
+      "type": "Theorem",
+      "number": "12",
+      "section": "6",
+      "role": "application",
+      "summary": "Low-degree polynomials yield sumset-evasive functions."
+    },
+    "cor:9": {
+      "type": "Corollary",
+      "number": "9",
+      "section": "6",
+      "role": "impossibility",
+      "title": "Sumset dispersers cannot disperse from high-entropy polynomial NOBF and variety sources",
+      "summary": "Impossibility result for polynomial and variety sources via sumset-evasiveness."
+    },
+    "thm:13": {
+      "type": "Theorem",
+      "number": "13",
+      "section": "A",
+      "role": "existential",
+      "title": "Existential result (Mrazović 2016)",
+      "summary": "Existential proof that sumset extractors exist via random function argument."
+    }
+  },
+
+  "edges": [
+    {
+      "from": "thm:1",
+      "to": "lem:6",
+      "type": "depends_on",
+      "note": "Single-source extraction rests on the BHL12 bias-bound extension of Lemma 6."
+    },
+    {
+      "from": "thm:1",
+      "to": "cor:1",
+      "type": "implies",
+      "note": "Single-source extraction implies small-family extraction by union bound."
+    },
+    {
+      "from": "cor:1",
+      "to": "cor:2",
+      "type": "implies",
+      "note": "Small families include local sources."
+    },
+    {
+      "from": "cor:1",
+      "to": "cor:3",
+      "type": "implies",
+      "note": "Small families include polynomial sources."
+    },
+    {
+      "from": "cor:1",
+      "to": "cor:4",
+      "type": "implies",
+      "note": "Small families include variety sources."
+    },
+    {
+      "from": "thm:2",
+      "to": "thm:6",
+      "type": "depends_on",
+      "note": "Sumset-source extraction rests on the disperser result as a stepping stone."
+    },
+    {
+      "from": "thm:6",
+      "to": "lem:12",
+      "type": "depends_on",
+      "note": "The disperser proof uses the sumset-punctured Reed-Muller structure of Lemma 12."
+    },
+    {
+      "from": "thm:2",
+      "to": "lem:13",
+      "type": "depends_on",
+      "note": "Sumset-source extraction uses the disperser-to-extractor reduction of Lemma 13."
+    },
+    {
+      "from": "thm:8",
+      "to": "thm:9",
+      "type": "depends_on",
+      "note": "The low-error two-source extractor rests on the PFR-based disperser-to-extractor upgrade."
+    },
+    {
+      "from": "thm:3",
+      "to": "thm:4",
+      "type": "specializes",
+      "note": "The general almost-balanced-code result specializes to Reed-Muller codes."
+    },
+    {
+      "from": "thm:8",
+      "to": "thm:10",
+      "type": "depends_on",
+      "note": "The two-source extractor uses the dimension-expansion result for low-degree polynomials."
+    },
+    {
+      "from": "thm:12",
+      "to": "cor:9",
+      "type": "implies",
+      "note": "Sumset-evasiveness yields impossibility for certain sources."
+    },
+    {
+      "from": "thm:7",
+      "to": "cor:6",
+      "type": "implies",
+      "note": "Impossibility theorem implies strengthened CGG24 bounds."
+    }
+  ]
+}

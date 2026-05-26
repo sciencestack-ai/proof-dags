@@ -1,0 +1,218 @@
+{
+  "title": "Navier-Stokes Blowup and Non-Uniqueness Proof DAG",
+  "tags": [
+    "navier-stokes",
+    "blowup",
+    "non-uniqueness",
+    "convex-integration",
+    "euler"
+  ],
+  "papers": {
+    "1108.1165v4": {
+      "title": "Localisation and compactness properties of the Navier-Stokes global regularity problem",
+      "authors": [
+        "Terence Tao"
+      ]
+    },
+    "1407.6734v1": {
+      "title": "Global regularity for a slightly supercritical hyperdissipative Navier-Stokes system",
+      "authors": [
+        "David Barbato",
+        "Francesco Morandin",
+        "Marco Romito"
+      ]
+    },
+    "1402.0290v3": {
+      "title": "Finite time blowup for an averaged three-dimensional Navier-Stokes equation",
+      "authors": [
+        "Terence Tao"
+      ]
+    },
+    "math/0601074v2": {
+      "title": "Blow-up in finite time for the dyadic model of the Navier-Stokes equations",
+      "authors": [
+        "Alexey Cheskidov"
+      ]
+    },
+    "math/0410380v2": {
+      "title": "On some dyadic models of the Euler equations",
+      "authors": [
+        "Fabian Waleffe"
+      ]
+    },
+    "0906.3070v4": {
+      "title": "Global regularity for a logarithmically supercritical hyperdissipative Navier-Stokes equation",
+      "authors": [
+        "Terence Tao"
+      ]
+    },
+    "2306.04146v2": {
+      "title": "Blowup analysis for a quasi-exact 1D model of 3D Euler and Navier-Stokes",
+      "authors": [
+        "Thomas Y. Hou",
+        "Yixuan Wang"
+      ]
+    },
+    "2507.08733v2": {
+      "title": "A note on certain scenarios of Type II blowups of suitable weak solutions to the Navier-Stokes equations",
+      "authors": [
+        "Gregory Seregin"
+      ]
+    },
+    "2602.19074v1": {
+      "title": "Non-uniqueness of smooth solutions to the Navier-Stokes equations on torus T^2",
+      "authors": [
+        "Changxing Miao",
+        "Yao Nie",
+        "Weikui Ye"
+      ]
+    },
+    "2511.09556": {
+      "title": "Instantaneous Type I blow-up and non-uniqueness of smooth solutions of the Navier-Stokes equations",
+      "authors": [
+        "Alexey Cheskidov",
+        "Mimi Dai",
+        "Stan Palasek"
+      ]
+    },
+    "2412.10404": {
+      "title": "Non-uniqueness of weak solutions to the Navier-Stokes equations in R^3",
+      "authors": [
+        "Changxing Miao",
+        "Yao Nie",
+        "Weikui Ye"
+      ]
+    },
+    "2402.13229v1": {
+      "title": "A note on potential Type II blowups of axisymmetric solutions to the Navier-Stokes equations",
+      "authors": [
+        "Gregory Seregin"
+      ]
+    },
+    "2407.06179": {
+      "title": "Non-uniqueness in the Leray-Hopf class for a dyadic Navier-Stokes model",
+      "authors": [
+        "Stan Palasek"
+      ]
+    },
+    "2410.16468": {
+      "title": "On regularity of solutions to the Navier-Stokes equation with initial data in BMO^{-1}",
+      "authors": [
+        "Hedong Hou"
+      ]
+    },
+    "2503.14699": {
+      "title": "Non-Uniqueness of Smooth Solutions of the Navier-Stokes Equations from Critical Data",
+      "authors": [
+        "Matei P. Coiculescu",
+        "Stan Palasek"
+      ]
+    },
+    "2412.09637": {
+      "title": "Sharp non-uniqueness for the Navier-Stokes equations in R^3",
+      "authors": [
+        "Changxing Miao",
+        "Yao Nie",
+        "Weikui Ye"
+      ]
+    },
+    "1709.10033": {
+      "title": "Nonuniqueness of weak solutions to the Navier-Stokes equation",
+      "authors": [
+        "Tristan Buckmaster",
+        "Vlad Vicol"
+      ]
+    },
+    "2101.09278": {
+      "title": "Non-conservative H^{1/2-} weak solutions of the incompressible 3D Euler equations",
+      "authors": [
+        "Tristan Buckmaster",
+        "Nader Masmoudi",
+        "Matthew Novack",
+        "Vlad Vicol"
+      ]
+    },
+    "1608.08301": {
+      "title": "A Proof of Onsager's Conjecture",
+      "authors": [
+        "Philip Isett"
+      ]
+    },
+    "2509.25116": {
+      "title": "Nonuniqueness of Leray-Hopf solutions to the unforced incompressible 3D Navier-Stokes Equation",
+      "authors": [
+        "Thomas Hou",
+        "Yixuan Wang",
+        "Changhe Yang"
+      ]
+    },
+    "2509.18595": {
+      "title": "Arbitrary norm growth in the 3D Navier-Stokes equations",
+      "authors": [
+        "Stan Palasek"
+      ]
+    },
+    "2009.06596": {
+      "title": "Sharp nonuniqueness for the Navier-Stokes equations",
+      "authors": [
+        "Alexey Cheskidov",
+        "Xiaoyutao Luo"
+      ]
+    },
+    "2504.08288": {
+      "title": "Sharp norm inflation for 3D Navier-Stokes equations in supercritical spaces",
+      "authors": [
+        "Xiaoyutao Luo"
+      ]
+    },
+    "2112.03116": {
+      "title": "Non-uniqueness of Leray solutions of the forced Navier-Stokes equations",
+      "authors": [
+        "Dallas Albritton",
+        "Elia Brué",
+        "Maria Colombo"
+      ]
+    },
+    "1809.00600": {
+      "title": "Wild solutions of the Navier-Stokes equations whose singular sets in time have Hausdorff dimension strictly less than 1",
+      "authors": [
+        "Tristan Buckmaster",
+        "Maria Colombo",
+        "Vlad Vicol"
+      ]
+    },
+    "2404.07813": {
+      "title": "Illposedness of incompressible fluids in supercritical Sobolev spaces",
+      "authors": [
+        "Xiaoyutao Luo"
+      ]
+    },
+    "2509.14185": {
+      "title": "Discovery of Unstable Singularities",
+      "authors": [
+        "Yongji Wang",
+        "Mehdi Bennani",
+        "James Martens",
+        "Sébastien Racanière",
+        "Sam Blackwell",
+        "Alex Matthews",
+        "Stanislav Nikolov",
+        "Gonzalo Cao-Labora",
+        "Daniel S. Park",
+        "Martin Arjovsky",
+        "Daniel Worrall",
+        "Chongli Qin",
+        "Ferran Alet",
+        "Borislav Kozlovskii",
+        "Nenad Tomašev",
+        "Alex Davies",
+        "Pushmeet Kohli",
+        "Tristan Buckmaster",
+        "Bogdan Georgiev",
+        "Javier Gómez-Serrano",
+        "Ray Jiang",
+        "Ching-Yao Lai"
+      ]
+    }
+  }
+}

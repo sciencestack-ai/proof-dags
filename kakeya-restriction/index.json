@@ -1,0 +1,67 @@
+{
+  "description": "Proof DAG registry index for the Kakeya / restriction program (Wang–Zahl resolution and Guth's survey).",
+  "papers": {
+    "2502.17655": {
+      "status": "complete",
+      "title": "Volume estimates for unions of convex sets, and the Kakeya set conjecture",
+      "authors": ["Hong Wang", "Joshua Zahl"],
+      "year": 2025,
+      "nodes": 10,
+      "edges": 11,
+      "generated": "2026-05-20",
+      "updated": "2026-05-20",
+      "note": "Headline (intro-level / navigation granularity: the Assertions D/E induction spine, 10 of 133 math envs). 1 cross-DAG edge (addresses_same_question) to the shared multilinear-Kakeya node."
+    },
+    "2604.03416": {
+      "status": "complete",
+      "title": "The Kakeya conjecture, after Wang and Zahl",
+      "authors": ["Larry Guth"],
+      "year": 2026,
+      "nodes": 14,
+      "edges": 13,
+      "generated": "2026-05-20",
+      "updated": "2026-05-20",
+      "note": "Survey / proof-map (sticky $\\to$ grain $\\to$ complex-conjugation $\\to$ sum-product contradiction; non-sticky high-density reduction). 1 cross-DAG edge (addresses_same_question) to the shared multilinear-Kakeya node."
+    },
+    "2402.03470": {
+      "status": "complete",
+      "title": "A Study Guide for \"A Restriction Estimate using Polynomial Partitioning\"",
+      "authors": ["John Green", "Terry Harris", "Kaiyi Huang", "Arian Nadjimzadah"],
+      "year": 2024,
+      "nodes": 14,
+      "edges": 14,
+      "generated": "2026-05-20",
+      "updated": "2026-05-20",
+      "note": "Restriction member (exposition of Guth's R^3 restriction estimate via polynomial partitioning). References multilinear Kakeya as method lineage (thm:1.1 references math/0509262:thm:1.15); this exposition proves its transversal estimate via Wongkew + polynomial partitioning, so it is in-cluster but not a load-bearing dependency."
+    },
+    "1409.4683": {
+      "status": "shared",
+      "title": "A short proof of the multilinear Kakeya inequality",
+      "authors": ["Larry Guth"],
+      "year": 2014,
+      "nodes": 7,
+      "edges": 7,
+      "note": "SHARED node — per-paper DAG canonically in the bourgain-demeter-decoupling registry. A multilinear-Kakeya paper (re_derives BCT thm:1.15, and re_derives Guth's own endpoint result 0811.2251:thm:2 by a shorter argument); thickens the load-bearing hub of the harmonic-analysis region."
+    },
+    "0811.2251": {
+      "status": "shared",
+      "title": "The endpoint case of the Bennett-Carbery-Tao multilinear Kakeya conjecture",
+      "authors": ["Larry Guth"],
+      "year": 2010,
+      "nodes": 9,
+      "edges": 10,
+      "generated": "2026-05-23",
+      "updated": "2026-05-23",
+      "note": "SHARED node — per-paper DAG canonically in the bourgain-demeter-decoupling registry. Guth's original endpoint proof of multilinear Kakeya via the polynomial ham-sandwich theorem; improves BCT thm:1.15 (removes the $\\epsilon$-loss). Turns the hub into a genuine dependency cluster: BCT ($\\epsilon$-loss) $\\leftarrow$ Guth endpoint (improves) $\\leftarrow$ Guth short proof (re_derives), plus the decoupling-side import on the other face of the hub."
+    },
+    "math/0509262": {
+      "status": "shared",
+      "title": "On the Multilinear Restriction and Kakeya conjectures",
+      "authors": ["Jonathan Bennett", "Anthony Carbery", "Terence Tao"],
+      "year": 2006,
+      "nodes": 22,
+      "edges": 22,
+      "note": "SHARED node and hub — the per-paper DAG lives in the bourgain-demeter-decoupling registry (bourgain-demeter-decoupling/papers/math-0509262.json). The load-bearing dependency is on the decoupling side: the $\\ell^2$ decoupling theorem is proved from it (decoupling DAG, 1403.5335:thm:6.1 imports_result thm:1.16). Within this DAG: Guth's short proof re-derives it (1409.4683), Guth's restriction references it as method lineage (2402.03470), and Wang–Zahl complete the full conjecture independently (thematic, thm:1.15)."
+    }
+  }
+}

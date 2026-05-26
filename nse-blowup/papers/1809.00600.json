@@ -1,0 +1,368 @@
+{
+  "paper": "1809.00600",
+  "title": "Wild solutions of the Navier-Stokes equations whose singular sets in time have Hausdorff dimension strictly less than 1",
+  "authors": [
+    "Tristan Buckmaster",
+    "Maria Colombo",
+    "Vlad Vicol"
+  ],
+  "generated": "2026-03-11",
+  "status": "complete",
+  "nodes": {
+    "def:1.1": {
+      "type": "Definition",
+      "number": "1.1",
+      "section": "1",
+      "role": "definition",
+      "summary": "Weak solution of NSE on $T^3$: v $\\in C^0([0,T)$;$L^2)$ that is weakly divergence-free at all t, has zero mean, and satisfies the distributional equation $\\intv$₀$\\cdot\\varphi(\\cdot,0) + \\int\\intv\\cdot(\\partial_t \\varphi + (v\\cdot\\nabla)\\varphi + \\Delta\\varphi) = 0$ for all div-free test functions $\\varphi$."
+    },
+    "thm:1.1": {
+      "type": "Theorem",
+      "number": "1.1",
+      "section": "1",
+      "role": "main_result",
+      "summary": "Wild solution gluing theorem: there exists $\\beta>0$ such that for any two strong solutions $u^1, u^2 \\in C^0([0,T]$;Ḣ^3), there exists a weak solution v with v ≡ $u^1$ on [0,T/3] and v ≡ $u^2$ on [2T/3,T], with additional regularity v $\\in C^0([0,T]$;$H^\\beta\\capW^{1,1+\\beta})$, and the singular time set $\\Sigma_T \\subset (0,T]$ has Hausdorff dimension $< 1-\\beta$. In particular, v is a.e. smooth."
+    },
+    "rem:1.2": {
+      "type": "Remark",
+      "number": "1.2",
+      "section": "1",
+      "role": "context",
+      "summary": "Non-uniqueness of weak solutions for any strong initial datum: by taking $u^1=0$ and $u^2=shear$ flow, thm:1.1 gives non-unique weak solutions for any v₀$\\in$Ḣ^3 (more generally for v₀ in any locally-well-posed class including $H^{1/2}, L^3$, BMO⁻^1)."
+    },
+    "rem:1.3": {
+      "type": "Remark",
+      "number": "1.3",
+      "section": "1",
+      "role": "context",
+      "summary": "First example of a mild/weak NSE solution with nonempty singular time set of Hausdorff dim STRICTLY LESS than 1. Improves on Buckmaster-Vicol (BV2019) where $dim(\\Sigma_T) = 1$. Open problem: achieve dim < 1/2."
+    },
+    "rem:1.4": {
+      "type": "Remark",
+      "number": "1.4",
+      "section": "1",
+      "role": "context",
+      "summary": "Non-uniqueness for very weak solutions (only $C^0_weak L^2)$ with any $L^2$ initial datum: for any Leray solution u, pick a regular time t₀, apply thm:1.1 on [t₀,T] to glue to a shear flow with different $L^2$ norm. Non-uniqueness in the very-weak class for all $L^2$ data."
+    },
+    "thm:1.5": {
+      "type": "Theorem",
+      "number": "1.5",
+      "section": "1",
+      "role": "main_result",
+      "summary": "Hyperdissipative extension: for $\\alpha\\in[1,5/4)$ there exists $\\beta=\\beta(\\alpha)>0$ such that thm:1.1 holds for the hyperdissipative NSE (with $(-\\Delta)^\\alpha$ dissipation instead of $-\\Delta)$. The convex integration scheme adapts to the more general dissipation."
+    },
+    "prop:2.1": {
+      "type": "Proposition",
+      "number": "2.1",
+      "section": "2",
+      "role": "key_mechanism",
+      "summary": "Main Iteration Proposition: for a $= a(\\alpha,b,\\beta,\\varepsilon_R)$ sufficiently large, one convex integration step takes $(v_q, R_q)$ satisfying NSE-Reynolds with inductive estimates and good set $G^{(q)}$ to $(v_{q+1}, R_{q+1})$ satisfying the same estimates at level q+1, with $||v_{q+1}-v_q||_{L^2} \\le \\delta_{q+1}^{1/2}$. Iteration of this step produces the wild solution."
+    },
+    "prop:2.2": {
+      "type": "Proposition",
+      "number": "2.2",
+      "section": "2",
+      "role": "main_technical",
+      "summary": "Gluing construction: builds a mollified pair (v̄_q, R̄_q) solving NSE-Reynolds that agrees with $v_q$ on $G^{(q)}$, satisfies $L^2, H^3$ and derivative estimates (2.19), and has R̄_q = 0 for t near $G^{(q+1)}$. This enables the iteration to track the target solutions $u^1, u^2$ on the good set."
+    },
+    "prop:3.1": {
+      "type": "Proposition",
+      "number": "3.1",
+      "section": "3",
+      "role": "auxiliary",
+      "summary": "Local well-posedness for NSE: for v₀$\\inH^3$, there exists a unique strong solution on [t₀,t₁] when t₁-t₀ $\\le$ c/||v₀$||_{H^3}$, with energy bound (3.2a), $H^3$ bound (3.2b), and high-regularity decay estimate (3.4): |t-t₀$|^{N/(2\\alpha)+M} ||\\partial$ₜᴹ Dᴺ$v||_{H^3}$ ≲ ||v₀$||_{H^3}$."
+    },
+    "prop:3.2": {
+      "type": "Proposition",
+      "number": "3.2",
+      "section": "3",
+      "role": "auxiliary",
+      "summary": "Comparison estimate: for strong solution v of NSE on [t₀,t₁] and Reynolds solution $v_q$ with $R_q$, the difference satisfies $||v-v_q||_{L^p} \\le$ C|t-t₀$| ||\\nablaR_q||_{L^p}$ and $||R(v-v_q)||_{L^p} \\le$ C|t-t₀$| ||R_q||_{L^p}$. Crucial for showing v̄_q approximates $v_q$ well on good intervals."
+    },
+    "cor:3.3": {
+      "type": "Corollary",
+      "number": "3.3",
+      "section": "3",
+      "role": "auxiliary",
+      "summary": "Explicit comparison bounds: $||v-v_q||_{L^\\inftyL^2} \\le |t$₁-t₀$|\\lambda_q^5$ and $||R(v-v_q)||_{L^\\inftyL^1} \\le |t$₁-t₀$|\\lambda_q^{-3\\varepsilon_R/4}\\delta_{q+1}$. Used in prop:2.2 to control the gluing error."
+    },
+    "lem:4.1": {
+      "type": "Lemma",
+      "number": "4.1",
+      "section": "4",
+      "role": "technical",
+      "summary": "Beltrami wave geometry: for $\\alpha=1,2$ there exist sets $\\Lambda_\\alpha \\subset S^2\\capQ^3$ and smooth functions $\\gamma_\\xi$: $N\\to\\mathbb{R}$ such that any symmetric matrix R with $|R-Id|\\le1/2$ decomposes as R $= \\Sigma_{\\xi\\in\\Lambda_\\alpha} \\gamma^2_\\xi(R)(\\xi$⊗$\\xi)$. This is the key geometric lemma enabling the NSE-Reynolds error to be cancelled by Beltrami waves."
+    },
+    "lem:4.2": {
+      "type": "Lemma",
+      "number": "4.2",
+      "section": "4",
+      "role": "technical",
+      "summary": "Temporal cutoff bounds: for $q\\ge0$ there exists $i_max(q)$ such that $\\chi_{(i)} = 0$ for i $> i_max$, with $\\rho_i \\le \\tau_{q+1}^{-2}, \\Sigma\\rho_i^{1/2}2^{-i} \\le \\lambda_q^{-\\varepsilon_R/16}\\delta_{q+1}^{1/2}$, and $||\\chi_{(i)}||_{L^2}$ ≲ 2^{-i}, $||\\chi_{(i)}||_{C^N_{x,t}}$ ≲ $\\tau_{q+1}^{-3N}$. Controls the temporal intermittency."
+    },
+    "lem:4.3": {
+      "type": "Lemma",
+      "number": "4.3",
+      "section": "4",
+      "role": "technical",
+      "summary": "Amplitude function bounds: $||a_{(\\xi)}||_{L^2}$ ≲ $\\rho_i^{1/2}2^{-i}$ ≲ $\\delta_{q+1}^{1/2}, ||a_{(\\xi)}||_{L^\\infty}$ ≲ $\\rho_i^{1/2}$ ≲ $\\delta_{q+1}^{1/2}2^i, ||a_{(\\xi)}||_{C^N_{x,t}}$ ≲ $\\tau_{q+1}^{-3N-1}$. The amplitude functions encode the Reynolds stress decomposition."
+    },
+    "prop:4.4": {
+      "type": "Proposition",
+      "number": "4.4",
+      "section": "4",
+      "role": "main_technical",
+      "summary": "Velocity perturbation component bounds: principal part $||w^{(p)}_{q+1}||_{L^2} \\le \\delta_{q+1}^{1/2}/2$ and $W^{N,p}$ ≲ $\\tau^{-2}$ℓ_⊥^{2/p-1}ℓ_‖$^{1/p-1/2}\\lambda_{q+1}^N$; incompressibility and temporal correctors are $O(\\mu$⁻^1) smaller. Verifies that the Beltrami wave perturbation has the right size."
+    },
+    "lem:4.5": {
+      "type": "Lemma",
+      "number": "4.5",
+      "section": "4",
+      "role": "technical",
+      "summary": "Fast oscillation / Riemann-Lebesgue lemma: for rapidly $(1/\\kappa)$ oscillating g and slowly varying f with $||D^j f||_{L^p} \\le C_f \\lambda^j (with \\lambda \\ll \\kappa)$, we have $||fg||_{L^p}$ ≲ $C_f ||g||_{L^p}$. Enables extraction of leading-order contribution from the product of the amplitude and the Beltrami wave."
+    },
+    "prop:4.6": {
+      "type": "Proposition",
+      "number": "4.6",
+      "section": "4",
+      "role": "main_technical",
+      "summary": "Total velocity perturbation bounds: $||w_{q+1}||_{L^2} \\le 3\\delta_{q+1}^{1/2}/4, ||v_{q+1}-v_q||_{L^2} \\le \\delta_{q+1}^{1/2}, ||w_{q+1}||_{W^{s,p}}$ ≲ $\\tau^{-2}$ℓ_⊥^{2/p-1}ℓ_‖$^{1/p-1/2}\\lambda_{q+1}^s$, and $||\\partial_t w_{q+1}||_{H^2}$ ≲ $\\lambda_{q+1}^5$. Complete $W^{s,p}$ control of the full perturbation."
+    },
+    "prop:5.1": {
+      "type": "Proposition",
+      "number": "5.1",
+      "section": "5",
+      "role": "key_reduction",
+      "summary": "New Reynolds stress closing: there exist R̃ and pressure p̃ such that $v_{q+1}$ satisfies $\\partial_t v_{q+1} + div(v_{q+1}$⊗$v_{q+1}) + \\nablap$̃ $+ (-\\Delta)^\\alpha v_{q+1} =$ div R̃, with ||R̃$||_{L^p}$ ≲ $\\lambda_{q+1}^{-2\\varepsilon_R}\\delta_{q+2}$ and supp R̃ $\\subset {dist(t,G^{(q+1)}) > \\tau_{q+1}}$. The new error R̃ is STRICTLY SMALLER than $R_q$."
+    },
+    "cor:5.2": {
+      "type": "Corollary",
+      "number": "5.2",
+      "section": "5",
+      "role": "main_technical",
+      "summary": "Main iterative step completion: there exists $(v_{q+1}, p_{q+1}, R_{q+1})$ solving NSE-Reynolds at level q+1, with $R_{q+1}(t) = 0$ on $G^{(q+1)}, ||R_{q+1}||_{L^1} \\le \\lambda_{q+1}^{-\\varepsilon_R}\\delta_{q+2} (5.4a)$, and $||R_{q+1}||_{H^3} \\le \\lambda_{q+1}^7 (5.4b)$. This is the inductive hypothesis at level q+1."
+    }
+  },
+  "edges": [
+    {
+      "from": "thm:1.1",
+      "to": "prop:2.1",
+      "type": "depends_on",
+      "note": "thm:1.1 follows from iterating prop:2.1 (main iteration) finitely many times; the iteration converges in $L^2$ by the $||v_{q+1}-v_q||_{L^2} \\le \\delta_{q+1}^{1/2}$ bound with $\\Sigma\\delta_{q+1}^{1/2} < \\infty$"
+    },
+    {
+      "from": "thm:1.1",
+      "to": "prop:2.2",
+      "type": "depends_on",
+      "note": "thm:1.1 uses prop:2.2 for the gluing initialization: builds (v̄_0, R̄_0) that matches $u^1$ on $G^{(0)}$ and launches the iteration. Without gluing, the iteration cannot track $u^1$ and $u^2$."
+    },
+    {
+      "from": "thm:1.5",
+      "to": "thm:1.1",
+      "type": "extends",
+      "note": "thm:1.5 is a direct extension of thm:1.1 to hyperdissipative NSE $\\alpha\\in[1,5/4)$; the proof scheme is identical with the same estimates adapted to $(-\\Delta)^\\alpha$"
+    },
+    {
+      "from": "prop:2.1",
+      "to": "cor:5.2",
+      "type": "depends_on",
+      "note": "prop:2.1 one iteration step is proved by applying prop:5.1 (R̃ bound) and cor:5.2 (construct $(v_{q+1},R_{q+1})$ satisfying NSE-Reynolds at level q+1 with all inductive estimates)"
+    },
+    {
+      "from": "prop:2.1",
+      "to": "prop:4.6",
+      "type": "depends_on",
+      "note": "prop:2.1 uses prop:4.6 to verify the velocity inductive estimates $||v_{q+1}-v_q||_{L^2} \\le \\delta_{q+1}^{1/2}$ and the $W^{s,p}$ bounds on $w_{q+1}$"
+    },
+    {
+      "from": "prop:2.1",
+      "to": "prop:3.2",
+      "type": "depends_on",
+      "note": "prop:2.1 uses prop:3.2 (and cor:3.3) to establish that the glued piece v̄_q approximates $v_q$ well on intervals in $G^{(q+1)}$"
+    },
+    {
+      "from": "prop:2.2",
+      "to": "prop:3.1",
+      "type": "depends_on",
+      "note": "prop:2.2 gluing construction uses prop:3.1 (local well-posedness) to define the strong solution pieces that interpolate between the target solutions $u^1,u^2$ on the good time intervals"
+    },
+    {
+      "from": "prop:2.2",
+      "to": "prop:3.2",
+      "type": "depends_on",
+      "note": "prop:2.2 uses prop:3.2 to control ||v̄_q $- v_q||_{L^2} (eq$:2.19.c) by bounding the departure from strong solution behavior over the short intervals between $G^{(q)}$ and $G^{(q+1)}$"
+    },
+    {
+      "from": "cor:5.2",
+      "to": "prop:5.1",
+      "type": "depends_on",
+      "note": "cor:5.2 derives the $L^1$ and $H^3$ bounds on $R_{q+1}$ directly from the $L^p$ bound ||R̃$||_{L^p}$ ≲ $\\lambda_{q+1}^{-2\\varepsilon_R}\\delta_{q+2}$ from prop:5.1"
+    },
+    {
+      "from": "prop:5.1",
+      "to": "prop:4.6",
+      "type": "depends_on",
+      "note": "prop:5.1 (Reynolds stress closing) uses the $W^{s,p}$ bounds on $w_{q+1}$ from prop:4.6 to bound the oscillation error and transport error terms in R̃"
+    },
+    {
+      "from": "prop:5.1",
+      "to": "prop:2.2",
+      "type": "depends_on",
+      "note": "prop:5.1 uses the support property of R̄_q from prop:2.2 (R̄_q = 0 on $G^{(q+1)})$ to establish supp R̃ $\\subset {dist(t,G^{(q+1)}) > \\tau_{q+1}}$"
+    },
+    {
+      "from": "prop:4.6",
+      "to": "prop:4.4",
+      "type": "depends_on",
+      "note": "prop:4.6 total perturbation bounds use prop:4.4 (individual bounds on $w^{(p)}, w^{(c)}, w^{(t)})$ as inputs for the triangle inequality estimates"
+    },
+    {
+      "from": "prop:4.6",
+      "to": "lem:4.3",
+      "type": "depends_on",
+      "note": "prop:4.6 uses amplitude bounds from lem:4.3 in the estimates for $||w_{q+1}||_{L^2}$ and $||\\partial_t w_{q+1}||_{H^2}$"
+    },
+    {
+      "from": "prop:4.4",
+      "to": "lem:4.1",
+      "type": "depends_on",
+      "note": "prop:4.4 construction of the Beltrami wave perturbation $w^{(p)}$ uses lem:4.1 to decompose the Reynolds stress R̄_q as a sum of rank-1 terms $\\gamma^2_\\xi(R$̄$_q)(\\xi$⊗$\\xi)$, generating the individual Beltrami waves $W_{(\\xi)}$"
+    },
+    {
+      "from": "prop:4.4",
+      "to": "lem:4.2",
+      "type": "depends_on",
+      "note": "prop:4.4 uses the temporal cutoff bounds lem:$4.2 (i_max$ finiteness, $\\rho_i$ bounds, $\\chi_{(i)}$ norms) for the $L^2, C^N$ estimates on the principal part $w^{(p)}$"
+    },
+    {
+      "from": "prop:4.4",
+      "to": "lem:4.3",
+      "type": "depends_on",
+      "note": "prop:4.4 uses amplitude function bounds lem:4.3 for the $L^2, L^\\infty, C^N$ estimates on $a_{(\\xi)}$"
+    },
+    {
+      "from": "prop:4.4",
+      "to": "lem:4.5",
+      "type": "depends_on",
+      "note": "prop:4.4 uses lem:4.5 (fast oscillation lemma) to extract the leading order $|w^{(p)}|^2$ ~ $\\Sigma\\gamma^2_\\xi(R$̄$_q)|W_{(\\xi)}|^2$ from the $a_{(\\xi)} * B_{(\\xi)}$ product, cancelling the Reynolds stress"
+    },
+    {
+      "from": "cor:3.3",
+      "to": "prop:3.2",
+      "type": "depends_on",
+      "note": "cor:3.3 is an immediate consequence of prop:3.2 with specific parameter choices (a large, t₁ satisfying prop:3.2's condition)"
+    },
+    {
+      "from": "prop:3.2",
+      "to": "prop:3.1",
+      "type": "depends_on",
+      "note": "prop:3.2 uses prop:3.1 to guarantee existence of the unique strong solution v on [t₀,t₁], from which the comparison estimate is derived"
+    },
+    {
+      "from": "rem:1.2",
+      "to": "thm:1.1",
+      "type": "depends_on",
+      "note": "rem:1.2 (non-uniqueness) is derived by specializing thm:1.1 with $u^1=0, u^2=shear$ flow"
+    },
+    {
+      "from": "rem:1.3",
+      "to": "thm:1.1",
+      "type": "depends_on",
+      "note": "rem:1.3 (Hausdorff dim < 1) contextualizes the dim $< 1-\\beta$ result from thm:1.1"
+    },
+    {
+      "from": "rem:1.4",
+      "to": "thm:1.1",
+      "type": "depends_on",
+      "note": "rem:1.4 (very weak $L^2$ non-uniqueness) extends rem:1.2 to $L^2$ data using Leray solutions and thm:1.1"
+    }
+  ],
+  "critical_path": [
+    "thm:1.1",
+    "prop:2.1",
+    "cor:5.2",
+    "prop:5.1",
+    "prop:4.6",
+    "prop:4.4",
+    "lem:4.1"
+  ],
+  "proof_architecture": {
+    "main_results": {
+      "description": "Definition of weak solutions, wild solution gluing theorem, and corollaries",
+      "nodes": [
+        "def:1.1",
+        "thm:1.1",
+        "thm:1.5",
+        "rem:1.2",
+        "rem:1.3",
+        "rem:1.4"
+      ]
+    },
+    "convex_integration_scheme": {
+      "description": "Main iteration proposition and gluing construction — the top-level inductive framework",
+      "nodes": [
+        "prop:2.1",
+        "prop:2.2"
+      ]
+    },
+    "local_wellposedness_and_comparison": {
+      "description": "Local $H^3$ strong solutions and comparison with Reynolds solutions for the gluing argument",
+      "nodes": [
+        "prop:3.1",
+        "prop:3.2",
+        "cor:3.3"
+      ]
+    },
+    "intermittent_beltrami_perturbation": {
+      "description": "Intermittent Beltrami wave velocity perturbation: geometry, amplitudes, cutoffs, and full bounds",
+      "nodes": [
+        "lem:4.1",
+        "lem:4.2",
+        "lem:4.3",
+        "prop:4.4",
+        "lem:4.5",
+        "prop:4.6"
+      ]
+    },
+    "reynolds_stress_closing": {
+      "description": "Verify that the new Reynolds stress $R_{q+1}$ satisfies the inductive estimates at level q+1",
+      "nodes": [
+        "prop:5.1",
+        "cor:5.2"
+      ]
+    }
+  },
+  "bibliography": {
+    "BV": {
+      "title": "Nonuniqueness of weak solutions to the Navier-Stokes equation",
+      "authors": [
+        "Tristan Buckmaster",
+        "Vlad Vicol"
+      ],
+      "arxiv_id": "1709.10033",
+      "in_registry": true,
+      "note": "Direct predecessor: BV2019 proves non-uniqueness of weak NSE solutions with singular time set $dim(\\Sigma_T) = 1$; BCV2021 (this paper) improves to dim < 1 while also gluing between strong solutions. Co-author Vicol."
+    },
+    "Isett16": {
+      "title": "A proof of Onsager's conjecture",
+      "authors": [
+        "Philip Isett"
+      ],
+      "arxiv_id": "1608.08301",
+      "in_registry": true,
+      "note": "Isett's proof of Onsager's conjecture; the convex integration scheme in this paper (BCV) builds on techniques developed for the Onsager program"
+    },
+    "BDLSV17": {
+      "title": "Onsager's conjecture for admissible weak solutions",
+      "authors": [
+        "Tristan Buckmaster",
+        "Camillo De Lellis",
+        "László Székelyhidi Jr.",
+        "Vlad Vicol"
+      ],
+      "arxiv_id": "1701.08678",
+      "in_registry": false,
+      "note": "Cited as background for convex integration techniques for Euler/NSE"
+    }
+  }
+}

@@ -1,0 +1,20 @@
+[
+  { "arxiv_id": "1403.5335", "priority": 1, "reason": "Root: Bourgain–Demeter ℓ² decoupling theorem.", "status": "complete" },
+  { "arxiv_id": "math/0509262", "priority": 2, "reason": "Bennett–Carbery–Tao multilinear restriction & Kakeya — foundational input to the decoupling proof.", "status": "complete" },
+  { "arxiv_id": "0811.2251", "priority": 3, "reason": "Guth: endpoint case of BCT multilinear Kakeya (polynomial method).", "status": "complete" },
+  { "arxiv_id": "1409.4683", "priority": 4, "reason": "Guth's short proof of multilinear Kakeya — re-proof of 0811.2251 via Loomis–Whitney + multiscale.", "status": "complete" },
+  { "arxiv_id": "1409.1634", "priority": 5, "reason": "Bourgain–Demeter: decoupling for curves & arbitrary-signature hypersurfaces — extension of the root.", "status": "complete" },
+  { "arxiv_id": "1408.5794", "priority": 6, "reason": "Bourgain: decoupling → exponential sums → |ζ(1/2+it)| ≪ t^{13/84+ε}. Parsed partial (headline results in running text).", "status": "complete" },
+  { "arxiv_id": "1512.01565", "priority": 7, "reason": "Bourgain–Demeter–Guth: Vinogradov main conjecture via moment-curve decoupling. Flagship application.", "status": "complete" },
+  { "arxiv_id": "1401.3150", "priority": 8, "reason": "Wooley: cubic case of Vinogradov main conjecture via efficient congruencing — the parallel-proof branch.", "status": "complete" },
+  { "arxiv_id": "1708.01220", "priority": 9, "reason": "Wooley: nested efficient congruencing — full Vinogradov main conjecture, parallel to BDG.", "status": "complete" },
+  { "arxiv_id": "2405.20552", "priority": 10, "reason": "Guth–Maynard: large-value estimates / zero density / primes in short intervals — downstream sibling.", "status": "complete" },
+  { "arxiv_id": "1012.3760", "priority": 20, "reason": "Bourgain–Guth, oscillatory integrals via multilinear estimates. OUT OF SCOPE: restriction-conjecture line, sibling not ancestor of decoupling; move to a future restriction-conjecture DAG. Also un-parseable (0 sections / 0 mathEnvs, pre-2014 \\newtheorem gap).", "status": "out_of_scope" },
+  { "arxiv_id": "1110.1444", "priority": 21, "reason": "INTENDED: Bourgain, 'Moment inequalities for trigonometric polynomials with spectrum in curved hypersurfaces' (precursor to BD decoupling). BUT arxiv id 1110.1444 is a different paper entirely (a solar-physics preprint). Correct arxiv id unknown / may not be on arXiv. Verify before re-attempting.", "status": "wrong_id" },
+  { "arxiv_id": "2007.13343", "priority": 22, "reason": "INTENDED: Demeter–Guth–Wang, 'Small cap decouplings for the moment curve in R^3' (downstream small-cap line). BUT arxiv id 2007.13343 is a different paper (an astrophysics preprint). Correct arxiv id unknown. Verify before re-attempting.", "status": "wrong_id" },
+  { "arxiv_id": "1604.06032", "priority": 11, "reason": "Bourgain–Demeter, 'A study guide for the l^2 Decoupling Theorem' — streamlined re-proof of 1403.5335.", "status": "complete" },
+  { "arxiv_id": "1509.05388", "priority": 12, "reason": "Bourgain–Demeter, 'Mean value estimates for Weyl sums in two dimensions' — decoupling for the 2D Parsell–Vinogradov surface.", "status": "complete" },
+  { "arxiv_id": "1709.04340", "priority": 25, "reason": "INTENDED: Bourgain–Watt, divisor/circle problems via decoupling. arxiv id 1709.04340 fails (404 on source; 0 sections/0 mathEnvs on the ScienceStack side). Correct arxiv id unknown — verify before re-attempting.", "status": "wrong_id" },
+  { "arxiv_id": "1701.04535", "priority": 26, "reason": "Candidate (Bourgain–Demeter, Gauss sums from kth powers?) — still parsing; verify title before building. Recalled ID unreliable.", "status": "pending_verify" },
+  { "arxiv_id": "1510.07507", "priority": 27, "reason": "Candidate (further moment-curve decoupling developments?) — verify arxiv id before parsing.", "status": "blocked" }
+]

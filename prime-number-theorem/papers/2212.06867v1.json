@@ -1,0 +1,130 @@
+{
+  "paper": "2212.06867v1",
+  "title": "Explicit zero-free regions for the Riemann zeta-function",
+  "authors": ["Michael J. Mossinghoff", "Timothy S. Trudgian", "Andrew Yang"],
+  "generated": "2026-05-25",
+  "status": "complete",
+  "nodes": {
+    "thm:1.1": {
+      "type": "Theorem",
+      "number": "1.1",
+      "section": "1",
+      "role": "main_result",
+      "summary": "Headline explicit Vinogradov–Korobov zero-free region: no zeros of $\\zeta(\\sigma+it)$ for $|t|\\ge 3$ and $\\sigma \\ge 1 - \\frac{1}{55.241(\\log|t|)^{2/3}(\\log\\log|t|)^{1/3}}$ — improving Ford's constant $57.54$."
+    },
+    "thm:1.2": {
+      "type": "Theorem",
+      "number": "1.2",
+      "section": "1",
+      "role": "main_result",
+      "summary": "Asymptotic VK zero-free region: for sufficiently large $|t|$, no zeros with $\\sigma \\ge 1 - \\frac{1}{48.1588(\\log|t|)^{2/3}(\\log\\log|t|)^{1/3}}$ — the asymptotic constant improving Ford's $0.05507$ to $0.05617776$."
+    },
+    "thm:1.3": {
+      "type": "Theorem",
+      "number": "1.3",
+      "section": "1",
+      "role": "main_result",
+      "summary": "Explicit classical-type zero-free region: no zeros for $|t|\\ge 2$ and $\\sigma \\ge 1 - \\frac{1}{5.558691\\,\\log|t|}$ — improving Ford's classical constant $8.464$."
+    },
+    "thm:1.4": {
+      "type": "Theorem",
+      "number": "1.4",
+      "section": "1",
+      "role": "main_result",
+      "summary": "Intermediate zero-free region: no zeros for $|t|\\ge \\exp(1000)$ and $\\sigma > 1 - \\frac{0.05035}{h(t)} + \\frac{0.0349}{h^2(t)}$ with $h(t)=\\frac{27}{164}\\log|t| + 7.096$; bridges the classical and VK ranges."
+    },
+    "lem:4.1": {
+      "type": "Lemma",
+      "number": "4.1",
+      "section": "4",
+      "role": "key_mechanism",
+      "summary": "Zero-detector for $\\zeta$: for $s=1+it$ and almost all $\\eta>0$, $-\\Re\\frac{\\zeta'}{\\zeta}(s)$ equals a $\\cosh^{-2}$-weighted log-integral plus a localized cotangent sum over zeros. Stated as a direct application of Ford's Lemma 2.2."
+    },
+    "lem:4.2": {
+      "type": "Lemma",
+      "number": "4.2",
+      "section": "4",
+      "role": "technical",
+      "summary": "Laplace-transform lemma for a non-negative compactly-supported $f$ with $F_0(z)=F(z)-f(0)/z$ satisfying $|F_0(z)|\\le D/|z|^2$; obtained by combining Ford's Lemmas 4.5 and 4.6."
+    },
+    "lem:4.3": {
+      "type": "Lemma",
+      "number": "4.3",
+      "section": "4",
+      "role": "technical",
+      "summary": "Growth-to-integral bridge: a $\\zeta$ growth bound $|\\zeta(\\sigma+i\\tau)|\\le X t^Y \\log^Z t$ (with $Y+Z>0.1$) yields an explicit integral bound; quoted from Ford's Lemma 3.4."
+    },
+    "lem:4.4": {
+      "type": "Lemma",
+      "number": "4.4",
+      "section": "4",
+      "role": "technical",
+      "summary": "Degree-$K$ trigonometric positivity: for non-negative trig-polynomial coefficients $b_j$, $\\int_{-\\infty}^\\infty \\frac{1}{\\cosh^2 u}\\sum_{j=1}^K b_j \\log|\\zeta(1+\\eta+ijt_1+iut_2)|\\,du \\ge -2b_0\\log\\zeta(1+\\eta)$; generalizes Ford's Lemma 5.1 to degree $K$."
+    },
+    "lem:4.5": {
+      "type": "Lemma",
+      "number": "4.5",
+      "section": "4",
+      "role": "technical",
+      "summary": "Zero-counting bound: for $0<\\eta\\le 1/4$, $t\\ge 100$, $N(t,\\eta) \\le 1.3478\\eta^{3/2}B\\log t + 0.479 + \\frac{\\log A - \\log\\eta + \\frac23\\log\\log t}{1.879}$; the corrected form of Ford's Lemma 4.2 (fixing a constant in the hypothesis range)."
+    },
+    "lem:4.6": {
+      "type": "Lemma",
+      "number": "4.6",
+      "section": "4",
+      "role": "technical",
+      "summary": "Sum-over-zeros bound on $\\sum_{|1+it-\\rho|\\ge\\eta}\\frac{1}{|1+it-\\rho|^2}$ for $t\\ge 10000$, with sharpened constants; the improved analogue of Ford's Lemma 4.3, propagating the corrected $N(t,\\eta)$ constant."
+    },
+    "lem:4.7": {
+      "type": "Lemma",
+      "number": "4.7",
+      "section": "4",
+      "role": "key_reduction",
+      "summary": "The detection step: for a putative zero $\\beta+it$ with $1-\\beta\\le\\eta/2$ and a zero-free rectangle of width $\\lambda$, derives the contradiction-yielding inequality the explicit constants are optimized over; assembles the zero detector, the degree-$K$ trig polynomial and the sum-over-zeros bound."
+    },
+    "lem:6.1": {
+      "type": "Lemma",
+      "number": "6.1",
+      "section": "6",
+      "role": "main_technical",
+      "summary": "Medium-range engine for Theorem 1.4: for a zero $\\beta+it$ with $t\\ge\\exp(1000)$, $\\beta\\ge 1-1712^{-1}$ and a zero-free rectangle, yields a $\\lambda$-inequality; follows Ford's Lemma 9.2 with a better $J(t)$, a better trigonometric polynomial and a higher effective height."
+    }
+  },
+  "edges": [
+    { "from": "thm:1.1", "to": "lem:4.7", "type": "depends_on", "note": "Section 5's proof of the explicit VK region applies the detection step (Lemma 4.7)." },
+    { "from": "thm:1.2", "to": "lem:4.7", "type": "depends_on", "note": "The asymptotic VK constant is read off from the same detection step (Lemma 4.7)." },
+    { "from": "thm:1.3", "to": "lem:4.7", "type": "depends_on", "note": "Section 7's proof of the classical-type region uses the detection step (Lemma 4.7)." },
+    { "from": "thm:1.4", "to": "lem:6.1", "type": "depends_on", "note": "Section 6 proves the intermediate region from the medium-range Lemma 6.1." },
+    { "from": "thm:1.1", "to": "lem:4.4", "type": "uses", "note": "The explicit VK constant is optimized over the degree-$K$ trigonometric polynomial (Lemma 4.4)." },
+    { "from": "lem:4.7", "to": "lem:4.1", "type": "depends_on", "note": "The detection step is built on the zero-detector identity (Lemma 4.1)." },
+    { "from": "lem:4.7", "to": "lem:4.4", "type": "depends_on", "note": "The detection step uses the degree-$K$ trigonometric positivity inequality (Lemma 4.4)." },
+    { "from": "lem:4.7", "to": "lem:4.6", "type": "depends_on", "note": "The detection step uses the sum-over-zeros bound (Lemma 4.6)." },
+    { "from": "lem:4.6", "to": "lem:4.5", "type": "depends_on", "note": "The sum-over-zeros bound uses the zero count $N(t,\\eta)$ from Lemma 4.5." },
+    { "from": "lem:6.1", "to": "lem:4.4", "type": "uses", "note": "The medium-range engine uses an improved trigonometric polynomial (Lemma 4.4)." },
+    { "from": "lem:6.1", "to": "lem:4.1", "type": "uses_mechanism", "note": "The medium-range argument reuses the zero-detector mechanism (Lemma 4.1)." }
+  ],
+  "critical_path": ["thm:1.1", "lem:4.7", "lem:4.1"],
+  "proof_architecture": {
+    "main_results": {
+      "description": "Four explicit zero-free regions of record: VK-type (1.1), asymptotic VK (1.2), classical-type (1.3), and the intermediate region (1.4).",
+      "nodes": ["thm:1.1", "thm:1.2", "thm:1.3", "thm:1.4"]
+    },
+    "imported_machinery": {
+      "description": "The Ford (2002/arXiv 1910.08205) detection apparatus, re-quoted and re-optimized with sharpened explicit constants: zero detector, Laplace lemma, growth-to-integral bridge, degree-$K$ trig positivity, zero counting, sum over zeros.",
+      "nodes": ["lem:4.1", "lem:4.2", "lem:4.3", "lem:4.4", "lem:4.5", "lem:4.6"]
+    },
+    "detection_step": {
+      "description": "The assembled inequality (Lemma 4.7) over which the explicit constants of Theorems 1.1–1.3 are optimized.",
+      "nodes": ["lem:4.7"]
+    },
+    "medium_range": {
+      "description": "The medium-range engine (Lemma 6.1) behind the intermediate region (Theorem 1.4).",
+      "nodes": ["lem:6.1"]
+    }
+  },
+  "bibliography": {
+    "Ford2000": { "title": "Zero-free regions for the Riemann zeta function (K. Ford)", "arxiv_id": "1910.08205", "in_registry": true },
+    "Nielsen": { "title": "Nielsen — explicit zero-free region constant", "arxiv_id": null, "in_registry": false },
+    "Rosser41": { "title": "J. B. Rosser — explicit bounds (1941)", "arxiv_id": null, "in_registry": false }
+  }
+}

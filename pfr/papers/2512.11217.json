@@ -1,0 +1,259 @@
+{
+  "paper": "2512.11217",
+  "title": "Improved Bounds for the Freiman-Ruzsa Theorem",
+  "authors": ["Rushil Raghavan"],
+  "generated": "2026-03-19",
+  "status": "complete",
+
+  "nodes": {
+    "thm:1.1": {
+      "type": "Theorem",
+      "number": "1.1",
+      "section": "1",
+      "role": "main_result",
+      "summary": "Main theorem: For any $\\varepsilon>0$, $A$ with $|A+A| \\le K|A|$ can be covered by $\\exp(C_\\varepsilon \\log(2K)^{1+\\varepsilon})$ translates of a convex coset progression with dimension and size bounds of the same form. Improves Sanders-Konyagin ($\\varepsilon>2$) to any $\\varepsilon>0$."
+    },
+    "thm:1.3": {
+      "type": "Theorem",
+      "number": "1.3",
+      "section": "1",
+      "role": "key_result",
+      "summary": "Covering by translates of a subspace ($\\mathbb{F}_p^n$ case)."
+    },
+    "thm:1.4": {
+      "type": "Theorem",
+      "number": "1.4",
+      "section": "1",
+      "role": "key_result",
+      "summary": "Alternative formulation of the main result."
+    },
+    "conjecture:1.5": {
+      "type": "Conjecture",
+      "number": "1.5",
+      "section": "1",
+      "role": "main_conjecture",
+      "title": "Polynomial Freiman-Ruzsa Conjecture",
+      "summary": "The PFR conjecture: bounds should hold with $\\varepsilon=0$. This paper approaches but does not reach it."
+    },
+    "thm:1.6": {
+      "type": "Theorem",
+      "number": "1.6",
+      "section": "1",
+      "role": "key_result",
+      "summary": "Consequence for integers."
+    },
+    "thm:1.7": {
+      "type": "Theorem",
+      "number": "1.7",
+      "section": "1",
+      "role": "key_result",
+      "summary": "Application to general abelian groups."
+    },
+    "thm:1.8": {
+      "type": "Theorem",
+      "number": "1.8",
+      "section": "1",
+      "role": "key_result",
+      "summary": "Variant formulation of the main result."
+    },
+    "def:2.4": {
+      "type": "Definition",
+      "number": "2.4",
+      "section": "2.1",
+      "role": "key_definition",
+      "title": "Entropic Ruzsa Distance",
+      "summary": "Defines $d[X;Y] = H(X-Y) - H(X)/2 - H(Y)/2$, central to the entropy method."
+    },
+    "def:2.6": {
+      "type": "Definition",
+      "number": "2.6",
+      "section": "2.1",
+      "role": "definition",
+      "title": "Convex Coset Progression",
+      "summary": "Defines the structured objects used in covering theorems."
+    },
+    "def:2.8": {
+      "type": "Definition",
+      "number": "2.8",
+      "section": "2.1",
+      "role": "key_definition",
+      "title": "Polynomial Growth",
+      "summary": "Definition of polynomial growth for random variables."
+    },
+    "thm:2.9": {
+      "type": "Theorem",
+      "number": "2.9",
+      "section": "2.2",
+      "role": "external_citation",
+      "title": "GGMT, Propositions 2.1 and 2.2",
+      "summary": "Cites GGMT's $\\tau$-functional framework for PFR over $\\mathbb{F}_2^n$."
+    },
+    "def:2.10": {
+      "type": "Definition",
+      "number": "2.10",
+      "section": "2.2",
+      "role": "key_definition",
+      "title": "$\\tau$ functional",
+      "summary": "Defines $\\tau$-functional $\\tau[X;Y] = d[X;Y] + \\eta\\, d[X;X] + \\eta\\, d[Y;Y]$, adapted from GGMT."
+    },
+    "prop:2.11": {
+      "type": "Proposition",
+      "number": "2.11",
+      "section": "2.2",
+      "role": "key_result",
+      "summary": "Key property of $\\tau$-functional minimizers."
+    },
+    "thm:2.12": {
+      "type": "Theorem",
+      "number": "2.12",
+      "section": "2.2",
+      "role": "external_citation",
+      "title": "Sumsets Revisited, Theorem 2.7",
+      "summary": "Cites GMT's sumsets revisited paper."
+    },
+    "prop:2.13": {
+      "type": "Proposition",
+      "number": "2.13",
+      "section": "2.2",
+      "role": "key_result",
+      "summary": "Structure from polynomial growth."
+    },
+    "prop:3.1": {
+      "type": "Proposition",
+      "number": "3.1",
+      "section": "3",
+      "role": "key_result",
+      "summary": "Obtaining a random variable with polynomial growth — first stage of the proof."
+    },
+    "prop:4.1": {
+      "type": "Proposition",
+      "number": "4.1",
+      "section": "4",
+      "role": "key_result",
+      "summary": "Structure from polynomial growth — second stage using Fourier analysis."
+    },
+    "prop:4.2": {
+      "type": "Proposition",
+      "number": "4.2",
+      "section": "4",
+      "role": "key_result",
+      "summary": "Bohr set structure from polynomial growth."
+    },
+    "prop:4.3": {
+      "type": "Proposition",
+      "number": "4.3",
+      "section": "4",
+      "role": "key_result",
+      "summary": "Final structural result."
+    },
+    "lem:A.9": {
+      "type": "Lemma",
+      "number": "A.9",
+      "section": "A",
+      "role": "key_lemma",
+      "title": "Fibring Lemma",
+      "summary": "Fibring inequality for entropy — key tool from GGMT/GMT."
+    },
+    "lem:B.12": {
+      "type": "Lemma",
+      "number": "B.12",
+      "section": "B",
+      "role": "key_lemma",
+      "title": "Global Chang's Lemma",
+      "summary": "Chang's lemma for Fourier analysis."
+    },
+    "lem:B.13": {
+      "type": "Lemma",
+      "number": "B.13",
+      "section": "B",
+      "role": "key_lemma",
+      "title": "Local Chang's Lemma",
+      "summary": "Local version of Chang's lemma."
+    },
+    "lem:B.14": {
+      "type": "Lemma",
+      "number": "B.14",
+      "section": "B",
+      "role": "key_lemma",
+      "title": "Global Weak Bogolyubov Lemma",
+      "summary": "Bogolyubov-type lemma for Bohr sets."
+    },
+    "lem:B.15": {
+      "type": "Lemma",
+      "number": "B.15",
+      "section": "B",
+      "role": "key_lemma",
+      "title": "Local Weak Bogolyubov Lemma",
+      "summary": "Local version of Bogolyubov lemma."
+    }
+  },
+
+  "edges": [
+    {
+      "from": "prop:2.11",
+      "to": "def:2.10",
+      "type": "depends_on",
+      "note": "The minimizer analysis is stated in terms of the $\\tau$-functional definition."
+    },
+    {
+      "from": "prop:3.1",
+      "to": "prop:2.11",
+      "type": "depends_on",
+      "note": "The first stage uses the $\\tau$-minimizer properties."
+    },
+    {
+      "from": "thm:1.1",
+      "to": "prop:3.1",
+      "type": "depends_on",
+      "note": "The main theorem rests on the first stage (obtaining polynomial growth)."
+    },
+    {
+      "from": "thm:1.1",
+      "to": "prop:4.1",
+      "type": "depends_on",
+      "note": "The main theorem rests on the second stage (Fourier structure from polynomial growth)."
+    },
+    {
+      "from": "prop:3.1",
+      "to": "lem:A.9",
+      "type": "depends_on",
+      "note": "The first stage uses the fibring lemma in its entropy arguments."
+    },
+    {
+      "from": "prop:4.1",
+      "to": "lem:B.14",
+      "type": "depends_on",
+      "note": "The second stage uses the weak Bogolyubov lemma to obtain Bohr-set structure."
+    },
+    {
+      "from": "prop:4.2",
+      "to": "lem:B.12",
+      "type": "depends_on",
+      "note": "The Bohr-set result uses Chang's lemma for spectrum analysis."
+    },
+    {
+      "from": "def:2.10",
+      "to": "thm:2.9",
+      "type": "motivates",
+      "note": "The $\\tau$-functional definition is adapted from the GGMT framework cited in Theorem 2.9."
+    },
+    {
+      "from": "thm:1.1",
+      "to": "conjecture:1.5",
+      "type": "addresses_same_question",
+      "note": "The main theorem approaches the PFR conjecture ($\\varepsilon \\to 0$) without reaching $\\varepsilon = 0$."
+    },
+    {
+      "from": "thm:1.1",
+      "to": "thm:1.3",
+      "type": "implies",
+      "note": "Main theorem implies $\\mathbb{F}_p^n$ case."
+    },
+    {
+      "from": "thm:1.1",
+      "to": "thm:1.6",
+      "type": "implies",
+      "note": "Main theorem implies integer case."
+    }
+  ]
+}

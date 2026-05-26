@@ -1,0 +1,802 @@
+{
+  "paper": "2503.14699",
+  "title": "Non-Uniqueness of Smooth Solutions of the Navier-Stokes Equations from Critical Data",
+  "authors": [
+    "Matei P. Coiculescu",
+    "Stan Palasek"
+  ],
+  "generated": "2026-03-10",
+  "status": "complete",
+  "nodes": {
+    "thm:1.1": {
+      "type": "Theorem",
+      "number": "1.1",
+      "section": "1",
+      "role": "context",
+      "summary": "Koch-Tataru small data theorem: if divergence-free initial data has small $BMO^{-1}$ norm, there exists a unique global-in-time regular solution."
+    },
+    "thm:1.2": {
+      "type": "Theorem",
+      "number": "1.2",
+      "section": "1",
+      "role": "main_result",
+      "summary": "There exists divergence-free $U^0$ in $BMO^{-1}$ such that the Cauchy problem admits two distinct global smooth solutions, both in $C^\\infty((0,\\infty)$ x $T^3) \\cap L^\\infty([0,\\infty)$; $BMO^{-1})$."
+    },
+    "rem:1.3": {
+      "type": "Remark",
+      "number": "1.3",
+      "section": "1",
+      "role": "context",
+      "summary": "The constructed solutions lie in the Koch-Tataru path space $X_{KT}$, the natural space for $BMO^{-1}$ data — they are not perturbative around zero."
+    },
+    "rem:1.4": {
+      "type": "Remark",
+      "number": "1.4",
+      "section": "1",
+      "role": "context",
+      "summary": "The $BMO^{-1}$ norm is critical under the Navier-Stokes scaling symmetry. Theorem 1.2 is the first ill-posedness result at critical regularity strong enough for small-data well-posedness."
+    },
+    "rem:1.5": {
+      "type": "Remark",
+      "number": "1.5",
+      "section": "1",
+      "role": "context",
+      "summary": "The solutions are not Leray-Hopf (data not in $L^2)$. Construction uses a simplified mechanism from Palasek's dyadic model; the full mechanism should yield Leray-Hopf solutions in improved critical spaces."
+    },
+    "rem:1.6": {
+      "type": "Remark",
+      "number": "1.6",
+      "section": "1",
+      "role": "context",
+      "summary": "The initial data $U^0$ is smooth outside a measure-zero set $\\Sigma$, formed by the intersection of nested support regions with $|\\Omega_k| \\le 2^{-k}$."
+    },
+    "rem:1.7": {
+      "type": "Remark",
+      "number": "1.7",
+      "section": "1",
+      "role": "context",
+      "summary": "The construction is on $T^3$ for convenience; extension to $R^3$ is expected straightforward, while $T^2$ faces geometric difficulties from Mikado flows."
+    },
+    "lem:2.1": {
+      "type": "Lemma",
+      "number": "2.1",
+      "section": "2.2",
+      "role": "auxiliary",
+      "summary": "Bernstein inequalities: for smooth multipliers obeying symbol bounds, Littlewood-Paley projections satisfy $L^p$ to $L^q$ estimates with the expected frequency-dependent gain."
+    },
+    "lem:2.2": {
+      "type": "Lemma",
+      "number": "2.2",
+      "section": "2.2",
+      "role": "auxiliary",
+      "summary": "Heat propagator estimates: frequency-localized data decays exponentially at rate $N^2$, with additional polynomial gains for homogeneous multipliers."
+    },
+    "def:3.1": {
+      "type": "Definition",
+      "number": "3.1",
+      "section": "3.1",
+      "role": "definition",
+      "summary": "Mikado flow vector potentials $\\Psi_{j,k}$ and their heat evolution, plus the nested support regions $\\Omega_k$ and $tilde{\\Omega}_k$."
+    },
+    "lem:3.2": {
+      "type": "Lemma",
+      "number": "3.2",
+      "section": "3.1",
+      "role": "key_structural",
+      "summary": "Properties of Mikado potentials: smoothness with $N_k-dependent$ derivative bounds, pressureless Euler solutions, disjoint pipe supports, and volume constants $A_{j,k}$ ~ $\\delta$."
+    },
+    "lem:3.3": {
+      "type": "Lemma",
+      "number": "3.3",
+      "section": "3.1",
+      "role": "key_structural",
+      "summary": "The nested support regions have exponentially decaying volume: $|tilde{\\Omega}_k| \\le 2^{-k}|T^3|$, with a cube-localized refinement for BMO estimates."
+    },
+    "def:3.4": {
+      "type": "Definition",
+      "number": "3.4",
+      "section": "3.2",
+      "role": "definition",
+      "summary": "Key operators for the construction: the symmetric gradient D, cutoff $\\chi_k$, mollifier $\\phi_k$, and Nash operators $\\Gamma_j$ decomposing symmetric matrices near the identity."
+    },
+    "def:3.5": {
+      "type": "Definition",
+      "number": "3.5",
+      "section": "3.2",
+      "role": "definition",
+      "summary": "Inductive construction of $\\psi_k^0$: the k-th iterate is a mollified superposition of Mikado potentials with amplitude coefficients $a_{j,k}$ depending on D $\\psi_{k-1}^0$ via Nash operators."
+    },
+    "lem:3.6": {
+      "type": "Lemma",
+      "number": "3.6",
+      "section": "3.2",
+      "role": "technical",
+      "summary": "One-step estimates: $||\\psi_k^0||_{L^\\infty} \\le C_1 N_k^{-1} ||D\\psi_{k-1}^0||^{1/2}$ and ||D $\\psi_k^0||$ is controlled by ||D $\\psi_{k-1}^0||^{1/2}$ with a gradient correction."
+    },
+    "prop:3.7": {
+      "type": "Proposition",
+      "number": "3.7",
+      "section": "3.2",
+      "role": "main_technical",
+      "summary": "Inductive estimates: ||D $\\psi_k^0||_{L^\\infty}$ decays doubly exponentially (like 2^{-k}th power) with matching upper and lower bounds, and $||nabla^m \\psi_k^0||_{L^\\infty}$ ~ $N_k^{-1+m}$."
+    },
+    "prop:3.8": {
+      "type": "Proposition",
+      "number": "3.8",
+      "section": "3.2",
+      "role": "main_technical",
+      "summary": "The sum of curls $sum_k curl(\\psi_k^0)$ converges in $L^1$ and belongs to BMO, establishing that the constructed initial data lives in the critical space $BMO^{-1}$."
+    },
+    "def:3.9": {
+      "type": "Definition",
+      "number": "3.9",
+      "section": "3.2",
+      "role": "definition",
+      "summary": "The initial data $U^0 = curl(sum_k curl(\\psi_k^0))$, the divergence-free velocity field in $BMO^{-1}$."
+    },
+    "def:3.10": {
+      "type": "Definition",
+      "number": "3.10",
+      "section": "3.3",
+      "role": "definition",
+      "summary": "The two principal parts $v^{(1)}$ and $v^{(2)}$: each splits modes into heat-dominated $v_k (forward$ cascade) and inverse-cascade-dominated bar{v}_k (nonlinear energy transfer), with even/odd parity swap."
+    },
+    "rem:3.11": {
+      "type": "Remark",
+      "number": "3.11",
+      "section": "3.3",
+      "role": "context",
+      "summary": "The curl-curl operator produces divergence-free fields of the form div(D $\\psi_k)$, which is essential for the Nash decomposition in Lemma A.1."
+    },
+    "rem:3.12": {
+      "type": "Remark",
+      "number": "3.12",
+      "section": "3.3",
+      "role": "context",
+      "summary": "Formal verification that both principal parts $v^{(1)}$ and $v^{(2)}$ attain the same initial data $U^0$, using the Nash lemma identity and the fact that $\\chi_{k+1} = 1$ on supp(D $\\psi_k^0)$."
+    },
+    "prop:3.13": {
+      "type": "Proposition",
+      "number": "3.13",
+      "section": "3.3",
+      "role": "main_technical",
+      "summary": "The principal parts $v^{(i)}$ are divergence-free with sharp $t^{-(m+1)/2}$ decay estimates and logarithmic $L^2-L^\\infty$ integrability bounds essential for the perturbation argument."
+    },
+    "prop:4.1": {
+      "type": "Proposition",
+      "number": "4.1",
+      "section": "4.1",
+      "role": "key_mechanism",
+      "summary": "Residual estimates: the Navier-Stokes residual $F^{(i)}$ from the principal parts is smooth and has arbitrarily small weighted $C^\\kappa$ norm for large enough frequency parameter A."
+    },
+    "prop:4.2": {
+      "type": "Proposition",
+      "number": "4.2",
+      "section": "4.2",
+      "role": "key_mechanism",
+      "summary": "Semigroup bounds for the linearized Navier-Stokes operator around the principal part: the propagator $S^{(i)}(t,t')$ maps Y into $L^\\infty$ with quantified time-singular bounds."
+    },
+    "prop:4.3": {
+      "type": "Proposition",
+      "number": "4.3",
+      "section": "4.3",
+      "role": "key_reduction",
+      "summary": "Fixed point argument: for small $\\epsilon_1$ and large A, there exist perturbations $w^{(i)}$ in $B_X(0$, $\\epsilon_1)$ such that $u^{(i)} = v^{(i)} + w^{(i)}$ solve Navier-Stokes, with $w^{(i)}(t) \\to 0$ as t $\\to 0$."
+    },
+    "lem:A.1": {
+      "type": "Lemma",
+      "number": "A.1",
+      "section": "A",
+      "role": "foundational",
+      "summary": "Nash lemma: any symmetric matrix near the identity can be decomposed as sum of rank-one tensors M $= sum_j \\Gamma_j(M)^2 \\theta_j$ x $\\theta_j$ with smooth bounded coefficient functions."
+    },
+    "def:A.2": {
+      "type": "Definition",
+      "number": "A.2",
+      "section": "A",
+      "role": "definition",
+      "summary": "The inverse-divergence operator R mapping vector fields to symmetric tensor fields, with the identity div(R V) = V - mean(V)."
+    },
+    "lem:A.3": {
+      "type": "Lemma",
+      "number": "A.3",
+      "section": "A",
+      "role": "auxiliary",
+      "summary": "The operator R from Definition A.2 satisfies div(R V) = V - fint V, providing the key identity for the convex integration stress decomposition."
+    },
+    "lem:A.4": {
+      "type": "Lemma",
+      "number": "A.4",
+      "section": "A",
+      "role": "auxiliary",
+      "summary": "Stationary phase estimates for R applied to oscillatory functions: $R(a(x) e^{i \\lambda k.x})$ gains $\\lambda^{-1}$ with Holder corrections."
+    },
+    "lem:A.5": {
+      "type": "Lemma",
+      "number": "A.5",
+      "section": "A",
+      "role": "auxiliary",
+      "summary": "Product estimate for functions at separated scales: $||f(.) g(\\lambda.)||_{L^1} \\le ||f||_{L^1} ||g||_{L^1} + O(\\lambda^{-1})$."
+    },
+    "prop:B.1": {
+      "type": "Proposition",
+      "number": "B.1",
+      "section": "B.1",
+      "role": "foundational",
+      "summary": "Existence of smooth solutions to the perturbed Stokes system (linearized Navier-Stokes around a smooth background v), establishing the semigroup $S^{(i)}$ is well-defined."
+    },
+    "lem:B.2": {
+      "type": "Lemma",
+      "number": "B.2",
+      "section": "B.2",
+      "role": "auxiliary",
+      "summary": "Generalized Gronwall inequality with both integral and $L^p-integral$ forcing terms, giving exponential-in-integral bounds."
+    },
+    "lem:B.3": {
+      "type": "Lemma",
+      "number": "B.3",
+      "section": "B.2",
+      "role": "auxiliary",
+      "summary": "Singular Gronwall inequality with (t-s)^{-1/2} kernel, yielding exponential bounds that absorb the time-singularity via an $L^p$ bootstrap."
+    },
+    "lem:C.1": {
+      "type": "Lemma",
+      "number": "C.1",
+      "section": "C.1",
+      "role": "auxiliary",
+      "summary": "General multiplier boundedness on the torus: $L^p$ to $L^q$ bounds for Fourier multipliers in terms of symbol norms and inverse Fourier transform norms."
+    }
+  },
+  "edges": [
+    {
+      "from": "thm:1.2",
+      "to": "prop:4.3",
+      "type": "depends_on",
+      "label": "Main theorem follows from existence of two perturbations with same data"
+    },
+    {
+      "from": "thm:1.2",
+      "to": "prop:3.13",
+      "type": "depends_on",
+      "label": "Needs principal part estimates to verify regularity and data attainment"
+    },
+    {
+      "from": "thm:1.2",
+      "to": "def:3.9",
+      "type": "depends_on",
+      "label": "Initial data U^0 defined here"
+    },
+    {
+      "from": "thm:1.2",
+      "to": "def:3.10",
+      "type": "depends_on",
+      "label": "Two principal parts v^{(1)}, v^{(2)} defined here"
+    },
+    {
+      "from": "thm:1.2",
+      "to": "def:3.1",
+      "type": "depends_on",
+      "label": "Mikado potentials underpin the construction"
+    },
+    {
+      "from": "thm:1.2",
+      "to": "prop:4.1",
+      "type": "depends_on",
+      "label": "Needs residual to be small"
+    },
+    {
+      "from": "rem:1.6",
+      "to": "def:3.1",
+      "type": "depends_on",
+      "label": "References support regions Omega_k"
+    },
+    {
+      "from": "rem:1.6",
+      "to": "lem:3.3",
+      "type": "depends_on",
+      "label": "Uses |tilde{Omega}_k| <= 2^{-k}"
+    },
+    {
+      "from": "prop:3.7",
+      "to": "lem:3.6",
+      "type": "depends_on",
+      "label": "Induction step uses one-step estimates"
+    },
+    {
+      "from": "prop:3.7",
+      "to": "lem:3.2",
+      "type": "depends_on",
+      "label": "Uses Mikado potential properties"
+    },
+    {
+      "from": "prop:3.7",
+      "to": "lem:A.1",
+      "type": "depends_on",
+      "label": "Nash lemma bounds on Gamma_j"
+    },
+    {
+      "from": "prop:3.7",
+      "to": "def:3.5",
+      "type": "depends_on",
+      "label": "Inductive construction being estimated"
+    },
+    {
+      "from": "prop:3.8",
+      "to": "prop:3.7",
+      "type": "depends_on",
+      "label": "Uses doubly-exponential decay and derivative bounds"
+    },
+    {
+      "from": "prop:3.8",
+      "to": "lem:3.3",
+      "type": "depends_on",
+      "label": "Uses cube-localized volume bound for BMO estimate"
+    },
+    {
+      "from": "lem:3.6",
+      "to": "lem:3.2",
+      "type": "depends_on",
+      "label": "Uses Mikado potential derivative bounds"
+    },
+    {
+      "from": "lem:3.6",
+      "to": "lem:A.1",
+      "type": "depends_on",
+      "label": "Uses Nash operator bounds"
+    },
+    {
+      "from": "lem:3.6",
+      "to": "def:3.4",
+      "type": "depends_on",
+      "label": "Uses cutoff chi_k and Nash operators"
+    },
+    {
+      "from": "lem:3.6",
+      "to": "def:3.5",
+      "type": "depends_on",
+      "label": "Estimates the inductive definition"
+    },
+    {
+      "from": "lem:3.2",
+      "to": "def:3.1",
+      "type": "depends_on",
+      "label": "Properties of the objects defined in Def 3.1"
+    },
+    {
+      "from": "def:3.5",
+      "to": "def:3.1",
+      "type": "depends_on",
+      "label": "Uses Mikado potentials Psi_{j,k}"
+    },
+    {
+      "from": "def:3.5",
+      "to": "def:3.4",
+      "type": "depends_on",
+      "label": "Uses D, chi_k, phi_k, Gamma_j"
+    },
+    {
+      "from": "def:3.5",
+      "to": "lem:A.1",
+      "type": "depends_on",
+      "label": "Nash operators from Nash lemma"
+    },
+    {
+      "from": "def:3.9",
+      "to": "def:3.5",
+      "type": "depends_on",
+      "label": "U^0 = curl curl sum psi_k^0"
+    },
+    {
+      "from": "def:3.9",
+      "to": "prop:3.8",
+      "type": "depends_on",
+      "label": "Convergence and BMO membership"
+    },
+    {
+      "from": "def:3.10",
+      "to": "def:3.5",
+      "type": "depends_on",
+      "label": "Heat evolution of the inductive iterates"
+    },
+    {
+      "from": "def:3.10",
+      "to": "def:3.1",
+      "type": "depends_on",
+      "label": "Mikado potentials Psi_{j,k}(x,t)"
+    },
+    {
+      "from": "prop:3.13",
+      "to": "prop:3.7",
+      "type": "depends_on",
+      "label": "Uses doubly-exponential estimates on D psi_k^0"
+    },
+    {
+      "from": "prop:3.13",
+      "to": "lem:3.2",
+      "type": "depends_on",
+      "label": "Uses Mikado potential bounds"
+    },
+    {
+      "from": "prop:3.13",
+      "to": "def:3.10",
+      "type": "depends_on",
+      "label": "Estimates the objects defined here"
+    },
+    {
+      "from": "prop:3.13",
+      "to": "def:3.4",
+      "type": "depends_on",
+      "label": "Uses cutoff and operator definitions"
+    },
+    {
+      "from": "prop:3.13",
+      "to": "def:3.5",
+      "type": "depends_on",
+      "label": "Uses inductive construction"
+    },
+    {
+      "from": "prop:3.13",
+      "to": "lem:A.1",
+      "type": "depends_on",
+      "label": "Nash lemma for bar{v}_k computation"
+    },
+    {
+      "from": "prop:4.1",
+      "to": "def:3.10",
+      "type": "depends_on",
+      "label": "Computes residual from principal part definitions"
+    },
+    {
+      "from": "prop:4.1",
+      "to": "lem:3.2",
+      "type": "depends_on",
+      "label": "Uses Mikado potential properties for v_k decomposition"
+    },
+    {
+      "from": "prop:4.1",
+      "to": "prop:3.13",
+      "type": "depends_on",
+      "label": "Uses principal part estimates"
+    },
+    {
+      "from": "prop:4.1",
+      "to": "def:A.2",
+      "type": "depends_on",
+      "label": "Uses inverse-divergence operator R"
+    },
+    {
+      "from": "prop:4.1",
+      "to": "lem:A.4",
+      "type": "depends_on",
+      "label": "Stationary phase for oscillatory residual terms"
+    },
+    {
+      "from": "prop:4.1",
+      "to": "lem:A.5",
+      "type": "depends_on",
+      "label": "Separated-scale product estimates"
+    },
+    {
+      "from": "prop:4.2",
+      "to": "prop:B.1",
+      "type": "depends_on",
+      "label": "Semigroup exists by Prop B.1"
+    },
+    {
+      "from": "prop:4.2",
+      "to": "lem:2.2",
+      "type": "depends_on",
+      "label": "Heat propagator estimates for Duhamel terms"
+    },
+    {
+      "from": "prop:4.2",
+      "to": "lem:B.3",
+      "type": "depends_on",
+      "label": "Singular Gronwall inequality to close the bootstrap"
+    },
+    {
+      "from": "prop:4.2",
+      "to": "prop:3.13",
+      "type": "depends_on",
+      "label": "Principal part bounds feed into linearization coefficients"
+    },
+    {
+      "from": "prop:4.3",
+      "to": "prop:4.1",
+      "type": "depends_on",
+      "label": "Needs small residual as forcing"
+    },
+    {
+      "from": "prop:4.3",
+      "to": "prop:4.2",
+      "type": "depends_on",
+      "label": "Needs semigroup bounds for the fixed point"
+    },
+    {
+      "from": "prop:4.3",
+      "to": "prop:3.13",
+      "type": "depends_on",
+      "label": "Principal part estimates control nonlinear terms"
+    },
+    {
+      "from": "prop:B.1",
+      "to": "lem:2.2",
+      "type": "depends_on",
+      "label": "Heat semigroup estimates for energy method"
+    },
+    {
+      "from": "lem:B.3",
+      "to": "lem:B.2",
+      "type": "depends_on",
+      "label": "Derived from the more general Gronwall inequality"
+    },
+    {
+      "from": "lem:2.1",
+      "to": "lem:C.1",
+      "type": "depends_on",
+      "label": "Bernstein inequalities follow from general multiplier bounds"
+    },
+    {
+      "from": "lem:2.2",
+      "to": "lem:2.1",
+      "type": "depends_on",
+      "label": "Heat estimates use Bernstein inequalities"
+    },
+    {
+      "from": "lem:A.3",
+      "to": "def:A.2",
+      "type": "depends_on",
+      "label": "Identity for the operator defined in Def A.2"
+    },
+    {
+      "from": "lem:A.4",
+      "to": "def:A.2",
+      "type": "depends_on",
+      "label": "Oscillatory estimates for R"
+    },
+    {
+      "from": "rem:3.11",
+      "to": "lem:A.1",
+      "type": "depends_on",
+      "label": "Nash lemma motivates the curl-curl structure"
+    },
+    {
+      "from": "rem:3.12",
+      "to": "lem:A.1",
+      "type": "depends_on",
+      "label": "Uses Nash identity"
+    },
+    {
+      "from": "rem:3.12",
+      "to": "lem:A.3",
+      "type": "depends_on",
+      "label": "Uses div(R V) = V - mean identity"
+    },
+    {
+      "from": "rem:3.12",
+      "to": "def:3.5",
+      "type": "depends_on",
+      "label": "References the inductive construction"
+    },
+    {
+      "from": "rem:3.12",
+      "to": "def:3.10",
+      "type": "depends_on",
+      "label": "Verifies data equality for v^{(1)}, v^{(2)}"
+    },
+    {
+      "from": "lem:3.3",
+      "to": "def:3.1",
+      "type": "depends_on",
+      "label": "Volume bounds on the support regions from Def 3.1"
+    }
+  ],
+  "critical_path": [
+    "thm:1.2",
+    "prop:4.3",
+    "prop:4.1",
+    "prop:3.13",
+    "prop:3.7",
+    "lem:3.6",
+    "lem:3.2",
+    "def:3.1"
+  ],
+  "proof_architecture": {
+    "main_results": {
+      "description": "The main non-uniqueness theorem and its context within critical well-posedness theory.",
+      "nodes": [
+        "thm:1.1",
+        "thm:1.2",
+        "rem:1.3",
+        "rem:1.4",
+        "rem:1.5",
+        "rem:1.6",
+        "rem:1.7"
+      ]
+    },
+    "mikado_building_blocks": {
+      "description": "Mikado flow potentials and their geometric/analytic properties: disjoint pipe supports, pressureless Euler, exponential volume decay.",
+      "nodes": [
+        "def:3.1",
+        "lem:3.2",
+        "lem:3.3"
+      ]
+    },
+    "inductive_construction": {
+      "description": "The Nash-style inductive scheme building $\\psi_k^0$ from Mikado potentials, with doubly-exponential convergence of the symmetric gradient.",
+      "nodes": [
+        "def:3.4",
+        "def:3.5",
+        "lem:3.6",
+        "prop:3.7",
+        "prop:3.8",
+        "def:3.9"
+      ]
+    },
+    "principal_parts": {
+      "description": "Definition and estimates of the two distinct principal parts $v^{(1)}, v^{(2)}$ that share initial data but evolve differently via even/odd mode splitting.",
+      "nodes": [
+        "def:3.10",
+        "rem:3.11",
+        "rem:3.12",
+        "prop:3.13"
+      ]
+    },
+    "perturbation_argument": {
+      "description": "Construction of perturbations $w^{(i)}$ via residual control, semigroup bounds on the linearization, and a Banach fixed point argument.",
+      "nodes": [
+        "prop:4.1",
+        "prop:4.2",
+        "prop:4.3"
+      ]
+    },
+    "convex_integration_tools": {
+      "description": "Nash lemma for symmetric matrix decomposition, inverse-divergence operator, and oscillatory/product estimates from the convex integration toolkit.",
+      "nodes": [
+        "lem:A.1",
+        "def:A.2",
+        "lem:A.3",
+        "lem:A.4",
+        "lem:A.5"
+      ]
+    },
+    "linear_pde_tools": {
+      "description": "Bernstein inequalities, heat propagator bounds, perturbed Stokes existence, Gronwall inequalities, and general multiplier estimates.",
+      "nodes": [
+        "lem:2.1",
+        "lem:2.2",
+        "prop:B.1",
+        "lem:B.2",
+        "lem:B.3",
+        "lem:C.1"
+      ]
+    }
+  },
+  "bibliography": {
+    "tao2016finite": {
+      "title": "Finite time blowup for an averaged three-dimensional Navier-Stokes equation",
+      "authors": [
+        "Terence Tao"
+      ],
+      "arxiv_id": "1402.0290v3",
+      "in_registry": true,
+      "relevance": "Core predecessor: mechanism for non-uniqueness via dyadic models originates from Tao's averaged NSE construction."
+    },
+    "palasek2024non": {
+      "title": "Non-uniqueness in the Leray-Hopf class for a dyadic Navier-Stokes model",
+      "authors": [
+        "Stan Palasek"
+      ],
+      "arxiv_id": "2407.06179",
+      "in_registry": false,
+      "relevance": "Direct predecessor by second author: proposes the non-uniqueness mechanism that this paper implements for the actual Navier-Stokes equations."
+    },
+    "koch2001well": {
+      "title": "Well-posedness for the Navier-Stokes equations",
+      "authors": [
+        "Herbert Koch",
+        "Daniel Tataru"
+      ],
+      "arxiv_id": null,
+      "in_registry": false,
+      "relevance": "The celebrated small data global well-posedness result in BMO^{-1} whose sharpness is proved by Theorem 1.2."
+    },
+    "albritton2022non": {
+      "title": "Non-uniqueness of Leray solutions of the forced Navier-Stokes equations",
+      "authors": [
+        "Dallas Albritton",
+        "Elia Brue",
+        "Maria Colombo"
+      ],
+      "arxiv_id": "2112.09717",
+      "in_registry": false,
+      "relevance": "Non-uniqueness via convex integration with external forcing; this paper achieves non-uniqueness without forcing."
+    },
+    "buckmaster2019nonuniqueness": {
+      "title": "Nonuniqueness of weak solutions to the Navier-Stokes equation",
+      "authors": [
+        "Tristan Buckmaster",
+        "Vlad Vicol"
+      ],
+      "arxiv_id": null,
+      "in_registry": false,
+      "relevance": "Non-uniqueness of weak (non-Leray-Hopf) solutions via convex integration; contrasts with the smooth solutions here."
+    },
+    "jia2014local": {
+      "title": "Local-in-space estimates near initial time for weak solutions of the Navier-Stokes equations and forward self-similar solutions",
+      "authors": [
+        "Hao Jia",
+        "Vladimir Sverak"
+      ],
+      "arxiv_id": null,
+      "in_registry": false,
+      "relevance": "The Jia-Sverak program for non-uniqueness of self-similar solutions, a different approach to the same problem."
+    },
+    "jia2015incompressible": {
+      "title": "Are the incompressible 3d Navier-Stokes equations locally ill-posed in the natural energy space?",
+      "authors": [
+        "Hao Jia",
+        "Vladimir Sverak"
+      ],
+      "arxiv_id": null,
+      "in_registry": false,
+      "relevance": "Conditional non-uniqueness result for NSE via spectral analysis of self-similar profiles."
+    },
+    "isett2018proof": {
+      "title": "A proof of Onsager's conjecture",
+      "authors": [
+        "Philip Isett"
+      ],
+      "arxiv_id": null,
+      "in_registry": false,
+      "relevance": "Resolution of Onsager's conjecture; Mikado flows used here originate from this convex integration program."
+    },
+    "bourgain2008ill": {
+      "title": "Ill-posedness of the Navier-Stokes equations in a critical space in 3D",
+      "authors": [
+        "Jean Bourgain",
+        "Natasa Pavlovic"
+      ],
+      "arxiv_id": null,
+      "in_registry": false,
+      "relevance": "Norm inflation in B^{-1}_{infty,infty}, a weaker critical space; this paper works in the stronger BMO^{-1}."
+    },
+    "hou2024regularity": {
+      "title": "On regularity of solutions to the Navier-Stokes equation with initial data in BMO^{-1}",
+      "authors": [
+        "H. Hou"
+      ],
+      "arxiv_id": "2410.16468",
+      "in_registry": false,
+      "relevance": "Recent regularity results for BMO^{-1} solutions, complementary to the non-uniqueness shown here."
+    },
+    "cheskidov2022sharp": {
+      "title": "Sharp nonuniqueness for the Navier-Stokes equations",
+      "authors": [
+        "Alexey Cheskidov",
+        "Xiaoyutao Luo"
+      ],
+      "arxiv_id": null,
+      "in_registry": false,
+      "relevance": "Sharp non-uniqueness results via convex integration in subcritical spaces."
+    },
+    "leray1934mouvement": {
+      "title": "Sur le mouvement d'un liquide visqueux emplissant l'espace",
+      "authors": [
+        "Jean Leray"
+      ],
+      "arxiv_id": null,
+      "in_registry": false,
+      "relevance": "The foundational 1934 paper establishing existence of weak solutions to the Navier-Stokes equations."
+    },
+    "nash1954c": {
+      "title": "C^1 isometric imbeddings",
+      "authors": [
+        "John Nash"
+      ],
+      "arxiv_id": null,
+      "in_registry": false,
+      "relevance": "The original Nash embedding theorem whose decomposition technique (Lemma A.1) is a key tool in this construction."
+    }
+  }
+}

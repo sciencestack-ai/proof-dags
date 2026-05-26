@@ -1,0 +1,337 @@
+{
+  "paper": "2306.04146v2",
+  "title": "Blowup analysis for a quasi-exact 1D model of 3D Euler and Navier-Stokes",
+  "authors": [
+    "Thomas Y. Hou",
+    "Yixuan Wang"
+  ],
+  "generated": "2026-03-09",
+  "status": "complete",
+  "nodes": {
+    "thm:1.2": {
+      "type": "Theorem",
+      "number": "1.2",
+      "section": "1",
+      "role": "main_result",
+      "summary": "For the inviscid weak advection model with a $\\in (1-\\delta, 1)$, there exists $C^\\infty$ initial data producing a self-similar finite-time singularity that is neither expanding nor focusing; blowup has the form $\\omega(x,t) = (1 + c_{u,\\infty}t)^{-1} \\omega_\\infty$ with blowup time T $= -1/c_{u,\\infty}$."
+    },
+    "rem:1.1": {
+      "type": "Remark",
+      "number": "1.1",
+      "section": "1",
+      "role": "context",
+      "summary": "Relates the weak advection model to the generalized Constantin-Lax-Majda (gCLM) model; De Gregorio (a=1) is the special case; both share competition between advection and vortex stretching."
+    },
+    "rem:1.3": {
+      "type": "Remark",
+      "number": "1.3",
+      "section": "1",
+      "role": "context",
+      "summary": "Numerical evidence for neither-expanding-nor-focusing self-similar blowup at a $\\in [0.6, 0.9]$; analogous to gCLM model behavior; $c_{u,\\infty} = 2(a-1) +$ o(a-1) implies very large blowup time for a near 1."
+    },
+    "thm:1.4": {
+      "type": "Theorem",
+      "number": "1.4",
+      "section": "1",
+      "role": "main_result",
+      "summary": "For the original inviscid Hou-Li model with $\\alpha \\in (1-\\delta$₀, 1), there exists $C^\\alpha$ initial data producing a self-similar blowup of the same neither-expanding-nor-focusing type as Theorem 1.2."
+    },
+    "rem:1.5": {
+      "type": "Remark",
+      "number": "1.5",
+      "section": "1",
+      "role": "context",
+      "summary": "Sharpness of $C^\\alpha$ blowup: blowup time T $= O(-1/(2(\\alpha-1)))$; no blowup for intrinsically low-regularity $C^\\varepsilon$ data $(\\varepsilon$ near 0), which is conjectured to develop focusing singularity instead."
+    },
+    "rem:1.6": {
+      "type": "Remark",
+      "number": "1.6",
+      "section": "1",
+      "role": "context",
+      "summary": "Well-posedness for $C^1$ data (Hou-Li 2008) is sharp: any weakening of advection or slight reduction in regularity induces self-similar blowup."
+    },
+    "thm:1.7": {
+      "type": "Theorem",
+      "number": "1.7",
+      "section": "1",
+      "role": "main_result",
+      "summary": "For the viscous weak advection model with a $\\in (1-\\delta$₁, 1), there exists $C^\\infty$ initial data that develops a finite-time singularity."
+    },
+    "rem:2.1": {
+      "type": "Remark",
+      "number": "2.1",
+      "section": "2",
+      "role": "context",
+      "summary": "No spatial rescaling is introduced since the blowup is neither focusing nor expanding; the scaling factors for u, $\\omega, \\psi$ are identical."
+    },
+    "lem:2.2": {
+      "type": "Lemma",
+      "number": "2.2",
+      "section": "2",
+      "role": "technical",
+      "summary": "Integration by parts identity: (sin x $\\cdot f_x$, f $\\rho) =$ ½$(f^2, \\rho)$; directly verified, used to compute energy contributions from the advection term."
+    },
+    "lem:2.3": {
+      "type": "Lemma",
+      "number": "2.3",
+      "section": "2",
+      "role": "foundational",
+      "summary": "Complete orthonormal basis for $L^2(\\rho)$: odd functions have basis $o^k =$ sin(kx) - sin((k-1)x); even functions have basis $e^k =$ cos(kx) - cos((k+1)x); used for exact Fourier mode computations."
+    },
+    "prop:2.4": {
+      "type": "Proposition",
+      "number": "2.4",
+      "section": "2",
+      "role": "key_mechanism",
+      "summary": "Energy estimate for the leading linearized operators: dE₁ = ((L₁)_x, $u_x \\rho) + (L$₂, $\\omega \\rho) \\le -0.16[(u_x, u_x \\rho) + (\\omega, \\omega \\rho)]$; establishes linear damping at rate 0.16."
+    },
+    "lem:3.1": {
+      "type": "Lemma",
+      "number": "3.1",
+      "section": "3",
+      "role": "main_technical",
+      "summary": "Nonlinear norm estimates: weighted $L^2$ control ‖$\\psi$‖$_\\rho$, ‖$\\psi_x - \\psi_x(0)$‖$_\\rho$, ‖u‖$_\\rho$ ≲ E; and $L^\\infty$ control ‖$\\psi_x$‖$_\\infty$, ‖$\\psi/sin$ x‖$_\\infty$, ‖u‖$_\\infty$ ≲ E; enables closure of the nonlinear energy estimate."
+    },
+    "rem:3.2": {
+      "type": "Remark",
+      "number": "3.2",
+      "section": "3",
+      "role": "context",
+      "summary": "Weighted norm design: leading local terms of linearized operators are $-2D_x u_x$ and $-2D_x \\omega$; in the new norm, combined terms give damping $(-2D_x D_x u_x, D_x u_x \\rho) + (-2D_x D_x \\omega, D_x \\omega \\rho) = -K^2$."
+    },
+    "lem:4.1": {
+      "type": "Lemma",
+      "number": "4.1",
+      "section": "4",
+      "role": "technical",
+      "summary": "Explicit integral formula for the stream function: for odd periodic $\\omega$ with $-\\psi_xx = \\omega$, one has $\\psi_x(0) = -1/(2\\pi) \\int$ y $\\omega(y)$ dy and $\\psi = \\int$₀ˣ $(y-x) \\omega(y)$ dy + x $\\psi_x(0)$."
+    },
+    "lem:4.2": {
+      "type": "Lemma",
+      "number": "4.2",
+      "section": "4",
+      "role": "main_technical",
+      "summary": "For Hölder profiles with $\\kappa = 7/8 < 9/10 < \\alpha < 1$: pointwise residue bounds $|\\partial$ᵢ_x $\\omega_res| + |\\partial$ᵢ_x $u_res|$ ≲ $|\\alpha-1| |sinx|^{\\kappa-i}$ and refined cancellation estimates for the leading-order Hölder terms."
+    },
+    "rem:5.1": {
+      "type": "Remark",
+      "number": "5.1",
+      "section": "5",
+      "role": "context",
+      "summary": "Viscous rescaling introduces extra degree of freedom $C_u(0)$, chosen to ensure the viscous term has smaller scaling than the main blowup terms."
+    },
+    "rem:5.2": {
+      "type": "Remark",
+      "number": "5.2",
+      "section": "5",
+      "role": "context",
+      "summary": "Viscous energy norm combines a singularly-weighted energy norm and high-order Sobolev norms; criterion 1 (damping) verified in linear estimates; damping in (k-1)-th order norms dominates positive terms in k-th order norms."
+    },
+    "lem:6.1": {
+      "type": "Lemma",
+      "number": "6.1",
+      "section": "6",
+      "role": "key_mechanism",
+      "summary": "Positivity of the Fourier quadratic form $F(a,c) \\ge 0$ for all finite-energy sequences; the explicit sum formula involves coupling between odd and even Fourier modes and verifies the 0.16 damping coefficient in prop:2.4."
+    },
+    "rem:6.2": {
+      "type": "Remark",
+      "number": "6.2",
+      "section": "6",
+      "role": "technical",
+      "summary": "Three-step interval arithmetic verification that the smallest eigenvalue of the truncated $200\\times200$ Fourier matrix F^(200) exceeds 0.01: approximate SVD via Matlab, residual bound via 1-norm $\\le 200\\times10^{-10}$, positive definiteness concluded."
+    }
+  },
+  "edges": [
+    {
+      "from": "prop:2.4",
+      "to": "lem:2.2",
+      "type": "depends_on",
+      "note": "Integration by parts identity is used to compute (sin x $f_x$, f $\\rho)$ terms in the energy estimate for the linearized advection operator"
+    },
+    {
+      "from": "prop:2.4",
+      "to": "lem:2.3",
+      "type": "depends_on",
+      "note": "Fourier basis used for exact low-frequency mode computation in the energy estimate; exact orthonormal structure enables the 0.16 damping coefficient"
+    },
+    {
+      "from": "prop:2.4",
+      "to": "lem:6.1",
+      "type": "depends_on",
+      "note": "Positivity of $F(a,c) \\ge 0$ is the rigorous verification that the Fourier-mode energy estimate yields genuine damping; without this lem:6.1, prop:2.4 would not hold"
+    },
+    {
+      "from": "lem:6.1",
+      "to": "lem:2.3",
+      "type": "depends_on",
+      "note": "F(a,c) is expressed in terms of the odd/even Fourier basis $o^k$ and $e^k$ from lem:2.3"
+    },
+    {
+      "from": "lem:3.1",
+      "to": "lem:2.2",
+      "type": "depends_on",
+      "note": "Weighted $L^2$ estimates for $\\psi$ use the integration by parts identity to control $\\int$ sin x $\\cdot \\psi_x \\cdot \\psi \\rho$ terms"
+    },
+    {
+      "from": "thm:1.2",
+      "to": "prop:2.4",
+      "type": "depends_on",
+      "note": "Prop:2.4 is the central linear damping estimate; thm:1.2 closes the nonlinear argument by showing the nonlinear terms are controlled by the linear damping"
+    },
+    {
+      "from": "thm:1.2",
+      "to": "lem:3.1",
+      "type": "depends_on",
+      "note": "Norm estimates from lem:3.1 bound the nonlinear terms in the energy estimate, enabling closure of the argument"
+    },
+    {
+      "from": "thm:1.4",
+      "to": "thm:1.2",
+      "type": "extends",
+      "note": "Same self-similar blowup mechanism extended from smooth $(C^\\infty)$ to Hölder $(C^\\alpha)$ initial data for the original Hou-Li model; same neither-expanding-nor-focusing structure"
+    },
+    {
+      "from": "thm:1.4",
+      "to": "lem:4.1",
+      "type": "depends_on",
+      "note": "Explicit integral formula for $\\psi$ is needed to analyze the Hölder profile at the scale of |sin $x|^{\\kappa}$"
+    },
+    {
+      "from": "thm:1.4",
+      "to": "lem:4.2",
+      "type": "depends_on",
+      "note": "Residue estimates and refined cancellation bounds are the key technical input for controlling the Hölder profile perturbation"
+    },
+    {
+      "from": "thm:1.7",
+      "to": "prop:2.4",
+      "type": "depends_on",
+      "note": "Energy estimate structure is reused for the viscous case; damping mechanism is the same but combined with Sobolev norms to handle viscous instability"
+    },
+    {
+      "from": "thm:1.7",
+      "to": "thm:1.2",
+      "type": "depends_on",
+      "note": "Self-similar blowup framework from the inviscid case carries over; viscous terms are shown to be subleading via the combined norm in rem:5.2"
+    }
+  ],
+  "critical_path": [
+    "thm:1.2",
+    "prop:2.4",
+    "lem:6.1",
+    "lem:2.3"
+  ],
+  "proof_architecture": {
+    "self_similar_ansatz": {
+      "description": "Setup of the blowup structure: self-similar profile that is neither expanding nor focusing, uniform scaling of $u/\\omega/\\psi$",
+      "nodes": [
+        "rem:2.1",
+        "thm:1.2",
+        "thm:1.4",
+        "thm:1.7"
+      ]
+    },
+    "fourier_basis_and_identities": {
+      "description": "Analytic tools for the linearized energy estimate: integration by parts identity and orthonormal Fourier basis for odd/even periodic functions",
+      "nodes": [
+        "lem:2.2",
+        "lem:2.3"
+      ]
+    },
+    "linear_damping_estimate": {
+      "description": "Core energy estimate for the linearized system: exact Fourier computation yields 0.16 damping coefficient for the leading operators",
+      "nodes": [
+        "prop:2.4",
+        "lem:6.1",
+        "rem:6.2"
+      ]
+    },
+    "nonlinear_norm_closure": {
+      "description": "Weighted $L^2$ and $L^\\infty$ estimates enabling nonlinear closure; weighted norm designed to propagate damping through Dₓ",
+      "nodes": [
+        "lem:3.1",
+        "rem:3.2"
+      ]
+    },
+    "holder_extension": {
+      "description": "Additional tools for extending smooth blowup to Hölder $C^\\alpha$ initial data: explicit stream function formula and residue estimates",
+      "nodes": [
+        "lem:4.1",
+        "lem:4.2",
+        "rem:1.5",
+        "rem:1.6"
+      ]
+    },
+    "viscous_extension": {
+      "description": "Norm design for the viscous case: extra degree of freedom $C_u(0)$ and combined singularly-weighted plus Sobolev norm",
+      "nodes": [
+        "rem:5.1",
+        "rem:5.2",
+        "thm:1.7"
+      ]
+    }
+  },
+  "bibliography": {
+    "hou2008dynamic": {
+      "title": "Dynamic stability of the three-dimensional axisymmetric Navier-Stokes equations with swirl",
+      "arxiv_id": null,
+      "in_registry": false
+    },
+    "chen2021finite": {
+      "title": "On the finite time blowup of the De Gregorio model for the 3D Euler equations",
+      "arxiv_id": "1905.06387",
+      "in_registry": false
+    },
+    "chen2021regularity": {
+      "title": "On the regularity of the De Gregorio model for the 3D Euler equations",
+      "arxiv_id": "2107.04777",
+      "in_registry": false
+    },
+    "chen2021slightly": {
+      "title": "On the Slightly Perturbed De Gregorio Model on S^1",
+      "arxiv_id": null,
+      "in_registry": false
+    },
+    "chen2022stable": {
+      "title": "Stable nearly self-similar blowup of the 2D Boussinesq and 3D Euler equations with smooth data",
+      "arxiv_id": "2210.07191",
+      "in_registry": false
+    },
+    "elgindi2021finite": {
+      "title": "Finite-time singularity formation for C^{1,α} solutions to the incompressible Euler equations on R^3",
+      "arxiv_id": "1904.00439",
+      "in_registry": false
+    },
+    "okamoto2008generalization": {
+      "title": "On a generalization of the Constantin-Lax-Majda equation",
+      "arxiv_id": null,
+      "in_registry": false
+    },
+    "lushnikov2021collapse": {
+      "title": "Collapse Versus Blow-Up and Global Existence in the Generalized Constantin-Lax-Majda Equation",
+      "arxiv_id": null,
+      "in_registry": false
+    },
+    "de1990one": {
+      "title": "On a one-dimensional model for the three-dimensional vorticity equation",
+      "arxiv_id": null,
+      "in_registry": false
+    },
+    "de1996partial": {
+      "title": "A partial differential equation arising in a 1D model for the 3D vorticity equation",
+      "arxiv_id": null,
+      "in_registry": false
+    },
+    "hou2022potential": {
+      "title": "Potential singularity of the 3D Euler equations in the interior domain",
+      "arxiv_id": null,
+      "in_registry": false
+    },
+    "elgindi2019finite": {
+      "title": "Finite-time singularity formation for strong solutions to the axi-symmetric 3D Euler equations",
+      "arxiv_id": null,
+      "in_registry": false
+    }
+  }
+}

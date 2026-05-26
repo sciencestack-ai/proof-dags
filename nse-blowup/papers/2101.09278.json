@@ -1,0 +1,564 @@
+{
+  "paper": "2101.09278",
+  "title": "Non-conservative H^{1/2-} weak solutions of the incompressible 3D Euler equations",
+  "authors": [
+    "Tristan Buckmaster",
+    "Nader Masmoudi",
+    "Matthew Novack",
+    "Vlad Vicol"
+  ],
+  "generated": "2026-03-10",
+  "status": "complete",
+  "nodes": {
+    "thm:1.1": {
+      "type": "Theorem",
+      "number": "1.1",
+      "section": "1",
+      "role": "main_result",
+      "summary": "MAIN RESULT: For any $\\beta \\in (0,1/2)$, any $L^2$ divergence-free $v_start, v_end$ with same mean, any T>0 and $\\varepsilon>0$, there exists a weak solution v $\\in$ C([0,T]; $H^\\beta(T^3))$ of 3D Euler with $||v(0)-v_start||_{L^2} \\le \\varepsilon$ and $||v(T)-v_end||_{L^2} \\le \\varepsilon$. Establishes flexibility (hence non-uniqueness and non-conservation) in $C^0_t H^{1/2-}_x$."
+    },
+    "rem:1.2": {
+      "type": "Remark",
+      "number": "1.2",
+      "section": "1",
+      "role": "context",
+      "summary": "Corollaries of the proof: (1) nontrivial weak solutions with compact time support $\\Rightarrow$ non-uniqueness in $C^0_t H^{1/2-}_x$; (2) weak solutions attaining any prescribed smooth energy profile e(t), including dissipative solutions."
+    },
+    "prop:3.6": {
+      "type": "Proposition",
+      "number": "3.6",
+      "section": "3.3",
+      "role": "key_reduction",
+      "summary": "Main inductive proposition: given $(v_q$, R̊_q) satisfying the Euler-Reynolds system and all inductive estimates at level q, constructs $(v_{q+1}$, R̊_{q+1}) satisfying the same estimates at level q+1. Parameters $\\beta \\in [1/3, 1/2)$, b $\\in (1, 1/2\\beta)$, and a sufficiently large base a_*. The entire proof of thm:1.1 reduces to iterating this proposition."
+    },
+    "rem:3.7": {
+      "type": "Remark",
+      "number": "3.7",
+      "section": "3.4",
+      "role": "auxiliary",
+      "summary": "Compact time support variant: modify $v_0$ to be a shear flow times a temporal cutoff. The inductive time-support assumption (3.2.1) propagates, yielding $supp_t$ v $\\subset [-T,T]$ for a large enough."
+    },
+    "rem:3.8": {
+      "type": "Remark",
+      "number": "3.8",
+      "section": "3.4",
+      "role": "auxiliary",
+      "summary": "Energy profile variant: the scheme can be modified to attain any smooth energy profile e(t). Requires adjusting the energy iterate through the higher-order stress steps n $\\to$ n+1 and p $\\to$ p+1. Cutoff difficulty already addressed in BV19."
+    },
+    "prop:4.1": {
+      "type": "Proposition",
+      "number": "4.1",
+      "section": "4.1",
+      "role": "key_mechanism",
+      "summary": "Geometric decomposition: for R near Id in symmetric $3\\times3$ matrices, R $= \\Sigma_{\\xi\\in\\Xi} \\gamma_\\xi(R)^2 \\xi$⊗$\\xi$ with $\\Xi \\subset S^2 \\cap Q^3$ and smooth positive amplitude functions $\\gamma_\\xi$. Each $\\xi$ comes with rational orthonormal basis ${\\xi, \\xi^(2), \\xi^(3)}$ and minimal integer n_*. The algebraic foundation for canceling the Reynolds stress."
+    },
+    "prop:4.3": {
+      "type": "Proposition",
+      "number": "4.3",
+      "section": "4.1",
+      "role": "technical",
+      "summary": "Rotating, shifting, periodizing: constructs $T^3-periodic$ pipe-shaped functions $\\kappa^k_{\\lambda,r,\\xi}$ from a compactly-supported profile $\\kappa$. Pipes are disjoint for distinct shift indices k, with $T^3/(\\lambdar)-periodicity$ and $T^3_\\xi/(\\lambdarn_*)-periodicity$."
+    },
+    "prop:4.4": {
+      "type": "Proposition",
+      "number": "4.4",
+      "section": "4.1",
+      "role": "key_mechanism",
+      "summary": "Intermittent pipe flow construction: builds divergence-free, pressureless Euler solutions $W^k_{\\xi,\\lambda,r}$ concentrated on pipes of width $~1/\\lambda$ spaced at $~1/(\\lambdar)$. Key identity: ⟨$W^k$ ⊗ $W^k$⟩ $= \\xi$⊗$\\xi$. Satisfies $L^p$ estimates $||\\nabla^n W||_{L^p}$ ≲ $\\lambda^n r^{2/p-1}$. These replace the Beltrami waves of BV19 and are the core building blocks."
+    },
+    "lem:4.7": {
+      "type": "Lemma",
+      "number": "4.7",
+      "section": "4.2",
+      "role": "technical",
+      "summary": "Deformed pipe control: when straight pipes are transported by a Lipschitz flow v, their axes bend by at most $\\Gamma_{q+1}^{-1}$, diameters grow by factor $(1+\\Gamma_{q+1}^{-1})$, and spacing is preserved up to $\\Gamma_{q+1}^{-1}$. Ensures pipe geometry survives the flow deformation."
+    },
+    "prop:4.8": {
+      "type": "Proposition",
+      "number": "4.8",
+      "section": "4.3",
+      "role": "key_mechanism",
+      "summary": "Placement lemma: given existing bent pipes in a domain $\\Omega$ of diameter $\\le 16(\\lambda_{q+1}r_1)^{-1}$, finds a new set of straight pipes $W^{k_0}_{\\lambda_{q+1},r_2,\\xi}$ with disjoint support from all existing pipes, provided $C_* C_A r_2^4 \\le r_1^3$. This geometric separation is why the higher-order stress scheme works — each new generation of pipes avoids all previous generations."
+    },
+    "lem:5.1": {
+      "type": "Lemma",
+      "number": "5.1",
+      "section": "5",
+      "role": "main_technical",
+      "summary": "Mollification of the Euler-Reynolds system: smooths $(v_q$, R̊_q) at spatial scale $\\lambda$̃$_q^{-1}$ and temporal scale $\\tau$̃_{q-1}. Produces mollified pair $(v_{ℓ_q}$, R̊_{ℓ_q}) satisfying E-R system plus commutator stress R̊$_q^{comm}$. Establishes that $u_q = v_{ℓ_q} - v_{$ℓ_{q-1}} satisfies the primary inductive assumption at level q."
+    },
+    "prop:7.1": {
+      "type": "Proposition",
+      "number": "7.1",
+      "section": "7.1",
+      "role": "key_reduction",
+      "summary": "Inductive step on q: given mollified $(v_{ℓ_q}$, R̊_{ℓ_q}) from lem:5.1 and all inductive assumptions, constructs $v_{q+1} = v_{ℓ_q} + w_{q+1}$ and R̊_{q+1} satisfying: (1) Euler-Reynolds system, $(2) w_{q+1}$ bounds with $\\Gamma_{q+1}^{-1}$ gain, (3) R̊_{q+1} bounds with $\\Gamma_{q+1}^{-C_R}$ gain, (4) time support propagation. Reduces to the three-case induction on ñ (props 7.3–7.5)."
+    },
+    "prop:7.3": {
+      "type": "Proposition",
+      "number": "7.3",
+      "section": "7.3",
+      "role": "main_technical",
+      "summary": "Base case ñ=0 of the inner induction: adds $w_{q+1,0}$ to correct the zeroth-order stress R̊_{ℓ_q}. Produces higher-order stresses H̊_{q,n,p}^0 for $1 \\le$ n $\\le n_max, 1 \\le$ p $\\le p_max$, plus remainder R̊_{q+1}^0. Error terms distributed across frequency scales $\\lambda_{q,n,p}$."
+    },
+    "prop:7.4": {
+      "type": "Proposition",
+      "number": "7.4",
+      "section": "7.3",
+      "role": "main_technical",
+      "summary": "Inductive step ñ$-1 \\to$ ñ for $1 \\le$ ñ $\\le n_max-1$: adds $w_{q+1,ñ}$ to correct the ñ-th higher-order stress $\\Sigma_p$ H̊_{q,ñ,p}^{n'}, producing new higher-order stresses at levels n > ñ. Same pipe flow construction but at intermediate frequency scale $\\lambda_{q$,ñ,p}."
+    },
+    "prop:7.5": {
+      "type": "Proposition",
+      "number": "7.5",
+      "section": "7.3",
+      "role": "main_technical",
+      "summary": "Final case ñ $= n_max$: adds $w_{q+1,n_max}$ to correct the last higher-order stress, producing only the next-level Reynolds stress R̊_{q+1}. This closes the inner induction and delivers the conclusions of prop:7.1."
+    },
+    "lem:8.1": {
+      "type": "Lemma",
+      "number": "8.1",
+      "section": "8.2",
+      "role": "technical",
+      "summary": "Master amplitude estimate: bounds $||D^N D_{t,q}^M a_{\\xi,i,j,k,q,ñ,p̃,l⃗}||_{L^r}$ in terms of $\\delta_{q+1$,ñ,p̃}^{1/2}, $\\Gamma_{q+1}^{j+2}$, and the frequency/time scales. The amplitudes a encode the stress cutoff geometry and drive the pipe flow perturbation."
+    },
+    "lem:8.4": {
+      "type": "Lemma",
+      "number": "8.4",
+      "section": "8.4",
+      "role": "technical",
+      "summary": "Transport error estimate: $D_{t,q} w_{q+1,ñ} =$ div(H $+ R*)(\\partial_t$ w $+ v_{ℓ_q}\\cdot\\nablaw) + \\nablap$ with $||\\cdot||_{L^1}$ ≲ $\\delta_{q+2} \\Gamma_{q+1}^{-C_R-1}$. Uses the inverse divergence (prop:A.18) to absorb the transport error into a controlled Reynolds stress."
+    },
+    "lem:8.5": {
+      "type": "Lemma",
+      "number": "8.5",
+      "section": "8.5",
+      "role": "technical",
+      "summary": "Nash error estimate: $w_{q+1,ñ}\\cdot\\nablav_{$ℓ_q} = div(H $+ R*)(w\\cdot\\nablav) + \\nablap$ with same bound. The Nash error is the 'stretching' term from the nonlinearity; controlled via inverse divergence."
+    },
+    "lem:8.6": {
+      "type": "Lemma",
+      "number": "8.6",
+      "section": "8.6",
+      "role": "main_technical",
+      "summary": "Type 1 oscillation error estimate: three cases — (1) high-frequency residual at level $(n_max, p_max+1)$ goes into R̊_{q+1} with $\\delta_{q+2} \\Gamma_{q+1}^{-C_R-1}$ bound; (2) same but local portion; (3) medium-frequency terms go into H̊_{q,n,p} at their natural scale $\\delta_{q+1,n,p}$. The oscillation error is the dominant error in convex integration — controlled here via the inverse divergence and Lp decorrelation."
+    },
+    "lem:8.8": {
+      "type": "Lemma",
+      "number": "8.8",
+      "section": "8.7",
+      "role": "technical",
+      "summary": "Overlap counting: the number of cutoff functions $\\eta$ whose supports intersect a given $\\eta$ is bounded by $C_\\eta \\Gamma_{q+1}$, with $C_\\eta$ depending only on $n_max, p_max, j_max$. Ensures that pipe flow interactions are sparse enough for the $L^2$ estimates to close."
+    },
+    "lem:8.12": {
+      "type": "Lemma",
+      "number": "8.12",
+      "section": "8.7",
+      "role": "key_structural",
+      "summary": "Type 2 oscillation errors vanish identically. This is the payoff of the disjoint pipe placement (prop:4.8): when two pipe flows from different generations have disjoint support, their cross-interaction in the stress tensor is exactly zero. This is the key structural innovation over BV19."
+    },
+    "lem:8.13": {
+      "type": "Lemma",
+      "number": "8.13",
+      "section": "8.8",
+      "role": "technical",
+      "summary": "Divergence corrector error: the error from making $w_{q+1,ñ}$ exactly divergence-free satisfies $||\\cdot||_{L^1}$ ≲ $\\Gamma_{q+1}^{-C_R-1} \\delta_{q+2}$. Small compared to the inductive stress bound."
+    },
+    "lem:A.1": {
+      "type": "Lemma",
+      "number": "A.1",
+      "section": "A.1",
+      "role": "auxiliary",
+      "summary": "Standard transport estimates: $C^0, C^1, C^N$ bounds for solutions of $\\partial_t$ f $+ u\\cdot\\nablaf =$ g, plus $C^N$ bounds for the flow map $\\Phi$ and its derivatives. Classical tool used throughout."
+    },
+    "lem:A.2": {
+      "type": "Lemma",
+      "number": "A.2",
+      "section": "A.3",
+      "role": "key_technical",
+      "summary": "$L^p$ decorrelation: for a slow function f (derivatives bounded by $\\lambda^N)$ and a fast $(T/\\mu)^3-periodic$ function g with $\\mu/\\lambda$ large, $||fg||_{L^p}$ ≲ $C_f ||g||_{L^p}$. Replaces the Fefferman-Stein $L^2$ decorrelation of BV19; this $L^1$ version is essential for the $L^1-based$ stress estimates in the pipe flow scheme."
+    },
+    "lem:A.3": {
+      "type": "Lemma",
+      "number": "A.3",
+      "section": "A.4",
+      "role": "technical",
+      "summary": "Sobolev inequality with cutoffs: upgrades $L^p$ estimates on $\\psi_i$ f to $L^\\infty$ estimates on $\\psi_i^2$ f at the cost of 3/p spatial derivatives. Used to convert the cutoff-localized $L^2$ bounds into the $L^\\infty$ estimates needed for the flow map control."
+    },
+    "prop:A.17": {
+      "type": "Proposition",
+      "number": "A.17",
+      "section": "A.8",
+      "role": "key_mechanism",
+      "summary": "Inverse divergence iteration step: for a vector field G and a periodic function $\\rho = \\Delta\\theta$ transported by a volume-preserving $\\Phi$, decomposes $G^i \\rho$∘$\\Phi = \\partial_n$ R̊$^{in} + \\partial_i$ P $+ E^i$ where R̊ is traceless symmetric (supported in supp G) and E involves $\\partial(A\\cdotA -$ Id) derivatives of $\\theta$∘$\\Phi$. The one-step building block for the intermittency-friendly inverse divergence."
+    },
+    "prop:A.18": {
+      "type": "Proposition",
+      "number": "A.18",
+      "section": "A.8",
+      "role": "key_mechanism",
+      "summary": "Full inverse divergence with error: iterates prop:A.17 d times to decompose G $\\rho$∘$\\Phi =$ div R̊ $+ \\nablaP +$ E where R̊ and P are supported in supp G, ||R̊$||_{L^1}$ ≲ $C_G C_* \\zeta^{-1} \\Lambda^\\alpha$, and the error E has the crucial gain $(\\lambda/\\zeta)^d \\to 0$. When d is large enough, E can be absorbed into a nonlocal stress $R_{nonlocal}$ satisfying $\\delta_{q+2}/\\lambda_{q+1}^5$ bounds. This is the paper's main technical innovation: an inverse divergence that respects intermittency (compact support) and produces errors small enough for the convex integration to close at regularity $H^{1/2-}$."
+    }
+  },
+  "edges": [
+    {
+      "from": "thm:1.1",
+      "to": "prop:3.6",
+      "type": "depends_on",
+      "note": "thm:1.1 is proved by iterating prop:3.6: starting from smooth $(v_0$, R̊_0) satisfying the base case, prop:3.6 propagates inductive estimates to all q $\\ge 0$, and the limit v = lim $v_q$ lies in $C^0_t H^{\\beta'}_x$ for any $\\beta' < \\beta$."
+    },
+    {
+      "from": "thm:1.1",
+      "to": "lem:5.1",
+      "type": "depends_on",
+      "note": "The mollification lem:5.1 is applied at each step q to produce $(v_{ℓ_q}$, R̊_{ℓ_q}) from $(v_q$, R̊_q), verifying the primary inductive assumption for $u_q$."
+    },
+    {
+      "from": "rem:1.2",
+      "to": "thm:1.1",
+      "type": "depends_on",
+      "note": "Both corollaries (compact time support, prescribed energy profile) are variants of the same convex integration scheme with modified initial data $v_0$."
+    },
+    {
+      "from": "rem:3.7",
+      "to": "thm:1.1",
+      "type": "depends_on",
+      "note": "Compact time support variant: same scheme but $v_0 = E\\varphi(t)(sin x_3, 0, 0)$ with temporal cutoff $\\varphi$."
+    },
+    {
+      "from": "rem:3.8",
+      "to": "thm:1.1",
+      "type": "depends_on",
+      "note": "Energy profile variant: requires additional energy tracking through the higher-order stress steps n $\\to$ n+1."
+    },
+    {
+      "from": "prop:3.6",
+      "to": "prop:7.1",
+      "type": "depends_on",
+      "note": "prop:3.6 reduces to prop:7.1: given the mollified pair from lem:5.1, prop:7.1 constructs $w_{q+1}$ and R̊_{q+1} satisfying all conclusions."
+    },
+    {
+      "from": "prop:7.1",
+      "to": "prop:7.3",
+      "type": "depends_on",
+      "note": "prop:7.1 reduces to the three-case inner induction: prop:7.3 handles the base case ñ=0 (correcting R̊_{ℓ_q})."
+    },
+    {
+      "from": "prop:7.1",
+      "to": "prop:7.4",
+      "type": "depends_on",
+      "note": "prop:7.4 handles intermediate steps $1 \\le$ ñ $\\le n_max-1 (correcting$ higher-order stresses)."
+    },
+    {
+      "from": "prop:7.1",
+      "to": "prop:7.5",
+      "type": "depends_on",
+      "note": "prop:7.5 handles the final case ñ $= n_max (closing$ the inner induction and delivering R̊_{q+1})."
+    },
+    {
+      "from": "prop:7.1",
+      "to": "lem:5.1",
+      "type": "depends_on",
+      "note": "prop:7.1 takes as input the mollified pair $(v_{ℓ_q}$, R̊_{ℓ_q}) and commutator R̊$_q^{comm}$ from lem:5.1."
+    },
+    {
+      "from": "prop:7.3",
+      "to": "prop:4.4",
+      "type": "depends_on",
+      "note": "The zeroth-order perturbation $w_{q+1,0}$ is built from pipe flows $W^k_{\\xi,\\lambda,r}$ constructed in prop:4.4, with amplitudes determined by the geometric decomposition."
+    },
+    {
+      "from": "prop:7.3",
+      "to": "prop:4.1",
+      "type": "depends_on",
+      "note": "The amplitude coefficients $a_{\\xi}$ use the geometric decomposition R $= \\Sigma \\gamma_\\xi^2 \\xi$⊗$\\xi$ from prop:4.1 to cancel R̊_{ℓ_q} at leading order."
+    },
+    {
+      "from": "prop:7.3",
+      "to": "lem:8.4",
+      "type": "depends_on",
+      "note": "Transport error from $D_{t,q} w_{q+1,0}$ is bounded by lem:8.4."
+    },
+    {
+      "from": "prop:7.3",
+      "to": "lem:8.5",
+      "type": "depends_on",
+      "note": "Nash error from $w_{q+1,0}\\cdot\\nablav_{$ℓ_q} is bounded by lem:8.5."
+    },
+    {
+      "from": "prop:7.3",
+      "to": "lem:8.6",
+      "type": "depends_on",
+      "note": "Type 1 oscillation errors from self-interaction of $w_{q+1,0}$ are sorted into higher-order stresses H̊_{q,n,p}^0 by lem:8.6."
+    },
+    {
+      "from": "prop:7.3",
+      "to": "lem:8.12",
+      "type": "depends_on",
+      "note": "Type 2 oscillation errors (cross-interactions with previous-generation pipes) vanish by lem:8.12 due to disjoint support."
+    },
+    {
+      "from": "prop:7.3",
+      "to": "lem:8.13",
+      "type": "depends_on",
+      "note": "Divergence corrector errors bounded by lem:8.13."
+    },
+    {
+      "from": "prop:7.4",
+      "to": "prop:4.8",
+      "type": "depends_on",
+      "note": "Each intermediate step places new pipes avoiding all existing bent pipes via prop:4.8's geometric placement lemma."
+    },
+    {
+      "from": "prop:7.4",
+      "to": "lem:4.7",
+      "type": "depends_on",
+      "note": "Control on deformed pipe geometry (axes, support, spacing) from lem:4.7 provides the hypotheses needed for prop:4.8."
+    },
+    {
+      "from": "prop:7.4",
+      "to": "lem:8.6",
+      "type": "depends_on",
+      "note": "Type 1 oscillation errors at intermediate levels bounded by lem:8.6."
+    },
+    {
+      "from": "prop:7.4",
+      "to": "lem:8.12",
+      "type": "depends_on",
+      "note": "Type 2 oscillation errors vanish by disjoint support (lem:8.12)."
+    },
+    {
+      "from": "prop:7.5",
+      "to": "prop:4.8",
+      "type": "depends_on",
+      "note": "Final perturbation $w_{q+1,n_max}$ places pipes at the finest scale, again avoiding all previous pipes via prop:4.8."
+    },
+    {
+      "from": "prop:7.5",
+      "to": "lem:8.6",
+      "type": "depends_on",
+      "note": "Remaining oscillation errors go into R̊_{q+1} via lem:8.6 case (2)."
+    },
+    {
+      "from": "prop:7.5",
+      "to": "lem:8.12",
+      "type": "depends_on",
+      "note": "Type 2 errors vanish (lem:8.12)."
+    },
+    {
+      "from": "lem:8.4",
+      "to": "prop:A.18",
+      "type": "depends_on",
+      "note": "Transport error is absorbed via the intermittency-friendly inverse divergence prop:A.18."
+    },
+    {
+      "from": "lem:8.5",
+      "to": "prop:A.18",
+      "type": "depends_on",
+      "note": "Nash error is absorbed via the inverse divergence prop:A.18."
+    },
+    {
+      "from": "lem:8.6",
+      "to": "prop:A.18",
+      "type": "depends_on",
+      "note": "Type 1 oscillation error decomposition uses prop:A.18 for both the local (H) and nonlocal (R*) portions."
+    },
+    {
+      "from": "lem:8.6",
+      "to": "lem:A.2",
+      "type": "depends_on",
+      "note": "$L^p$ decorrelation (lem:A.2) separates the slow amplitude from the fast pipe flow in the oscillation error estimates."
+    },
+    {
+      "from": "lem:8.6",
+      "to": "lem:8.1",
+      "type": "depends_on",
+      "note": "Amplitude estimates from lem:8.1 feed into the oscillation error bounds."
+    },
+    {
+      "from": "lem:8.12",
+      "to": "prop:4.8",
+      "type": "depends_on",
+      "note": "Type 2 errors vanish because prop:4.8 guarantees disjoint support of pipe flows from different generations."
+    },
+    {
+      "from": "lem:8.13",
+      "to": "prop:A.18",
+      "type": "depends_on",
+      "note": "Divergence corrector error uses the inverse divergence prop:A.18."
+    },
+    {
+      "from": "prop:A.18",
+      "to": "prop:A.17",
+      "type": "depends_on",
+      "note": "prop:A.18 iterates the single-step inverse divergence prop:A.17 d times to achieve the $(\\lambda/\\zeta)^d$ gain."
+    },
+    {
+      "from": "prop:A.18",
+      "to": "lem:A.2",
+      "type": "depends_on",
+      "note": "The decorrelation lemma A.2 is used in each iteration step to separate slow from fast components."
+    },
+    {
+      "from": "prop:4.4",
+      "to": "prop:4.3",
+      "type": "depends_on",
+      "note": "Pipe flows $W^k_{\\xi,\\lambda,r}$ are built from the rotated/shifted/periodized profiles of prop:4.3."
+    },
+    {
+      "from": "prop:4.3",
+      "to": "prop:4.1",
+      "type": "depends_on",
+      "note": "The rational direction vectors $\\xi \\in \\Xi$ and orthonormal frames from prop:4.1 determine the pipe orientations."
+    },
+    {
+      "from": "prop:4.8",
+      "to": "lem:4.7",
+      "type": "depends_on",
+      "note": "Deformed pipe geometry bounds from lem:4.7 establish the hypotheses (axis control, length bounds, neighborhood containment) for the placement argument."
+    },
+    {
+      "from": "prop:4.8",
+      "to": "prop:4.4",
+      "type": "depends_on",
+      "note": "The new pipe flows placed by prop:4.8 are the $W^{k_0}_{\\lambda_{q+1},r_2,\\xi}$ from prop:4.4."
+    },
+    {
+      "from": "lem:5.1",
+      "to": "lem:A.1",
+      "type": "depends_on",
+      "note": "Transport estimates from lem:A.1 control the commutator stress R̊$_q^{comm}$ arising from mollification."
+    },
+    {
+      "from": "lem:8.1",
+      "to": "lem:A.3",
+      "type": "depends_on",
+      "note": "Sobolev inequality with cutoffs (lem:A.3) upgrades $L^2$ amplitude bounds to $L^\\infty$ bounds needed for the flow map estimates."
+    }
+  ],
+  "critical_path": [
+    "thm:1.1",
+    "prop:3.6",
+    "prop:7.1",
+    "prop:7.3",
+    "lem:8.6",
+    "prop:A.18",
+    "prop:A.17"
+  ],
+  "proof_architecture": {
+    "geometric_foundations": {
+      "description": "Algebraic and geometric infrastructure: matrix decomposition into $\\xi$⊗$\\xi$ directions, pipe flow construction, periodization, and the placement lemma ensuring disjoint support across generations",
+      "nodes": [
+        "prop:4.1",
+        "prop:4.3",
+        "prop:4.4",
+        "lem:4.7",
+        "prop:4.8"
+      ]
+    },
+    "mollification": {
+      "description": "Smoothing the Euler-Reynolds system at each inductive step, producing the commutator stress and verifying the primary velocity increment estimate",
+      "nodes": [
+        "lem:5.1"
+      ]
+    },
+    "main_induction_outer": {
+      "description": "The outer induction on q: given level-q data, construct level-(q+1) via the inner three-case induction on ñ",
+      "nodes": [
+        "prop:3.6",
+        "prop:7.1"
+      ]
+    },
+    "main_induction_inner": {
+      "description": "The inner induction on ñ (higher-order stress levels): base case (ñ=0), intermediate steps $(1 \\le$ ñ $\\le n_max-1)$, and final case (ñ $= n_max)$. Each step adds a perturbation $w_{q+1,ñ}$ at an intermediate frequency scale.",
+      "nodes": [
+        "prop:7.3",
+        "prop:7.4",
+        "prop:7.5"
+      ]
+    },
+    "error_estimates": {
+      "description": "Bounding the four types of error: transport, Nash, Type 1 oscillation (self-interaction sorted into higher-order stresses), Type 2 oscillation (cross-interaction, vanishes by disjoint support), and divergence corrector",
+      "nodes": [
+        "lem:8.1",
+        "lem:8.4",
+        "lem:8.5",
+        "lem:8.6",
+        "lem:8.8",
+        "lem:8.12",
+        "lem:8.13"
+      ]
+    },
+    "inverse_divergence": {
+      "description": "The intermittency-friendly inverse divergence: iterates the single-step decomposition G $\\rho$∘$\\Phi =$ div R̊ $+ \\nablaP +$ E to achieve arbitrary polynomial gain, respecting the compact support of the cutoff. The core technical innovation enabling $H^{1/2-}$ regularity.",
+      "nodes": [
+        "prop:A.17",
+        "prop:A.18"
+      ]
+    },
+    "analytic_tools": {
+      "description": "Standard tools: transport estimates, $L^p$ decorrelation for $slow\\timesfast$ products, Sobolev embedding with cutoffs",
+      "nodes": [
+        "lem:A.1",
+        "lem:A.2",
+        "lem:A.3"
+      ]
+    },
+    "main_results_and_variants": {
+      "description": "The main theorem and its corollaries: flexibility of 3D Euler in $C^0_t H^{1/2-}_x$, compact time support variant, prescribed energy profile variant",
+      "nodes": [
+        "thm:1.1",
+        "rem:1.2",
+        "rem:3.7",
+        "rem:3.8"
+      ]
+    }
+  },
+  "bibliography": {
+    "BV19": {
+      "title": "Nonuniqueness of weak solutions to the Navier-Stokes equation",
+      "arxiv_id": "1709.10033",
+      "in_registry": true
+    },
+    "BDLSV17": {
+      "title": "Onsager's conjecture for admissible weak solutions",
+      "arxiv_id": null,
+      "in_registry": false
+    },
+    "Isett2018": {
+      "title": "A proof of Onsager's conjecture",
+      "arxiv_id": null,
+      "in_registry": false
+    },
+    "DeLellisSzekelyhidi09": {
+      "title": "The Euler equations as a differential inclusion",
+      "arxiv_id": null,
+      "in_registry": false
+    },
+    "DeLellisSzekelyhidi13": {
+      "title": "Dissipative continuous Euler flows",
+      "arxiv_id": null,
+      "in_registry": false
+    },
+    "DaneriSzekelyhidi17": {
+      "title": "Non-uniqueness and h-principle for Hölder-continuous weak solutions of the Euler equations",
+      "arxiv_id": null,
+      "in_registry": false
+    },
+    "cheskidov2020sharp": {
+      "title": "Sharp nonuniqueness for the Navier-Stokes equations",
+      "arxiv_id": null,
+      "in_registry": false
+    },
+    "BCV18": {
+      "title": "Wild solutions of the Navier-Stokes equations whose singular sets in time have Hausdorff dimension strictly less than 1",
+      "arxiv_id": null,
+      "in_registry": false
+    },
+    "MattVlad": {
+      "title": "An intermittent Onsager theorem",
+      "arxiv_id": "2203.13115",
+      "in_registry": false
+    }
+  }
+}

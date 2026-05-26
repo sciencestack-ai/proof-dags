@@ -1,0 +1,376 @@
+{
+  "paper": "1709.07343",
+  "title": "Étale cohomology of diamonds",
+  "authors": [
+    "Peter Scholze"
+  ],
+  "year": 2017,
+  "venue": "preprint",
+  "generated": "2026-05-07",
+  "status": "complete",
+  "nodes": {
+    "thm:1.2": {
+      "type": "Theorem",
+      "number": "1.2",
+      "section": "1",
+      "role": "main_result",
+      "summary": "$v$-topology is subcanonical: for $X = \\mathrm{Spa}(R,R^+)$ affinoid perfectoid, $H^0_v(X, \\mathcal{O}_X) = R$, $H^0_v(X, \\mathcal{O}_X^+) = R^+$, $H^i_v(X, \\mathcal{O}_X) = 0$ for $i>0$, and $H^i_v(X, \\mathcal{O}_X^+)$ almost zero. The descent theorem licensing the diamond formalism."
+    },
+    "thm:1.5": {
+      "type": "Theorem",
+      "number": "1.5",
+      "section": "1",
+      "role": "main_result",
+      "summary": "Diamond functor: a natural functor $X \\mapsto X^\\diamondsuit$ from analytic adic spaces over $\\mathbb{Z}_p$ to locally spatial diamonds, satisfying $X_{\\mathrm{\\acute{e}t}} \\cong X^\\diamondsuit_{\\mathrm{\\acute{e}t}}$. The bridge from classical adic geometry into the diamond category."
+    },
+    "thm:1.8": {
+      "type": "Theorem",
+      "number": "1.8",
+      "section": "1",
+      "role": "main_result",
+      "summary": "Six-functor compatibilities for $f: Y \\to X$ of small $v$-stacks: tensor compatibility $f^* A \\otimes^{\\mathbb{L}} f^* B = f^*(A \\otimes^{\\mathbb{L}} B)$; projection formulas via $Rf_* R\\mathcal{H}om$. The category-theoretic apparatus the rest of the paper builds."
+    },
+    "thm:1.9": {
+      "type": "Theorem",
+      "number": "1.9",
+      "section": "1",
+      "role": "main_result",
+      "summary": "Base change in cartesian diagrams: smooth + qcqs base change for $D^+_{\\mathrm{\\acute{e}t}}$, proper base change for compactifiable. The structural commutation rules of the six-functor formalism."
+    },
+    "thm:1.10": {
+      "type": "Theorem",
+      "number": "1.10",
+      "section": "1",
+      "role": "main_result",
+      "summary": "Cohomological smoothness: locality, source-transfer, composition, base change for $\\ell$-cohomologically smooth maps of small $v$-stacks. The structure theorem for smooth morphisms."
+    },
+    "thm:1.11": {
+      "type": "Theorem",
+      "number": "1.11",
+      "section": "1",
+      "role": "main_result",
+      "summary": "Constructibility under $Rf_!$: for quasicompact $\\ell$-cohomologically smooth $f$ and $A \\in D_{\\mathrm{cons}}$, $Rf_! A \\in D_{\\mathrm{cons}}$. Finiteness theorem for the lower-shriek functor."
+    },
+    "thm:1.12": {
+      "type": "Theorem",
+      "number": "1.12",
+      "section": "1",
+      "role": "main_result",
+      "summary": "Poincaré duality for diamonds: for separated $\\ell$-cohomologically smooth $X / \\mathrm{Spa}(C, \\mathcal{O}_C)$ over alg-closed nonarchimedean char-$p$ $C$ and $A \\in D_{\\mathrm{\\acute{e}t}}(X, \\mathbb{F}_\\ell)$, $\\mathcal{R}\\mathcal{H}om$/Verdier duality holds. The arithmetic-geometric payoff."
+    },
+    "thm:1.13": {
+      "type": "Theorem",
+      "number": "1.13",
+      "section": "1",
+      "role": "main_result",
+      "summary": "Base-change invariance under extension of algebraically closed base fields: pullback $D_{\\mathrm{\\acute{e}t}}(X, \\Lambda) \\to D_{\\mathrm{\\acute{e}t}}(X', \\Lambda)$ is fully faithful for discrete alg-closed $k'/k$ in char $p$. Solidity of the étale theory under base extension."
+    },
+    "thm:1.19": {
+      "type": "Theorem",
+      "number": "1.19",
+      "section": "1",
+      "role": "key_reduction",
+      "summary": "Several prestacks are $v$-stacks: affinoid perfectoid spaces over totally disconnected base; separated pro-étale perfectoid over strictly totally disconnected base; separated étale maps over all perfectoid spaces. The descent theorems making the diamond category work."
+    },
+    "thm:5.8": {
+      "type": "Theorem",
+      "number": "5.8",
+      "section": "5",
+      "role": "technical",
+      "summary": "Zariski closed immersions $f: Z \\to X = \\mathrm{Spa}(R, R^+)$ are strongly Zariski closed. Lets Zariski-closed immersions be characterized by their structure-presheaf behavior."
+    },
+    "thm:6.1": {
+      "type": "Theorem",
+      "number": "6.1",
+      "section": "6",
+      "role": "imported",
+      "summary": "Almost purity (imported): for $R$ perfectoid Tate with tilt $R^\\flat$, finite étale $R$-algebras $S$ are perfectoid, and tilting induces equivalences of finite étale categories. Imported from Faltings, Kedlaya–Liu, Scholze (Perfectoid Spaces)."
+    },
+    "thm:6.3": {
+      "type": "Theorem",
+      "number": "6.3",
+      "section": "6",
+      "role": "imported",
+      "summary": "Étale-site tilting (imported): $X_{\\mathrm{\\acute{e}t}} \\cong X^\\flat_{\\mathrm{\\acute{e}t}}$ for any perfectoid space, with affinoid cohomology vanishing in higher degrees. The KL / Scholze input to the diamond framework."
+    },
+    "thm:8.7": {
+      "type": "Theorem",
+      "number": "8.7",
+      "section": "8",
+      "role": "key_mechanism",
+      "summary": "Structure presheaves $\\mathcal{O}, \\mathcal{O}^+$ on the $v$-site are small sheaves and $v$-site is subcanonical. The descent theorem at the heart of thm:1.2."
+    },
+    "thm:14.12": {
+      "type": "Theorem",
+      "number": "14.12",
+      "section": "14",
+      "role": "technical",
+      "summary": "Pro-étale to étale descent: for $A$ on $Y_{\\mathrm{qpro\\acute{e}t}}$ or $Y_v$, if $f^* A$ lifts to $D^+(Y'_{\\mathrm{\\acute{e}t}})$ along a $v$-cover, then $A$ lifts to $D^+(Y_{\\mathrm{\\acute{e}t}})$. The descent input for the étale-vs-pro-étale comparison."
+    },
+    "thm:16.1": {
+      "type": "Theorem",
+      "number": "16.1",
+      "section": "16",
+      "role": "technical",
+      "summary": "Pullback compatibility for sheaves on quasi-pro-étale sites that come from étale ones: the sheaf-pullback diagram commutes with the étale-pro-étale comparison. Underwrites $f^*$ on the six-functor side."
+    },
+    "thm:19.2": {
+      "type": "Theorem",
+      "number": "19.2",
+      "section": "19",
+      "role": "key_reduction",
+      "summary": "$j_! Rg_*$ compatibility: for proper $f: Y' \\to Y$, open $j: U \\subset Y$, the natural transformation $j_! Rg_* \\to Rf_* j'_!$ exists. Compatibility of proper-pushforward with open-extension — input to the six-functor formalism."
+    },
+    "thm:22.5": {
+      "type": "Theorem",
+      "number": "22.5",
+      "section": "22",
+      "role": "key_reduction",
+      "summary": "Compactification: for a compactifiable map representable in spatial diamonds with $\\dim \\mathrm{trg} f < \\infty$ and prime-to-$p$ torsion coefficients, $Rf_!$ is well-defined as $Rf_* j_!$ along the canonical compactification. Body construction of $Rf_!$ — the foundation of thm:1.11."
+    },
+    "thm:24.1": {
+      "type": "Theorem",
+      "number": "24.1",
+      "section": "24",
+      "role": "key_reduction",
+      "summary": "Smoothness and dualizing complex of the ball: for $f: \\mathbb{B} \\to *$ from the ball to the point, $f$ is $\\ell$-cohomologically smooth for $\\ell \\neq p$ with $D_f = Rf^! \\Lambda \\cong \\Lambda(1)[2]$. The local-model computation underwriting cohomological smoothness."
+    },
+    "thm:25.1": {
+      "type": "Theorem",
+      "number": "25.1",
+      "section": "25",
+      "role": "key_reduction",
+      "summary": "Body Poincaré duality: for separated $\\ell$-cohomologically smooth $X$ over $\\mathrm{Spa}(C, \\mathcal{O}_C)$ ($C$ alg-closed char $p$), full duality formalism with twist and shift. The body theorem proving thm:1.12."
+    }
+  },
+  "edges": [
+    {
+      "from": "thm:1.2",
+      "to": "thm:8.7",
+      "type": "depends_on",
+      "note": "$v$-topology subcanonicity is exactly the structure-sheaf small-sheaf statement."
+    },
+    {
+      "from": "thm:1.5",
+      "to": "thm:1.19",
+      "type": "depends_on",
+      "note": "Diamond functor lands in $v$-stacks; thm:1.19 supplies the relevant descent."
+    },
+    {
+      "from": "thm:1.5",
+      "to": "thm:6.3",
+      "type": "depends_on",
+      "note": "Étale-site equivalence used to transport étale topos through $X \\mapsto X^\\diamondsuit$."
+    },
+    {
+      "from": "thm:1.8",
+      "to": "thm:1.9",
+      "type": "depends_on",
+      "note": "Six-functor compatibilities are stated jointly with base-change rules."
+    },
+    {
+      "from": "thm:1.10",
+      "to": "thm:24.1",
+      "type": "depends_on",
+      "note": "Local model: smoothness of the ball anchors the structural smoothness theory."
+    },
+    {
+      "from": "thm:1.11",
+      "to": "thm:22.5",
+      "type": "depends_on",
+      "note": "Constructibility of $Rf_!$ relies on the compactification construction."
+    },
+    {
+      "from": "thm:1.12",
+      "to": "thm:25.1",
+      "type": "depends_on",
+      "note": "Poincaré duality intro statement is the body theorem."
+    },
+    {
+      "from": "thm:25.1",
+      "to": "thm:24.1",
+      "type": "depends_on",
+      "note": "Duality bootstraps from the dualizing-complex computation on the ball."
+    },
+    {
+      "from": "thm:25.1",
+      "to": "thm:22.5",
+      "type": "depends_on",
+      "note": "Compactification gives the $Rf_!$ leg of the duality formalism."
+    },
+    {
+      "from": "thm:25.1",
+      "to": "thm:1.10",
+      "type": "depends_on",
+      "note": "Smoothness theory needed for duality on smooth $X$."
+    },
+    {
+      "from": "thm:1.13",
+      "to": "thm:1.19",
+      "type": "depends_on",
+      "note": "Base-change-invariance uses the v-stack structure of perfectoid-space prestacks."
+    },
+    {
+      "from": "thm:1.19",
+      "to": "thm:6.1",
+      "type": "depends_on",
+      "note": "Almost purity is the input that makes the étale-prestack v-stack."
+    },
+    {
+      "from": "thm:8.7",
+      "to": "thm:6.3",
+      "type": "depends_on",
+      "note": "$v$-sheaf property of structure presheaves uses the étale-site tilting cohomology vanishing."
+    },
+    {
+      "from": "thm:8.7",
+      "to": "thm:1.19",
+      "type": "depends_on",
+      "note": "Affinoid-perfectoid v-stack property feeds the structure-sheaf descent."
+    },
+    {
+      "from": "thm:5.8",
+      "to": "thm:8.7",
+      "type": "depends_on",
+      "note": "Zariski-closed immersions interact with $v$-sheafiness of structure presheaves."
+    },
+    {
+      "from": "thm:6.1",
+      "to": "thm:6.3",
+      "type": "depends_on",
+      "note": "Almost purity precedes étale-site tilting."
+    },
+    {
+      "from": "thm:14.12",
+      "to": "thm:8.7",
+      "type": "depends_on",
+      "note": "Quasi-pro-étale to étale lifting uses the structure-sheaf descent."
+    },
+    {
+      "from": "thm:16.1",
+      "to": "thm:14.12",
+      "type": "depends_on",
+      "note": "Pullback-compatibility runs after the descent statement is in place."
+    },
+    {
+      "from": "thm:19.2",
+      "to": "thm:1.8",
+      "type": "depends_on",
+      "note": "$j_! Rg_*$ compatibility is part of the six-functor formalism's commutation rules."
+    },
+    {
+      "from": "thm:22.5",
+      "to": "thm:19.2",
+      "type": "depends_on",
+      "note": "Compactification's $Rf_!$ definition uses the proper / open-immersion compatibility."
+    }
+  ],
+  "critical_path": [
+    "thm:1.12",
+    "thm:25.1",
+    "thm:24.1",
+    "thm:1.10",
+    "thm:8.7"
+  ],
+  "proof_architecture": {
+    "main_results": {
+      "description": "Section 1. Subcanonicity, diamond functor, six-functor / base-change / smoothness / constructibility / Poincaré duality / base-change invariance.",
+      "nodes": [
+        "thm:1.2",
+        "thm:1.5",
+        "thm:1.8",
+        "thm:1.9",
+        "thm:1.10",
+        "thm:1.11",
+        "thm:1.12",
+        "thm:1.13",
+        "thm:1.19"
+      ]
+    },
+    "v_topology_and_descent": {
+      "description": "Sections 5–8. Zariski-closed immersions, almost-purity import, étale-site tilting, $v$-site subcanonicity. The descent infrastructure.",
+      "nodes": [
+        "thm:5.8",
+        "thm:6.1",
+        "thm:6.3",
+        "thm:8.7"
+      ]
+    },
+    "etale_pro_etale_comparison": {
+      "description": "Sections 14, 16. Quasi-pro-étale to étale lifting and pullback compatibilities.",
+      "nodes": [
+        "thm:14.12",
+        "thm:16.1"
+      ]
+    },
+    "six_functor_formalism": {
+      "description": "Sections 19, 22. Open-immersion / proper-pushforward compatibility and $Rf_!$ via compactification.",
+      "nodes": [
+        "thm:19.2",
+        "thm:22.5"
+      ]
+    },
+    "smoothness_and_duality": {
+      "description": "Sections 24, 25. Local model on the ball + body Poincaré duality.",
+      "nodes": [
+        "thm:24.1",
+        "thm:25.1"
+      ]
+    }
+  },
+  "bibliography": {
+    "Scholze:Perfectoid": {
+      "title": "Perfectoid spaces",
+      "authors": [
+        "Peter Scholze"
+      ],
+      "year": 2012,
+      "arxiv_id": "1111.4914",
+      "in_registry": true,
+      "role": "Foundation: perfectoid spaces, almost purity, étale-site tilting (thm:6.1, thm:6.3 imported)."
+    },
+    "KedlayaLiu1": {
+      "title": "Relative p-adic Hodge theory: Foundations",
+      "authors": [
+        "Kedlaya",
+        "Liu"
+      ],
+      "year": 2013,
+      "arxiv_id": "1301.0792",
+      "in_registry": true,
+      "role": "Almost purity (thm:5.5.9) and finite-étale tensor equivalence imported at thm:6.1."
+    },
+    "FaltingsAlmostEtaleExtensions": {
+      "title": "Almost étale extensions",
+      "authors": [
+        "Gerd Faltings"
+      ],
+      "year": 2002,
+      "arxiv_id": null,
+      "in_registry": false,
+      "role": "Faltings's almost-purity theorem; first historical version imported at thm:6.1."
+    },
+    "SGA4": {
+      "title": "Théorie des topos et cohomologie étale des schémas",
+      "authors": [
+        "Artin",
+        "Grothendieck",
+        "Verdier"
+      ],
+      "year": 1972,
+      "arxiv_id": null,
+      "in_registry": false,
+      "role": "Six-functor formalism foundations."
+    },
+    "Huber:Adic": {
+      "title": "Étale Cohomology of Rigid Analytic Varieties and Adic Spaces",
+      "authors": [
+        "Roland Huber"
+      ],
+      "year": 1996,
+      "arxiv_id": null,
+      "in_registry": false,
+      "role": "Adic spaces, étale topology — the geometric category diamonds extend."
+    }
+  }
+}

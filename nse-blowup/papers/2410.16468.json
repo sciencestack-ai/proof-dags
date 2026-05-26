@@ -1,0 +1,463 @@
+{
+  "paper": "2410.16468",
+  "title": "On regularity of solutions to the Navier--Stokes equation with initial data in BMO^{-1}",
+  "authors": [
+    "Hedong Hou"
+  ],
+  "generated": "2026-03-10",
+  "status": "complete",
+  "nodes": {
+    "thm:1": {
+      "type": "Theorem",
+      "number": "1",
+      "section": "1",
+      "role": "main_result",
+      "summary": "Any mild solution u in $X_T$ to NSE with $u_0$ in $bmo^{-1}$ belongs to C([0,T); $bmo^{-1})$ in the weak*-topology, with $u(0)=u_0$ and $sup_t ||u(t)||_{bmo^{-1}}$ controlled by $||u_0||_{bmo^{-1}} + ||u||_{X_T}^2$."
+    },
+    "thm:2": {
+      "type": "Theorem",
+      "number": "2",
+      "section": "1",
+      "role": "main_result",
+      "summary": "Any global mild solution u in $X_\\infty$ to NSE with $u_0$ in $bmo^{-1}$ satisfies $u(t) \\to 0$ as t $\\to \\infty$ in $bmo^{-1} (weak*-topology)$."
+    },
+    "rem:1": {
+      "type": "Remark",
+      "number": "1",
+      "section": "1",
+      "role": "context",
+      "summary": "Theorems 1 and 2 are sharp: heat semigroup is only weak*-continuous on $bmo^{-1}$, and self-similar solutions show the strong topology vanishing fails."
+    },
+    "env:prop:L": {
+      "type": "Proposition",
+      "number": "L",
+      "section": "3",
+      "role": "key_reduction",
+      "summary": "For f in $L^\\infty_{-1}$ cap $T^{\\infty,2}_{-1/2}$ cap $T^{\\infty,1}$, the operator L(f) belongs to $C_0([0,\\infty)$; $bmo^{-1})$ with L(f)(0)=0. The single proposition from which both main theorems follow."
+    },
+    "env:prop:L0": {
+      "type": "Proposition",
+      "number": "L0",
+      "section": "3",
+      "role": "main_technical",
+      "summary": "For g in $L^\\infty_{-1/2}$ cap $T^{\\infty,2}$, the maximal regularity operator $L_0(g)$ lies in $C_0([0,\\infty)$; $bmo^{-1})$ with $L_0(g)(0)=0$."
+    },
+    "env:prop:L1": {
+      "type": "Proposition",
+      "number": "L1",
+      "section": "3",
+      "role": "main_technical",
+      "summary": "For f in $T^{\\infty,1}$, the remainder operator $L_1(f)$ lies in $C_0([0,\\infty)$; $bmo^{-1})$ with $L_1(f)(0)=0$."
+    },
+    "lem:1": {
+      "type": "Lemma",
+      "number": "1",
+      "section": "3",
+      "role": "key_technical",
+      "summary": "The operator R(F)(s) := (sDelta)^{-1}(I $- e^{2sDelta}) s^{1/2}$ P Div F(s) is bounded on both $L^\\infty_{-1/2}(R^{1+n}_+)$ and $T^{\\infty,2}$. Enables the decomposition L $= L_0 + L_1$."
+    },
+    "lem:2": {
+      "type": "Lemma",
+      "number": "2",
+      "section": "4.1.1",
+      "role": "key_technical",
+      "summary": "For $\\phi$ in $DotH^{1,1}$, $sup_t A_t(\\phi) \\le C||\\phi||_{DotH^{1,1}}$ and $A_t(\\phi) \\to 0$ as t $\\to 0+$ and t $\\to \\infty$. Controls the duality functional used in all three parts of the Prop L0 proof."
+    },
+    "lem:3": {
+      "type": "Lemma",
+      "number": "3",
+      "section": "4.1.1",
+      "role": "technical",
+      "summary": "For $\\psi$ satisfying pointwise Gaussian estimates and a in $DotH^{0,1}$, $sup_t integral(G_{3t/4} * |\\psi_{t/4} *$ a|^2)^{1/2} dx $\\le C||a||_{DotH^{0,1}}$. Proved by Hardy space atomic decomposition."
+    },
+    "lem:4": {
+      "type": "Lemma",
+      "number": "4",
+      "section": "4.1.2",
+      "role": "technical",
+      "summary": "Carleson norm of time-shifted g satisfies $||C^{(2)}_{\\tau-\\sigma}(tilde{g})||_{L^\\infty} \\le (\\tau-\\sigma)^{1/2} \\sigma^{-1/2} ||g||_{L^\\infty_{-1/2}}$. Controls the iteration remainder terms."
+    },
+    "rem:2": {
+      "type": "Remark",
+      "number": "2",
+      "section": "5.1",
+      "role": "context",
+      "summary": "Combining the $L^\\infty(bmo^{-1})$ bounds from Props L0 and L1 rediscovers the bound of Auscher-Dubois-Tchamitchian, though their original argument is simpler."
+    }
+  },
+  "edges": [
+    {
+      "from": "thm:1",
+      "to": "env:prop:L",
+      "type": "depends_on",
+      "detail": "Proof of Thm 1 admitting Prop L: applies Prop L to B(u,u) = L(u tensor u) to get weak*-continuity"
+    },
+    {
+      "from": "thm:2",
+      "to": "env:prop:L",
+      "type": "depends_on",
+      "detail": "Proof of Thm 2 admitting Prop L: the $C_0$ part of Prop L gives vanishing at $\\infty$"
+    },
+    {
+      "from": "env:prop:L",
+      "to": "env:prop:L0",
+      "type": "depends_on",
+      "detail": "Prop L follows from Prop L0 (maximal regularity part) and Prop L1 (remainder part)"
+    },
+    {
+      "from": "env:prop:L",
+      "to": "env:prop:L1",
+      "type": "depends_on",
+      "detail": "Prop L follows from Prop L0 and Prop L1"
+    },
+    {
+      "from": "env:prop:L",
+      "to": "lem:1",
+      "type": "depends_on",
+      "detail": "Boundedness of R enables the decomposition L $= L_0(R(s^{1/2}f)) + L_1(f)$"
+    },
+    {
+      "from": "env:prop:L0",
+      "to": "lem:2",
+      "type": "depends_on",
+      "detail": "All three parts of the Prop L0 proof (continuity at 0, at t>0, long-time limit) use the $A_t$ estimates from Lemma 2"
+    },
+    {
+      "from": "env:prop:L0",
+      "to": "lem:4",
+      "type": "depends_on",
+      "detail": "Iteration scheme for $R_1$ uses Lemma 4 to control shifted Carleson norms at each iteration step"
+    },
+    {
+      "from": "lem:2",
+      "to": "lem:3",
+      "type": "depends_on",
+      "detail": "Proof of the bound sup $A_t(\\phi) \\le ||\\phi||_{DotH^{1,1}}$ applies Lemma 3 via Gaussian estimates on the heat kernel"
+    },
+    {
+      "from": "env:prop:L1",
+      "to": "lem:1",
+      "type": "depends_on",
+      "detail": "Prop L1 uses f in $T^{\\infty,1}$ which comes from the decomposition enabled by Lemma 1"
+    },
+    {
+      "from": "rem:1",
+      "to": "thm:1",
+      "type": "proves",
+      "detail": "Shows Theorem 1 is sharp: heat semigroup is merely weak*-continuous on $bmo^{-1}$"
+    },
+    {
+      "from": "rem:1",
+      "to": "thm:2",
+      "type": "proves",
+      "detail": "Shows Theorem 2 is sharp: self-similar solutions never vanish in strong topology"
+    },
+    {
+      "from": "rem:2",
+      "to": "env:prop:L0",
+      "type": "depends_on",
+      "detail": "Combines $L^\\infty(bmo^{-1})$ bounds from Props L0 and L1 to rediscover Auscher-Dubois-Tchamitchian bound"
+    },
+    {
+      "from": "rem:2",
+      "to": "env:prop:L1",
+      "type": "depends_on",
+      "detail": "Combines $L^\\infty(bmo^{-1})$ bounds from Props L0 and L1"
+    }
+  ],
+  "critical_path": [
+    "thm:1",
+    "env:prop:L",
+    "env:prop:L0",
+    "lem:2",
+    "lem:3"
+  ],
+  "proof_architecture": {
+    "main_results": {
+      "description": "The two main theorems: weak*-continuity in $bmo^{-1}$ and vanishing at $\\infty$",
+      "nodes": [
+        "thm:1",
+        "thm:2"
+      ]
+    },
+    "key_reduction": {
+      "description": "Single proposition reducing both theorems to a mapping property of the Duhamel operator L on function spaces",
+      "nodes": [
+        "env:prop:L"
+      ]
+    },
+    "operator_decomposition": {
+      "description": "Decomposition L $= L_0 + L_1$ via the bounded operator R, splitting the problem into maximal regularity and remainder",
+      "nodes": [
+        "env:prop:L0",
+        "env:prop:L1",
+        "lem:1"
+      ]
+    },
+    "duality_and_iteration": {
+      "description": "Technical core: duality with $DotH^{1,1}$ test functions, $A_t$ functional estimates, and dyadic iteration for the remainder",
+      "nodes": [
+        "lem:2",
+        "lem:3",
+        "lem:4"
+      ]
+    },
+    "sharpness_and_context": {
+      "description": "Sharpness results via self-similar solutions and comparison with Auscher-Dubois-Tchamitchian",
+      "nodes": [
+        "rem:1",
+        "rem:2"
+      ]
+    }
+  },
+  "bibliography": {
+    "Koch-Tataru2001-BMO-1": {
+      "title": "Well-posedness for the Navier-Stokes equations",
+      "authors": [
+        "Koch, H.",
+        "Tataru, D."
+      ],
+      "year": 2001,
+      "arxiv_id": null,
+      "in_registry": false,
+      "role": "foundational"
+    },
+    "Auscher-Dubois-Tchamitchian2004-BMO-1": {
+      "title": "On the stability of global solutions to Navier-Stokes equations in the space",
+      "authors": [
+        "Auscher, P.",
+        "Dubois, S.",
+        "Tchamitchian, P."
+      ],
+      "year": 2004,
+      "arxiv_id": null,
+      "in_registry": false,
+      "role": "foundational"
+    },
+    "Auscher-Frey2017-NS": {
+      "title": "On the well-posedness of parabolic equations of Navier-Stokes type with BMO^{-1} data",
+      "authors": [
+        "Auscher, P.",
+        "Frey, D."
+      ],
+      "year": 2017,
+      "arxiv_id": null,
+      "in_registry": false,
+      "role": "key_technique"
+    },
+    "Auscher-Hou2024-HCL": {
+      "title": "On well-posedness for parabolic Cauchy problems of Lions type with rough initial data",
+      "authors": [
+        "Auscher, P.",
+        "Hou, H."
+      ],
+      "year": 2024,
+      "arxiv_id": null,
+      "in_registry": false,
+      "role": "background"
+    },
+    "Coifman-Meyer-Stein1985_TentSpaces": {
+      "title": "Some new function spaces and their applications to harmonic analysis",
+      "authors": [
+        "Coifman, R. R.",
+        "Meyer, Y.",
+        "Stein, E. M."
+      ],
+      "year": 1985,
+      "arxiv_id": null,
+      "in_registry": false,
+      "role": "foundational"
+    },
+    "Fefferman-Stein1972-Hp": {
+      "title": "H^p spaces of several variables",
+      "authors": [
+        "Fefferman, C.",
+        "Stein, E. M."
+      ],
+      "year": 1972,
+      "arxiv_id": null,
+      "in_registry": false,
+      "role": "foundational"
+    },
+    "Stein1993-HA": {
+      "title": "Harmonic analysis: real-variable methods, orthogonality, and oscillatory integrals",
+      "authors": [
+        "Stein, E. M."
+      ],
+      "year": 1993,
+      "arxiv_id": null,
+      "in_registry": false,
+      "role": "reference"
+    },
+    "Germain-Pavlovic-Staffilani2007-Analyticity": {
+      "title": "Regularity of solutions to the Navier-Stokes equations evolving from small data in BMO^{-1}",
+      "authors": [
+        "Germain, P.",
+        "Pavlovic, N.",
+        "Staffilani, G."
+      ],
+      "year": 2007,
+      "arxiv_id": null,
+      "in_registry": false,
+      "role": "background"
+    },
+    "Fujita-Kato1964_Hn/2-1": {
+      "title": "On the Navier-Stokes initial value problem. I",
+      "authors": [
+        "Fujita, H.",
+        "Kato, T."
+      ],
+      "year": 1964,
+      "arxiv_id": null,
+      "in_registry": false,
+      "role": "foundational"
+    },
+    "Kato1984-Ln": {
+      "title": "Strong L^p-solutions of the Navier-Stokes equation in R^m, with applications to weak solutions",
+      "authors": [
+        "Kato, T."
+      ],
+      "year": 1984,
+      "arxiv_id": null,
+      "in_registry": false,
+      "role": "foundational"
+    },
+    "Bourgain-Pavlovic2008-IPB-1": {
+      "title": "Ill-posedness of the Navier-Stokes equations in a critical space in 3D",
+      "authors": [
+        "Bourgain, J.",
+        "Pavlovic, N."
+      ],
+      "year": 2008,
+      "arxiv_id": null,
+      "in_registry": false,
+      "role": "context"
+    },
+    "Dubois2002-these": {
+      "title": "Equations de Navier-Stokes dans l'espace: espaces critiques et solutions d'energie finie",
+      "authors": [
+        "Dubois, S."
+      ],
+      "year": 2002,
+      "arxiv_id": null,
+      "in_registry": false,
+      "role": "background"
+    },
+    "Guillod-Sverak2023-nonunique": {
+      "title": "Numerical investigations of non-uniqueness for the Navier-Stokes initial value problem in borderline spaces",
+      "authors": [
+        "Guillod, J.",
+        "Sverak, V."
+      ],
+      "year": 2023,
+      "arxiv_id": null,
+      "in_registry": false,
+      "role": "context"
+    },
+    "Cannone1997-Besov-sge": {
+      "title": "A generalization of a theorem by Kato on Navier-Stokes equations",
+      "authors": [
+        "Cannone, M."
+      ],
+      "year": 1997,
+      "arxiv_id": null,
+      "in_registry": false,
+      "role": "background"
+    },
+    "Planchon1998-Besov-sgwp": {
+      "title": "Asymptotic behavior of global solutions to the Navier-Stokes equations in R^3",
+      "authors": [
+        "Planchon, F."
+      ],
+      "year": 1998,
+      "arxiv_id": null,
+      "in_registry": false,
+      "role": "background"
+    },
+    "Yoneda2010-IP-F-1_infty-q": {
+      "title": "Ill-posedness of the 3D-Navier-Stokes equations in a generalized Besov space near BMO^{-1}",
+      "authors": [
+        "Yoneda, T."
+      ],
+      "year": 2010,
+      "arxiv_id": null,
+      "in_registry": false,
+      "role": "context"
+    },
+    "Wang2015-IP-B-1_infty-q": {
+      "title": "Ill-posedness for the Navier-Stokes equations in critical Besov spaces Dot{B}^{-1}_{infty,q}",
+      "authors": [
+        "Wang, B."
+      ],
+      "year": 2015,
+      "arxiv_id": null,
+      "in_registry": false,
+      "role": "context"
+    },
+    "Miura-Sawada2006_analyticity": {
+      "title": "On the regularizing rate estimates of Koch-Tataru's solution to the Navier-Stokes equations",
+      "authors": [
+        "Miura, H.",
+        "Sawada, O."
+      ],
+      "year": 2006,
+      "arxiv_id": null,
+      "in_registry": false,
+      "role": "background"
+    },
+    "Miura2005-unique-vmo-1": {
+      "title": "Remark on uniqueness of mild solutions to the Navier-Stokes equations",
+      "authors": [
+        "Miura, H."
+      ],
+      "year": 2005,
+      "arxiv_id": null,
+      "in_registry": false,
+      "role": "background"
+    },
+    "Triebel1983Spaces": {
+      "title": "Theory of function spaces",
+      "authors": [
+        "Triebel, H."
+      ],
+      "year": 1983,
+      "arxiv_id": null,
+      "in_registry": false,
+      "role": "reference"
+    },
+    "Germain2006-2DVMO-1-glexist-long": {
+      "title": "Equations de Navier-Stokes dans R^2: existence et comportement asymptotique de solutions d'energie infinie",
+      "authors": [
+        "Germain, P."
+      ],
+      "year": 2006,
+      "arxiv_id": null,
+      "in_registry": false,
+      "role": "background"
+    },
+    "Gallagher-Iftimie-Planchon2002-long-H1/2": {
+      "title": "Non-explosion en temps grand et stabilite de solutions globales des equations de Navier-Stokes",
+      "authors": [
+        "Gallagher, I.",
+        "Iftimie, D.",
+        "Planchon, F."
+      ],
+      "year": 2002,
+      "arxiv_id": null,
+      "in_registry": false,
+      "role": "background"
+    },
+    "Gallagher-Iftimie-Planchon2003-long-L3-Besov": {
+      "title": "Asymptotics and stability for global solutions to the Navier-Stokes equations",
+      "authors": [
+        "Gallagher, I.",
+        "Iftimie, D.",
+        "Planchon, F."
+      ],
+      "year": 2003,
+      "arxiv_id": null,
+      "in_registry": false,
+      "role": "background"
+    }
+  }
+}

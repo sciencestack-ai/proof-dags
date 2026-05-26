@@ -1,0 +1,509 @@
+{
+  "description": "Cross-paper edges in the Maynard-Tao bounded-gaps proof DAG. Each edge connects node IDs across different papers.",
+  "edges": [
+    {
+      "from": "1311.4600v3:lem:5.1",
+      "to": "math/0508185v1:prop:1",
+      "type": "generalizes",
+      "note": "Maynard's $S_1$-side diagonalized sieve sum is the $k$-dimensional analog of GPY's 1D $\\Lambda_R(n;\\mathcal{H}_1,\\ell_1)\\,\\Lambda_R(n;\\mathcal{H}_2,\\ell_2)$ asymptotic."
+    },
+    {
+      "from": "1311.4600v3:lem:5.2",
+      "to": "math/0508185v1:prop:2",
+      "type": "generalizes",
+      "note": "Maynard's $S_2$-side diagonalized sum (with multiplicative $g(p)=p-2$) generalizes GPY's prop:2 weighted prime count."
+    },
+    {
+      "from": "1311.4600v3:thm:1.3",
+      "to": "math/0508185v1:thm:2",
+      "type": "improves",
+      "note": "From $E_1 = \\liminf_n (p_{n+1}-p_n)/\\log p_n = 0$ (qualitative, GPY) to $\\liminf_n (p_{n+1}-p_n) \\le 600$ (quantitative, Maynard)."
+    },
+    {
+      "from": "1311.4600v3:thm:1.1",
+      "to": "math/0508185v1:thm:3",
+      "type": "improves",
+      "note": "From $E_r \\le (\\sqrt{r} - 1)^2$ (GPY, unconditional eq:1.13; conditional bound under level-of-distribution $\\theta$ is $E_r \\le (\\sqrt{r} - \\sqrt{2\\theta})^2$) to $\\liminf_n (p_{n+m}-p_n) \\ll m^3 e^{4m}$ for the $m$-th gap (Maynard, also unconditional)."
+    },
+    {
+      "from": "1407.4897v4:thm:1.3",
+      "to": "1311.4600v3:thm:1.3",
+      "type": "imports_result",
+      "note": "Polymath8b restates Maynard's $H_1 \\le 600$ verbatim as the baseline being improved."
+    },
+    {
+      "from": "1407.4897v4:thm:1.4",
+      "to": "1311.4600v3:thm:1.3",
+      "type": "improves",
+      "note": "Cuts unconditional gap from 600 (Maynard) to 246 by combining $\\varepsilon$-enlarged simplex sieving with Polymath8a's MPZ window."
+    },
+    {
+      "from": "1407.4897v4:thm:1.4",
+      "to": "1311.4600v3:thm:1.4",
+      "type": "improves",
+      "note": "Under EH, sharpens Maynard's $H_2 \\le 600$ to $H_2 \\le 270$ and adds $H_3 \\le 52116$, $H_4 \\le 474266$, $H_5 \\le 4137854$ (Maynard's $H_1 \\le 12$ unchanged); under GEH, drops to $H_1 \\le 6$ and $H_2 \\le 252$."
+    },
+    {
+      "from": "1407.4897v4:thm:3.8",
+      "to": "1311.4600v3:prop:4.1",
+      "type": "re_derives",
+      "note": "Standard-simplex sieving theorem cleanly restates Maynard's $S_1, S_2$ asymptotic via $I_k(F), J_k^{(m)}(F)$."
+    },
+    {
+      "from": "1407.4897v4:thm:3.8",
+      "to": "1311.4600v3:prop:4.2",
+      "type": "re_derives",
+      "note": "Same $M_k > 2m/\\theta \\Rightarrow \\mathrm{DHL}[k,m+1]$ reduction."
+    },
+    {
+      "from": "1407.4897v4:thm:3.9",
+      "to": "1311.4600v3:prop:4.3",
+      "type": "improves",
+      "note": "Refines Maynard's $M_5 > 2$ / $M_{105} > 4$ / $M_k > \\log k - 2\\log\\log k - 2$ to $M_{54} > 4.00238$ / $M_{5511} > 6$ / ... / $M_k \\ge \\log k - C$."
+    },
+    {
+      "from": "1407.4897v4:thm:3.12",
+      "to": "1311.4600v3:prop:4.1",
+      "type": "extends",
+      "note": "$\\varepsilon$-enlarged simplex extends Maynard's framework — $F$ supported on $(1+\\varepsilon)\\cdot\\mathcal{R}_k$ with marginal integration on $(1-\\varepsilon)\\cdot\\mathcal{R}_{k-1}$. The new ingredient that beats Maynard."
+    },
+    {
+      "from": "1407.4897v4:thm:3.10",
+      "to": "1311.4600v3:prop:4.1",
+      "type": "extends",
+      "note": "Truncated-simplex variant adapted to smooth-modulus MPZ window. Couples Polymath8a with Maynard's framework."
+    },
+    {
+      "from": "1407.4897v4:thm:3.14",
+      "to": "1311.4600v3:prop:4.1",
+      "type": "extends",
+      "note": "Beyond-$\\varepsilon$ under GEH: support up to $(k/(k-1))\\cdot\\mathcal{R}_k$ with vanishing marginals — needed for $H_1 \\le 6$."
+    },
+    {
+      "from": "1407.4897v4:claim:3.1",
+      "to": "1311.4600v3:sec:1:12",
+      "type": "addresses_same_question",
+      "note": "$\\mathrm{DHL}[k,j]$ is the quantitative skeleton common to Maynard's prime $k$-tuples motivation and Polymath8b's reductions."
+    },
+    {
+      "from": "1407.4897v4:thm:1.1",
+      "to": "math/0508185v1:thm:1",
+      "type": "imports_result",
+      "note": "Polymath8b's thm:1.1 = GPY's thm:1 with explicit constant $H_1 \\le 16$ under EH."
+    },
+    {
+      "from": "1407.4897v4:thm:3.5",
+      "to": "math/0508185v1:prop:2",
+      "type": "extends",
+      "note": "Polymath8b's prime-side asymptotic on the $k$-dimensional simplex extends GPY's 1D weighted prime count."
+    },
+    {
+      "from": "1407.4897v4:thm:3.6",
+      "to": "math/0508185v1:prop:1",
+      "type": "extends",
+      "note": "Non-prime asymptotic extends GPY's $S_1$ to $k$ variables."
+    },
+    {
+      "from": "1407.4897v4:lem:4.1",
+      "to": "math/0508185v1:lem:3",
+      "type": "extends",
+      "note": "Polymath8b's base divisor asymptotic is the multidimensional analog of GPY's perturbed $T^*_R$ lemma."
+    },
+    {
+      "from": "1407.4897v4:thm:2.5",
+      "to": "1402.0811:thm:2.4",
+      "type": "imports_result",
+      "note": "Polymath8b cites Polymath8a's MPZ inequality $600\\varpi + 180\\delta < 7$ as thm:2.5."
+    },
+    {
+      "from": "1407.4897v4:claim:2.4",
+      "to": "1402.0811:claim:2.3",
+      "type": "specializes",
+      "note": "Polymath8b's MPZ statement is Polymath8a's $\\mathrm{MPZ}^{(4)}$ restricted to the form needed for Maynard-Tao sieve consumers."
+    },
+    {
+      "from": "1407.4897v4:thm:3.10",
+      "to": "1402.0811:thm:2.4",
+      "type": "imports_result",
+      "note": "Truncated-simplex sieving requires the unconditional $\\mathrm{MPZ}^{(4)}$ input from Polymath8a."
+    },
+    {
+      "from": "1407.4897v4:thm:3.11",
+      "to": "1402.0811:thm:2.4",
+      "type": "imports_result",
+      "note": "Numerical $M_k^{[\\alpha]}$ bounds operate within Polymath8a's $600\\varpi+180\\delta<7$ region."
+    },
+    {
+      "from": "1402.0811:prop:8.1",
+      "to": "math/0508185v1:thm:1",
+      "type": "imports_result",
+      "note": "Polymath8a's Section 8 sieve consequence is built on the GPY (Goldston-Pintz-Yıldırım) one-dimensional Selberg-sieve framework, not Maynard's multidimensional sieve. Polymath8a was contemporaneous with Maynard and used the Zhang/GPY tradition for its sieve corollaries."
+    },
+    {
+      "from": "1408.5110v2:lem:6",
+      "to": "1311.4600v3:prop:4.1",
+      "type": "imports_result",
+      "note": "Same $I_k^{(1)}(F)$ integrals as Maynard's small-gaps sieve, here repurposed to the large-gaps covering construction."
+    },
+    {
+      "from": "1408.5110v2:lem:7",
+      "to": "1311.4600v3:prop:4.1",
+      "type": "imports_result",
+      "note": "Same $J_k^{(1)}(F)$ marginals — Maynard runs his own machine backwards."
+    },
+    {
+      "from": "1408.5110v2:lem:8",
+      "to": "1311.4600v3:prop:4.3",
+      "type": "imports_result",
+      "note": "$\\log k$ optimization mirrors Maynard's small-gaps prop:4.3 part 3 — same variational inequality, opposite application."
+    },
+    {
+      "from": "1408.5110v2:thm:1",
+      "to": "1311.4600v3:thm:1.1",
+      "type": "shared_mechanism",
+      "note": "Maynard's multidimensional sieve, originally invented to prove small gaps exist, is here pivoted to prove arbitrarily large gaps exist. Same technique, opposite direction."
+    },
+    {
+      "from": "1408.4505v2:thm:1",
+      "to": "1408.5110v2:thm:1",
+      "type": "parallel_result",
+      "note": "Same lower bound on prime gaps ($R \\log X \\log_2 X \\log_4 X / (\\log_3 X)^2$), proved independently and simultaneously. The pair settles Erdős's \\$10000 problem."
+    },
+    {
+      "from": "1408.4505v2:thm:6",
+      "to": "1408.5110v2:prop:5",
+      "type": "parallel_result",
+      "note": "Both papers reduce to the same kind of 'cover residues by primes' problem. FGKT solves it via random covering (probabilistic); Maynard solves it via his own multidim Selberg sieve (deterministic). The structural divergence in approach."
+    },
+    {
+      "from": "1408.4505v2:thm:7",
+      "to": "1408.5110v2:lem:6",
+      "type": "parallel_result",
+      "note": "FGKT plugs in Green-Tao linear-forms-in-primes (Theorem A) where Maynard plugs in his own $k$-D Selberg sieve (lem:6). Same role in the proof, totally different analytic engine."
+    },
+    {
+      "from": "1405.2593v2:thm:3.1",
+      "to": "1311.4600v3:prop:4.2",
+      "type": "generalizes",
+      "note": "thm:3.1 is the abstract version of 1311.4600 prop:4.2: any $(\\mathcal{A}, \\mathcal{P}, \\mathcal{L}, B)$ satisfying density / equidistribution hypotheses gives $\\gg \\log k$ primes among $\\{L_i(n)\\}$."
+    },
+    {
+      "from": "1405.2593v2:prop:6.1",
+      "to": "1311.4600v3:prop:4.1",
+      "type": "generalizes",
+      "note": "prop:6.1 is 1311.4600 prop:4.1 with $W$ replaced by general modulus $B$ and singular series $\\mathfrak{S}_B(\\mathcal{L})$. Architectural refactor enabling multiple applications."
+    },
+    {
+      "from": "1405.2593v2:prop:9.1",
+      "to": "1311.4600v3:lem:5.1",
+      "type": "generalizes",
+      "note": "$S_1$ evaluation generalized from $k$-tuples $h_i$ to arbitrary linear forms $L_i$ and arbitrary set $\\mathcal{A}$."
+    },
+    {
+      "from": "1405.2593v2:prop:9.2",
+      "to": "1311.4600v3:lem:5.2",
+      "type": "generalizes",
+      "note": "$S_2$ evaluation under abstract level-of-distribution hypothesis."
+    },
+    {
+      "from": "1405.2593v2:lem:8.1",
+      "to": "1311.4600v3:lem:6.1",
+      "type": "generalizes",
+      "note": "Singular-series control replaces the $W$-trick of 1311.4600."
+    },
+    {
+      "from": "1405.2593v2:lem:8.2",
+      "to": "1311.4600v3:lem:5.3",
+      "type": "generalizes",
+      "note": "Sieve-weight perturbation in the abstract framework."
+    },
+    {
+      "from": "1405.2593v2:thm:3.5",
+      "to": "1311.4600v3:thm:1.1",
+      "type": "extends",
+      "note": "thm:3.5 (Chebotarev / Galois-extension primes with prescribed Frobenius) is genuinely new — opens a direction the original 1311.4600 framework didn't cover."
+    },
+    {
+      "from": "0710.2728v1:thm:1",
+      "to": "math/0508185v1:thm:2",
+      "type": "improves",
+      "note": "GPY II quantifies the qualitative $E_1 = 0$ from GPY I to $\\liminf_n d_n / [\\sqrt{\\log p_n}\\,(\\log_2 p_n)^2] < \\infty$."
+    },
+    {
+      "from": "0710.2728v1:thm:4",
+      "to": "math/0508185v1:prop:1",
+      "type": "extends",
+      "note": "GPY II's $S_1$ evaluation extends GPY I's prop:1 to the $\\mathcal{A}$-restricted setting ($\\Lambda_R$-correlations on the intersection $\\mathcal{A}(\\mathcal{H}_1) \\cap \\mathcal{A}(\\mathcal{H}_2)$)."
+    },
+    {
+      "from": "0710.2728v1:thm:5",
+      "to": "math/0508185v1:prop:2",
+      "type": "extends",
+      "note": "GPY II's $S_2$ evaluation extends GPY I's prop:2 to the $\\mathcal{A}$-restricted prime indicator."
+    },
+    {
+      "from": "0710.2728v1:lem:3",
+      "to": "math/0508185v1:lem:3",
+      "type": "extends",
+      "note": "Perturbed $T^*_R$ asymptotic refined to the $\\mathcal{A}$-restricted setting."
+    },
+    {
+      "from": "1311.4600v3:thm:1.3",
+      "to": "0710.2728v1:thm:1",
+      "type": "improves",
+      "note": "Maynard sharpens GPY II's $\\sqrt{\\log p_n}\\,(\\log_2 p_n)^2$ rate to a fixed bounded gap $H_1 \\le 600$."
+    },
+    {
+      "from": "1311.4600v3:thm:1.1",
+      "to": "0710.2728v1:thm:1",
+      "type": "improves",
+      "note": "For $m$-th gaps, Maynard improves on GPY II via the $m^3 e^{4m}$ unconditional bound — different functional form, stronger statement."
+    },
+    {
+      "from": "1305.6289v1:thm:B",
+      "to": "math/0508185v1:thm:1",
+      "type": "imports_result",
+      "note": "Pintz survey states GPY I's conditional theorem verbatim."
+    },
+    {
+      "from": "1305.6289v1:thm:C",
+      "to": "math/0508185v1:thm:2",
+      "type": "imports_result",
+      "note": "Pintz states GPY I's $\\Delta_1 = 0$ result."
+    },
+    {
+      "from": "1305.6289v1:thm:D",
+      "to": "0710.2728v1:thm:1",
+      "type": "imports_result",
+      "note": "Pintz states GPY II's quantitative liminf verbatim."
+    },
+    {
+      "from": "1305.6289v1:thm:3",
+      "to": "0710.2728v1:thm:1",
+      "type": "imports_result",
+      "note": "Pintz pushes $[0,c] \\subset J$ using GPY II's quantitative $\\sqrt{\\log p_n}$ bound."
+    },
+    {
+      "from": "1305.6289v1:thm:4",
+      "to": "0710.2728v1:thm:1",
+      "type": "extends",
+      "note": "Generalized scaling $f(n) \\to \\infty$ uses the GPY II quantitative bound as input."
+    },
+    {
+      "from": "1404.5094v2:thm:1.1",
+      "to": "1311.4600v3:prop:4.2",
+      "type": "imports_result",
+      "note": "BFM applies Maynard's $M_k > 2m/\\theta \\Rightarrow \\mathrm{DHL}[k,m+1]$ reduction to prove that the limit set $L$ hits 9-tuple differences."
+    },
+    {
+      "from": "1404.5094v2:thm:1.1",
+      "to": "1311.4600v3:thm:1.4",
+      "type": "imports_result",
+      "note": "Conditional improvements ($k = 9$ baseline) ride on the same enhanced sieve as Maynard's conditional gap bounds."
+    },
+    {
+      "from": "1311.4600v3:prop:4.1",
+      "to": "1404.5094v2:thm:4.2",
+      "type": "imports_result",
+      "note": "Modified Bombieri-Vinogradov is the level-of-distribution INPUT consumed by Maynard's prop:4.1 in BFM's application, not a specialization of it. Prop:4.1 needs an EH-type hypothesis; thm:4.2 supplies one (restricted to bounded-$P^+(q)$ moduli)."
+    },
+    {
+      "from": "1404.5094v2:lem:4.1",
+      "to": "1511.04468:lem:2.1",
+      "type": "shared_mechanism",
+      "note": "Both papers use the same refined Page-Landau zero-free region; the FMT version (lem:2.1) is the polished form, BFM's lem:4.1 the prototype."
+    },
+    {
+      "from": "1404.5094v2:thm:1.3",
+      "to": "1305.6289v1:thm:3",
+      "type": "improves",
+      "note": "BFM's $m$-tuple limit-point statement quantifies and extends Pintz's $[0,c] \\subset J$ result."
+    },
+    {
+      "from": "1403.5808v1:thm:1.1",
+      "to": "1311.4600v3:thm:1.3",
+      "type": "extends",
+      "note": "Castillo et al: Maynard's $H_1 \\le 600$ over $\\mathbb{Q}$ lifted to bounded gaps in $\\mathcal{O}_K$ of any number field $K$."
+    },
+    {
+      "from": "1403.5808v1:thm:1.3",
+      "to": "1311.4600v3:thm:1.3",
+      "type": "extends",
+      "note": "Function-field $\\mathbb{F}_q[t]$ analog with $q$-uniform constants — stronger uniformity than the $\\mathbb{Q}$ case."
+    },
+    {
+      "from": "1403.5808v1:prop:2.1",
+      "to": "1311.4600v3:prop:4.1",
+      "type": "re_derives",
+      "note": "Sieve weight asymptotic written with prime ideals $\\mathfrak{d}$ in place of integer divisors $d$. Direct word-for-word translation."
+    },
+    {
+      "from": "1403.5808v1:lem:2.2",
+      "to": "1311.4600v3:lem:5.1",
+      "type": "re_derives",
+      "note": "$y$-diagonalization for ideal weights."
+    },
+    {
+      "from": "1403.5808v1:lem:2.3",
+      "to": "1311.4600v3:lem:5.2",
+      "type": "re_derives",
+      "note": "$y^{(m)}$-diagonalization with $g(\\mathfrak{p}) = |\\mathfrak{p}| - 2$."
+    },
+    {
+      "from": "1403.5808v1:lem:2.4",
+      "to": "1311.4600v3:lem:5.3",
+      "type": "re_derives",
+      "note": "$y^{(m)}$-to-$y$ bridge for ideals."
+    },
+    {
+      "from": "1403.5808v1:lem:2.5",
+      "to": "1311.4600v3:lem:6.1",
+      "type": "re_derives",
+      "note": "Selberg-type weighted ideal sum identity."
+    },
+    {
+      "from": "1403.5808v1:thm:2.7",
+      "to": "1311.4600v3:prop:4.2",
+      "type": "re_derives",
+      "note": "Number-field DHL reduction."
+    },
+    {
+      "from": "1403.5808v1:thm:2.8",
+      "to": "1311.4600v3:prop:4.2",
+      "type": "re_derives",
+      "note": "Function-field DHL reduction."
+    },
+    {
+      "from": "1403.5808v1:cor:1.2",
+      "to": "1311.4600v3:thm:1.3",
+      "type": "imports_result",
+      "note": "Totally-real $H_1 \\le 600$ inherits the explicit $k = 105$ / $m = 2$ admissible-tuple construction from Maynard 1311.4600 (the source of the 600 constant). Castillo et al (March 2014) predates Polymath8b's 246 (July 2014)."
+    },
+    {
+      "from": "1511.04468:thm:1",
+      "to": "1408.5110v2:thm:1",
+      "type": "generalizes",
+      "note": "FMT generalizes Maynard's single large gap to chains of $k$ consecutive large gaps. Key novel step: chain construction via combined deterministic and random sieves."
+    },
+    {
+      "from": "1511.04468:thm:1",
+      "to": "1408.4505v2:thm:1",
+      "type": "generalizes",
+      "note": "FMT generalizes FGKT's single large gap to chains. The Ford-Maynard-Tao paper unifies what 1408.5110 and 1408.4505 had done in parallel."
+    },
+    {
+      "from": "1511.04468:thm:2",
+      "to": "1408.5110v2:prop:5",
+      "type": "extends",
+      "note": "FMT's deterministic interval sieve is the chain-version of Maynard's single-gap covering."
+    },
+    {
+      "from": "1511.04468:thm:3",
+      "to": "1408.4505v2:thm:6",
+      "type": "extends",
+      "note": "FMT's random prime sieve is the chain-version of FGKT's random covering."
+    },
+    {
+      "from": "1511.04468:thm:4",
+      "to": "1408.4505v2:thm:6",
+      "type": "generalizes",
+      "note": "FMT abstracts FGKT's specific random covering into a general bipartite covering theorem with sparsity + second-moment hypotheses — usable beyond prime gaps."
+    },
+    {
+      "from": "1511.04468:lem:6.1",
+      "to": "1408.5110v2:lem:6",
+      "type": "extends",
+      "note": "Singular-series factorization for chained intervals extends Maynard's single-interval $I_k$ computation."
+    },
+    {
+      "from": "1511.04468:lem:6.2",
+      "to": "1408.5110v2:lem:7",
+      "type": "extends",
+      "note": "Concentration estimate extends Maynard's marginal $J_k$ computation to $k$ chained intervals."
+    },
+    {
+      "from": "1511.04468:lem:6.3",
+      "to": "1408.4505v2:prop:1",
+      "type": "extends",
+      "note": "Independence-style estimate extends FGKT's variance bound across distinct intervals."
+    },
+    {
+      "from": "1511.04468:thm:5",
+      "to": "1311.4600v3:prop:4.2",
+      "type": "imports_result",
+      "note": "Chain construction reuses Maynard's multidim Selberg sieve as one of two engines (the other being random covering)."
+    },
+    {
+      "from": "2006.06572v2:thm:C",
+      "to": "1402.0811:thm:1.1",
+      "type": "imports_result",
+      "note": "Maynard's PIAP I cites Polymath8a's smooth-modulus equidistribution verbatim as its baseline."
+    },
+    {
+      "from": "2006.06572v2:cor:1.4",
+      "to": "1402.0811:thm:1.1",
+      "type": "generalizes",
+      "note": "Polymath8a needed dense divisibility / smoothness of moduli; PIAP I gets a comparable level for general (non-smooth) double moduli $q_1 q_2$ with $Q_1 \\le x^{1/21}$, $Q_2 \\le x^{10/21-\\varepsilon}$."
+    },
+    {
+      "from": "2006.06572v2:cor:1.3",
+      "to": "1402.0811:thm:2.4",
+      "type": "improves",
+      "note": "PIAP I's almost-all level $1/2 + 1/55$ (any modulus) sharpens what Polymath8a's MPZ window $600\\varpi+180\\delta<7$ achieves only for smooth moduli."
+    },
+    {
+      "from": "2006.06572v2:thm:1.1",
+      "to": "1402.0811:thm:2.8",
+      "type": "extends",
+      "note": "Type II / Type III estimates extended to a strict-polytope regime in $(Q_1, Q_2)$."
+    },
+    {
+      "from": "2006.06572v2:cor:1.4",
+      "to": "1407.4897v4:thm:2.5",
+      "type": "generalizes",
+      "note": "Polymath8b's MPZ inequality $600\\varpi + 180\\delta < 7$ ran over smooth moduli; PIAP I supplies an analogous level for general moduli, in principle usable as a sieve input without the smoothness restriction."
+    },
+    {
+      "from": "2006.07088v2:thm:1.1",
+      "to": "2006.07088v2:def:1",
+      "type": "imports_result",
+      "note": "Triply well-factorable strengthens the well-factorable hypothesis (def:1 vs def:2)."
+    },
+    {
+      "from": "2006.07088v2:thm:1.1",
+      "to": "1402.0811:thm:1.1",
+      "type": "parallel_result",
+      "note": "Polymath8a achieves level $1/2 + 7/300$ for smooth moduli; PIAP II achieves $3/5$ for triply well-factorable sequences. Same goal (BV beyond $1/2$), structurally different hypotheses."
+    },
+    {
+      "from": "2006.07088v2:thm:1.2",
+      "to": "1402.0811:prop:8.4",
+      "type": "parallel_result",
+      "note": "Linear-sieve weights at level $7/12$ give a sieve consequence comparable to Polymath8a's prop:8.4 but via the well-factorable route rather than smooth moduli."
+    },
+    {
+      "from": "2006.07088v2:thm:1.1",
+      "to": "2006.06572v2:thm:1.1",
+      "type": "parallel_result",
+      "note": "Sister paper in the same trilogy. PIAP I handles fixed residue classes, PIAP II handles well-factorable sums. Different attack on the same beyond-BV question."
+    },
+    {
+      "from": "1604.01041v2:thm:1.1",
+      "to": "1311.4600v3:thm:1.1",
+      "type": "shared_mechanism",
+      "note": "Same author's sieve methods, applied to a totally different problem (digit-restricted primes vs. small gaps). Demonstrates the framework's generality."
+    },
+    {
+      "from": "1604.01041v2:prop:7.1",
+      "to": "1402.0811:thm:2.8",
+      "type": "shared_mechanism",
+      "note": "Type I equidistribution at level $X^{50/77}$ uses the same dispersion-method machinery as Polymath8a's Type I estimate, repurposed for the digit-restricted set $\\mathcal{A}$."
+    },
+    {
+      "from": "1604.01041v2:prop:6.1",
+      "to": "1311.4600v3:prop:4.1",
+      "type": "shared_mechanism",
+      "note": "Sieve asymptotic decomposition over dyadic prime ranges parallels the multidim Selberg sieve's smooth-$F$ evaluation, adapted to a Fourier-analytic ambient set."
+    }
+  ]
+}

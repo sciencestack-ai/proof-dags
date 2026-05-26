@@ -1,0 +1,160 @@
+{
+  "paper": "math/0410380v2",
+  "title": "On some dyadic models of the Euler equations",
+  "authors": [
+    "Fabian Waleffe"
+  ],
+  "generated": "2026-03-09",
+  "status": "complete",
+  "nodes": {
+    "sec:1": {
+      "type": "Section",
+      "number": "1",
+      "section": "1",
+      "role": "context",
+      "summary": "Reviews inviscid Burgers blowup via method of characteristics. Shows $H^\\alpha$ blowup for $\\alpha \\ge 1/2 (generic)$ or $\\alpha \\ge 5/6 (non-generic)$. Frames the open incompressible Euler singularity question and states the paper's goal: KP model = dyadic Burgers, blowup for all $\\alpha > 0$."
+    },
+    "sec:2": {
+      "type": "Section",
+      "number": "2",
+      "section": "2",
+      "role": "key_mechanism",
+      "summary": "Derives the dyadic inviscid Burgers equation (eq:12) by Fourier-transforming conservative Burgers, restricting to odd solutions with dyadic wavenumbers k = 2^j. The chain ODE $da_j/dt = 2^j(a_{j-1}^2 - 2a_j a_{j+1})$ emerges from the quadratic self-interaction after artificial dyadic restriction."
+    },
+    "sec:3": {
+      "type": "Section",
+      "number": "3",
+      "section": "3",
+      "role": "key_reduction",
+      "summary": "Proves KP wavelet model (eq:13) reduces exactly to dyadic Burgers (eq:12) for initial data uniform across same-level cubes. The substitution $a_j = 2^{3j/2} u_j$ transforms KP chain (eq:14-15) into dyadic Burgers up to time rescaling. The 2^3 factor from 8 children per cube absorbs into the variable change."
+    },
+    "sec:4": {
+      "type": "Section",
+      "number": "4",
+      "section": "4",
+      "role": "auxiliary",
+      "summary": "Analyzes the Friedlander-Pavlovic model (eq:18). Shows it is structurally similar to dyadic Burgers but with $\\lambda = 2^{5/2}$ instead of $\\lambda = 2$. Identifies inconsistencies in FP's derivation: symmetrization of the gradient matrix $B^T$ is unjustified, and the coupling coefficient 2^{5j/2} overestimates single-Fourier-mode interactions."
+    },
+    "lem:1": {
+      "type": "Lemma",
+      "number": "1",
+      "section": "5",
+      "role": "key_technical",
+      "summary": "Energy transfer lemma for the general chain model (eq:19). If tail energy $E_{B(j)}(t_0) \\ge q^j$ for $\\lambda^{-2} <$ q < 1, then within time $\\rho^j$ there exists t such that $E_{B(j+1)}(t) \\ge q^{j+1}$. Proof by contradiction: assuming the shifted tail stays small forces $a_j$ to be large (from energy gap), which drives $a_{j+1}$ growth via the nonlinear coupling, contradicting the upper bound."
+    },
+    "thm:1": {
+      "type": "Theorem",
+      "number": "1",
+      "section": "5",
+      "role": "main_result",
+      "summary": "MAIN RESULT: For the general chain model (eq:19) with $\\lambda > 1$, non-negative initial data, and $E_{B(J)}(0) \\ge q^J$, the $H^\\alpha$ norm blows up in finite time for ANY $\\alpha > 0$. Proof iterates Lemma 1: energy cascades to wavenumber J+k at time $t_k$, giving ‖a‖$^2_{H^\\alpha} \\ge \\mu^{2\\alpha(J+k)} q^{J+k} \\to \\infty$ provided $\\mu^{2\\alpha}q > 1$. Blowup time is finite: $t_k \\le \\rho^J/(1-\\rho)$. Applies to KP $(\\lambda=2)$, FP $(\\lambda=2^{5/2})$, and all intermediate models."
+    },
+    "sec:6": {
+      "type": "Section",
+      "number": "6",
+      "section": "6",
+      "role": "context",
+      "summary": "Discusses Obukhov's 1971 shell model (eq:40) as an alternative: instability cascade rather than nonlinear steepening. Notes the Kolmogorov-Obukhov $k^{-5/3}$ power-law steady state (eq:41) is shared by both model classes. Poses open question: what blowup occurs in the inviscid Obukhov model and is there a connection to the power law?"
+    }
+  },
+  "edges": [
+    {
+      "from": "sec:3",
+      "to": "sec:2",
+      "type": "depends_on",
+      "note": "KP chain (eq:14-15) is shown identical to dyadic Burgers (eq:12) via $a_j = 2^{3j/2} u_j$. The derivation in sec:2 provides the target form."
+    },
+    {
+      "from": "sec:4",
+      "to": "sec:2",
+      "type": "depends_on",
+      "note": "FP model (eq:18) is structurally compared to dyadic Burgers. Same chain form but with $\\lambda = 2^{5/2}$ vs $\\lambda = 2$."
+    },
+    {
+      "from": "sec:4",
+      "to": "sec:3",
+      "type": "depends_on",
+      "note": "FP model analysis references the KP reduction to contextualize the overestimated coupling coefficients."
+    },
+    {
+      "from": "lem:1",
+      "to": "sec:2",
+      "type": "depends_on",
+      "note": "Uses the general chain model (eq:19) which generalizes dyadic Burgers, plus its forward energy flux property (eq:22) and nonnegativity preservation."
+    },
+    {
+      "from": "thm:1",
+      "to": "lem:1",
+      "type": "depends_on",
+      "note": "Proof iterates Lemma 1 k times to cascade energy from wavenumber J to J+k. The geometric time sum $t_k \\le \\rho^J/(1-\\rho)$ gives finite blowup time."
+    },
+    {
+      "from": "thm:1",
+      "to": "sec:3",
+      "type": "depends_on",
+      "note": "Applies blowup to KP model: since KP = dyadic Burgers $(\\lambda=2)$, Theorem 1 gives $H^\\alpha$ blowup for all $\\alpha > 0$, strengthening KP04's $H^{3/2+\\varepsilon}$ result."
+    },
+    {
+      "from": "thm:1",
+      "to": "sec:4",
+      "type": "depends_on",
+      "note": "Applies blowup to FP model $(\\lambda=2^{5/2})$: any r > 0 suffices, vs FP04's restriction r > 3/2."
+    }
+  ],
+  "critical_path": [
+    "thm:1",
+    "lem:1",
+    "sec:2"
+  ],
+  "proof_architecture": {
+    "model_derivation": {
+      "description": "Derives the dyadic inviscid Burgers equation from Fourier-restricted 1D Burgers and reviews classical blowup",
+      "nodes": [
+        "sec:1",
+        "sec:2"
+      ]
+    },
+    "model_reduction": {
+      "description": "Shows KP and FP models reduce to or belong to the dyadic Burgers class of chain models",
+      "nodes": [
+        "sec:3",
+        "sec:4"
+      ]
+    },
+    "blowup_proof": {
+      "description": "Proves finite-time $H^\\alpha$ blowup for any $\\alpha > 0$ for the entire class of chain models with $\\lambda > 1$",
+      "nodes": [
+        "lem:1",
+        "thm:1"
+      ]
+    },
+    "extensions": {
+      "description": "Comparison with Obukhov cascade model and open questions about blowup-power law connection",
+      "nodes": [
+        "sec:6"
+      ]
+    }
+  },
+  "bibliography": {
+    "KP04": {
+      "title": "Finite time blow-up for a dyadic model of the Euler equations",
+      "arxiv_id": null,
+      "in_registry": false
+    },
+    "FP04": {
+      "title": "Blow-up in a three-dimensional vector model for the Euler equations",
+      "arxiv_id": null,
+      "in_registry": false
+    },
+    "DS01": {
+      "title": "A quasilinear approximation for the three-dimensional Navier-Stokes system",
+      "arxiv_id": null,
+      "in_registry": false
+    },
+    "Wds04": {
+      "title": "Remarks on a quasilinear model of the Navier-Stokes equations",
+      "arxiv_id": "math/0409310",
+      "in_registry": false
+    }
+  }
+}

@@ -1,0 +1,210 @@
+{
+  "paper": "1604.01041v2",
+  "title": "Primes with restricted digits",
+  "authors": [
+    "James Maynard"
+  ],
+  "generated": "2026-05-07",
+  "status": "complete",
+  "nodes": {
+    "thm:1.1": {
+      "type": "Theorem",
+      "number": "1.1",
+      "section": "1",
+      "role": "main_result",
+      "summary": "$\\#\\{p \\in \\mathcal{A} : p < X\\} \\asymp \\#\\mathcal{A} / \\log X \\asymp X^{\\log 9 / \\log 10} / \\log X$, where $\\mathcal{A}$ is integers $< X$ with no digit equal to $a_0$ in base 10. Confirms the Hardy-Littlewood prediction for a sparse digit-restricted set."
+    },
+    "thm:1.2": {
+      "type": "Theorem",
+      "number": "1.2",
+      "section": "1",
+      "role": "main_result",
+      "summary": "Generalization to base $q$: missing $s \\le q^{23/80}$ digits in base $q$ gives $\\#$ primes $\\asymp X^{\\log(q-s)/\\log q} / \\log X$. For special $\\mathcal{B}$ (initial or final segment), $s \\le q^{1/2-\\varepsilon}$."
+    },
+    "prop:6.1": {
+      "type": "Proposition",
+      "number": "6.1",
+      "section": "6",
+      "role": "main_technical",
+      "summary": "Sieve asymptotic terms: bilinear/multilinear sum over primes $p_1 \\le \\cdots \\le p_\\ell$ in dyadic ranges with restricted-digit indicator gives $o(\\#\\mathcal{A} / \\log X)$ error in the asymptotic regime $\\theta_1 = 9/25 + 2\\varepsilon, \\theta_2 = 17/40 - 2\\varepsilon$."
+    },
+    "prop:6.2": {
+      "type": "Proposition",
+      "number": "6.2",
+      "section": "6",
+      "role": "main_technical",
+      "summary": "Type II terms: bilinear sum control over the bilinear regime $[\\theta_1, \\theta_2]$. The hardest range, requires Fourier analysis on $\\mathcal{A}$."
+    },
+    "prop:7.1": {
+      "type": "Proposition",
+      "number": "7.1",
+      "section": "7",
+      "role": "key_reduction",
+      "summary": "Type I estimate: $\\mathcal{A}$ is equidistributed in residue classes $\\bmod\\,q$ for $q \\le X^{50/77} (\\log X)^{-2A-2}$. Beyond Bombieri-Vinogradov by exploiting the digit-restriction structure of $\\mathcal{A}$."
+    },
+    "prop:7.2": {
+      "type": "Proposition",
+      "number": "7.2",
+      "section": "7",
+      "role": "key_reduction",
+      "summary": "Companion Type I estimate at intermediate ranges. Together with prop:7.1 supplies the equidistribution input for Buchstab-style sieve decomposition."
+    },
+    "lem:7.3": {
+      "type": "Lemma",
+      "number": "7.3",
+      "section": "7",
+      "role": "technical",
+      "summary": "Fourier-analytic estimate on the indicator $\\mathbf{1}_{\\mathcal{A}}$: bounds on the $L^\\infty$ norm of the Fourier transform of the digit-restricted set, yielding the equidistribution-in-AP results."
+    },
+    "lem:7.4": {
+      "type": "Lemma",
+      "number": "7.4",
+      "section": "7",
+      "role": "technical",
+      "summary": "Refined Fourier bound for prop:7.1 / prop:7.2."
+    },
+    "lem:8.1": {
+      "type": "Lemma",
+      "number": "8.1",
+      "section": "8",
+      "role": "technical",
+      "summary": "Combinatorial decomposition lemma in the spirit of Heath-Brown's identity, adapted to the bilinear regime needed by prop:6.2."
+    }
+  },
+  "edges": [
+    {
+      "from": "thm:1.1",
+      "to": "prop:6.1",
+      "type": "depends_on",
+      "note": "Sieve asymptotic terms."
+    },
+    {
+      "from": "thm:1.1",
+      "to": "prop:6.2",
+      "type": "depends_on",
+      "note": "Type II terms."
+    },
+    {
+      "from": "thm:1.1",
+      "to": "prop:7.1",
+      "type": "depends_on",
+      "note": "Type I equidistribution of $\\mathcal{A}$ in APs."
+    },
+    {
+      "from": "thm:1.1",
+      "to": "prop:7.2",
+      "type": "depends_on",
+      "note": "Companion Type I."
+    },
+    {
+      "from": "thm:1.2",
+      "to": "thm:1.1",
+      "type": "extends",
+      "note": "Base-$q$ generalization with $s$ missing digits."
+    },
+    {
+      "from": "prop:7.1",
+      "to": "lem:7.3",
+      "type": "depends_on",
+      "note": "Fourier bound on $\\mathbf{1}_{\\mathcal{A}}$."
+    },
+    {
+      "from": "prop:7.1",
+      "to": "lem:7.4",
+      "type": "depends_on",
+      "note": "Refined Fourier bound."
+    },
+    {
+      "from": "prop:7.2",
+      "to": "lem:7.3",
+      "type": "depends_on",
+      "note": "Same Fourier engine."
+    },
+    {
+      "from": "prop:7.2",
+      "to": "lem:7.4",
+      "type": "depends_on",
+      "note": "Refined estimate."
+    },
+    {
+      "from": "prop:6.2",
+      "to": "lem:8.1",
+      "type": "depends_on",
+      "note": "Heath-Brown-style combinatorial decomposition for the Type II bilinear range."
+    }
+  ],
+  "critical_path": [
+    "thm:1.1",
+    "prop:7.1",
+    "lem:7.3"
+  ],
+  "proof_architecture": {
+    "main_results": {
+      "description": "thm:1.1 (decimal, missing one digit), thm:1.2 (base $q$, missing up to $q^{23/80}$ digits).",
+      "nodes": [
+        "thm:1.1",
+        "thm:1.2"
+      ]
+    },
+    "sieve_decomposition": {
+      "description": "prop:6.1 (sieve asymptotic), prop:6.2 (Type II terms), lem:8.1 (Heath-Brown-style decomposition). The combinatorial backbone.",
+      "nodes": [
+        "prop:6.1",
+        "prop:6.2",
+        "lem:8.1"
+      ]
+    },
+    "fourier_layer": {
+      "description": "prop:7.1, prop:7.2 (Type I equidistribution at level $X^{50/77}$); lem:7.3, lem:7.4 (Fourier-analytic bounds on $\\mathbf{1}_{\\mathcal{A}}$). The arithmetic structure of the digit-restricted set.",
+      "nodes": [
+        "prop:7.1",
+        "prop:7.2",
+        "lem:7.3",
+        "lem:7.4"
+      ]
+    }
+  },
+  "bibliography": {
+    "Maynard:smallgaps": {
+      "title": "Small gaps between primes",
+      "authors": [
+        "James Maynard"
+      ],
+      "arxiv_id": "1311.4600",
+      "in_registry": true,
+      "role": "method_source — same author's sieve framework, applied to a totally different problem"
+    },
+    "HeathBrown:Identity": {
+      "title": "Prime number theorem with error term (Heath-Brown identity)",
+      "authors": [
+        "D. R. Heath-Brown"
+      ],
+      "year": 1982,
+      "arxiv_id": null,
+      "in_registry": false,
+      "role": "foundational — combinatorial decomposition used in lem:8.1"
+    },
+    "BombieriFriedlanderIwaniec:1986": {
+      "title": "Primes in arithmetic progressions to large moduli",
+      "authors": [
+        "Enrico Bombieri",
+        "John Friedlander",
+        "Henryk Iwaniec"
+      ],
+      "year": 1986,
+      "arxiv_id": null,
+      "in_registry": false,
+      "role": "foundational — equidistribution-in-AP framework"
+    },
+    "Vinogradov:1937": {
+      "title": "Vinogradov's method for prime number sums",
+      "authors": [
+        "I. M. Vinogradov"
+      ],
+      "year": 1937,
+      "arxiv_id": null,
+      "in_registry": false,
+      "role": "foundational — Type I/II decomposition originates here"
+    }
+  }
+}

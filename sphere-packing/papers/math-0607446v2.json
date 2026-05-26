@@ -1,0 +1,129 @@
+{
+  "paper": "math/0607446v2",
+  "title": "Universally optimal distribution of points on spheres",
+  "authors": ["Henry Cohn", "Abhinav Kumar"],
+  "generated": "2026-05-26",
+  "status": "complete",
+  "nodes": {
+    "thm:2": {
+      "type": "Theorem",
+      "number": "2",
+      "section": "1",
+      "role": "main_result",
+      "summary": "Sharp configurations on $S^{n-1}$ (and the regular $600$-cell in $S^3$) are universally optimal: for every completely monotonic $f:(0,4]\\to\\mathbb{R}$, they minimize $\\sum_{x\\ne y}f(|x-y|^2)$ among configurations of the same size — the original universal-optimality framework on spheres."
+    },
+    "thm:7": {
+      "type": "Theorem",
+      "number": "7",
+      "section": "3",
+      "role": "technical",
+      "summary": "Root positivity: for $\\alpha\\in\\mathbb{R}$ and $r_1<\\cdots<r_n$ the roots of $p_n+\\alpha p_{n-1}$, the partial products $\\prod_{i=1}^k(t-r_i)$ (with $k<n$) have positive coefficients in the orthogonal-polynomial basis — the positivity input to the LP bound."
+    },
+    "thm:24": {
+      "type": "Theorem",
+      "number": "24",
+      "section": "8",
+      "role": "main_result",
+      "summary": "Universal optimality on general compact two-point homogeneous spaces $X$: sharp configurations $\\mathcal{C}\\subset X$ are universally optimal for any absolutely monotonic $f:[-1,1)\\to\\mathbb{R}$ — the abstract framework generalizing Theorem 2 beyond spheres."
+    },
+    "prop:4": {
+      "type": "Proposition",
+      "number": "4",
+      "section": "1",
+      "role": "auxiliary",
+      "summary": "Obstruction: for $n+1 < N < 2n$, no $N$-point universally optimal configuration exists on $S^{n-1}$ — a non-existence theorem complementing Theorem 2's existence on the sharp/600-cell sizes."
+    },
+    "prop:6": {
+      "type": "Proposition",
+      "number": "6",
+      "section": "3",
+      "role": "technical",
+      "summary": "Absolute monotonicity preservation: if $f$ is absolutely monotonic on $(a,b)$, so is $\\frac{f(t)-p(t)}{(t-t_1)^{k_1}\\cdots(t-t_m)^{k_m}}$ — the algebraic identity letting the LP polynomial be subtracted while preserving monotonicity."
+    },
+    "prop:8": {
+      "type": "Proposition",
+      "number": "8",
+      "section": "3",
+      "role": "technical",
+      "summary": "Quotient positivity: for the largest root $r$ of $p_n+\\alpha p_{n-1}$, the quotient $(p_n+\\alpha p_{n-1})/(t-r)$ has positive coefficients in $p_0,\\dots,p_{n-1}$ — the local positivity ingredient."
+    },
+    "prop:15": {
+      "type": "Proposition",
+      "number": "15",
+      "section": "4",
+      "role": "key_mechanism",
+      "summary": "Sphere LP bound: for a polynomial $h:[-1,1]\\to\\mathbb{R}$ with $h(t)\\le f(2-2t)$ for $t\\in[-1,1)$ and nonnegative coefficients in Gegenbauer polynomials, the energy $\\sum f(|x-y|^2)$ is bounded below by an explicit expression — the linear-programming dual on $S^{n-1}$."
+    },
+    "prop:25": {
+      "type": "Proposition",
+      "number": "25",
+      "section": "8",
+      "role": "key_mechanism",
+      "summary": "LP bound on general $X$: for absolutely monotonic $f$ and polynomial $h\\le f$ on $[-1,1)$ with nonneg coefficients in the relevant orthogonal polynomials for $X$, the analogous energy bound holds — the abstract LP framework."
+    },
+    "prop:31": {
+      "type": "Proposition",
+      "number": "31",
+      "section": "9",
+      "role": "key_mechanism",
+      "summary": "Euclidean universal-optimality criterion: a Fourier-positive $h:\\mathbb{R}^n\\to\\mathbb{R}$ with $h(x)\\le f(|x|^2)$ for $x\\ne 0$ gives an energy lower bound for any periodic configuration — the criterion the CKMRV universal-optimality theorem (1902.05438) verifies for $E_8$ and Leech."
+    },
+    "conjecture:32": {
+      "type": "Conjecture",
+      "number": "32",
+      "section": "9",
+      "role": "context",
+      "summary": "Universal-optimality conjecture for $E_8$ and Leech: for $n\\in\\{2,8,24\\}$ and completely monotonic $f$ with appropriate decay, the corresponding Euclidean auxiliary $h$ exists — the conjecture later proved by CKMRV 2019 (1902.05438:thm:1.4) for $n=8,24$."
+    },
+    "prop:34": {
+      "type": "Proposition",
+      "number": "34",
+      "section": "9",
+      "role": "technical",
+      "summary": "Existence of Euclidean auxiliary $h$ for completely monotonic $f = O(|x|^{-1/2-\\varepsilon})$ at infinity — the asymptotic-decay version of the existence statement."
+    }
+  },
+  "edges": [
+    { "from": "thm:2", "to": "prop:15", "type": "depends_on", "note": "The universal-optimality theorem on $S^{n-1}$ is proved by exhibiting suitable polynomials $h$ for the LP bound (Proposition 15)." },
+    { "from": "thm:2", "to": "prop:6", "type": "uses", "note": "The construction uses the absolute-monotonicity preservation lemma (Proposition 6)." },
+    { "from": "thm:24", "to": "thm:2", "type": "generalizes", "note": "Theorem 24 generalizes Theorem 2 from spheres to all compact two-point homogeneous spaces." },
+    { "from": "thm:24", "to": "prop:25", "type": "depends_on", "note": "The abstract universal-optimality theorem uses the general LP bound (Proposition 25)." },
+    { "from": "prop:25", "to": "prop:15", "type": "generalizes", "note": "The general-$X$ LP bound generalizes the sphere LP bound." },
+    { "from": "prop:15", "to": "prop:8", "type": "depends_on", "note": "The chosen polynomial $h$ comes from the quotient positivity result (Proposition 8)." },
+    { "from": "prop:8", "to": "thm:7", "type": "depends_on", "note": "Quotient positivity is read off the root positivity theorem (Theorem 7)." },
+    { "from": "prop:31", "to": "prop:15", "type": "uses_mechanism", "note": "The Euclidean criterion is the $\\mathbb{R}^n$ analogue of the sphere LP bound; the same Fourier-positive-$h$ mechanism." },
+    { "from": "prop:34", "to": "prop:31", "type": "depends_on", "note": "Proposition 34 supplies the existence of Euclidean auxiliary $h$ that Proposition 31's criterion requires." },
+    { "from": "conjecture:32", "to": "prop:31", "type": "addresses_same_question", "note": "Conjecture 32 predicts that the Euclidean criterion of Proposition 31 is satisfied for $E_8$ and Leech with completely monotonic $f$." }
+  ],
+  "critical_path": ["thm:2", "prop:15", "prop:8", "thm:7"],
+  "proof_architecture": {
+    "main_results": {
+      "description": "Universal optimality of sharp configurations on spheres and on general compact two-point homogeneous spaces.",
+      "nodes": ["thm:2", "thm:24"]
+    },
+    "LP_bound": {
+      "description": "The linear-programming bounds: sphere version, general two-point homogeneous version, and the Euclidean criterion.",
+      "nodes": ["prop:15", "prop:25", "prop:31"]
+    },
+    "polynomial_positivity": {
+      "description": "Root positivity for $p_n+\\alpha p_{n-1}$ and the quotient positivity that constructs the LP polynomial.",
+      "nodes": ["thm:7", "prop:8"]
+    },
+    "preservation_and_existence": {
+      "description": "Absolute-monotonicity preservation under polynomial subtraction and existence of Euclidean auxiliary $h$ with appropriate decay.",
+      "nodes": ["prop:6", "prop:34"]
+    },
+    "obstructions": {
+      "description": "Non-existence of universally optimal configurations at intermediate sizes.",
+      "nodes": ["prop:4"]
+    },
+    "Euclidean_conjecture": {
+      "description": "The conjecture predicting universal optimality of $E_8$ and Leech in the Euclidean setting (later proved by CKMRV 2019).",
+      "nodes": ["conjecture:32"]
+    }
+  },
+  "bibliography": {
+    "ConwaySloane": { "title": "Conway–Sloane — Sphere Packings, Lattices and Groups", "arxiv_id": null, "in_registry": false },
+    "Levenshtein": { "title": "V. I. Levenshtein — packing bounds via polynomial method", "arxiv_id": null, "in_registry": false }
+  }
+}

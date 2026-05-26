@@ -1,0 +1,190 @@
+{
+  "paper": "2507.08733v2",
+  "title": "A note on certain scenarios of Type II blowups of suitable weak solutions to the Navier-Stokes equations",
+  "authors": [
+    "Gregory Seregin"
+  ],
+  "generated": "2026-03-09",
+  "status": "complete",
+  "nodes": {
+    "thm:2.1": {
+      "type": "Theorem",
+      "number": "2.1",
+      "section": "2",
+      "role": "main_result",
+      "summary": "Rules out Type II blowup scenario (1.2)+(1.4) when m₀ < f(m). Uses Euler scaling (2.7) and contradiction via Hölder inequality: the assumed blowup rate forces $\\varepsilon$₀$\\lambda^\\gamma$ to diverge, which is impossible under the uniform bound M₁."
+    },
+    "rem:2.2": {
+      "type": "Remark",
+      "number": "2.2",
+      "section": "2",
+      "role": "context",
+      "summary": "Notes that [Seregin2023] imposed the stricter identity (2.5) relating m and m₀. Theorem 2.1 shows this is unnecessary — the weaker inequality (2.3) suffices to exclude the blowup scenario."
+    },
+    "thm:3.1": {
+      "type": "Theorem",
+      "number": "3.1",
+      "section": "3",
+      "role": "key_reduction",
+      "summary": "Key reduction: if the modified blowup scenario (3.1)+(1.4)+(3.5) occurs, there exists a nontrivial ancient solution (u,p) to the Euler equations in Q₋ $= \\mathbb{R}^3\\times(-\\infty,0)$ satisfying bound (3.7), energy inequality (3.9), and the nontriviality condition $M^{s,l}_{\\kappa,m$₀$}(u,1) \\ge \\varepsilon$₀/2. Reduces blowup exclusion to Liouville theorems for ancient Euler solutions."
+    },
+    "prop:4.1": {
+      "type": "Proposition",
+      "number": "4.1",
+      "section": "4",
+      "role": "auxiliary",
+      "summary": "Liouville theorem for self-similar Euler profiles: U ≡ 0 for 1/2 < m < 3/5 (i.e., 0 < m₁ < 1/5) under the growth condition (4.4) with $\\gamma < (ln(2+m$₁) - ln 2)/(m₁ ln 2). Rules out self-similar blowup in this parameter range. Proof in [Seregin2023]."
+    },
+    "prop:4.2": {
+      "type": "Proposition",
+      "number": "4.2",
+      "section": "4",
+      "role": "auxiliary",
+      "summary": "Conservation law for axisymmetric ancient Euler solutions with zero swirl: the functional g(t) = (2/l₁$)\\int(|\\omega_\\theta|/r)^{l$₁/2} dx is constant in time. If $\\omega_\\theta(\\cdot,t$₀) = 0 at any time, then u ≡ 0 in Q₋. Proof in [Seregin2023-1]."
+    },
+    "thm:5.1": {
+      "type": "Theorem",
+      "number": "5.1",
+      "section": "5",
+      "role": "main_result",
+      "summary": "Rules out modified blowup scenario (s=l=3, $\\kappa=2)$ under additional Ladyzhenskaya-Prodi-Serrin type condition v $\\in L_{s₂,l₂}(Q)$ with 3/s₂ $+ (\\alpha+1)/l$₂ $= \\alpha$. Full proof via Theorem 3.1's ancient Euler solution, then two cases: (i) l₂ $< \\infty$ — scaling forces u = 0 in Q; (ii) l₂ $= \\infty$ — elaborate energy identity + pressure splitting (p₁+p₂) shows $u(\\cdot,-T$₀) = 0 for all T₀, contradicting nontriviality."
+    },
+    "rem:5.2": {
+      "type": "Remark",
+      "number": "5.2",
+      "section": "5",
+      "role": "context",
+      "summary": "Explains the Ladyzhenskaya-Prodi-Serrin name: when m = 1 (Type I), the identity (5.3) reduces to the classical LPS condition 3/s₂ + 2/l₂ = 1. Theorem 5.1 thus generalizes the LPS regularity theory to Type II blowup scenarios."
+    }
+  },
+  "edges": [
+    {
+      "from": "rem:2.2",
+      "to": "thm:2.1",
+      "type": "depends_on",
+      "note": "Observes that Theorem 2.1 relaxes the identity (2.5) from [Seregin2023] to the inequality (2.3)"
+    },
+    {
+      "from": "thm:3.1",
+      "to": "thm:2.1",
+      "type": "depends_on",
+      "note": "Uses the Euler scaling (2.7) introduced in proof of Theorem 2.1; necessary condition (3.3) derives from inequality (2.3)"
+    },
+    {
+      "from": "prop:4.1",
+      "to": "thm:3.1",
+      "type": "depends_on",
+      "note": "Function class (4.2) for self-similar profiles derives from the ancient solution bounds (3.7) produced by Theorem 3.1"
+    },
+    {
+      "from": "prop:4.2",
+      "to": "thm:3.1",
+      "type": "depends_on",
+      "note": "Applies to ancient Euler solutions satisfying conditions (3.7)-(3.9) from Theorem 3.1; additional restrictions (4.7)-(4.9) motivated by the blowup scenario"
+    },
+    {
+      "from": "thm:5.1",
+      "to": "thm:3.1",
+      "type": "depends_on",
+      "note": "Proof invokes Theorem 3.1 to extract a nontrivial ancient Euler solution from the blowup sequence, then shows it must be trivial under LPS"
+    },
+    {
+      "from": "thm:5.1",
+      "to": "thm:2.1",
+      "type": "depends_on",
+      "note": "Repeats the Euler scaling (2.7) from proof of Theorem 2.1 for the special case s=l=3, $\\kappa=2, \\lambda=r_k$"
+    },
+    {
+      "from": "rem:5.2",
+      "to": "thm:5.1",
+      "type": "depends_on",
+      "note": "Interprets Theorem 5.1 as a generalization of classical LPS regularity theory to Type II scenarios"
+    }
+  ],
+  "critical_path": [
+    "thm:5.1",
+    "thm:3.1",
+    "thm:2.1"
+  ],
+  "proof_architecture": {
+    "layer_1_scenario_exclusion": {
+      "description": "Direct exclusion of Type II blowup via Euler scaling and Hölder inequality for m₀ < f(m)",
+      "nodes": [
+        "thm:2.1",
+        "rem:2.2"
+      ]
+    },
+    "layer_2_blowup_to_euler": {
+      "description": "Reduces remaining blowup scenarios to existence of nontrivial ancient Euler solutions via compactness",
+      "nodes": [
+        "thm:3.1"
+      ]
+    },
+    "layer_3_liouville_tools": {
+      "description": "Liouville theorems ruling out ancient Euler solutions: self-similar (Prop 4.1) and axisymmetric conservation (Prop 4.2)",
+      "nodes": [
+        "prop:4.1",
+        "prop:4.2"
+      ]
+    },
+    "layer_4_lps_regularity": {
+      "description": "Full regularity under Ladyzhenskaya-Prodi-Serrin condition: ancient Euler solution forced trivial via energy identity and pressure splitting",
+      "nodes": [
+        "thm:5.1",
+        "rem:5.2"
+      ]
+    }
+  },
+  "bibliography": {
+    "CKN": {
+      "title": "Partial regularity of suitable weak solutions of the Navier-Stokes equations",
+      "arxiv_id": null,
+      "in_registry": false
+    },
+    "KikSer": {
+      "title": "Weak solutions to the Cauchy problem for the Navier-Stokes equations satisfying the local energy inequality",
+      "arxiv_id": null,
+      "in_registry": false
+    },
+    "LS1999": {
+      "title": "On partial regularity of suitable weak solutions to the three-dimensional Navier-Stokes equations",
+      "arxiv_id": null,
+      "in_registry": false
+    },
+    "Lin": {
+      "title": "A new proof of the Caffarelli-Kohn-Nirenberg theorem",
+      "arxiv_id": null,
+      "in_registry": false
+    },
+    "Seregin2010": {
+      "title": "Weak solutions to the Navier-Stokes equations with bounded scale-invariant quantities",
+      "arxiv_id": null,
+      "in_registry": false
+    },
+    "Seregin2015": {
+      "title": "Lecture notes on regularity theory for the Navier-Stokes equations",
+      "arxiv_id": null,
+      "in_registry": false
+    },
+    "Seregin2020": {
+      "title": "Local regularity of axisymmetric solutions to the Navier-Stokes equations",
+      "arxiv_id": null,
+      "in_registry": false
+    },
+    "Seregin2023": {
+      "title": "Remarks on Type II blowups of solutions to the Navier-Stokes equations",
+      "arxiv_id": null,
+      "in_registry": false
+    },
+    "Seregin2023-1": {
+      "title": "On Type II blowups of axisymmetric solutions to the Navier-Stokes equations",
+      "arxiv_id": "2402.13229v1",
+      "in_registry": false
+    },
+    "SS2009": {
+      "title": "On Type I singularities of the local axi-symmetric solutions of the Navier-Stokes equations",
+      "arxiv_id": null,
+      "in_registry": false
+    }
+  }
+}

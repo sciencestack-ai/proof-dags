@@ -1,0 +1,120 @@
+{
+  "title": "Perfectoid Spaces — Scholze Program Proof DAG",
+  "tags": ["algebraic-geometry", "p-adic-hodge", "perfectoid", "scholze", "tilting", "almost-purity", "diamonds", "prismatic-cohomology", "condensed-mathematics-adjacent", "lean-formalization"],
+  "lean_angle": {
+    "project": "Perfectoid Project (Buzzard, Commelin, Massot 2019)",
+    "system": "Lean 3 + mathlib",
+    "scope": "Formalized the *definition* of perfectoid space (1111.4914 §3) — not the theorems",
+    "comparison": "Our DAG covers the theorem cluster Lean has not reached. Direct 'definition formalized, theorem chain not formalized' contrast."
+  },
+  "papers": {
+    "1111.4914": {
+      "title": "Perfectoid spaces",
+      "authors": ["Peter Scholze"],
+      "year": 2012,
+      "venue": "Publ. Math. IHES 116",
+      "role": "root — foundational definitions, tilting equivalence, almost purity, weight-monodromy in special cases"
+    },
+    "1211.6357": {
+      "title": "Moduli of p-divisible groups",
+      "authors": ["Peter Scholze", "Jared Weinstein"],
+      "year": 2013,
+      "role": "direct successor — perfectoid Shimura varieties, moduli space at infinite level"
+    },
+    "1602.03148": {
+      "title": "Integral p-adic Hodge theory",
+      "authors": ["Bhargav Bhatt", "Matthew Morrow", "Peter Scholze"],
+      "year": 2016,
+      "role": "BMS1 — integrates perfectoid technology with crystalline / de Rham comparison"
+    },
+    "1802.03261": {
+      "title": "Topological Hochschild homology and integral p-adic Hodge theory",
+      "authors": ["Bhargav Bhatt", "Matthew Morrow", "Peter Scholze"],
+      "year": 2018,
+      "role": "BMS2 — recasts BMS1 via THH; bridge to homotopy theory"
+    },
+    "1905.08229": {
+      "title": "Prisms and prismatic cohomology",
+      "authors": ["Bhargav Bhatt", "Peter Scholze"],
+      "year": 2019,
+      "role": "successor / unification — prismatic site subsumes crystalline, etale, de Rham"
+    },
+    "1709.07343": {
+      "title": "Étale cohomology of diamonds",
+      "authors": ["Peter Scholze"],
+      "year": 2017,
+      "role": "framework-generalization — diamonds as v-sheaves of perfectoid spaces"
+    },
+    "1301.0792": {
+      "title": "Relative p-adic Hodge theory: Foundations",
+      "authors": ["Kiran S. Kedlaya", "Ruochuan Liu"],
+      "year": 2012,
+      "role": "parallel-foundation — independent development of relative perfectoid-style theory"
+    },
+    "2102.13459": {
+      "title": "Geometrization of the local Langlands correspondence",
+      "authors": ["Laurent Fargues", "Peter Scholze"],
+      "year": 2021,
+      "role": "lateral-application — diamonds power a geometric Langlands construction"
+    },
+    "1907.10525": {
+      "title": "Prismatic Dieudonné theory",
+      "authors": ["Johannes Anschütz", "Arthur-César Le Bras"],
+      "year": 2019,
+      "role": "application — antiequivalence between $p$-divisible groups and prismatic Dieudonné modules; extends Scholze–Weinstein classification"
+    },
+    "2005.04746": {
+      "title": "Prismatization",
+      "authors": ["Vladimir Drinfeld"],
+      "year": 2020,
+      "role": "alternative-engine — geometric / moduli-stack reformulation of prismatic cohomology via $\\Sigma'$"
+    },
+    "2201.06120": {
+      "title": "Absolute prismatic cohomology",
+      "authors": ["Bhargav Bhatt", "Jacob Lurie"],
+      "year": 2022,
+      "role": "extension — absolute (vs relative) prismatic cohomology via the Cartier-Witt stack"
+    }
+  },
+  "related_dags": {
+    "langlands-local": "Shares the node 2102.13459 (Fargues–Scholze, Geometrization of the local Langlands correspondence). Here that paper is the application terminus of the perfectoid / p-adic Hodge machinery (it imports étale cohomology of diamonds 1709.07343 and the p-adic Hodge inputs); in the langlands-local DAG it is the ROOT whose construction the downstream papers verify, refine, and extend. The shared node is the load-bearing handoff from p-adic geometry into the Langlands program."
+  },
+  "foundational": {
+    "Faltings:1988": {
+      "title": "p-adic Hodge theory",
+      "authors": ["Gerd Faltings"],
+      "year": 1988,
+      "role": "foundational — almost mathematics, almost étale extensions"
+    },
+    "FontaineWintenberger:1979": {
+      "title": "Le \"corps des normes\" de certaines extensions algébriques de corps locaux",
+      "authors": ["Jean-Marc Fontaine", "Jean-Pierre Wintenberger"],
+      "year": 1979,
+      "role": "foundational — classical predecessor of the tilting equivalence (char 0 ↔ char p)"
+    },
+    "Huber:1996": {
+      "title": "Étale Cohomology of Rigid Analytic Varieties and Adic Spaces",
+      "authors": ["Roland Huber"],
+      "year": 1996,
+      "role": "foundational — adic spaces, the geometric category perfectoid spaces live inside"
+    },
+    "Tate:1967": {
+      "title": "p-divisible groups",
+      "authors": ["John Tate"],
+      "year": 1967,
+      "role": "foundational"
+    },
+    "Faltings:2002": {
+      "title": "Almost étale extensions",
+      "authors": ["Gerd Faltings"],
+      "year": 2002,
+      "role": "foundational — almost ring theory, used pervasively in 1111.4914"
+    },
+    "GabberRamero:2003": {
+      "title": "Almost ring theory",
+      "authors": ["Ofer Gabber", "Lorenzo Ramero"],
+      "year": 2003,
+      "role": "foundational — systematic treatment of almost mathematics"
+    }
+  }
+}

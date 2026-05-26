@@ -1,0 +1,130 @@
+{
+  "paper": "2509.14185v1",
+  "title": "Discovery of Unstable Singularities",
+  "authors": [
+    "Xinyu Wang",
+    "Thomas Y. Hou",
+    "DeepMind team"
+  ],
+  "generated": "2026-03-12",
+  "status": "partial",
+  "partial_reason": "0 mathEnvs detected — computational paper, section-level analysis only",
+  "nodes": {
+    "sec:main": {
+      "type": "Section",
+      "section": "1",
+      "role": "main_result",
+      "summary": "Uses PINNs to discover unstable self-similar singularities for 3D Euler and related PDEs. Computational existence proof of blowup candidates."
+    },
+    "sec:pinn_method": {
+      "type": "Section",
+      "section": "2",
+      "role": "key_mechanism",
+      "summary": "PINN framework for targeted PDE solution discovery: incorporates mathematical structure into neural network architecture."
+    },
+    "sec:self_similar": {
+      "type": "Section",
+      "section": "methods:self-similar",
+      "role": "foundational",
+      "summary": "Self-similar ansatz reduces time-dependent PDE to steady-state profile equation. Key reduction enabling numerical search."
+    },
+    "sec:factorization": {
+      "type": "Section",
+      "section": "methods:solution_modeling",
+      "role": "technical",
+      "summary": "Equation factorization to build singular behavior into network architecture, improving convergence."
+    },
+    "sec:training": {
+      "type": "Section",
+      "section": "methods:multistage",
+      "role": "technical",
+      "summary": "Multi-stage training with second-order optimizers for high-precision solutions."
+    },
+    "sec:lambda": {
+      "type": "Section",
+      "section": "methods:lambda",
+      "role": "key_technical",
+      "summary": "Algorithm for identifying admissible self-similar exponents $\\lambda$ that yield genuine singularities."
+    },
+    "sec:spectrum": {
+      "type": "Section",
+      "section": "methods:22",
+      "role": "key_technical",
+      "summary": "Linearized stability analysis: compute spectrum of linearization around discovered profile to verify instability."
+    },
+    "sec:implications": {
+      "type": "Section",
+      "section": "3",
+      "role": "context",
+      "summary": "Implications for rigorous blowup: the discovered solutions are candidates for computer-assisted proofs."
+    }
+  },
+  "edges": [
+    {
+      "from": "sec:main",
+      "to": "sec:pinn_method",
+      "type": "depends_on",
+      "note": "Main results rely on PINN framework"
+    },
+    {
+      "from": "sec:main",
+      "to": "sec:lambda",
+      "type": "depends_on",
+      "note": "Discovered singularities require valid $\\lambda$"
+    },
+    {
+      "from": "sec:main",
+      "to": "sec:spectrum",
+      "type": "depends_on",
+      "note": "Instability verified via linearization"
+    },
+    {
+      "from": "sec:pinn_method",
+      "to": "sec:self_similar",
+      "type": "depends_on",
+      "note": "Self-similar reduction enables targeted search"
+    },
+    {
+      "from": "sec:pinn_method",
+      "to": "sec:factorization",
+      "type": "depends_on",
+      "note": "Factorization improves training"
+    },
+    {
+      "from": "sec:pinn_method",
+      "to": "sec:training",
+      "type": "depends_on",
+      "note": "Multi-stage training for precision"
+    }
+  ],
+  "critical_path": [
+    "sec:main",
+    "sec:pinn_method",
+    "sec:self_similar"
+  ],
+  "proof_architecture": {
+    "computational_framework": {
+      "description": "PINN-based discovery of self-similar blowup profiles",
+      "nodes": [
+        "sec:pinn_method",
+        "sec:factorization",
+        "sec:training"
+      ]
+    },
+    "singularity_validation": {
+      "description": "Verify discovered solutions are genuine unstable singularities",
+      "nodes": [
+        "sec:lambda",
+        "sec:spectrum"
+      ]
+    },
+    "mathematical_setup": {
+      "description": "Self-similar ansatz and reduction to profile equation",
+      "nodes": [
+        "sec:self_similar"
+      ]
+    }
+  },
+  "bibliography": {},
+  "notes": "Computational paper. No formal theorems — results are numerical discoveries. Related to Hou's prior work on potential Euler blowup. Cross-paper relevance: provides candidates that could connect to Tao-style constructions."
+}

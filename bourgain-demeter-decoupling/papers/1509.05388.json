@@ -1,0 +1,388 @@
+{
+  "paper": "1509.05388",
+  "title": "Mean value estimates for Weyl sums in two dimensions",
+  "authors": [
+    "Jean Bourgain",
+    "Ciprian Demeter"
+  ],
+  "generated": "2026-05-12",
+  "status": "complete",
+  "nodes": {
+    "thm:1.1": {
+      "type": "Theorem",
+      "number": "1.1",
+      "section": "1",
+      "role": "main_result",
+      "summary": "Decoupling for the two-dimensional Parsell–Vinogradov surface $\\mathcal{M}_{2,k}=\\{(t,s,t^2,ts,s^2,\\dots):(t,s)\\in[0,1]^2\\}\\subset\\mathbb{R}^{k(k+3)/2}$: $D_k(N,p)\\lesssim_{\\epsilon,p}N^{\\cdots+\\epsilon}$, sharp and unconditional for $k=2$ (all $p$) and $k=3$ ($2\\le p\\le16$), and conditionally sharp for higher $k$. The 2D analogue of moment-curve decoupling — yields mean value estimates for 2D Weyl sums."
+    },
+    "conj:1.2": {
+      "type": "Conjecture",
+      "number": "1.2",
+      "section": "1",
+      "role": "context",
+      "summary": "The full decoupling conjecture for $\\mathcal{M}_{2,k}$: $D_k(N,p)\\lesssim_\\epsilon N^{\\frac2k(\\frac12-\\frac1p)+\\epsilon}$ for $2\\le p\\le k(k+3)-2$. The target; the paper proves it for $k=2,3$ and reduces the general case to a curvature/non-degeneracy conjecture."
+    },
+    "thm:2.1": {
+      "type": "Theorem",
+      "number": "2.1",
+      "section": "2",
+      "role": "auxiliary",
+      "summary": "Number-theoretic consequence: the 2D Parsell–Vinogradov mean value $\\tilde J_{s,2,k}(X)\\lesssim_\\epsilon X^\\epsilon(X^{2s}+X^{4s-\\dim})$ in the optimal ranges (unconditional for $k=2$). The Vinogradov-type counting bound for systems indexed by $(\\mathbb{Z}^2)$."
+    },
+    "thm:2.2": {
+      "type": "Theorem",
+      "number": "2.2",
+      "section": "2",
+      "role": "auxiliary",
+      "summary": "Exponential-sum form: a sharp $L^p$ mean value for the 2D Weyl sum $\\sum_i a_i e(x\\cdot\\Phi_k(t_i,s_i))$ over $\\delta$-separated points on the surface, with $R\\gtrsim N^2$. The discrete-restriction form of thm:1.1."
+    },
+    "cor:2.4": {
+      "type": "Corollary",
+      "number": "2.4",
+      "section": "2",
+      "role": "auxiliary",
+      "summary": "Solution count for a coupled system of two linear equations plus two near-equal fourth-power-sum constraints (a 2D Diophantine system) — an explicit number-theoretic payoff of the $k=4$-flavoured estimate."
+    },
+    "thm:3.1": {
+      "type": "Theorem",
+      "number": "3.1",
+      "section": "3",
+      "role": "foundational",
+      "summary": "Brascamp–Lieb finiteness criterion: $\\sup_{f_j}\\frac{|\\Lambda(f_1,\\dots,f_m)|}{\\prod_j\\|f_j\\|_{L^{p_j}}}<\\infty$ iff $n=\\sum_j n_j/p_j$ and the subspace dimension condition holds. The external multilinear-geometry input."
+    },
+    "thm:3.2": {
+      "type": "Theorem",
+      "number": "3.2",
+      "section": "3",
+      "role": "foundational",
+      "summary": "The $L^n$ / multilinear-Kakeya form of Brascamp–Lieb: $\\sup_{g_j}\\frac{\\|(\\prod_j g_j\\circ\\pi_j)^{1/m}\\|_{L^n}}{(\\prod_j\\|g_j\\|_{L^2})^{1/m}}<\\infty$ iff $\\dim(V)\\le\\frac{n}{2m}\\sum_j\\dim(\\pi_j(V))$ for all $V$. The geometric estimate the multilinear restriction is built on."
+    },
+    "lem:4.1": {
+      "type": "Lemma",
+      "number": "4.1",
+      "section": "4",
+      "role": "technical",
+      "summary": "Non-degeneracy of the quadratic part: for $k=2$ there is no $3$-dimensional $V\\subset\\mathbb{R}^5$ on which all the associated quadratic forms $Q_{v,w}$ vanish (and analogously for $k=3$ in $\\mathbb{R}^9$). Ensures the surface is genuinely curved in the right sense."
+    },
+    "conj:4.2": {
+      "type": "Conjecture",
+      "number": "4.2",
+      "section": "4",
+      "role": "context",
+      "summary": "The general curvature/non-degeneracy conjecture for $\\mathcal{M}_{2,k}$ ($k\\ge2$): no subspace on which all the quadratic forms degenerate. Verified for $k=2,3$; assumed for higher $k$ — the single conditional hypothesis behind thm:1.1's higher-$k$ part."
+    },
+    "def:4.3": {
+      "type": "Definition",
+      "number": "4.3",
+      "section": "4",
+      "role": "definition",
+      "summary": "A collection of $m\\ge n$ sets $S_j\\subset[0,1]^2$ is $\\nu$-transverse for $\\mathcal{M}_{2,k}$ if every sub-collection of the relevant size spans with parallelepiped volume $>\\nu$. The transversality hypothesis adapted to the 2D surface."
+    },
+    "prop:4.4": {
+      "type": "Proposition",
+      "number": "4.4",
+      "section": "4",
+      "role": "technical",
+      "summary": "Assuming the non-degeneracy conjecture: $\\nu$-transverse points $(t_j,s_j)$ give tangent planes $V_j$ satisfying the Brascamp–Lieb dimension condition. Bridges geometric transversality of points to the analytic hypothesis of thm:3.2."
+    },
+    "thm:4.5": {
+      "type": "Theorem",
+      "number": "4.5",
+      "section": "4",
+      "role": "technical",
+      "summary": "Pigeonholing transversality: there is $\\Lambda_k$ such that for each $K$ there is $\\nu_K>0$ with the property that any $\\Lambda K$ or more squares in a $K$-column $\\mathbf{Col}_K$ are $\\nu_K$-transverse for $\\mathcal{M}_{2,k}$. Lets the broad/narrow split always produce a transverse sub-family."
+    },
+    "thm:5.1": {
+      "type": "Theorem",
+      "number": "5.1",
+      "section": "5",
+      "role": "key_mechanism",
+      "summary": "The main multilinear restriction inequality: assuming the non-degeneracy conjecture, for $\\Lambda K$ pairwise distinct squares and $f_j$ supported near $\\mathcal{N}_{R_j,1/N}$, $\\|(\\prod_jE_{R_j}g_j)^{1/m}\\|_{L^r(B_N)}\\lesssim_\\epsilon N^\\epsilon\\cdots$. The transverse multilinear estimate the decoupling is bootstrapped from."
+    },
+    "thm:6.3": {
+      "type": "Theorem",
+      "number": "6.3",
+      "section": "6",
+      "role": "main_technical",
+      "summary": "Multilinear decoupling from the restriction estimate (assuming the ansatz of §6): $\\|(\\prod_jE_{R_j}g_j)^{1/m}\\|_{L^r(B_N)}\\lesssim N^\\epsilon\\cdots$ in square-function form. Multilinear restriction upgraded to a decoupling statement."
+    },
+    "cor:6.4": {
+      "type": "Corollary",
+      "number": "6.4",
+      "section": "6",
+      "role": "main_technical",
+      "summary": "Ball-inflation form of thm:6.3: relates the $N^{-1/2}$-scale transverse square-function product to the $N^{-1}$-scale one, the building block of the iteration."
+    },
+    "prop:7.1": {
+      "type": "Proposition",
+      "number": "7.1",
+      "section": "7",
+      "role": "key_mechanism",
+      "summary": "Rescaling: for a square $R$ of side $N^{-\\rho}$ with $\\rho\\le1/k$ and a ball $B_N\\subset\\mathbb{R}^{k(k+3)/2}$, $\\|E_R^{(k)}g\\|_{L^p(w_{B_N})}\\lesssim D_k(N^{1-\\cdots},p)\\cdots$. The affine-invariance step for the 2D surface."
+    },
+    "thm:8.1": {
+      "type": "Theorem",
+      "number": "8.1",
+      "section": "8",
+      "role": "key_reduction",
+      "summary": "Linear-versus-multilinear bootstrap: there is $\\beta(K,p)\\to0$ as $K\\to\\infty$ with $D_k(N,p)\\le N^{\\beta(K,p)+\\frac2k(\\frac12-\\frac1p)}\\cdots$ for $N\\ge K$. Reduces the linear decoupling constant to the transverse multilinear one (via column decomposition)."
+    },
+    "lem:8.2": {
+      "type": "Lemma",
+      "number": "8.2",
+      "section": "8",
+      "role": "technical",
+      "summary": "Flat ($l^p$-orthogonality) decoupling: for $K^{-1}$-squares $R_i$, $\\|\\sum_iE_{R_i}^{(k)}g\\|_{L^p(w_{B_K})}\\lesssim_p M^{1-2/p}(\\sum_i\\|E_{R_i}^{(k)}g\\|_{L^p}^p)^{1/p}$. The cheap decoupling at the coarse scale, used in the broad/narrow accounting."
+    },
+    "prop:8.4": {
+      "type": "Proposition",
+      "number": "8.4",
+      "section": "8",
+      "role": "technical",
+      "summary": "Broad/narrow (column) inequality: $\\|E_R^{(k)}g\\|_{L^p(w_{B_N})}^p\\le C_pK^{p-2}\\sum_{R'\\subset R,\\,R'\\in\\mathbf{Col}_K}\\|E_{R'}^{(k)}g\\|^p+\\cdots$ for $N>\\delta^{-k}K$. The dichotomy split into a $K$-column sum plus a transverse remainder."
+    },
+    "thm:9.1": {
+      "type": "Theorem",
+      "number": "9.1",
+      "section": "9",
+      "role": "key_reduction",
+      "summary": "Proof of the main theorem: assuming the non-degeneracy conjecture for some $k\\ge2$, $D_k(N,p)\\lesssim_\\epsilon N^{\\frac2k(\\frac12-\\frac1p)+\\epsilon}$ for $2\\le p\\le k(k+3)-2$. Combining the bootstrap thm:8.1 with the iterated ball-inflation closes the induction; unconditional for $k=2,3$ via lem:4.1."
+    },
+    "lem:9.2": {
+      "type": "Lemma",
+      "number": "9.2",
+      "section": "9",
+      "role": "main_technical",
+      "summary": "Iterated ball-inflation: for $\\Lambda K$ transverse squares and $s\\ge2$, $\\|(\\prod_i|E_{R_i}^{(k)}g_i|)^{1/(\\Lambda K)}\\|_{L^p(w_{B_N})}\\le N^{2^{-s}}\\|(\\prod_i\\sum_{l(\\Delta)=N^{-2^{-s}}}|E_\\Delta g_i|^2)^{1/(\\cdots)}\\|$. Iterating cor:6.4 sends the loss to $1$ — the induction-on-scales engine."
+    }
+  },
+  "edges": [
+    {
+      "from": "thm:1.1",
+      "to": "thm:9.1",
+      "type": "depends_on",
+      "note": "thm:1.1 is thm:9.1 made unconditional for $k=2,3$ (the non-degeneracy hypothesis being verified there)."
+    },
+    {
+      "from": "thm:1.1",
+      "to": "lem:4.1",
+      "type": "depends_on",
+      "note": "For $k=2,3$ the curvature/non-degeneracy conjecture is established directly."
+    },
+    {
+      "from": "thm:9.1",
+      "to": "thm:8.1",
+      "type": "depends_on",
+      "note": "The linear decoupling constant is bootstrapped down to $N^\\epsilon$ by iterating the linear-vs-multilinear inequality."
+    },
+    {
+      "from": "thm:9.1",
+      "to": "lem:9.2",
+      "type": "depends_on",
+      "note": "The transverse multilinear term is controlled by the iterated ball-inflation, which sends the loss to $1$."
+    },
+    {
+      "from": "thm:9.1",
+      "to": "conj:4.2",
+      "type": "depends_on",
+      "note": "The higher-$k$ statement is conditional on the non-degeneracy conjecture for $\\mathcal{M}_{2,k}$."
+    },
+    {
+      "from": "thm:9.1",
+      "to": "conj:1.2",
+      "type": "motivates",
+      "note": "Establishes the decoupling conjecture for $\\mathcal{M}_{2,k}$ unconditionally for $k=2,3$ and conditionally otherwise."
+    },
+    {
+      "from": "thm:8.1",
+      "to": "prop:8.4",
+      "type": "depends_on",
+      "note": "The reduction runs through the quantitative broad/narrow (column) inequality."
+    },
+    {
+      "from": "thm:8.1",
+      "to": "lem:8.2",
+      "type": "depends_on",
+      "note": "The flat decoupling handles the coarse-scale orthogonality in the accounting."
+    },
+    {
+      "from": "thm:8.1",
+      "to": "prop:7.1",
+      "type": "depends_on",
+      "note": "Sub-squares are rescaled to unit scale between iteration steps."
+    },
+    {
+      "from": "thm:8.1",
+      "to": "thm:4.5",
+      "type": "depends_on",
+      "note": "Pigeonholing guarantees the narrow term contains a $\\nu$-transverse sub-family of squares."
+    },
+    {
+      "from": "lem:9.2",
+      "to": "cor:6.4",
+      "type": "depends_on",
+      "note": "Iterates the single ball-inflation cycle $s$ times."
+    },
+    {
+      "from": "cor:6.4",
+      "to": "thm:6.3",
+      "type": "depends_on",
+      "note": "Ball-inflation form of the multilinear decoupling."
+    },
+    {
+      "from": "thm:6.3",
+      "to": "thm:5.1",
+      "type": "depends_on",
+      "note": "Multilinear decoupling is bootstrapped from the multilinear restriction estimate."
+    },
+    {
+      "from": "thm:5.1",
+      "to": "thm:3.2",
+      "type": "depends_on",
+      "note": "The multilinear restriction estimate is built on the $L^n$ Brascamp–Lieb / multilinear-Kakeya inequality."
+    },
+    {
+      "from": "thm:5.1",
+      "to": "prop:4.4",
+      "type": "depends_on",
+      "note": "Transverse points are converted to tangent planes satisfying the Brascamp–Lieb dimension condition."
+    },
+    {
+      "from": "thm:3.2",
+      "to": "thm:3.1",
+      "type": "depends_on",
+      "note": "The $L^n$ form is the relevant special case of the general Brascamp–Lieb finiteness criterion."
+    },
+    {
+      "from": "prop:4.4",
+      "to": "lem:4.1",
+      "type": "depends_on",
+      "note": "Uses the non-degeneracy of the quadratic part (verified for $k=2,3$; conjectural otherwise)."
+    },
+    {
+      "from": "prop:4.4",
+      "to": "conj:4.2",
+      "type": "depends_on",
+      "note": "For $k\\ge4$ the implication relies on the non-degeneracy conjecture."
+    },
+    {
+      "from": "thm:4.5",
+      "to": "def:4.3",
+      "type": "proves",
+      "note": "Shows large sub-collections of column squares are $\\nu$-transverse in the sense of def:4.3."
+    },
+    {
+      "from": "thm:2.1",
+      "to": "thm:1.1",
+      "type": "depends_on",
+      "note": "The 2D Parsell–Vinogradov mean value bound is read off from the decoupling estimate."
+    },
+    {
+      "from": "thm:2.2",
+      "to": "thm:1.1",
+      "type": "depends_on",
+      "note": "The 2D Weyl-sum mean value is the discrete-restriction form of decoupling."
+    },
+    {
+      "from": "cor:2.4",
+      "to": "thm:2.1",
+      "type": "depends_on",
+      "note": "The coupled Diophantine-system count follows from the mean value estimate."
+    }
+  ],
+  "critical_path": [
+    "thm:1.1",
+    "thm:9.1",
+    "lem:9.2",
+    "cor:6.4",
+    "thm:6.3",
+    "thm:5.1",
+    "thm:3.2",
+    "thm:3.1"
+  ],
+  "proof_architecture": {
+    "main_results": {
+      "description": "Decoupling for the 2D Parsell–Vinogradov surface and its number-theoretic consequences (Weyl-sum and Diophantine-system counts).",
+      "nodes": [
+        "thm:1.1",
+        "conj:1.2",
+        "thm:2.1",
+        "thm:2.2",
+        "cor:2.4"
+      ]
+    },
+    "brascamp_lieb_geometry": {
+      "description": "The Brascamp–Lieb finiteness criterion, its $L^n$ multilinear-Kakeya form, the non-degeneracy of the surface's quadratic part, and the transversality definitions/pigeonholing.",
+      "nodes": [
+        "thm:3.1",
+        "thm:3.2",
+        "lem:4.1",
+        "conj:4.2",
+        "def:4.3",
+        "prop:4.4",
+        "thm:4.5"
+      ]
+    },
+    "multilinear_restriction_and_decoupling": {
+      "description": "The transverse multilinear restriction estimate, its upgrade to multilinear decoupling, and the ball-inflation form.",
+      "nodes": [
+        "thm:5.1",
+        "thm:6.3",
+        "cor:6.4"
+      ]
+    },
+    "rescaling_and_bootstrap": {
+      "description": "Rescaling, the flat decoupling, the broad/narrow column dichotomy, the linear-vs-multilinear bootstrap, the iterated ball-inflation, and the final proof closing the induction.",
+      "nodes": [
+        "prop:7.1",
+        "lem:8.2",
+        "prop:8.4",
+        "thm:8.1",
+        "lem:9.2",
+        "thm:9.1"
+      ]
+    }
+  },
+  "bibliography": {
+    "BD-l2": {
+      "title": "The proof of the l^2 Decoupling Conjecture",
+      "authors": [
+        "Bourgain",
+        "Demeter"
+      ],
+      "arxiv_id": "1403.5335",
+      "in_registry": true
+    },
+    "BDG": {
+      "title": "Proof of the main conjecture in Vinogradov's mean value theorem for degrees higher than three",
+      "authors": [
+        "Bourgain",
+        "Demeter",
+        "Guth"
+      ],
+      "arxiv_id": "1512.01565",
+      "in_registry": true
+    },
+    "BCCT:BrascampLieb": {
+      "title": "Finite bounds for Hölder-Brascamp-Lieb multilinear inequalities",
+      "authors": [
+        "Bennett",
+        "Carbery",
+        "Christ",
+        "Tao"
+      ],
+      "arxiv_id": "math/0505065",
+      "in_registry": false
+    },
+    "ParsellPrendivilleWooley": {
+      "title": "Near-optimal mean value estimates for multidimensional Weyl sums",
+      "authors": [
+        "Parsell",
+        "Prendiville",
+        "Wooley"
+      ],
+      "arxiv_id": "1205.6331",
+      "in_registry": false
+    }
+  }
+}

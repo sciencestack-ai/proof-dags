@@ -1,0 +1,23 @@
+{
+  "description": "Cross-paper edges for the local-Langlands-after-Fargues–Scholze DAG. from/to are '<arxiv_id>:<node_id>'; direction is subject-verb-object (from {type} to). The root node 2102.13459 (Fargues–Scholze) is SHARED with the perfectoid-spaces DAG — its per-paper DAG lives at perfectoid-spaces/papers/2102.13459.json. Downstream papers attach to thm:I.10.1 (the FS correspondence / packets $\\Pi^{\\mathrm{FS}}$), thm:I.9.6 (its properties), thm:I.8.1 (spectral action / moduli of $L$-parameters), thm:I.7.2 (Hecke functors), and thm:III.0.2 ($\\mathrm{Bun}_G$ structure).",
+  "edges": [
+    { "from": "2503.00621:thm:6", "to": "2102.13459:thm:I.10.1", "type": "depends_on", "note": "Elliptic $\\mathcal{E}$-stability is a statement about the Fargues–Scholze $L$-packets $\\Pi^{\\mathrm{FS}}_\\varphi$; the virtual-character space the theorem ranges over is spanned by the characters of the packet the FS excursion-operator correspondence (thm:I.10.1) produces." },
+    { "from": "2503.00621:lem:3.9", "to": "2102.13459:thm:I.8.1", "type": "depends_on", "note": "The spectral action used here is the Fargues–Scholze spectral action attached to the moduli of $L$-parameters (thm:I.8.1)." },
+    { "from": "2503.00621:claim:5.3", "to": "2102.13459:thm:I.7.2", "type": "imports_result", "note": "The $z$-embedding Hecke compatibility $T_V(\\eta^*A) \\simeq \\eta^* T_{\\widehat{\\eta}^*V}(A)$ is proved by repeating Fargues–Scholze's Theorem IX.6.1 (the Hecke-functor formalism, thm:I.7.2) almost verbatim." },
+
+    { "from": "2109.01210:thm:3.5", "to": "2102.13459:thm:I.10.1", "type": "imports_result", "note": "Hamann's $\\phi^{\\mathrm{FS}}_\\pi$ (Thm 3.5) is the Fargues–Scholze parametrization built by the excursion-operator construction (thm:I.10.1); the whole compatibility theorem is about this map." },
+    { "from": "2109.01210:thm:3.6", "to": "2102.13459:thm:I.9.6", "type": "imports_result", "note": "Hamann's Thm 3.6 quotes FS Thm I.9.6 verbatim — the properties (LCFT for tori, twist/contragredient/parabolic-induction compatibility) of the FS correspondence the proof exploits to force agreement with Gan–Takeda." },
+    { "from": "2109.01210:thm:3.2", "to": "2102.13459:thm:I.7.2", "type": "imports_result", "note": "The Hecke operators $T_W$ on $D_{\\mathrm{lis}}(\\mathrm{Bun}_G)$ (Thm 3.2) are imported from FS Thm I.7.2." },
+    { "from": "2109.01210:thm:3.7", "to": "2102.13459:thm:I.8.1", "type": "imports_result", "note": "The spectral action / spectral Bernstein-center structure (Thm 3.7) is imported from the Fargues–Scholze spectral action attached to the moduli of $L$-parameters (thm:I.8.1)." },
+
+    { "from": "2504.13869:prop:5.1.2", "to": "2102.13459:thm:I.8.1", "type": "imports_result", "note": "The spectral action used to build the categorical functor is the Fargues–Scholze spectral action of $\\mathrm{Perf}(Z^1(W_F,\\widehat{G})/\\widehat{G})$." },
+    { "from": "2504.13869:prop:5.2.3", "to": "2102.13459:thm:I.10.1", "type": "depends_on", "note": "Fu's categorical equivalence $\\Theta_0 = (-\\ast W)$ verifies the categorical form of the FS correspondence (thm:I.10.1) for depth-zero regular supercuspidals." },
+
+    { "from": "2505.10724:thm:2.1", "to": "2102.13459:thm:III.0.2", "type": "imports_result", "note": "Nguyen's Thm 2.1 quotes FS Thm III.0.2 — the structure of $\\mathrm{Bun}_G$ (small $v$-stack, points $\\leftrightarrow B(G)$, HN strata) on which the categorical decomposition lives." },
+    { "from": "2505.10724:thm:4.6", "to": "2102.13459:thm:I.9.6", "type": "imports_result", "note": "The properties of the FS correspondence $\\pi \\mapsto \\phi^{\\mathrm{FS}}_\\pi$ (FS Thm I.9.6) pin the categorical decomposition to the correct $L$-parameters." },
+    { "from": "2505.10724:thm:1.2", "to": "2102.13459:thm:I.10.1", "type": "depends_on", "note": "The Hecke eigensheaf $\\mathcal{G}_\\phi$ realizes the Fargues–Scholze correspondence (thm:I.10.1) as a case of the Fargues eigensheaf conjecture." },
+
+    { "from": "2501.07944:thm:1.2", "to": "2102.13459:thm:I.10.1", "type": "extends", "note": "Scholze's motivic refinement reconstructs the Fargues–Scholze excursion correspondence (thm:I.10.1) over motivic coefficients, proving its independence of $\\ell$ (FS Conjecture I.9.5)." },
+    { "from": "2501.07944:thm:5.7", "to": "2102.13459:thm:I.7.2", "type": "extends", "note": "The motivic geometric Satake equivalence (Thm 5.7) lifts the Fargues–Scholze Hecke/Satake construction (thm:I.7.2) to motivic coefficients, constructing the dual group and spectral action $\\ell$-independently." }
+  ]
+}

@@ -1,0 +1,385 @@
+{
+  "paper": "2602.19074v1",
+  "title": "Non-uniqueness of smooth solutions to the Navier-Stokes equations on torus T^2",
+  "authors": [
+    "Changxing Miao",
+    "Yao Nie",
+    "Weikui Ye"
+  ],
+  "generated": "2026-03-09",
+  "status": "complete",
+  "nodes": {
+    "thm:1.1": {
+      "type": "Theorem",
+      "number": "1.1",
+      "section": "1",
+      "role": "main_result",
+      "summary": "MAIN RESULT: The 2D Navier-Stokes system on $T^2$ admits two distinct global smooth solutions u, ũ $\\in C^\\infty_{t,x}(R^+ \\times T^2)$ with the same initial data in $BMO^{-1}(T^2)$. Settles the 2D non-uniqueness problem left open by Coiculescu-Palasek (who solved the 3D case)."
+    },
+    "rem:1.2": {
+      "type": "Remark",
+      "number": "1.2",
+      "section": "1",
+      "role": "context",
+      "summary": "Notes that the method extends to $R^2$ by combining with the iterative scheme from [MNY-ar1], [MNY-ar2]."
+    },
+    "prop:2.1": {
+      "type": "Proposition",
+      "number": "2.1",
+      "section": "2.2",
+      "role": "key_reduction",
+      "summary": "INDUCTIVE STEP: Given m-1 smooth NS solutions satisfying uniform $BMO^{-1}$ bounds, constructs $w_m = w^(p)_m + w^(s)_m + w^(ns)_m$ such that $u_m$ :$= u_{m-2} + w_m$ also solves NS with ‖$u_m$‖$_{L^\\infty_t BMO^{-1}} \\le C_0$. The decomposition ensures even/odd subsequences share initial data but diverge for t > 0."
+    },
+    "prop:3.1": {
+      "type": "Proposition",
+      "number": "3.1",
+      "section": "3.1",
+      "role": "technical",
+      "summary": "Basic $C^N$ bounds on the amplitude functions $a_{(k,2q)}$ and building blocks $\\varphi_{k,2q}$. Amplitudes satisfy ‖$a_{(k,2q)}$‖$_{L^\\infty_t C^N}$ ≲ $C_0^{1/2}$ ℓ_{2q-1}^{-N}, building blocks ‖$\\varphi_{k,2q}$‖$_{C^N}$ ≲ $\\lambda_{2q}^{N/4}$."
+    },
+    "prop:3.2": {
+      "type": "Proposition",
+      "number": "3.2",
+      "section": "3.2",
+      "role": "main_technical",
+      "summary": "Key estimates for the primary flow w^(p)_{2q} and inverse-cascade flow w^(s)_{2q} in $L^\\infty_t C^N$ and $L^1_t C^N$ norms. Controls the Reynolds stress R w^(p)_{2q} and provides the inductive bounds needed for the iteration."
+    },
+    "prop:3.3": {
+      "type": "Proposition",
+      "number": "3.3",
+      "section": "3.2",
+      "role": "main_technical",
+      "summary": "$L^2_t L^r \\cap L^1_t W^{1,r}$ estimates for w^(p)_{2q} and w^(s)_{2q}. Crucially exploits support shrinkage: $|\\Omega$̃$_{2q-1}| \\le 2^{-(2q-1)}|T^2|$, yielding the geometric decay ‖w^(p)_{2q}‖ $\\le C_0^{3/4} 2^{-2q/r}$ needed for Cauchy convergence."
+    },
+    "prop:3.4": {
+      "type": "Proposition",
+      "number": "3.4",
+      "section": "3.2",
+      "role": "key_structural",
+      "summary": "$BMO^{-1}$ accumulation bound: ‖$\\Sigma_{l=1}^q (w^(p)_{2l} + w^(s)_{2l})$‖$_{L^\\inftyBMO^{-1}} \\le (1/16)C_0 \\Sigma_{m=-1}^{2q} 2^{-m}$. Ensures the running sum of oscillatory and cascade flows stays within the $BMO^{-1}$ budget."
+    },
+    "prop:3.5": {
+      "type": "Proposition",
+      "number": "3.5",
+      "section": "3.3",
+      "role": "key_mechanism",
+      "summary": "Self-interaction error estimate: decomposes div(w^(p)_{2q} ⊗ $w^(p)_{2q}) + \\partial_t w^(s)_{2q} = F^(1)_{2q} + \\nablaP^(1)_{2q}$. The heat-dominated Fourier mode design absorbs the main oscillatory quadratic term into pressure, leaving ‖F^(1)_{2q}‖$_{L^1_t B^{-1/2}_{\\infty,1}}$ ≲ $C_0 \\lambda_{2q-1}^{-15}$."
+    },
+    "prop:3.6": {
+      "type": "Proposition",
+      "number": "3.6",
+      "section": "3.3",
+      "role": "main_technical",
+      "summary": "Cross-interaction and dissipation error: bounds F^(2)_{2q} (containing $(\\partial_t - \\Delta)w^(p)_{2q}, \\Deltaw^(s)_{2q}$, and all bilinear cross-terms) in $L^1_t B^{-1/2}_{\\infty,1} \\le C_0^2 \\lambda_{2q}^{-1/4}$ and $L^1_t B^0_{\\infty,1} \\le C_0^2 \\lambda_{2q}^{1/4}$."
+    },
+    "prop:3.7": {
+      "type": "Proposition",
+      "number": "3.7",
+      "section": "3.4",
+      "role": "key_mechanism",
+      "summary": "Perturbation flow construction: obtains global-in-time $w^(ns)_{2q} \\in C^\\infty$ solving forced NS with forcing $-F_{2q}$ and zero data. Works in subcritical Besov space $B^{-1/2}_{\\infty,1} (notBMO^{-1}$ as in CP), achieving ‖w^(ns)_{2q}‖ $\\le \\lambda_{2q-1}^{-10}$ via Gronwall + transport-diffusion theory."
+    },
+    "def:A.1": {
+      "type": "Definition",
+      "number": "A.1",
+      "section": "A",
+      "role": "definition",
+      "summary": "Standard mollifying kernels $\\varphi(t) \\in C^\\infty_c(-1,0)$ and $\\psi(x) \\in C^\\infty_c(B_1(0))$ and their $\\varepsilon-scaled$ versions $\\varphi_\\varepsilon, \\psi_\\varepsilon$."
+    },
+    "lem:A.2": {
+      "type": "Lemma",
+      "number": "A.2",
+      "section": "A",
+      "role": "foundational",
+      "summary": "Stationary 2D Euler flows from [CDS]: for $\\Lambda \\subseteq S^1 \\cap Q^2$ with $-\\Lambda = \\Lambda$, the vector field $W(\\xi) = \\Sigma b_k (ibar{k}/|k|) e^{ik\\cdot\\xi}$ is real-valued, divergence-free, and satisfies div(W⊗$W) = (1/2)\\nabla(|W|^2 - |...|^2)$. This is the geometric core enabling the heat-dominated flow construction."
+    },
+    "lem:A.3": {
+      "type": "Lemma",
+      "number": "A.3",
+      "section": "A",
+      "role": "foundational",
+      "summary": "Geometric lemma from [CDS]: there exist $\\Lambda \\subseteq S^1 \\cap Q^2$ and smooth functions $a_k$: $B_{10^{-3}}(Id) \\to$ R such that R $= \\Sigma a_k^2(R)$ bar{k}⊗bar{k} for each symmetric matrix R near Id. Enables the amplitude decomposition in the convex integration scheme."
+    },
+    "def:A.4": {
+      "type": "Definition",
+      "number": "A.4",
+      "section": "A",
+      "role": "definition",
+      "summary": "Nonhomogeneous Besov space $B^s_{p,q}(T^2)$ via Littlewood-Paley decomposition: ‖u‖$_{B^s_{p,q}} =$ ‖(2^{js}‖$\\Delta_j$ u‖$_{L^p})_j$‖_{ℓ^q}."
+    },
+    "def:A.5": {
+      "type": "Definition",
+      "number": "A.5",
+      "section": "A",
+      "role": "definition",
+      "summary": "Mixed time-spatial Besov spaces L̃$^r_T B^s_{p,q}$: ‖u‖ = ‖(2^{js}‖$\\Delta_j$ u‖$_{L^r_T L^p})_j$‖_{ℓ^q}. The Chemin-Lerner refinement used for the perturbation flow estimates."
+    },
+    "lem:A.6": {
+      "type": "Lemma",
+      "number": "A.6",
+      "section": "A",
+      "role": "foundational",
+      "summary": "Transport-diffusion estimate from [BCD11]: for divergence-free v, solutions of $\\partial_t$ u $- \\Deltau + v\\cdot\\nablau =$ g satisfy ‖u‖_{L̃$^\\rho_T B^{s+2/\\rho}_{p,1}} \\le$ C exp(C $V_p(T))($‖$u_0$‖$_{B^s_{p,1}} +$ ‖g‖_{L̃$^{\\rho_1}_T B^{s-2+2/\\rho_1}_{p,1}})$. Central tool for the perturbation flow w^(ns)_{2q}."
+    },
+    "prop:A.7": {
+      "type": "Proposition",
+      "number": "A.7",
+      "section": "A",
+      "role": "technical",
+      "summary": "Oscillatory $BMO^{-1}$ estimate: ‖f $e^{i\\lambdak\\cdotx}$‖$_{L^\\infty_t B^{-1}_{\\infty,\\infty}}$ ≲ $\\lambda^{-1}$‖f‖$_{L^\\infty_t L^\\infty} + \\lambda^{-2}$‖f‖$_{L^\\infty_t C^2}$. Converts high-frequency oscillation into $B^{-1}_{\\infty,\\infty}$ smallness; used throughout the error estimates."
+    }
+  },
+  "edges": [
+    {
+      "from": "thm:1.1",
+      "to": "prop:2.1",
+      "type": "depends_on",
+      "note": "Proof of Thm 1.1 (Section 4) directly invokes Prop 2.1 to construct two sequences ${u_{2q}}$ and ${u_{2q+1}}$, then uses the estimates (2.13) for Cauchy convergence in $L^2_t L^r \\cap L^1_t W^{1,r}$."
+    },
+    {
+      "from": "thm:1.1",
+      "to": "prop:3.3",
+      "type": "depends_on",
+      "note": "Section 4 uses the support-shrinkage argument from Prop 3.3 to show $w^(p)_{2q+1} \\to 0$ in $W^{-1,p}(T^2)$, proving the two limits share initial data."
+    },
+    {
+      "from": "prop:2.1",
+      "to": "prop:3.2",
+      "type": "depends_on",
+      "note": "Inductive step requires the $C^N$ estimates for w^(p)_m and w^(s)_m from Prop 3.2 to verify bounds (2.5)-(2.10)."
+    },
+    {
+      "from": "prop:2.1",
+      "to": "prop:3.3",
+      "type": "depends_on",
+      "note": "Inductive step requires $L^2_t L^r \\cap L^1_t W^{1,r}$ decay from Prop 3.3 to establish (2.13)."
+    },
+    {
+      "from": "prop:2.1",
+      "to": "prop:3.4",
+      "type": "depends_on",
+      "note": "$BMO^{-1}$ accumulation bound from Prop 3.4 ensures ‖$u_m$‖$_{L^\\infty_t BMO^{-1}} \\le C_0$ at each step."
+    },
+    {
+      "from": "prop:2.1",
+      "to": "prop:3.5",
+      "type": "depends_on",
+      "note": "Prop 3.5 controls the self-interaction error F^(1)_{2q}, which feeds into the total forcing $F_{2q}$ absorbed by w^(ns)_{2q}."
+    },
+    {
+      "from": "prop:2.1",
+      "to": "prop:3.6",
+      "type": "depends_on",
+      "note": "Prop 3.6 controls the cross-interaction error F^(2)_{2q}, the other component of the total forcing."
+    },
+    {
+      "from": "prop:2.1",
+      "to": "prop:3.7",
+      "type": "depends_on",
+      "note": "Prop 3.7 constructs w^(ns)_{2q} absorbing all error terms, completing the inductive step."
+    },
+    {
+      "from": "prop:3.2",
+      "to": "prop:3.1",
+      "type": "depends_on",
+      "note": "Proof of Prop 3.2 uses amplitude and building block bounds from Prop 3.1 to estimate ‖Rw^(p)_{2q}‖$_{L^\\infty_t C^N}$ and ‖w^(p)_{2q}‖$_{L^1_t C^N}$."
+    },
+    {
+      "from": "prop:3.3",
+      "to": "prop:3.1",
+      "type": "depends_on",
+      "note": "Support properties of $\\varphi_{k,2q}$ from Prop 3.1 give $|\\Omega_j| \\le 4^{-j}|T^2|$, driving the geometric $L^r$ decay."
+    },
+    {
+      "from": "prop:3.4",
+      "to": "prop:3.2",
+      "type": "depends_on",
+      "note": "Uses the Reynolds stress bound ‖Rw^(p)_{2q}‖$_{L^\\infty_t C^N}$ from Prop 3.2 and the inductive $C^N$ bounds."
+    },
+    {
+      "from": "prop:3.4",
+      "to": "prop:A.7",
+      "type": "depends_on",
+      "note": "Converts oscillatory products into $BMO^{-1}$ smallness via the oscillatory estimate in Prop A.7."
+    },
+    {
+      "from": "prop:3.5",
+      "to": "lem:A.2",
+      "type": "depends_on",
+      "note": "Stationary Euler flow identity from Lemma A.2 decomposes div(W⊗W) into pressure gradient plus controlled remainder — the key cancellation enabling the heat-dominated construction."
+    },
+    {
+      "from": "prop:3.5",
+      "to": "lem:A.3",
+      "type": "depends_on",
+      "note": "Geometric Lemma A.3 provides the amplitude decomposition R $= \\Sigma a_k^2$ bar{k}⊗bar{k} used to construct the Reynolds stress cancellation."
+    },
+    {
+      "from": "prop:3.5",
+      "to": "prop:3.1",
+      "type": "depends_on",
+      "note": "Amplitude bounds from Prop 3.1 used to estimate F^(1,1)_{2q} and F^(1,2)_{2q} in Besov norms."
+    },
+    {
+      "from": "prop:3.5",
+      "to": "prop:A.7",
+      "type": "depends_on",
+      "note": "Oscillatory $BMO^{-1}$ estimate converts high-frequency quadratic terms to $B^{-1}_{\\infty,\\infty}$ bounds, e.g. ‖F^(1,1)_{2q}‖$_{L^1_t B^{-1}_{\\infty,\\infty}}$ ≲ $C_0 \\lambda_{2q}^{-3/4}$."
+    },
+    {
+      "from": "prop:3.6",
+      "to": "prop:3.2",
+      "type": "depends_on",
+      "note": "Uses $C^N$ bounds for w^(p)_{2q} and w^(s)_{2q} from Prop 3.2 to bound bilinear cross-terms in F^(2)_{2q}."
+    },
+    {
+      "from": "prop:3.6",
+      "to": "prop:A.7",
+      "type": "depends_on",
+      "note": "Oscillatory estimate used to bound $(\\partial_t - \\Delta)w^(p,main)_{2q}$ in $B^{-1}_{\\infty,\\infty}$, yielding (3.19)."
+    },
+    {
+      "from": "prop:3.7",
+      "to": "lem:A.6",
+      "type": "depends_on",
+      "note": "Transport-diffusion estimate from Lem A.6 applied to the forced NS system for w^(ns)_{2q}, giving the $B^{-1/2}_{\\infty,1}$ bound (3.26)."
+    },
+    {
+      "from": "prop:3.7",
+      "to": "prop:3.5",
+      "type": "depends_on",
+      "note": "The forcing $F_{2q} = F^(1)_{2q} + F^(2)_{2q}$; the F^(1)_{2q} bound from Prop 3.5 feeds into the right-hand side of (3.27)."
+    },
+    {
+      "from": "prop:3.7",
+      "to": "prop:3.6",
+      "type": "depends_on",
+      "note": "The F^(2)_{2q} bound from Prop 3.6 feeds into the right-hand side of (3.27)."
+    },
+    {
+      "from": "prop:3.7",
+      "to": "prop:3.2",
+      "type": "depends_on",
+      "note": "Uses $L^1_t C^1$ bounds for $w^(p)_{2q} + w^(s)_{2q} + u_{2q-2}$ from Prop 3.2 and inductive hypothesis in the Gronwall argument (3.30)."
+    }
+  ],
+  "critical_path": [
+    "thm:1.1",
+    "prop:2.1",
+    "prop:3.7",
+    "prop:3.5",
+    "lem:A.2",
+    "lem:A.3"
+  ],
+  "proof_architecture": {
+    "layer_1_statement_and_context": {
+      "description": "Main theorem statement and context for the 2D $BMO^{-1}$ non-uniqueness problem",
+      "nodes": [
+        "thm:1.1",
+        "rem:1.2"
+      ]
+    },
+    "layer_2_iterative_framework": {
+      "description": "Inductive scheme constructing sequences $u_{2q}, u_{2q+1}$ via three-component decomposition $w_m = w^(p)_m + w^(s)_m + w^(ns)_m$",
+      "nodes": [
+        "prop:2.1"
+      ]
+    },
+    "layer_3_building_blocks": {
+      "description": "Amplitude functions, building blocks, and their $C^N$ and $L^r$ estimates",
+      "nodes": [
+        "prop:3.1",
+        "prop:3.2",
+        "prop:3.3",
+        "prop:3.4"
+      ]
+    },
+    "layer_4_error_analysis": {
+      "description": "Quadratic self-interaction error F^(1) (heat-dominated cancellation) and cross-interaction error F^(2) in Besov spaces",
+      "nodes": [
+        "prop:3.5",
+        "prop:3.6"
+      ]
+    },
+    "layer_5_perturbation_closure": {
+      "description": "Global perturbation flow w^(ns)_{2q} absorbing all errors via forced Navier-Stokes in subcritical Besov space",
+      "nodes": [
+        "prop:3.7"
+      ]
+    },
+    "layer_6_analytic_toolbox": {
+      "description": "Foundational tools: stationary 2D Euler flows, geometric decomposition, Besov spaces, transport-diffusion, oscillatory estimates",
+      "nodes": [
+        "def:A.1",
+        "lem:A.2",
+        "lem:A.3",
+        "def:A.4",
+        "def:A.5",
+        "lem:A.6",
+        "prop:A.7"
+      ]
+    }
+  },
+  "bibliography": {
+    "CP": {
+      "title": "Non-uniqueness of smooth solutions of the Navier-Stokes equations from critical data",
+      "arxiv_id": null,
+      "in_registry": false
+    },
+    "CDP": {
+      "title": "Instantaneous Type I blow-up and non-uniqueness of smooth solutions of the Navier-Stokes equations",
+      "arxiv_id": "2511.09556",
+      "in_registry": false
+    },
+    "MNY-ar1": {
+      "title": "Non-uniqueness of weak solutions to the Navier-Stokes equations in R^3",
+      "arxiv_id": "2412.10404",
+      "in_registry": false
+    },
+    "MNY-ar2": {
+      "title": "Sharp non-uniqueness for the Navier-Stokes equations in R^3",
+      "arxiv_id": "2412.09637",
+      "in_registry": false
+    },
+    "ABC": {
+      "title": "Non-uniqueness of Leray solutions of the forced Navier-Stokes equations",
+      "arxiv_id": null,
+      "in_registry": false
+    },
+    "BV": {
+      "title": "Nonuniqueness of weak solutions to the Navier-Stokes equation",
+      "arxiv_id": null,
+      "in_registry": false
+    },
+    "1Cheskidov": {
+      "title": "Sharp nonuniqueness for the Navier-Stokes equations",
+      "arxiv_id": null,
+      "in_registry": false
+    },
+    "CL23": {
+      "title": "L^2-critical nonuniqueness for the 2D Navier-Stokes equations",
+      "arxiv_id": null,
+      "in_registry": false
+    },
+    "CDS": {
+      "title": "Dissipative continuous Euler flows in two and three dimensions",
+      "arxiv_id": "1205.1226",
+      "in_registry": false
+    },
+    "HWY": {
+      "title": "Nonuniqueness of Leray-Hopf solutions to the unforced incompressible 3D Navier-Stokes equation",
+      "arxiv_id": "2509.25116",
+      "in_registry": false
+    },
+    "BCD11": {
+      "title": "Fourier Analysis and Nonlinear Partial Differential Equations",
+      "arxiv_id": null,
+      "in_registry": false
+    },
+    "KochTataru01": {
+      "title": "Well-posedness for the Navier-Stokes equations",
+      "arxiv_id": null,
+      "in_registry": false
+    }
+  }
+}

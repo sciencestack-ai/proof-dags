@@ -1,0 +1,72 @@
+{
+  "title": "Polynomial Freiman-Ruzsa Conjecture Proof DAG",
+  "tags": ["additive-combinatorics", "entropy", "pfr", "freiman-ruzsa", "marton-conjecture"],
+  "papers": {
+    "2311.05762": {
+      "title": "On a conjecture of Marton",
+      "authors": ["W. T. Gowers", "Ben Green", "Freddie Manners", "Terence Tao"],
+      "role": "root"
+    },
+    "2306.13403": {
+      "title": "Sumsets and entropy revisited",
+      "authors": ["Ben Green", "Freddie Manners", "Terence Tao"],
+      "role": "precursor"
+    },
+    "2404.09639": {
+      "title": "Improved Exponent for Marton's Conjecture in F_2^n",
+      "authors": ["Jyun-Jie Liao"],
+      "role": "improvement"
+    },
+    "2501.11580": {
+      "title": "A polynomial Freiman-Ruzsa inverse theorem for function fields",
+      "authors": ["Thomas F. Bloom"],
+      "role": "extension"
+    },
+    "2512.11217": {
+      "title": "Improved Bounds for the Freiman-Ruzsa Theorem",
+      "authors": ["Rushil Raghavan"],
+      "role": "extension"
+    },
+    "2406.10872": {
+      "title": "On entropy Marton-type inequalities and small symmetric differences with cosets of abelian groups",
+      "authors": ["Thomas Karam"],
+      "role": "extension"
+    },
+    "2312.11017": {
+      "title": "Information Inequalities via Ideas from Additive Combinatorics",
+      "authors": ["Chin Wa Lau", "Chandra Nair"],
+      "role": "extension"
+    },
+    "2411.13493": {
+      "title": "Polynomial Freiman-Ruzsa, Reed-Muller codes and Shannon capacity",
+      "authors": ["Emmanuel Abbe", "Colin Sandon", "Vladyslav Shashkov", "Maryna Viazovska"],
+      "role": "application"
+    },
+    "2405.10297": {
+      "title": "Low-Degree Polynomials Are Good Extractors",
+      "authors": ["Omar Alrabiah", "Jesse Goodman", "Jonathan Mosheiff", "João Ribeiro"],
+      "role": "application"
+    },
+    "2603.06483": {
+      "title": "Uniform sum-product phenomenon for algebraic groups and Bremner's conjecture",
+      "authors": ["Joseph Harrison", "Akshat Mudgal", "Harry Schmidt"],
+      "role": "application"
+    }
+  },
+  "foundational": {
+    "ruzsa-1996": {
+      "title": "Generalized arithmetical progressions and sumsets",
+      "authors": ["Imre Z. Ruzsa"],
+      "year": 1996,
+      "role": "foundational",
+      "key_contributions": ["Ruzsa distance", "Ruzsa triangle inequality", "Ruzsa covering lemma"]
+    },
+    "tao-entropy-2010": {
+      "title": "Sumset and Inverse Sumset Theory for Shannon Entropy",
+      "authors": ["Terence Tao"],
+      "year": 2010,
+      "role": "foundational",
+      "key_contributions": ["entropic Balog-Szemeredi-Gowers lemma", "entropy sumset theory"]
+    }
+  }
+}

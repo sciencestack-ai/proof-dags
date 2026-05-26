@@ -1,0 +1,158 @@
+{
+  "paper": "1408.5794",
+  "title": "Decoupling, exponential sums and the Riemann zeta function",
+  "authors": [
+    "Jean Bourgain"
+  ],
+  "generated": "2026-05-12",
+  "status": "partial",
+  "partial_reason": "Only 3 formal math environments parsed (thm:1, thm:2, cor:3); the headline results — the exponential-sum bound (§3, eq. 3.19), the $|\\zeta(1/2+it)|\\ll t^{13/84+\\epsilon}$ bound (§4), and the exponent-pair statement (§5, 'Theorem 6') — live in running text and are represented here by their section nodes.",
+  "nodes": {
+    "thm:1": {
+      "type": "Theorem",
+      "number": "1",
+      "section": "2",
+      "role": "main_technical",
+      "summary": "A multilinear ($d/2$-linear) decoupling inequality for the curve $\\Phi$: for $O(1)$-separated subintervals $I_1,\\dots,I_{d/2}\\subset[0,1]$ and the partition $\\{I_\\tau\\}$ of $[0,1]$ into $N^{-1/2}$-intervals, $\\|\\prod_j|\\int_{I_j}a_j(t)e(x\\cdot\\Phi(t))dt|^{2/d}\\|_{L^{3d}_\\#(B_N)}\\ll N^{1/6+\\epsilon}\\prod_j[\\sum_{I_\\tau\\subset I_j}\\|\\int_{I_\\tau}a_je(x\\cdot\\Phi)\\|_{L^6_\\#}^6]^{1/(3d)}$. The decoupling input, an adaptation of the Bourgain–Demeter method to this specific curve."
+    },
+    "thm:2": {
+      "type": "Theorem",
+      "number": "2",
+      "section": "2",
+      "role": "key_reduction",
+      "summary": "Mean value theorem: $\\int_{[0,1]^2\\times[-1,1]^2}|\\sum_{n\\le N}e(nx_1+n^2x_2+N^{1/2}n^{3/2}x_3+N^{1/2}n^{1/2}x_4)|^{12}dx\\ll N^{6+\\epsilon}$. The sixth-moment bound for the relevant exponential sum, deduced from the decoupling inequality thm:1."
+    },
+    "cor:3": {
+      "type": "Corollary",
+      "number": "3",
+      "section": "2",
+      "role": "key_reduction",
+      "summary": "Rescaled mean value: for $N^{-2}\\le\\delta\\le1$, $N^{-1}\\le\\Delta\\le1$, $A_6(N,\\delta,\\Delta)=\\int|\\sum_{n\\le N}e(nx_1+n^2x_2+\\tfrac1\\delta(n/N)^{3/2}x_3+\\tfrac1\\Delta(n/N)^{1/2}x_4)|^{12}dx\\ll\\delta\\Delta N^{9+\\epsilon}$. The flexible form fed into the exponential-sum analysis."
+    },
+    "sec:3": {
+      "type": "Section",
+      "number": "3",
+      "section": "3",
+      "role": "main_technical",
+      "summary": "Exponential-sum bound: for $S=\\sum_{m\\sim M}e(f(m))$ with $f(u)=TF(u/M)$, $F$ smooth on $[1/2,1]$ with $\\min\\{|F''|,|F'''|,|F''''|\\}>c$ and $M\\le\\sqrt T$, a van der Corput-type process driven by the mean value theorem yields the new estimate (eq. 3.19) for $|S|$. The bridge from the moment bound to a pointwise exponential-sum bound."
+    },
+    "sec:4": {
+      "type": "Section",
+      "number": "4",
+      "section": "4",
+      "role": "main_result",
+      "summary": "Bounding $\\zeta$ on the critical line: combining the §3 exponential-sum estimate (for the missing range $\\alpha=\\log M/\\log T\\in(13/42,17/42)$) with Huxley's bound and exponent-pair theory gives $|\\zeta(1/2+it)|\\ll t^{13/84+\\epsilon}$ — the headline subconvexity bound, improving Huxley's $32/205$ exponent."
+    },
+    "sec:5": {
+      "type": "Section",
+      "number": "5",
+      "section": "5",
+      "role": "auxiliary",
+      "summary": "Further comments: the method shows $(13/84+\\epsilon,\\,55/84+\\epsilon)$ is an exponent pair (the paper's 'Theorem 6'), valid under hypotheses weaker than a direct application of §3 would require ($M$ may exceed $\\sqrt T$; summation over a sub-interval). The exponent-pair upgrade with downstream uses across analytic number theory."
+    }
+  },
+  "edges": [
+    {
+      "from": "thm:2",
+      "to": "thm:1",
+      "type": "depends_on",
+      "note": "The sixth-moment / mean value bound is obtained by applying the decoupling inequality to the exponential sum and summing over the $N^{-1/2}$-pieces."
+    },
+    {
+      "from": "cor:3",
+      "to": "thm:1",
+      "type": "depends_on",
+      "note": "The rescaled mean value is the same decoupling estimate after an affine change of variables in the curve parameters."
+    },
+    {
+      "from": "cor:3",
+      "to": "thm:2",
+      "type": "depends_on",
+      "note": "Specializes/rescales the unparametrized mean value theorem."
+    },
+    {
+      "from": "sec:3",
+      "to": "cor:3",
+      "type": "depends_on",
+      "note": "The van der Corput iteration that bounds $|S|$ feeds on the rescaled mean value estimate at each scale."
+    },
+    {
+      "from": "sec:4",
+      "to": "sec:3",
+      "type": "depends_on",
+      "note": "The critical-line bound for $\\zeta$ uses the new exponential-sum estimate to cover the previously inaccessible range of $\\alpha$."
+    },
+    {
+      "from": "sec:5",
+      "to": "sec:3",
+      "type": "depends_on",
+      "note": "The exponent-pair statement is a re-packaging of the §3 exponential-sum bound under relaxed hypotheses."
+    }
+  ],
+  "critical_path": [
+    "sec:4",
+    "sec:3",
+    "cor:3",
+    "thm:2",
+    "thm:1"
+  ],
+  "proof_architecture": {
+    "decoupling_input": {
+      "description": "A multilinear decoupling inequality for the relevant curve, adapted from the Bourgain–Demeter method.",
+      "nodes": [
+        "thm:1"
+      ]
+    },
+    "mean_value": {
+      "description": "Decoupling converted into a sixth-moment / mean value theorem for the exponential sum, in unparametrized and rescaled forms.",
+      "nodes": [
+        "thm:2",
+        "cor:3"
+      ]
+    },
+    "exponential_sums_and_zeta": {
+      "description": "A van der Corput-type process turns the moment bound into a pointwise exponential-sum estimate, which yields the $t^{13/84+\\epsilon}$ bound on $|\\zeta(1/2+it)|$ and a new exponent pair.",
+      "nodes": [
+        "sec:3",
+        "sec:4",
+        "sec:5"
+      ]
+    }
+  },
+  "bibliography": {
+    "BD": {
+      "title": "The proof of the l^2 Decoupling Conjecture",
+      "authors": [
+        "Bourgain",
+        "Demeter"
+      ],
+      "arxiv_id": "1403.5335",
+      "in_registry": true
+    },
+    "Huxley": {
+      "title": "Exponential sums and the Riemann zeta function V",
+      "authors": [
+        "M. N. Huxley"
+      ],
+      "arxiv_id": null,
+      "in_registry": false
+    },
+    "GrahamKolesnik": {
+      "title": "Van der Corput's Method of Exponential Sums",
+      "authors": [
+        "S. W. Graham",
+        "G. Kolesnik"
+      ],
+      "arxiv_id": null,
+      "in_registry": false
+    },
+    "Watt": {
+      "title": "Exponential sums and the Riemann zeta function II",
+      "authors": [
+        "N. Watt"
+      ],
+      "arxiv_id": null,
+      "in_registry": false
+    }
+  }
+}

@@ -1,0 +1,639 @@
+{
+  "paper": "2405.20552",
+  "title": "New large value estimates for Dirichlet polynomials",
+  "authors": [
+    "Larry Guth",
+    "James Maynard"
+  ],
+  "generated": "2026-05-12",
+  "status": "complete",
+  "nodes": {
+    "thm:1.1": {
+      "type": "Theorem",
+      "number": "1.1",
+      "section": "1",
+      "role": "main_result",
+      "summary": "Large values estimate: if $|b_n|\\le1$ and $(t_r)_{r\\le R}$ are $1$-separated in $[0,T]$ with $|\\sum_{n=N}^{2N}b_n n^{it_r}|\\ge V$ for all $r$, then $R\\le T^{o(1)}(N^2V^{-2}+N^{18/5}V^{-4}+TN^{12/5}V^{-4})$. The headline bound; new in the critical range $V\\approx N^{3/4}$."
+    },
+    "thm:1.2": {
+      "type": "Theorem",
+      "number": "1.2",
+      "section": "1",
+      "role": "main_result",
+      "summary": "Zero-density estimate $N(\\sigma,T)\\ll T^{15(1-\\sigma)/(3+5\\sigma)+o(1)}$ for the count of zeros of $\\zeta(s)$ with $\\Re\\rho\\ge\\sigma$, $|\\Im\\rho|\\le T$. At $\\sigma=3/4$ this gives the $T^{30(1-\\sigma)/13+o(1)}$ exponent, breaking the long-standing $T^{(12/5)(1-\\sigma)+o(1)}$ Huxley-type barrier near the critical line."
+    },
+    "cor:1.3": {
+      "type": "Corollary",
+      "number": "1.3",
+      "section": "1",
+      "role": "main_result",
+      "summary": "Primes in short intervals: for $y\\in[x^{17/30+\\epsilon},x^{0.99}]$, $\\pi(x+y)-\\pi(x)=\\frac{y}{\\log x}+O_\\epsilon(y\\exp(-\\sqrt[4]{\\log x}))$. Improves the Huxley exponent $7/12$ to $17/30$."
+    },
+    "cor:1.4": {
+      "type": "Corollary",
+      "number": "1.4",
+      "section": "1",
+      "role": "auxiliary",
+      "summary": "Almost-all short intervals: for $y\\in[X^{2/15+\\epsilon},X^{0.99}]$, the asymptotic for $\\pi(x+y)-\\pi(x)$ holds for all but $O(X\\exp(-\\sqrt[4]{\\log x}))$ choices of $x\\in[X,2X]$."
+    },
+    "conjecture:1.5": {
+      "type": "Conjecture",
+      "number": "1.5",
+      "section": "1",
+      "role": "context",
+      "summary": "Montgomery's large-value conjecture: for $\\sigma>1/2$ and $D(t)=\\sum_{n=N}^{2N}b_ne^{it\\log n}$ with $|b_n|\\le1$, a $1$-separated set $W$ with $|D(t)|>N^\\sigma$ has $|W|\\le C(\\sigma)T^{o(1)}N^{2-2\\sigma}$. The target; thm:1.1 attains it in a partial range."
+    },
+    "thm:1.6": {
+      "type": "Theorem",
+      "number": "1.6",
+      "section": "1",
+      "role": "foundational",
+      "summary": "Heath-Brown's mean-value bound: for a $1$-separated $\\mathcal{T}$ in an interval of length $T$ and $|a_n|\\lessapprox1$, $\\sum_{t_1,t_2\\in\\mathcal{T}}|\\sum_{n=N}^{2N}a_n n^{i(t_1-t_2)}|^2\\lessapprox|\\mathcal{T}|^2N+|\\mathcal{T}|N^2+|\\mathcal{T}|^{5/4}T^{1/2}N$. The classical large-values input the paper builds on and surpasses."
+    },
+    "lem:1.7": {
+      "type": "Lemma",
+      "number": "1.7",
+      "section": "1",
+      "role": "key_reduction",
+      "summary": "Energy formulation: for $N\\in[T^{2/3},T]$, $\\sigma>1/2$, $D(t)=\\sum_{n=N}^{2N}b_n n^{it}$, $|b_n|\\le1$, and a $1$-separated $W$ with $|D(t)|>N^\\sigma$, the additive energy satisfies $E(W)\\le|W|^3N^{1-2\\sigma+o(1)}+|W|^2N^{2-2\\sigma+o(1)}$. Reduces the large-values problem to bounding $E(W)$."
+    },
+    "prop:3.1": {
+      "type": "Proposition",
+      "number": "3.1",
+      "section": "3",
+      "role": "key_reduction",
+      "summary": "Main Proposition: for $\\sigma\\in[7/10,8/10]$ and a $T^\\epsilon$-separated $\\mathcal{W}$ in an interval of length $T=N^{6/5}$ with $|\\sum_n w(n/N)b_n n^{it}|\\ge N^\\sigma$, one has $|\\mathcal{W}|\\le TN^{(12-20\\sigma)/5+o_\\epsilon(1)}$. The technical statement that the bulk of the paper proves and from which thm:1.1 follows."
+    },
+    "lem:4.1": {
+      "type": "Lemma",
+      "number": "4.1",
+      "section": "4",
+      "role": "key_mechanism",
+      "summary": "Large values controlled by singular values: with $M_W$ the natural matrix, if $|D_N(t)|\\ge N^\\sigma$ on $W$ and $|b_n|\\le1$ then $|W|\\lesssim N^{1-2\\sigma}s_1(M_W)^2$. Recasts counting $W$ as bounding the top singular value."
+    },
+    "lem:4.2": {
+      "type": "Lemma",
+      "number": "4.2",
+      "section": "4",
+      "role": "technical",
+      "summary": "Singular value via traces: for an $m\\times n$ matrix $A$, $s_1(A)\\le 2(\\mathrm{tr}((AA^*)^3)-\\mathrm{tr}(AA^*)^3/m^2)^{1/6}+2(\\mathrm{tr}(AA^*)/m)^{1/2}$. The linear-algebra lever turning $s_1(M_W)$ into computable traces."
+    },
+    "lem:4.3": {
+      "type": "Lemma",
+      "number": "4.3",
+      "section": "4",
+      "role": "technical",
+      "summary": "Non-stationary phase for $h_t(u)=w(u)^2u^{it}$: $\\widehat{h_t}(\\xi)\\lesssim_j(1+|t|)^j/|\\xi|^j$ and $\\widehat{h_t}(\\xi)\\lesssim_j(1+|\\xi|)^j/|t|^j$. Decay estimates used throughout to localize the trace sums."
+    },
+    "lem:4.4": {
+      "type": "Lemma",
+      "number": "4.4",
+      "section": "4",
+      "role": "technical",
+      "summary": "Hilbert–Schmidt norm: for finite $W$ with $|W|\\le N^{O(1)}$, $\\mathrm{tr}(M_WM_W^*)=N|W|\\|w\\|_{L^2}^2+O(N^{-100})$. The quadratic-trace term."
+    },
+    "lem:4.5": {
+      "type": "Lemma",
+      "number": "4.5",
+      "section": "4",
+      "role": "key_mechanism",
+      "summary": "Cubic trace expansion: for $T^\\epsilon$-separated $W$, $\\mathrm{tr}((M_WM_W^*)^3)=N^3|W|\\|w\\|_{L^2}^6+\\sum_{m\\in\\mathbb{Z}^3\\setminus\\{0\\}}I_m+O_\\epsilon(T^{-100})$ where $I_m=N^3\\sum_{t_1,t_2,t_3\\in W}\\widehat{h}_{t_1-t_2}(m_1N)\\widehat{h}_{t_2-t_3}(m_2N)\\widehat{h}_{t_3-t_1}(m_3N)$. Splits the cubic trace into a diagonal main term plus oscillatory $I_m$."
+    },
+    "prop:4.6": {
+      "type": "Proposition",
+      "number": "4.6",
+      "section": "4",
+      "role": "key_reduction",
+      "summary": "Reduction to $I_m$: for $T^\\epsilon$-separated $W$ with $|D_N(t)|>N^\\sigma$, $|W|\\lesssim_\\epsilon N^{2-2\\sigma}+N^{1-2\\sigma}(\\sum_{m\\in\\mathbb{Z}^3\\setminus\\{0\\}}I_m)^{1/3}$. Everything reduces to estimating the sum of $I_m$'s."
+    },
+    "prop:5.1": {
+      "type": "Proposition",
+      "number": "5.1",
+      "section": "5",
+      "role": "technical",
+      "summary": "$S_1$ bound: the part of the $I_m$ sum where one of the $m_i$ vanishes contributes $S_1=O_\\epsilon(T^{-10})$ — negligible."
+    },
+    "prop:6.1": {
+      "type": "Proposition",
+      "number": "6.1",
+      "section": "6",
+      "role": "main_technical",
+      "summary": "$S_2$ bound: the 'one large frequency' part satisfies, for any $k\\in\\mathbb{N}$, $S_2\\lessapprox N^2|W|^2+TN|W|^{2-1/k}+N^2|W|^2(T^{1/2}/|W|^{3/4})^{1/k}$. Handled by an iterated approximate-functional-equation argument."
+    },
+    "lem:6.2": {
+      "type": "Lemma",
+      "number": "6.2",
+      "section": "6",
+      "role": "technical",
+      "summary": "Approximate functional equation: for $|t|\\sim T_0\\ge T^\\epsilon$, $|\\sum_{m\\ne0}\\widehat{h}_t(mN)|\\lesssim T_0^{-1/2}\\int_{u\\lessapprox1}|\\sum_{m\\lessapprox T_0/N}m^{-i(t+u)}|du+O(T^{-100})$. Trades a long sum for a shorter dual one — the engine of the $S_2$ iteration."
+    },
+    "prop:7.1": {
+      "type": "Proposition",
+      "number": "7.1",
+      "section": "7",
+      "role": "key_mechanism",
+      "summary": "Cancellation within $I_m$: $|I_m|\\lesssim N^3\\int_{|m_1v_1+m_2v_2+m_3|\\lessapprox1/N,\\,v_1\\asymp v_2\\asymp1}|R(v_1)R(v_2/v_1)R(v_2)|dv_1dv_2+O(T^{-200})$, and if $|m_1|\\le|m_2|\\le|m_3|$ then $|I_m|=O(T^{-200})$ unless $|m_2|\\asymp|m_3|$. The 'key cancellation' that makes $S_3$ tractable."
+    },
+    "prop:7.2": {
+      "type": "Proposition",
+      "number": "7.2",
+      "section": "7",
+      "role": "main_technical",
+      "summary": "Expansion of $S_3$: there is $0<M_1\\le M\\lessapprox T/N$ with $S_3\\lessapprox\\frac{N^2}{M}\\sum_{|m_1|\\sim M_1,\\,|m_2|,|m_3|\\sim M}\\widetilde I_m+O(T^{-100})$ for an explicit $\\widetilde I_m$ built from $R$ and $\\widetilde R_M$. Reorganizes the 'all-frequencies-large' contribution into a dyadic sum amenable to $L^2$/$L^4$ control."
+    },
+    "prop:8.1": {
+      "type": "Proposition",
+      "number": "8.1",
+      "section": "8",
+      "role": "key_reduction",
+      "summary": "$S_3$ controlled by energy: for $T^\\epsilon$-separated $W$ in an interval of length $T$, $S_3\\lessapprox T^2|W|^{1/2}E(W)^{1/2}$. Bridges the trace machinery to the additive energy $E(W)$."
+    },
+    "lem:8.2": {
+      "type": "Lemma",
+      "number": "8.2",
+      "section": "8",
+      "role": "technical",
+      "summary": "$L^2$ bound: $\\int_{v\\asymp1}|R(v)|^2dv\\lesssim_\\epsilon|W|$ for $T^\\epsilon$-separated $W$. Plancherel-type input for prop:8.1."
+    },
+    "lem:8.3": {
+      "type": "Lemma",
+      "number": "8.3",
+      "section": "8",
+      "role": "technical",
+      "summary": "$L^4$ bound: $\\int_{v\\asymp1}|\\widetilde R_M(v)|^4dv\\lessapprox E(W)$ and $\\int_{v\\asymp1}|R(v)|^4dv\\lessapprox E(W)$. The fourth-moment input that introduces $E(W)$ into the $S_3$ estimate."
+    },
+    "prop:9.1": {
+      "type": "Proposition",
+      "number": "9.1",
+      "section": "9",
+      "role": "main_technical",
+      "summary": "Equidistribution over affine transformations: if $f\\ge0$ is supported on $u\\asymp1$ with $|\\widehat f(\\xi)|\\lessapprox_j(|\\xi|/T)^j$, then $J(f)\\lessapprox M^6(\\int f)^2+M^4\\int f^2$. The summation-over-$\\mathrm{GL}_2$-type lemma that powers the refined $S_3$ bound."
+    },
+    "lem:9.2": {
+      "type": "Lemma",
+      "number": "9.2",
+      "section": "9",
+      "role": "technical",
+      "summary": "Iterative bound for $J(f)$: $J(f)\\lessapprox M^6(\\int f)^2+(M^4\\int f^2)^{1/2}J(\\widetilde f)^{1/2}$ with $\\widetilde f$ a smoothed version of $f$. Bootstrapped to prove prop:9.1."
+    },
+    "prop:10.1": {
+      "type": "Proposition",
+      "number": "10.1",
+      "section": "10",
+      "role": "main_technical",
+      "summary": "Refined $S_3$ bound: $S_3\\lessapprox T^2|W|^{3/2}+TN|W|^{1/2}E(W)^{1/2}$. Sharpens prop:8.1 using the affine-equidistribution lemma."
+    },
+    "prop:11.1": {
+      "type": "Proposition",
+      "number": "11.1",
+      "section": "11",
+      "role": "key_reduction",
+      "summary": "Energy bound: for $D_N(t)=\\sum_{n\\sim N}b_n n^{it}$, $|b_n|\\le1$, a $1$-separated $W$ in an interval of length $T$ with $|D_N(t)|\\ge N^\\sigma$, and $T^{3/4}\\le N\\le T$, $E(W)\\lessapprox|W|N^{4-4\\sigma}+|W|^{21/8}T^{1/4}N^{1-2\\sigma}+|W|^3N^{1-2\\sigma}$. The crucial new additive-energy estimate."
+    },
+    "prop:11.2": {
+      "type": "Proposition",
+      "number": "11.2",
+      "section": "11",
+      "role": "main_technical",
+      "summary": "Final $S_3$ bound for $N\\ge T^{3/4}$: $S_3\\lessapprox T^2|W|^{3/2}+T|W|N^{3-2\\sigma}+T|W|^2N^{3/2-\\sigma}+T^{9/8}|W|^{29/16}N^{3/2-\\sigma}$. Combines prop:10.1 with prop:11.1."
+    },
+    "lem:11.3": {
+      "type": "Lemma",
+      "number": "11.3",
+      "section": "11",
+      "role": "technical",
+      "summary": "Dirichlet polynomials don't vary fast: $|D_N(t)|\\lessapprox\\int_{|u-t|\\lessapprox1}|D_N(u)|du+O(T^{-100})$. Lets discrete sets be replaced by averages."
+    },
+    "lem:11.4": {
+      "type": "Lemma",
+      "number": "11.4",
+      "section": "11",
+      "role": "key_mechanism",
+      "summary": "Energy via discrete third moment: $E(W)\\lessapprox N^{-2\\sigma}\\sum_{n_1,n_2\\sim N}|R(n_1/n_2)|^3$. Converts $E(W)$ into a divisor-type sum split by $\\gcd(n_1,n_2)$."
+    },
+    "lem:11.5": {
+      "type": "Lemma",
+      "number": "11.5",
+      "section": "11",
+      "role": "technical",
+      "summary": "Discrete second moment: $\\sum_{n_1,n_2\\sim M}|R(n_1/n_2)|^2\\lessapprox|W|M^2+|W|^2M+|W|^{5/4}T^{1/2}M$. Heath-Brown-type input."
+    },
+    "lem:11.6": {
+      "type": "Lemma",
+      "number": "11.6",
+      "section": "11",
+      "role": "technical",
+      "summary": "Discrete fourth moment: $\\sum_{n_1,n_2\\sim M}|R(n_1/n_2)|^4\\lessapprox M^2E(W)+|W|^4M+E(W)^{3/4}|W|T^{1/2}M$. Self-referential in $E(W)$ — closed by the bootstrap."
+    },
+    "lem:11.7": {
+      "type": "Lemma",
+      "number": "11.7",
+      "section": "11",
+      "role": "technical",
+      "summary": "Smoothing for $R$: for $v\\asymp1$, $|R(v)|\\lesssim T\\int_{|v'-v|\\lessapprox1/T}|R(v')|dv'+O(T^{-100})$. Discrete-to-continuous transfer for the divisor sums."
+    },
+    "lem:11.8": {
+      "type": "Lemma",
+      "number": "11.8",
+      "section": "11",
+      "role": "technical",
+      "summary": "Small-GCD terms: $\\sum_{n_1,n_2\\sim N,\\,\\gcd(n_1,n_2)\\le D}|R(n_1/n_2)|^3\\lessapprox(DT+N^2)|W|^{1/2}E(W)^{1/2}$. The 'generic' part of the third-moment sum."
+    },
+    "lem:11.9": {
+      "type": "Lemma",
+      "number": "11.9",
+      "section": "11",
+      "role": "technical",
+      "summary": "Large-GCD terms: for $D=N^2/T$ and $N\\ge T^{3/4}$, $\\sum_{n_1,n_2\\sim N,\\,\\gcd(n_1,n_2)\\ge D}|R(n_1/n_2)|^3\\lesssim N|W|^3+NT^{1/4}|W|^{21/8}+E(W)^{1/2}|W|^{1/2}N^2$. The structured part; together with lem:11.8 it yields the energy bound prop:11.1."
+    },
+    "prop:12.1": {
+      "type": "Proposition",
+      "number": "12.1",
+      "section": "12",
+      "role": "key_reduction",
+      "summary": "Large values for $N\\ge T^{5/6}$: under the hypotheses of thm:1.1 with $T^{5/6}\\le N\\le T$, $V=N^\\sigma$, $\\sigma\\ge7/10$, $R\\lessapprox N^{2-2\\sigma}+T^{1/2}N^{3-4\\sigma}+\\inf_k(\\dots)$, in particular $R\\lessapprox N^{2-2\\sigma}+T^{1/2}N^{3-4\\sigma}+T^{(30\\sigma-21)/5}N^{(46-60\\sigma)/5}$. Combines prop:3.1 with the $S_2$ optimization to give thm:1.1 in the hard range."
+    }
+  },
+  "edges": [
+    {
+      "from": "thm:1.1",
+      "to": "prop:12.1",
+      "type": "depends_on",
+      "note": "The large-values estimate in the critical range $N\\ge T^{5/6}$ is exactly prop:12.1; smaller $N$ reduce to Heath-Brown."
+    },
+    {
+      "from": "thm:1.1",
+      "to": "thm:1.6",
+      "type": "imports_result",
+      "note": "For $N$ away from the critical window the bound is supplied by Heath-Brown's classical mean-value estimate."
+    },
+    {
+      "from": "thm:1.2",
+      "to": "thm:1.1",
+      "type": "depends_on",
+      "note": "The zero-density estimate is deduced from the new large-values bound via the standard zero-detection / mean-value argument."
+    },
+    {
+      "from": "cor:1.3",
+      "to": "thm:1.2",
+      "type": "depends_on",
+      "note": "Primes in short intervals follow from the zero-density estimate by the explicit-formula / Perron argument."
+    },
+    {
+      "from": "cor:1.4",
+      "to": "thm:1.2",
+      "type": "depends_on",
+      "note": "Almost-all short intervals follow from the same zero-density input with a second-moment averaging."
+    },
+    {
+      "from": "thm:1.1",
+      "to": "conjecture:1.5",
+      "type": "motivates",
+      "note": "thm:1.1 establishes Montgomery's conjecture in a partial range of $(\\sigma,N,T)$."
+    },
+    {
+      "from": "prop:12.1",
+      "to": "prop:3.1",
+      "type": "depends_on",
+      "note": "prop:12.1 is the $\\sigma\\in[7/10,8/10]$, $T=N^{6/5}$ Main Proposition combined with an $S_2$-parameter optimization."
+    },
+    {
+      "from": "prop:12.1",
+      "to": "prop:6.1",
+      "type": "depends_on",
+      "note": "The $\\inf_k$ term comes from optimizing the $S_2$ bound."
+    },
+    {
+      "from": "lem:1.7",
+      "to": "prop:11.1",
+      "type": "depends_on",
+      "note": "The energy formulation of the problem is exactly the energy bound prop:11.1 phrased for the reader's orientation."
+    },
+    {
+      "from": "prop:3.1",
+      "to": "prop:4.6",
+      "type": "depends_on",
+      "note": "The Main Proposition is proved by feeding the trace-reduction $|W|\\lesssim N^{2-2\\sigma}+N^{1-2\\sigma}(\\sum I_m)^{1/3}$ the $S_1+S_2+S_3$ bounds."
+    },
+    {
+      "from": "prop:3.1",
+      "to": "prop:5.1",
+      "type": "depends_on",
+      "note": "Contribution of $S_1$ is negligible."
+    },
+    {
+      "from": "prop:3.1",
+      "to": "prop:6.1",
+      "type": "depends_on",
+      "note": "Contribution of $S_2$."
+    },
+    {
+      "from": "prop:3.1",
+      "to": "prop:11.2",
+      "type": "depends_on",
+      "note": "Contribution of $S_3$ (final form for $N\\ge T^{3/4}$)."
+    },
+    {
+      "from": "prop:4.6",
+      "to": "lem:4.1",
+      "type": "depends_on",
+      "note": "Counting $W$ is reduced to bounding the top singular value of $M_W$."
+    },
+    {
+      "from": "prop:4.6",
+      "to": "lem:4.2",
+      "type": "depends_on",
+      "note": "The singular value is bounded by cubic and quadratic traces."
+    },
+    {
+      "from": "prop:4.6",
+      "to": "lem:4.4",
+      "type": "depends_on",
+      "note": "Quadratic trace evaluated by the Hilbert–Schmidt computation."
+    },
+    {
+      "from": "prop:4.6",
+      "to": "lem:4.5",
+      "type": "depends_on",
+      "note": "Cubic trace expanded into the diagonal main term plus $\\sum_m I_m$."
+    },
+    {
+      "from": "lem:4.5",
+      "to": "lem:4.3",
+      "type": "depends_on",
+      "note": "Non-stationary phase decay isolates the relevant frequencies in the trace expansion."
+    },
+    {
+      "from": "lem:4.4",
+      "to": "lem:4.3",
+      "type": "depends_on",
+      "note": "Same decay estimates control the error term."
+    },
+    {
+      "from": "prop:5.1",
+      "to": "lem:4.3",
+      "type": "depends_on",
+      "note": "Vanishing of $S_1$ is pure non-stationary-phase decay."
+    },
+    {
+      "from": "prop:6.1",
+      "to": "lem:6.2",
+      "type": "depends_on",
+      "note": "The $S_2$ bound is obtained by iterating the approximate functional equation."
+    },
+    {
+      "from": "lem:6.2",
+      "to": "lem:4.3",
+      "type": "depends_on",
+      "note": "Phase decay underlies the dual-sum trade."
+    },
+    {
+      "from": "prop:11.2",
+      "to": "prop:10.1",
+      "type": "depends_on",
+      "note": "Final $S_3$ bound starts from the affine-equidistribution-refined estimate."
+    },
+    {
+      "from": "prop:11.2",
+      "to": "prop:11.1",
+      "type": "depends_on",
+      "note": "...and substitutes the new energy bound."
+    },
+    {
+      "from": "prop:10.1",
+      "to": "prop:8.1",
+      "type": "depends_on",
+      "note": "Sharpens the energy-controlled $S_3$ bound."
+    },
+    {
+      "from": "prop:10.1",
+      "to": "prop:9.1",
+      "type": "depends_on",
+      "note": "The improvement uses equidistribution of affine transformations."
+    },
+    {
+      "from": "prop:9.1",
+      "to": "lem:9.2",
+      "type": "depends_on",
+      "note": "prop:9.1 is proved by iterating lem:9.2."
+    },
+    {
+      "from": "prop:8.1",
+      "to": "prop:7.2",
+      "type": "depends_on",
+      "note": "$S_3$ is first written as the dyadic $\\widetilde I_m$ sum..."
+    },
+    {
+      "from": "prop:8.1",
+      "to": "lem:8.3",
+      "type": "depends_on",
+      "note": "...then bounded via the $L^4$ estimate, which introduces $E(W)$."
+    },
+    {
+      "from": "prop:8.1",
+      "to": "lem:8.2",
+      "type": "depends_on",
+      "note": "$L^2$ estimate handles the remaining factor."
+    },
+    {
+      "from": "prop:7.2",
+      "to": "prop:7.1",
+      "type": "depends_on",
+      "note": "The expansion exploits the key cancellation in each $I_m$."
+    },
+    {
+      "from": "prop:7.2",
+      "to": "lem:4.5",
+      "type": "depends_on",
+      "note": "Starts from the cubic-trace expansion's $I_m$ definition."
+    },
+    {
+      "from": "prop:7.1",
+      "to": "lem:4.3",
+      "type": "depends_on",
+      "note": "Cancellation is a stationary/non-stationary phase analysis of $I_m$."
+    },
+    {
+      "from": "prop:11.1",
+      "to": "lem:11.4",
+      "type": "depends_on",
+      "note": "Energy is reduced to the discrete third moment of $R(n_1/n_2)$."
+    },
+    {
+      "from": "prop:11.1",
+      "to": "lem:11.8",
+      "type": "depends_on",
+      "note": "Small-GCD part of the third moment."
+    },
+    {
+      "from": "prop:11.1",
+      "to": "lem:11.9",
+      "type": "depends_on",
+      "note": "Large-GCD part of the third moment."
+    },
+    {
+      "from": "lem:11.8",
+      "to": "lem:11.6",
+      "type": "depends_on",
+      "note": "Hölder + the discrete fourth moment bounds the generic terms."
+    },
+    {
+      "from": "lem:11.8",
+      "to": "lem:8.3",
+      "type": "depends_on",
+      "note": "Fourth-moment $L^4$ control reused."
+    },
+    {
+      "from": "lem:11.9",
+      "to": "lem:11.5",
+      "type": "depends_on",
+      "note": "Large-GCD terms reduce to a shorter sum controlled by the discrete second moment."
+    },
+    {
+      "from": "lem:11.5",
+      "to": "thm:1.6",
+      "type": "imports_result",
+      "note": "The discrete second moment is Heath-Brown's bound applied at scale $M$."
+    },
+    {
+      "from": "lem:11.6",
+      "to": "lem:11.7",
+      "type": "depends_on",
+      "note": "Discrete-to-continuous transfer before applying $L^4$."
+    },
+    {
+      "from": "lem:11.4",
+      "to": "lem:11.3",
+      "type": "depends_on",
+      "note": "Replaces the discrete set $W$ by an average of $|D_N|$."
+    },
+    {
+      "from": "lem:11.5",
+      "to": "lem:11.7",
+      "type": "depends_on",
+      "note": "Same smoothing step."
+    }
+  ],
+  "critical_path": [
+    "thm:1.1",
+    "prop:12.1",
+    "prop:3.1",
+    "prop:4.6",
+    "lem:4.5",
+    "prop:11.2",
+    "prop:11.1",
+    "lem:11.4",
+    "lem:11.9"
+  ],
+  "proof_architecture": {
+    "main_results": {
+      "description": "The large-values estimate and its number-theoretic payoffs: zero density and primes in short intervals.",
+      "nodes": [
+        "thm:1.1",
+        "thm:1.2",
+        "cor:1.3",
+        "cor:1.4",
+        "conjecture:1.5",
+        "lem:1.7",
+        "thm:1.6"
+      ]
+    },
+    "trace_method": {
+      "description": "Recast counting the large-value set as bounding the top singular value of $M_W$; expand via traces into a diagonal main term plus the oscillatory sum $\\sum_m I_m$.",
+      "nodes": [
+        "lem:4.1",
+        "lem:4.2",
+        "lem:4.3",
+        "lem:4.4",
+        "lem:4.5",
+        "prop:4.6",
+        "prop:3.1"
+      ]
+    },
+    "S1_S2": {
+      "description": "The easy ($S_1$, negligible) and the 'one large frequency' ($S_2$) parts of the $I_m$ sum, the latter via an iterated approximate functional equation.",
+      "nodes": [
+        "prop:5.1",
+        "prop:6.1",
+        "lem:6.2"
+      ]
+    },
+    "S3_cancellation_and_energy": {
+      "description": "The hard 'all frequencies large' part $S_3$: a key cancellation in each $I_m$, a dyadic expansion, reduction to the additive energy $E(W)$ via $L^2$/$L^4$ estimates, and an affine-equidistribution refinement.",
+      "nodes": [
+        "prop:7.1",
+        "prop:7.2",
+        "prop:8.1",
+        "lem:8.2",
+        "lem:8.3",
+        "prop:9.1",
+        "lem:9.2",
+        "prop:10.1",
+        "prop:11.2"
+      ]
+    },
+    "energy_bound": {
+      "description": "The new additive-energy estimate: reduce $E(W)$ to a discrete third moment of $R(n_1/n_2)$ and split by $\\gcd(n_1,n_2)$ into small- and large-GCD contributions.",
+      "nodes": [
+        "prop:11.1",
+        "lem:11.3",
+        "lem:11.4",
+        "lem:11.5",
+        "lem:11.6",
+        "lem:11.7",
+        "lem:11.8",
+        "lem:11.9"
+      ]
+    },
+    "assembly": {
+      "description": "Optimize the $S_2$ parameter and assemble the pieces into the critical-range bound.",
+      "nodes": [
+        "prop:12.1"
+      ]
+    }
+  },
+  "bibliography": {
+    "HB": {
+      "title": "A large values estimate for Dirichlet polynomials",
+      "authors": [
+        "D. R. Heath-Brown"
+      ],
+      "arxiv_id": null,
+      "in_registry": false
+    },
+    "Hux": {
+      "title": "On the difference between consecutive primes",
+      "authors": [
+        "M. N. Huxley"
+      ],
+      "arxiv_id": null,
+      "in_registry": false
+    },
+    "Mont": {
+      "title": "Topics in Multiplicative Number Theory (large value conjecture)",
+      "authors": [
+        "H. L. Montgomery"
+      ],
+      "arxiv_id": null,
+      "in_registry": false
+    },
+    "Ivic": {
+      "title": "The Riemann Zeta-Function: Theory and Applications",
+      "authors": [
+        "A. Ivić"
+      ],
+      "arxiv_id": null,
+      "in_registry": false
+    },
+    "BDG": {
+      "title": "Proof of the main conjecture in Vinogradov's mean value theorem for degrees higher than three",
+      "authors": [
+        "Bourgain",
+        "Demeter",
+        "Guth"
+      ],
+      "arxiv_id": "1512.01565",
+      "in_registry": true
+    }
+  }
+}

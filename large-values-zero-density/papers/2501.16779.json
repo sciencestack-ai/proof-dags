@@ -1,0 +1,438 @@
+{
+  "paper": "2501.16779",
+  "title": "New exponent pairs, zero density estimates, and zero additive energy estimates: a systematic approach",
+  "authors": [
+    "Terence Tao",
+    "Tim Trudgian",
+    "Andrew Yang"
+  ],
+  "generated": "2026-05-12",
+  "status": "complete",
+  "nodes": {
+    "def:5": {
+      "type": "Definition",
+      "number": "5",
+      "section": "2",
+      "role": "definition",
+      "summary": "Phase function and model phase function: a smooth $F:[1,2]\\to\\mathbb{R}$ controlling the oscillation in van-der-Corput-type exponential sums $\\sum_n e(F(n/N))$; 'model' phase functions are the monomial $x^{-c}$ family. The objects whose exponent pairs are catalogued."
+    },
+    "def:7": {
+      "type": "Definition",
+      "number": "7",
+      "section": "2",
+      "role": "definition",
+      "summary": "Additive energy $E_1(W)$ of a finite multiset $W\\subset\\mathbb{R}$: the number of quadruples $(t_1,t_2,t_3,t_4)\\in W^4$ with $t_1+t_2=t_3+t_4$ (up to $o(1)$). The 'zero additive energy' quantity $A^*(\\sigma)$ is the exponent of the additive energy of the $\\sigma$-zeros of $\\zeta$."
+    },
+    "lem:13": {
+      "type": "Lemma",
+      "number": "13",
+      "section": "3",
+      "role": "key_mechanism",
+      "summary": "Exponent-pair processes: the set of exponent pairs $(k,\\ell)$ is closed under the van der Corput $A$-process $(k,\\ell)\\mapsto(\\tfrac{k}{2k+2},\\tfrac{\\ell}{2k+2}+\\tfrac12)$ and $B$-process $(k,\\ell)\\mapsto(\\ell-\\tfrac12,k+\\tfrac12)$ (plus convexity and the trivial pairs). The calculus that generates new exponent pairs from old."
+    },
+    "conjecture:17": {
+      "type": "Conjecture",
+      "number": "17",
+      "section": "3",
+      "role": "context",
+      "summary": "The exponent pair conjecture: every point of the triangle $\\{(k,\\ell):0\\le k\\le\\tfrac12\\le\\ell\\le1,\\,k+\\ell\\ge\\tfrac12\\}$ is an exponent pair; equivalently $\\beta(\\alpha)$ takes its conjectured piecewise-linear form. The target the $A/B$-process search approaches."
+    },
+    "thm:20": {
+      "type": "Theorem",
+      "number": "20",
+      "section": "3",
+      "role": "main_result",
+      "summary": "New exponent pairs: e.g. $(\\tfrac{89}{1282},\\tfrac{997}{1282})$ and $(\\tfrac{652397}{9713986},\\tfrac{7599781}{9713986})$ are exponent pairs — obtained by a systematic ($A/B$-process + recently established) search, improving the previously best known pairs."
+    },
+    "thm:21": {
+      "type": "Theorem",
+      "number": "21",
+      "section": "3",
+      "role": "context",
+      "summary": "The previously best (Bourgain-type) exponent pair $(\\tfrac3{40},\\tfrac{31}{40})$ — the benchmark thm:20 improves on, descending from Bourgain's $(\\tfrac{13}{84},\\tfrac{55}{84})$ via further processing."
+    },
+    "def:22": {
+      "type": "Definition",
+      "number": "22",
+      "section": "4",
+      "role": "definition",
+      "summary": "Growth rate $\\mu(\\sigma)$ of $\\zeta$: the least exponent with $|\\zeta(\\sigma+it)|\\ll|t|^{\\mu(\\sigma)+o(1)}$. Exponent pairs $(k,\\ell)$ give $\\mu(\\tfrac12)\\le\\tfrac{k+\\ell-1/2}{2}\\cdots$; $\\mu(\\tfrac12)=0$ is the Lindelöf hypothesis."
+    },
+    "thm:31": {
+      "type": "Theorem",
+      "number": "31",
+      "section": "5",
+      "role": "key_mechanism",
+      "summary": "$L^2$ mean value theorem for large values: for $\\tfrac12\\le\\sigma\\le1$, $\\tau\\ge0$, the large-value exponent satisfies $\\mathrm{LV}(\\sigma,\\tau)\\le\\max(2-2\\sigma,\\,1+\\tau-2\\sigma)$. The Montgomery–Halász $MM^*$ baseline — sharp for small $\\tau$, the starting point all improvements build on."
+    },
+    "thm:32": {
+      "type": "Theorem",
+      "number": "32",
+      "section": "5",
+      "role": "main_technical",
+      "summary": "Bourgain's large values theorem (Bourgain 2000): given an exponent pair / exponential-sum input, $\\mathrm{LV}(\\sigma,\\tau)$ is bounded by an expression interpolating the trivial bound and the gain from the exponential-sum estimate. The route by which exponent pairs (and Bourgain's ζ-curve decoupling) feed large-value bounds."
+    },
+    "conjecture:30": {
+      "type": "Conjecture",
+      "number": "30",
+      "section": "5",
+      "role": "context",
+      "summary": "Montgomery's large value conjecture (in $\\mathrm{LV}$ form): $\\mathrm{LV}(\\sigma,\\tau)=\\min(2-2\\sigma,\\tau)$ for all $\\tfrac12<\\sigma\\le1$, $\\tau\\ge0$. The optimal large-value estimate; equivalent to $\\|M_{\\mathrm{Dir}}\\|_{\\infty\\to q}\\lesssim N+N^{1/2}T^{1/q}$."
+    },
+    "def:37": {
+      "type": "Definition",
+      "number": "37",
+      "section": "6",
+      "role": "definition",
+      "summary": "Zero density exponents: $N(\\sigma,T)$ counts zeros $\\rho$ of $\\zeta$ with $\\mathrm{Re}(\\rho)\\ge\\sigma$, $|\\mathrm{Im}(\\rho)|\\le T$; $A(\\sigma)$ is the least exponent with $N(\\sigma,T)\\ll T^{A(\\sigma)(1-\\sigma)+o(1)}$. The quantity all zero-density bounds estimate."
+    },
+    "conjecture:38": {
+      "type": "Conjecture",
+      "number": "38",
+      "section": "6",
+      "role": "context",
+      "summary": "The density hypothesis: $A(\\sigma)\\le2$ for all $\\tfrac12\\le\\sigma<1$ (equivalently $N(\\sigma,T)\\ll T^{2(1-\\sigma)+o(1)}$). Would give primes in intervals $x^{1/2+\\epsilon}$; implied by Lindelöf and by Montgomery's conjecture."
+    },
+    "thm:45": {
+      "type": "Theorem",
+      "number": "45",
+      "section": "6",
+      "role": "auxiliary",
+      "summary": "Montgomery's large value conjecture implies the density hypothesis. A clean implication tying the LV pipeline to the zero-density target."
+    },
+    "thm:46": {
+      "type": "Theorem",
+      "number": "46",
+      "section": "6",
+      "role": "auxiliary",
+      "summary": "Ingham–Halász: the Lindelöf hypothesis implies the density hypothesis (and more). The classical sufficient condition."
+    },
+    "thm:47": {
+      "type": "Theorem",
+      "number": "47",
+      "section": "6",
+      "role": "main_technical",
+      "summary": "Ingham's zero-density bound (1940): $A(\\sigma)\\le\\tfrac3{2-\\sigma}$ for $\\tfrac12<\\sigma<1$. The first nontrivial zero-density estimate; the floor everything improves on near $\\sigma=\\tfrac12$."
+    },
+    "thm:48": {
+      "type": "Theorem",
+      "number": "48",
+      "section": "6",
+      "role": "main_technical",
+      "summary": "Huxley's zero-density bound: $A(\\sigma)\\le\\tfrac3{3\\sigma-1}$ for $\\tfrac12<\\sigma<1$; in particular the density hypothesis holds for $\\sigma\\ge\\tfrac56$. The pre-Guth–Maynard state of the art for $\\sigma$ near $\\tfrac34$."
+    },
+    "thm:49": {
+      "type": "Theorem",
+      "number": "49",
+      "section": "6",
+      "role": "main_technical",
+      "summary": "Guth–Maynard zero-density bound: $A(\\sigma)\\le\\tfrac{15}{3+5\\sigma}$ for $\\tfrac12<\\sigma<1$ — at $\\sigma=\\tfrac34$ this is $\\tfrac{30}{13}<\\tfrac{12}{5}$ (Huxley), the first improvement in the relevant range in decades. Imported from Guth–Maynard's new large value estimate; the input behind thm:50."
+    },
+    "thm:50": {
+      "type": "Theorem",
+      "number": "50",
+      "section": "6",
+      "role": "main_result",
+      "summary": "Improved Heath-Brown zero-density theorem: $A(\\sigma)\\le\\tfrac3{10\\sigma-7}$ for $\\tfrac7{10}<\\sigma\\le1$. The paper's new bound for $\\sigma$ near $\\tfrac34$ — sharper than both Huxley and Guth–Maynard there — obtained by feeding the new large-value/additive-energy estimates through the Heath-Brown relation."
+    },
+    "thm:51": {
+      "type": "Theorem",
+      "number": "51",
+      "section": "6",
+      "role": "main_result",
+      "summary": "Improved Bourgain density-hypothesis bound: for $\\tfrac{17}{22}\\le\\sigma\\le\\tfrac45$, $A(\\sigma)\\le\\max(\\tfrac2{9\\sigma-6},\\tfrac9{8(2\\sigma-1)})$ — in particular pushes the range where the density hypothesis is known down from $\\sigma\\ge\\tfrac56$ (Huxley) toward $\\sigma\\ge\\tfrac{17}{22}$ in part."
+    },
+    "thm:52": {
+      "type": "Theorem",
+      "number": "52",
+      "section": "6",
+      "role": "main_technical",
+      "summary": "Bourgain's zero-density theorem from exponent pairs (Bourgain 1995): for an exponent pair $(k,\\ell)$ with $k<\\tfrac15$, $\\ell>\\tfrac35$, $15\\ell+20k>13$, one gets an explicit $A(\\sigma)$ bound. The mechanism turning new exponent pairs (thm:20) into new zero-density bounds."
+    },
+    "thm:53": {
+      "type": "Theorem",
+      "number": "53",
+      "section": "6",
+      "role": "main_result",
+      "summary": "Optimised Bourgain zero-density bound: combining thm:52 with the new exponent pairs gives, e.g. $A(\\sigma)\\le\\tfrac{11}{12(4\\sigma-3)}$ for $\\tfrac34<\\sigma\\le\\tfrac{14}{15}$. The exponent-pair route's contribution to the updated $A(\\sigma)$ landscape."
+    },
+    "thm:63": {
+      "type": "Theorem",
+      "number": "63",
+      "section": "6",
+      "role": "key_mechanism",
+      "summary": "The Heath-Brown relation (1979): if $(\\sigma,\\tau,\\rho,\\rho^*,s)$ lie in the admissible set, then $\\rho^*\\le1-2\\sigma+\\tfrac12\\max(\\rho,\\dots)$ — the inequality converting a large-value exponent $\\rho=\\mathrm{LV}$ and an additive-energy exponent $\\rho^*$ into a zero-density bound. The hinge between the LV/additive-energy machinery and $A(\\sigma)$."
+    },
+    "thm:64": {
+      "type": "Theorem",
+      "number": "64",
+      "section": "7",
+      "role": "main_result",
+      "summary": "New additive energy estimates: for $\\tfrac7{10}\\le\\sigma<1$, bounds on $A^*(\\sigma)(1-\\sigma)$ (e.g. $\\le\\max(\\tfrac{18-19\\sigma}{2(3\\sigma-\\dots)},\\dots)$ for $\\tfrac34\\le\\sigma\\le\\tfrac56$). The additive energy of the $\\sigma$-zeros of $\\zeta$, controlled for the first time in this range — the input that, via thm:63, yields the improved zero-density bound thm:50."
+    }
+  },
+  "edges": [
+    {
+      "from": "thm:20",
+      "to": "lem:13",
+      "type": "depends_on",
+      "note": "New exponent pairs are produced by a systematic search over compositions of the $A$- and $B$-processes."
+    },
+    {
+      "from": "thm:20",
+      "to": "thm:21",
+      "type": "improves",
+      "note": "The new pairs sharpen the previously best Bourgain-type pair $(\\tfrac3{40},\\tfrac{31}{40})$."
+    },
+    {
+      "from": "thm:20",
+      "to": "conjecture:17",
+      "type": "motivates",
+      "note": "Advances toward the exponent pair conjecture."
+    },
+    {
+      "from": "def:22",
+      "to": "lem:13",
+      "type": "depends_on",
+      "note": "Bounds on the $\\zeta$-growth exponent $\\mu(\\sigma)$ are read off from exponent pairs."
+    },
+    {
+      "from": "thm:32",
+      "to": "def:22",
+      "type": "depends_on",
+      "note": "Bourgain's large-value theorem takes an exponential-sum / $\\mu(\\sigma)$ input and outputs a bound on $\\mathrm{LV}(\\sigma,\\tau)$."
+    },
+    {
+      "from": "thm:32",
+      "to": "thm:31",
+      "type": "depends_on",
+      "note": "Interpolates against the $L^2$ mean-value baseline."
+    },
+    {
+      "from": "thm:31",
+      "to": "conjecture:30",
+      "type": "motivates",
+      "note": "Establishes Montgomery's large-value conjecture in the small-$\\tau$ range."
+    },
+    {
+      "from": "thm:64",
+      "to": "thm:32",
+      "type": "depends_on",
+      "note": "The new additive-energy estimates are derived from the large-value theorems."
+    },
+    {
+      "from": "thm:64",
+      "to": "def:7",
+      "type": "proves",
+      "note": "Bounds the additive energy $A^*(\\sigma)$ of the $\\sigma$-zeros."
+    },
+    {
+      "from": "thm:50",
+      "to": "thm:63",
+      "type": "depends_on",
+      "note": "The improved zero-density bound is obtained by feeding the large-value and additive-energy exponents through the Heath-Brown relation."
+    },
+    {
+      "from": "thm:50",
+      "to": "thm:64",
+      "type": "depends_on",
+      "note": "Uses the new additive-energy estimates as the $\\rho^*$ input to the Heath-Brown relation."
+    },
+    {
+      "from": "thm:50",
+      "to": "thm:49",
+      "type": "improves",
+      "note": "Sharper than the Guth–Maynard bound for $\\sigma$ near $\\tfrac34$ (the regime $\\sigma>\\tfrac7{10}$)."
+    },
+    {
+      "from": "thm:50",
+      "to": "thm:48",
+      "type": "improves",
+      "note": "Sharper than Huxley's bound in the same range."
+    },
+    {
+      "from": "thm:49",
+      "to": "thm:48",
+      "type": "improves",
+      "note": "Guth–Maynard's bound beats Huxley's near $\\sigma=\\tfrac34$."
+    },
+    {
+      "from": "thm:48",
+      "to": "thm:47",
+      "type": "improves",
+      "note": "Huxley's bound beats Ingham's for $\\sigma$ not too close to $\\tfrac12$."
+    },
+    {
+      "from": "thm:53",
+      "to": "thm:52",
+      "type": "depends_on",
+      "note": "Optimised by inserting the new exponent pairs into Bourgain's exponent-pair zero-density mechanism."
+    },
+    {
+      "from": "thm:53",
+      "to": "thm:20",
+      "type": "depends_on",
+      "note": "Uses the new exponent pairs."
+    },
+    {
+      "from": "thm:52",
+      "to": "def:22",
+      "type": "depends_on",
+      "note": "The exponent-pair zero-density mechanism runs on the resulting $\\mu(\\sigma)$ bounds."
+    },
+    {
+      "from": "thm:51",
+      "to": "thm:32",
+      "type": "depends_on",
+      "note": "Derived from Bourgain-type large-value bounds in the relevant $\\sigma$-window."
+    },
+    {
+      "from": "thm:45",
+      "to": "conjecture:30",
+      "type": "depends_on",
+      "note": "Assumes Montgomery's conjecture to derive the density hypothesis."
+    },
+    {
+      "from": "thm:45",
+      "to": "conjecture:38",
+      "type": "motivates",
+      "note": "Shows the density hypothesis would follow."
+    },
+    {
+      "from": "thm:46",
+      "to": "conjecture:38",
+      "type": "motivates",
+      "note": "Lindelöf likewise implies the density hypothesis."
+    },
+    {
+      "from": "thm:50",
+      "to": "def:37",
+      "type": "proves",
+      "note": "States a bound on the zero-density exponent $A(\\sigma)$."
+    },
+    {
+      "from": "thm:64",
+      "to": "thm:49",
+      "type": "depends_on",
+      "note": "The Guth–Maynard large-value estimate underlies the new additive-energy bounds in the overlapping regime."
+    }
+  ],
+  "critical_path": [
+    "thm:50",
+    "thm:64",
+    "thm:32",
+    "thm:31",
+    "def:22",
+    "thm:20",
+    "lem:13"
+  ],
+  "proof_architecture": {
+    "exponent_pairs": {
+      "description": "The exponent-pair calculus (phase functions, A/B processes), the exponent-pair conjecture, and the new pairs found by systematic search.",
+      "nodes": [
+        "def:5",
+        "lem:13",
+        "conjecture:17",
+        "thm:20",
+        "thm:21"
+      ]
+    },
+    "zeta_growth": {
+      "description": "The growth exponent $\\mu(\\sigma)$ for $\\zeta(\\sigma+it)$, derived from exponent pairs.",
+      "nodes": [
+        "def:22"
+      ]
+    },
+    "large_values": {
+      "description": "Large-value theorems for Dirichlet polynomials: the $L^2$ mean-value baseline, Bourgain's theorem from exponential-sum inputs, and Montgomery's conjecture.",
+      "nodes": [
+        "def:7",
+        "thm:31",
+        "thm:32",
+        "conjecture:30"
+      ]
+    },
+    "zero_density": {
+      "description": "Zero-density exponents $A(\\sigma)$: the density hypothesis, the classical bounds (Ingham, Huxley), Guth–Maynard, and the paper's new improvements via the Heath-Brown relation and via optimised exponent pairs.",
+      "nodes": [
+        "def:37",
+        "conjecture:38",
+        "thm:45",
+        "thm:46",
+        "thm:47",
+        "thm:48",
+        "thm:49",
+        "thm:50",
+        "thm:51",
+        "thm:52",
+        "thm:53",
+        "thm:63"
+      ]
+    },
+    "additive_energy": {
+      "description": "Zero additive energy estimates $A^*(\\sigma)$ — the new ingredient feeding the Heath-Brown relation.",
+      "nodes": [
+        "thm:64"
+      ]
+    }
+  },
+  "bibliography": {
+    "GuthMaynard": {
+      "title": "New large value estimates for Dirichlet polynomials",
+      "authors": [
+        "Guth",
+        "Maynard"
+      ],
+      "arxiv_id": "2405.20552",
+      "in_registry": true
+    },
+    "Bourgain:Decoupling-zeta": {
+      "title": "Decoupling, exponential sums and the Riemann zeta function",
+      "authors": [
+        "Bourgain"
+      ],
+      "arxiv_id": "1408.5794",
+      "in_registry": true
+    },
+    "Bourgain:LargeValues2000": {
+      "title": "On large values estimates for Dirichlet polynomials and the density hypothesis...",
+      "authors": [
+        "Bourgain"
+      ],
+      "arxiv_id": null,
+      "in_registry": false
+    },
+    "Bourgain:Remarks1995": {
+      "title": "Remarks on Halász-Montgomery type inequalities",
+      "authors": [
+        "Bourgain"
+      ],
+      "arxiv_id": null,
+      "in_registry": false
+    },
+    "HeathBrown:1979": {
+      "title": "Zero-density estimates for the Riemann zeta-function and Dirichlet L-functions",
+      "authors": [
+        "Heath-Brown"
+      ],
+      "arxiv_id": null,
+      "in_registry": false
+    },
+    "Ingham:1940": {
+      "title": "On the estimation of N(σ,T)",
+      "authors": [
+        "Ingham"
+      ],
+      "arxiv_id": null,
+      "in_registry": false
+    },
+    "Huxley:ExpSums": {
+      "title": "Exponential sums and the Riemann zeta function V",
+      "authors": [
+        "Huxley"
+      ],
+      "arxiv_id": null,
+      "in_registry": false
+    }
+  }
+}

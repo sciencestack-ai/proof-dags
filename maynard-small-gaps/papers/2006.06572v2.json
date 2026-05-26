@@ -1,0 +1,262 @@
+{
+  "paper": "2006.06572v2",
+  "title": "Primes in arithmetic progressions to large moduli I: Fixed residue classes",
+  "authors": [
+    "James Maynard"
+  ],
+  "generated": "2026-05-07",
+  "status": "complete",
+  "nodes": {
+    "thm:1.1": {
+      "type": "Theorem",
+      "number": "1.1",
+      "section": "1",
+      "role": "main_result",
+      "summary": "Equidistribution of primes in fixed residue class $a \\pmod{q_1 q_2}$ for double moduli with the polytope ($Q_1 Q_2^2 < x^{1-100\\varepsilon}$, $Q_1^{12} Q_2^7 < x^{4-100\\varepsilon}$, $Q_1^{20} Q_2^{19} < x^{10-100\\varepsilon}$). Goes beyond Bombieri-Vinogradov for arbitrary (non-smooth) moduli."
+    },
+    "cor:1.2": {
+      "type": "Corollary",
+      "number": "1.2",
+      "section": "1",
+      "role": "main_result",
+      "summary": "For $0 < \\delta < 1/42$, equidistribution holds for moduli $q \\le x^{1/2+\\delta}$ that admit a divisor $d$ in a specific intermediate range. Extracts a usable BV-beyond-$1/2$ statement from thm:1.1."
+    },
+    "cor:1.3": {
+      "type": "Corollary",
+      "number": "1.3",
+      "section": "1",
+      "role": "main_result",
+      "summary": "ALMOST-ALL moduli result: for $0 < \\delta < 1/55$, all but at most $18\\delta Q\\,\\varphi(a)/a$ moduli $q \\in [Q, 2Q]$ (with $(q,a)=1$) satisfy $\\pi(x;q,a) = (1+o(1))\\,\\pi(x)/\\varphi(q)$. Bombieri-Friedlander-Iwaniec-style improvement to almost-all level $1/2 + 1/55$."
+    },
+    "cor:1.4": {
+      "type": "Corollary",
+      "number": "1.4",
+      "section": "1",
+      "role": "main_result",
+      "summary": "Compact double-modulus form: $Q_1 \\le x^{1/21}$, $Q_2 \\le x^{10/21-\\varepsilon}$; equidistribution sums over $q_1 q_2$. The workhorse statement most directly comparable to Polymath8a (thm:C below)."
+    },
+    "thm:A": {
+      "type": "Theorem",
+      "number": "A",
+      "section": "1",
+      "role": "context",
+      "summary": "Bombieri-Friedlander-Iwaniec (1986): for $\\delta > 0$ and $Q = x^{1/2+\\delta}$, the equidistribution sum over $q \\in [Q, 2Q]$ is bounded by $\\delta^2 x/\\log x + $ lower-order. Cited as the BFI baseline."
+    },
+    "thm:B": {
+      "type": "Theorem",
+      "number": "B",
+      "section": "1",
+      "role": "context",
+      "summary": "Bombieri-Friedlander-Iwaniec (1986): well-factorable $\\lambda_q$ at level $x^{4/7-\\varepsilon}$ gives equidistribution. Cited as the BFI well-factorable baseline."
+    },
+    "thm:C": {
+      "type": "Theorem",
+      "number": "C",
+      "section": "1",
+      "role": "context",
+      "summary": "Zhang / Polymath: smooth-modulus equidistribution at level $x^{1/2+\\delta}$ with $\\delta < 7/300$. Cited verbatim — Polymath8a 1402.0811 thm:1.1."
+    },
+    "def:1": {
+      "type": "Definition",
+      "number": "1",
+      "section": "6",
+      "role": "definition",
+      "summary": "Siegel-Walfisz condition for a sequence $\\alpha_n$: smooth equidistribution in residue classes with $\\tau(d)^{B_0}$ losses."
+    },
+    "prop:7.1": {
+      "type": "Proposition",
+      "number": "7.1",
+      "section": "7",
+      "role": "main_technical",
+      "summary": "Type II estimate at level satisfying eq:1.3, eq:1.4 with intermediate primes $P_j \\ge x^{1/7+10\\varepsilon}$. The combinatorial Type II input for thm:1.1."
+    },
+    "prop:7.2": {
+      "type": "Proposition",
+      "number": "7.2",
+      "section": "7",
+      "role": "main_technical",
+      "summary": "Companion Type II estimate covering an alternative regime of the polytope."
+    },
+    "prop:7.3": {
+      "type": "Proposition",
+      "number": "7.3",
+      "section": "7",
+      "role": "main_technical",
+      "summary": "Type III estimate handling the cubic-product regime (third constraint $Q_1^{20} Q_2^{19} < x^{10-100\\varepsilon}$)."
+    },
+    "prop:7.4": {
+      "type": "Proposition",
+      "number": "7.4",
+      "section": "7",
+      "role": "main_technical",
+      "summary": "Final assembly proposition combining the Type II and Type III estimates into the equidistribution sum of thm:1.1."
+    }
+  },
+  "edges": [
+    {
+      "from": "thm:1.1",
+      "to": "prop:7.1",
+      "type": "depends_on",
+      "note": "Type II estimate, primary input."
+    },
+    {
+      "from": "thm:1.1",
+      "to": "prop:7.2",
+      "type": "depends_on",
+      "note": "Companion Type II estimate."
+    },
+    {
+      "from": "thm:1.1",
+      "to": "prop:7.3",
+      "type": "depends_on",
+      "note": "Type III estimate."
+    },
+    {
+      "from": "thm:1.1",
+      "to": "prop:7.4",
+      "type": "depends_on",
+      "note": "Assembly proposition."
+    },
+    {
+      "from": "thm:1.1",
+      "to": "def:1",
+      "type": "depends_on",
+      "note": "Siegel-Walfisz hypothesis on sequences."
+    },
+    {
+      "from": "cor:1.2",
+      "to": "thm:1.1",
+      "type": "depends_on",
+      "note": "Single-modulus consequence with intermediate divisor."
+    },
+    {
+      "from": "cor:1.3",
+      "to": "thm:1.1",
+      "type": "depends_on",
+      "note": "Almost-all-moduli consequence at level $1/2 + 1/55$."
+    },
+    {
+      "from": "cor:1.4",
+      "to": "thm:1.1",
+      "type": "depends_on",
+      "note": "Compact double-modulus consequence."
+    },
+    {
+      "from": "cor:1.2",
+      "to": "thm:A",
+      "type": "improves",
+      "note": "Sharpens BFI's $1/2 + \\delta$ level by adding the divisor structure."
+    },
+    {
+      "from": "cor:1.3",
+      "to": "thm:A",
+      "type": "improves",
+      "note": "Sharpens BFI's exceptional-set bound."
+    },
+    {
+      "from": "cor:1.4",
+      "to": "thm:B",
+      "type": "improves",
+      "note": "Strengthens BFI well-factorable from $4/7$ to a comparable explicit double-modulus regime without the well-factorable hypothesis."
+    },
+    {
+      "from": "cor:1.4",
+      "to": "thm:C",
+      "type": "generalizes",
+      "note": "Eliminates the smoothness / dense-divisibility hypothesis from Polymath8a's thm:1.1 (= thm:C here), at comparable level."
+    }
+  ],
+  "critical_path": [
+    "cor:1.3",
+    "thm:1.1",
+    "prop:7.4",
+    "prop:7.1"
+  ],
+  "proof_architecture": {
+    "main_results": {
+      "description": "thm:1.1 (the polytope equidistribution) and four corollaries cor:1.2-1.4 extracting BV-beyond-$1/2$ consequences in successively cleaner forms.",
+      "nodes": [
+        "thm:1.1",
+        "cor:1.2",
+        "cor:1.3",
+        "cor:1.4"
+      ]
+    },
+    "context_baselines": {
+      "description": "thm:A (BFI 1986), thm:B (BFI well-factorable), thm:C (Polymath8a smooth moduli). The three predecessors being improved on or generalized.",
+      "nodes": [
+        "thm:A",
+        "thm:B",
+        "thm:C"
+      ]
+    },
+    "type_estimates_engine": {
+      "description": "prop:7.1 (Type II), prop:7.2 (companion Type II), prop:7.3 (Type III), prop:7.4 (assembly). The combinatorial decomposition powering thm:1.1.",
+      "nodes": [
+        "prop:7.1",
+        "prop:7.2",
+        "prop:7.3",
+        "prop:7.4"
+      ]
+    },
+    "definitional_layer": {
+      "description": "def:1 — Siegel-Walfisz hypothesis for sequences, used pervasively.",
+      "nodes": [
+        "def:1"
+      ]
+    }
+  },
+  "bibliography": {
+    "Polymath8a": {
+      "title": "New equidistribution estimates of Zhang type",
+      "authors": [
+        "D. H. J. Polymath"
+      ],
+      "arxiv_id": "1402.0811",
+      "in_registry": true,
+      "role": "predecessor — thm:C cites this; the Deligne-dependent smooth-modulus level being generalized"
+    },
+    "BombieriFriedlanderIwaniec": {
+      "title": "Primes in arithmetic progressions to large moduli I, II, III",
+      "authors": [
+        "Enrico Bombieri",
+        "John Friedlander",
+        "Henryk Iwaniec"
+      ],
+      "year": 1986,
+      "arxiv_id": null,
+      "in_registry": false,
+      "role": "predecessor — thm:A and thm:B cite the BFI series this paper is named after"
+    },
+    "Zhang:2014": {
+      "title": "Bounded gaps between primes",
+      "authors": [
+        "Yitang Zhang"
+      ],
+      "arxiv_id": null,
+      "in_registry": false,
+      "role": "predecessor — Zhang's smooth-modulus MPZ"
+    },
+    "BombieriVinogradov:1965": {
+      "title": "Bombieri-Vinogradov theorem",
+      "authors": [
+        "Enrico Bombieri",
+        "A. I. Vinogradov"
+      ],
+      "year": 1965,
+      "arxiv_id": null,
+      "in_registry": false,
+      "role": "foundational — baseline at $\\theta = 1/2$"
+    },
+    "Deligne:WeilII": {
+      "title": "La conjecture de Weil II",
+      "authors": [
+        "Pierre Deligne"
+      ],
+      "year": 1980,
+      "arxiv_id": null,
+      "in_registry": false,
+      "role": "foundational — used in Type III estimate via Kloosterman bounds"
+    }
+  }
+}

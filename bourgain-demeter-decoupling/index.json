@@ -1,0 +1,181 @@
+{
+  "description": "Proof DAG registry index for the Fourier decoupling tower (Bourgain–Demeter and downstream).",
+  "papers": {
+    "math/0509262": {
+      "status": "complete",
+      "title": "On the Multilinear Restriction and Kakeya conjectures",
+      "authors": [
+        "Jonathan Bennett",
+        "Anthony Carbery",
+        "Terence Tao"
+      ],
+      "year": 2006,
+      "nodes": 22,
+      "edges": 22,
+      "generated": "2026-05-12",
+      "updated": "2026-05-19"
+    },
+    "0811.2251": {
+      "status": "complete",
+      "title": "The endpoint case of the Bennett-Carbery-Tao multilinear Kakeya conjecture",
+      "authors": [
+        "Larry Guth"
+      ],
+      "year": 2008,
+      "nodes": 9,
+      "edges": 10,
+      "generated": "2026-05-12",
+      "updated": "2026-05-19"
+    },
+    "1401.3150": {
+      "status": "complete",
+      "title": "The cubic case of the main conjecture in Vinogradov's mean value theorem",
+      "authors": [
+        "Trevor D. Wooley"
+      ],
+      "year": 2014,
+      "nodes": 17,
+      "edges": 17,
+      "generated": "2026-05-12",
+      "updated": "2026-05-19"
+    },
+    "1409.4683": {
+      "status": "complete",
+      "title": "A short proof of the multilinear Kakeya inequality",
+      "authors": [
+        "Larry Guth"
+      ],
+      "year": 2014,
+      "nodes": 7,
+      "edges": 7,
+      "generated": "2026-05-12",
+      "updated": "2026-05-19"
+    },
+    "1409.1634": {
+      "status": "complete",
+      "title": "Decouplings for curves and hypersurfaces with nonzero Gaussian curvature",
+      "authors": [
+        "Jean Bourgain",
+        "Ciprian Demeter"
+      ],
+      "year": 2014,
+      "nodes": 23,
+      "edges": 23,
+      "generated": "2026-05-12",
+      "updated": "2026-05-19"
+    },
+    "1604.06032": {
+      "status": "complete",
+      "title": "A study guide for the l^2 Decoupling Theorem",
+      "authors": [
+        "Jean Bourgain",
+        "Ciprian Demeter"
+      ],
+      "year": 2016,
+      "nodes": 17,
+      "edges": 17,
+      "generated": "2026-05-12",
+      "updated": "2026-05-19"
+    },
+    "1509.05388": {
+      "status": "complete",
+      "title": "Mean value estimates for Weyl sums in two dimensions",
+      "authors": [
+        "Jean Bourgain",
+        "Ciprian Demeter"
+      ],
+      "year": 2015,
+      "nodes": 21,
+      "edges": 22,
+      "generated": "2026-05-12",
+      "updated": "2026-05-19"
+    },
+    "1708.01220": {
+      "status": "complete",
+      "title": "Nested efficient congruencing and relatives of Vinogradov's mean value theorem",
+      "authors": [
+        "Trevor D. Wooley"
+      ],
+      "year": 2017,
+      "nodes": 23,
+      "edges": 25,
+      "generated": "2026-05-12",
+      "updated": "2026-05-19"
+    },
+    "1403.5335": {
+      "status": "complete",
+      "title": "The proof of the l^2 Decoupling Conjecture",
+      "authors": [
+        "Jean Bourgain",
+        "Ciprian Demeter"
+      ],
+      "year": 2014,
+      "nodes": 32,
+      "edges": 37,
+      "generated": "2026-05-12",
+      "updated": "2026-05-19"
+    },
+    "1512.01565": {
+      "status": "complete",
+      "title": "Proof of the main conjecture in Vinogradov's mean value theorem for degrees higher than three",
+      "authors": [
+        "Jean Bourgain",
+        "Ciprian Demeter",
+        "Larry Guth"
+      ],
+      "year": 2015,
+      "nodes": 31,
+      "edges": 40,
+      "generated": "2026-05-12",
+      "updated": "2026-05-19"
+    },
+    "1408.5794": {
+      "status": "partial",
+      "title": "Decoupling, exponential sums and the Riemann zeta function",
+      "authors": [
+        "Jean Bourgain"
+      ],
+      "year": 2014,
+      "nodes": 6,
+      "edges": 6,
+      "generated": "2026-05-12",
+      "updated": "2026-05-19",
+      "partial_reason": "Headline results (exponential-sum bound §3, zeta bound §4, exponent pair §5) live in running text; represented by section nodes."
+    },
+    "2405.20552": {
+      "status": "complete",
+      "title": "New large value estimates for Dirichlet polynomials",
+      "authors": [
+        "Larry Guth",
+        "James Maynard"
+      ],
+      "year": 2024,
+      "nodes": 35,
+      "edges": 43,
+      "generated": "2026-05-12",
+      "updated": "2026-05-19"
+    }
+  },
+  "excluded": {
+    "1012.3760": {
+      "status": "out_of_scope",
+      "title": "Bounds on oscillatory integral operators based on multilinear estimates",
+      "authors": [
+        "Jean Bourgain",
+        "Larry Guth"
+      ],
+      "year": 2010,
+      "nodes": 0,
+      "edges": 0,
+      "generated": "2026-05-12",
+      "updated": "2026-05-12",
+      "note": "Applies BCT multilinear restriction to the Stein restriction conjecture / Hörmander oscillatory integrals / Bochner–Riesz — a sibling of the decoupling line, not an ancestor. Belongs in a future restriction-conjecture DAG. Separately un-parseable: latex2json produced markdown but 0 sections / 0 math environments (pre-2014 \\newtheorem gap)."
+    }
+  },
+  "totals": {
+    "papers": 12,
+    "nodes": 243,
+    "intra_paper_edges": 269,
+    "cross_paper_edges": 24
+  }
+}
