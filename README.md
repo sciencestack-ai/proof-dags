@@ -4,9 +4,23 @@
 
 Citation graphs say "paper A cited paper B." We say "Theorem 1.1 of A `improves` Lemma 5.1 of B" or "Theorem 1.3 of A `provides_input_to` Proposition 4.1 of B."
 
-## Browse · Download · Cite
+## Why this repo
+
+Mathlib carries a machine-readable typed dependency graph — every Lean theorem records which lemmas its proof uses, and premise-selection and retrieval-augmented proving tools work over that structure. The arXiv literature has no equivalent. Citation graphs are paper-level and untyped: they record that paper A cites paper B, not whether B is a load-bearing input or a passing reference. Lean blueprints carry typed dependency structure at the right granularity, but each one covers a single proof being formalized.
+
+This repo aims to create the same kind of structure, at the literature level: typed edges over theorems, lemmas, and definitions across 10 research programs of the math arXiv, at theorem granularity. Three of the programs are paired with live Lean blueprints (PFR, PNT+, Sphere-Packing-Lean) as external validation anchors.
+
+## Try the interactive graphs
 
 - 🌐 **Browse interactively:** **[sciencestack.ai/graph](https://sciencestack.ai/graph)** — this repository *is* the source data behind that viewer. Every node and edge you can click in the viewer corresponds to an entry in the JSON files here.
+
+  <p align="center">
+    <a href="https://www.sciencestack.ai/graph/pfr"><img src="./assets/pfr_overview.jpg" alt="PFR program: 10 papers clustered by source, with typed cross-paper edges between them" width="48%" /></a>
+    <a href="https://www.sciencestack.ai/graph/pfr"><img src="./assets/pfr_gowers_thm1.8.jpg" alt="Theorem 1.8 (Entropic PFR) selected, with its cross-paper dependencies highlighted" width="48%" /></a>
+  </p>
+
+  *Example: the [`pfr`](https://www.sciencestack.ai/graph/pfr) program. **Left:** 10 papers, each a cluster of theorem-level nodes, joined by typed cross-paper edges. **Right:** clicking Gowers–Green–Manners–Tao Thm 1.8 (Entropic PFR) highlights its dependencies — Prop 2.1, Lemmas 2.2, 7.1, 7.2 — traced across the program.*
+
 - 📦 **Download:** clone this repo (CC-BY 4.0) — the full registry is ~5 MB of JSON across 10 programs.
 - 🔌 **Query programmatically:** ScienceStack API and MCP endpoint at [sciencestack.ai/developers](https://sciencestack.ai/developers).
 - 📄 **Status snapshot:** [`STATUS.md`](./STATUS.md) — current inventory and open audit items.
