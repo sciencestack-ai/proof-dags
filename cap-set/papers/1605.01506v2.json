@@ -1,0 +1,171 @@
+{
+  "paper": "1605.01506v2",
+  "title": "Progression-free sets in $\\mathbb{Z}_4^n$ are exponentially small",
+  "authors": [
+    "Ernie Croot",
+    "Vsevolod F. Lev",
+    "Péter Pál Pach"
+  ],
+  "generated": "2026-05-27",
+  "status": "complete",
+  "nodes": {
+    "thm:1": {
+      "type": "Theorem",
+      "number": "1",
+      "section": "1",
+      "role": "main_result",
+      "summary": "If $A \\subseteq \\mathbb{Z}_4^n$ is progression-free (no $a,b,c \\in A$ with $a + c = 2b$, $a \\ne b$), then $|A| \\le 4^{\\gamma n}$ where $\\gamma := \\max_{0 < \\varepsilon < 1/4} \\frac{1}{2}(H(1/2 - \\varepsilon) + H(2\\varepsilon)) \\approx 0.926$ and $H$ is the binary entropy. Breaks the $\\mathbb{Z}_4^n$ analog of the cap-set problem exponentially: the previous bound was the trivial $\\sim 4^n / n$ from Meshulam-type Fourier arguments."
+    },
+    "cor:1": {
+      "type": "Corollary",
+      "number": "1",
+      "section": "1",
+      "role": "auxiliary",
+      "summary": "If $G$ is a finite abelian group and $n = \\mathrm{rk}_4(G)$ is the 4-rank of $G$, then $r_3(G) \\le 4^{-(1-\\gamma) n} |G|$ where $r_3(G)$ is the largest size of a progression-free subset. Lifts thm:1 from $\\mathbb{Z}_4^n$ to general abelian groups via the 4-rank, providing exponential savings whenever the group has enough $\\mathbb{Z}_4$ structure."
+    },
+    "lem:1": {
+      "type": "Lemma",
+      "number": "1",
+      "section": "2",
+      "role": "key_mechanism",
+      "summary": "Polynomial-method core. Let $P$ be a multilinear polynomial in $n$ variables over a field $\\mathbb{F}$ of total degree at most $d$, and $A \\subseteq \\mathbb{F}^n$ with $|A| > 2 \\sum_{0 \\le i \\le d/2} \\binom{n}{i}$. If $P(a - b) = 0$ for all $a \\ne b \\in A$, then $P(0) = 0$. The novel ingredient: factoring $P(x-y) = \\langle u(x), v(y) \\rangle$ for vectors $u, v \\in \\mathbb{F}^{2m}$ where $m = \\sum_{0 \\le i \\le d/2} \\binom{n}{i}$, so a large pairwise-vanishing set forces $P$ to vanish at $0$ by rank counting."
+    },
+    "prop:1": {
+      "type": "Proposition",
+      "number": "1",
+      "section": "2",
+      "role": "key_reduction",
+      "summary": "Coset distribution bound. If $A \\subseteq \\mathbb{Z}_4^n$ is progression-free, then for every $0 < \\varepsilon < 1/4$, the number of $F_n$-cosets (where $F_n \\subseteq \\mathbb{Z}_4^n$ is the subgroup of elements of order dividing $2$) containing at least $2^{n H(1/2 - \\varepsilon) + 1}$ elements of $A$ is less than $2^{n H(2\\varepsilon)}$. Applies lem:1 with $\\mathbb{F} = \\mathbb{F}_2$ inside each coset: progression-freeness forces sums $2 \\cdot A_R$ to miss the doubled coset representatives $2 \\ast R$, and the polynomial-vanishing dichotomy gives the count."
+    },
+    "proof:lem:1": {
+      "type": "Proof",
+      "number": "lem:1",
+      "section": "2",
+      "role": "technical",
+      "summary": "Proof of lem:1: expand $P(x-y) = \\sum_{I,J} C_{I,J} x^I y^J$ over disjoint $I, J$ with $|I| + |J| \\le d$, split into $|I| \\le d/2$ and $|J| \\le d/2$ halves to write $P(x-y) = \\langle u(x), v(y) \\rangle$ with $u, v \\in \\mathbb{F}^{2m}$. If $|A| > 2m$, the $|A| \\times |A|$ matrix $[P(a-b)]_{a,b \\in A}$ has rank at most $2m < |A|$, so its non-singular pairwise-vanishing pattern is impossible unless the diagonal vanishes."
+    },
+    "rem:1": {
+      "type": "Remark",
+      "number": "rem",
+      "section": "2",
+      "role": "auxiliary",
+      "summary": "lem:1 extends from multilinear to bounded-individual-degree polynomials: if every individual degree of $P$ is at most $\\delta$, replace $\\sum_{i \\le d/2} \\binom{n}{i}$ with $f_\\delta(n, \\lfloor d/2 \\rfloor)$ (the count of monomials with degrees bounded by $\\delta$ and total degree at most $d$). Taking $\\delta = |\\mathbb{F}| - 1$ for finite $\\mathbb{F}$ removes the individual-degree assumption entirely — the form Ellenberg–Gijswijt use in $\\mathbb{F}_3^n$."
+    },
+    "proof:prop:1": {
+      "type": "Proof",
+      "number": "prop:1",
+      "section": "2",
+      "role": "technical",
+      "summary": "Proof of prop:1: let $\\mathcal{R}$ be the cosets containing many elements of $A$, $A_R = A \\cap R$. Progression-freeness implies $B = \\cup_R (2 \\cdot A_R)$ and $C = \\cup_R (2 \\ast R)$ are disjoint subsets of $F_n$ (else a 3-AP exists). With $d = n - \\lceil 2\\varepsilon n \\rceil$, the size bound gives $|A_R| > 2 \\sum_{i \\le d/2} \\binom{n}{i}$, so lem:1 applies to the indicator polynomial of $A_R - A_R$ and forces $|\\mathcal{R}| < 2^{n H(2\\varepsilon)}$ via the disjointness."
+    },
+    "proof:thm:1": {
+      "type": "Proof",
+      "number": "thm:1",
+      "section": "2",
+      "role": "technical",
+      "summary": "Proof of thm:1: integrate prop:1 over $\\varepsilon \\in (0, 1/4)$. Write $|A| = \\int_0^{2^{n+1}} N(x) \\, dx$ where $N(x)$ counts cosets with at least $x$ elements; split at $x = 2^{n H(1/4) + 1}$, bound the low-$x$ part trivially and the high-$x$ part via prop:1 to get $|A| < (n+2) \\cdot 4^{\\gamma n}$. Tensor-power trick (apply to $A^k \\subseteq \\mathbb{Z}_4^{kn}$) removes the polynomial factor."
+    }
+  },
+  "edges": [
+    {
+      "from": "thm:1",
+      "to": "prop:1",
+      "type": "depends_on",
+      "note": "Integrates the coset-distribution bound prop:1 over $\\varepsilon$ to get the global size bound on $A$."
+    },
+    {
+      "from": "thm:1",
+      "to": "lem:1",
+      "type": "depends_on",
+      "note": "Polynomial-method machinery flows through prop:1 to thm:1; lem:1 is the rank-counting heart."
+    },
+    {
+      "from": "cor:1",
+      "to": "thm:1",
+      "type": "depends_on",
+      "note": "Quotients $G$ by the maximal subgroup of odd order to reduce to the $\\mathbb{Z}_4^n$ case."
+    },
+    {
+      "from": "prop:1",
+      "to": "lem:1",
+      "type": "depends_on",
+      "note": "Applies lem:1 to the difference-set polynomial inside each $F_n$-coset; the size threshold $2^{n H(1/2 - \\varepsilon) + 1}$ is exactly the lem:1 bound on $|A_R|$."
+    },
+    {
+      "from": "proof:lem:1",
+      "to": "lem:1",
+      "type": "depends_on",
+      "note": "Proof of lem:1 — the polynomial-tensor-decomposition / rank argument."
+    },
+    {
+      "from": "proof:prop:1",
+      "to": "prop:1",
+      "type": "depends_on",
+      "note": "Proof of prop:1 — applies lem:1 to the coset structure."
+    },
+    {
+      "from": "proof:thm:1",
+      "to": "thm:1",
+      "type": "depends_on",
+      "note": "Proof of thm:1 — integrates prop:1 and tensor-powers."
+    },
+    {
+      "from": "rem:1",
+      "to": "lem:1",
+      "type": "depends_on",
+      "note": "Generalizes lem:1 to bounded-individual-degree polynomials; this is the form used downstream by Ellenberg–Gijswijt for $\\mathbb{F}_3^n$."
+    }
+  ],
+  "critical_path": [
+    "thm:1",
+    "prop:1",
+    "lem:1"
+  ],
+  "proof_architecture": {
+    "polynomial_lemma": {
+      "description": "The rank-counting core: a multilinear polynomial $P$ that vanishes on all pairwise differences $a - b$ of a sufficiently large set $A$ must also vanish at $0$.",
+      "nodes": [
+        "lem:1",
+        "rem:1",
+        "proof:lem:1"
+      ]
+    },
+    "coset_argument": {
+      "description": "Reduce the global $\\mathbb{Z}_4^n$ problem to a $\\mathbb{F}_2^n$-coset count: progression-freeness inside any heavy coset forces a polynomial constraint that lem:1 vetoes.",
+      "nodes": [
+        "prop:1",
+        "proof:prop:1"
+      ]
+    },
+    "integration_and_tensor_trick": {
+      "description": "Integrate the per-$\\varepsilon$ coset count, then remove polynomial factors via the tensor-power trick to get the clean exponential bound.",
+      "nodes": [
+        "thm:1",
+        "proof:thm:1"
+      ]
+    },
+    "extension_to_abelian_groups": {
+      "description": "Lift from $\\mathbb{Z}_4^n$ to general finite abelian groups via the 4-rank.",
+      "nodes": [
+        "cor:1"
+      ]
+    }
+  },
+  "bibliography": {
+    "b:m": {
+      "title": "Meshulam — On subsets of finite abelian groups with no 3-term arithmetic progression",
+      "arxiv_id": null,
+      "in_registry": false
+    },
+    "b:b": {
+      "title": "Behrend — On sets of integers which contain no three terms in arithmetical progression",
+      "arxiv_id": null,
+      "in_registry": false
+    },
+    "b:fgr": {
+      "title": "Frankl, Graham, Rödl — On subsets of abelian groups with no 3-term arithmetic progression",
+      "arxiv_id": null,
+      "in_registry": false
+    }
+  }
+}

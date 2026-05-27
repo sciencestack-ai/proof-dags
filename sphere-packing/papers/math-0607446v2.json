@@ -1,7 +1,10 @@
 {
   "paper": "math/0607446v2",
   "title": "Universally optimal distribution of points on spheres",
-  "authors": ["Henry Cohn", "Abhinav Kumar"],
+  "authors": [
+    "Henry Cohn",
+    "Abhinav Kumar"
+  ],
   "generated": "2026-05-26",
   "status": "complete",
   "nodes": {
@@ -84,46 +87,126 @@
     }
   },
   "edges": [
-    { "from": "thm:2", "to": "prop:15", "type": "depends_on", "note": "The universal-optimality theorem on $S^{n-1}$ is proved by exhibiting suitable polynomials $h$ for the LP bound (Proposition 15)." },
-    { "from": "thm:2", "to": "prop:6", "type": "uses", "note": "The construction uses the absolute-monotonicity preservation lemma (Proposition 6)." },
-    { "from": "thm:24", "to": "thm:2", "type": "generalizes", "note": "Theorem 24 generalizes Theorem 2 from spheres to all compact two-point homogeneous spaces." },
-    { "from": "thm:24", "to": "prop:25", "type": "depends_on", "note": "The abstract universal-optimality theorem uses the general LP bound (Proposition 25)." },
-    { "from": "prop:25", "to": "prop:15", "type": "generalizes", "note": "The general-$X$ LP bound generalizes the sphere LP bound." },
-    { "from": "prop:15", "to": "prop:8", "type": "depends_on", "note": "The chosen polynomial $h$ comes from the quotient positivity result (Proposition 8)." },
-    { "from": "prop:8", "to": "thm:7", "type": "depends_on", "note": "Quotient positivity is read off the root positivity theorem (Theorem 7)." },
-    { "from": "prop:31", "to": "prop:15", "type": "uses_mechanism", "note": "The Euclidean criterion is the $\\mathbb{R}^n$ analogue of the sphere LP bound; the same Fourier-positive-$h$ mechanism." },
-    { "from": "prop:34", "to": "prop:31", "type": "depends_on", "note": "Proposition 34 supplies the existence of Euclidean auxiliary $h$ that Proposition 31's criterion requires." },
-    { "from": "conjecture:32", "to": "prop:31", "type": "addresses_same_question", "note": "Conjecture 32 predicts that the Euclidean criterion of Proposition 31 is satisfied for $E_8$ and Leech with completely monotonic $f$." }
+    {
+      "from": "thm:2",
+      "to": "prop:15",
+      "type": "depends_on",
+      "note": "The universal-optimality theorem on $S^{n-1}$ is proved by exhibiting suitable polynomials $h$ for the LP bound (Proposition 15)."
+    },
+    {
+      "from": "thm:2",
+      "to": "prop:6",
+      "type": "depends_on",
+      "note": "The construction uses the absolute-monotonicity preservation lemma (Proposition 6)."
+    },
+    {
+      "from": "thm:24",
+      "to": "thm:2",
+      "type": "generalizes",
+      "note": "Theorem 24 generalizes Theorem 2 from spheres to all compact two-point homogeneous spaces."
+    },
+    {
+      "from": "thm:24",
+      "to": "prop:25",
+      "type": "depends_on",
+      "note": "The abstract universal-optimality theorem uses the general LP bound (Proposition 25)."
+    },
+    {
+      "from": "prop:25",
+      "to": "prop:15",
+      "type": "generalizes",
+      "note": "The general-$X$ LP bound generalizes the sphere LP bound."
+    },
+    {
+      "from": "prop:15",
+      "to": "prop:8",
+      "type": "depends_on",
+      "note": "The chosen polynomial $h$ comes from the quotient positivity result (Proposition 8)."
+    },
+    {
+      "from": "prop:8",
+      "to": "thm:7",
+      "type": "depends_on",
+      "note": "Quotient positivity is read off the root positivity theorem (Theorem 7)."
+    },
+    {
+      "from": "prop:31",
+      "to": "prop:15",
+      "type": "depends_on",
+      "note": "The Euclidean criterion is the $\\mathbb{R}^n$ analogue of the sphere LP bound; the same Fourier-positive-$h$ mechanism."
+    },
+    {
+      "from": "prop:34",
+      "to": "prop:31",
+      "type": "depends_on",
+      "note": "Proposition 34 supplies the existence of Euclidean auxiliary $h$ that Proposition 31's criterion requires."
+    },
+    {
+      "from": "conjecture:32",
+      "to": "prop:31",
+      "type": "addresses_same_question",
+      "note": "Conjecture 32 predicts that the Euclidean criterion of Proposition 31 is satisfied for $E_8$ and Leech with completely monotonic $f$."
+    }
   ],
-  "critical_path": ["thm:2", "prop:15", "prop:8", "thm:7"],
+  "critical_path": [
+    "thm:2",
+    "prop:15",
+    "prop:8",
+    "thm:7"
+  ],
   "proof_architecture": {
     "main_results": {
       "description": "Universal optimality of sharp configurations on spheres and on general compact two-point homogeneous spaces.",
-      "nodes": ["thm:2", "thm:24"]
+      "nodes": [
+        "thm:2",
+        "thm:24"
+      ]
     },
     "LP_bound": {
       "description": "The linear-programming bounds: sphere version, general two-point homogeneous version, and the Euclidean criterion.",
-      "nodes": ["prop:15", "prop:25", "prop:31"]
+      "nodes": [
+        "prop:15",
+        "prop:25",
+        "prop:31"
+      ]
     },
     "polynomial_positivity": {
       "description": "Root positivity for $p_n+\\alpha p_{n-1}$ and the quotient positivity that constructs the LP polynomial.",
-      "nodes": ["thm:7", "prop:8"]
+      "nodes": [
+        "thm:7",
+        "prop:8"
+      ]
     },
     "preservation_and_existence": {
       "description": "Absolute-monotonicity preservation under polynomial subtraction and existence of Euclidean auxiliary $h$ with appropriate decay.",
-      "nodes": ["prop:6", "prop:34"]
+      "nodes": [
+        "prop:6",
+        "prop:34"
+      ]
     },
     "obstructions": {
       "description": "Non-existence of universally optimal configurations at intermediate sizes.",
-      "nodes": ["prop:4"]
+      "nodes": [
+        "prop:4"
+      ]
     },
     "Euclidean_conjecture": {
       "description": "The conjecture predicting universal optimality of $E_8$ and Leech in the Euclidean setting (later proved by CKMRV 2019).",
-      "nodes": ["conjecture:32"]
+      "nodes": [
+        "conjecture:32"
+      ]
     }
   },
   "bibliography": {
-    "ConwaySloane": { "title": "Conway–Sloane — Sphere Packings, Lattices and Groups", "arxiv_id": null, "in_registry": false },
-    "Levenshtein": { "title": "V. I. Levenshtein — packing bounds via polynomial method", "arxiv_id": null, "in_registry": false }
+    "ConwaySloane": {
+      "title": "Conway–Sloane — Sphere Packings, Lattices and Groups",
+      "arxiv_id": null,
+      "in_registry": false
+    },
+    "Levenshtein": {
+      "title": "V. I. Levenshtein — packing bounds via polynomial method",
+      "arxiv_id": null,
+      "in_registry": false
+    }
   }
 }

@@ -116,9 +116,9 @@
       "note": "Polymath8b cites Polymath8a's MPZ inequality $600\\varpi + 180\\delta < 7$ as thm:2.5."
     },
     {
-      "from": "1407.4897v4:claim:2.4",
-      "to": "1402.0811:claim:2.3",
-      "type": "specializes",
+      "from": "1402.0811:claim:2.3",
+      "to": "1407.4897v4:claim:2.4",
+      "type": "generalizes",
       "note": "Polymath8b's MPZ statement is Polymath8a's $\\mathrm{MPZ}^{(4)}$ restricted to the form needed for Maynard-Tao sieve consumers."
     },
     {

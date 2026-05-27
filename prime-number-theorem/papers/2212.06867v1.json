@@ -1,7 +1,11 @@
 {
   "paper": "2212.06867v1",
   "title": "Explicit zero-free regions for the Riemann zeta-function",
-  "authors": ["Michael J. Mossinghoff", "Timothy S. Trudgian", "Andrew Yang"],
+  "authors": [
+    "Michael J. Mossinghoff",
+    "Timothy S. Trudgian",
+    "Andrew Yang"
+  ],
   "generated": "2026-05-25",
   "status": "complete",
   "nodes": {
@@ -91,40 +95,127 @@
     }
   },
   "edges": [
-    { "from": "thm:1.1", "to": "lem:4.7", "type": "depends_on", "note": "Section 5's proof of the explicit VK region applies the detection step (Lemma 4.7)." },
-    { "from": "thm:1.2", "to": "lem:4.7", "type": "depends_on", "note": "The asymptotic VK constant is read off from the same detection step (Lemma 4.7)." },
-    { "from": "thm:1.3", "to": "lem:4.7", "type": "depends_on", "note": "Section 7's proof of the classical-type region uses the detection step (Lemma 4.7)." },
-    { "from": "thm:1.4", "to": "lem:6.1", "type": "depends_on", "note": "Section 6 proves the intermediate region from the medium-range Lemma 6.1." },
-    { "from": "thm:1.1", "to": "lem:4.4", "type": "uses", "note": "The explicit VK constant is optimized over the degree-$K$ trigonometric polynomial (Lemma 4.4)." },
-    { "from": "lem:4.7", "to": "lem:4.1", "type": "depends_on", "note": "The detection step is built on the zero-detector identity (Lemma 4.1)." },
-    { "from": "lem:4.7", "to": "lem:4.4", "type": "depends_on", "note": "The detection step uses the degree-$K$ trigonometric positivity inequality (Lemma 4.4)." },
-    { "from": "lem:4.7", "to": "lem:4.6", "type": "depends_on", "note": "The detection step uses the sum-over-zeros bound (Lemma 4.6)." },
-    { "from": "lem:4.6", "to": "lem:4.5", "type": "depends_on", "note": "The sum-over-zeros bound uses the zero count $N(t,\\eta)$ from Lemma 4.5." },
-    { "from": "lem:6.1", "to": "lem:4.4", "type": "uses", "note": "The medium-range engine uses an improved trigonometric polynomial (Lemma 4.4)." },
-    { "from": "lem:6.1", "to": "lem:4.1", "type": "uses_mechanism", "note": "The medium-range argument reuses the zero-detector mechanism (Lemma 4.1)." }
+    {
+      "from": "thm:1.1",
+      "to": "lem:4.7",
+      "type": "depends_on",
+      "note": "Section 5's proof of the explicit VK region applies the detection step (Lemma 4.7)."
+    },
+    {
+      "from": "thm:1.2",
+      "to": "lem:4.7",
+      "type": "depends_on",
+      "note": "The asymptotic VK constant is read off from the same detection step (Lemma 4.7)."
+    },
+    {
+      "from": "thm:1.3",
+      "to": "lem:4.7",
+      "type": "depends_on",
+      "note": "Section 7's proof of the classical-type region uses the detection step (Lemma 4.7)."
+    },
+    {
+      "from": "thm:1.4",
+      "to": "lem:6.1",
+      "type": "depends_on",
+      "note": "Section 6 proves the intermediate region from the medium-range Lemma 6.1."
+    },
+    {
+      "from": "thm:1.1",
+      "to": "lem:4.4",
+      "type": "depends_on",
+      "note": "The explicit VK constant is optimized over the degree-$K$ trigonometric polynomial (Lemma 4.4)."
+    },
+    {
+      "from": "lem:4.7",
+      "to": "lem:4.1",
+      "type": "depends_on",
+      "note": "The detection step is built on the zero-detector identity (Lemma 4.1)."
+    },
+    {
+      "from": "lem:4.7",
+      "to": "lem:4.4",
+      "type": "depends_on",
+      "note": "The detection step uses the degree-$K$ trigonometric positivity inequality (Lemma 4.4)."
+    },
+    {
+      "from": "lem:4.7",
+      "to": "lem:4.6",
+      "type": "depends_on",
+      "note": "The detection step uses the sum-over-zeros bound (Lemma 4.6)."
+    },
+    {
+      "from": "lem:4.6",
+      "to": "lem:4.5",
+      "type": "depends_on",
+      "note": "The sum-over-zeros bound uses the zero count $N(t,\\eta)$ from Lemma 4.5."
+    },
+    {
+      "from": "lem:6.1",
+      "to": "lem:4.4",
+      "type": "depends_on",
+      "note": "The medium-range engine uses an improved trigonometric polynomial (Lemma 4.4)."
+    },
+    {
+      "from": "lem:6.1",
+      "to": "lem:4.1",
+      "type": "depends_on",
+      "note": "The medium-range argument reuses the zero-detector mechanism (Lemma 4.1)."
+    }
   ],
-  "critical_path": ["thm:1.1", "lem:4.7", "lem:4.1"],
+  "critical_path": [
+    "thm:1.1",
+    "lem:4.7",
+    "lem:4.1"
+  ],
   "proof_architecture": {
     "main_results": {
       "description": "Four explicit zero-free regions of record: VK-type (1.1), asymptotic VK (1.2), classical-type (1.3), and the intermediate region (1.4).",
-      "nodes": ["thm:1.1", "thm:1.2", "thm:1.3", "thm:1.4"]
+      "nodes": [
+        "thm:1.1",
+        "thm:1.2",
+        "thm:1.3",
+        "thm:1.4"
+      ]
     },
     "imported_machinery": {
       "description": "The Ford (2002/arXiv 1910.08205) detection apparatus, re-quoted and re-optimized with sharpened explicit constants: zero detector, Laplace lemma, growth-to-integral bridge, degree-$K$ trig positivity, zero counting, sum over zeros.",
-      "nodes": ["lem:4.1", "lem:4.2", "lem:4.3", "lem:4.4", "lem:4.5", "lem:4.6"]
+      "nodes": [
+        "lem:4.1",
+        "lem:4.2",
+        "lem:4.3",
+        "lem:4.4",
+        "lem:4.5",
+        "lem:4.6"
+      ]
     },
     "detection_step": {
       "description": "The assembled inequality (Lemma 4.7) over which the explicit constants of Theorems 1.1–1.3 are optimized.",
-      "nodes": ["lem:4.7"]
+      "nodes": [
+        "lem:4.7"
+      ]
     },
     "medium_range": {
       "description": "The medium-range engine (Lemma 6.1) behind the intermediate region (Theorem 1.4).",
-      "nodes": ["lem:6.1"]
+      "nodes": [
+        "lem:6.1"
+      ]
     }
   },
   "bibliography": {
-    "Ford2000": { "title": "Zero-free regions for the Riemann zeta function (K. Ford)", "arxiv_id": "1910.08205", "in_registry": true },
-    "Nielsen": { "title": "Nielsen — explicit zero-free region constant", "arxiv_id": null, "in_registry": false },
-    "Rosser41": { "title": "J. B. Rosser — explicit bounds (1941)", "arxiv_id": null, "in_registry": false }
+    "Ford2000": {
+      "title": "Zero-free regions for the Riemann zeta function (K. Ford)",
+      "arxiv_id": "1910.08205",
+      "in_registry": true
+    },
+    "Nielsen": {
+      "title": "Nielsen — explicit zero-free region constant",
+      "arxiv_id": null,
+      "in_registry": false
+    },
+    "Rosser41": {
+      "title": "J. B. Rosser — explicit bounds (1941)",
+      "arxiv_id": null,
+      "in_registry": false
+    }
   }
 }

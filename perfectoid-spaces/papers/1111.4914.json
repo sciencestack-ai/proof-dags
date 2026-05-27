@@ -243,9 +243,9 @@
   },
   "edges": [
     {
-      "from": "thm:1.1",
-      "to": "thm:1.3",
-      "type": "specializes",
+      "from": "thm:1.3",
+      "to": "thm:1.1",
+      "type": "generalizes",
       "note": "Apply general perfectoid Galois equivalence to $K = \\mathbb{Q}_p(p^{1/p^\\infty})$, with tilt $K^\\flat = \\mathbb{F}_p((t))$."
     },
     {
@@ -255,9 +255,9 @@
       "note": "Galois equivalence is the automorphism-group form of the finite-extension equivalence."
     },
     {
-      "from": "thm:1.5",
-      "to": "thm:1.8",
-      "type": "specializes",
+      "from": "thm:1.8",
+      "to": "thm:1.5",
+      "type": "generalizes",
       "note": "Concrete instance of $|X| \\cong |X^\\flat|$ for the perfectoid affine line."
     },
     {

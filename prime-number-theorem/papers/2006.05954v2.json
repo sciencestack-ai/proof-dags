@@ -1,7 +1,10 @@
 {
   "paper": "2006.05954v2",
   "title": "The Bombieri-Vinogradov theorem for nilsequences",
-  "authors": ["Xuancheng Shao", "Joni Teräväinen"],
+  "authors": [
+    "Xuancheng Shao",
+    "Joni Teräväinen"
+  ],
   "generated": "2026-05-25",
   "status": "complete",
   "nodes": {
@@ -196,76 +199,280 @@
     }
   },
   "edges": [
-    { "from": "thm:1.3", "to": "thm:4.2", "type": "depends_on", "note": "Section 4.2 shows the equidistributed-nilsequence BV (Theorem 4.2) implies the general level-$1/4$ BV (Theorem 1.3)." },
-    { "from": "thm:1.4", "to": "thm:4.3", "type": "depends_on", "note": "Section 4.3 shows Theorem 4.3 implies Theorem 1.4." },
-    { "from": "thm:1.6", "to": "thm:4.4", "type": "depends_on", "note": "Section 4.3 shows Theorem 4.4 implies Theorem 1.6." },
-    { "from": "cor:1.9", "to": "thm:1.3", "type": "specializes", "note": "The polynomial-phase corollary is the $\\psi=e(P(n))$ special case of the nilsequence theorem 1.3." },
-    { "from": "cor:1.10", "to": "thm:1.4", "type": "specializes", "note": "Polynomial-phase special case of Theorem 1.4." },
-    { "from": "cor:1.11", "to": "thm:1.6", "type": "specializes", "note": "Polynomial-phase special case of Theorem 1.6." },
-    { "from": "thm:4.2", "to": "thm:3.7", "type": "depends_on", "note": "The reduction to equidistributed nilsequences uses the factorization theorem (3.7)." },
-    { "from": "thm:4.2", "to": "thm:3.5", "type": "depends_on", "note": "Quantitative equidistribution (Leibman, 3.5) underlies the equidistributed-nilsequence estimate." },
-    { "from": "thm:4.2", "to": "prop:6.3", "type": "depends_on", "note": "The level-$1/4$ equidistributed BV is driven by the Type II estimate (6.3)." },
-    { "from": "thm:4.2", "to": "prop:5.2", "type": "depends_on", "note": "Theorem 4.2 also uses the Type I estimate (5.2)." },
-    { "from": "thm:4.3", "to": "prop:6.3", "type": "depends_on", "note": "Theorem 4.3 uses the Type II estimate (6.3)." },
-    { "from": "thm:4.4", "to": "prop:6.3", "type": "depends_on", "note": "Theorem 4.4 uses the Type II estimate (6.3)." },
-    { "from": "thm:4.6", "to": "thm:4.4", "type": "extends", "note": "Extends the equidistributed-nilsequence BV to the divisor functions $d_k$ and to sums of two squares." },
-    { "from": "thm:2.3", "to": "thm:1.6", "type": "depends_on", "note": "Bounded gaps in nil-Bohr sets uses the well-factorable level-$1/2$ BV (Theorem 1.6)." },
-    { "from": "thm:2.3", "to": "prop:8.2", "type": "depends_on", "note": "The bounded-gaps application runs the BV input through the sieve lemma (8.2)." },
-    { "from": "thm:2.5", "to": "thm:1.6", "type": "depends_on", "note": "Chen primes in nil-Bohr sets uses the well-factorable level-$1/2$ BV." },
-    { "from": "thm:2.5", "to": "prop:8.2", "type": "depends_on", "note": "The Chen-prime application uses the sieve lemma (8.2)." },
-    { "from": "thm:2.7", "to": "cor:1.10", "type": "depends_on", "note": "Linear equations in primes in APs to moduli $\\le x^{1/3}$ uses the polynomial-phase level-$1/3$ BV (1.10)." },
-    { "from": "thm:2.9", "to": "cor:1.10", "type": "depends_on", "note": "Gowers uniformity of primes in APs to large moduli uses the level-$1/3$ polynomial-phase BV (1.10)." },
-    { "from": "cor:2.10", "to": "thm:2.9", "type": "depends_on", "note": "The Green–Tao theorem in progressions follows from Gowers uniformity of the primes in those progressions (2.9)." },
-    { "from": "thm:1.3", "to": "def:1.1", "type": "uses", "note": "The BV theorem is stated for twists by degree-$s$ nilsequences (Definition 1.1)." },
-    { "from": "thm:1.6", "to": "def:1.5", "type": "uses", "note": "The level-$1/2$ theorem uses well-factorable weights (Definition 1.5)." },
-    { "from": "thm:4.4", "to": "prop:4.7", "type": "depends_on", "note": "The level-$1/2$ equidistributed BV (Theorem 4.4) is packaged from the equidistributed-nilsequence estimate (Proposition 4.7)." },
-    { "from": "thm:4.4", "to": "prop:6.5", "type": "depends_on", "note": "Theorem 4.4 is driven by the well-factorable Type II estimate (Proposition 6.5)." },
-    { "from": "thm:4.3", "to": "prop:6.7", "type": "depends_on", "note": "Theorem 4.3 uses the fixed-nilsequence Type II estimate (Proposition 6.7)." },
-    { "from": "thm:4.2", "to": "prop:5.4", "type": "depends_on", "note": "Theorem 4.2 uses the Type I estimate (Proposition 5.4) alongside Proposition 5.2." },
-    { "from": "prop:4.7", "to": "prop:6.5", "type": "depends_on", "note": "The level-$1/2$ equidistributed estimate rests on the well-factorable Type II estimate (Proposition 6.5)." },
-    { "from": "prop:6.5", "to": "thm:3.7", "type": "depends_on", "note": "The well-factorable Type II estimate reduces to the equidistributed case via the factorization theorem (3.7)." },
-    { "from": "thm:2.5", "to": "prop:8.3", "type": "depends_on", "note": "Chen primes in nil-Bohr sets use Chen's sieve (Proposition 8.3)." }
+    {
+      "from": "thm:1.3",
+      "to": "thm:4.2",
+      "type": "depends_on",
+      "note": "Section 4.2 shows the equidistributed-nilsequence BV (Theorem 4.2) implies the general level-$1/4$ BV (Theorem 1.3)."
+    },
+    {
+      "from": "thm:1.4",
+      "to": "thm:4.3",
+      "type": "depends_on",
+      "note": "Section 4.3 shows Theorem 4.3 implies Theorem 1.4."
+    },
+    {
+      "from": "thm:1.6",
+      "to": "thm:4.4",
+      "type": "depends_on",
+      "note": "Section 4.3 shows Theorem 4.4 implies Theorem 1.6."
+    },
+    {
+      "from": "thm:1.3",
+      "to": "cor:1.9",
+      "type": "generalizes",
+      "note": "The polynomial-phase corollary is the $\\psi=e(P(n))$ special case of the nilsequence theorem 1.3."
+    },
+    {
+      "from": "thm:1.4",
+      "to": "cor:1.10",
+      "type": "generalizes",
+      "note": "Polynomial-phase special case of Theorem 1.4."
+    },
+    {
+      "from": "thm:1.6",
+      "to": "cor:1.11",
+      "type": "generalizes",
+      "note": "Polynomial-phase special case of Theorem 1.6."
+    },
+    {
+      "from": "thm:4.2",
+      "to": "thm:3.7",
+      "type": "depends_on",
+      "note": "The reduction to equidistributed nilsequences uses the factorization theorem (3.7)."
+    },
+    {
+      "from": "thm:4.2",
+      "to": "thm:3.5",
+      "type": "depends_on",
+      "note": "Quantitative equidistribution (Leibman, 3.5) underlies the equidistributed-nilsequence estimate."
+    },
+    {
+      "from": "thm:4.2",
+      "to": "prop:6.3",
+      "type": "depends_on",
+      "note": "The level-$1/4$ equidistributed BV is driven by the Type II estimate (6.3)."
+    },
+    {
+      "from": "thm:4.2",
+      "to": "prop:5.2",
+      "type": "depends_on",
+      "note": "Theorem 4.2 also uses the Type I estimate (5.2)."
+    },
+    {
+      "from": "thm:4.3",
+      "to": "prop:6.3",
+      "type": "depends_on",
+      "note": "Theorem 4.3 uses the Type II estimate (6.3)."
+    },
+    {
+      "from": "thm:4.4",
+      "to": "prop:6.3",
+      "type": "depends_on",
+      "note": "Theorem 4.4 uses the Type II estimate (6.3)."
+    },
+    {
+      "from": "thm:4.6",
+      "to": "thm:4.4",
+      "type": "extends",
+      "note": "Extends the equidistributed-nilsequence BV to the divisor functions $d_k$ and to sums of two squares."
+    },
+    {
+      "from": "thm:2.3",
+      "to": "thm:1.6",
+      "type": "depends_on",
+      "note": "Bounded gaps in nil-Bohr sets uses the well-factorable level-$1/2$ BV (Theorem 1.6)."
+    },
+    {
+      "from": "thm:2.3",
+      "to": "prop:8.2",
+      "type": "depends_on",
+      "note": "The bounded-gaps application runs the BV input through the sieve lemma (8.2)."
+    },
+    {
+      "from": "thm:2.5",
+      "to": "thm:1.6",
+      "type": "depends_on",
+      "note": "Chen primes in nil-Bohr sets uses the well-factorable level-$1/2$ BV."
+    },
+    {
+      "from": "thm:2.5",
+      "to": "prop:8.2",
+      "type": "depends_on",
+      "note": "The Chen-prime application uses the sieve lemma (8.2)."
+    },
+    {
+      "from": "thm:2.7",
+      "to": "cor:1.10",
+      "type": "depends_on",
+      "note": "Linear equations in primes in APs to moduli $\\le x^{1/3}$ uses the polynomial-phase level-$1/3$ BV (1.10)."
+    },
+    {
+      "from": "thm:2.9",
+      "to": "cor:1.10",
+      "type": "depends_on",
+      "note": "Gowers uniformity of primes in APs to large moduli uses the level-$1/3$ polynomial-phase BV (1.10)."
+    },
+    {
+      "from": "cor:2.10",
+      "to": "thm:2.9",
+      "type": "depends_on",
+      "note": "The Green–Tao theorem in progressions follows from Gowers uniformity of the primes in those progressions (2.9)."
+    },
+    {
+      "from": "thm:1.3",
+      "to": "def:1.1",
+      "type": "depends_on",
+      "note": "The BV theorem is stated for twists by degree-$s$ nilsequences (Definition 1.1)."
+    },
+    {
+      "from": "thm:1.6",
+      "to": "def:1.5",
+      "type": "depends_on",
+      "note": "The level-$1/2$ theorem uses well-factorable weights (Definition 1.5)."
+    },
+    {
+      "from": "thm:4.4",
+      "to": "prop:4.7",
+      "type": "depends_on",
+      "note": "The level-$1/2$ equidistributed BV (Theorem 4.4) is packaged from the equidistributed-nilsequence estimate (Proposition 4.7)."
+    },
+    {
+      "from": "thm:4.4",
+      "to": "prop:6.5",
+      "type": "depends_on",
+      "note": "Theorem 4.4 is driven by the well-factorable Type II estimate (Proposition 6.5)."
+    },
+    {
+      "from": "thm:4.3",
+      "to": "prop:6.7",
+      "type": "depends_on",
+      "note": "Theorem 4.3 uses the fixed-nilsequence Type II estimate (Proposition 6.7)."
+    },
+    {
+      "from": "thm:4.2",
+      "to": "prop:5.4",
+      "type": "depends_on",
+      "note": "Theorem 4.2 uses the Type I estimate (Proposition 5.4) alongside Proposition 5.2."
+    },
+    {
+      "from": "prop:4.7",
+      "to": "prop:6.5",
+      "type": "depends_on",
+      "note": "The level-$1/2$ equidistributed estimate rests on the well-factorable Type II estimate (Proposition 6.5)."
+    },
+    {
+      "from": "prop:6.5",
+      "to": "thm:3.7",
+      "type": "depends_on",
+      "note": "The well-factorable Type II estimate reduces to the equidistributed case via the factorization theorem (3.7)."
+    },
+    {
+      "from": "thm:2.5",
+      "to": "prop:8.3",
+      "type": "depends_on",
+      "note": "Chen primes in nil-Bohr sets use Chen's sieve (Proposition 8.3)."
+    }
   ],
-  "critical_path": ["thm:1.6", "thm:4.4", "prop:6.5"],
+  "critical_path": [
+    "thm:1.6",
+    "thm:4.4",
+    "prop:6.5"
+  ],
   "proof_architecture": {
     "main_BV_theorems": {
       "description": "Bombieri–Vinogradov for nilsequence twists at levels $1/4$, $1/3$, and $1/2$ (well-factorable).",
-      "nodes": ["thm:1.3", "thm:1.4", "thm:1.6"]
+      "nodes": [
+        "thm:1.3",
+        "thm:1.4",
+        "thm:1.6"
+      ]
     },
     "polynomial_phase": {
       "description": "The $\\psi=e(P(n))$ specializations of the main theorems.",
-      "nodes": ["cor:1.9", "cor:1.10", "cor:1.11"]
+      "nodes": [
+        "cor:1.9",
+        "cor:1.10",
+        "cor:1.11"
+      ]
     },
     "applications": {
       "description": "Downstream applications: bounded gaps and Chen primes in nil-Bohr sets, linear equations and Gowers uniformity of primes in APs to large moduli, and Green–Tao in progressions.",
-      "nodes": ["thm:2.3", "thm:2.5", "thm:2.7", "thm:2.9", "cor:2.10"]
+      "nodes": [
+        "thm:2.3",
+        "thm:2.5",
+        "thm:2.7",
+        "thm:2.9",
+        "cor:2.10"
+      ]
     },
     "equidistribution_tools": {
       "description": "The Green–Tao nilsequence machinery: quantitative Leibman equidistribution and the factorization theorem.",
-      "nodes": ["thm:3.5", "thm:3.7"]
+      "nodes": [
+        "thm:3.5",
+        "thm:3.7"
+      ]
     },
     "definitions": {
       "description": "The two objects the theorem is built around: nilsequences and well-factorable weight sequences.",
-      "nodes": ["def:1.1", "def:1.5"]
+      "nodes": [
+        "def:1.1",
+        "def:1.5"
+      ]
     },
     "equidistributed_BV": {
       "description": "BV restricted to equidistributed nilsequences at each level, which imply the general theorems, plus the level-$1/2$ proposition and the extension to other arithmetic weights.",
-      "nodes": ["thm:4.2", "thm:4.3", "thm:4.4", "thm:4.6", "prop:4.7"]
+      "nodes": [
+        "thm:4.2",
+        "thm:4.3",
+        "thm:4.4",
+        "thm:4.6",
+        "prop:4.7"
+      ]
     },
     "type_I_II": {
       "description": "The Type I and Type II bilinear estimates driving the equidistributed-nilsequence BV, including the well-factorable and fixed-nilsequence variants.",
-      "nodes": ["prop:5.2", "prop:5.4", "prop:6.3", "prop:6.5", "prop:6.7"]
+      "nodes": [
+        "prop:5.2",
+        "prop:5.4",
+        "prop:6.3",
+        "prop:6.5",
+        "prop:6.7"
+      ]
     },
     "sieve": {
       "description": "The lower-bound sieve and Chen's sieve converting the BV input into the prime-gap and Chen-prime applications.",
-      "nodes": ["prop:8.2", "prop:8.3"]
+      "nodes": [
+        "prop:8.2",
+        "prop:8.3"
+      ]
     }
   },
   "bibliography": {
-    "GreenTao-linear": { "title": "Green–Tao — Linear equations in primes", "arxiv_id": null, "in_registry": false },
-    "GreenTaoNilsequences": { "title": "Green–Tao — The quantitative behaviour of polynomial orbits on nilmanifolds", "arxiv_id": null, "in_registry": false },
-    "GreenTaoZiegler": { "title": "Green–Tao–Ziegler — The inverse conjecture for the Gowers norms", "arxiv_id": null, "in_registry": false },
-    "BFI": { "title": "Bombieri–Friedlander–Iwaniec — Primes in arithmetic progressions to large moduli", "arxiv_id": null, "in_registry": false },
-    "Zhang": { "title": "Y. Zhang — Bounded gaps between primes", "arxiv_id": null, "in_registry": false }
+    "GreenTao-linear": {
+      "title": "Green–Tao — Linear equations in primes",
+      "arxiv_id": null,
+      "in_registry": false
+    },
+    "GreenTaoNilsequences": {
+      "title": "Green–Tao — The quantitative behaviour of polynomial orbits on nilmanifolds",
+      "arxiv_id": null,
+      "in_registry": false
+    },
+    "GreenTaoZiegler": {
+      "title": "Green–Tao–Ziegler — The inverse conjecture for the Gowers norms",
+      "arxiv_id": null,
+      "in_registry": false
+    },
+    "BFI": {
+      "title": "Bombieri–Friedlander–Iwaniec — Primes in arithmetic progressions to large moduli",
+      "arxiv_id": null,
+      "in_registry": false
+    },
+    "Zhang": {
+      "title": "Y. Zhang — Bounded gaps between primes",
+      "arxiv_id": null,
+      "in_registry": false
+    }
   }
 }

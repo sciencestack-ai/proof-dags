@@ -188,9 +188,9 @@
       "note": "Hodge-Tate / period diagram is the symmetric structure that swaps under duality."
     },
     {
-      "from": "thm:7.3.1",
-      "to": "thm:7.2.3",
-      "type": "specializes",
+      "from": "thm:7.2.3",
+      "to": "thm:7.3.1",
+      "type": "generalizes",
       "note": "Drinfeld-side cofinality is a special case of the duality applied to $\\mathrm{GL}_n$ data."
     }
   ],

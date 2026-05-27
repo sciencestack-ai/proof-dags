@@ -1,7 +1,9 @@
 {
   "paper": "2505.10724",
   "title": "Categorical local Langlands and torsion classes of some Shimura varieties",
-  "authors": ["Kieu Hieu Nguyen"],
+  "authors": [
+    "Kieu Hieu Nguyen"
+  ],
   "generated": "2026-05-20",
   "status": "complete",
   "nodes": {
@@ -63,24 +65,106 @@
     }
   },
   "edges": [
-    { "from": "thm:1.1", "to": "thm:4.5", "type": "depends_on", "note": "The categorical decomposition is indexed by the block decomposition of $\\mathrm{Rep}_\\Lambda(G_b)$ (Thm 4.5)." },
-    { "from": "thm:1.1", "to": "thm:4.6", "type": "depends_on", "note": "Matching blocks to $L$-parameters uses the properties of the Fargues–Scholze correspondence (Thm 4.6)." },
-    { "from": "thm:1.1", "to": "thm:2.1", "type": "depends_on", "note": "The decomposition lives on $\\mathrm{Bun}_G$, whose structure (Thm 2.1) is the geometric stage." },
-    { "from": "thm:1.1", "to": "thm:5.2", "type": "depends_on", "note": "The block-level categorical equivalence (Thm 5.2, supercuspidal case) assembles into the full decomposition." },
-    { "from": "thm:1.2", "to": "thm:1.1", "type": "depends_on", "note": "The Hecke eigensheaf is extracted from the categorical decomposition." },
-    { "from": "thm:1.3", "to": "thm:1.2", "type": "depends_on", "note": "The Shimura/RZ cohomology identity is read off the Hecke-eigensheaf structure." },
-    { "from": "thm:1.3", "to": "thm:4.6", "type": "uses", "note": "The cohomology is matched to the correct $L$-parameter via the FS correspondence." },
-    { "from": "thm:4.3", "to": "thm:4.5", "type": "uses", "note": "The Zelevinsky classification indexes the blocks." }
+    {
+      "from": "thm:1.1",
+      "to": "thm:4.5",
+      "type": "depends_on",
+      "note": "The categorical decomposition is indexed by the block decomposition of $\\mathrm{Rep}_\\Lambda(G_b)$ (Thm 4.5)."
+    },
+    {
+      "from": "thm:1.1",
+      "to": "thm:4.6",
+      "type": "depends_on",
+      "note": "Matching blocks to $L$-parameters uses the properties of the Fargues–Scholze correspondence (Thm 4.6)."
+    },
+    {
+      "from": "thm:1.1",
+      "to": "thm:2.1",
+      "type": "depends_on",
+      "note": "The decomposition lives on $\\mathrm{Bun}_G$, whose structure (Thm 2.1) is the geometric stage."
+    },
+    {
+      "from": "thm:1.1",
+      "to": "thm:5.2",
+      "type": "depends_on",
+      "note": "The block-level categorical equivalence (Thm 5.2, supercuspidal case) assembles into the full decomposition."
+    },
+    {
+      "from": "thm:1.2",
+      "to": "thm:1.1",
+      "type": "depends_on",
+      "note": "The Hecke eigensheaf is extracted from the categorical decomposition."
+    },
+    {
+      "from": "thm:1.3",
+      "to": "thm:1.2",
+      "type": "depends_on",
+      "note": "The Shimura/RZ cohomology identity is read off the Hecke-eigensheaf structure."
+    },
+    {
+      "from": "thm:1.3",
+      "to": "thm:4.6",
+      "type": "depends_on",
+      "note": "The cohomology is matched to the correct $L$-parameter via the FS correspondence."
+    },
+    {
+      "from": "thm:4.3",
+      "to": "thm:4.5",
+      "type": "depends_on",
+      "note": "The Zelevinsky classification indexes the blocks."
+    }
   ],
-  "critical_path": ["thm:2.1", "thm:4.5", "thm:5.2", "thm:1.1", "thm:1.2", "thm:1.3"],
+  "critical_path": [
+    "thm:2.1",
+    "thm:4.5",
+    "thm:5.2",
+    "thm:1.1",
+    "thm:1.2",
+    "thm:1.3"
+  ],
   "proof_architecture": {
-    "fs_geometry": { "description": "The Fargues–Scholze geometric inputs: Bun_G structure and the correspondence properties.", "nodes": ["thm:2.1", "thm:4.6"] },
-    "representation_side": { "description": "Block decomposition and Zelevinsky classification of the automorphic side.", "nodes": ["thm:4.3", "thm:4.5", "thm:5.2"] },
-    "main_results": { "description": "The categorical decomposition, the Hecke eigensheaf, and the Shimura/RZ cohomology computation.", "nodes": ["thm:1.1", "thm:1.2", "thm:1.3"] }
+    "fs_geometry": {
+      "description": "The Fargues–Scholze geometric inputs: Bun_G structure and the correspondence properties.",
+      "nodes": [
+        "thm:2.1",
+        "thm:4.6"
+      ]
+    },
+    "representation_side": {
+      "description": "Block decomposition and Zelevinsky classification of the automorphic side.",
+      "nodes": [
+        "thm:4.3",
+        "thm:4.5",
+        "thm:5.2"
+      ]
+    },
+    "main_results": {
+      "description": "The categorical decomposition, the Hecke eigensheaf, and the Shimura/RZ cohomology computation.",
+      "nodes": [
+        "thm:1.1",
+        "thm:1.2",
+        "thm:1.3"
+      ]
+    }
   },
   "bibliography": {
-    "FS": { "title": "Geometrization of the local Langlands correspondence", "arxiv_id": "2102.13459", "in_registry": true, "role": "Bun_G structure (Thm III.0.2 $\\to$ node 2.1) and the FS correspondence properties (Thm I.9.6 $\\to$ node 4.6); the categorical decomposition is of the FS category D_lis(Bun_G)" },
-    "MS14": { "title": "Mínguez–Sécherre, Représentations lisses modulo l de GL_m(D)", "arxiv_id": null, "in_registry": false, "role": "Zelevinsky-type classification (Thm 4.3)" },
-    "SS16": { "title": "Sécherre–Stevens, Block decomposition of smooth representations", "arxiv_id": null, "in_registry": false, "role": "block decomposition into inertial supercuspidal classes (Thm 4.5)" }
+    "FS": {
+      "title": "Geometrization of the local Langlands correspondence",
+      "arxiv_id": "2102.13459",
+      "in_registry": true,
+      "role": "Bun_G structure (Thm III.0.2 $\\to$ node 2.1) and the FS correspondence properties (Thm I.9.6 $\\to$ node 4.6); the categorical decomposition is of the FS category D_lis(Bun_G)"
+    },
+    "MS14": {
+      "title": "Mínguez–Sécherre, Représentations lisses modulo l de GL_m(D)",
+      "arxiv_id": null,
+      "in_registry": false,
+      "role": "Zelevinsky-type classification (Thm 4.3)"
+    },
+    "SS16": {
+      "title": "Sécherre–Stevens, Block decomposition of smooth representations",
+      "arxiv_id": null,
+      "in_registry": false,
+      "role": "block decomposition into inertial supercuspidal classes (Thm 4.5)"
+    }
   }
 }

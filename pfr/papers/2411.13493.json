@@ -1,10 +1,14 @@
 {
   "paper": "2411.13493",
   "title": "Polynomial Freiman-Ruzsa, Reed-Muller codes and Shannon capacity",
-  "authors": ["Emmanuel Abbe", "Colin Sandon", "Vladyslav Shashkov", "Maryna Viazovska"],
+  "authors": [
+    "Emmanuel Abbe",
+    "Colin Sandon",
+    "Vladyslav Shashkov",
+    "Maryna Viazovska"
+  ],
   "generated": "2026-03-18",
   "status": "complete",
-
   "nodes": {
     "def:1": {
       "type": "Definition",
@@ -74,12 +78,11 @@
       "summary": "New additive combinatorics conjecture with broader coding theory applications."
     }
   },
-
   "edges": [
     {
       "from": "thm:14",
       "to": "cor:15",
-      "type": "implies",
+      "type": "depends_on",
       "note": "The cited GGMT entropic PFR theorem yields the conditional version."
     },
     {
@@ -91,7 +94,7 @@
     {
       "from": "lem:21",
       "to": "cor:24",
-      "type": "implies",
+      "type": "depends_on",
       "note": "Orbit localization yields the subspace-distance corollary."
     },
     {
@@ -103,7 +106,7 @@
     {
       "from": "thm:26",
       "to": "thm:9",
-      "type": "proves",
+      "type": "depends_on",
       "note": "The polarization bound establishes the Reed-Muller capacity result."
     },
     {

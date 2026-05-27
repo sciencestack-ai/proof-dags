@@ -1,7 +1,12 @@
 {
   "paper": "2402.03470",
   "title": "A Study Guide for \"A Restriction Estimate using Polynomial Partitioning\"",
-  "authors": ["John Green", "Terry Harris", "Kaiyi Huang", "Arian Nadjimzadah"],
+  "authors": [
+    "John Green",
+    "Terry Harris",
+    "Kaiyi Huang",
+    "Arian Nadjimzadah"
+  ],
   "generated": "2026-05-20",
   "status": "complete",
   "nodes": {
@@ -105,33 +110,164 @@
     }
   },
   "edges": [
-    { "from": "thm:1.1", "to": "thm:2.1", "type": "depends_on", "note": "The restriction estimate at $p > 3.25$ comes from the broad–narrow reduction, where the broad estimate yields the exponent $13/4$." },
-    { "from": "thm:1.1", "to": "thm:3.1", "type": "depends_on", "note": "The broad estimate is proved by the polynomial-partitioning induction on radius." },
-    { "from": "thm:2.1", "to": "thm:1.4", "type": "depends_on", "note": "The broad–narrow reduction is applied to the broad estimate for perturbed paraboloids." },
-    { "from": "thm:3.1", "to": "thm:1.7", "type": "depends_on", "note": "The cellular case partitions the mass using polynomial partitioning for $L^1$ functions." },
-    { "from": "thm:3.1", "to": "lem:4.1", "type": "depends_on", "note": "The transverse/tangential case is controlled by the transversal tube estimate." },
-    { "from": "thm:3.1", "to": "prop:3.8", "type": "uses", "note": "The induction closes via the cell-to-whole step (Prop 3.8)." },
-    { "from": "thm:3.1", "to": "lem:3.4", "type": "uses", "note": "The self-improving scale-invariant reduction drives the induction." },
-    { "from": "thm:1.4", "to": "thm:3.1", "type": "depends_on", "note": "The technical broad estimate is the output of the polynomial-partitioning induction." },
-    { "from": "thm:1.7", "to": "thm:1.6", "type": "depends_on", "note": "Polynomial partitioning for functions is built from Borsuk–Ulam (ham-sandwich)." },
-    { "from": "thm:1.2", "to": "thm:1.6", "type": "depends_on", "note": "Point-set polynomial partitioning likewise rests on Borsuk–Ulam." },
-    { "from": "lem:4.1", "to": "thm:4.3", "type": "depends_on", "note": "The transversal tube count uses Wongkew's bound on cubes meeting the variety." },
-    { "from": "lem:4.1", "to": "lem:4.4", "type": "uses", "note": "The transversal estimate uses the tangential tube-counting packing bound." },
-    { "from": "thm:1.2", "to": "thm:1.3", "type": "motivates", "note": "The polynomial-method incidence bound is the archetype motivating polynomial partitioning." },
-    { "from": "thm:1.1", "to": "conjecture:4.5", "type": "motivates", "note": "The $p > 3.25$ estimate is partial progress toward the full restriction conjecture." }
+    {
+      "from": "thm:1.1",
+      "to": "thm:2.1",
+      "type": "depends_on",
+      "note": "The restriction estimate at $p > 3.25$ comes from the broad–narrow reduction, where the broad estimate yields the exponent $13/4$."
+    },
+    {
+      "from": "thm:1.1",
+      "to": "thm:3.1",
+      "type": "depends_on",
+      "note": "The broad estimate is proved by the polynomial-partitioning induction on radius."
+    },
+    {
+      "from": "thm:2.1",
+      "to": "thm:1.4",
+      "type": "depends_on",
+      "note": "The broad–narrow reduction is applied to the broad estimate for perturbed paraboloids."
+    },
+    {
+      "from": "thm:3.1",
+      "to": "thm:1.7",
+      "type": "depends_on",
+      "note": "The cellular case partitions the mass using polynomial partitioning for $L^1$ functions."
+    },
+    {
+      "from": "thm:3.1",
+      "to": "lem:4.1",
+      "type": "depends_on",
+      "note": "The transverse/tangential case is controlled by the transversal tube estimate."
+    },
+    {
+      "from": "thm:3.1",
+      "to": "prop:3.8",
+      "type": "depends_on",
+      "note": "The induction closes via the cell-to-whole step (Prop 3.8)."
+    },
+    {
+      "from": "thm:3.1",
+      "to": "lem:3.4",
+      "type": "depends_on",
+      "note": "The self-improving scale-invariant reduction drives the induction."
+    },
+    {
+      "from": "thm:1.4",
+      "to": "thm:3.1",
+      "type": "depends_on",
+      "note": "The technical broad estimate is the output of the polynomial-partitioning induction."
+    },
+    {
+      "from": "thm:1.7",
+      "to": "thm:1.6",
+      "type": "depends_on",
+      "note": "Polynomial partitioning for functions is built from Borsuk–Ulam (ham-sandwich)."
+    },
+    {
+      "from": "thm:1.2",
+      "to": "thm:1.6",
+      "type": "depends_on",
+      "note": "Point-set polynomial partitioning likewise rests on Borsuk–Ulam."
+    },
+    {
+      "from": "lem:4.1",
+      "to": "thm:4.3",
+      "type": "depends_on",
+      "note": "The transversal tube count uses Wongkew's bound on cubes meeting the variety."
+    },
+    {
+      "from": "lem:4.1",
+      "to": "lem:4.4",
+      "type": "depends_on",
+      "note": "The transversal estimate uses the tangential tube-counting packing bound."
+    },
+    {
+      "from": "thm:1.2",
+      "to": "thm:1.3",
+      "type": "motivates",
+      "note": "The polynomial-method incidence bound is the archetype motivating polynomial partitioning."
+    },
+    {
+      "from": "thm:1.1",
+      "to": "conjecture:4.5",
+      "type": "motivates",
+      "note": "The $p > 3.25$ estimate is partial progress toward the full restriction conjecture."
+    }
   ],
-  "critical_path": ["thm:1.6", "thm:1.7", "thm:3.1", "thm:2.1", "thm:1.1"],
+  "critical_path": [
+    "thm:1.6",
+    "thm:1.7",
+    "thm:3.1",
+    "thm:2.1",
+    "thm:1.1"
+  ],
   "proof_architecture": {
-    "main_results": { "description": "Guth's restriction estimate in $\\mathbb{R}^3$ and its broad–narrow sharpness, with the restriction conjecture as target.", "nodes": ["thm:1.1", "thm:2.1", "conjecture:4.5"] },
-    "polynomial_partitioning": { "description": "The polynomial method toolkit: point-set and $L^1$ partitioning, Borsuk–Ulam, Wongkew's variety-neighborhood bound, and the incidence archetype.", "nodes": ["thm:1.2", "thm:1.7", "thm:1.6", "thm:4.3", "thm:1.3"] },
-    "broad_narrow_induction": { "description": "The induction on radius splitting into cellular and transverse cases.", "nodes": ["thm:3.1", "thm:1.4", "lem:3.4", "prop:3.8"] },
-    "transversal_estimate": { "description": "The multilinear-Kakeya-type transverse-case bound on tangential tubes.", "nodes": ["lem:4.1", "lem:4.4"] }
+    "main_results": {
+      "description": "Guth's restriction estimate in $\\mathbb{R}^3$ and its broad–narrow sharpness, with the restriction conjecture as target.",
+      "nodes": [
+        "thm:1.1",
+        "thm:2.1",
+        "conjecture:4.5"
+      ]
+    },
+    "polynomial_partitioning": {
+      "description": "The polynomial method toolkit: point-set and $L^1$ partitioning, Borsuk–Ulam, Wongkew's variety-neighborhood bound, and the incidence archetype.",
+      "nodes": [
+        "thm:1.2",
+        "thm:1.7",
+        "thm:1.6",
+        "thm:4.3",
+        "thm:1.3"
+      ]
+    },
+    "broad_narrow_induction": {
+      "description": "The induction on radius splitting into cellular and transverse cases.",
+      "nodes": [
+        "thm:3.1",
+        "thm:1.4",
+        "lem:3.4",
+        "prop:3.8"
+      ]
+    },
+    "transversal_estimate": {
+      "description": "The multilinear-Kakeya-type transverse-case bound on tangential tubes.",
+      "nodes": [
+        "lem:4.1",
+        "lem:4.4"
+      ]
+    }
   },
   "bibliography": {
-    "multkakeya": { "title": "Bennett–Carbery–Tao, On the multilinear restriction and Kakeya conjectures", "arxiv_id": "math/0509262", "in_registry": true, "role": "the multilinear restriction/Kakeya estimate that controls the transverse (broad) case of the restriction induction; SHARED node with the bourgain-demeter-decoupling DAG" },
-    "Guth_polypart_2": { "title": "Guth, Restriction estimates using polynomial partitioning II", "arxiv_id": null, "in_registry": false, "role": "the higher-dimensional companion to the estimate explained here" },
-    "KatzRogersPolyWolff": { "title": "Katz–Rogers, On the polynomial Wolff axioms", "arxiv_id": null, "in_registry": false, "role": "the polynomial Wolff axioms used to improve restriction in dimension 3" },
-    "Falconer_refineddecoupling": { "title": "refined decoupling", "arxiv_id": null, "in_registry": false, "role": "refined decoupling used in the wave-packet analysis" },
-    "volneigh": { "title": "Wongkew, Volumes of tubular neighbourhoods of real algebraic varieties", "arxiv_id": null, "in_registry": false, "role": "the variety-neighborhood volume bound (Thm 4.3)" }
+    "multkakeya": {
+      "title": "Bennett–Carbery–Tao, On the multilinear restriction and Kakeya conjectures",
+      "arxiv_id": "math/0509262",
+      "in_registry": true,
+      "role": "the multilinear restriction/Kakeya estimate that controls the transverse (broad) case of the restriction induction; SHARED node with the bourgain-demeter-decoupling DAG"
+    },
+    "Guth_polypart_2": {
+      "title": "Guth, Restriction estimates using polynomial partitioning II",
+      "arxiv_id": null,
+      "in_registry": false,
+      "role": "the higher-dimensional companion to the estimate explained here"
+    },
+    "KatzRogersPolyWolff": {
+      "title": "Katz–Rogers, On the polynomial Wolff axioms",
+      "arxiv_id": null,
+      "in_registry": false,
+      "role": "the polynomial Wolff axioms used to improve restriction in dimension 3"
+    },
+    "Falconer_refineddecoupling": {
+      "title": "refined decoupling",
+      "arxiv_id": null,
+      "in_registry": false,
+      "role": "refined decoupling used in the wave-packet analysis"
+    },
+    "volneigh": {
+      "title": "Wongkew, Volumes of tubular neighbourhoods of real algebraic varieties",
+      "arxiv_id": null,
+      "in_registry": false,
+      "role": "the variety-neighborhood volume bound (Thm 4.3)"
+    }
   }
 }

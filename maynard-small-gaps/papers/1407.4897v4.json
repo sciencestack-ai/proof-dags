@@ -426,31 +426,31 @@
     {
       "from": "prop:2.7",
       "to": "claim:2.2",
-      "type": "proves",
+      "type": "depends_on",
       "note": "GEH $\\Rightarrow$ EH."
     },
     {
       "from": "prop:2.7",
       "to": "claim:2.6",
-      "type": "proves",
+      "type": "depends_on",
       "note": "Extracts EH from GEH."
     },
     {
       "from": "thm:2.8",
       "to": "claim:2.6",
-      "type": "proves",
+      "type": "depends_on",
       "note": "GEH unconditional in $\\theta < 1/2$."
     },
     {
       "from": "thm:2.3",
       "to": "claim:2.2",
-      "type": "proves",
+      "type": "depends_on",
       "note": "Classical Bombieri-Vinogradov: $\\mathrm{EH}[\\theta]$ for $\\theta<1/2$."
     },
     {
       "from": "thm:2.5",
       "to": "claim:2.4",
-      "type": "proves",
+      "type": "depends_on",
       "note": "Polymath8a: MPZ holds in $600\\varpi+180\\delta<7$ region."
     },
     {
@@ -474,25 +474,25 @@
     {
       "from": "thm:3.15",
       "to": "thm:3.14",
-      "type": "proves",
+      "type": "depends_on",
       "note": "Concrete piecewise-polynomial witness for the $k=3$ case."
     },
     {
       "from": "thm:3.13",
       "to": "thm:3.12",
-      "type": "proves",
+      "type": "depends_on",
       "note": "Numerical existence of admissible $F$."
     },
     {
       "from": "thm:3.11",
       "to": "thm:3.10",
-      "type": "proves",
+      "type": "depends_on",
       "note": "Numerical existence within the MPZ window."
     },
     {
       "from": "thm:3.9",
       "to": "thm:3.8",
-      "type": "proves",
+      "type": "depends_on",
       "note": "Numerical $M_k$ inputs under EH."
     }
   ],

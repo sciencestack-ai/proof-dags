@@ -28,7 +28,7 @@
     {
       "from": "2311.05762:thm:1.2",
       "to": "2306.13403:conjecture:1.7",
-      "type": "proves",
+      "type": "depends_on",
       "note": "The GGMT main theorem, via Green-Manners-Tao Prop 1.10, settles weak PFR over the integers (Conjecture 1.7 of that paper)."
     },
     {

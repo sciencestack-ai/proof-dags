@@ -1,0 +1,185 @@
+{
+  "paper": "1605.09223v1",
+  "title": "On large subsets of $\\mathbb{F}_q^n$ with no three-term arithmetic progression",
+  "authors": [
+    "Jordan S. Ellenberg",
+    "Dion Gijswijt"
+  ],
+  "generated": "2026-05-27",
+  "status": "complete",
+  "nodes": {
+    "thm:4": {
+      "type": "Theorem",
+      "number": "4",
+      "section": "main",
+      "role": "main_result",
+      "summary": "Let $\\alpha + \\beta + \\gamma = 0$ in $\\mathbb{F}_q$ with $\\gamma \\ne 0$, and let $A \\subseteq \\mathbb{F}_q^n$ have no nontrivial solutions $(a_1, a_2, a_3) \\in A^3$ to $\\alpha a_1 + \\beta a_2 + \\gamma a_3 = 0$ (other than $a_1 = a_2 = a_3$). Then $|A| \\le 3 m_{(q-1)n/3}$, where $m_d$ counts monomials in $n$ variables of total degree at most $d$ with each variable raised to power at most $q-1$. Setting $q = 3$, $\\alpha = \\beta = \\gamma = 1$ recovers the cap-set bound."
+    },
+    "cor:5": {
+      "type": "Corollary",
+      "number": "5",
+      "section": "main",
+      "role": "main_result",
+      "summary": "Cap-set theorem: any $A \\subseteq (\\mathbb{Z}/3\\mathbb{Z})^n$ containing no three-term arithmetic progression has $|A| = o(2.756^n)$. The constant $2.756$ comes from the large-deviations rate $3 e^{-I(2/3)}$ where $I$ is the rate function for the Bernoulli measure on $\\{0, 1, 2\\}$ at mean $2/3$. Breaks Meshulam's 1995 bound $O(3^n / n)$ exponentially and resolves a longstanding question of Frankl–Graham–Rödl and Brown–Buhler."
+    },
+    "prop:2": {
+      "type": "Proposition",
+      "number": "2",
+      "section": "main",
+      "role": "key_mechanism",
+      "summary": "Generalized polynomial-method lemma. Let $\\alpha + \\beta + \\gamma = 0$ in $\\mathbb{F}_q$, $A \\subseteq \\mathbb{F}_q^n$, and $P \\in S_n^d$ (the space of polynomials of total degree at most $d$ with each variable of degree at most $q-1$). If $P(\\alpha a + \\beta b) = 0$ for every distinct pair $a, b \\in A$, then $P(-\\gamma a) \\ne 0$ for at most $2 m_{d/2}$ elements $a \\in A$. Strengthens Croot–Lev–Pach lem:1 by allowing $\\gamma \\ne 0$, which is essential for the cap-set application — the $\\gamma = 0$ case forces $P(0) = 0$, the $\\gamma \\ne 0$ case forces $P$ to be small on $-\\gamma A$, a much richer constraint."
+    },
+    "rem:1": {
+      "type": "Remark",
+      "number": "1",
+      "section": "intro",
+      "role": "context",
+      "summary": "Ellenberg and Gijswijt developed essentially identical arguments independently and simultaneously after Croot–Lev–Pach posted; the paper presents the joint version."
+    },
+    "rem:3": {
+      "type": "Remark",
+      "number": "3",
+      "section": "main",
+      "role": "context",
+      "summary": "prop:2 is essentially the proof of CLP lem:1 with the extra parameter $\\gamma$. The CLP form ($\\gamma = 0$) gives $P(0) = 0$ once $|A| > 2 m_{d/2}$; the EG form gives the stronger pointwise control on $-\\gamma A$, which is what permits the dimension-counting argument in thm:4 to close."
+    },
+    "proof:prop:2": {
+      "type": "Proof",
+      "number": "prop:2",
+      "section": "main",
+      "role": "technical",
+      "summary": "Expand $P(\\alpha x + \\beta y) = \\sum_{m,m'} c_{m,m'} m(x) m'(y)$; in each summand at least one factor has degree at most $d/2$, so write $P(\\alpha x + \\beta y) = \\sum_{m \\in M_n^{d/2}} m(x) F_m(y) + \\sum_{m \\in M_n^{d/2}} m(y) G_m(x)$. The $A \\times A$ matrix $B_{a,b} = P(\\alpha a + \\beta b)$ is thus a sum of $2 m_{d/2}$ rank-$1$ matrices, hence has rank at most $2 m_{d/2}$. The hypothesis forces $B$ to be diagonal, so at most $2 m_{d/2}$ diagonal entries are nonzero."
+    },
+    "proof:thm:4": {
+      "type": "Proof",
+      "number": "thm:4",
+      "section": "main",
+      "role": "technical",
+      "summary": "Let $V \\subseteq S_n^d$ be the space of polynomials vanishing on the complement of $-\\gamma A$; $\\dim V \\ge m_d - q^n + |A|$. By prop:2 applied to any $P \\in V$ with maximal support, $|\\Sigma_P| \\le 2 m_{d/2}$ where $\\Sigma_P$ is the support, so $\\dim V \\le 2 m_{d/2}$. Hence $|A| \\le 2 m_{d/2} + (q^n - m_d)$. Using the bijection between $q$-power-free monomials of degree $> d$ and monomials of degree $< (q-1)n - d$, choose $d = 2(q-1)n/3$ to balance both terms, giving $|A| \\le 3 m_{(q-1)n/3}$."
+    },
+    "proof:cor:5": {
+      "type": "Proof",
+      "number": "cor:5",
+      "section": "main",
+      "role": "technical",
+      "summary": "At $q = 3$, the count $m_{(q-1)n/3} = m_{2n/3}$ is the number of $\\{0,1,2\\}^n$-vectors with coordinate sum at most $2n/3$. By a large-deviations rate computation, $m_{2n/3} = o(3 e^{-I(2/3)})^n$ where $I$ is the rate function; the optimum gives constant $3 e^{-I(2/3)} < 2.756$. Apply thm:4 with $\\alpha = \\beta = \\gamma = 1$ (so $1 + 1 + 1 = 3 = 0$ in $\\mathbb{F}_3$ and $\\gamma = 1 \\ne 0$)."
+    }
+  },
+  "edges": [
+    {
+      "from": "cor:5",
+      "to": "thm:4",
+      "type": "depends_on",
+      "note": "Specializes thm:4 to $q = 3$, $\\alpha = \\beta = \\gamma = 1$."
+    },
+    {
+      "from": "thm:4",
+      "to": "prop:2",
+      "type": "depends_on",
+      "note": "Applies prop:2 to polynomials in the kernel-style space $V$ to bound $\\dim V$."
+    },
+    {
+      "from": "rem:3",
+      "to": "prop:2",
+      "type": "depends_on",
+      "note": "Notes that prop:2 is the CLP polynomial lemma generalized via the $\\gamma$ parameter."
+    },
+    {
+      "from": "proof:prop:2",
+      "to": "prop:2",
+      "type": "depends_on",
+      "note": "Rank decomposition of the $A \\times A$ matrix into $2 m_{d/2}$ rank-1 pieces."
+    },
+    {
+      "from": "proof:thm:4",
+      "to": "thm:4",
+      "type": "depends_on",
+      "note": "Dimension-counting argument with maximal-support polynomial."
+    },
+    {
+      "from": "proof:thm:4",
+      "to": "prop:2",
+      "type": "depends_on",
+      "note": "Applies prop:2 to the maximal-support element of $V$."
+    },
+    {
+      "from": "proof:cor:5",
+      "to": "cor:5",
+      "type": "depends_on",
+      "note": "Large-deviations evaluation of $m_{2n/3}$."
+    },
+    {
+      "from": "proof:cor:5",
+      "to": "thm:4",
+      "type": "depends_on",
+      "note": "Applies thm:4 with $q = 3$, $\\alpha = \\beta = \\gamma = 1$."
+    }
+  ],
+  "critical_path": [
+    "cor:5",
+    "thm:4",
+    "prop:2"
+  ],
+  "proof_architecture": {
+    "generalized_polynomial_lemma": {
+      "description": "The CLP polynomial-method lemma extended with a free parameter $\\gamma$, allowing the conclusion to constrain $P$ on a translate of $A$ rather than just at $0$.",
+      "nodes": [
+        "prop:2",
+        "rem:3",
+        "proof:prop:2"
+      ]
+    },
+    "dimension_counting": {
+      "description": "Apply prop:2 to a high-dimensional space of polynomials vanishing on the complement of $-\\gamma A$, derive the bound $|A| \\le 3 m_{(q-1)n/3}$ via maximal-support and degree-bijection arguments.",
+      "nodes": [
+        "thm:4",
+        "proof:thm:4"
+      ]
+    },
+    "cap_set_specialization": {
+      "description": "Specialize to $\\mathbb{F}_3^n$ and evaluate the monomial count via large-deviations to extract the constant $2.756$.",
+      "nodes": [
+        "cor:5",
+        "proof:cor:5"
+      ]
+    },
+    "attribution": {
+      "description": "Independent and simultaneous discovery; CLP transposition with one extra parameter that makes the cap-set application close.",
+      "nodes": [
+        "rem:1"
+      ]
+    }
+  },
+  "bibliography": {
+    "CLP": {
+      "title": "Progression-free sets in $\\mathbb{Z}_4^n$ are exponentially small",
+      "arxiv_id": "1605.01506",
+      "in_registry": true
+    },
+    "meshulam": {
+      "title": "Meshulam — On subsets of finite abelian groups with no 3-term arithmetic progressions (1995)",
+      "arxiv_id": null,
+      "in_registry": false
+    },
+    "behrend": {
+      "title": "Behrend — On sets of integers which contain no three terms in arithmetical progression (1946)",
+      "arxiv_id": null,
+      "in_registry": false
+    },
+    "edel": {
+      "title": "Edel — Extensions of generalized product caps (2004)",
+      "arxiv_id": null,
+      "in_registry": false
+    },
+    "bateman": {
+      "title": "Bateman, Katz — New bounds on cap sets (2012)",
+      "arxiv_id": null,
+      "in_registry": false
+    },
+    "brownbuhler": {
+      "title": "Brown, Buhler — A density version of a geometric Ramsey theorem (1982)",
+      "arxiv_id": null,
+      "in_registry": false
+    }
+  }
+}

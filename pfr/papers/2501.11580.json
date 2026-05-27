@@ -1,10 +1,11 @@
 {
   "paper": "2501.11580",
   "title": "A polynomial Freiman-Ruzsa inverse theorem for function fields",
-  "authors": ["Thomas F. Bloom"],
+  "authors": [
+    "Thomas F. Bloom"
+  ],
   "generated": "2026-03-18",
   "status": "complete",
-
   "nodes": {
     "def:1": {
       "type": "Definition",
@@ -64,7 +65,6 @@
       "summary": "Conjecture on higher-parameter bounds with multiple transcendental dilates."
     }
   },
-
   "edges": [
     {
       "from": "thm:1",
@@ -75,7 +75,7 @@
     {
       "from": "thm:3",
       "to": "thm:2",
-      "type": "proves",
+      "type": "depends_on",
       "note": "Theorem 3 gives the self-contained proof of the dimension equality."
     },
     {
@@ -87,7 +87,7 @@
     {
       "from": "thm:1",
       "to": "thm:4",
-      "type": "implies",
+      "type": "depends_on",
       "note": "Applying the main theorem to transcendental dilates yields the optimal sumset lower bound."
     }
   ]

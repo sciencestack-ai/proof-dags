@@ -1,7 +1,13 @@
 {
   "paper": "1603.06518v3",
   "title": "The sphere packing problem in dimension 24",
-  "authors": ["Henry Cohn", "Abhinav Kumar", "Stephen D. Miller", "Danylo Radchenko", "Maryna Viazovska"],
+  "authors": [
+    "Henry Cohn",
+    "Abhinav Kumar",
+    "Stephen D. Miller",
+    "Danylo Radchenko",
+    "Maryna Viazovska"
+  ],
   "generated": "2026-05-26",
   "status": "complete",
   "nodes": {
@@ -56,34 +62,86 @@
     }
   },
   "edges": [
-    { "from": "thm:1.1", "to": "thm:1.2", "type": "uses", "note": "The proof applies the Cohn–Elkies LP bound (Theorem 1.2) at radius $r=2$ (the minimum vector length of the Leech lattice)." },
-    { "from": "thm:1.1", "to": "lem:2.1", "type": "depends_on", "note": "The Leech magic function is a linear combination of the $+1$-eigenfunction $a$ (Lemma 2.1) and the $-1$-eigenfunction $b$ (Lemma 3.1)." },
-    { "from": "thm:1.1", "to": "lem:3.1", "type": "depends_on", "note": "The Leech magic function uses the $-1$-eigenfunction $b$ (Lemma 3.1)." },
-    { "from": "thm:1.1", "to": "lem:\\upshapeA.1", "type": "depends_on", "note": "The sign condition $f\\le 0$ for $|x|\\ge 2$ is verified using the inequality $\\varphi(it)<0$ (Lemma A.1)." },
-    { "from": "thm:1.1", "to": "lem:\\upshapeA.2", "type": "depends_on", "note": "The sign condition uses the inequality $\\varphi(it) - \\frac{432}{\\pi^2}\\psi_S(it) > 0$ (Lemma A.2)." },
-    { "from": "thm:1.1", "to": "lem:\\upshapeA.3", "type": "depends_on", "note": "The asymptotic sign argument uses the lower bound on $B(t)$ for large $t$ (Lemma A.3)." }
+    {
+      "from": "thm:1.1",
+      "to": "thm:1.2",
+      "type": "depends_on",
+      "note": "The proof applies the Cohn–Elkies LP bound (Theorem 1.2) at radius $r=2$ (the minimum vector length of the Leech lattice)."
+    },
+    {
+      "from": "thm:1.1",
+      "to": "lem:2.1",
+      "type": "depends_on",
+      "note": "The Leech magic function is a linear combination of the $+1$-eigenfunction $a$ (Lemma 2.1) and the $-1$-eigenfunction $b$ (Lemma 3.1)."
+    },
+    {
+      "from": "thm:1.1",
+      "to": "lem:3.1",
+      "type": "depends_on",
+      "note": "The Leech magic function uses the $-1$-eigenfunction $b$ (Lemma 3.1)."
+    },
+    {
+      "from": "thm:1.1",
+      "to": "lem:\\upshapeA.1",
+      "type": "depends_on",
+      "note": "The sign condition $f\\le 0$ for $|x|\\ge 2$ is verified using the inequality $\\varphi(it)<0$ (Lemma A.1)."
+    },
+    {
+      "from": "thm:1.1",
+      "to": "lem:\\upshapeA.2",
+      "type": "depends_on",
+      "note": "The sign condition uses the inequality $\\varphi(it) - \\frac{432}{\\pi^2}\\psi_S(it) > 0$ (Lemma A.2)."
+    },
+    {
+      "from": "thm:1.1",
+      "to": "lem:\\upshapeA.3",
+      "type": "depends_on",
+      "note": "The asymptotic sign argument uses the lower bound on $B(t)$ for large $t$ (Lemma A.3)."
+    }
   ],
-  "critical_path": ["thm:1.1", "lem:2.1"],
+  "critical_path": [
+    "thm:1.1",
+    "lem:2.1"
+  ],
   "proof_architecture": {
     "main_result": {
       "description": "The headline: the Leech lattice is the densest packing in $\\mathbb{R}^{24}$.",
-      "nodes": ["thm:1.1"]
+      "nodes": [
+        "thm:1.1"
+      ]
     },
     "LP_bound_import": {
       "description": "The Cohn–Elkies linear-programming bound, restated.",
-      "nodes": ["thm:1.2"]
+      "nodes": [
+        "thm:1.2"
+      ]
     },
     "eigenfunctions": {
       "description": "The dim-24 $+1$ and $-1$ Fourier eigenfunctions $a$ and $b$ from quasi-modular contour integrals — the Leech analogue of Viazovska's $E_8$ eigenfunctions.",
-      "nodes": ["lem:2.1", "lem:3.1"]
+      "nodes": [
+        "lem:2.1",
+        "lem:3.1"
+      ]
     },
     "quasimodular_inequalities": {
       "description": "Explicit estimates on quasi-modular forms verifying the magic function's sign conditions.",
-      "nodes": ["lem:\\upshapeA.1", "lem:\\upshapeA.2", "lem:\\upshapeA.3"]
+      "nodes": [
+        "lem:\\upshapeA.1",
+        "lem:\\upshapeA.2",
+        "lem:\\upshapeA.3"
+      ]
     }
   },
   "bibliography": {
-    "CE": { "title": "New upper bounds on sphere packings I (Cohn–Elkies)", "arxiv_id": "math/0110009", "in_registry": true },
-    "Viazovska-E8": { "title": "The sphere packing problem in dimension 8 (Viazovska)", "arxiv_id": "1603.04246", "in_registry": true }
+    "CE": {
+      "title": "New upper bounds on sphere packings I (Cohn–Elkies)",
+      "arxiv_id": "math/0110009",
+      "in_registry": true
+    },
+    "Viazovska-E8": {
+      "title": "The sphere packing problem in dimension 8 (Viazovska)",
+      "arxiv_id": "1603.04246",
+      "in_registry": true
+    }
   }
 }

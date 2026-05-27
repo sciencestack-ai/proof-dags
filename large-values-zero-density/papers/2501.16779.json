@@ -223,7 +223,7 @@
     {
       "from": "thm:64",
       "to": "def:7",
-      "type": "proves",
+      "type": "depends_on",
       "note": "Bounds the additive energy $A^*(\\sigma)$ of the $\\sigma$-zeros."
     },
     {
@@ -307,7 +307,7 @@
     {
       "from": "thm:50",
       "to": "def:37",
-      "type": "proves",
+      "type": "depends_on",
       "note": "States a bound on the zero-density exponent $A(\\sigma)$."
     },
     {

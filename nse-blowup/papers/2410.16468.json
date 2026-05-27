@@ -143,13 +143,13 @@
     {
       "from": "rem:1",
       "to": "thm:1",
-      "type": "proves",
+      "type": "depends_on",
       "detail": "Shows Theorem 1 is sharp: heat semigroup is merely weak*-continuous on $bmo^{-1}$"
     },
     {
       "from": "rem:1",
       "to": "thm:2",
-      "type": "proves",
+      "type": "depends_on",
       "detail": "Shows Theorem 2 is sharp: self-similar solutions never vanish in strong topology"
     },
     {

@@ -215,9 +215,9 @@
       "note": "Density / minimality of $\\Sigma$ underlies the formal c-stack property."
     },
     {
-      "from": "prop:5.10.7",
-      "to": "thm:5.4.5",
-      "type": "specializes",
+      "from": "thm:5.4.5",
+      "to": "prop:5.10.7",
+      "type": "generalizes",
       "note": "Divisor calculus on $\\Sigma' \\otimes \\mathbb{F}_p$ specializes the structure theorem."
     },
     {

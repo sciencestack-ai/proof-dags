@@ -204,7 +204,7 @@
     {
       "from": "prop:3.4",
       "to": "def:3.3",
-      "type": "proves",
+      "type": "depends_on",
       "note": "Conclusion is $H'(t_1)$: the weak bounds self-improve to strong bounds."
     },
     {
@@ -222,7 +222,7 @@
     {
       "from": "prop:3.5",
       "to": "def:3.2",
-      "type": "proves",
+      "type": "depends_on",
       "note": "Produces $H(t_2)$ for some $t_2 < t_1$ via contraction mapping."
     },
     {

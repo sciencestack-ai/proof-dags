@@ -279,7 +279,7 @@
     {
       "from": "thm:1",
       "to": "conjecture:2",
-      "type": "proves"
+      "type": "depends_on"
     },
     {
       "from": "thm:1",

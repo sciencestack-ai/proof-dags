@@ -1,10 +1,13 @@
 {
   "paper": "2603.06483",
   "title": "Uniform sum-product phenomenon for algebraic groups and Bremner's conjecture",
-  "authors": ["Joseph Harrison", "Akshat Mudgal", "Harry Schmidt"],
+  "authors": [
+    "Joseph Harrison",
+    "Akshat Mudgal",
+    "Harry Schmidt"
+  ],
   "generated": "2026-03-19",
   "status": "complete",
-
   "nodes": {
     "thm:1.1": {
       "type": "Theorem",
@@ -112,12 +115,11 @@
       "summary": "Diophantine equations toolbox from David-Philippon, Laurent, Evertse-Schmidt-Schlickewei."
     }
   },
-
   "edges": [
     {
       "from": "lem:6.3",
       "to": "lem:6.2",
-      "type": "implies",
+      "type": "depends_on",
       "note": "The $\\mathbb{Z}^D$ rank lemma yields the algebraic-group doubling-to-rank lemma."
     },
     {
@@ -147,7 +149,7 @@
     {
       "from": "thm:1.3",
       "to": "thm:1.1",
-      "type": "proves",
+      "type": "depends_on",
       "note": "The sum-product phenomenon for algebraic groups settles Bremner's conjecture."
     },
     {

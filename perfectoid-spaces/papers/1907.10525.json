@@ -222,9 +222,9 @@
       "note": "Full antiequivalence extends fully-faithfulness on QRSP."
     },
     {
-      "from": "thm:5.1.4",
-      "to": "thm:4.6.10",
-      "type": "specializes",
+      "from": "thm:4.6.10",
+      "to": "thm:5.1.4",
+      "type": "generalizes",
       "note": "Finite-group-scheme antiequivalence specializes the $p$-divisible group case."
     },
     {

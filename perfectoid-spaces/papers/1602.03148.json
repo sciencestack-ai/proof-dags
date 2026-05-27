@@ -249,9 +249,9 @@
       "note": "$B_{\\mathrm{dR}}^+$-cohomology defined via $A\\Omega$ specialization."
     },
     {
-      "from": "thm:1.17",
-      "to": "thm:1.10",
-      "type": "specializes",
+      "from": "thm:1.10",
+      "to": "thm:1.17",
+      "type": "generalizes",
       "note": "Local torus computation specializes the master comparison."
     },
     {

@@ -1,0 +1,84 @@
+{
+  "title": "Cap Sets — Proof DAG (Croot–Lev–Pach polynomial method, Ellenberg–Gijswijt cap-set breakthrough, slice rank and sunflowers, matrix-multiplication barrier, and AI-discovered lower bounds)",
+  "tags": ["additive-combinatorics", "cap-set", "polynomial-method", "slice-rank", "ellenberg-gijswijt", "croot-lev-pach", "sunflower", "matrix-multiplication-barrier", "ai-for-math", "funsearch"],
+  "description": "The cap-set problem asks for the largest subset of $\\mathbb{F}_3^n$ containing no three-term arithmetic progression. In a one-month burst in May 2016, Croot–Lev–Pach (`1605.01506`) introduced a polynomial-method twist for the analogous problem in $\\mathbb{Z}_4^n$; Ellenberg–Gijswijt (`1605.09223`) transported the technique to $\\mathbb{F}_q^n$ and proved cap sets have size at most $O(2.756^n)$, breaking through the four-decade Meshulam barrier of $O(3^n / n)$. Naslund–Sawin (`1606.09575`) reformulated the method via *slice rank* and applied it to sunflower-free families, closing the Erdős–Szemerédi sunflower conjecture for sets. Blasiak–Church–Cohn–Grochow–Naslund–Sawin–Umans (`1605.06702`) used the same upper bound to rule out a wide class of cap-set-style group-theoretic approaches to $\\omega = 2$ (the matrix-multiplication exponent), establishing a structural barrier where the upper-bound technology bites back on a different problem. On the lower-bound side, Tyrrell (`2209.10045`) improved Edel's $2.2^n$ construction to $2.218^n$ via product constructions over admissible sets; in December 2023, DeepMind's FunSearch system (Romera-Paredes et al., Nature, no arXiv preprint) used LLM-guided program search to discover new admissible sets and push the lower bound further — the canonical 'AI discovers new mathematical object' result for the cap-set problem. This DAG captures the upper-bound proof structure and the lower-bound improvement lineage; FunSearch is narrated in `SUMMARY.md` and listed in `related_work` below since it has no arXiv preprint.",
+  "papers": {
+    "1605.01506": {
+      "title": "Progression-free sets in $\\mathbb{Z}_4^n$ are exponentially small",
+      "authors": ["Ernie Croot", "Vsevolod F. Lev", "Péter Pál Pach"],
+      "year": 2016,
+      "role": "polynomial-method seed — proves that any subset of $\\mathbb{Z}_4^n$ avoiding three-term APs has size $O(4^{n(1-\\varepsilon)})$ for an explicit $\\varepsilon > 0$. The 3-page note that started the cascade: the key innovation is to consider the indicator polynomial of the set restricted to a Cartesian product structure and bound its rank by counting monomials of low total degree."
+    },
+    "1605.09223": {
+      "title": "On large subsets of $\\mathbb{F}_q^n$ with no three-term arithmetic progression",
+      "authors": ["Jordan S. Ellenberg", "Dion Gijswijt"],
+      "year": 2016,
+      "role": "headline — transports the Croot–Lev–Pach technique from $\\mathbb{Z}_4^n$ to $\\mathbb{F}_q^n$, proving any 3AP-free subset of $\\mathbb{F}_q^n$ has size at most $3 N_q$ where $N_q$ counts low-degree monomials in $n$ variables of degree at most $(q-1)n/3$. For $q=3$ this gives the cap-set bound $O(2.756^n)$, breaking the long-standing Meshulam $O(3^n/n)$ ceiling and answering a Frankl–Graham–Rödl question."
+    },
+    "1606.09575": {
+      "title": "Upper bounds for sunflower-free sets",
+      "authors": ["Eric Naslund", "Will Sawin"],
+      "year": 2016,
+      "role": "slice-rank reformulation — recasts the Ellenberg–Gijswijt argument as a bound on the *slice rank* of a tensor and uses it to prove the Erdős–Szemerédi sunflower conjecture for sets: any family of subsets of $\\{1,\\dots,n\\}$ containing no three-petal sunflower has size $O(3.30^n)$, improving on a long string of $(c+o(1))^n$ bounds. The slice-rank reformulation is what made the cap-set method transportable to other extremal combinatorics problems."
+    },
+    "1605.06702": {
+      "title": "On cap sets and the group-theoretic approach to matrix multiplication",
+      "authors": ["Jonah Blasiak", "Thomas Church", "Henry Cohn", "Joshua A. Grochow", "Eric Naslund", "William F. Sawin", "Chris Umans"],
+      "year": 2016,
+      "role": "matmul barrier — uses the Ellenberg–Gijswijt cap-set bound to rule out a large family of group-theoretic constructions (the Cohn–Umans program) for proving $\\omega = 2$. Specifically, abelian groups of bounded exponent cannot give $\\omega < 3 \\log_3(\\text{cap-set bound})$, and the new $2.756^n$ bound rules out exponent-3 abelian groups (the most natural test case). A negative result with structural weight: the same machinery that closed the upper-bound side simultaneously closes off a major program for fast matrix multiplication."
+    },
+    "2209.10045": {
+      "title": "New Lower Bounds for Cap Sets",
+      "authors": ["Fred Tyrrell"],
+      "year": 2022,
+      "role": "lower-bound improvement — improves the Edel ($2.2^n$, 2004) cap-set lower bound to $2.218^n$ via a product construction over *admissible sets* (sets avoiding certain configurations whose product with itself remains AP-free). The combinatorial framework directly anchors the AI-driven lower-bound work that followed."
+    },
+    "funsearch-nature-2024": {
+      "paper_kind": "nature-only",
+      "doi": "10.1038/s41586-023-06924-6",
+      "title": "Mathematical discoveries from program search with large language models (FunSearch)",
+      "authors": ["Bernardino Romera-Paredes", "et al. (DeepMind)"],
+      "year": 2024,
+      "role": "AI-discovered cap-set lower-bound improvement — DeepMind's FunSearch system uses LLM-guided evolutionary program search to discover new admissible sets in the Tyrrell framework, pushing the lower bound beyond $2.218^n$ in specific dimensions and finding a new $512$-element cap set in $\\mathbb{F}_3^8$ (beating the 15-year-old explicit record of $496$). Non-arXiv (Nature only). Included as a single-node entry rather than a fully extracted DAG because there is no LaTeX source to extract from; the load-bearing claim is the headline numerical result, captured as `funsearch-nature-2024:thm:funsearch-capset` with an `improves` edge to Tyrrell's thm:1.2. Notable: J. S. Ellenberg is a FunSearch coauthor, closing the loop between the upper-bound proof of `1605.09223` and the AI-assisted lower-bound improvement seven years later."
+    }
+  },
+  "related_dags": {
+    "pfr": "Both programs study the structure of sumset-poor sets in $\\mathbb{F}_p^n$, but with disjoint machinery — `pfr` uses entropy / Plünnecke–Ruzsa / Bogolyubov-style additive-combinatorics arguments, `cap-set` uses the polynomial method and slice rank. Cross-DAG edges are thematic (`addresses_same_question`), not load-bearing dependency."
+  },
+  "foundational": {
+    "Meshulam:1995": {
+      "title": "R. Meshulam — On subsets of finite abelian groups with no 3-term arithmetic progression (J. Combin. Theory Ser. A, 1995)",
+      "arxiv_id": null,
+      "in_registry": false,
+      "role": "foundational — the pre-EG cap-set ceiling $O(3^n / n)$ via Fourier-analytic Roth-style density increment. The bound EG breaks through."
+    },
+    "Behrend:1946": {
+      "title": "F. A. Behrend — On sets of integers which contain no three terms in arithmetical progression (PNAS, 1946)",
+      "arxiv_id": null,
+      "in_registry": false,
+      "role": "foundational — the original $\\exp(-c\\sqrt{\\log N})$ lower bound for 3AP-free subsets of $[1,N]$; the analog construction in $\\mathbb{F}_3^n$ via $\\{0,1\\}^n$-style product sets supplies the trivial $2^n$ lower bound for cap sets."
+    },
+    "Edel:2004": {
+      "title": "Y. Edel — Extensions of generalized product caps (Des. Codes Cryptogr., 2004)",
+      "arxiv_id": null,
+      "in_registry": false,
+      "role": "foundational — the pre-Tyrrell cap-set lower bound $2.2^n$ via product constructions in small dimensions; the baseline Tyrrell and FunSearch improve."
+    },
+    "CohnUmans:2003": {
+      "title": "H. Cohn, C. Umans — A group-theoretic approach to fast matrix multiplication (FOCS 2003)",
+      "arxiv_id": null,
+      "in_registry": false,
+      "role": "foundational — sets up the group-theoretic program for proving $\\omega = 2$ that `1605.06702` shows is incompatible with the EG cap-set bound."
+    },
+    "Tao:slice-rank-blog": {
+      "title": "T. Tao — A symmetric formulation of the Croot–Lev–Pach–Ellenberg–Gijswijt capset bound (blog post, May 2016)",
+      "arxiv_id": null,
+      "in_registry": false,
+      "url": "https://terrytao.wordpress.com/2016/05/18/a-symmetric-formulation-of-the-croot-lev-pach-ellenberg-gijswijt-capset-bound/",
+      "role": "foundational — Tao's blog reformulation of the cap-set argument as a bound on the *slice rank* of a symmetric tensor. This is the conceptual hub that made the technique transportable; Naslund–Sawin cite this reformulation directly. Not an arXiv paper."
+    }
+  },
+  "related_work": {},
+  "blueprint_anchor": null,
+  "audit_status": "Structurally verified at extraction time (2026-05-27). All five arXiv IDs verified against the arXiv API. The cap-set program has no Lean blueprint; the upper-bound chain (CLP → EG → Naslund–Sawin) is short and crisp enough that the slice-rank reformulation gives near-formal-clarity without one. No label-by-label external ground truth — verification rests on per-paper integrity gate + spot-check against source. Expert audit pass not yet done."
+}

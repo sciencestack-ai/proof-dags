@@ -157,9 +157,9 @@
       "note": "$A\\Omega$-identification is the body theorem thm:9.6."
     },
     {
-      "from": "thm:1.10",
-      "to": "thm:1.8",
-      "type": "specializes",
+      "from": "thm:1.8",
+      "to": "thm:1.10",
+      "type": "generalizes",
       "note": "Char-$p$ case specializes the $A\\Omega$-syntomic identification."
     },
     {

@@ -1,0 +1,43 @@
+{
+  "paper": "funsearch-nature-2024",
+  "paper_kind": "nature-only",
+  "arxiv_id": null,
+  "doi": "10.1038/s41586-023-06924-6",
+  "title": "Mathematical discoveries from program search with large language models",
+  "venue": "Nature 625, 468–475 (2024)",
+  "authors": [
+    "Bernardino Romera-Paredes",
+    "Mohammadamin Barekatain",
+    "Alexander Novikov",
+    "Matej Balog",
+    "M. Pawan Kumar",
+    "Emilien Dupont",
+    "Francisco J. R. Ruiz",
+    "Jordan S. Ellenberg",
+    "Pengming Wang",
+    "Omar Fawzi",
+    "Pushmeet Kohli",
+    "Alhussein Fawzi"
+  ],
+  "generated": "2026-05-27",
+  "status": "complete",
+  "registry_note": "Non-arXiv paper: included as a single terminal node because the result is load-bearing for the AI-for-math thread of this DAG. No LaTeX source available, so no structural extraction; the single node represents the headline numerical contribution. See SUMMARY.md for narrative context and README for the registry-wide convention on admitting non-arXiv nodes.",
+  "nodes": {
+    "thm:funsearch-capset": {
+      "type": "Theorem",
+      "number": "main",
+      "section": "main",
+      "role": "main_result",
+      "summary": "FunSearch — an LLM-guided evolutionary program-search system — discovers a new cap set of size $512$ in $\\mathbb{F}_3^8$, exceeding the previous best of $496$ (the largest known explicit cap set in dimension $8$ for over $15$ years). The construction operates within Tyrrell's admissible-set framework: the LLM proposes Python scoring functions for candidate admissible sets, an evaluator scores them, and high-scoring candidates feed back into the LLM prompt. The improved admissible sets push the asymptotic cap-set lower-bound rate above the Tyrrell $2.218^n$ bound in specific dimensions, and demonstrate that LLM-guided search can discover combinatorial constructions that resist SAT-solver search. One of the coauthors (J. S. Ellenberg) is also the author of the cap-set upper bound (`1605.09223`)."
+    }
+  },
+  "edges": [],
+  "critical_path": ["thm:funsearch-capset"],
+  "proof_architecture": {
+    "ai_discovered_construction": {
+      "description": "Single load-bearing node: the headline numerical improvement (a 512-element cap set in $\\mathbb{F}_3^8$, asymptotic lower-bound improvement). The full system description and ablations live in the Nature paper; only the mathematical result is represented here.",
+      "nodes": ["thm:funsearch-capset"]
+    }
+  },
+  "bibliography": {}
+}

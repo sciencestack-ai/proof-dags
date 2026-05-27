@@ -301,15 +301,15 @@
       "note": "Sub-intervals are rescaled back to $[0,1]$ between steps."
     },
     {
-      "from": "thm:8.13",
-      "to": "thm:8.14",
-      "type": "specializes",
+      "from": "thm:8.14",
+      "to": "thm:8.13",
+      "type": "generalizes",
       "note": "Degree-4 instance of the general-$n$ iterate."
     },
     {
-      "from": "thm:8.8",
-      "to": "thm:8.14",
-      "type": "specializes",
+      "from": "thm:8.14",
+      "to": "thm:8.8",
+      "type": "generalizes",
       "note": "Degree-3 instance of the general-$n$ iterate."
     },
     {

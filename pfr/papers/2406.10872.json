@@ -1,10 +1,11 @@
 {
   "paper": "2406.10872",
   "title": "On entropy Marton-type inequalities and small symmetric differences with cosets of abelian groups",
-  "authors": ["Thomas Karam"],
+  "authors": [
+    "Thomas Karam"
+  ],
   "generated": "2026-03-19",
   "status": "complete",
-
   "nodes": {
     "thm:1.1": {
       "type": "Theorem",
@@ -73,18 +74,17 @@
       "summary": "Ruzsa closeness implies symmetric difference bound: If $d(U_A, U_H) \\le \\alpha < 1/10$, then $|A \\Delta (H+x)| \\le 10\\alpha|H|$ for some $x$."
     }
   },
-
   "edges": [
     {
       "from": "prop:2.2",
       "to": "cor:2.4",
-      "type": "implies",
+      "type": "depends_on",
       "note": "GGMT entropic PFR specializes to $X=Y$ case for entropy doubling."
     },
     {
       "from": "prop:2.3",
       "to": "cor:2.4",
-      "type": "proves",
+      "type": "depends_on",
       "note": "GMT small distance result gives the $d(U_A, U_H) \\le 12 \\cdot \\Delta H(A)$ bound."
     },
     {

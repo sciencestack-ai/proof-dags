@@ -1,7 +1,10 @@
 {
   "paper": "math/0110009v3",
   "title": "New upper bounds on sphere packings I",
-  "authors": ["Henry Cohn", "Noam Elkies"],
+  "authors": [
+    "Henry Cohn",
+    "Noam Elkies"
+  ],
   "generated": "2026-05-26",
   "status": "complete",
   "nodes": {
@@ -91,43 +94,126 @@
     }
   },
   "edges": [
-    { "from": "thm:2", "to": "thm:1", "type": "specializes", "note": "Theorem 2's magic-function form is the clean special case of the general LP bound (Theorem 1)." },
-    { "from": "thm:1", "to": "prop:1", "type": "depends_on", "note": "The LP bound uses the Hankel/Bessel formula for the radial Fourier transform (Proposition 1)." },
-    { "from": "thm:4", "to": "thm:1", "type": "generalizes", "note": "The convex-body version generalizes the sphere-packing LP bound to packings of translates of a symmetric convex body." },
-    { "from": "prop:2", "to": "thm:2", "type": "specializes", "note": "The concrete Levenshtein-style $f$ is an explicit instance of the magic-function hypotheses." },
-    { "from": "prop:3", "to": "thm:1", "type": "uses_mechanism", "note": "The isodual-lattice variant reuses the LP-duality mechanism of Theorem 1 for the self-dual setting." },
-    { "from": "conjecture:1", "to": "thm:2", "type": "addresses_same_question", "note": "Conjecture 1 predicts the magic-function and isodual bounds give the same optimal $r$." },
-    { "from": "conjecture:1", "to": "prop:3", "type": "addresses_same_question", "note": "Conjecture 1 links the isodual Proposition 3 to the magic-function Theorem 2." },
-    { "from": "conjecture:2", "to": "thm:2", "type": "addresses_same_question", "note": "Conjecture 2 conjectures the existence of magic functions in Theorem 2's sense for $n=2,8,24$." },
-    { "from": "conjecture:4", "to": "conjecture:2", "type": "specializes", "note": "Conjecture 4 refines Conjecture 2 by predicting the precise root structure of the optimal $f$." },
-    { "from": "conjecture:3", "to": "thm:2", "type": "addresses_same_question", "note": "Conjecture 3 predicts the polynomial-approximation numerical method converges to the optimal bound from Theorem 2." }
+    {
+      "from": "thm:1",
+      "to": "thm:2",
+      "type": "generalizes",
+      "note": "Theorem 2's magic-function form is the clean special case of the general LP bound (Theorem 1)."
+    },
+    {
+      "from": "thm:1",
+      "to": "prop:1",
+      "type": "depends_on",
+      "note": "The LP bound uses the Hankel/Bessel formula for the radial Fourier transform (Proposition 1)."
+    },
+    {
+      "from": "thm:4",
+      "to": "thm:1",
+      "type": "generalizes",
+      "note": "The convex-body version generalizes the sphere-packing LP bound to packings of translates of a symmetric convex body."
+    },
+    {
+      "from": "thm:2",
+      "to": "prop:2",
+      "type": "generalizes",
+      "note": "The concrete Levenshtein-style $f$ is an explicit instance of the magic-function hypotheses."
+    },
+    {
+      "from": "prop:3",
+      "to": "thm:1",
+      "type": "depends_on",
+      "note": "The isodual-lattice variant reuses the LP-duality mechanism of Theorem 1 for the self-dual setting."
+    },
+    {
+      "from": "conjecture:1",
+      "to": "thm:2",
+      "type": "addresses_same_question",
+      "note": "Conjecture 1 predicts the magic-function and isodual bounds give the same optimal $r$."
+    },
+    {
+      "from": "conjecture:1",
+      "to": "prop:3",
+      "type": "addresses_same_question",
+      "note": "Conjecture 1 links the isodual Proposition 3 to the magic-function Theorem 2."
+    },
+    {
+      "from": "conjecture:2",
+      "to": "thm:2",
+      "type": "addresses_same_question",
+      "note": "Conjecture 2 conjectures the existence of magic functions in Theorem 2's sense for $n=2,8,24$."
+    },
+    {
+      "from": "conjecture:2",
+      "to": "conjecture:4",
+      "type": "generalizes",
+      "note": "Conjecture 4 refines Conjecture 2 by predicting the precise root structure of the optimal $f$."
+    },
+    {
+      "from": "conjecture:3",
+      "to": "thm:2",
+      "type": "addresses_same_question",
+      "note": "Conjecture 3 predicts the polynomial-approximation numerical method converges to the optimal bound from Theorem 2."
+    }
   ],
-  "critical_path": ["thm:2", "thm:1", "prop:1"],
+  "critical_path": [
+    "thm:2",
+    "thm:1",
+    "prop:1"
+  ],
   "proof_architecture": {
     "main_results": {
       "description": "The Cohn–Elkies linear-programming bound in its general (Thm 1) and clean magic-function (Thm 2) forms.",
-      "nodes": ["thm:1", "thm:2"]
+      "nodes": [
+        "thm:1",
+        "thm:2"
+      ]
     },
     "variants": {
       "description": "The Delsarte spherical-codes analogue and the convex-body generalization.",
-      "nodes": ["thm:3", "thm:4"]
+      "nodes": [
+        "thm:3",
+        "thm:4"
+      ]
     },
     "radial_transform": {
       "description": "The Hankel/Bessel formula for the radial Fourier transform — the analytic tool the LP bound rests on.",
-      "nodes": ["prop:1"]
+      "nodes": [
+        "prop:1"
+      ]
     },
     "concrete_bounds_and_variants": {
       "description": "Explicit Levenshtein-style bound, the isodual-lattice variant, and the lattice-from-distance-set rigidity input.",
-      "nodes": ["prop:2", "prop:3", "lem:1"]
+      "nodes": [
+        "prop:2",
+        "prop:3",
+        "lem:1"
+      ]
     },
     "magic_function_conjectures": {
       "description": "The conjectures that drive the program: existence and root-structure of magic functions in dimensions 2, 8, 24 (later proved by Viazovska and CKMRV), the isodual-magic-function correspondence, and the polynomial-method convergence.",
-      "nodes": ["conjecture:1", "conjecture:2", "conjecture:3", "conjecture:4"]
+      "nodes": [
+        "conjecture:1",
+        "conjecture:2",
+        "conjecture:3",
+        "conjecture:4"
+      ]
     }
   },
   "bibliography": {
-    "ConwaySloane": { "title": "Conway–Sloane — Sphere Packings, Lattices and Groups", "arxiv_id": null, "in_registry": false },
-    "Levenshtein": { "title": "V. I. Levenshtein — packing bounds via polynomial method", "arxiv_id": null, "in_registry": false },
-    "Delsarte": { "title": "P. Delsarte — LP bounds for codes", "arxiv_id": null, "in_registry": false }
+    "ConwaySloane": {
+      "title": "Conway–Sloane — Sphere Packings, Lattices and Groups",
+      "arxiv_id": null,
+      "in_registry": false
+    },
+    "Levenshtein": {
+      "title": "V. I. Levenshtein — packing bounds via polynomial method",
+      "arxiv_id": null,
+      "in_registry": false
+    },
+    "Delsarte": {
+      "title": "P. Delsarte — LP bounds for codes",
+      "arxiv_id": null,
+      "in_registry": false
+    }
   }
 }

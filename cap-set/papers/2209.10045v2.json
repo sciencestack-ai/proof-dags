@@ -1,0 +1,415 @@
+{
+  "paper": "2209.10045v2",
+  "title": "New Lower Bounds for Cap Sets",
+  "authors": [
+    "Fred Tyrrell"
+  ],
+  "generated": "2026-05-27",
+  "status": "complete",
+  "nodes": {
+    "thm:1.2": {
+      "type": "Theorem",
+      "number": "1.2",
+      "section": "1",
+      "role": "main_result",
+      "summary": "Cap-set lower bound improvement: there is an explicit cap set in $\\mathbb{F}_3^{56232}$ of size $\\binom{11}{7}^{141} \\cdot 6^{572} \\cdot 12^{572} \\cdot 112^{8800} \\cdot 37 \\cdot 142$, hence for large $n$ a cap set $A \\subseteq \\mathbb{F}_3^n$ of size $(2.218021\\ldots)^n$. Improves Edel's 2004 bound of $2.2^n$ — the first improvement in 18 years. The construction parameters $(11, 7)$, $(11, 6)$, $(10, 6)$ on admissible sets and the sizes $|A_0| = 12$, $|A_1| = |A_2| = 112$ in $\\mathbb{F}_3^6$ are the levers FunSearch (Romera-Paredes et al., Nature 2024) later tunes."
+    },
+    "def:1.1": {
+      "type": "Definition",
+      "number": "1.1",
+      "section": "1",
+      "role": "definition",
+      "summary": "A cap set is $A \\subseteq \\mathbb{F}_3^n$ with no nontrivial solutions to $x + y + z = 0$ — equivalently no three distinct elements in arithmetic progression."
+    },
+    "prop:2.1": {
+      "type": "Proposition",
+      "number": "2.1",
+      "section": "2",
+      "role": "auxiliary",
+      "summary": "Product caps. If $A \\subseteq \\mathbb{F}_3^n$ and $B \\subseteq \\mathbb{F}_3^m$ are cap sets, then $A \\times B \\subseteq \\mathbb{F}_3^{n+m}$ is a cap set of size $|A| |B|$. The trivial product construction underlying all cap-set lower bounds — exponentially additive in the exponent."
+    },
+    "prop:2.2": {
+      "type": "Proposition",
+      "number": "2.2",
+      "section": "2",
+      "role": "auxiliary",
+      "summary": "Asymptotic transfer. A cap set of size $c^n$ in some $\\mathbb{F}_3^n$ implies that for every $\\varepsilon > 0$ and large enough $m$ there is a cap set of size $> (c - \\varepsilon)^m$ in $\\mathbb{F}_3^m$. Lifts finite-dimensional constructions to asymptotic exponents via product:2.1."
+    },
+    "def:2.4": {
+      "type": "Definition",
+      "number": "2.4",
+      "section": "2",
+      "role": "definition",
+      "summary": "Extendable collection. A triple $(A_0, A_1, A_2)$ of cap sets in $\\mathbb{F}_3^n$ is *extendable* if: (1) $x + y + z \\ne 0$ whenever $x, y \\in A_0$ and $z \\in A_1 \\cup A_2$, and (2) $x + y + z \\ne 0$ whenever $x \\in A_0$, $y \\in A_1$, $z \\in A_2$. The 'background' palette an admissible-set scheme will paint onto."
+    },
+    "def:2.5": {
+      "type": "Definition",
+      "number": "2.5",
+      "section": "2",
+      "role": "definition",
+      "summary": "Admissible set. $S \\subseteq \\{0, 1, 2\\}^m$ is *admissible* if (1) for all distinct $s, s' \\in S$ there are coordinates $i, j$ with $s_i = 0 \\ne s_i'$ and $s_j \\ne 0 = s_j'$, and (2) for all distinct $s, s', s'' \\in S$ there is a coordinate $k$ with $\\{s_k, s_k', s_k''\\}$ equal to $\\{0, 1, 2\\}$, $\\{0, 0, 1\\}$, or $\\{0, 0, 2\\}$. This combinatorial object is the search target — finding larger admissible sets directly improves the cap-set lower bound, and is precisely what FunSearch's LLM-guided program search later optimizes over."
+    },
+    "def:2.6": {
+      "type": "Definition",
+      "number": "2.6",
+      "section": "2",
+      "role": "definition",
+      "summary": "Extended product construction. For $s \\in \\{0, 1, 2\\}^m$, $s(A_0, A_1, A_2) := A_{s_1} \\times \\cdots \\times A_{s_m} \\subseteq \\mathbb{F}_3^{nm}$; for $S \\subseteq \\{0,1,2\\}^m$, $S(A_0, A_1, A_2) := \\bigcup_{s \\in S} s(A_0, A_1, A_2)$. The engine: glue together coordinate-wise products controlled by an admissible template $S$."
+    },
+    "lem:2.7": {
+      "type": "Lemma",
+      "number": "2.7",
+      "section": "2",
+      "role": "key_mechanism",
+      "summary": "Extended construction yields cap set. If $(A_0, A_1, A_2)$ is extendable and $S$ is admissible, then $S(A_0, A_1, A_2)$ is a cap set in $\\mathbb{F}_3^{nm}$. The cleanness of this lemma is what makes the construction modular: any admissible set times any extendable triple is a cap set, so improvement on either factor improves the bound."
+    },
+    "def:2.8": {
+      "type": "Definition",
+      "number": "2.8",
+      "section": "2",
+      "role": "definition",
+      "summary": "Recursively admissible. An admissible set with $|S| \\ge 2$ satisfying the additional condition: for all distinct $s, s' \\in S$, either (1) there are coordinates $i, j$ with $\\{s_i, s_i'\\} = \\{0, 1\\}$ and $\\{s_j, s_j'\\} = \\{0, 2\\}$, or (2) there is a coordinate $k$ with $s_k = s_k' = 0$. Refined structure that supports the recursive (meta-) construction in Section 3."
+    },
+    "lem:2.11": {
+      "type": "Lemma",
+      "number": "2.11",
+      "section": "2",
+      "role": "technical",
+      "summary": "Counting formula. If $S = I(m, w) \\subseteq \\{0, 1, 2\\}^m$ (the canonical admissible set with weight-$w$ pattern), and $|A_1| = |A_2|$, then $|S(A_0, A_1, A_2)| = \\binom{m}{w} |A_0|^{m-w} |A_1|^{w}$. Exact size formula that turns the construction into an optimization problem over $(m, w, |A_0|, |A_1|)$."
+    },
+    "lem:2.13": {
+      "type": "Lemma",
+      "number": "2.13",
+      "section": "2",
+      "role": "key_technical",
+      "summary": "Existence of specific admissible sets: $I(11, 7)$, $I(11, 6)$, and $I(10, 6)$ all exist as admissible subsets of $\\{0,1,2\\}^m$ at the appropriate dimensions. These specific witnesses are the combinatorial 'building blocks' that drive the $2.218^n$ bound. A SAT-solver search (CaDiCaL/Kissat) verifies the existence claims; FunSearch's improvement (later, Nature 2024) operates on the same search problem with LLM-guided program synthesis instead of pure SAT search."
+    },
+    "lem:2.14": {
+      "type": "Lemma",
+      "number": "2.14",
+      "section": "2",
+      "role": "key_technical",
+      "summary": "Extendable triple in $\\mathbb{F}_3^6$: there is an extendable collection $(A_0, A_1, A_2)$ with $|A_0| = 12$, $|A_1| = |A_2| = 112$. The 'palette' constants in the bound formula come from this lemma — the small-dimension search problem whose solution drives the asymptotic rate."
+    },
+    "thm:2.15": {
+      "type": "Theorem",
+      "number": "2.15",
+      "section": "2",
+      "role": "main_technical",
+      "summary": "Intermediate cap-set construction. There exists a cap set $A \\subseteq \\mathbb{F}_3^{396}$ of size $\\binom{11}{7} \\cdot 6^4 \\cdot 12^4 \\cdot 112^{62}$. Combines lem:2.13 (admissible witness) with lem:2.14 (extendable palette) via the extended product construction. The stepping stone to thm:1.2 — applying meta-construction once more lifts dimensions to 56232."
+    },
+    "prop:3.1": {
+      "type": "Proposition",
+      "number": "3.1",
+      "section": "3",
+      "role": "technical",
+      "summary": "Admissible sets are closed under direct product: if $S, T$ are admissible, so is $S \\times T$. The natural multiplicative structure on the search space."
+    },
+    "def:3.3": {
+      "type": "Definition",
+      "number": "3.3",
+      "section": "3",
+      "role": "definition",
+      "summary": "Meta-admissible. A set $T \\subseteq \\{0, 1, 2\\}^r$ is meta-admissible iff it is admissible in the sense of def:2.5 — same combinatorial conditions, applied one level up to operate on admissible-set palettes rather than on cap-set palettes."
+    },
+    "def:3.4": {
+      "type": "Definition",
+      "number": "3.4",
+      "section": "3",
+      "role": "definition",
+      "summary": "Meta-extendable. A collection $(S_0, S_1, S_2)$ of admissible sets is meta-extendable if (1) vectors in $S_0$ have strictly fewer nonzeros than vectors in $S_1 \\cup S_2$, plus two coordinate-wise pattern conditions. The recursive analog of def:2.4 — palettes of palettes."
+    },
+    "lem:3.6": {
+      "type": "Lemma",
+      "number": "3.6",
+      "section": "3",
+      "role": "key_mechanism",
+      "summary": "Meta-construction yields admissible. If $(S_0, S_1, S_2)$ is meta-extendable and $T$ is meta-admissible, then $T(S_0, S_1, S_2)$ is admissible. Lifts the extended product construction from cap-sets-by-admissible to admissibles-by-meta-admissible — the recursion that lets the construction be iterated."
+    },
+    "prop:4.1": {
+      "type": "Proposition",
+      "number": "4.1",
+      "section": "4",
+      "role": "key_technical",
+      "summary": "Optimal admissible-set choice. For an extendable triple $(A_0, A_1, A_2)$ with $|A_1| = |A_2|$, the best admissible templates are $I(m, m\\alpha)$ with $\\alpha = |A_1| / (|A_0| + |A_1|)$ for large $m$. The asymptotic constant achievable via the extended product construction is $c = (|A_0| + |A_1|)^{1/n}$. Reveals the exact optimization landscape FunSearch operates within."
+    },
+    "conjecture:4.3": {
+      "type": "Conjecture",
+      "number": "4.3",
+      "section": "4",
+      "role": "context",
+      "summary": "If $I(m, w)$ admissible sets exist for all $m > w > 0$, then cap sets in $\\mathbb{F}_3^n$ have size at least $124^{n/6} \\approx 2.233^n$. Identifies the next milestone above $2.218^n$ — a specific combinatorial conjecture FunSearch later attempts."
+    },
+    "def:5.1": {
+      "type": "Definition",
+      "number": "5.1",
+      "section": "5",
+      "role": "definition",
+      "summary": "Boolean satisfiability problem (SAT). The decision problem of whether a propositional formula admits a true-making assignment. Tyrrell's existence proofs for admissible sets (lem:2.13) and extendable triples (lem:2.14) are reduced to SAT instances and solved via CaDiCaL/Kissat solvers — a key methodological ingredient that FunSearch generalizes via LLM-guided program search."
+    }
+  },
+  "edges": [
+    {
+      "from": "thm:1.2",
+      "to": "thm:2.15",
+      "type": "depends_on",
+      "note": "thm:1.2 lifts thm:2.15's $\\mathbb{F}_3^{396}$ construction to $\\mathbb{F}_3^{56232}$ via meta-construction in Section 3."
+    },
+    {
+      "from": "thm:1.2",
+      "to": "lem:3.6",
+      "type": "depends_on",
+      "note": "Meta-construction (lem:3.6) is what lifts the inner cap-set construction by another factor."
+    },
+    {
+      "from": "thm:1.2",
+      "to": "prop:2.2",
+      "type": "depends_on",
+      "note": "Asymptotic transfer from the explicit large-dimension construction to a rate in $n$."
+    },
+    {
+      "from": "thm:2.15",
+      "to": "lem:2.7",
+      "type": "depends_on",
+      "note": "Extended product construction yields cap set."
+    },
+    {
+      "from": "thm:2.15",
+      "to": "lem:2.13",
+      "type": "depends_on",
+      "note": "The specific admissible sets $I(11, 7)$, $I(11, 6)$, $I(10, 6)$ are the templates."
+    },
+    {
+      "from": "thm:2.15",
+      "to": "lem:2.14",
+      "type": "depends_on",
+      "note": "Extendable triple in $\\mathbb{F}_3^6$ with sizes $(12, 112, 112)$ is the palette."
+    },
+    {
+      "from": "thm:2.15",
+      "to": "lem:2.11",
+      "type": "depends_on",
+      "note": "Counting formula for $|I(m,w)(A_0, A_1, A_2)|$."
+    },
+    {
+      "from": "lem:2.7",
+      "to": "def:2.4",
+      "type": "depends_on",
+      "note": "Requires extendable triple."
+    },
+    {
+      "from": "lem:2.7",
+      "to": "def:2.5",
+      "type": "depends_on",
+      "note": "Requires admissible set."
+    },
+    {
+      "from": "lem:2.7",
+      "to": "def:2.6",
+      "type": "depends_on",
+      "note": "The extended product construction is the output."
+    },
+    {
+      "from": "def:2.6",
+      "to": "def:2.4",
+      "type": "depends_on",
+      "note": "Uses the extendable palette $(A_0, A_1, A_2)$."
+    },
+    {
+      "from": "def:2.6",
+      "to": "def:2.5",
+      "type": "depends_on",
+      "note": "Uses the admissible template $S$."
+    },
+    {
+      "from": "def:2.8",
+      "to": "def:2.5",
+      "type": "depends_on",
+      "note": "Recursively admissible refines admissible."
+    },
+    {
+      "from": "lem:2.11",
+      "to": "def:2.6",
+      "type": "depends_on",
+      "note": "Counts the extended construction."
+    },
+    {
+      "from": "lem:2.13",
+      "to": "def:5.1",
+      "type": "depends_on",
+      "note": "Existence verified by SAT solvers."
+    },
+    {
+      "from": "lem:2.14",
+      "to": "def:5.1",
+      "type": "depends_on",
+      "note": "Existence verified by SAT solvers."
+    },
+    {
+      "from": "prop:3.1",
+      "to": "def:2.5",
+      "type": "depends_on",
+      "note": "Closure of admissibility under direct product."
+    },
+    {
+      "from": "lem:3.6",
+      "to": "def:3.3",
+      "type": "depends_on",
+      "note": "Meta-admissible template."
+    },
+    {
+      "from": "lem:3.6",
+      "to": "def:3.4",
+      "type": "depends_on",
+      "note": "Meta-extendable palette."
+    },
+    {
+      "from": "lem:3.6",
+      "to": "def:2.5",
+      "type": "depends_on",
+      "note": "Output is admissible."
+    },
+    {
+      "from": "def:3.4",
+      "to": "def:2.5",
+      "type": "depends_on",
+      "note": "Meta-extendable is about admissible-set palettes."
+    },
+    {
+      "from": "prop:4.1",
+      "to": "def:2.6",
+      "type": "depends_on",
+      "note": "Optimization over the extended product construction."
+    },
+    {
+      "from": "prop:4.1",
+      "to": "lem:2.11",
+      "type": "depends_on",
+      "note": "Uses the counting formula for $I(m, m\\alpha)$."
+    },
+    {
+      "from": "conjecture:4.3",
+      "to": "prop:4.1",
+      "type": "depends_on",
+      "note": "Conjectural next milestone using the same optimization landscape."
+    },
+    {
+      "from": "def:1.1",
+      "to": "thm:1.2",
+      "type": "motivates",
+      "note": "Statement of the cap-set notion the bound targets."
+    },
+    {
+      "from": "prop:2.1",
+      "to": "prop:2.2",
+      "type": "depends_on",
+      "note": "Asymptotic transfer relies on direct-product cap-set construction."
+    }
+  ],
+  "critical_path": [
+    "thm:1.2",
+    "thm:2.15",
+    "lem:2.7",
+    "def:2.6",
+    "def:2.5"
+  ],
+  "proof_architecture": {
+    "cap_set_construction_framework": {
+      "description": "The extended product construction: a cap set is built by gluing copies of an extendable triple $(A_0, A_1, A_2)$ according to an admissible template $S$.",
+      "nodes": [
+        "def:1.1",
+        "prop:2.1",
+        "prop:2.2",
+        "def:2.4",
+        "def:2.5",
+        "def:2.6",
+        "lem:2.7",
+        "def:2.8"
+      ]
+    },
+    "computer_search_witnesses": {
+      "description": "Specific admissible sets $I(11,7)$, $I(11,6)$, $I(10,6)$ and an extendable triple in $\\mathbb{F}_3^6$ with sizes $(12, 112, 112)$, found via SAT-solver search. These are the search targets that FunSearch later improves via LLM-guided program synthesis.",
+      "nodes": [
+        "lem:2.13",
+        "lem:2.14",
+        "lem:2.11",
+        "def:5.1"
+      ]
+    },
+    "intermediate_construction": {
+      "description": "Combine the SAT witnesses via the extended product construction to get a cap set in $\\mathbb{F}_3^{396}$.",
+      "nodes": [
+        "thm:2.15"
+      ]
+    },
+    "meta_recursion": {
+      "description": "Meta-admissible and meta-extendable structures lift the construction one level up — admissible sets are built from meta-admissible templates over meta-extendable palettes.",
+      "nodes": [
+        "prop:3.1",
+        "def:3.3",
+        "def:3.4",
+        "lem:3.6"
+      ]
+    },
+    "final_bound_and_optimization": {
+      "description": "Iterate the meta-construction to reach $\\mathbb{F}_3^{56232}$ and extract the asymptotic rate $2.218021^n$. Identifies the optimization landscape FunSearch operates on.",
+      "nodes": [
+        "thm:1.2",
+        "prop:4.1",
+        "conjecture:4.3"
+      ]
+    }
+  },
+  "bibliography": {
+    "Edel": {
+      "title": "Edel — Extensions of Generalized Product Caps (2004)",
+      "arxiv_id": null,
+      "in_registry": false
+    },
+    "EllenbergGijswijt": {
+      "title": "On large subsets of $\\mathbb{F}_q^n$ with no three-term arithmetic progression",
+      "arxiv_id": "1605.09223",
+      "in_registry": true
+    },
+    "CLP": {
+      "title": "Progression-free sets in $\\mathbb{Z}_4^n$ are exponentially small",
+      "arxiv_id": "1605.01506",
+      "in_registry": true
+    },
+    "tao_2016": {
+      "title": "Tao — A symmetric formulation of the Croot–Lev–Pach–Ellenberg–Gijswijt capset bound (blog post, 2016)",
+      "arxiv_id": null,
+      "in_registry": false
+    },
+    "jiang2021improved": {
+      "title": "Jiang — Improved explicit upper bounds for the Cap Set Problem",
+      "arxiv_id": "2103.06481",
+      "in_registry": false
+    },
+    "BK": {
+      "title": "Bateman, Katz — New bounds on cap sets (2012)",
+      "arxiv_id": null,
+      "in_registry": false
+    },
+    "kelley2023strong": {
+      "title": "Kelley, Meka — Strong bounds for 3-progressions",
+      "arxiv_id": "2302.05537",
+      "in_registry": false
+    },
+    "bloom2023kelley": {
+      "title": "Bloom, Sisask — The Kelley–Meka bounds for sets free of three-term arithmetic progressions",
+      "arxiv_id": "2302.07211",
+      "in_registry": false
+    },
+    "dahmen2019formalizing": {
+      "title": "Dahmen, Hölzl, Lewis — Formalizing the solution to the cap set problem (Lean)",
+      "arxiv_id": "1907.01449",
+      "in_registry": false
+    },
+    "SAT": {
+      "title": "CaDiCaL, Kissat — SAT Competition 2020 solvers",
+      "arxiv_id": null,
+      "in_registry": false
+    }
+  }
+}

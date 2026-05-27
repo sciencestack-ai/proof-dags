@@ -255,9 +255,9 @@
       "note": "Universal prism for a semiperfectoid sits over the perfect-prism dictionary on its perfectoid quotient."
     },
     {
-      "from": "thm:1.14",
-      "to": "thm:1.12",
-      "type": "specializes",
+      "from": "thm:1.12",
+      "to": "thm:1.14",
+      "type": "generalizes",
       "note": "Quasiregular semiperfectoid case sharpens the general semiperfectoid structure."
     },
     {
@@ -321,9 +321,9 @@
       "note": "Statement is over a perfectoid base, identified via the perfect-prism dictionary."
     },
     {
-      "from": "thm:9.4",
-      "to": "thm:9.1",
-      "type": "specializes",
+      "from": "thm:9.1",
+      "to": "thm:9.4",
+      "type": "generalizes",
       "note": "Perfectoid case of étale comparison."
     },
     {

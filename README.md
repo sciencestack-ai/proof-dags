@@ -2,13 +2,11 @@
 
 **Typed proof dependency graphs over the math arXiv.** Each theorem, proposition, lemma, and definition in an indexed paper becomes a node with a stable ID (`thm:1.5`, `lem:4.7`); each typed edge (`improves`, `extends`, `imports_result`, `provides_input_to`, `addresses_same_question`, …) records how it depends on other results — within and across papers — at theorem granularity, with one-sentence source-grounded notes per edge.
 
-Citation graphs say "paper A cited paper B." We say "Theorem 1.1 of A `improves` Lemma 5.1 of B" or "Theorem 1.3 of A `provides_input_to` Proposition 4.1 of B."
-
 ## Why this repo
 
-Mathlib carries a machine-readable typed dependency graph — every Lean theorem records which lemmas its proof uses, and premise-selection and retrieval-augmented proving tools work over that structure. The arXiv literature has no equivalent. Citation graphs are paper-level and untyped: they record that paper A cites paper B, not whether B is a load-bearing input or a passing reference. Lean blueprints carry typed dependency structure at the right granularity, but each one covers a single proof being formalized.
+Citation graphs don't tell you whether a cited paper is load-bearing or a footnote. Mathlib does — but only for what's been formalized in Lean. Lean blueprints do too, at the right granularity — but each one is a single proof.
 
-This repo aims to create the same kind of structure, at the literature level: typed edges over theorems, lemmas, and definitions across 10 research programs of the math arXiv, at theorem granularity. Three of the programs are paired with live Lean blueprints (PFR, PNT+, Sphere-Packing-Lean) as external validation anchors.
+This does what a blueprint does, across a whole program instead of inside one proof. 11 programs of the math arXiv, typed edges between their theorems, lemmas, and definitions. Three of them — PFR, PNT+, Sphere-Packing-Lean — already have Lean blueprints; those are ground truth for the headline theorems, and this DAG covers the surrounding papers the blueprint doesn't reach. One program (`cap-set`) anchors a load-bearing AI-for-math episode: DeepMind's FunSearch (Nature 2024), included as a single-node entry with an `improves` edge into the Tyrrell lower bound — the registry's first non-arXiv node, admitted by deliberate convention.
 
 ## Try the interactive graphs
 
@@ -21,37 +19,46 @@ This repo aims to create the same kind of structure, at the literature level: ty
 
   *Example: the [`pfr`](https://www.sciencestack.ai/graph/pfr) program. **Left:** 10 papers, each a cluster of theorem-level nodes, joined by typed cross-paper edges. **Right:** clicking Gowers–Green–Manners–Tao Thm 1.8 (Entropic PFR) highlights its dependencies — Prop 2.1, Lemmas 2.2, 7.1, 7.2 — traced across the program.*
 
-- 📦 **Download:** clone this repo (CC-BY 4.0) — the full registry is ~5 MB of JSON across 10 programs.
-- 🔌 **Query programmatically:** ScienceStack API and MCP endpoint at [sciencestack.ai/developers](https://sciencestack.ai/developers).
+- 📦 **Use offline:** clone this repo (CC-BY 4.0, ~5 MB JSON). The graph is fully self-contained — node IDs, typed edges, summaries, critical paths, and bibliographies all live in the JSON. No API needed to traverse or query it.
+- 🔌 **Hydrate with source:** for the verbatim LaTeX of each node's statement / proof, fetch by `<arxiv_id>#<node_id>` via the ScienceStack API or MCP endpoint at [sciencestack.ai/developers](https://sciencestack.ai/developers). IDs are 1:1 with the JSON here, so any node `thm:1.5` round-trips.
 - 📄 **Status snapshot:** [`STATUS.md`](./STATUS.md) — current inventory and open audit items.
 - 🐛 **Found a wrong edge?** Open an issue with the source quote — that's the highest-leverage contribution.
 
 ## Current state
 
-10 research programs · 108 papers · ~1,850 theorem-level nodes · ~400 typed cross-paper edges (27 of them cross-program) · 3 anchored on Lean formalization blueprints.
+11 research programs · 114 papers · 1,958 nodes · 2,124 intra-paper edges · 400 cross-paper edges.
 
-| Program | Papers | Nodes | Subfield | Lean blueprint anchor |
-|---|---:|---:|---|---|
-| `nse-blowup` | 27 | 512 | PDE / Navier–Stokes blowup | — |
-| `bourgain-demeter-decoupling` | 12 | 243 | harmonic analysis / decoupling | — |
-| `perfectoid-spaces` | 11 | 227 | arithmetic geometry / p-adic Hodge | — |
-| `maynard-small-gaps` | 15 | 210 | bounded gaps between primes | — |
-| `pfr` | 10 | 146 | additive combinatorics | **Tao 2023 (PFR)** |
-| `prime-number-theorem` | 7 | 143 | analytic number theory | **Kontorovich et al. (PNT+)** |
-| `large-values-zero-density` | 6 | 110 | zero density of $\zeta$ | — |
-| `sphere-packing` | 8 | 98 | discrete geometry / modular forms | **Birkbeck/Hariharan/Mehta/Lee (Sphere-Packing-Lean), final stages by Math, Inc. Gauss** |
-| `langlands-local` | 6 | 88 | local Langlands | — |
-| `kakeya-restriction` | 6 | 76 | harmonic analysis / Kakeya | — |
+| Program | Papers | Nodes | Edges | Subfield | Lean blueprint anchor |
+|---|---:|---:|---:|---|---|
+| `nse-blowup` | 27 | 550 | 739 | PDE / Navier–Stokes blowup | — |
+| `bourgain-demeter-decoupling` | 12 | 243 | 293 | harmonic analysis / decoupling | — |
+| `perfectoid-spaces` | 11 | 227 | 362 | arithmetic geometry / p-adic Hodge | — |
+| `maynard-small-gaps` | 15 | 210 | 331 | bounded gaps between primes | — |
+| `pfr` | 10 | 146 | 112 | additive combinatorics | **[Tao 2023 (PFR)](https://teorth.github.io/pfr/blueprint/)** |
+| `prime-number-theorem` | 7 | 143 | 166 | analytic number theory | **[Kontorovich et al. (PNT+)](https://github.com/AlexKontorovich/PrimeNumberTheoremAnd)** |
+| `large-values-zero-density` | 6 | 110 | 128 | zero density of $\zeta$ | — |
+| `sphere-packing` | 8 | 98 | 117 | discrete geometry / modular forms | **[Birkbeck/Hariharan/Mehta/Lee (Sphere-Packing-Lean)](https://thefundamentaltheor3m.github.io/Sphere-Packing-Lean/blueprint/)** |
+| `langlands-local` | 6 | 88 | 97 | local Langlands | — |
+| `kakeya-restriction` | 6 | 76 | 83 | harmonic analysis / Kakeya | — |
+| `cap-set` | 6 | 67 | 89 | additive combinatorics / polynomial method / AI-for-math | — |
 
-## Two connected regions
+## Connected regions
 
-Cross-program edges (27 total) form two connected components:
+Cross-program edges form two load-bearing connected components:
 
 **Arithmetic geometry** — `perfectoid-spaces` ↔ `langlands-local`, all into Fargues–Scholze (`2102.13459`).
 
 **Harmonic analysis → analytic number theory** — `kakeya-restriction` ↔ `bourgain-demeter-decoupling` ↔ `large-values-zero-density` ↔ `prime-number-theorem` ↔ `maynard-small-gaps`. Joined by, among others, a load-bearing `2006.08250v1:thm:1.3 provides_input_to 1311.4600v3:prop:4.1` edge (equidistribution → Maynard–Tao sieve). Five DAGs in one walkable component.
 
-The remaining DAGs (`nse-blowup`, `pfr`, `sphere-packing`) are standalone islands — densely internally connected, no cross-DAG edges out.
+The remaining DAGs (`nse-blowup`, `pfr`, `sphere-packing`, `cap-set`) are standalone islands in the load-bearing sense — densely internally connected, no load-bearing cross-DAG edges out.
+
+**Thematic adjacencies** (typed `addresses_same_question`, no logical dependency):
+
+- `cap-set` ↔ `pfr` — both are additive combinatorics in $\mathbb{F}_p^n$ with disjoint machinery (slice rank / polynomial method vs entropy / Plünnecke–Ruzsa). Three thematic edges; not a connected region.
+
+## A note on non-arXiv nodes
+
+By default every node in the registry corresponds to a math environment in an arXiv paper parsed via the [ScienceStack](https://github.com/sciencestack-ai/sciencestack-cli) pipeline. **Exception:** results published Nature-first (no arXiv preprint) that are load-bearing for an AI-for-math episode are admitted as single-node entries with `paper_kind: "nature-only"` in the per-paper file and `paper_kind` recorded in `manifest.json`'s `papers` block. Currently one such node exists: `funsearch-nature-2024:thm:funsearch-capset` in the `cap-set` DAG, with an `improves` edge to Tyrrell's $2.218^n$ lower bound (`2209.10045v2:thm:1.2`). The convention is deliberate and narrow — non-arXiv nodes are admitted only when their contribution is graph-structural (a real typed edge), not when they only need to be cited.
 
 ## Layout and where to start
 
@@ -137,6 +144,7 @@ A cross-paper edge in `<topic>/graph.json` looks like:
 | `abstracts` | Lifts a specific result to an abstract version usable beyond the original |
 | `companion_result` | Sister papers in a series, attacking the same question from different angles |
 | `addresses_same_question` | Conceptual overlap without direct logical dependency |
+| `motivates` | Conceptually sparked / ancestral to a later result without being a logical input (directional, not symmetric like `addresses_same_question`) |
 | `depends_on` | Logical / proof-level dependency (intra-paper) |
 
 ## Lean blueprint anchors
@@ -151,24 +159,15 @@ Three programs are paired with live Lean blueprints. The blueprints serve as ext
 
 ## How the data is produced
 
-Each DAG is **generated by Claude Opus 4.7** reading the source LaTeX content fetched via the public [ScienceStack API](https://github.com/sciencestack-ai/sciencestack-cli) under an explicit extraction discipline (verify arXiv IDs against titles before extraction; type each edge from the controlled vocabulary; read every edge as English to check direction; spot-verify numerical claims against the parsed source; prefer thematic edge types like `addresses_same_question` over load-bearing types like `depends_on` when uncertain). The maintainer reviews scope choices, edge directionality, and the final structure, and runs an integrity gate on every per-paper DAG (every edge resolves to a real node ID; critical path connected; KaTeX-clean summaries). This is the human–AI workflow the [proposal §3](https://github.com/sciencestack-ai/proof-dags#built-on) commits to scaling.
+Each DAG is **generated by Claude Opus 4.7** reading the source LaTeX content fetched via the public [ScienceStack API](https://github.com/sciencestack-ai/sciencestack-cli), under an extraction discipline that verifies arXiv IDs against titles, types each edge from the controlled vocabulary, and reads every edge as English to check direction. The maintainer reviews scope choices and final structure, and runs an integrity gate on every per-paper DAG (every edge resolves to a real node ID; critical path connected; KaTeX-clean summaries).
 
-This is *not* formally verified data. Per the [`maynard-small-gaps`](./maynard-small-gaps/) audit, the empirical edge quality on the most-scrutinized DAG is:
-
-- ~80% strong (directly verifiable from paper text)
-- ~14% defensible but type or note imprecise
-- ~5% wrong or misattributed
-- ~8% missing (additive — would be added in a full pass)
-
-Other DAGs are at the "verified-faithful structurally, not edge-audited" tier — `maynard-small-gaps` is the only one that has had the full expert pass. See [`STATUS.md`](./STATUS.md) for the current snapshot of open audit items.
-
-If you find a wrong edge or missing dependency, **please open an issue with the source quote** — that's the highest-leverage contribution.
+This is *not* formally verified data. If you find a wrong edge or missing dependency, **please open an issue with the source quote** — that's the highest-leverage contribution.
 
 ## For AI for math
 
 This registry adds typed dependency labels for the informal arXiv literature — at the unit of a published theorem rather than a Lean term — alongside the dependency structure Mathlib already provides for *formal* mathematics. Three downstream tasks the data is shaped for:
 
-- **Cross-paper premise selection.** Edges of types like `imports_result`, `provides_input_to`, and `depends_on` (when used across papers) are "$T$'s proof uses result $L$ of paper $P$" labels. A subset of the registry's 382 cross-paper edges falls into these load-bearing premise-style types; the rest carry other relationships (`improves`, `extends`, `addresses_same_question`, …) that are not premise-selection labels but are useful for other tasks. Complementary to Mathlib's ~100K exact internal premise labels — different unit (informal theorem vs Lean term), different scope (literature vs library).
+- **Cross-paper premise selection.** Edges of types like `imports_result`, `provides_input_to`, and `depends_on` (when used across papers) are "$T$'s proof uses result $L$ of paper $P$" labels. A subset of the registry's cross-paper edges falls into these load-bearing premise-style types; the rest carry other relationships (`improves`, `extends`, `addresses_same_question`, …) that are not premise-selection labels but are useful for other tasks. Complementary to Mathlib's ~100K exact internal premise labels — different unit (informal theorem vs Lean term), different scope (literature vs library).
 - **Autoformalization grounding.** A cross-paper reference like "by Theorem 3.1 of [Author 1998]" resolves to a structured node with its upstream dependency chain visible — useful input for autoformalization tools that currently have to resolve such references from raw text or stub them.
 - **Typed dependency prediction.** Given a new theorem, predict which prior results it uses *and how* (`improves` vs `imports_result` vs `addresses_same_question`, etc.). Citation prediction at the paper level is a known task; we're not aware of a comparable benchmark for typed prediction at the result level across the informal literature, and this registry is shaped to be one.
 

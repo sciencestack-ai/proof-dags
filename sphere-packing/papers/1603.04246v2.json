@@ -1,7 +1,9 @@
 {
   "paper": "1603.04246v2",
   "title": "The sphere packing problem in dimension 8",
-  "authors": ["Maryna Viazovska"],
+  "authors": [
+    "Maryna Viazovska"
+  ],
   "generated": "2026-05-26",
   "status": "complete",
   "nodes": {
@@ -91,45 +93,140 @@
     }
   },
   "edges": [
-    { "from": "thm:1", "to": "thm:3", "type": "depends_on", "note": "Applying the Cohn–Elkies LP bound (Theorem 2) at radius $r=\\sqrt{2}$ with the magic function from Theorem 3 yields the density bound met by $E_8$." },
-    { "from": "thm:1", "to": "thm:2", "type": "uses", "note": "The proof uses the Cohn–Elkies LP bound (Theorem 2)." },
-    { "from": "thm:3", "to": "thm:4", "type": "depends_on", "note": "Existence of the magic function is established by the explicit formula in Theorem 4." },
-    { "from": "thm:4", "to": "prop:1", "type": "depends_on", "note": "The explicit $g$ uses the $+1$-eigenfunction $a$ (Proposition 1)." },
-    { "from": "thm:4", "to": "prop:5", "type": "depends_on", "note": "The explicit $g$ uses the $-1$-eigenfunction $b$ (Proposition 5)." },
-    { "from": "thm:4", "to": "prop:4", "type": "depends_on", "note": "The coefficient $\\pi i/8640$ is determined by $a(0)$ from Proposition 4." },
-    { "from": "thm:4", "to": "prop:8", "type": "depends_on", "note": "The coefficient $i/(240\\pi)$ is determined by $b'(\\sqrt{2})$ from Proposition 8." },
-    { "from": "prop:2", "to": "prop:1", "type": "depends_on", "note": "The modular-form integral representation derives from the definition of $a$ used in Proposition 1." },
-    { "from": "prop:3", "to": "prop:2", "type": "depends_on", "note": "The explicit formula on $[0,\\sqrt{2}]$ is obtained by analytic continuation from the $r>\\sqrt{2}$ integral representation." },
-    { "from": "prop:4", "to": "prop:3", "type": "depends_on", "note": "Boundary values are read off from the explicit formula." },
-    { "from": "prop:6", "to": "prop:5", "type": "depends_on", "note": "The modular-form integral representation derives from the definition of $b$." },
-    { "from": "prop:7", "to": "prop:6", "type": "depends_on", "note": "The explicit formula is the analytic continuation of the integral representation." },
-    { "from": "prop:8", "to": "prop:7", "type": "depends_on", "note": "Boundary values are read off from the explicit formula." }
+    {
+      "from": "thm:1",
+      "to": "thm:3",
+      "type": "depends_on",
+      "note": "Applying the Cohn–Elkies LP bound (Theorem 2) at radius $r=\\sqrt{2}$ with the magic function from Theorem 3 yields the density bound met by $E_8$."
+    },
+    {
+      "from": "thm:1",
+      "to": "thm:2",
+      "type": "depends_on",
+      "note": "The proof uses the Cohn–Elkies LP bound (Theorem 2)."
+    },
+    {
+      "from": "thm:3",
+      "to": "thm:4",
+      "type": "depends_on",
+      "note": "Existence of the magic function is established by the explicit formula in Theorem 4."
+    },
+    {
+      "from": "thm:4",
+      "to": "prop:1",
+      "type": "depends_on",
+      "note": "The explicit $g$ uses the $+1$-eigenfunction $a$ (Proposition 1)."
+    },
+    {
+      "from": "thm:4",
+      "to": "prop:5",
+      "type": "depends_on",
+      "note": "The explicit $g$ uses the $-1$-eigenfunction $b$ (Proposition 5)."
+    },
+    {
+      "from": "thm:4",
+      "to": "prop:4",
+      "type": "depends_on",
+      "note": "The coefficient $\\pi i/8640$ is determined by $a(0)$ from Proposition 4."
+    },
+    {
+      "from": "thm:4",
+      "to": "prop:8",
+      "type": "depends_on",
+      "note": "The coefficient $i/(240\\pi)$ is determined by $b'(\\sqrt{2})$ from Proposition 8."
+    },
+    {
+      "from": "prop:2",
+      "to": "prop:1",
+      "type": "depends_on",
+      "note": "The modular-form integral representation derives from the definition of $a$ used in Proposition 1."
+    },
+    {
+      "from": "prop:3",
+      "to": "prop:2",
+      "type": "depends_on",
+      "note": "The explicit formula on $[0,\\sqrt{2}]$ is obtained by analytic continuation from the $r>\\sqrt{2}$ integral representation."
+    },
+    {
+      "from": "prop:4",
+      "to": "prop:3",
+      "type": "depends_on",
+      "note": "Boundary values are read off from the explicit formula."
+    },
+    {
+      "from": "prop:6",
+      "to": "prop:5",
+      "type": "depends_on",
+      "note": "The modular-form integral representation derives from the definition of $b$."
+    },
+    {
+      "from": "prop:7",
+      "to": "prop:6",
+      "type": "depends_on",
+      "note": "The explicit formula is the analytic continuation of the integral representation."
+    },
+    {
+      "from": "prop:8",
+      "to": "prop:7",
+      "type": "depends_on",
+      "note": "Boundary values are read off from the explicit formula."
+    }
   ],
-  "critical_path": ["thm:1", "thm:3", "thm:4", "prop:1"],
+  "critical_path": [
+    "thm:1",
+    "thm:3",
+    "thm:4",
+    "prop:1"
+  ],
   "proof_architecture": {
     "main_result": {
       "description": "The headline: $E_8$ is the densest packing in $\\mathbb{R}^8$.",
-      "nodes": ["thm:1"]
+      "nodes": [
+        "thm:1"
+      ]
     },
     "LP_bound_import": {
       "description": "The Cohn–Elkies linear-programming bound, restated from math/0110009 as the framework Viazovska's construction plugs into.",
-      "nodes": ["thm:2"]
+      "nodes": [
+        "thm:2"
+      ]
     },
     "magic_function": {
       "description": "Existence and explicit form of the magic function $g$ for $E_8$, written as $g = \\frac{\\pi i}{8640}a + \\frac{i}{240\\pi}b$.",
-      "nodes": ["thm:3", "thm:4"]
+      "nodes": [
+        "thm:3",
+        "thm:4"
+      ]
     },
     "eigenfunction_a": {
       "description": "The $+1$-Fourier-eigenfunction $a$: definition (Schwartz, $\\widehat a = a$), modular-form integral representation, explicit formula, and boundary values $a(0)$, $a(\\sqrt 2)$, $a'(\\sqrt 2)$.",
-      "nodes": ["prop:1", "prop:2", "prop:3", "prop:4"]
+      "nodes": [
+        "prop:1",
+        "prop:2",
+        "prop:3",
+        "prop:4"
+      ]
     },
     "eigenfunction_b": {
       "description": "The $-1$-Fourier-eigenfunction $b$: definition ($\\widehat b = -b$), modular-form integral representation, explicit formula, and boundary values.",
-      "nodes": ["prop:5", "prop:6", "prop:7", "prop:8"]
+      "nodes": [
+        "prop:5",
+        "prop:6",
+        "prop:7",
+        "prop:8"
+      ]
     }
   },
   "bibliography": {
-    "ElkiesCohn": { "title": "New upper bounds on sphere packings I (Cohn–Elkies)", "arxiv_id": "math/0110009", "in_registry": true },
-    "ConwaySloane": { "title": "Conway–Sloane — Sphere Packings, Lattices and Groups", "arxiv_id": null, "in_registry": false }
+    "ElkiesCohn": {
+      "title": "New upper bounds on sphere packings I (Cohn–Elkies)",
+      "arxiv_id": "math/0110009",
+      "in_registry": true
+    },
+    "ConwaySloane": {
+      "title": "Conway–Sloane — Sphere Packings, Lattices and Groups",
+      "arxiv_id": null,
+      "in_registry": false
+    }
   }
 }

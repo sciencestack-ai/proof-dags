@@ -10,7 +10,7 @@
     {
       "from": "1407.6734v1:thm:1.1",
       "to": "0906.3070v4:rem:1.2",
-      "type": "proves",
+      "type": "depends_on",
       "note": "BMR prove Tao's 2009 conjecture: regularity holds under $\\intds/sg^2=\\infty$. TRIANGLE: Tao-averaged:rem:$5.2 \\to$ BMR:thm:$1.1 \\to$ Tao-hyper:sec:1."
     },
     {

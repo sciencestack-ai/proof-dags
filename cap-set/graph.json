@@ -1,0 +1,106 @@
+{
+  "edges": [
+    {
+      "from": "1605.09223v1:prop:2",
+      "to": "1605.01506v2:lem:1",
+      "type": "generalizes",
+      "note": "EG's prop:2 is the CLP polynomial-method lemma extended with a free coefficient parameter $\\gamma$, allowing the conclusion to constrain $P$ on a translate $-\\gamma A$ rather than just at $0$. The $\\gamma = 0$ case of prop:2 recovers lem:1 verbatim — EG rem:3 makes this explicit: 'the proof of prop:2 is essentially the same as that of Lemma 1 of Croot–Lev–Pach.'"
+    },
+    {
+      "from": "1605.09223v1:thm:4",
+      "to": "1605.01506v2:thm:1",
+      "type": "extends_to_new_setting",
+      "note": "Transports CLP from $\\mathbb{Z}_4^n$ to $\\mathbb{F}_q^n$. The setting change is what unlocks the cap-set application — CLP's $\\mathbb{Z}_4^n$ result was already an exponential improvement in that group, but the cap-set problem lives in $\\mathbb{F}_3^n$ which CLP did not handle."
+    },
+    {
+      "from": "1606.09575v1:lem:6",
+      "to": "1605.09223v1:prop:2",
+      "type": "re_derives",
+      "note": "Naslund–Sawin's slice-rank diagonal lemma re-derives the rank-counting heart of EG prop:2 in the cleaner tensor-rank language. The bound $|A|$ on the slice rank of a diagonal $T: A^3 \\to \\mathbb{F}$ is exactly what EG's matrix-rank bound says in tensor form."
+    },
+    {
+      "from": "1606.09575v1:thm:5",
+      "to": "1605.09223v1:thm:4",
+      "type": "extends_to_new_setting",
+      "note": "Naslund–Sawin thm:5 transports the EG polynomial-method bound from $\\mathbb{F}_q^n$ (3-AP-free) to $(\\mathbb{Z}/D\\mathbb{Z})^n$ (sunflower-free). The slice-rank machinery is the engine that makes this transposition modular."
+    },
+    {
+      "from": "1606.09575v1:lem:6",
+      "to": "1605.01506v2:lem:1",
+      "type": "abstracts",
+      "note": "Slice-rank reformulation lifts the CLP polynomial dichotomy to the language of tensor decompositions, where the conclusion 'diagonal slice rank equals support size' is symmetric and basis-free — the abstraction that makes the technique transportable to sunflowers, matmul, and beyond."
+    },
+    {
+      "from": "1605.09223v1:cor:5",
+      "to": "1606.09575v1:thm:3",
+      "type": "provides_input_to",
+      "note": "The sunflower-free bound directly invokes the EG cap-set bound on each $\\mathbb{F}_3^{n - |x|}$ slice in the $\\{0,1,2,3\\}^n$ encoding — cor:5 is imported as a black box and supplies the per-slice rate that drives the $3/2^{2/3}$ constant."
+    },
+    {
+      "from": "1605.06702v4:lem:4.7",
+      "to": "1606.09575v1:lem:6",
+      "type": "parallel_mechanism",
+      "note": "BCCGNSU and Naslund–Sawin independently and simultaneously (May/June 2016) prove the same diagonal slice-rank = $|A|$ equality; both cite Tao's blog reformulation. Mutual citation, identical conclusion, disjoint write-up — the textbook parallel-mechanism pattern."
+    },
+    {
+      "from": "1605.06702v4:thm:A",
+      "to": "1605.09223v1:thm:4",
+      "type": "extends",
+      "note": "BCCGNSU thm:A extends the EG bound from cap-sets to tricolored sum-free sets in bounded-exponent abelian groups, with explicit rate $|H|^{1 - \\varepsilon/m}$ generalizing the $\\mathbb{F}_3^n$ specialization. The polynomial-method core is the same; the tricolored generalization is what feeds into the matrix-multiplication barrier."
+    },
+    {
+      "from": "1605.06702v4:prop:4.8",
+      "to": "1605.09223v1:prop:2",
+      "type": "abstracts",
+      "note": "BCCGNSU lifts the EG rank argument to the abstract claim 'tricolored sum-free size $\\le$ slice rank of the diagonal-of-sum tensor', which holds for any abelian group and any tricolored configuration. The EG-style rank bound is recovered as the cap-set special case."
+    },
+    {
+      "from": "1605.09223v1:cor:5",
+      "to": "1605.06702v4:thm:B",
+      "type": "provides_input_to",
+      "note": "The cap-set bound is a hypothesis-grade input to the matrix-multiplication barrier in bounded-exponent abelian groups: thm:B's argument applies cor:5 via the STPP-to-tricolored bridge as a black-box upper-bound input on tricolored sum-free sets."
+    },
+    {
+      "from": "2209.10045v2:thm:1.2",
+      "to": "1605.09223v1:cor:5",
+      "type": "addresses_same_question",
+      "note": "Lower-bound side of the cap-set problem. EG proves $|A| = o(2.756^n)$ from above; Tyrrell shows $\\ge 2.218^n$ from below. Both attempt to pin down the asymptotic exponent — the gap between $2.218$ and $2.756$ is the live open question that FunSearch later attacks from below."
+    },
+    {
+      "from": "2209.10045v2:def:2.5",
+      "to": "1605.09223v1:thm:4",
+      "type": "addresses_same_question",
+      "note": "Tyrrell's admissible-set framework operates in the same $\\mathbb{F}_3^n$ extremal-combinatorics space EG bounds, but optimizes a constructive combinatorial object rather than counting monomials. The two papers attack opposite ends of the same problem."
+    },
+    {
+      "from": "funsearch-nature-2024:thm:funsearch-capset",
+      "to": "2209.10045v2:thm:1.2",
+      "type": "improves",
+      "note": "FunSearch operates inside Tyrrell's admissible-set framework and discovers larger admissible sets via LLM-guided program search, producing a $512$-element cap set in $\\mathbb{F}_3^8$ that exceeds the SAT-search-derived constructions Tyrrell's bound rests on. The asymptotic rate is pushed above $2.218^n$ in specific dimensions — the only load-bearing AI-for-math edge in the registry."
+    },
+    {
+      "from": "funsearch-nature-2024:thm:funsearch-capset",
+      "to": "2209.10045v2:def:2.5",
+      "type": "depends_on",
+      "note": "FunSearch's discovery target *is* the admissible-set object Tyrrell defined. The LLM is scored on candidate admissible sets, so def:2.5 is the literal definition the LLM is optimizing over."
+    },
+    {
+      "from": "1605.09223v1:cor:5",
+      "to": "2311.05762:conjecture:1.1",
+      "type": "addresses_same_question",
+      "note": "Cross-DAG (pfr). Both study the extremal structure of subsets of $\\mathbb{F}_p^n$: cap-set asks for the largest 3-AP-free set, PFR asks for the structure of sets with small doubling. Disjoint machinery — slice rank / polynomial method here, entropy / Plünnecke–Ruzsa / Bogolyubov-style additive combinatorics there. Thematic adjacency only; no load-bearing dependency in either direction."
+    },
+    {
+      "from": "1605.06702v4:prop:4.8",
+      "to": "2311.05762:thm:1.8",
+      "type": "addresses_same_question",
+      "note": "Cross-DAG (pfr). Both bound combinatorial-extremal quantities on abelian groups (BCCGNSU on tricolored sum-free, entropic PFR on entropic Ruzsa distance). Different machinery and disjoint logical content; thematic neighborhood only."
+    },
+    {
+      "from": "2209.10045v2:thm:1.2",
+      "to": "2311.05762:thm:1.2",
+      "type": "addresses_same_question",
+      "note": "Cross-DAG (pfr). Quantitative lower-bound construction (cap-set) versus quantitative upper-bound theorem (PFR) — both are explicit, computer-checkable rate results in $\\mathbb{F}_p^n$ extremal combinatorics, but no logical dependency in either direction."
+    }
+  ]
+}

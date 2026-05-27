@@ -271,7 +271,7 @@
     {
       "from": "lem:2.4",
       "to": "def:2.3",
-      "type": "proves",
+      "type": "depends_on",
       "note": "Establishes that concrete positions $(x_j)^6_{j=1}$ exist satisfying the spatial separation condition (def:2.3 eq 15) with $\\delta_0 = 1/15$, by explicit computation of pairwise line distances."
     }
   ],

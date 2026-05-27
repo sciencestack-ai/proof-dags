@@ -1,7 +1,10 @@
 {
   "paper": "1603.04759v1",
   "title": "Some properties of optimal functions for sphere packing in dimensions 8 and 24",
-  "authors": ["Henry Cohn", "Stephen D. Miller"],
+  "authors": [
+    "Henry Cohn",
+    "Stephen D. Miller"
+  ],
   "generated": "2026-05-26",
   "status": "complete",
   "nodes": {
@@ -98,42 +101,123 @@
     }
   },
   "edges": [
-    { "from": "conjecture:2.2", "to": "thm:2.1", "type": "addresses_same_question", "note": "Conjecture 2.2 conjectures the existence of magic functions in the sense of Theorem 2.1 for $n\\in\\{2,8,24\\}$." },
-    { "from": "conjecture:4.1", "to": "lem:3.1", "type": "depends_on", "note": "The convergence conjecture concerns the polynomial-times-Gaussian sequence $f_k$ constructed in Lemma 3.1." },
-    { "from": "conjecture:4.2", "to": "conjecture:4.1", "type": "depends_on", "note": "The no-extra-zeros conjecture is a refinement of the convergence conjecture." },
-    { "from": "conjecture:4.3", "to": "conjecture:4.1", "type": "depends_on", "note": "The closed-form $f(0)/\\widehat{f}(0)$ formula applies to the limiting function of Conjecture 4.1." },
-    { "from": "lem:5.1", "to": "conjecture:2.2", "type": "uses_hypothesis", "note": "The rescaling identity is derived assuming an optimal $f$ exists in the sense of Conjecture 2.2." },
-    { "from": "conjecture:5.2", "to": "lem:5.1", "type": "depends_on", "note": "The quadratic Taylor coefficients refine the rescaling identity (Lemma 5.1) to second order." },
-    { "from": "conjecture:5.3", "to": "conjecture:5.2", "type": "depends_on", "note": "The fourth-moment conjecture extends the Taylor-coefficient pattern." },
-    { "from": "conjecture:6.1", "to": "conjecture:2.2", "type": "addresses_same_question", "note": "The energy-minimization conjecture reformulates the magic-function existence in terms of pairwise energy — the formulation later proved by CKMRV as universal optimality." },
-    { "from": "conjecture:7.1", "to": "prop:7.3", "type": "depends_on", "note": "The convergence-to-eigenfunction conjecture rests on the eigenfunction property verified in Proposition 7.3." },
-    { "from": "conjecture:7.2", "to": "conjecture:7.1", "type": "specializes", "note": "The closed-form eigenfunctions are explicit instances of the general convergence prediction." }
+    {
+      "from": "conjecture:2.2",
+      "to": "thm:2.1",
+      "type": "addresses_same_question",
+      "note": "Conjecture 2.2 conjectures the existence of magic functions in the sense of Theorem 2.1 for $n\\in\\{2,8,24\\}$."
+    },
+    {
+      "from": "conjecture:4.1",
+      "to": "lem:3.1",
+      "type": "depends_on",
+      "note": "The convergence conjecture concerns the polynomial-times-Gaussian sequence $f_k$ constructed in Lemma 3.1."
+    },
+    {
+      "from": "conjecture:4.2",
+      "to": "conjecture:4.1",
+      "type": "depends_on",
+      "note": "The no-extra-zeros conjecture is a refinement of the convergence conjecture."
+    },
+    {
+      "from": "conjecture:4.3",
+      "to": "conjecture:4.1",
+      "type": "depends_on",
+      "note": "The closed-form $f(0)/\\widehat{f}(0)$ formula applies to the limiting function of Conjecture 4.1."
+    },
+    {
+      "from": "lem:5.1",
+      "to": "conjecture:2.2",
+      "type": "depends_on",
+      "note": "The rescaling identity is derived assuming an optimal $f$ exists in the sense of Conjecture 2.2."
+    },
+    {
+      "from": "conjecture:5.2",
+      "to": "lem:5.1",
+      "type": "depends_on",
+      "note": "The quadratic Taylor coefficients refine the rescaling identity (Lemma 5.1) to second order."
+    },
+    {
+      "from": "conjecture:5.3",
+      "to": "conjecture:5.2",
+      "type": "depends_on",
+      "note": "The fourth-moment conjecture extends the Taylor-coefficient pattern."
+    },
+    {
+      "from": "conjecture:6.1",
+      "to": "conjecture:2.2",
+      "type": "addresses_same_question",
+      "note": "The energy-minimization conjecture reformulates the magic-function existence in terms of pairwise energy — the formulation later proved by CKMRV as universal optimality."
+    },
+    {
+      "from": "conjecture:7.1",
+      "to": "prop:7.3",
+      "type": "depends_on",
+      "note": "The convergence-to-eigenfunction conjecture rests on the eigenfunction property verified in Proposition 7.3."
+    },
+    {
+      "from": "conjecture:7.1",
+      "to": "conjecture:7.2",
+      "type": "generalizes",
+      "note": "The closed-form eigenfunctions are explicit instances of the general convergence prediction."
+    }
   ],
-  "critical_path": ["conjecture:5.2", "lem:5.1", "conjecture:2.2", "thm:2.1"],
+  "critical_path": [
+    "conjecture:5.2",
+    "lem:5.1",
+    "conjecture:2.2",
+    "thm:2.1"
+  ],
   "proof_architecture": {
     "LP_foundation": {
       "description": "The Cohn–Elkies LP bound, restated as the framework these properties live inside.",
-      "nodes": ["thm:2.1"]
+      "nodes": [
+        "thm:2.1"
+      ]
     },
     "magic_function_conjecture": {
       "description": "The central existence conjecture (now a theorem for $n=8,24$).",
-      "nodes": ["conjecture:2.2"]
+      "nodes": [
+        "conjecture:2.2"
+      ]
     },
     "numerical_method": {
       "description": "Polynomial-times-Gaussian approximations $f_k$ and the convergence / no-extra-zeros / closed-form conjectures about their limits.",
-      "nodes": ["lem:3.1", "conjecture:4.1", "conjecture:4.2", "conjecture:4.3"]
+      "nodes": [
+        "lem:3.1",
+        "conjecture:4.1",
+        "conjecture:4.2",
+        "conjecture:4.3"
+      ]
     },
     "exact_values": {
       "description": "The rescaling identity for $f'(r_1)$ and the predicted Taylor coefficients and moments of the optimal $f$.",
-      "nodes": ["lem:5.1", "conjecture:5.2", "conjecture:5.3"]
+      "nodes": [
+        "lem:5.1",
+        "conjecture:5.2",
+        "conjecture:5.3"
+      ]
     },
     "energy_and_eigenfunctions": {
       "description": "The energy-minimization reformulation (the conjecture later proved as CKMRV universal optimality) and the Fourier-eigenfunction structure (the prediction behind the Radchenko–Viazovska interpolation framework).",
-      "nodes": ["conjecture:6.1", "conjecture:7.1", "conjecture:7.2", "prop:7.3"]
+      "nodes": [
+        "conjecture:6.1",
+        "conjecture:7.1",
+        "conjecture:7.2",
+        "prop:7.3"
+      ]
     }
   },
   "bibliography": {
-    "CE": { "title": "New upper bounds on sphere packings I (Cohn–Elkies)", "arxiv_id": "math/0110009", "in_registry": true },
-    "V": { "title": "The sphere packing problem in dimension 8 (Viazovska)", "arxiv_id": "1603.04246", "in_registry": true }
+    "CE": {
+      "title": "New upper bounds on sphere packings I (Cohn–Elkies)",
+      "arxiv_id": "math/0110009",
+      "in_registry": true
+    },
+    "V": {
+      "title": "The sphere packing problem in dimension 8 (Viazovska)",
+      "arxiv_id": "1603.04246",
+      "in_registry": true
+    }
   }
 }

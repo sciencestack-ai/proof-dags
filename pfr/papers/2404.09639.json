@@ -1,10 +1,11 @@
 {
   "paper": "2404.09639",
   "title": "Improved Exponent for Marton's Conjecture in F_2^n",
-  "authors": ["Jyun-Jie Liao"],
+  "authors": [
+    "Jyun-Jie Liao"
+  ],
   "generated": "2026-03-18",
   "status": "complete",
-
   "nodes": {
     "thm:main-entropic": {
       "type": "Theorem",
@@ -25,12 +26,11 @@
       "summary": "Improved $\\tau$-functional decrease lemma."
     }
   },
-
   "edges": [
     {
       "from": "thm:main-entropic",
       "to": "thm:main-covering",
-      "type": "proves",
+      "type": "depends_on",
       "note": "Entropic version implies combinatorial version."
     },
     {

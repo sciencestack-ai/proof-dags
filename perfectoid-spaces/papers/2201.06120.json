@@ -217,9 +217,9 @@
       "note": "Synthetic Chern class lifts crystalline Chern class to syntomic level."
     },
     {
-      "from": "thm:7.6.2",
-      "to": "thm:7.5.6",
-      "type": "specializes",
+      "from": "thm:7.5.6",
+      "to": "thm:7.6.2",
+      "type": "generalizes",
       "note": "De Rham Chern class is the de-Rham specialization of synthetic."
     },
     {

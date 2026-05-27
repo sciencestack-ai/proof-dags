@@ -321,13 +321,13 @@
     {
       "from": "lem:3.3",
       "to": "def:3.2",
-      "type": "proves",
+      "type": "depends_on",
       "note": "Computes the $L^p$ norm of an $N$-function in terms of its tube data."
     },
     {
       "from": "lem:3.4",
       "to": "def:3.2",
-      "type": "proves",
+      "type": "depends_on",
       "note": "Decomposes an arbitrary $N$-function into balanced ones and gives reverse interpolation."
     },
     {

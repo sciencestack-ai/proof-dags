@@ -1,11 +1,15 @@
 {
   "paper": "2311.05762",
   "title": "On a conjecture of Marton",
-  "authors": ["W. T. Gowers", "Ben Green", "Freddie Manners", "Terence Tao"],
+  "authors": [
+    "W. T. Gowers",
+    "Ben Green",
+    "Freddie Manners",
+    "Terence Tao"
+  ],
   "generated": "2026-03-18",
   "updated": "2026-05-18",
   "status": "complete",
-
   "nodes": {
     "conjecture:1.1": {
       "type": "Conjecture",
@@ -156,41 +160,108 @@
       "summary": "Conditional Ruzsa distance bound. For $(A,B)$ with $Z = A+B$, $\\sum_z p_Z(z)\\, d[(A|Z=z);(B|Z=z)] \\le 3\\mathbf{I}[A:B] + 2\\mathbf{H}[Z] - \\mathbf{H}[A] - \\mathbf{H}[B]$."
     }
   },
-
   "edges": [
-    { "from": "thm:1.8", "to": "thm:1.2", "type": "proves",
-      "note": "Entropic PFR (Theorem 1.8) yields the combinatorial main theorem via the deduction in Appendix B." },
-    { "from": "thm:1.2", "to": "conjecture:1.1", "type": "proves",
-      "note": "Theorem 1.2 settles Conjecture 1.1 with the explicit constant $C = 12$." },
-    { "from": "thm:1.2", "to": "thm:1.3", "type": "implies",
-      "note": "Combining the main theorem with the Green-Manners-Tao machinery gives weak PFR over the integers." },
-    { "from": "thm:1.2", "to": "cor:1.4", "type": "implies",
-      "note": "The covering theorem yields the approximate-homomorphism decomposition." },
-    { "from": "thm:1.2", "to": "cor:1.5", "type": "implies",
-      "note": "The covering theorem yields the statistical approximate-homomorphism form." },
-    { "from": "thm:1.2", "to": "cor:1.6", "type": "implies",
-      "note": "The covering theorem yields the quadratic $U^3$ inverse theorem." },
-    { "from": "thm:1.2", "to": "cor:1.7", "type": "implies",
-      "note": "The covering theorem yields Mudgal's sum-product corollary over the reals." },
-    { "from": "thm:1.8", "to": "prop:2.1", "type": "depends_on",
-      "note": "Theorem 1.8 is proved by applying the contrapositive of Proposition 2.1 to a $\\tau$-minimizer." },
-    { "from": "thm:1.8", "to": "lem:2.2", "type": "depends_on",
-      "note": "Lemma 2.2 converts the zero-distance minimizer into the subgroup $H$ of Theorem 1.8." },
-    { "from": "prop:2.1", "to": "lem:7.1", "type": "depends_on",
-      "note": "Endgame Lemma 7.1 supplies the conditionally independent case of the $\\tau$-decrement (Section 7 endgame proves Proposition 2.1)." },
-    { "from": "prop:2.1", "to": "lem:7.2", "type": "depends_on",
-      "note": "Endgame Lemma 7.2 supplies the small-nonzero-mutual-information case of the $\\tau$-decrement." },
-    { "from": "prop:2.1", "to": "prop:4.1", "type": "depends_on",
-      "note": "The $\\tau$-decrement uses the fibring lemma to find a sumset or fibre that improves the functional." },
-    { "from": "prop:2.1", "to": "lem:5.1", "type": "depends_on",
-      "note": "The first estimate feeds the bound on $\\tau$ after the decrement step." },
-    { "from": "prop:2.1", "to": "lem:5.2", "type": "depends_on",
-      "note": "The second estimate feeds the bound on $\\tau$ after the decrement step." },
-    { "from": "prop:4.1", "to": "cor:4.2", "type": "implies",
-      "note": "The four-variable identity is a direct corollary of the fibring lemma." },
-    { "from": "prop:4.1", "to": "lem:A.1", "type": "depends_on",
-      "note": "The fibring inequality rests on submodularity of entropy under sums." },
-    { "from": "lem:7.2", "to": "lem:A.2", "type": "depends_on",
-      "note": "The endgame BSG variant uses the conditional Ruzsa distance bound of Lemma A.2." }
+    {
+      "from": "thm:1.8",
+      "to": "thm:1.2",
+      "type": "depends_on",
+      "note": "Entropic PFR (Theorem 1.8) yields the combinatorial main theorem via the deduction in Appendix B."
+    },
+    {
+      "from": "thm:1.2",
+      "to": "conjecture:1.1",
+      "type": "depends_on",
+      "note": "Theorem 1.2 settles Conjecture 1.1 with the explicit constant $C = 12$."
+    },
+    {
+      "from": "thm:1.2",
+      "to": "thm:1.3",
+      "type": "depends_on",
+      "note": "Combining the main theorem with the Green-Manners-Tao machinery gives weak PFR over the integers."
+    },
+    {
+      "from": "thm:1.2",
+      "to": "cor:1.4",
+      "type": "depends_on",
+      "note": "The covering theorem yields the approximate-homomorphism decomposition."
+    },
+    {
+      "from": "thm:1.2",
+      "to": "cor:1.5",
+      "type": "depends_on",
+      "note": "The covering theorem yields the statistical approximate-homomorphism form."
+    },
+    {
+      "from": "thm:1.2",
+      "to": "cor:1.6",
+      "type": "depends_on",
+      "note": "The covering theorem yields the quadratic $U^3$ inverse theorem."
+    },
+    {
+      "from": "thm:1.2",
+      "to": "cor:1.7",
+      "type": "depends_on",
+      "note": "The covering theorem yields Mudgal's sum-product corollary over the reals."
+    },
+    {
+      "from": "thm:1.8",
+      "to": "prop:2.1",
+      "type": "depends_on",
+      "note": "Theorem 1.8 is proved by applying the contrapositive of Proposition 2.1 to a $\\tau$-minimizer."
+    },
+    {
+      "from": "thm:1.8",
+      "to": "lem:2.2",
+      "type": "depends_on",
+      "note": "Lemma 2.2 converts the zero-distance minimizer into the subgroup $H$ of Theorem 1.8."
+    },
+    {
+      "from": "prop:2.1",
+      "to": "lem:7.1",
+      "type": "depends_on",
+      "note": "Endgame Lemma 7.1 supplies the conditionally independent case of the $\\tau$-decrement (Section 7 endgame proves Proposition 2.1)."
+    },
+    {
+      "from": "prop:2.1",
+      "to": "lem:7.2",
+      "type": "depends_on",
+      "note": "Endgame Lemma 7.2 supplies the small-nonzero-mutual-information case of the $\\tau$-decrement."
+    },
+    {
+      "from": "prop:2.1",
+      "to": "prop:4.1",
+      "type": "depends_on",
+      "note": "The $\\tau$-decrement uses the fibring lemma to find a sumset or fibre that improves the functional."
+    },
+    {
+      "from": "prop:2.1",
+      "to": "lem:5.1",
+      "type": "depends_on",
+      "note": "The first estimate feeds the bound on $\\tau$ after the decrement step."
+    },
+    {
+      "from": "prop:2.1",
+      "to": "lem:5.2",
+      "type": "depends_on",
+      "note": "The second estimate feeds the bound on $\\tau$ after the decrement step."
+    },
+    {
+      "from": "prop:4.1",
+      "to": "cor:4.2",
+      "type": "depends_on",
+      "note": "The four-variable identity is a direct corollary of the fibring lemma."
+    },
+    {
+      "from": "prop:4.1",
+      "to": "lem:A.1",
+      "type": "depends_on",
+      "note": "The fibring inequality rests on submodularity of entropy under sums."
+    },
+    {
+      "from": "lem:7.2",
+      "to": "lem:A.2",
+      "type": "depends_on",
+      "note": "The endgame BSG variant uses the conditional Ruzsa distance bound of Lemma A.2."
+    }
   ]
 }

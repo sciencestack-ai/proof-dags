@@ -268,7 +268,7 @@
     {
       "from": "thm:4.5",
       "to": "def:4.3",
-      "type": "proves",
+      "type": "depends_on",
       "note": "Shows large sub-collections of column squares are $\\nu$-transverse in the sense of def:4.3."
     },
     {

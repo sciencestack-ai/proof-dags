@@ -1,10 +1,14 @@
 {
   "paper": "2405.10297",
   "title": "Low-Degree Polynomials Are Good Extractors",
-  "authors": ["Omar Alrabiah", "Jesse Goodman", "Jonathan Mosheiff", "João Ribeiro"],
+  "authors": [
+    "Omar Alrabiah",
+    "Jesse Goodman",
+    "Jonathan Mosheiff",
+    "João Ribeiro"
+  ],
   "generated": "2026-03-19",
   "status": "complete",
-
   "nodes": {
     "thm:0": {
       "type": "Theorem",
@@ -246,7 +250,6 @@
       "summary": "Existential proof that sumset extractors exist via random function argument."
     }
   },
-
   "edges": [
     {
       "from": "thm:1",
@@ -257,25 +260,25 @@
     {
       "from": "thm:1",
       "to": "cor:1",
-      "type": "implies",
+      "type": "depends_on",
       "note": "Single-source extraction implies small-family extraction by union bound."
     },
     {
       "from": "cor:1",
       "to": "cor:2",
-      "type": "implies",
+      "type": "depends_on",
       "note": "Small families include local sources."
     },
     {
       "from": "cor:1",
       "to": "cor:3",
-      "type": "implies",
+      "type": "depends_on",
       "note": "Small families include polynomial sources."
     },
     {
       "from": "cor:1",
       "to": "cor:4",
-      "type": "implies",
+      "type": "depends_on",
       "note": "Small families include variety sources."
     },
     {
@@ -303,9 +306,9 @@
       "note": "The low-error two-source extractor rests on the PFR-based disperser-to-extractor upgrade."
     },
     {
-      "from": "thm:3",
-      "to": "thm:4",
-      "type": "specializes",
+      "from": "thm:4",
+      "to": "thm:3",
+      "type": "generalizes",
       "note": "The general almost-balanced-code result specializes to Reed-Muller codes."
     },
     {
@@ -317,13 +320,13 @@
     {
       "from": "thm:12",
       "to": "cor:9",
-      "type": "implies",
+      "type": "depends_on",
       "note": "Sumset-evasiveness yields impossibility for certain sources."
     },
     {
       "from": "thm:7",
       "to": "cor:6",
-      "type": "implies",
+      "type": "depends_on",
       "note": "Impossibility theorem implies strengthened CGG24 bounds."
     }
   ]

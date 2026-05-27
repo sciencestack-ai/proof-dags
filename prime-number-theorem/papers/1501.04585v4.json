@@ -1,7 +1,10 @@
 {
   "paper": "1501.04585v4",
   "title": "Multiplicative functions in short intervals",
-  "authors": ["Kaisa Matomäki", "Maksym Radziwiłł"],
+  "authors": [
+    "Kaisa Matomäki",
+    "Maksym Radziwiłł"
+  ],
   "generated": "2026-05-25",
   "status": "complete",
   "nodes": {
@@ -182,78 +185,275 @@
     }
   },
   "edges": [
-    { "from": "thm:3", "to": "prop:1", "type": "depends_on", "note": "Section 9 derives the $\\mathcal{S}$-restricted short-interval theorem from the main proposition's Parseval bound." },
-    { "from": "thm:4", "to": "prop:1", "type": "depends_on", "note": "Section 10 derives the $\\mathcal{S}$-restricted bilinear theorem from the main proposition." },
-    { "from": "thm:1", "to": "thm:3", "type": "depends_on", "note": "The general short-interval theorem follows from the $\\mathcal{S}$-restricted version via the factorization-set decomposition." },
-    { "from": "thm:2", "to": "thm:4", "type": "depends_on", "note": "The general bilinear theorem follows from its $\\mathcal{S}$-restricted version." },
-    { "from": "thm:1", "to": "lem:4", "type": "uses", "note": "The initial reduction handles long $y\\ge X/(\\log X)^{1/5}$, leaving the genuinely short range." },
-    { "from": "thm:3", "to": "lem:14", "type": "depends_on", "note": "The $\\mathcal{S}$-restricted theorem is connected to the Dirichlet integral via the Parseval bridge (Lemma 14)." },
-    { "from": "prop:1", "to": "lem:9", "type": "depends_on", "note": "The Parseval bound rests on the Halász inequality for integers (Lemma 9)." },
-    { "from": "prop:1", "to": "lem:11", "type": "depends_on", "note": "The prime-factor part uses the Halász inequality for primes (Lemma 11)." },
-    { "from": "prop:1", "to": "lem:13", "type": "depends_on", "note": "The high-moment contribution is controlled by the moment computation (Lemma 13)." },
-    { "from": "prop:1", "to": "lem:5", "type": "depends_on", "note": "The factorization into completely multiplicative pieces (Lemma 5) underlies the proposition." },
-    { "from": "prop:1", "to": "lem:3", "type": "uses", "note": "The decomposition device (Lemma 3) exposes the $[P,Q]$ prime-factor structure of $\\mathcal{S}$." },
-    { "from": "lem:9", "to": "lem:6", "type": "depends_on", "note": "The Halász inequality builds on the mean value theorem (Lemma 6)." },
-    { "from": "lem:9", "to": "lem:7", "type": "depends_on", "note": "The Halász inequality uses the large-value bound at well-spaced points (Lemma 7)." },
-    { "from": "lem:9", "to": "lem:10", "type": "uses", "note": "The estimate is set up via the duality principle (Lemma 10)." },
-    { "from": "lem:11", "to": "lem:8", "type": "depends_on", "note": "The prime Halász inequality uses the large values of prime-supported polynomials (Lemma 8)." },
-    { "from": "lem:11", "to": "lem:10", "type": "uses", "note": "The prime estimate also uses duality (Lemma 10)." },
-    { "from": "lem:11", "to": "lem:1", "type": "uses", "note": "The prime Halász bound is phrased via the mean-value functional $M(x,T_0)$ (Lemma 1)." },
-    { "from": "lem:8", "to": "lem:6", "type": "depends_on", "note": "Counting large values of $P(1+it)$ uses the mean value theorem (Lemma 6)." },
-    { "from": "lem:8", "to": "lem:7", "type": "uses", "note": "The prime large-value count uses the well-spaced large-value bound (Lemma 7)." },
-    { "from": "lem:7", "to": "lem:6", "type": "depends_on", "note": "The well-spaced large-value bound is derived from the mean value theorem (Lemma 6)." },
-    { "from": "lem:13", "to": "lem:12", "type": "depends_on", "note": "The moment computation uses the factorization lemma (Lemma 12)." },
-    { "from": "lem:1", "to": "lem:2", "type": "depends_on", "note": "The mean-value functional uses the pretentious-distance lower bound (Lemma 2) to localize $t_0$." },
-    { "from": "lem:14", "to": "lem:6", "type": "uses", "note": "The Parseval bridge is an instance of the mean value theorem (Lemma 6)." },
-    { "from": "cor:1", "to": "thm:1", "type": "depends_on", "note": "Existence of smooth numbers in $[X,X+C\\sqrt{X}]$ follows from the short-interval theorem applied to the smooth-number indicator." },
-    { "from": "cor:6", "to": "thm:1", "type": "depends_on", "note": "Smooth-number asymptotics in almost all short intervals follow from the short-interval theorem." },
-    { "from": "cor:2", "to": "thm:2", "type": "depends_on", "note": "The Liouville-correlation bound follows from the bilinear theorem at the $\\sqrt{x}$ scale." },
-    { "from": "cor:4", "to": "thm:1", "type": "depends_on", "note": "Sign changes in almost all short intervals follow from the short-interval theorem." },
-    { "from": "cor:5", "to": "thm:2", "type": "depends_on", "note": "The $\\sqrt{x}$-scale sign change follows from the bilinear theorem." },
-    { "from": "cor:3", "to": "cor:4", "type": "depends_on", "note": "The positive-proportion sign-change criterion is deduced from the almost-all-intervals sign-change result." }
+    {
+      "from": "thm:3",
+      "to": "prop:1",
+      "type": "depends_on",
+      "note": "Section 9 derives the $\\mathcal{S}$-restricted short-interval theorem from the main proposition's Parseval bound."
+    },
+    {
+      "from": "thm:4",
+      "to": "prop:1",
+      "type": "depends_on",
+      "note": "Section 10 derives the $\\mathcal{S}$-restricted bilinear theorem from the main proposition."
+    },
+    {
+      "from": "thm:1",
+      "to": "thm:3",
+      "type": "depends_on",
+      "note": "The general short-interval theorem follows from the $\\mathcal{S}$-restricted version via the factorization-set decomposition."
+    },
+    {
+      "from": "thm:2",
+      "to": "thm:4",
+      "type": "depends_on",
+      "note": "The general bilinear theorem follows from its $\\mathcal{S}$-restricted version."
+    },
+    {
+      "from": "thm:1",
+      "to": "lem:4",
+      "type": "depends_on",
+      "note": "The initial reduction handles long $y\\ge X/(\\log X)^{1/5}$, leaving the genuinely short range."
+    },
+    {
+      "from": "thm:3",
+      "to": "lem:14",
+      "type": "depends_on",
+      "note": "The $\\mathcal{S}$-restricted theorem is connected to the Dirichlet integral via the Parseval bridge (Lemma 14)."
+    },
+    {
+      "from": "prop:1",
+      "to": "lem:9",
+      "type": "depends_on",
+      "note": "The Parseval bound rests on the Halász inequality for integers (Lemma 9)."
+    },
+    {
+      "from": "prop:1",
+      "to": "lem:11",
+      "type": "depends_on",
+      "note": "The prime-factor part uses the Halász inequality for primes (Lemma 11)."
+    },
+    {
+      "from": "prop:1",
+      "to": "lem:13",
+      "type": "depends_on",
+      "note": "The high-moment contribution is controlled by the moment computation (Lemma 13)."
+    },
+    {
+      "from": "prop:1",
+      "to": "lem:5",
+      "type": "depends_on",
+      "note": "The factorization into completely multiplicative pieces (Lemma 5) underlies the proposition."
+    },
+    {
+      "from": "prop:1",
+      "to": "lem:3",
+      "type": "depends_on",
+      "note": "The decomposition device (Lemma 3) exposes the $[P,Q]$ prime-factor structure of $\\mathcal{S}$."
+    },
+    {
+      "from": "lem:9",
+      "to": "lem:6",
+      "type": "depends_on",
+      "note": "The Halász inequality builds on the mean value theorem (Lemma 6)."
+    },
+    {
+      "from": "lem:9",
+      "to": "lem:7",
+      "type": "depends_on",
+      "note": "The Halász inequality uses the large-value bound at well-spaced points (Lemma 7)."
+    },
+    {
+      "from": "lem:9",
+      "to": "lem:10",
+      "type": "depends_on",
+      "note": "The estimate is set up via the duality principle (Lemma 10)."
+    },
+    {
+      "from": "lem:11",
+      "to": "lem:8",
+      "type": "depends_on",
+      "note": "The prime Halász inequality uses the large values of prime-supported polynomials (Lemma 8)."
+    },
+    {
+      "from": "lem:11",
+      "to": "lem:10",
+      "type": "depends_on",
+      "note": "The prime estimate also uses duality (Lemma 10)."
+    },
+    {
+      "from": "lem:11",
+      "to": "lem:1",
+      "type": "depends_on",
+      "note": "The prime Halász bound is phrased via the mean-value functional $M(x,T_0)$ (Lemma 1)."
+    },
+    {
+      "from": "lem:8",
+      "to": "lem:6",
+      "type": "depends_on",
+      "note": "Counting large values of $P(1+it)$ uses the mean value theorem (Lemma 6)."
+    },
+    {
+      "from": "lem:8",
+      "to": "lem:7",
+      "type": "depends_on",
+      "note": "The prime large-value count uses the well-spaced large-value bound (Lemma 7)."
+    },
+    {
+      "from": "lem:7",
+      "to": "lem:6",
+      "type": "depends_on",
+      "note": "The well-spaced large-value bound is derived from the mean value theorem (Lemma 6)."
+    },
+    {
+      "from": "lem:13",
+      "to": "lem:12",
+      "type": "depends_on",
+      "note": "The moment computation uses the factorization lemma (Lemma 12)."
+    },
+    {
+      "from": "lem:1",
+      "to": "lem:2",
+      "type": "depends_on",
+      "note": "The mean-value functional uses the pretentious-distance lower bound (Lemma 2) to localize $t_0$."
+    },
+    {
+      "from": "lem:14",
+      "to": "lem:6",
+      "type": "depends_on",
+      "note": "The Parseval bridge is an instance of the mean value theorem (Lemma 6)."
+    },
+    {
+      "from": "cor:1",
+      "to": "thm:1",
+      "type": "depends_on",
+      "note": "Existence of smooth numbers in $[X,X+C\\sqrt{X}]$ follows from the short-interval theorem applied to the smooth-number indicator."
+    },
+    {
+      "from": "cor:6",
+      "to": "thm:1",
+      "type": "depends_on",
+      "note": "Smooth-number asymptotics in almost all short intervals follow from the short-interval theorem."
+    },
+    {
+      "from": "cor:2",
+      "to": "thm:2",
+      "type": "depends_on",
+      "note": "The Liouville-correlation bound follows from the bilinear theorem at the $\\sqrt{x}$ scale."
+    },
+    {
+      "from": "cor:4",
+      "to": "thm:1",
+      "type": "depends_on",
+      "note": "Sign changes in almost all short intervals follow from the short-interval theorem."
+    },
+    {
+      "from": "cor:5",
+      "to": "thm:2",
+      "type": "depends_on",
+      "note": "The $\\sqrt{x}$-scale sign change follows from the bilinear theorem."
+    },
+    {
+      "from": "cor:3",
+      "to": "cor:4",
+      "type": "depends_on",
+      "note": "The positive-proportion sign-change criterion is deduced from the almost-all-intervals sign-change result."
+    }
   ],
-  "critical_path": ["thm:1", "thm:3", "prop:1", "lem:9", "lem:6"],
+  "critical_path": [
+    "thm:1",
+    "thm:3",
+    "prop:1",
+    "lem:9",
+    "lem:6"
+  ],
   "proof_architecture": {
     "main_theorems": {
       "description": "The short-interval theorem and its bilinear $\\sqrt{x}$-scale form.",
-      "nodes": ["thm:1", "thm:2"]
+      "nodes": [
+        "thm:1",
+        "thm:2"
+      ]
     },
     "restricted_versions": {
       "description": "The forms restricted to the factorization set $\\mathcal{S}$, which the analytic argument directly proves.",
-      "nodes": ["thm:3", "thm:4"]
+      "nodes": [
+        "thm:3",
+        "thm:4"
+      ]
     },
     "main_proposition": {
       "description": "The Parseval / mean-and-large-value bound on the Dirichlet polynomial $F(1+it)$ over $\\mathcal{S}$ — the analytic engine.",
-      "nodes": ["prop:1"]
+      "nodes": [
+        "prop:1"
+      ]
     },
     "reduction_and_pretentiousness": {
       "description": "The initial reduction to short $y$ and the Halász mean-value functional / pretentious-distance inputs.",
-      "nodes": ["lem:4", "lem:1", "lem:2"]
+      "nodes": [
+        "lem:4",
+        "lem:1",
+        "lem:2"
+      ]
     },
     "decomposition": {
       "description": "The Dirichlet-polynomial decomposition exposing the $[P,Q]$ prime-factor structure and the completely multiplicative models.",
-      "nodes": ["lem:3", "lem:5", "lem:12"]
+      "nodes": [
+        "lem:3",
+        "lem:5",
+        "lem:12"
+      ]
     },
     "mean_and_large_values": {
       "description": "The $L^2$ mean value theorem, the well-spaced large-value bounds, and the duality principle.",
-      "nodes": ["lem:6", "lem:7", "lem:8", "lem:10"]
+      "nodes": [
+        "lem:6",
+        "lem:7",
+        "lem:8",
+        "lem:10"
+      ]
     },
     "halasz_inequalities": {
       "description": "The Halász large-value inequalities for integer- and prime-supported Dirichlet polynomials.",
-      "nodes": ["lem:9", "lem:11"]
+      "nodes": [
+        "lem:9",
+        "lem:11"
+      ]
     },
     "moment_and_parseval": {
       "description": "The high-moment computation for the factored polynomial and the Parseval bridge to short-interval sums.",
-      "nodes": ["lem:13", "lem:14"]
+      "nodes": [
+        "lem:13",
+        "lem:14"
+      ]
     },
     "corollaries": {
       "description": "Consequences: smooth numbers in short intervals, the Liouville/Chowla correlation bound, and sign-change results.",
-      "nodes": ["cor:1", "cor:2", "cor:3", "cor:4", "cor:5", "cor:6"]
+      "nodes": [
+        "cor:1",
+        "cor:2",
+        "cor:3",
+        "cor:4",
+        "cor:5",
+        "cor:6"
+      ]
     }
   },
   "bibliography": {
-    "Halasz": { "title": "G. Halász — mean values of multiplicative functions", "arxiv_id": null, "in_registry": false },
-    "Montgomery-LargeValues": { "title": "H. L. Montgomery — mean and large value theorems for Dirichlet polynomials", "arxiv_id": null, "in_registry": false },
-    "HildebrandTenenbaum": { "title": "Hildebrand–Tenenbaum — smooth numbers / Dickman function", "arxiv_id": null, "in_registry": false }
+    "Halasz": {
+      "title": "G. Halász — mean values of multiplicative functions",
+      "arxiv_id": null,
+      "in_registry": false
+    },
+    "Montgomery-LargeValues": {
+      "title": "H. L. Montgomery — mean and large value theorems for Dirichlet polynomials",
+      "arxiv_id": null,
+      "in_registry": false
+    },
+    "HildebrandTenenbaum": {
+      "title": "Hildebrand–Tenenbaum — smooth numbers / Dickman function",
+      "arxiv_id": null,
+      "in_registry": false
+    }
   }
 }

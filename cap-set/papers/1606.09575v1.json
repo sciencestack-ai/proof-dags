@@ -1,0 +1,198 @@
+{
+  "paper": "1606.09575v1",
+  "title": "Upper bounds for sunflower-free sets",
+  "authors": [
+    "Eric Naslund",
+    "Will Sawin"
+  ],
+  "generated": "2026-05-27",
+  "status": "complete",
+  "nodes": {
+    "thm:3": {
+      "type": "Theorem",
+      "number": "3",
+      "section": "main",
+      "role": "main_result",
+      "summary": "Erdős–Szemerédi sunflower conjecture for sets, $k=3$: if $\\mathcal{F}$ is a sunflower-free family of subsets of $\\{1, \\dots, n\\}$, then $|\\mathcal{F}| \\le 3(n+1) \\sum_{k \\le n/3} \\binom{n}{k}$, equivalently the sunflower-free capacity $\\mu_3^S \\le 3/2^{2/3} = 1.889881\\dots$ Settles the Erdős–Szemerédi conjecture (conjecture:2) for triples by giving the first exponential bound with constant strictly less than $2$ — earlier work had only achieved $(2 - o(1))^n$."
+    },
+    "thm:5": {
+      "type": "Theorem",
+      "number": "5",
+      "section": "main",
+      "role": "key_reduction",
+      "summary": "Sunflower-free sets in $(\\mathbb{Z}/D\\mathbb{Z})^n$ have size at most $c_D^n$ where $c_D = \\frac{3}{2^{2/3}} (D-1)^{2/3}$. Generalizes thm:3 to arbitrary modulus and is the engine behind it — sunflower-freeness in $(\\mathbb{Z}/D\\mathbb{Z})^n$ reduces by a tensor/encoding argument to the cap-set-style polynomial-method bound, where the slice-rank machinery of lem:6 produces the constant."
+    },
+    "thm:8": {
+      "type": "Theorem",
+      "number": "8",
+      "section": "main",
+      "role": "auxiliary",
+      "summary": "Quantitative link between sunflower-free and cap-set capacities: $\\mu_3^S \\le \\sqrt{1 + C}$ where $C$ is the cap-set capacity (the asymptotic exponent of the largest cap set in $\\mathbb{F}_3^n$). Means that any improvement in the cap-set upper bound automatically improves the sunflower bound, and vice versa — the two extremal problems are quantitatively coupled."
+    },
+    "lem:6": {
+      "type": "Lemma",
+      "number": "6",
+      "section": "main",
+      "role": "key_mechanism",
+      "summary": "Diagonal slice-rank lemma (attributed to Tao's blog reformulation). Let $A$ be a finite set, $\\mathbb{F}$ a field, $T: A^3 \\to \\mathbb{F}$ with $T(x,y,z) \\ne 0$ iff $x = y = z$. Then the slice rank of $T$ equals $|A|$. The slice rank — the minimum number of rank-1 'slice' tensors $f(x_i) g(x_j, x_k)$ summing to $T$ — is the right generalization of matrix rank to higher-order tensors, and this lemma is the slice-rank reformulation of the Croot–Lev–Pach polynomial dichotomy."
+    },
+    "conjecture:1": {
+      "type": "Conjecture",
+      "number": "1",
+      "section": "intro",
+      "role": "context",
+      "summary": "Erdős–Rado sunflower conjecture: a $k$-sunflower-free family $\\mathcal{F}$ of sets each of size $m$ has $|\\mathcal{F}| \\le C_k^m$ for a constant depending only on $k$. The strong form — fixed set size $m$, polynomial in $n$ — is wide open even for $k = 3$. This paper does not address it; it addresses the weaker $n$-parameter conjecture:2 instead."
+    },
+    "conjecture:2": {
+      "type": "Conjecture",
+      "number": "2",
+      "section": "intro",
+      "role": "context",
+      "summary": "Erdős–Szemerédi sunflower conjecture: a $k$-sunflower-free family $S$ of subsets of $\\{1, \\dots, n\\}$ has $|S| < c_k^n$ for some $c_k < 2$. Settled here for $k = 3$ by thm:3 with explicit constant $c_3 \\le 3/2^{2/3}$."
+    },
+    "conjecture:4": {
+      "type": "Conjecture",
+      "number": "4",
+      "section": "main",
+      "role": "context",
+      "summary": "Sunflower conjecture in $(\\mathbb{Z}/D\\mathbb{Z})^n$: a sunflower-free $A \\subseteq (\\mathbb{Z}/D\\mathbb{Z})^n$ has $|A| \\le b_k^n$. thm:5 proves this with $b_3 = c_D = \\frac{3}{2^{2/3}}(D-1)^{2/3}$."
+    },
+    "rem:7": {
+      "type": "Remark",
+      "number": "7",
+      "section": "main",
+      "role": "context",
+      "summary": "The proofs of thm:3 and thm:5 extend without modification to the multicolored sunflower-free problem, paralleling the multicolored sum-free sets in $\\mathbb{F}_q^n$ studied by Blasiak–Church–Cohn–Grochow–Naslund–Sawin–Umans (1605.06702) in the matrix-multiplication-barrier context."
+    },
+    "proof:thm:3": {
+      "type": "Proof",
+      "number": "thm:3",
+      "section": "main",
+      "role": "technical",
+      "summary": "Encode subsets of $\\{1, \\dots, 2n\\}$ as vectors in $\\{0,1,2,3\\}^n$ via the four indicator pairs $u_0, u_1, u_2, u_3 \\in \\{0,1\\}^2$; for fixed $x \\in \\{0,1\\}^n$ (locations of the symbol $3$), the residual is a subset of $\\{0,1,2\\}^{n - |x|} = \\mathbb{F}_3^{n - |x|}$. Three sunflower-related elements correspond to an arithmetic progression in $\\mathbb{F}_3^{n - |x|}$, so sunflower-freeness implies each slice is a cap set; sum the EG cap-set bound over $x$ and optimize to extract the $3/2^{2/3}$ constant."
+    }
+  },
+  "edges": [
+    {
+      "from": "thm:3",
+      "to": "thm:5",
+      "type": "depends_on",
+      "note": "thm:3 follows from the $D = 4$ case of thm:5 via the indicator encoding into $\\{0,1,2,3\\}^n$."
+    },
+    {
+      "from": "thm:3",
+      "to": "conjecture:2",
+      "type": "depends_on",
+      "note": "thm:3 settles conjecture:2 for $k = 3$ with explicit constant $c_3 \\le 3/2^{2/3}$."
+    },
+    {
+      "from": "thm:5",
+      "to": "lem:6",
+      "type": "depends_on",
+      "note": "Applies the slice-rank diagonal lemma to a sunflower-encoding tensor over $(\\mathbb{Z}/D\\mathbb{Z})^n$."
+    },
+    {
+      "from": "thm:5",
+      "to": "conjecture:4",
+      "type": "depends_on",
+      "note": "thm:5 proves conjecture:4 for $k = 3$ with constant $c_D = \\frac{3}{2^{2/3}}(D-1)^{2/3}$."
+    },
+    {
+      "from": "thm:8",
+      "to": "lem:6",
+      "type": "depends_on",
+      "note": "The slice-rank bridge between sunflower capacity and cap-set capacity uses the same diagonal slice-rank machinery."
+    },
+    {
+      "from": "proof:thm:3",
+      "to": "thm:3",
+      "type": "depends_on",
+      "note": "Reduction from sunflower-free $\\{0,1\\}^{2n}$ to cap-set $\\mathbb{F}_3^{n-|x|}$ via the $u_0, u_1, u_2, u_3$ encoding."
+    },
+    {
+      "from": "rem:7",
+      "to": "thm:3",
+      "type": "depends_on",
+      "note": "Extends the same proof to the multicolored case."
+    },
+    {
+      "from": "rem:7",
+      "to": "thm:5",
+      "type": "depends_on",
+      "note": "Multicolored extension also applies to the $(\\mathbb{Z}/D\\mathbb{Z})^n$ variant."
+    }
+  ],
+  "critical_path": [
+    "thm:3",
+    "thm:5",
+    "lem:6"
+  ],
+  "proof_architecture": {
+    "slice_rank_machinery": {
+      "description": "Tao's slice-rank reformulation of the Croot–Lev–Pach polynomial-method dichotomy. A diagonal tensor on $A^3$ has slice rank $|A|$, and the upper bound on the slice rank from the polynomial method forces $|A|$ to be small.",
+      "nodes": [
+        "lem:6"
+      ]
+    },
+    "Z_D_n_bound": {
+      "description": "Apply the slice-rank machinery to sunflower-encoding tensors over $(\\mathbb{Z}/D\\mathbb{Z})^n$ to get an exponential bound with constant $c_D$.",
+      "nodes": [
+        "thm:5",
+        "conjecture:4"
+      ]
+    },
+    "set_level_bound": {
+      "description": "Encode subsets of $\\{1, \\dots, 2n\\}$ into $\\{0,1,2,3\\}^n$ via the four indicator pairs, slice by the location of '3's, and apply EG-style cap-set bounds on each slice.",
+      "nodes": [
+        "thm:3",
+        "proof:thm:3",
+        "conjecture:1",
+        "conjecture:2"
+      ]
+    },
+    "capacity_coupling": {
+      "description": "Bridge the sunflower-free capacity $\\mu_3^S$ and the cap-set capacity $C$ via a slice-rank inequality.",
+      "nodes": [
+        "thm:8"
+      ]
+    },
+    "multicolor_extension": {
+      "description": "Same proof extends to the multicolored variant, paralleling the multicolored sum-free framework in BCCGNSU.",
+      "nodes": [
+        "rem:7"
+      ]
+    }
+  },
+  "bibliography": {
+    "CrootLevPachZ4": {
+      "title": "Progression-free sets in $\\mathbb{Z}_4^n$ are exponentially small",
+      "arxiv_id": "1605.01506",
+      "in_registry": true
+    },
+    "EllenbergGijswijtCapsets": {
+      "title": "On large subsets of $\\mathbb{F}_q^n$ with no three-term arithmetic progression",
+      "arxiv_id": "1605.09223",
+      "in_registry": true
+    },
+    "BlasiakChurchCohnGrochowNaslundSawinUmans2016MatrixMultiplication": {
+      "title": "On cap sets and the group-theoretic approach to matrix multiplication",
+      "arxiv_id": "1605.06702",
+      "in_registry": true
+    },
+    "TaosBlogCapsets": {
+      "title": "Tao — A symmetric formulation of the Croot–Lev–Pach–Ellenberg–Gijswijt capset bound (blog post, May 2016)",
+      "arxiv_id": null,
+      "in_registry": false
+    },
+    "ErdosRadoTheorem": {
+      "title": "Erdős, Rado — Intersection theorems for systems of sets (1960)",
+      "arxiv_id": null,
+      "in_registry": false
+    },
+    "ErdosSzemeredi1978UpperBoundsForSunflowerFreeSets": {
+      "title": "Erdős, Szemerédi — Combinatorial properties of systems of sets (1978)",
+      "arxiv_id": null,
+      "in_registry": false
+    }
+  }
+}

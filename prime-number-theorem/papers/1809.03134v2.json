@@ -1,7 +1,10 @@
 {
   "paper": "1809.03134v2",
   "title": "The error term in the prime number theorem",
-  "authors": ["David J. Platt", "Timothy S. Trudgian"],
+  "authors": [
+    "David J. Platt",
+    "Timothy S. Trudgian"
+  ],
   "generated": "2026-05-25",
   "status": "complete",
   "nodes": {
@@ -77,42 +80,134 @@
     }
   },
   "edges": [
-    { "from": "thm:1", "to": "lem:1", "type": "depends_on", "note": "The error term is obtained from the truncated explicit formula (Lemma 1)." },
-    { "from": "thm:1", "to": "lem:3", "type": "depends_on", "note": "The constant $R=5.573412$ in Theorem 1 is exactly the zero-free-region constant of Lemma 3." },
-    { "from": "thm:1", "to": "lem:5", "type": "depends_on", "note": "The off-line zeros in the explicit-formula sum are controlled by the zero-density estimate (Lemma 5)." },
-    { "from": "thm:1", "to": "lem:4", "type": "depends_on", "note": "Zeros below height $3\\times 10^{12}$ are handled by the verified RH (Lemma 4)." },
-    { "from": "lem:1", "to": "lem:2", "type": "uses", "note": "Evaluating and truncating the sum over zeros uses the estimate for $\\sum_{0<\\gamma\\le T}1/\\gamma$ (Lemma 2)." },
-    { "from": "cor:1", "to": "thm:1", "type": "depends_on", "note": "The $\\theta$ error bound is transferred from the $\\psi$ error bound (Theorem 1)." },
-    { "from": "cor:2", "to": "thm:1", "type": "depends_on", "note": "The $\\pi(x)-\\mathrm{li}(x)$ bound follows from the $\\psi$/$\\theta$ error bounds." },
-    { "from": "thm:2", "to": "thm:1", "type": "depends_on", "note": "The Ramanujan-inequality application uses the explicit error term (Theorem 1)." },
-    { "from": "thm:2", "to": "lem:6", "type": "depends_on", "note": "The finite-range part of the Ramanujan inequality uses the explicit $\\theta$ bound (Lemma 6)." },
-    { "from": "lem:6", "to": "lem:4", "type": "depends_on", "note": "The explicit $\\theta$ bound is coupled with the verified RH (Lemma 4)." }
+    {
+      "from": "thm:1",
+      "to": "lem:1",
+      "type": "depends_on",
+      "note": "The error term is obtained from the truncated explicit formula (Lemma 1)."
+    },
+    {
+      "from": "thm:1",
+      "to": "lem:3",
+      "type": "depends_on",
+      "note": "The constant $R=5.573412$ in Theorem 1 is exactly the zero-free-region constant of Lemma 3."
+    },
+    {
+      "from": "thm:1",
+      "to": "lem:5",
+      "type": "depends_on",
+      "note": "The off-line zeros in the explicit-formula sum are controlled by the zero-density estimate (Lemma 5)."
+    },
+    {
+      "from": "thm:1",
+      "to": "lem:4",
+      "type": "depends_on",
+      "note": "Zeros below height $3\\times 10^{12}$ are handled by the verified RH (Lemma 4)."
+    },
+    {
+      "from": "lem:1",
+      "to": "lem:2",
+      "type": "depends_on",
+      "note": "Evaluating and truncating the sum over zeros uses the estimate for $\\sum_{0<\\gamma\\le T}1/\\gamma$ (Lemma 2)."
+    },
+    {
+      "from": "cor:1",
+      "to": "thm:1",
+      "type": "depends_on",
+      "note": "The $\\theta$ error bound is transferred from the $\\psi$ error bound (Theorem 1)."
+    },
+    {
+      "from": "cor:2",
+      "to": "thm:1",
+      "type": "depends_on",
+      "note": "The $\\pi(x)-\\mathrm{li}(x)$ bound follows from the $\\psi$/$\\theta$ error bounds."
+    },
+    {
+      "from": "thm:2",
+      "to": "thm:1",
+      "type": "depends_on",
+      "note": "The Ramanujan-inequality application uses the explicit error term (Theorem 1)."
+    },
+    {
+      "from": "thm:2",
+      "to": "lem:6",
+      "type": "depends_on",
+      "note": "The finite-range part of the Ramanujan inequality uses the explicit $\\theta$ bound (Lemma 6)."
+    },
+    {
+      "from": "lem:6",
+      "to": "lem:4",
+      "type": "depends_on",
+      "note": "The explicit $\\theta$ bound is coupled with the verified RH (Lemma 4)."
+    }
   ],
-  "critical_path": ["thm:1", "lem:1", "lem:2"],
+  "critical_path": [
+    "thm:1",
+    "lem:1",
+    "lem:2"
+  ],
   "proof_architecture": {
     "main_result": {
       "description": "The explicit PNT error term for $\\psi$ and its transfer to $\\theta$ and $\\pi$.",
-      "nodes": ["thm:1", "cor:1", "cor:2"]
+      "nodes": [
+        "thm:1",
+        "cor:1",
+        "cor:2"
+      ]
     },
     "explicit_formula": {
       "description": "The truncated explicit formula reducing the error to a finite sum over zeros, and the sum-over-ordinates estimate.",
-      "nodes": ["lem:1", "lem:2"]
+      "nodes": [
+        "lem:1",
+        "lem:2"
+      ]
     },
     "zero_inputs": {
       "description": "The three inputs that control the zeros: the zero-free region (setting $R$), the verified RH up to height $3\\times 10^{12}$, and the Pintz zero-density estimate.",
-      "nodes": ["lem:3", "lem:4", "lem:5"]
+      "nodes": [
+        "lem:3",
+        "lem:4",
+        "lem:5"
+      ]
     },
     "application": {
       "description": "Application to Ramanujan's $\\pi^2(x)$ inequality, using the error term and an explicit finite-range $\\theta$ bound.",
-      "nodes": ["thm:2", "lem:6"]
+      "nodes": [
+        "thm:2",
+        "lem:6"
+      ]
     }
   },
   "bibliography": {
-    "PT": { "title": "Platt–Trudgian — earlier explicit bounds", "arxiv_id": null, "in_registry": false },
-    "PT2": { "title": "Platt–Trudgian — computational verification of RH", "arxiv_id": null, "in_registry": false },
-    "Platt": { "title": "D. Platt — rigorous computation of zeros of $\\zeta$", "arxiv_id": null, "in_registry": false },
-    "Dusart": { "title": "P. Dusart — explicit estimates for prime functions", "arxiv_id": null, "in_registry": false },
-    "Booth2": { "title": "Büthe — explicit estimates under partial RH", "arxiv_id": null, "in_registry": false },
-    "Pintz": { "title": "J. Pintz — zero-density / error-term method", "arxiv_id": null, "in_registry": false }
+    "PT": {
+      "title": "Platt–Trudgian — earlier explicit bounds",
+      "arxiv_id": null,
+      "in_registry": false
+    },
+    "PT2": {
+      "title": "Platt–Trudgian — computational verification of RH",
+      "arxiv_id": null,
+      "in_registry": false
+    },
+    "Platt": {
+      "title": "D. Platt — rigorous computation of zeros of $\\zeta$",
+      "arxiv_id": null,
+      "in_registry": false
+    },
+    "Dusart": {
+      "title": "P. Dusart — explicit estimates for prime functions",
+      "arxiv_id": null,
+      "in_registry": false
+    },
+    "Booth2": {
+      "title": "Büthe — explicit estimates under partial RH",
+      "arxiv_id": null,
+      "in_registry": false
+    },
+    "Pintz": {
+      "title": "J. Pintz — zero-density / error-term method",
+      "arxiv_id": null,
+      "in_registry": false
+    }
   }
 }

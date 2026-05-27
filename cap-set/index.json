@@ -1,0 +1,8 @@
+{
+  "1605.01506v2": { "status": "complete", "nodes": 8, "edges": 8, "critical_path": 3, "generated": "2026-05-27" },
+  "1605.09223v1": { "status": "complete", "nodes": 8, "edges": 8, "critical_path": 3, "generated": "2026-05-27" },
+  "1606.09575v1": { "status": "complete", "nodes": 9, "edges": 8, "critical_path": 3, "generated": "2026-05-27" },
+  "1605.06702v4": { "status": "complete", "nodes": 21, "edges": 22, "critical_path": 5, "generated": "2026-05-27" },
+  "2209.10045v2": { "status": "complete", "nodes": 20, "edges": 26, "critical_path": 5, "generated": "2026-05-27" },
+  "funsearch-nature-2024": { "status": "complete", "nodes": 1, "edges": 0, "critical_path": 1, "generated": "2026-05-27", "paper_kind": "nature-only", "note": "single-node non-arXiv entry; load-bearing for the AI-for-math thread" }
+}

@@ -1,7 +1,10 @@
 {
   "paper": "2503.00621",
   "title": "Endoscopic decomposition of elliptic Fargues-Scholze L-packets",
-  "authors": ["David Kazhdan", "Yakov Varshavsky"],
+  "authors": [
+    "David Kazhdan",
+    "Yakov Varshavsky"
+  ],
   "generated": "2026-05-20",
   "status": "complete",
   "nodes": {
@@ -126,35 +129,181 @@
     }
   },
   "edges": [
-    { "from": "thm:6", "to": "prop:2.6", "type": "depends_on", "note": "Step 1 of the proof deduces $\\mathcal{E}_{\\varphi,[\\kappa]}$-stability of the elliptic part from the spectral-equivariance of the restriction map (Prop 2.6)." },
-    { "from": "thm:6", "to": "prop:2.8", "type": "depends_on", "note": "The non-connected-center case is reduced to connected center via the $z$-embedding isomorphism $\\Theta_{\\varphi_1} \\cong \\Theta_\\varphi$ (Prop 2.8)." },
-    { "from": "thm:6", "to": "prop:1.9", "type": "uses", "note": "Reduction of $\\mathcal{E}$-stability to the elliptic locus (Prop 1.9) is the framework in which $f_{[\\kappa]}$-stability is established." },
-    { "from": "prop:2.6", "to": "lem:2.4", "type": "depends_on", "note": "Equivariance is checked through the $[s]$-eigenspace criterion of Lemma 2.4." },
-    { "from": "prop:2.6", "to": "lem:3.11", "type": "depends_on", "note": "The restriction map's source $\\Theta_\\varphi$ is identified with $K_0$ of compact FS sheaves (Lemma 3.11), carrying the spectral action that makes $\\mathrm{res}_\\gamma$ equivariant." },
-    { "from": "lem:3.11", "to": "lem:3.9", "type": "depends_on", "note": "The $K_0$ identification uses that the spectral action preserves compact objects (Lemma 3.9)." },
-    { "from": "lem:3.9", "to": "lem:3.5", "type": "uses", "note": "Preservation of the basic-stratum subcategory under Hecke/spectral action relies on the $i_{b\\natural} \\cong i_{b*}$ isomorphism (Lemma 3.5)." },
-    { "from": "prop:2.8", "to": "claim:5.3", "type": "depends_on", "note": "The $z$-embedding isomorphism is spectral-action-compatible because of the Hecke compatibility $T_V(\\eta^*A) \\cong \\eta^* T_{\\widehat{\\eta}^*V}(A)$ (Claim 5.3)." },
-    { "from": "prop:6.2", "to": "thm:6", "type": "depends_on", "note": "The elliptic endoscopic decomposition is built from the $\\mathcal{E}$-stability of FS packet components (Theorem 6)." },
-    { "from": "prop:6.2", "to": "lem:6.3", "type": "depends_on", "note": "Directness of the elliptic decomposition uses linear independence of the $\\mathcal{E}$-stable subspaces (Lemma 6.3)." },
-    { "from": "prop:A.5", "to": "prop:6.2", "type": "depends_on", "note": "The $M$-elliptic endoscopic refinement is the elliptic decomposition (Prop 6.2) applied on each Levi $M$." },
-    { "from": "prop:A.5", "to": "prop:A.10", "type": "depends_on", "note": "Compatibility of the pieces along Levi induction uses the stable-distribution inclusion (Prop A.10)." },
-    { "from": "thm:A.6", "to": "prop:A.4", "type": "depends_on", "note": "Global decomposition combines the Levi-induction decomposition (Prop A.4)." },
-    { "from": "thm:A.6", "to": "prop:A.5", "type": "depends_on", "note": "...with the endoscopic refinement of each $M$-elliptic piece (Prop A.5)." },
-    { "from": "thm:B.4", "to": "thm:A.6", "type": "extends", "note": "The arbitrary-coefficient-field decomposition is obtained from the complex case (Theorem A.6) by Galois descent." },
-    { "from": "thm:B.4", "to": "lem:B.5", "type": "uses", "note": "Descent uses $\\Theta_K = \\Theta_{\\mathbb{C}}^{\\mathrm{Gal}(\\mathbb{C}/K)}$ (Lemma B.5)." }
+    {
+      "from": "thm:6",
+      "to": "prop:2.6",
+      "type": "depends_on",
+      "note": "Step 1 of the proof deduces $\\mathcal{E}_{\\varphi,[\\kappa]}$-stability of the elliptic part from the spectral-equivariance of the restriction map (Prop 2.6)."
+    },
+    {
+      "from": "thm:6",
+      "to": "prop:2.8",
+      "type": "depends_on",
+      "note": "The non-connected-center case is reduced to connected center via the $z$-embedding isomorphism $\\Theta_{\\varphi_1} \\cong \\Theta_\\varphi$ (Prop 2.8)."
+    },
+    {
+      "from": "thm:6",
+      "to": "prop:1.9",
+      "type": "depends_on",
+      "note": "Reduction of $\\mathcal{E}$-stability to the elliptic locus (Prop 1.9) is the framework in which $f_{[\\kappa]}$-stability is established."
+    },
+    {
+      "from": "prop:2.6",
+      "to": "lem:2.4",
+      "type": "depends_on",
+      "note": "Equivariance is checked through the $[s]$-eigenspace criterion of Lemma 2.4."
+    },
+    {
+      "from": "prop:2.6",
+      "to": "lem:3.11",
+      "type": "depends_on",
+      "note": "The restriction map's source $\\Theta_\\varphi$ is identified with $K_0$ of compact FS sheaves (Lemma 3.11), carrying the spectral action that makes $\\mathrm{res}_\\gamma$ equivariant."
+    },
+    {
+      "from": "lem:3.11",
+      "to": "lem:3.9",
+      "type": "depends_on",
+      "note": "The $K_0$ identification uses that the spectral action preserves compact objects (Lemma 3.9)."
+    },
+    {
+      "from": "lem:3.9",
+      "to": "lem:3.5",
+      "type": "depends_on",
+      "note": "Preservation of the basic-stratum subcategory under Hecke/spectral action relies on the $i_{b\\natural} \\cong i_{b*}$ isomorphism (Lemma 3.5)."
+    },
+    {
+      "from": "prop:2.8",
+      "to": "claim:5.3",
+      "type": "depends_on",
+      "note": "The $z$-embedding isomorphism is spectral-action-compatible because of the Hecke compatibility $T_V(\\eta^*A) \\cong \\eta^* T_{\\widehat{\\eta}^*V}(A)$ (Claim 5.3)."
+    },
+    {
+      "from": "prop:6.2",
+      "to": "thm:6",
+      "type": "depends_on",
+      "note": "The elliptic endoscopic decomposition is built from the $\\mathcal{E}$-stability of FS packet components (Theorem 6)."
+    },
+    {
+      "from": "prop:6.2",
+      "to": "lem:6.3",
+      "type": "depends_on",
+      "note": "Directness of the elliptic decomposition uses linear independence of the $\\mathcal{E}$-stable subspaces (Lemma 6.3)."
+    },
+    {
+      "from": "prop:A.5",
+      "to": "prop:6.2",
+      "type": "depends_on",
+      "note": "The $M$-elliptic endoscopic refinement is the elliptic decomposition (Prop 6.2) applied on each Levi $M$."
+    },
+    {
+      "from": "prop:A.5",
+      "to": "prop:A.10",
+      "type": "depends_on",
+      "note": "Compatibility of the pieces along Levi induction uses the stable-distribution inclusion (Prop A.10)."
+    },
+    {
+      "from": "thm:A.6",
+      "to": "prop:A.4",
+      "type": "depends_on",
+      "note": "Global decomposition combines the Levi-induction decomposition (Prop A.4)."
+    },
+    {
+      "from": "thm:A.6",
+      "to": "prop:A.5",
+      "type": "depends_on",
+      "note": "...with the endoscopic refinement of each $M$-elliptic piece (Prop A.5)."
+    },
+    {
+      "from": "thm:B.4",
+      "to": "thm:A.6",
+      "type": "extends",
+      "note": "The arbitrary-coefficient-field decomposition is obtained from the complex case (Theorem A.6) by Galois descent."
+    },
+    {
+      "from": "thm:B.4",
+      "to": "lem:B.5",
+      "type": "depends_on",
+      "note": "Descent uses $\\Theta_K = \\Theta_{\\mathbb{C}}^{\\mathrm{Gal}(\\mathbb{C}/K)}$ (Lemma B.5)."
+    }
   ],
-  "critical_path": ["lem:3.9", "lem:3.11", "prop:2.6", "thm:6", "prop:6.2", "thm:A.6", "thm:B.4"],
+  "critical_path": [
+    "lem:3.9",
+    "lem:3.11",
+    "prop:2.6",
+    "thm:6",
+    "prop:6.2",
+    "thm:A.6",
+    "thm:B.4"
+  ],
   "proof_architecture": {
-    "spectral_action": { "description": "The Fargues–Scholze spectral action on $D(\\mathrm{Bun}_G)$ and its identification with the character space, imported as the engine.", "nodes": ["lem:3.5", "lem:3.9", "lem:3.11", "claim:5.3"] },
-    "estability": { "description": "$\\mathcal{E}$-stability of FS $L$-packet components, reduced to the connected-center elliptic case.", "nodes": ["prop:1.9", "lem:2.4", "prop:2.6", "prop:2.8", "thm:6"] },
-    "elliptic_decomposition": { "description": "Endoscopic decomposition on the elliptic locus.", "nodes": ["prop:6.2", "lem:6.3"] },
-    "global_decomposition": { "description": "Assembly into the full endoscopic decomposition over $\\mathbb{C}$ and over arbitrary coefficient fields.", "nodes": ["prop:A.4", "prop:A.5", "prop:A.10", "thm:A.6", "lem:B.5", "thm:B.4"] }
+    "spectral_action": {
+      "description": "The Fargues–Scholze spectral action on $D(\\mathrm{Bun}_G)$ and its identification with the character space, imported as the engine.",
+      "nodes": [
+        "lem:3.5",
+        "lem:3.9",
+        "lem:3.11",
+        "claim:5.3"
+      ]
+    },
+    "estability": {
+      "description": "$\\mathcal{E}$-stability of FS $L$-packet components, reduced to the connected-center elliptic case.",
+      "nodes": [
+        "prop:1.9",
+        "lem:2.4",
+        "prop:2.6",
+        "prop:2.8",
+        "thm:6"
+      ]
+    },
+    "elliptic_decomposition": {
+      "description": "Endoscopic decomposition on the elliptic locus.",
+      "nodes": [
+        "prop:6.2",
+        "lem:6.3"
+      ]
+    },
+    "global_decomposition": {
+      "description": "Assembly into the full endoscopic decomposition over $\\mathbb{C}$ and over arbitrary coefficient fields.",
+      "nodes": [
+        "prop:A.4",
+        "prop:A.5",
+        "prop:A.10",
+        "thm:A.6",
+        "lem:B.5",
+        "thm:B.4"
+      ]
+    }
   },
   "bibliography": {
-    "FS": { "title": "Geometrization of the local Langlands correspondence", "arxiv_id": "2102.13459", "in_registry": true, "role": "the construction whose $L$-packets $\\Pi^{\\mathrm{FS}}$, Hecke functors, and spectral action are taken as input; Theorem IX.6.1 is repeated verbatim in §5" },
-    "HJ": { "title": "Hansen–Johansson (FS-packet lifting to the spectral category)", "arxiv_id": null, "in_registry": false, "role": "lift of FS packet members to $D^\\varphi(G(F))$ used in Lemma 3.11" },
-    "MW": { "title": "Moeglin–Waldspurger, on Arthur's elliptic tempered characters", "arxiv_id": null, "in_registry": false, "role": "Arthur's theorem on elliptic tempered characters used in Prop 6.2" },
-    "KV2": { "title": "Kazhdan–Varshavsky, earlier work on stable distributions", "arxiv_id": null, "in_registry": false, "role": "the stable-case Corollary 6.13 generalized in Prop A.10" },
-    "KSV": { "title": "Kazhdan–Schneider–Varshavsky, fields of definition of representations", "arxiv_id": null, "in_registry": false, "role": "field-of-definition results used in Lemma B.5" }
+    "FS": {
+      "title": "Geometrization of the local Langlands correspondence",
+      "arxiv_id": "2102.13459",
+      "in_registry": true,
+      "role": "the construction whose $L$-packets $\\Pi^{\\mathrm{FS}}$, Hecke functors, and spectral action are taken as input; Theorem IX.6.1 is repeated verbatim in §5"
+    },
+    "HJ": {
+      "title": "Hansen–Johansson (FS-packet lifting to the spectral category)",
+      "arxiv_id": null,
+      "in_registry": false,
+      "role": "lift of FS packet members to $D^\\varphi(G(F))$ used in Lemma 3.11"
+    },
+    "MW": {
+      "title": "Moeglin–Waldspurger, on Arthur's elliptic tempered characters",
+      "arxiv_id": null,
+      "in_registry": false,
+      "role": "Arthur's theorem on elliptic tempered characters used in Prop 6.2"
+    },
+    "KV2": {
+      "title": "Kazhdan–Varshavsky, earlier work on stable distributions",
+      "arxiv_id": null,
+      "in_registry": false,
+      "role": "the stable-case Corollary 6.13 generalized in Prop A.10"
+    },
+    "KSV": {
+      "title": "Kazhdan–Schneider–Varshavsky, fields of definition of representations",
+      "arxiv_id": null,
+      "in_registry": false,
+      "role": "field-of-definition results used in Lemma B.5"
+    }
   }
 }

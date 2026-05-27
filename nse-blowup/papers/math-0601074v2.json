@@ -116,7 +116,7 @@
     {
       "from": "thm:4.1",
       "to": "def:3.2",
-      "type": "proves",
+      "type": "depends_on",
       "note": "Shows the constructed solution is Leray-Hopf (energy inequality a.e.)"
     },
     {
